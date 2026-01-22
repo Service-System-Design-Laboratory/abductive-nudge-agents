@@ -1,0 +1,21 @@
+services:
+  graph-db:
+    image: neo4j:community
+    container_name: neo4j-local
+    tty: true
+    ports:
+      - "7474:7474"
+      - "7687:7687"
+    volumes:
+      - ./neo4j/data:/data
+      - ./neo4j/logs:/logs
+      - ./neo4j/conf:/conf
+      - ./neo4j/plugins:/plugins  # プラグイン保存用に有効化
+    environment:
+      - NEO4J_AUTH=none
+      # ▼ APOC設定ここから ▼
+      # 起動時にインターネットからAPOCプラグインを自動ダウンロード・配置します
+      - NEO4J_PLUGINS=["apoc"]
+      # APOCのプロシージャを実行できるようにセキュリティ制限を解除します
+      - NEO4J_dbms_security_procedures_unrestricted=apoc.*
+      # ▲ APOC設定ここまで ▲

@@ -1,0 +1,30 @@
+# Core dependencies
+langchain==0.3.14
+langchain-openai==0.2.14
+langchain-community==0.3.14
+langgraph==0.2.55
+
+# Azure OpenAI
+openai==1.59.5
+
+# Neo4j
+neo4j==5.27.0
+langchain-neo4j==0.1.1
+
+# Utilities
+python-dotenv==1.0.1
+pydantic>=2.10.5
+pydantic-settings>=2.7.1
+requests==2.32.3
+
+# Data processing
+typing-extensions==4.12.2
+
+# Development
+pytest==8.3.4
+black==24.10.0
+flake8==7.1.1
+
+# Visualization
+grandalf==0.8
+pygraphviz; sys_platform != 'win32'
