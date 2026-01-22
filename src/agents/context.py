@@ -1,14 +1,14 @@
-"""Perception Agent - Creates knowledge graph from user input"""
+"""Context Agent - Creates knowledge graph from user input"""
 import json
 from typing import Dict, Any
 
 from .base_agent import BaseAgent
-from ..models.schemas import PerceptionOutput, KnowledgeGraphEntity, KnowledgeGraphRelationship
+from ..models.schemas import ContextOutput, KnowledgeGraphEntity, KnowledgeGraphRelationship
 
 
-class PerceptionAgent(BaseAgent):
+class ContextAgent(BaseAgent):
     """
-    Perception Agent
+    Context Agent
     - Receives user input
     - Creates knowledge graph (entities and relationships)
     - Extracts user intent and key topics
@@ -16,7 +16,7 @@ class PerceptionAgent(BaseAgent):
     
     def __init__(self):
         super().__init__(
-            name="Perception Agent",
+            name="Context Agent",
             role="""ユーザーの入力を受け取り、以下の処理を行います:
 1. ユーザーの発言から重要なエンティティ(人物、場所、概念など)を抽出
 2. エンティティ間の関係性を特定
@@ -71,7 +71,7 @@ JSON形式で以下の構造で出力してください:
         try:
             parsed_response = json.loads(response)
             
-            # Create PerceptionOutput
+            # Create ContextOutput
             entities = [
                 KnowledgeGraphEntity(**entity) 
                 for entity in parsed_response.get("entities", [])
@@ -82,14 +82,14 @@ JSON形式で以下の構造で出力してください:
                 for rel in parsed_response.get("relationships", [])
             ]
             
-            perception_output = PerceptionOutput(
+            context_output = ContextOutput(
                 entities=entities,
                 relationships=relationships,
                 user_intent=parsed_response.get("user_intent", ""),
                 key_topics=parsed_response.get("key_topics", [])
             )
             
-            state["perception_output"] = perception_output
+            state["context_output"] = context_output
             
             self.log_action("Knowledge graph created", 
                           f"Entities: {len(entities)}, Relationships: {len(relationships)}")

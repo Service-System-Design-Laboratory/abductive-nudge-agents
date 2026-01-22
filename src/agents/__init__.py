@@ -1,16 +1,16 @@
 """AI Agents Module"""
-from .perception import PerceptionAgent
+from .context import ContextAgent
 from .chair import ChairAgent
 from .explorer import ExplorerAgent
-from .witness import WitnessAgent
+from .abstract import AbstractAgent
 from .critic import CriticAgent
-from .nudge import NudgeAgent
+from .dialog import DialogAgent
 
 __all__ = [
-    "PerceptionAgent",
+    "ContextAgent",
     "ChairAgent",
     "ExplorerAgent",
-    "WitnessAgent",
+    "AbstractAgent",
     "CriticAgent",
-    "NudgeAgent",
+    "DialogAgent",
 ]

@@ -27,4 +27,4 @@ flake8==7.1.1
 
 # Visualization
 grandalf==0.8
-pygraphviz; sys_platform != 'win32'
+# pygraphviz; sys_platform != 'win32'

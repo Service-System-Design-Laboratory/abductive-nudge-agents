@@ -1,14 +1,14 @@
-"""Witness Agent - Creates hypotheses from explorer findings"""
+"""Abstract Agent - Creates hypotheses from explorer findings"""
 import json
 from typing import Dict, Any
 
 from .base_agent import BaseAgent
-from ..models.schemas import WitnessOutput
+from ..models.schemas import AbstractOutput
 
 
-class WitnessAgent(BaseAgent):
+class AbstractAgent(BaseAgent):
     """
-    Witness Agent
+    Abstract Agent
     - Takes explorer's external findings
     - Creates hypotheses aligned with agenda and user attributes
     - Abstracts findings into actionable insights
@@ -16,7 +16,7 @@ class WitnessAgent(BaseAgent):
     
     def __init__(self):
         super().__init__(
-            name="Witness Agent",
+            name="Abstract Agent",
             role="""証人として、以下の処理を行います:
 1. Explorerが発見した外部事象を分析
 2. 議題とユーザー属性に合わせた仮説を生成
@@ -73,11 +73,11 @@ JSON形式で出力してください。"""}
         
         try:
             parsed_response = json.loads(response)
-            witness_output = WitnessOutput(**parsed_response)
-            state["witness_output"] = witness_output
+            abstract_output = AbstractOutput(**parsed_response)
+            state["abstract_output"] = abstract_output
             
             self.log_action("Hypotheses created", 
-                          f"Count: {len(witness_output.hypotheses)}")
+                          f"Count: {len(abstract_output.hypotheses)}")
             
         except json.JSONDecodeError as e:
             self.log_action("Error parsing JSON response", str(e))

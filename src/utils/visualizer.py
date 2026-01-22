@@ -170,7 +170,7 @@ class WorkflowVisualizer:
                                     │
                                     ▼
                     ┌───────────────────────────────┐
-                    │   1. Perception Agent          │
+                    │   1. Context Agent             │
                     │   - Create Knowledge Graph     │
                     │   - Extract Entities           │
                     │   - Identify User Intent       │
@@ -194,7 +194,7 @@ class WorkflowVisualizer:
                                     │
                                     ▼
                     ┌───────────────────────────────┐
-                    │   4. Witness Agent             │
+                    │   4. Abstract Agent            │
                     │   - Generate Hypotheses        │
                     │   - Abstract Findings          │
                     │   - Create Insights            │
@@ -217,7 +217,7 @@ class WorkflowVisualizer:
                                     │
                                     ▼
                     ┌───────────────────────────────┐
-                    │   7. Nudge Agent               │
+                    │   7. Dialog Agent              │
                     │   - Generate Personalized      │
                     │   - Apply Nudge Techniques     │
                     │   - Create Final Output        │
@@ -239,13 +239,13 @@ class WorkflowVisualizer:
 ════════════════════════════════════════════════════════════════════════
 
 Agent Flow Summary:
-1. Perception  → Extract and structure user input
+1. Context     → Extract and structure user input
 2. Chair (1)   → Set agenda and direction
 3. Explorer    → Find external information
-4. Witness     → Generate hypotheses
+4. Abstract    → Generate hypotheses
 5. Critic      → Validate hypotheses
 6. Chair (2)   → Prioritize by user attributes
-7. Nudge       → Create personalized output
+7. Dialog      → Create personalized output
 
 ════════════════════════════════════════════════════════════════════════
 """

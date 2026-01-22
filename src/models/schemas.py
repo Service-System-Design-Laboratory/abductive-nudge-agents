@@ -7,12 +7,12 @@ from enum import Enum
 
 class AgentRole(str, Enum):
     """Agent role enumeration"""
-    PERCEPTION = "perception"
+    CONTEXT = "context"
     CHAIR = "chair"
     EXPLORER = "explorer"
-    WITNESS = "witness"
+    ABSTRACT = "abstract"
     CRITIC = "critic"
-    NUDGE = "nudge"
+    DIALOG = "dialog"
 
 
 class Message(BaseModel):
@@ -48,8 +48,8 @@ class KnowledgeGraphRelationship(BaseModel):
     properties: Dict[str, Any] = Field(default_factory=dict)
 
 
-class PerceptionOutput(BaseModel):
-    """Output from Perception Agent"""
+class ContextOutput(BaseModel):
+    """Output from Context Agent"""
     entities: List[KnowledgeGraphEntity]
     relationships: List[KnowledgeGraphRelationship]
     user_intent: str
@@ -71,8 +71,8 @@ class ExplorerOutput(BaseModel):
     relevance_scores: Dict[str, float]
 
 
-class WitnessOutput(BaseModel):
-    """Output from Witness Agent"""
+class AbstractOutput(BaseModel):
+    """Output from Abstract Agent"""
     hypotheses: List[Dict[str, Any]]
     abstractions: List[str]
     confidence_scores: Dict[str, float]
@@ -86,8 +86,8 @@ class CriticOutput(BaseModel):
     recommendations: List[str]
 
 
-class NudgeOutput(BaseModel):
-    """Output from Nudge Agent"""
+class DialogOutput(BaseModel):
+    """Output from Dialog Agent"""
     nudge_message: str
     nudge_type: str
     personalization_factors: List[str]
@@ -102,12 +102,12 @@ class AgentState(BaseModel):
     user_attributes: Optional[UserAttributes] = None
     
     # Agent outputs
-    perception_output: Optional[PerceptionOutput] = None
+    context_output: Optional[ContextOutput] = None
     chair_output: Optional[ChairOutput] = None
     explorer_output: Optional[ExplorerOutput] = None
-    witness_output: Optional[WitnessOutput] = None
+    abstract_output: Optional[AbstractOutput] = None
     critic_output: Optional[CriticOutput] = None
-    nudge_output: Optional[NudgeOutput] = None
+    dialog_output: Optional[DialogOutput] = None
     
     # Conversation history
     messages: List[Message] = Field(default_factory=list)

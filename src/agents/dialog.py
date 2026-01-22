@@ -1,14 +1,14 @@
-"""Nudge Agent - Creates personalized nudges for user output"""
+"""Dialog Agent - Creates personalized nudges for user output"""
 import json
 from typing import Dict, Any
 
 from .base_agent import BaseAgent
-from ..models.schemas import NudgeOutput
+from ..models.schemas import DialogOutput
 
 
-class NudgeAgent(BaseAgent):
+class DialogAgent(BaseAgent):
     """
-    Nudge Agent
+    Dialog Agent
     - Creates personalized nudges based on user attributes
     - Applies behavioral science principles
     - Generates final output to user
@@ -16,7 +16,7 @@ class NudgeAgent(BaseAgent):
     
     def __init__(self):
         super().__init__(
-            name="Nudge Agent",
+            name="Dialog Agent",
             role="""ナッジの専門家として、以下の処理を行います:
 1. ユーザー属性から最適なナッジ手法を選択
 2. 優先順位付けされた仮説を基にメッセージを作成
@@ -53,7 +53,7 @@ JSON形式で以下の構造で出力してください:
         if not critic_output or not critic_output.validated_hypotheses:
             self.log_action("No validated hypotheses, creating generic response")
             # Create a generic helpful response
-            state["nudge_output"] = NudgeOutput(
+            state["dialog_output"] = DialogOutput(
                 nudge_message="ご質問ありがとうございます。もう少し詳しく教えていただけますか?",
                 nudge_type="clarification",
                 personalization_factors=["初回対話"],
@@ -101,10 +101,10 @@ JSON形式で出力してください。"""}
         
         try:
             parsed_response = json.loads(response)
-            nudge_output = NudgeOutput(**parsed_response)
-            state["nudge_output"] = nudge_output
+            dialog_output = DialogOutput(**parsed_response)
+            state["dialog_output"] = dialog_output
             
-            self.log_action("Nudge created", nudge_output.nudge_type)
+            self.log_action("Nudge created", dialog_output.nudge_type)
             
         except json.JSONDecodeError as e:
             self.log_action("Error parsing JSON response", str(e))

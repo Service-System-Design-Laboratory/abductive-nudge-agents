@@ -124,12 +124,12 @@ class MultiAgentSystem:
             "user_input": user_input,
             "user_attributes": user_attributes,
             "messages": messages,
-            "perception_output": None,
+            "context_output": None,
             "chair_output": None,
             "explorer_output": None,
-            "witness_output": None,
+            "abstract_output": None,
             "critic_output": None,
-            "nudge_output": None
+            "dialog_output": None
         }
         
         # Run workflow
@@ -137,8 +137,8 @@ class MultiAgentSystem:
         
         # Extract response
         response = ""
-        if final_state.get("nudge_output"):
-            response = final_state["nudge_output"].nudge_message
+        if final_state.get("dialog_output"):
+            response = final_state["dialog_output"].nudge_message
         else:
             response = "申し訳ございません。処理中にエラーが発生しました。"
         

@@ -8,13 +8,13 @@
 
 ### エージェント構成
 
-1. **Perception Agent** - ユーザー入力からナレッジグラフを作成
+1. **Context Agent** (旧 Perception Agent) - ユーザー入力からナレッジグラフを作成
 2. **Chair Agent** (1回目) - 議題と会話の方向性を決定
 3. **Explorer Agent** - Serper API（Google検索）を使用して外部情報を探索
-4. **Witness Agent** - 探索結果から仮説を生成
+4. **Abstract Agent** (旧 Witness Agent) - 探索結果から仮説を生成
 5. **Critic Agent** - 仮説を検証
 6. **Chair Agent** (2回目) - 仮説の優先順位付け
-7. **Nudge Agent** - パーソナライズされた出力を生成
+7. **Dialog Agent** (旧 Nudge Agent) - パーソナライズされた出力を生成
 
 ## 🏗️ アーキテクチャ
 
@@ -25,7 +25,7 @@
        │
        ▼
 ┌─────────────────────────────────────────┐
-│   Perception Agent                      │
+│   Context Agent                         │
 │   - Knowledge Graph作成                 │
 │   - エンティティ・関係性抽出             │
 └──────┬──────────────────────────────────┘
@@ -47,7 +47,7 @@
        │
        ▼
 ┌─────────────────────────────────────────┐
-│   Witness Agent                         │
+│   Abstract Agent                        │
 │   - 仮説生成                             │
 │   - 抽象化・洞察導出                     │
 └──────┬──────────────────────────────────┘
@@ -67,7 +67,7 @@
        │
        ▼
 ┌─────────────────────────────────────────┐
-│   Nudge Agent                           │
+│   Dialog Agent                          │
 │   - パーソナライズされたナッジ生成       │
 │   - 行動変容の促進                       │
 └──────┬──────────────────────────────────┘
@@ -88,12 +88,12 @@ AI-one-hour/
 ├── src/
 │   ├── agents/              # AIエージェント
 │   │   ├── base_agent.py    # ベースエージェントクラス
-│   │   ├── perception.py    # Perception Agent
+│   │   ├── context.py       # Context Agent
 │   │   ├── chair.py         # Chair Agent
 │   │   ├── explorer.py      # Explorer Agent
-│   │   ├── witness.py       # Witness Agent
+│   │   ├── abstract.py      # Abstract Agent
 │   │   ├── critic.py        # Critic Agent
-│   │   └── nudge.py         # Nudge Agent
+│   │   └── dialog.py        # Dialog Agent
 │   ├── models/              # データモデル
 │   │   └── schemas.py       # Pydanticスキーマ
 │   ├── orchestration/       # オーケストレーション
