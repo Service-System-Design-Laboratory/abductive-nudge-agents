@@ -1,0 +1,110 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [
+          "内面の動機に寄りすぎており、社会的・外部要因やパラドックスを説明できていない"
+        ],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A2"
+        ],
+        "best_discriminating_question": "地元の人と交流したとき、どんな気持ちや発見がありましたか？",
+        "testability_notes": "交流体験の感情や満足度を具体的に聞くことで検証可能",
+        "safety_risk_notes": "自己成長や内面充実を強調しすぎると、現実とのギャップを感じさせる可能性"
+      },
+      "rationale": "ユーザーの内面的な充実や成長志向を説明するが、外部環境や社会的構造への目配りが弱い"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [
+          "価値観の説明に終始し、動機や社会的背景の複雑さを十分に扱えていない"
+        ],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "A1"
+        ],
+        "best_discriminating_question": "自然や伝統文化に触れることと、観光地を避けることのどちらがより大切ですか？",
+        "testability_notes": "価値観の優先順位を尋ねることで検証可能",
+        "safety_risk_notes": "価値観の押し付けと受け取られないよう配慮が必要"
+      },
+      "rationale": "自然や伝統重視の価値観を説明するが、ユーザーの行動の裏にある社会的欲求を扱っていない"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [
+          "地元の人との関係性に焦点を当てすぎて、ユーザー自身のアイデンティティ欲求やパラドックスを説明できていない"
+        ],
+        "explains_confirmed": [
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A2",
+          "A3"
+        ],
+        "best_discriminating_question": "地元の人と一緒に行動したり、受け入れられたと感じた経験はありますか？",
+        "testability_notes": "地元の人との関係性や受容感を尋ねることで検証可能",
+        "safety_risk_notes": "『地域の一員』という理想像が現実と乖離している場合、違和感を与える可能性"
+      },
+      "rationale": "社会的関係性を重視するが、ユーザーの自己像や外部環境の変化には踏み込めていない"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [
+          "ユーザーの体験や価値観を疑問視する姿勢が強く、共感性がやや低い"
+        ],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A2",
+          "A3"
+        ],
+        "best_discriminating_question": "『本物の生活』とは具体的にどんな体験を指しますか？",
+        "testability_notes": "体験内容の具体性や理想と現実のギャップを聞くことで検証可能",
+        "safety_risk_notes": "理想を否定されたと受け取られないよう配慮が必要"
+      },
+      "rationale": "理想像やイメージ先行の可能性を指摘するが、ユーザーの価値観や動機へのリスペクトがやや弱い"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [
+          "ユーザーの自己像や動機をパラドキシカルに再解釈するため、やや不快感や防衛的反応を引き起こすリスクがある"
+        ],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "Oext1",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A2",
+          "A3"
+        ],
+        "best_discriminating_question": "『本物』を求める自分自身の行動が、実は他の観光客との差別化や特別感を求めるものになっていると感じたことはありますか？",
+        "testability_notes": "自己認識や行動の動機について深掘りすることで検証可能",
+        "safety_risk_notes": "ユーザーの自己像を揺さぶるため、慎重な言い回しと共感的な姿勢が必要"
+      },
+      "rationale": "外部観察（Oext1, Oext2）を活用し、ユーザーの発言の意味をパラドキシカルに再解釈する。『本物』志向自体が社会的パフォーマンスや差異化欲求の一部である可能性を示唆し、発言の意味を大きく変える"
+    }
+  ]
+}

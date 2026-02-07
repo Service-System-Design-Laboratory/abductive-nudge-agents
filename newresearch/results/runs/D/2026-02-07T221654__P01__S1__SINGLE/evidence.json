@@ -1,0 +1,28 @@
+{
+  "triggers": [
+    {
+      "type": "focus",
+      "text": "『本物の生活』や地元の人しか知らない場所への強いこだわり"
+    },
+    {
+      "type": "information_gap",
+      "text": "なぜ観光客向けの演出が満足できないのか、その理由が明示されていない"
+    },
+    {
+      "type": "ambiguity",
+      "text": "『本物の生活』とは何を指すのか具体的に不明"
+    }
+  ],
+  "external_observations": [
+    {
+      "id": "Oext1",
+      "text": "ガイドブックに載らない場所や、現地に看板や案内がない場所は、実際にはGoogleマップなどのデジタル情報で探訪者が増えており、完全な『地元だけの秘密』は成立しにくくなっている",
+      "source_url": "https://www.ryosou.com/simanenokunifudoki2024izumo/"
+    },
+    {
+      "id": "Oext2",
+      "text": "ガイドブックに載っていない体験や地元の人との交流が『本物』とされる一方で、それ自体が観光商品として演出されるケースも増えている",
+      "source_url": "https://www.echizenkani.com/20220513115750"
+    }
+  ]
+}

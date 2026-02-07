@@ -1,0 +1,95 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1"
+        ],
+        "key_assumptions": [
+          "ユーザーが伝統建築や歴史的な雰囲気に心理的価値（癒やし・感動）を感じている",
+          "非日常体験や心の安らぎを求めているという動機が観察の背景にある"
+        ],
+        "best_discriminating_question": "伝統建築や歴史的な場所を訪れることで、どのような気持ちになりますか？",
+        "testability_notes": "ユーザーへの直接質問で比較的容易に検証可能。",
+        "safety_risk_notes": "ユーザーの内面の動機を推測するため、断定的な表現は避けるべき。"
+      },
+      "rationale": "観察O1は十分説明できるが、O3の『日本の美の極み』という価値判断の根拠までは直接説明していない。動機の仮定は妥当だが、主観的で検証にはユーザーの自己申告が必要。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "Oext1",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "行政による保存政策と観光産業の発展が両立している",
+          "これらが金沢の伝統的な街並みの保存に主要な役割を果たしている"
+        ],
+        "best_discriminating_question": "現地で保存政策や観光資源化についての案内や表示を見かけましたか？",
+        "testability_notes": "外部エビデンスや現地観察で検証しやすい。",
+        "safety_risk_notes": "行政や観光産業の影響を強調するため、文化的価値の個人差を軽視しない配慮が必要。"
+      },
+      "rationale": "外部エビデンス（Oext1, Oext3）とO2を十分に説明できており、仮説の妥当性は高い。保存と観光のバランスに着目した点が特徴的。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3"
+        ],
+        "key_assumptions": [
+          "ユーザーが『日本の美』の基準として歴史的連続性や伝統的景観の保存を重視している",
+          "O3の発言が価値観の反映である"
+        ],
+        "best_discriminating_question": "『日本の美』とは何だと思いますか？",
+        "testability_notes": "ユーザーの価値観を直接問うことで検証可能だが、主観的な回答となる。",
+        "safety_risk_notes": "価値観の推定は断定的にせず、ユーザーの多様な美意識を尊重する必要がある。"
+      },
+      "rationale": "O3の発言を的確に説明しているが、価値観の推定は主観的であり、他の動機や社会的要因を排除できない点に注意。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "観察からはユーザーの評価基準や理由が明確でない",
+          "主観的・感情的な理由が中心である可能性が高い"
+        ],
+        "best_discriminating_question": "ひがし茶屋街のどの部分が『美の極み』だと感じるのですか？",
+        "testability_notes": "追加質問で容易に検証可能。情報不足の指摘なので反証も容易。",
+        "safety_risk_notes": "ユーザーの発言の根拠を問うため、詰問的にならないよう配慮が必要。"
+      },
+      "rationale": "観察から得られる情報の限界を指摘しており、他仮説の前提を検証する上で有用。説明の不十分さを明確に示している。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "ユーザーが文化的感受性や審美眼を他者にアピールしたいという社会的動機を持っている",
+          "伝統や美意識への言及が自己イメージの構築と結びついている"
+        ],
+        "best_discriminating_question": "伝統建築や日本の美について語る際、他者の評価や反応を意識しますか？",
+        "testability_notes": "ユーザーの自己認識や発言傾向を深掘りする必要があり、やや検証しにくい。",
+        "safety_risk_notes": "ユーザーの動機を社会的承認欲求と結びつけるため、誤解や不快感を与えるリスクが高い。慎重な表現が必要。"
+      },
+      "rationale": "観察を広く説明できるが、ユーザーの内面の社会的動機を推測するため、検証や提示には配慮が必要。リフレーミング仮説として有用。"
+    }
+  ]
+}

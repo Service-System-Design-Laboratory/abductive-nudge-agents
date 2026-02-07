@@ -1,0 +1,95 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1"
+        ],
+        "key_assumptions": [
+          "ユーザーが自然との調和や地域文化の価値を重視していること",
+          "伝統建築や街並みの背景にある文化や自然との関係性がユーザーの関心を引くこと"
+        ],
+        "best_discriminating_question": "伝統建築や街並みを見る際、その歴史的背景や自然との関係性にも注目しますか？",
+        "testability_notes": "ユーザーに直接質問することで検証可能。PKGのペルソナリンクも利用できる。",
+        "safety_risk_notes": "価値観の押し付けや断定的な表現が誤解を生む可能性がある。"
+      },
+      "rationale": "自然や文化への関心を根拠にしており、PKGと外部エビデンスに支えられている。O1は確実に説明できるが、O3の説明はやや弱い。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "観光需要の高まりが町並みの保存・活用に直接影響していること",
+          "ユーザーが観光地として整備された場所を訪れることが多い"
+        ],
+        "best_discriminating_question": "金沢の町並みが観光客向けに整備されていることについてどう思いますか？",
+        "testability_notes": "外部エビデンスや現地の保存活動の情報を参照しつつ、ユーザーへの質問で検証可能。",
+        "safety_risk_notes": "観光地化を否定的に捉えるユーザーには反感を生む可能性がある。"
+      },
+      "rationale": "観光需要と町並み保存の関係を明確に説明し、O1・O2・Oext3を根拠にできる。現実的な環境要因に基づいている。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3"
+        ],
+        "key_assumptions": [
+          "ユーザーが伝統美を自己の美意識やアイデンティティ強化の手段として捉えていること",
+          "伝統的なものを現代的なものより重視する価値観があること"
+        ],
+        "best_discriminating_question": "日本の美について語るとき、現代的なものよりも伝統的なものを重視しますか？",
+        "testability_notes": "ユーザーの価値観や発言を観察・質問することで検証可能。PKGのペルソナリンクも利用できる。",
+        "safety_risk_notes": "個人のアイデンティティや価値観に踏み込むため、断定的表現は慎重に扱う必要がある。"
+      },
+      "rationale": "心理的動機に着目し、O3の説明に特化。PKGのペルソナリンクが根拠となるが、外部エビデンスは弱い。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "ユーザーが地域社会や他者とのつながりを求めていること",
+          "体験型観光や地元住民との交流がユーザーの動機となっていること"
+        ],
+        "best_discriminating_question": "金沢訪問時に地元の人々との交流やガイド付きツアーに参加したいですか？",
+        "testability_notes": "PKGのペルソナリンクや外部エビデンスを参照しつつ、ユーザーへの質問で検証可能。",
+        "safety_risk_notes": "社会的つながりを重視しないユーザーには違和感や疎外感を与える可能性がある。"
+      },
+      "rationale": "社会的動機を重視し、PKGと外部エビデンスで裏付けがある。O1とOext1は十分説明できるが、O2の説明はやや弱い。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "ユーザーの目的が『本物らしさ』の演出体験や自己像の確認にあること",
+          "観光地の『本物らしさ』が実際には演出されたものであること"
+        ],
+        "best_discriminating_question": "伝統的な場所で体験したことを積極的に写真やSNSで発信したいと感じますか？",
+        "testability_notes": "ユーザーの行動（写真撮影・SNS発信等）や意識を観察・質問することで検証可能。外部エビデンスも豊富。",
+        "safety_risk_notes": "ユーザーの動機を『演出された自己像』と断定することで反発や不快感を生むリスクが高い。"
+      },
+      "rationale": "裏切る仮説として、観光地の演出とユーザーの自己像に着目。外部エビデンスやPKGで根拠が強く、観察全体を広く説明できるが、提示時のリスクが大きい。"
+    }
+  ]
+}

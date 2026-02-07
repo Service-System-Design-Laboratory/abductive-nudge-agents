@@ -1,0 +1,93 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーが完璧主義的傾向を持っていること",
+          "SNSでの評価を強く意識していること"
+        ],
+        "best_discriminating_question": "SNSで高評価が得られなかった場合、写真の撮り方や投稿内容を見直すことが多いですか？",
+        "testability_notes": "ユーザーへの直接質問で検証可能。SNS利用履歴や投稿傾向の観察も有効。",
+        "safety_risk_notes": "完璧主義やSNS依存を断定的に指摘すると、ユーザーが否定的・防衛的反応を示す可能性がある。"
+      },
+      "rationale": "観察O1・O2は完璧主義や評価意識で説明可能だが、O3（何十枚も撮る）やO4（旅の目的化）は他仮説と重複しやすく、根拠の明確化が必要。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O5"
+        ],
+        "key_assumptions": [
+          "ユーザーが撮影効率や省力化に課題を感じていること",
+          "技術・機材情報の収集意欲が高いこと"
+        ],
+        "best_discriminating_question": "撮影時の手順や持ち歩く機材を減らしたいと感じることはありますか？",
+        "testability_notes": "ユーザーの情報収集行動や機材選択理由を質問・観察することで検証可能。",
+        "safety_risk_notes": "技術不足や非効率さを強調しすぎると、ユーザーの自尊心を損なう恐れがある。"
+      },
+      "rationale": "O1・O2・O5は効率化志向で説明できるが、O3（大量撮影）は必ずしも効率化と一致しないため、説明力に限定がある。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O5"
+        ],
+        "key_assumptions": [
+          "旅行写真市場が競争化・一般化していること",
+          "ユーザーが差別化や効率化の必要性を感じていること"
+        ],
+        "best_discriminating_question": "他の人の写真と被らないように構図や編集に独自性を出そうと意識していますか？",
+        "testability_notes": "SNS上の投稿傾向や、ユーザーの差別化意識を質問することで検証可能。",
+        "safety_risk_notes": "市場競争や独自性へのプレッシャーを強調しすぎると、ユーザーに不安を与える可能性がある。"
+      },
+      "rationale": "O1・O2・O5は競争環境や差別化志向で説明できるが、個人の内的動機（O4等）への説明は弱い。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O5"
+        ],
+        "key_assumptions": [
+          "ユーザーの課題意識やボトルネックが明確化されていないこと"
+        ],
+        "best_discriminating_question": "撮影から投稿までのどの工程が一番手間や時間がかかると感じますか？",
+        "testability_notes": "ユーザーに具体的な課題や負担感を尋ねることで検証可能。",
+        "safety_risk_notes": "ユーザーの課題意識が曖昧であると断定することで、無自覚・無計画と受け取られるリスクがある。"
+      },
+      "rationale": "O5（効率化ニーズの曖昧さ）を指摘するメタ仮説であり、他仮説の前提が崩れる場合の補助的役割が強い。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O4",
+          "O5"
+        ],
+        "key_assumptions": [
+          "ユーザーが旅そのものよりSNS上での自己演出に価値を感じていること"
+        ],
+        "best_discriminating_question": "SNSでの反響が期待より少なかった場合、その旅自体の満足度も下がりますか？",
+        "testability_notes": "ユーザーの価値観や満足度の源泉を質問することで検証可能。",
+        "safety_risk_notes": "ユーザーの旅の動機や価値観を否定的に解釈されるリスクがある。断定的表現は避けるべき。"
+      },
+      "rationale": "O4・O5はSNS自己演出価値観で説明できるが、O1・O2等の撮影行動全般への説明力は限定的。"
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーが『本物の生活』や観光地化されていない場所を重視する価値観を持っている（A1）",
+          "ユーザーの発言が本心であり、行動にも一貫して現れている"
+        ],
+        "best_discriminating_question": "ユーザーは観光地化されていない地域行事や祭りへの参加に強い関心があるか？",
+        "testability_notes": "PKGの発言や過去の行動履歴から比較的容易に検証可能。ユーザーへの直接質問も有効。",
+        "safety_risk_notes": "価値観の断定的表現が強く、ユーザーの多様な動機や矛盾を見落とすリスクがある。"
+      },
+      "rationale": "PKGによりO1・O2は十分説明されるが、O3（観光客向け演出への不満）は心理的要因も絡むためH2/H5と区別が必要。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O3"
+        ],
+        "key_assumptions": [
+          "ユーザーが観光地的な演出や人工的体験に飽和・不満を感じている",
+          "ユーザーの発言が心理的な違和感や飽きに基づくものである"
+        ],
+        "best_discriminating_question": "ユーザーは観光地での典型的な体験（記念写真、土産物購入など）を避ける傾向があるか？",
+        "testability_notes": "PKGの発言や体験談から検証しやすい。ユーザーの過去の行動や感想を聞くことで確認可能。",
+        "safety_risk_notes": "ユーザーの心理的動機を断定することで、本人の意図や多面的な価値観を単純化するリスクがある。"
+      },
+      "rationale": "O1・O3の説明力は高いが、O2（『本物の生活』志向）への直接的説明は弱く、H1/H5との区別が重要。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "Oext1",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "ローカル志向の観光地も実際には商品化・演出されているという外部エビデンスが正しい",
+          "ユーザーがそのギャップを認識しうる状況にある"
+        ],
+        "best_discriminating_question": "ユーザーは現地で『本物』と期待した場所が実際には観光資源化されていた経験があるか？",
+        "testability_notes": "外部エビデンスとユーザーの体験談の突き合わせが必要。ユーザーへの具体的な質問で検証可能。",
+        "safety_risk_notes": "ユーザーの理想や体験を否定的に捉えられる可能性があり、慎重な提示が必要。"
+      },
+      "rationale": "外部エビデンスとO2, Oext1, Oext2を強く説明するが、ユーザーの主観的価値観や心理的動機には直接触れない。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "観光客の行動が地域の生活空間や文化を変質させるという観察者効果が実際に生じている",
+          "ユーザーがそのパラドックスや葛藤を意識しうる"
+        ],
+        "best_discriminating_question": "ユーザーは自分が訪れることで『本物』が失われるリスクを意識しているか？",
+        "testability_notes": "ユーザーの内省的な発言や葛藤の有無を確認する必要があり、やや検証難度は高い。",
+        "safety_risk_notes": "ユーザーの行動自体を否定的に捉えうるため、罪悪感や自己否定を誘発するリスクがある。"
+      },
+      "rationale": "O2, Oext3の説明力は高いが、ユーザーの自己認識や心理的動機を前提とするため、H5との区別が重要。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "Oext1",
+          "Oext2",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "ユーザーの本物志向やローカル志向が自己像・アイデンティティの維持・強調という深層心理に基づいている（A1）",
+          "PKGや観察データがこの深層心理を支持している"
+        ],
+        "best_discriminating_question": "ユーザーは『他の観光客とは違う体験をしたい』という意識をどれほど重視しているか？",
+        "testability_notes": "PKGやユーザーの語り口・発言から間接的に検証可能だが、深層心理の特定には追加の質問や観察が必要。",
+        "safety_risk_notes": "ユーザーの動機を深層心理に還元することで、本人の意図や価値観を軽視・誤解されるリスクがある。"
+      },
+      "rationale": "全観察・外部エビデンスを広く説明できるが、深層心理の解釈には主観が入りやすく、他仮説との区別が重要。"
+    }
+  ]
+}
