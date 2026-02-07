@@ -1,33 +1,17 @@
-# Python 3.10-3.13 recommended (3.14 may require PYO3_USE_ABI3_FORWARD_COMPATIBILITY=1)
+# Abductive Dialogue Pipeline — Python dependencies
+# Python 3.10+ required (3.12 recommended)
 
-# Core dependencies
-langchain>=1.2,<2.0
-langchain-openai>=1.1,<2.0
-langchain-community>=0.4,<1.0
-langgraph>=1.0,<2.0
+# ── LLM ──────────────────────────────────────────
+openai>=1.0,<3.0
 
-# Azure OpenAI
-openai>=2.0,<3.0
+# ── Knowledge Graph ──────────────────────────────
+neo4j>=5.0,<7.0
 
-# Neo4j
-neo4j>=6.0,<7.0
-langchain-neo4j>=0.8,<1.0
+# ── Data Validation ──────────────────────────────
+pydantic>=2.0,<3.0
 
-# Utilities
+# ── Environment ──────────────────────────────────
 python-dotenv>=1.0,<2.0
-pydantic>=2.12,<3.0
-pydantic-settings>=2.12,<3.0
-requests>=2.32,<3.0
 
-# Data processing
-typing-extensions>=4.12,<5.0
-numpy>=2.0,<3.0
-
-# Development
-pytest>=9.0,<10.0
-black>=26.0,<27.0
-flake8>=7.3,<8.0
-
-# Visualization
-grandalf>=0.8,<1.0
-# pygraphviz; sys_platform != 'win32'
+# ── HTTP (Web Search) ────────────────────────────
+requests>=2.28,<3.0
