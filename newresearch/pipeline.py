@@ -46,6 +46,7 @@ class Pipeline:
         pkg_store = PKGStore(
             persona_id=self.persona.persona_id,
             enabled=self.config.use_pkg,
+            write_enabled=self.config.use_pkg
         )
         state = {
             "user_input": user_input,
@@ -118,4 +119,4 @@ class Pipeline:
 
 
 def _write_json(path: Path, data: dict):
-    path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+    path.write_text(json.dumps(data, ensure_ascii=True, indent=2), encoding="utf-8")
