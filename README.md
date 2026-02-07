@@ -2,9 +2,9 @@
 
 > **Empathy-Driven Abductive Reasoning in Multi-Agent Dialogue Systems**
 
-アブダクティブ推論（仮説生成型推論）を用いたマルチエージェント対話パイプラインの研究実装です。
-パーソナルナレッジグラフ（PKG）、外部検索（RAG）、診断型 Judge の 3 変数を操作する
-アブレーション実験を通じて、共感的対話における各構成要素の役割を観察します。
+Research implementation of a multi-agent dialogue pipeline using abductive reasoning (hypothesis-generating inference).
+Through ablation experiments manipulating three variables: Personal Knowledge Graph (PKG), external search (RAG), and diagnostic Judge,
+we observe the role of each component in empathetic dialogue.
 
 ---
 
@@ -12,9 +12,9 @@
 
 | # | Question |
 |---|---------|
-| RQ1 | 明示的なアブダクティブパイプライン (O/A → Hypothesis → Judge → Decision) は、仮説の多様性と説明品質にどう影響するか？ |
-| RQ2 | PKG と外部エビデンス (RAG) は、仮説の根拠付けとペルソナ整合性にどう寄与するか？ |
-| RQ3 | Agent-as-a-Judge 診断は、共感的で根拠のある応答の選択を改善するか？ |
+| RQ1 | How does an explicit abductive pipeline (O/A → Hypothesis → Judge → Decision) affect hypothesis diversity and explanation quality? |
+| RQ2 | How do PKG and external evidence (RAG) contribute to hypothesis grounding and persona consistency? |
+| RQ3 | Does Agent-as-a-Judge diagnostics improve the selection of empathetic and evidence-based responses? |
 
 ---
 
@@ -25,27 +25,27 @@ User Input + Persona + PKG
         │
         ▼
 ┌──────────────┐
-│ ContextAgent │  観察 (O) と仮定 (A) を抽出、トリガーと RAG クエリを生成
+│ ContextAgent │  Extract observations (O) and assumptions (A), generate triggers and RAG queries
 └──────┬───────┘
        ▼
 ┌──────────────┐
-│ExplorerAgent │  Web 検索 → LLM 解釈 → evidence_items + external_observations (Oext)
-└──────┬───────┘  [use_rag=false でスキップ]
+│ExplorerAgent │  Web search → LLM interpretation → evidence_items + external_observations (Oext)
+└──────┬───────┘  [Skipped when use_rag=false]
        ▼
 ┌────────────────┐
-│HypothesisAgent │  3–5 仮説を生成（explains O+Oext, assumes A, predictions, discriminating_questions）
+│HypothesisAgent │  Generate 3-5 hypotheses (explains O+Oext, assumes A, predictions, discriminating_questions)
 └──────┬─────────┘
        ▼
 ┌────────────┐
-│ JudgeAgent │  診断的レビュー（fatal_flaws / explains_confirmed / safety_risk_notes）
-└──────┬─────┘  [use_judge=false でスキップ]
+│ JudgeAgent │  Diagnostic review (fatal_flaws / explains_confirmed / safety_risk_notes)
+└──────┬─────┘  [Skipped when use_judge=false]
        ▼
 ┌───────────────┐
-│ DecisionAgent │  2 仮説の対比的選択（selected + contrasting）
+│ DecisionAgent │  Contrastive selection of 2 hypotheses (selected + contrasting)
 └──────┬────────┘
        ▼
 ┌────────────────┐
-│ DialogueAgent  │  共感 + ナッジ + 判別質問を含む対話応答の生成
+│ DialogueAgent  │  Generate dialogue response with empathy + nudge + discriminating questions
 └────────────────┘
        │
        ▼
@@ -58,10 +58,10 @@ User Input + Persona + PKG
 
 | Condition | `use_pkg` | `use_rag` | `use_judge` | `is_single` | Purpose |
 |-----------|-----------|-----------|-------------|-------------|---------|
-| **A** (Full)    | ✓ | ✓ | ✓ | ✗ | 全機能有効 |
-| **B** (−PKG)    | ✗ | ✓ | ✓ | ✗ | PKG の役割を観察 |
-| **C** (−RAG)    | ✓ | ✗ | ✓ | ✗ | RAG の役割を観察 |
-| **D** (Single)  | ✓ | ✓ | ✓ | ✓ | パイプライン分解なし（単一エージェント） |
+| **A** (Full)    | ✓ | ✓ | ✓ | ✗ | All features enabled |
+| **B** (−PKG)    | ✗ | ✓ | ✓ | ✗ | Observe PKG role |
+| **C** (−RAG)    | ✓ | ✗ | ✓ | ✗ | Observe RAG role |
+| **D** (Single)  | ✓ | ✓ | ✓ | ✓ | No pipeline decomposition (single agent) |
 
 ---
 
@@ -69,92 +69,92 @@ User Input + Persona + PKG
 
 ```
 .
-├── docker-compose.yml         # Neo4j (community) コンテナ定義
-├── requirements.txt           # Python 依存関係
-├── .env.sample                # 環境変数テンプレート
-├── neo4j/                     # Neo4j データ永続化 (Docker volume)
-└── newresearch/               # ★ メインパッケージ
+├── docker-compose.yml         # Neo4j (community) container definition
+├── requirements.txt           # Python dependencies
+├── .env.sample                # Environment variable template
+├── neo4j/                     # Neo4j data persistence (Docker volume)
+└── newresearch/               # ★ Main package
     ├── config.py              # RunConfig, ABLATION_CONDITIONS, AzureSettings
-    ├── schemas.py             # Pydantic I/O スキーマ（全エージェント）
-    ├── scenarios.py           # 10 シナリオ × 3 ペルソナ定義
-    ├── seed_pkg.py            # Neo4j PKG シードスクリプト
-    ├── neo4j_pkg.py           # Neo4j PKG リーダー
-    ├── pkg_store.py           # PKG 読み書き（動的グラフ更新）
-    ├── pipeline.py            # マルチエージェントパイプライン (条件 A/B/C)
-    ├── pipeline_single.py     # シングルエージェントパイプライン (条件 D)
-    ├── runner.py              # アブレーション実験ランナー
-    ├── metrics.py             # メトリクス抽出 → CSV
-    ├── run_A/B/C/D.py         # 条件別実行スクリプト
+    ├── schemas.py             # Pydantic I/O schemas (all agents)
+    ├── scenarios.py           # 10 scenarios × 3 persona definitions
+    ├── seed_pkg.py            # Neo4j PKG seed script
+    ├── neo4j_pkg.py           # Neo4j PKG reader
+    ├── pkg_store.py           # PKG read/write (dynamic graph update)
+    ├── pipeline.py            # Multi-agent pipeline (conditions A/B/C)
+    ├── pipeline_single.py     # Single-agent pipeline (condition D)
+    ├── runner.py              # Ablation experiment runner
+    ├── metrics.py             # Metrics extraction → CSV
+    ├── run_A/B/C/D.py         # Condition-specific run scripts
     ├── agents/
-    │   ├── base.py            # BaseAgent (Azure OpenAI 呼び出し + ログ)
-    │   ├── context.py         # ContextAgent — O/A 抽出 + トリガー
-    │   ├── explorer.py        # ExplorerAgent — Web 検索 + LLM 解釈
-    │   ├── hypothesis.py      # HypothesisAgent — 多様な仮説生成
-    │   ├── judge.py           # JudgeAgent — 診断型評価
-    │   ├── decision.py        # DecisionAgent — 2 仮説対比選択
-    │   ├── dialogue.py        # DialogueAgent — 共感 + ナッジ応答
-    │   └── single.py          # SingleAgent (条件 D 用)
-    ├── prompts/               # エージェントプロンプト (.txt)
+    │   ├── base.py            # BaseAgent (Azure OpenAI call + logging)
+    │   ├── context.py         # ContextAgent — O/A extraction + triggers
+    │   ├── explorer.py        # ExplorerAgent — Web search + LLM interpretation
+    │   ├── hypothesis.py      # HypothesisAgent — Diverse hypothesis generation
+    │   ├── judge.py           # JudgeAgent — Diagnostic evaluation
+    │   ├── decision.py        # DecisionAgent — 2-hypothesis contrastive selection
+    │   ├── dialogue.py        # DialogueAgent — Empathy + nudge response
+    │   └── single.py          # SingleAgent (for condition D)
+    ├── prompts/               # Agent prompts (.txt)
     └── results/
-        ├── runs/{A,B,C,D}/    # 各実行ログ (JSON)
-        └── figures/           # 生成グラフ
+        ├── runs/{A,B,C,D}/    # Run logs per condition (JSON)
+        └── figures/           # Generated graphs
 ```
 
 ---
 
 ## Scenarios
 
-10 シナリオ × 3 ペルソナ = 30 ペア。各シナリオは正解が存在しない創造的判断を要求し、
-特定の認知バイアスカテゴリをストレステストする。
+10 scenarios × 3 personas = 30 pairs. Each scenario requires creative judgment with no single correct answer
+and stress-tests a specific cognitive bias category.
 
-| ID | バイアスカテゴリ | 概要 |
+| ID | Bias Category | Overview |
 |----|-----------------|------|
-| S1 | Authenticity | 「ガイドブックに載っていない本物の生活を歩きたい」 |
-| S2 | Efficiency | 「分刻みスケジュールで効率最大化したい」 |
-| S3 | Expertise | 「金沢の伝統建築は誰よりも分かっている」 |
-| S4 | Authenticity | 「観光客向け飲食店には絶対入りたくない」 |
-| S5 | Efficiency | 「徹底的にコストを抑えた旅行計画」 |
-| S6 | Expertise | 「屋久島の森のことは誰よりも分かっている」 |
-| S7 | Safety | 「海外旅行はツアーでしか行かない」 |
-| S8 | Nostalgia | 「学生時代の京都の感動を取り戻したい」 |
-| S9 | Cost | 「旅館に一泊3万円は高すぎる」 |
-| S10 | Record | 「SNS用の完璧な写真を撮ることが旅の目的」 |
+| S1 | Authenticity | "I want to walk in authentic life not in guidebooks" |
+| S2 | Efficiency | "Want to maximize efficiency with minute-by-minute scheduling" |
+| S3 | Expertise | "I know Kanazawa's traditional architecture better than anyone" |
+| S4 | Authenticity | "I absolutely don't want to go to tourist restaurants" |
+| S5 | Efficiency | "Travel plan with thoroughly minimized costs" |
+| S6 | Expertise | "I know Yakushima's forest better than anyone" |
+| S7 | Safety | "I only travel abroad on tours" |
+| S8 | Nostalgia | "I want to recapture the emotion of Kyoto from my student days" |
+| S9 | Cost | "30,000 yen per night at an inn is too expensive" |
+| S10 | Record | "The purpose of travel is to take perfect photos for SNS" |
 
 ### Personas
 
-Nemotron-Personas-Japan データセットから選定した 3 ペルソナ。
+Three personas selected from the Nemotron-Personas-Japan dataset.
 
-| ID | 名前 | 属性 | PKG |
+| ID | Name | Attributes | PKG |
 |----|------|------|-----|
-| P01 | 杉浦 泰章 | 47歳, 郵便局勤務, 新潟県 — 里山散策・地域行事・書道 | 10 nodes, 8 edges |
-| P05 | 鈴木 弥一 | 53歳, 遊技場経営, 千葉県 — データ分析・節約志向・レトロゲーム | 10 nodes, 8 edges |
-| P07 | 岡田 咲弥 | 27歳, 農業, 宮城県 — 計画的運営・地域文化・有機野菜ブランド | 10 nodes, 8 edges |
+| P01 | Yasuaki Sugiura | 47 years old, postal clerk, Niigata Prefecture — rural walks, community events, calligraphy | 10 nodes, 8 edges |
+| P05 | Yaichi Suzuki | 53 years old, arcade management, Chiba Prefecture — data analysis, budget-conscious, retro games | 10 nodes, 8 edges |
+| P07 | Sakiya Okada | 27 years old, farming, Miyagi Prefecture — planned management, regional culture, organic vegetable brand | 10 nodes, 8 edges |
 
 ---
 
 ## Quick Start
 
-セットアップの詳細は [SETUP.md](SETUP.md) を参照。
+Refer to [SETUP.md](SETUP.md) for detailed setup instructions.
 
 ```bash
-# 1. 仮想環境 + 依存関係
+# 1. Virtual environment + dependencies
 python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 
-# 2. 環境変数
-cp .env.sample .env   # → 実際の API キーを設定
+# 2. Environment variables
+cp .env.sample .env   # → Configure actual API keys
 
-# 3. Neo4j 起動 + PKG シード
+# 3. Start Neo4j + seed PKG
 docker compose up -d graph-db
 python -m newresearch.seed_pkg
 
-# 4. 単一実行
+# 4. Single run
 python -m newresearch.run_A --scenario S1 --persona P01
 
-# 5. 全アブレーション実行 (4 条件 × 10 シナリオ × 3 ペルソナ)
+# 5. Run all ablation experiments (4 conditions × 10 scenarios × 3 personas)
 python -m newresearch.runner --all
 
-# 6. メトリクス抽出
+# 6. Extract metrics
 python -m newresearch.metrics
 ```
 
@@ -176,18 +176,18 @@ python -m newresearch.metrics
 
 ## Output Format
 
-各実行は `newresearch/results/runs/{condition}/{run_id}/` に以下を生成：
+Each run generates the following files in `newresearch/results/runs/{condition}/{run_id}/`:
 
 | File | Content |
-|------|---------|
-| `config.json` | 実行設定 (条件フラグ、ペルソナ、シナリオ) |
-| `context.json` | 観察 (O)、仮定 (A)、トリガー、RAG クエリ |
-| `evidence.json` | 外部エビデンス + 外部観察 (Oext) |
-| `hypotheses.json` | 3–5 仮説 (explains, assumes, predictions, discriminating_questions) |
-| `judgements.json` | 診断結果 (fatal_flaws, explains_confirmed, safety_risk_notes) |
-| `decision.json` | 2 仮説対比選択 + user_facing_frame |
-| `final.json` | 最終応答 + empathy/nudge マーカー |
-| `response.txt` | プレーンテキスト応答 |
+|------|---------|  
+| `config.json` | Run configuration (condition flags, persona, scenario) |
+| `context.json` | Observations (O), assumptions (A), triggers, RAG queries |
+| `evidence.json` | External evidence + external observations (Oext) |
+| `hypotheses.json` | 3-5 hypotheses (explains, assumes, predictions, discriminating_questions) |
+| `judgements.json` | Diagnostic results (fatal_flaws, explains_confirmed, safety_risk_notes) |
+| `decision.json` | 2-hypothesis contrastive selection + user_facing_frame |
+| `final.json` | Final response + empathy/nudge markers |
+| `response.txt` | Plain text response |
 
 ---
 
@@ -201,49 +201,37 @@ python -m newresearch.metrics
 (:PKGNode)
 ```
 
-**動的グラフ更新**: 条件 A/C (`use_pkg=true`) では、パイプライン実行中に
-観察・トリガー・仮説・判断・決定が Neo4j に書き込まれ、PKG が動的に拡張される。
-
----
-
-## Technology Stack
-
-| Component | Technology |
-|-----------|-----------|
-| LLM | Azure OpenAI (GPT-4.1) |
-| Knowledge Graph | Neo4j Community Edition (Docker) |
-| Web Search | Serper API / Google Custom Search / Bing Search (`SEARCH_PROVIDER` 環境変数で切替) |
-| Data Validation | Pydantic v2 |
-| Language | Python 3.10+ |
+**Dynamic graph updates**: In conditions A/C (`use_pkg=true`), observations, triggers, hypotheses,
+judgments, and decisions are written to Neo4j during pipeline execution, dynamically expanding the PKG.
 
 ---
 
 ## References
 
-1. **Nemotron-Personas-Japan** — ペルソナデータセットの基盤
+1. **Nemotron-Personas-Japan** — Foundation for persona dataset
    - NVIDIA. *Nemotron-CC: Curating High-Quality Synthetic Data for LLM Training.* 2024.
-   - 本実験の 3 ペルソナ (P01, P05, P07) は Nemotron-Personas-Japan データセットから選定・拡張。
+   - The 3 personas (P01, P05, P07) in this experiment are selected and extended from the Nemotron-Personas-Japan dataset.
 
-2. **Peirce's Abductive Inference** — 推論フレームワークの理論的基盤
+2. **Peirce's Abductive Inference** — Theoretical foundation for reasoning framework
    - Peirce, C. S. *Collected Papers of Charles Sanders Peirce.* Harvard University Press, 1931–1958.
 
-3. **Personal Knowledge Graphs (PKG)** — ユーザーモデリング
+3. **Personal Knowledge Graphs (PKG)** — User modeling
    - Balog, K., & Kenter, T. *Personal Knowledge Graphs: A Research Agenda.* ICTIR 2019.
 
-4. **Agent-as-a-Judge** — LLM による診断的評価
+4. **Agent-as-a-Judge** — Diagnostic evaluation by LLM
    - Zhuge, M., et al. *Agent-as-a-Judge: Evaluate Agents with Agents.* arXiv:2410.10934, 2024.
 
-5. **Nudge Theory** — 行動変容のための選択設計
+5. **Nudge Theory** — Choice architecture for behavior change
    - Thaler, R. H., & Sunstein, C. R. *Nudge: Improving Decisions About Health, Wealth, and Happiness.* Yale University Press, 2008.
 
-6. **Neo4j** — グラフデータベース
+6. **Neo4j** — Graph database
    - Neo4j, Inc. *The Neo4j Graph Database.* https://neo4j.com/
 
-7. **Azure OpenAI Service** — LLM 推論基盤
+7. **Azure OpenAI Service** — LLM inference platform
    - Microsoft. *Azure OpenAI Service.* https://azure.microsoft.com/products/ai-services/openai-service
-   - 本実験では GPT-4.1 デプロイメントを使用。
+   - This experiment uses GPT-4.1 deployment.
 
-8. **Serper API** — Web 検索 API
+8. **Serper API** — Web search API
    - Serper. *Google Search API.* https://serper.dev/
 
 ---
