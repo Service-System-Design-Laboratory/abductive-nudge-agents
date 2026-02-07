@@ -1,0 +1,94 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーが現代社会にストレスや喧騒を感じており、歴史的空間に心理的な安定や癒しを求めていること"
+        ],
+        "best_discriminating_question": "現代的な都市観光と伝統的な町並み観光、どちらにより魅力を感じますか？",
+        "testability_notes": "ユーザーの嗜好や過去の観光経験を1-2問で確認可能。主観的回答が中心となる。",
+        "safety_risk_notes": "ユーザーの心理状態やストレスの有無を前提とするため、断定的に提示すると誤解や不快感を与える可能性がある。"
+      },
+      "rationale": "観察O1・O2を素直に説明できるが、ユーザーの内面動機を仮定しており、直接的な根拠は弱い。心理的要因の断定には注意が必要。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "Oext1",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "ユーザーの評価や関心が観光マーケティングや外部情報の影響を強く受けていること"
+        ],
+        "best_discriminating_question": "ひがし茶屋街を知ったきっかけは観光ガイドや広告など外部情報でしたか？",
+        "testability_notes": "外部エビデンスやユーザーの情報入手経路を確認することで比較的検証しやすい。",
+        "safety_risk_notes": "ユーザーの主体的な価値判断を軽視していると受け取られる可能性がある。"
+      },
+      "rationale": "観光地の演出やマーケティングの影響を強調し、O1や外部事実をよく説明できる。ユーザーの自発性を否定的に捉えられるリスクがある。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "『日本の美』やノスタルジックな価値観が観光文化の中で広く共有・消費されていること"
+        ],
+        "best_discriminating_question": "『日本の美』を感じる場所として、現代建築や現代アートを挙げることはありますか？",
+        "testability_notes": "ユーザーの価値観や他の観光地への評価を問うことで検証可能だが、価値観の多様性には注意が必要。",
+        "safety_risk_notes": "ユーザーの美意識が流行や他者の価値観に流されていると受け取られる可能性がある。"
+      },
+      "rationale": "O3やOext2を説明でき、観光文化の価値観の影響を示唆するが、個人の独自性を軽視するリスクがある。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "ユーザーの評価の根拠や比較対象に関する情報が現時点で不足していること"
+        ],
+        "best_discriminating_question": "金沢が『一番』だと感じる具体的な理由や比較対象を教えてください。",
+        "testability_notes": "追加質問で容易に検証可能。情報ギャップの指摘なので、ユーザーへの直接的な負担は少ない。",
+        "safety_risk_notes": "ユーザーの評価の妥当性を疑う形になるため、慎重な言い回しが必要。"
+      },
+      "rationale": "現状の観察情報の限界を指摘する仮説であり、他仮説の前提条件の確認にも有用。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "Oext1",
+          "Oext2",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "ユーザーが『本物の歴史』よりも『本物らしさ』の体験や自己イメージの強化を重視していること"
+        ],
+        "best_discriminating_question": "ひがし茶屋街での体験や写真をSNSなどで発信したいと思いますか？",
+        "testability_notes": "SNS利用や体験の共有意図を尋ねることで比較的検証しやすいが、ユーザーの自己認識に依存する。",
+        "safety_risk_notes": "ユーザーの動機を消費的・表層的と捉えかねないため、表現や提示方法に配慮が必要。"
+      },
+      "rationale": "観察・外部事実を広く説明できるが、ユーザーの動機を現代的消費行動に還元しすぎるリスクがある。"
+    }
+  ]
+}

@@ -1,0 +1,354 @@
+{
+  "context": {
+    "observations": [
+      {
+        "id": "O1",
+        "text": "ガイドブックに載っているような場所には一切興味がない"
+      },
+      {
+        "id": "O2",
+        "text": "地元の人しか知らない、看板も出ていないような『本物の生活』が残っている場所だけを歩きたい"
+      },
+      {
+        "id": "O3",
+        "text": "観光客向けの演出はもうお腹いっぱいだ"
+      }
+    ],
+    "assumptions": [
+      {
+        "id": "A1",
+        "text": "『本物の生活』とは観光客向けに演出されていないものだ",
+        "status": "tentative"
+      },
+      {
+        "id": "A2",
+        "text": "観光地化された場所は価値が薄いと感じている",
+        "status": "tentative"
+      },
+      {
+        "id": "A3",
+        "text": "地元の人との交流やローカルな体験に価値を感じている",
+        "status": "tentative"
+      }
+    ],
+    "questions": [
+      "なぜ観光客向けの演出に飽きてしまったのか？",
+      "『本物の生活』とは具体的にどんな体験を指すのか？",
+      "地元の人しか知らない場所でどんなことを期待しているのか？"
+    ],
+    "constraints": {
+      "tone": "supportive",
+      "safety": "avoid determinism"
+    }
+  },
+  "evidence": {
+    "triggers": [
+      {
+        "type": "focus",
+        "text": "『本物の生活』や地元の人しか知らない場所への強いこだわり"
+      },
+      {
+        "type": "ambiguity",
+        "text": "『本物の生活』とは何か、その基準が明確でない"
+      },
+      {
+        "type": "information_gap",
+        "text": "なぜ観光客向けの演出に飽きてしまったのかが不明"
+      }
+    ],
+    "external_observations": [
+      {
+        "id": "Oext1",
+        "text": "ガイドブックに載らない場所や、看板がない場所は、現地の人しか知らず、初見ではたどり着くのが難しいことが多い",
+        "source_url": "https://www.ryosou.com/simanenokunifudoki2024izumo/"
+      },
+      {
+        "id": "Oext2",
+        "text": "ガイドブックに載っていない地域の体験や人との交流は、心に残る体験になることがある",
+        "source_url": "https://www.echizenkani.com/20220513115750"
+      },
+      {
+        "id": "Oext3",
+        "text": "島の人の手描き看板など、都市部のデザインよりも現地の人の工夫や生活感が感じられるものに価値を見出す人もいる",
+        "source_url": "https://qonversations.net/interview/784/"
+      }
+    ]
+  },
+  "hypotheses": [
+    {
+      "hypothesis_id": "H1",
+      "type": "psychological",
+      "explains": [
+        "O1",
+        "O2",
+        "O3"
+      ],
+      "assumes": [
+        "A1",
+        "A2"
+      ],
+      "statement": "ユーザーは観光地化された場所や演出に対して『本物』ではないという違和感や飽きを感じているため、地元の人しか知らない場所に価値を見出している。",
+      "mechanism": "繰り返し観光地化された体験を重ねるうちに、表面的な演出に満足できなくなり、よりリアルで未加工な体験を求める心理が働いている。",
+      "predictions": [
+        "観光地での体験に物足りなさや虚しさを感じる",
+        "地元の人との偶発的な交流を重視する"
+      ],
+      "discriminating_questions": [
+        "最近訪れた観光地で物足りなさを感じた具体的なエピソードはありますか？"
+      ],
+      "persona_link": [
+        "p01_n1",
+        "p01_n4",
+        "p01_n5"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H2",
+      "type": "value",
+      "explains": [
+        "O2",
+        "O3",
+        "Oext2"
+      ],
+      "assumes": [
+        "A3"
+      ],
+      "statement": "ユーザーは地域住民との信頼や、自然との調和といった価値観を重視しており、それが観光客向けの演出よりも『本物』と感じる体験を求める動機になっている。",
+      "mechanism": "PKGにある『自然との調和』『地域住民との信頼』という価値観が、観光地の演出よりもローカルな体験への志向を強めている。",
+      "predictions": [
+        "地域行事や祭り、ローカルツアーなど住民との交流を好む",
+        "伝統的な調理法や生活様式に興味を持つ"
+      ],
+      "discriminating_questions": [
+        "地域の人との交流や伝統的な行事に参加した経験はありますか？"
+      ],
+      "persona_link": [
+        "p01_n4",
+        "p01_n5",
+        "p01_n2",
+        "p01_n7"
+      ],
+      "evidence_link": [
+        "ev:2"
+      ],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H3",
+      "type": "environmental",
+      "explains": [
+        "O1",
+        "O2",
+        "Oext1"
+      ],
+      "assumes": [
+        "A1"
+      ],
+      "statement": "ガイドブックに載っていない場所は、アクセスや情報が限られているため、偶発的な発見や冒険的な体験ができること自体が魅力になっている。",
+      "mechanism": "情報化社会で誰でもアクセスできる場所よりも、情報が少なく到達困難な場所を目指すことで、体験の希少性や発見の喜びが増す。",
+      "predictions": [
+        "地図やネットに載っていない場所を探すこと自体を楽しむ",
+        "道に迷ったり、偶然の出会いをポジティブに受け止める"
+      ],
+      "discriminating_questions": [
+        "たどり着くのが難しい場所に行くこと自体にワクワクしますか？"
+      ],
+      "persona_link": [
+        "p01_n1",
+        "p01_n7"
+      ],
+      "evidence_link": [
+        "ev:1"
+      ],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H4",
+      "type": "social",
+      "explains": [
+        "O2",
+        "O3",
+        "Oext3"
+      ],
+      "assumes": [
+        "A3"
+      ],
+      "statement": "ユーザーは観光客向けの演出や都市的なデザインよりも、地元の人の工夫や生活感、素朴さに本当の価値を感じている。",
+      "mechanism": "観光地の均質化や演出された『本物らしさ』よりも、地域独自の生活感や人の温かみがある場所を求めている。",
+      "predictions": [
+        "手作りの看板や地元の人の案内を好む",
+        "都市的な洗練よりも素朴さや不完全さに惹かれる"
+      ],
+      "discriminating_questions": [
+        "地元の人の手作り感や素朴さに惹かれることはありますか？"
+      ],
+      "persona_link": [
+        "p01_n5",
+        "p01_n4"
+      ],
+      "evidence_link": [
+        "ev:3"
+      ],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H5",
+      "type": "goal_mismatch",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "Oext1"
+      ],
+      "assumes": [
+        "A2"
+      ],
+      "statement": "実は『本物の生活』やローカルな場所を求めるのは、観光そのものへの興味が薄れているか、観光を通じて何か別の目的（自己確認や孤独回避など）を満たそうとしているからかもしれない。",
+      "mechanism": "観光地や演出された体験に飽きた結果、旅そのものではなく『自分だけの体験』や『他者との差異化』を求める心理が強まっている可能性がある。",
+      "predictions": [
+        "旅の目的が体験そのものから自己発見やアイデンティティの確認に変化している",
+        "他の観光客と同じ体験を避ける傾向が強い"
+      ],
+      "discriminating_questions": [
+        "最近の旅で『自分だけの発見』や『他の人と違う体験』を強く意識したことはありますか？"
+      ],
+      "persona_link": [
+        "p01_n1"
+      ],
+      "evidence_link": [
+        "ev:1"
+      ],
+      "is_reframing": true
+    }
+  ],
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A2"
+        ],
+        "best_discriminating_question": "最近訪れた観光地で物足りなさを感じた具体的なエピソードはありますか？",
+        "testability_notes": "過去の観光体験に対する満足度や印象を尋ねることで検証可能。",
+        "safety_risk_notes": "ユーザーの価値観を否定しない範囲で提示すればリスクは低い。"
+      },
+      "rationale": "観光地化への飽きや違和感が動機となっているという説明は、発言内容とPKGの価値観に合致している。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "A3"
+        ],
+        "best_discriminating_question": "地域の人との交流や伝統的な行事に参加した経験はありますか？",
+        "testability_notes": "地域住民との交流や伝統体験への関心・経験を尋ねることで検証可能。",
+        "safety_risk_notes": "価値観の肯定的な側面を強調するためリスクは低い。"
+      },
+      "rationale": "PKGの価値観と外部観察が一致しており、ユーザーの志向を素直に説明できる。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "A1"
+        ],
+        "best_discriminating_question": "たどり着くのが難しい場所に行くこと自体にワクワクしますか？",
+        "testability_notes": "情報の少ない場所への興味や冒険心の有無を尋ねることで検証可能。",
+        "safety_risk_notes": "冒険志向を強調しすぎると安全配慮が必要。"
+      },
+      "rationale": "情報の希少性や偶発性が魅力という説明は、発言の一部を補強するが、動機の深掘りはやや弱い。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "A3"
+        ],
+        "best_discriminating_question": "地元の人の手作り感や素朴さに惹かれることはありますか？",
+        "testability_notes": "素朴さや生活感への共感・好みを尋ねることで検証可能。",
+        "safety_risk_notes": "肯定的な価値観の提示なのでリスクは低い。"
+      },
+      "rationale": "生活感や素朴さへの志向を説明できるが、観光そのものへの疑問には踏み込まない。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "A2"
+        ],
+        "best_discriminating_question": "最近の旅で『自分だけの発見』や『他の人と違う体験』を強く意識したことはありますか？",
+        "testability_notes": "旅の目的や体験の意味づけを深掘りする質問で検証可能。",
+        "safety_risk_notes": "自己目的や動機の再解釈を促すため、やや不快感や違和感を与える可能性があるが、否定的な断定を避ければ許容範囲。"
+      },
+      "rationale": "発言の表面的な意味を反転させ、観光そのものへの興味の変化や自己発見欲求への転換という新しい視点を提供できる。"
+    }
+  ],
+  "decision": {
+    "selected_hypothesis_id": "H5",
+    "contrasting_hypothesis_id": "H4",
+    "selection_rationale": "H5を採用すると、ユーザーの発言『ガイドブックに載っているような場所には一切興味がない』の意味が、『観光地や演出された体験に飽きた結果、旅そのものではなく“自分だけの発見”や“他者との差異化”を求めている』という自己確認や目的の変化に読み替わる。H4は、発言を額面通り“地元の人の生活感や素朴さに価値を感じている”という解釈にとどまる。どちらの立場に立つかで、今後の旅の目的や行動選択が大きく変わる。",
+    "user_facing_frame": {
+      "framing": "options",
+      "questions": [
+        "あなたの旅の目的は、地元の人の素朴な生活や交流そのものに価値を感じているからでしょうか？",
+        "それとも、観光地や演出された体験に飽きて、“自分だけの発見”や“他の人と違う体験”を求める気持ちが強くなっているからでしょうか？"
+      ],
+      "options": [
+        "地元の人の生活感や素朴さに価値を感じている（H4）",
+        "“自分だけの発見”や“他者との差異化”を求めている（H5）"
+      ]
+    }
+  },
+  "final_response": "お話を聞いて、観光地化された場所や演出された体験にはもう満足できず、地元の人しか知らないような『本物の生活』に惹かれているお気持ちが伝わってきました。つまり、ガイドブックに載っていない場所や、看板もないようなところを歩きたいということですね。\n\n一つの見方として、地元の人の素朴な生活や交流そのものに価値を感じている、という解釈もできますし、もう一つは、観光地や演出された体験に飽きて、“自分だけの発見”や“他の人と違う体験”を求める気持ちが強くなっている、という可能性も考えられます。\n\n例えば、最近の旅で『自分だけの発見』や『他の人と違う体験』を強く意識したことはありますか？それとも、地元の人の手作り感や素朴さに惹かれることが多いでしょうか？\n\nどちらの立場に立つかで、これからの旅の選び方や楽しみ方が少し変わるかもしれません。もし“自分だけの発見”を重視するなら、行き先を決めずにふらっと歩いてみたり、地図にない場所を探してみるのも面白いかもしれません。逆に、地元の人との交流を重視するなら、地域の行事や小さな集まりに顔を出してみるのも良さそうです。\n\n同じように“ガイドブックに載らない旅”を楽しんでいる人の体験談をSNSで探してみるのも、ヒントになるかもしれません。まずは、次の週末に近くの知らない路地や、地元の人にしかわからない小さなイベントを探してみるのはいかがでしょう？\n\nどちらの立場が今のあなたの気持ちや旅の目的に近いと感じますか？",
+  "markers": {
+    "empathy": {
+      "acknowledgement": true,
+      "reflection": true,
+      "perspective_prompt": true
+    },
+    "nudge": {
+      "easy": true,
+      "attractive": true,
+      "social": true,
+      "timely": true,
+      "has_question": true,
+      "has_options": true,
+      "has_small_action": true,
+      "directive_level": "low"
+    }
+  }
+}

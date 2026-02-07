@@ -1,0 +1,96 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーが屋久島や縄文杉に繰り返し訪れることで特別な体験や一体感を得ている",
+          "その体験が“人の手が入っていない”原生林イメージと強く結びついている"
+        ],
+        "best_discriminating_question": "屋久島以外の自然地でも同じような神秘性や一体感を感じるか？",
+        "testability_notes": "ユーザーへのインタビューや発言分析で比較的容易に検証可能。",
+        "safety_risk_notes": "ユーザーの体験や感情を一般化しすぎると、本人の意図とずれる可能性がある。"
+      },
+      "rationale": "ユーザーの体験と原生林イメージの心理的結合を説明できるが、O3（世界遺産前から通っている）やO4（誰よりも分かっている）への直接的説明力は弱い。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O4",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "ユーザーの“原生林”理解が実態と乖離している",
+          "外部エビデンス（専門家見解）が妥当である"
+        ],
+        "best_discriminating_question": "原生林の定義や管理実態についてどの程度知っているか？",
+        "testability_notes": "ユーザーの知識や認識を直接質問することで検証可能。外部エビデンスも利用できる。",
+        "safety_risk_notes": "ユーザーの知識不足を指摘する形になるため、断定的に伝えると反発や不快感を生むリスクがある。"
+      },
+      "rationale": "外部エビデンスに基づき、ユーザーの認識と実態のギャップを説明できる。O2, O4, Oext1を強くカバーする。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "縄文杉周辺で人為的な管理が行われている",
+          "ユーザーがその事実を十分認識していない"
+        ],
+        "best_discriminating_question": "屋久島訪問時に管理作業や観光向けの整備を目にしたことがあるか？",
+        "testability_notes": "現地の管理実態は外部エビデンスで確認可能。ユーザーの認識はインタビューで検証できる。",
+        "safety_risk_notes": "“自然”のイメージと現実の乖離を指摘するため、ユーザーの体験価値を否定する印象を与えないよう配慮が必要。"
+      },
+      "rationale": "現地の管理実態とユーザーの体験のズレを説明し、O2, O3, Oext2をカバー。外部エビデンスも裏付けとなる。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "長年の体験や先行者意識が自己価値や知識の優位性の根拠として働いている"
+        ],
+        "best_discriminating_question": "自分の屋久島体験が他の訪問者とどう違うと考えているか？",
+        "testability_notes": "ユーザーの発言や態度から比較的容易に検証可能。",
+        "safety_risk_notes": "ユーザーの自己認識や誇りを扱うため、断定的な表現は避けるべき。"
+      },
+      "rationale": "長期訪問や自己優越感を説明でき、O3, O4に強いが、原生林イメージや環境実態との関連は弱い。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O4",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "“自然”や“原生林”の定義が曖昧であることをユーザー自身も感じている",
+          "自己の特別性を維持したいという心理が働いている"
+        ],
+        "best_discriminating_question": "“自然”や“原生林”の定義が曖昧であることについてどう考えるか？",
+        "testability_notes": "ユーザーの反応や発言から検証可能だが、深層心理の推測を含むため慎重なアプローチが必要。",
+        "safety_risk_notes": "ユーザーのアイデンティティや自己像に踏み込むため、誤解や防衛的反応を招きやすい。"
+      },
+      "rationale": "“自然”概念の曖昧さと自己像の関係を説明し、O2, O4, Oext3をカバー。リフレーミング仮説として新たな視点を提供するが、心理的リスクも高い。"
+    }
+  ]
+}

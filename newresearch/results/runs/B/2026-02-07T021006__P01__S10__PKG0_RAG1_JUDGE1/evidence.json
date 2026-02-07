@@ -1,0 +1,73 @@
+{
+  "triggers": [
+    {
+      "type": "information_gap",
+      "text": "ユーザーは『もっと効率的に映える写真を撮るコツ』を求めているが、観察や仮定には具体的な効率化方法や映える写真の撮影テクニックが記載されていない。"
+    },
+    {
+      "type": "focus",
+      "text": "SNSにアップするための完璧な写真を撮ることが旅の目的であり、SNS映えを重視している点が特に注目される。"
+    }
+  ],
+  "rag_queries": [
+    "SNS映えする写真を効率的に撮るコツ",
+    "旅行中に三脚とカメラを使ってベストアングルを見つける方法",
+    "写真撮影の効率化テクニック",
+    "SNSで高評価を得られる写真撮影のポイント"
+  ],
+  "evidence_items": [
+    {
+      "rank": 1,
+      "title": "インスタ映えする「おしゃれな写真の撮り方」入門ガイド",
+      "snippet": "インスタ映えする写真を撮るには、自然光を取り入れるのもおススメです。 自然光は太陽からの光であり、自然な色合いを引き出すことができます。被写体の ...",
+      "url": "https://unique1.co.jp/column/sns_operation/8580/",
+      "source_type": "com"
+    },
+    {
+      "rank": 2,
+      "title": "インスタ映えする写真の撮り方と加工方法を徹底解説",
+      "snippet": "風景を美しく撮影するには、アングルを水平に保ち、自然光が差し込む時間帯を選ぶことが大切です。 水平に撮ることで写真に安定感が生まれ、バランスの ...",
+      "url": "https://sns-nakodo.com/photographs-that-shine/",
+      "source_type": "com"
+    },
+    {
+      "rank": 3,
+      "title": "【初心者でもOK】おしゃれな写真の撮り方とは インスタ映えな ...",
+      "snippet": "光の量をたくさん集める ことが、被写体を綺麗に写すコツです。室内で撮影する際に暗く写ってしまう人は、窓際やベランダなどの太陽光が当たる場所に移動 ...",
+      "url": "https://app-liv.jp/articles/135312/",
+      "source_type": "com"
+    },
+    {
+      "rank": 4,
+      "title": "自分や周りの写真、どうやったらうまく撮れるんだろう？",
+      "snippet": "使いやすくて、畳みやすくて、そこそこ高さがある、良いスマホ用三脚と、Lens Buddyアプリ。 その場で写真を撮るだけなら、 みたいに、ワンタッチで開い ...",
+      "url": "https://www.reddit.com/r/solotravel/comments/1q4gdof/dont_know_how_to_take_good_photos_of_myselfaround/?tl=ja",
+      "source_type": "other"
+    },
+    {
+      "rank": 5,
+      "title": "@みさに返信 手元って俯瞰撮影のことだと思うんですが、三脚 ...",
+      "snippet": "マイク、カメラ、三脚の効果的な使用方法を紹介します。今すぐ試してみてください！#iPad文房具 #デジタルプランナー #iPad活用 #動画撮影裏側.",
+      "url": "https://www.tiktok.com/@nacchi_gadget/video/7226908474146344193",
+      "source_type": "other"
+    }
+  ],
+  "external_observations": [
+    {
+      "id": "Oext1",
+      "text": "SNS映え写真の撮影テクニックや加工方法が企業によって体系化され、マーケティングの一環として広く提供されている。",
+      "source_url": "https://unique1.co.jp/column/sns_operation/8580/"
+    },
+    {
+      "id": "Oext2",
+      "text": "『自然な美しさ』や『本物らしさ』を演出するための撮影・加工ノウハウが、実際には人工的な手法として普及している。",
+      "source_url": "https://sns-nakodo.com/photographs-that-shine/"
+    },
+    {
+      "id": "Oext3",
+      "text": "SNSで写真を共有する人が増えることで、絶景ポイントや撮影スポットの価値や意味が『映える写真を撮る場』として再定義されている。",
+      "source_url": "https://app-liv.jp/articles/135312/"
+    }
+  ],
+  "notes": "外部観察は、写真撮影やSNS投稿が個人の趣味や表現を超えて、商品化・演出・観察者効果によって社会的に変質している構造的事実に着目しています。"
+}

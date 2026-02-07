@@ -1,0 +1,96 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A2"
+        ],
+        "best_discriminating_question": "最近訪れた観光地で物足りなさを感じた具体的なエピソードはありますか？",
+        "testability_notes": "過去の観光体験に対する満足度や印象を尋ねることで検証可能。",
+        "safety_risk_notes": "ユーザーの価値観を否定しない範囲で提示すればリスクは低い。"
+      },
+      "rationale": "観光地化への飽きや違和感が動機となっているという説明は、発言内容とPKGの価値観に合致している。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "A3"
+        ],
+        "best_discriminating_question": "地域の人との交流や伝統的な行事に参加した経験はありますか？",
+        "testability_notes": "地域住民との交流や伝統体験への関心・経験を尋ねることで検証可能。",
+        "safety_risk_notes": "価値観の肯定的な側面を強調するためリスクは低い。"
+      },
+      "rationale": "PKGの価値観と外部観察が一致しており、ユーザーの志向を素直に説明できる。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "A1"
+        ],
+        "best_discriminating_question": "たどり着くのが難しい場所に行くこと自体にワクワクしますか？",
+        "testability_notes": "情報の少ない場所への興味や冒険心の有無を尋ねることで検証可能。",
+        "safety_risk_notes": "冒険志向を強調しすぎると安全配慮が必要。"
+      },
+      "rationale": "情報の希少性や偶発性が魅力という説明は、発言の一部を補強するが、動機の深掘りはやや弱い。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "A3"
+        ],
+        "best_discriminating_question": "地元の人の手作り感や素朴さに惹かれることはありますか？",
+        "testability_notes": "素朴さや生活感への共感・好みを尋ねることで検証可能。",
+        "safety_risk_notes": "肯定的な価値観の提示なのでリスクは低い。"
+      },
+      "rationale": "生活感や素朴さへの志向を説明できるが、観光そのものへの疑問には踏み込まない。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "A2"
+        ],
+        "best_discriminating_question": "最近の旅で『自分だけの発見』や『他の人と違う体験』を強く意識したことはありますか？",
+        "testability_notes": "旅の目的や体験の意味づけを深掘りする質問で検証可能。",
+        "safety_risk_notes": "自己目的や動機の再解釈を促すため、やや不快感や違和感を与える可能性があるが、否定的な断定を避ければ許容範囲。"
+      },
+      "rationale": "発言の表面的な意味を反転させ、観光そのものへの興味の変化や自己発見欲求への転換という新しい視点を提供できる。"
+    }
+  ]
+}
