@@ -82,7 +82,7 @@ User Input + Persona + PKG
     ├── pkg_store.py           # PKG 読み書き（動的グラフ更新）
     ├── pipeline.py            # マルチエージェントパイプライン (条件 A/B/C)
     ├── pipeline_single.py     # シングルエージェントパイプライン (条件 D)
-    ├── runner.py              # アブレーション実験ランナー
+    ├── runner.py              # アブレーション実験ランナー（PKG 自動リセット付き）
     ├── metrics.py             # メトリクス抽出 → CSV
     ├── run_A/B/C/D.py         # 条件別実行スクリプト
     ├── agents/
@@ -148,13 +148,22 @@ cp .env.sample .env   # → 実際の API キーを設定
 docker compose up -d graph-db
 python -m newresearch.seed_pkg
 
-# 4. 単一実行
+# 4. Single run
+#    ⚠ WARNING: run_A/B/C/D.py do NOT reset PKG before execution.
+#    Running them consecutively may cause cross-run contamination.
+#    Use `runner.py --all` for reproducible experiments.
 python -m newresearch.run_A --scenario S1 --persona P01
 
-# 5. 全アブレーション実行 (4 条件 × 10 シナリオ × 3 ペルソナ)
+# 5. Full ablation (4 conditions × 10 scenarios × 3 personas)
+#    PKG is automatically reset (reset_to_seed) before each run — no manual init needed.
+#    If interrupted, already-completed runs for the day are auto-skipped on restart.
 python -m newresearch.runner --all
 
-# 6. メトリクス抽出
+# Subset examples
+python -m newresearch.runner --all --conditions A B
+python -m newresearch.runner --all --personas P01 --scenarios S1 S2 S3
+
+# 6. Extract metrics
 python -m newresearch.metrics
 ```
 
@@ -201,8 +210,18 @@ python -m newresearch.metrics
 (:PKGNode)
 ```
 
-**動的グラフ更新**: 条件 A/C (`use_pkg=true`) では、パイプライン実行中に
-観察・トリガー・仮説・判断・決定が Neo4j に書き込まれ、PKG が動的に拡張される。
+**Dynamic graph update:** Under conditions A/C (`use_pkg=true`), observations, triggers,
+hypotheses, judgements, and decisions are written to Neo4j during pipeline execution,
+dynamically extending the PKG.
+
+**Automatic PKG reset:** `runner.py` calls `reset_to_seed()` immediately before each run,
+deleting all runtime-generated nodes (those with a `source` property) and restoring the
+graph to its seed state. This prevents cross-run contamination and guarantees that every
+run starts from the same initial PKG (10 nodes, 8 edges).
+
+**⚠ Note:** `run_A.py` / `run_B.py` / `run_C.py` / `run_D.py` do **NOT** call
+`reset_to_seed()`. Running them consecutively without manual reset may cause
+cross-run contamination in Neo4j.
 
 ---
 
