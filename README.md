@@ -1,210 +1,303 @@
-# Multi-Agent System with Azure OpenAI, LangChain, and Neo4j
+# Abductive Nudge Agents
 
-マルチエージェントシステム - Azure OpenAI、LangChain、Neo4jを使用した高度な会話AIシステム
+**Empathy-Driven Abductive Reasoning in Multi-Agent Dialogue Systems**
+
+アブダクティブ推論（仮説生成型推論）とマルチエージェントシステムを活用した、共感的対話システムの研究実装プロジェクトです。
 
 ## 🌟 概要
 
-このプロジェクトは、7つの専門AIエージェントが協調して動作するマルチエージェントシステムです。ユーザーの入力を分析し、外部情報を探索し、仮説を立て、検証し、最終的にユーザー属性に基づいたパーソナライズされたナッジメッセージを生成します。
+このプロジェクトは、6つの専門AIエージェントが協調してアブダクティブ推論サイクルを実行し、ユーザーの発話から観察を抽出し、仮説を生成・検証し、共感的かつパーソナライズされたナッジメッセージを生成する対話システムです。
+
+### 主要な特徴
+
+- **アブダクティブ推論パイプライン**: 観察(O) → 仮定(A) → 仮説(H) → 診断 → 選択のサイクルを実装
+- **パーソナルナレッジグラフ(PKG)**: Neo4jを使用したユーザー属性・興味・価値観の構造化表現
+- **外部エビデンス検索(RAG)**: Serper APIによるリアルタイム情報収集
+- **診断的評価**: Agent-as-a-Judge による仮説の致命的欠陥検出と説明力評価
+- **実験的デザイン**: 4条件（Full, -PKG, -RAG, -Judge）でのアブレーション実験に対応
 
 ### エージェント構成
 
-1. **Context Agent** (旧 Perception Agent) - ユーザー入力からナレッジグラフを作成
-2. **Chair Agent** (1回目) - 議題と会話の方向性を決定
-3. **Explorer Agent** - Serper API（Google検索）を使用して外部情報を探索
-4. **Abstract Agent** (旧 Witness Agent) - 探索結果から仮説を生成
-5. **Critic Agent** - 仮説を検証
-6. **Chair Agent** (2回目) - 仮説の優先順位付け
-7. **Dialog Agent** (旧 Nudge Agent) - パーソナライズされた出力を生成
+1. **ContextAgent** - ユーザー発話から観察(O)と仮定(A)を抽出、トリガーとRAGクエリを生成
+2. **ExplorerAgent** - Serper API検索と外部観察(Oext)の抽出
+3. **HypothesisAgent** - 多様な仮説(H)の生成（各仮説は説明対象・予測・判別質問を含む）
+4. **JudgeAgent** - 診断的評価（致命的欠陥、説明力、判別質問の有効性）
+5. **DecisionAgent** - 2仮説の対比的選択
+6. **DialogueAgent** - 共感とナッジと判別質問を含む対話応答の生成
 
 ## 🏗️ アーキテクチャ
 
+### アブダクティブ推論サイクル
+
 ```
-┌─────────────┐
-│   User      │
-└──────┬──────┘
-       │
-       ▼
+User Input
+    ↓
 ┌─────────────────────────────────────────┐
-│   Context Agent                         │
-│   - Knowledge Graph作成                 │
-│   - エンティティ・関係性抽出             │
-└──────┬──────────────────────────────────┘
-       │
-       ▼
+│ ContextAgent                            │
+│ • 観察(O): 確定的事実の抽出             │
+│ • 仮定(A): 暫定的前提の設定             │
+│ • Triggers: O/Aのギャップから導出       │
+│ • RAG Queries: 未知の情報への問い       │
+└──────────┬──────────────────────────────┘
+           │
+           ↓
 ┌─────────────────────────────────────────┐
-│   Chair Agent (議題設定)                │
-│   - 会話の方向性決定                     │
-│   - サブトピック分解                     │
-└──────┬──────────────────────────────────┘
-       │
-       ▼
+│ ExplorerAgent                           │
+│ • Serper API検索実行                    │
+│ • 外部観察(Oext)の抽出                  │
+│ • URL・ソースタイプの記録               │
+└──────────┬──────────────────────────────┘
+           │
+           ↓
 ┌─────────────────────────────────────────┐
-│   Explorer Agent                        │
-│   - Serper API (Google検索)による        │
-│     外部情報探索                         │
-│   - 関連性評価                           │
-└──────┬──────────────────────────────────┘
-       │
-       ▼
+│ HypothesisAgent                         │
+│ • 仮説(H)の多様な生成                   │
+│ • 各仮説に対して:                       │
+│   - explains: [O1, Oext1...]           │
+│   - assumes: [A1...]                   │
+│   - predictions: 予測される帰結         │
+│   - discriminating_questions: 判別質問  │
+└──────────┬──────────────────────────────┘
+           │
+           ↓
 ┌─────────────────────────────────────────┐
-│   Abstract Agent                        │
-│   - 仮説生成                             │
-│   - 抽象化・洞察導出                     │
-└──────┬──────────────────────────────────┘
-       │
-       ▼
+│ JudgeAgent                              │
+│ • 診断的評価（点数なし）:               │
+│   - fatal_flaws: 致命的欠陥             │
+│   - explains_confirmed: 説明力確認      │
+│   - best_discriminating_question 選定   │
+│   - safety_risk_notes: リスク注記       │
+└──────────┬──────────────────────────────┘
+           │
+           ↓
 ┌─────────────────────────────────────────┐
-│   Critic Agent                          │
-│   - 仮説検証                             │
-│   - 議題との整合性確認                   │
-└──────┬──────────────────────────────────┘
-       │
-       ▼
+│ DecisionAgent                           │
+│ • 2仮説の対比的選択                     │
+│ • 質的に異なる説明の切り口を提示        │
+└──────────┬──────────────────────────────┘
+           │
+           ↓
 ┌─────────────────────────────────────────┐
-│   Chair Agent (優先順位付け)            │
-│   - ユーザー属性に基づく優先順位決定     │
-└──────┬──────────────────────────────────┘
-       │
-       ▼
+│ DialogueAgent                           │
+│ • Acknowledgement + Reflection (共感)   │
+│ • Options + Small Action (ナッジ)       │
+│ • 判別質問を含む応答生成                │
+└──────────┬──────────────────────────────┘
+           │
+           ↓
 ┌─────────────────────────────────────────┐
-│   Dialog Agent                          │
-│   - パーソナライズされたナッジ生成       │
-│   - 行動変容の促進                       │
-└──────┬──────────────────────────────────┘
-       │
-       ▼
-┌─────────────────────────────────────────┐
-│   Neo4j Database                        │
-│   - 会話履歴保存                         │
-│   - ユーザー属性管理                     │
-│   - ナレッジグラフ保存                   │
+│ Neo4j Database                          │
+│ • Personal Knowledge Graph (PKG)        │
+│ • ペルソナ属性・興味・価値観            │
 └─────────────────────────────────────────┘
 ```
 
 ## 📁 プロジェクト構造
 
 ```
-AI-one-hour/
-├── src/
-│   ├── agents/              # AIエージェント
-│   │   ├── base_agent.py    # ベースエージェントクラス
-│   │   ├── context.py       # Context Agent
-│   │   ├── chair.py         # Chair Agent
-│   │   ├── explorer.py      # Explorer Agent
-│   │   ├── abstract.py      # Abstract Agent
-│   │   ├── critic.py        # Critic Agent
-│   │   └── dialog.py        # Dialog Agent
-│   ├── models/              # データモデル
-│   │   └── schemas.py       # Pydanticスキーマ
-│   ├── orchestration/       # オーケストレーション
-│   │   └── workflow.py      # LangGraphワークフロー
-│   ├── utils/               # ユーティリティ
-│   │   ├── config.py        # 設定管理
-│   │   ├── neo4j_client.py  # Neo4jクライアント
-│   │   ├── azure_openai_client.py  # Azure OpenAIクライアント
-│   │   ├── serper_client.py # Serper API (Google検索)クライアント
-│   │   ├── logger.py        # 会話ログ管理
-│   │   └── visualizer.py    # ワークフロー可視化
-│   └── main.py              # メインアプリケーション
+abductive-nudge-agents/
+├── newresearch/             # メイン研究実装
+│   ├── agents/              # AIエージェント実装
+│   │   ├── base.py          # BaseAgent (LLM call + logging)
+│   │   ├── context.py       # ContextAgent
+│   │   ├── explorer.py      # ExplorerAgent
+│   │   ├── hypothesis.py    # HypothesisAgent
+│   │   ├── judge.py         # JudgeAgent
+│   │   ├── decision.py      # DecisionAgent
+│   │   └── dialogue.py      # DialogueAgent
+│   ├── prompts/             # エージェントプロンプト
+│   │   ├── context.txt
+│   │   ├── explorer.txt
+│   │   ├── hypothesis.txt
+│   │   ├── judge.txt
+│   │   ├── decision.txt
+│   │   └── dialogue.txt
+│   ├── results/             # 実験結果出力
+│   │   └── runs/            # 各実行ログ
+│   ├── config.py            # 実行設定
+│   ├── schemas.py           # Pydanticスキーマ
+│   ├── scenarios.py         # 実験シナリオ定義
+│   ├── seed_pkg.py          # Neo4j PKGシードスクリプト
+│   ├── neo4j_pkg.py         # Neo4j PKGリーダー
+│   ├── pipeline.py          # パイプライン実行
+│   ├── run_A.py             # 実験条件A (Full)
+│   ├── run_B.py             # 実験条件B (-PKG)
+│   ├── run_C.py             # 実験条件C (-RAG)
+│   ├── run_D.py             # 実験条件D (-Judge)
+│   ├── metrics.py           # メトリクス抽出
+│   └── visualize.py         # 可視化
+├── src/                     # (旧実装・参考用)
+│   └── ...
+├── neo4j/                   # Neo4jデータ永続化
+│   ├── data/
+│   ├── logs/
+│   └── plugins/
 ├── tests/                   # テスト
 │   └── test_system.py
-├── logs/                    # 会話ログ（自動生成）
 ├── cli.py                   # CLIインターフェース
-├── docker-compose.yml       # Docker設定
+├── docker-compose.yml       # Neo4j Docker設定
 ├── requirements.txt         # Python依存関係
-├── .env                     # 環境変数
-├── workflow_diagram.mermaid # ワークフロー図（自動生成）
-├── workflow_diagram.html    # ワークフロー図HTML（自動生成）
-├── .gitignore
-└── README.md
+├── .env                     # 環境変数（要作成）
+└── README.md               # このファイル
 ```
 
 ## 🚀 セットアップ
 
-### 1. Neo4jの起動
+### 前提条件
+
+- **Python 3.10-3.13** 推奨（3.14でも動作可能だが、一部パッケージでビルド問題が発生する可能性あり）
+- **Docker & Docker Compose** - Neo4j実行用
+- **Azure OpenAI API** - GPTモデルアクセス用
+- **Serper API** (オプション) - Google検索機能用
+
+### 1. リポジトリのクローン
 
 ```bash
-# Docker Composeでneo4jを起動
-docker-compose up -d
-
-# ブラウザでNeo4jにアクセス
-# http://localhost:7474
+git clone <repository-url>
+cd abductive-nudge-agents
 ```
 
 ### 2. Python仮想環境のセットアップ
 
 ```bash
 # 仮想環境作成
-python3 -m venv venv
+python3 -m venv .venv
 
 # 仮想環境を有効化
-source venv/bin/activate  # macOS/Linux
+source .venv/bin/activate  # macOS/Linux
 # または
-.\venv\Scripts\activate  # Windows
+.venv\Scripts\activate     # Windows
 
 # 依存関係インストール
 pip install -r requirements.txt
 ```
 
-### 3. 環境変数の設定
+**Python 3.14を使用する場合の注意:**
+一部のパッケージ（pydantic-core）がPyO3のビルドで問題が発生する場合、以下の環境変数を設定してください:
 
-`.env`ファイルに以下の設定が必要です:
+```bash
+export PYO3_USE_ABI3_FORWARD_COMPATIBILITY=1
+pip install -r requirements.txt
+```
+
+### 3. Neo4jの起動
+
+```bash
+# Docker Composeでneo4jを起動
+docker-compose up -d
+
+# Neo4j Browser でアクセス確認
+# http://localhost:7474
+# 初期認証: なし（docker-compose.ymlでNEO4J_AUTH=none設定済み）
+```
+
+### 4. 環境変数の設定
+
+`.env.sample`ファイルをコピーして`.env`ファイルを作成し、実際の値を設定:
+
+```bash
+# .env.sampleを.envにコピー
+cp .env.sample .env
+
+# エディタで開いて実際の値を設定
+# macOS: open .env
+# Linux: nano .env または vi .env
+```
+
+設定が必要な項目:
 
 ```env
 # Azure OpenAI設定
-AZURE_OPENAI_API_KEY=your_key
-AZURE_OPENAI_ENDPOINT=your_endpoint
+AZURE_OPENAI_API_KEY=your_api_key_here
+AZURE_OPENAI_ENDPOINT=https://your-resource.openai.azure.com/openai/deployments/gpt-4.1/chat/completions?api-version=2025-01-01-preview
 AZURE_OPENAI_API_VERSION=2025-01-01-preview
 AZURE_OPENAI_DEPLOYMENT=gpt-4.1
 
 # Neo4j設定
 NEO4J_URI=bolt://localhost:7687
-NEO4J_USERNAME=
-NEO4J_PASSWORD=
+NEO4J_USERNAME=neo4j
+NEO4J_PASSWORD=password123
 
-# Serper API設定（Google検索API）
-# https://serper.dev/ でAPIキーを取得してください
+# Serper API設定（オプション）
+# https://serper.dev/ でAPIキーを取得
 SERPER_API_KEY=your_serper_api_key_here
 ```
 
-#### Serper APIキーの取得方法
+**注意**: 
+- Serper APIキーが未設定の場合、ExplorerAgentはLLMの既存知識のみを使用します
+- Neo4jの認証をdocker-compose.ymlで無効化している場合、USERNAME/PASSWORDは任意の値で可
 
-1. [Serper.dev](https://serper.dev/)にアクセス
-2. アカウントを作成（無料プランあり）
-3. ダッシュボードでAPIキーを取得
-4. `.env`ファイルの`SERPER_API_KEY`に設定
+### 5. Personal Knowledge Graph (PKG) のシード
 
-**注意**: Serper APIが設定されていない場合、Explorer AgentはLLMの知識のみを使用します。
+```bash
+# 3つのペルソナをNeo4jにシード
+python -m newresearch.seed_pkg
+```
+
+以下のペルソナがデータベースに登録されます:
+- **P01**: 杉浦 泰章 (里山散策、地域行事、書道に興味を持つ)
+- **P05**: 鈴木 弥一 (データ分析、節約志向、レトロゲームに興味を持つ)
+- **P07**: 岡田 咲弥 (計画的運営、地域文化への敬意、有機野菜ブランドに関心を持つ)
 
 ## 💻 使用方法
 
-### インタラクティブモード
+### 単一シナリオ実行
+
+```bash
+# 実験条件A（Full: PKG + RAG + Judge）でシナリオS1を実行
+python -m newresearch.run_A --scenario S1
+
+# 他の条件でも実行可能
+python -m newresearch.run_B --scenario S1  # -PKG
+python -m newresearch.run_C --scenario S1  # -RAG
+python -m newresearch.run_D --scenario S1  # -Judge
+```
+
+### 利用可能なシナリオ
+
+| ID | ユーザー | 発話内容 |
+|----|---------|---------|
+| S1 | P01 (杉浦) | 「最近、地域の若い人たちが祭りに参加してくれない...」 |
+| S2 | P05 (鈴木) | 「従業員のモチベーション管理が...」 |
+| S3 | P07 (岡田) | 「有機野菜の販路拡大で悩んでいる...」 |
+
+### 複数実行・メトリクス抽出
+
+```bash
+# 全条件・全シナリオを実行
+python -m newresearch.runner
+
+# メトリクスをCSV出力
+python -m newresearch.metrics
+
+# 可視化
+python -m newresearch.visualize
+```
+
+### CLIインタラクティブモード（旧実装）
 
 ```bash
 python cli.py --user your_user_id
 ```
 
-対話形式でシステムと会話できます。
+## 📊 実験デザイン
 
-### シングルメッセージモード
+### 4つの実験条件
 
-```bash
-python cli.py --user your_user_id --message "健康的な食事について教えてください"
-```
+| 条件 | PKG | RAG | Judge | 説明 |
+|------|-----|-----|-------|------|
+| **A (Full)** | ✓ | ✓ | ✓ | 全機能有効 |
+| **B (-PKG)** | ✗ | ✓ | ✓ | パーソナルナレッジグラフなし |
+| **C (-RAG)** | ✓ | ✗ | ✓ | 外部検索なし |
+| **D (-Judge)** | ✓ | ✓ | ✗ | 診断的評価なし |
 
-### ユーザー属性の更新
+### 研究課題
 
-```bash
-python cli.py --user your_user_id --update-attrs '{"demographics": {"age": 35, "gender": "male"}, "preferences": {"communication_style": "formal"}}'
-```
-
-### CLIコマンド一覧
-
-インタラクティブモード内で使用できるコマンド:
-
-- `exit` / `quit` - セッション終了
-- `new` - 新しい会話を開始
-- `update` - ユーザー属性を更新
+| # | 問い |
+|---|------|
+| RQ1 | 明示的なアブダクティブパイプラインは、仮説の多様性と説明品質にどう影響するか？ |
+| RQ2 | PKGと外部エビデンス(RAG)は、仮説の根拠付けとペルソナ整合性にどう寄与するか？ |
+| RQ3 | Agent-as-a-Judge診断は、共感的で根拠のある応答の選択を改善するか？ |
 
 ## 🧪 テスト
 
@@ -220,47 +313,68 @@ python tests/test_system.py
 
 ### ノードタイプ
 
-- **User** - ユーザー情報
-  - `user_id`: ユーザーID
-  - `preferences`: 好み
-  - `demographics`: 人口統計情報
-  - `behavior_patterns`: 行動パターン
-  - `nudge_receptivity`: ナッジ受容性
-
-- **Conversation** - 会話セッション
-  - `conversation_id`: 会話ID
-  - `created_at`: 作成日時
-  - `metadata`: メタデータ
-
-- **Message** - メッセージ
-  - `message_id`: メッセージID
-  - `role`: ロール (user/assistant)
-  - `content`: 内容
-  - `agent_name`: エージェント名
-  - `timestamp`: タイムスタンプ
-
-- **Entity** - エンティティ (ナレッジグラフ)
+- **ExpUser** - 実験用ペルソナ
+  - `persona_id`: ペルソナID（P01, P05, P07）
   - `name`: 名前
-  - `type`: タイプ
-  - `properties`: プロパティ
+  - その他属性
+
+- **PKGNode** - パーソナルナレッジグラフのノード
+  - `node_id`: ノードID
+  - `label`: ラベル（興味、価値観、スキル、関心事など）
+  - `node_type`: タイプ（interest, value, skill, concern）
+  - `weight`: 重要度
 
 ### リレーションシップ
 
-- `(User)-[:HAS_CONVERSATION]->(Conversation)`
-- `(Conversation)-[:CONTAINS]->(Message)`
-- `(Conversation)-[:EXTRACTED_ENTITY]->(Entity)`
-- `(Entity)-[:RELATES_TO]->(Entity)`
+- `(ExpUser)-[:HAS_PKG_NODE]->(PKGNode)` - ペルソナがPKGノードを持つ
+- `(PKGNode)-[:motivates|drives|requires|...]->(PKGNode)` - ノード間の関係性
 
 ## 🔧 技術スタック
 
-- **Azure OpenAI** - GPT-4.1を使用した自然言語処理
+- **Azure OpenAI** - GPT-4.1を使用したアブダクティブ推論
 - **LangChain** - LLMアプリケーションフレームワーク
-- **LangGraph** - マルチエージェントワークフローオーケストレーション
-- **Neo4j** - グラフデータベース
+- **Neo4j** - パーソナルナレッジグラフデータベース
+- **Serper API** - リアルタイムGoogle検索
 - **Pydantic** - データバリデーション
-- **Python 3.8+** - プログラミング言語
+- **Python 3.10-3.13** - プログラミング言語
 
-## 📝 ライセンス
+## 📝 出力例
+
+各実行は `newresearch/results/runs/{run_id}/` に以下のファイルを生成します:
+
+- `config.json` - 実行設定
+- `context.json` - ContextAgentの出力（O/A/triggers）
+- `evidence.json` - ExplorerAgentの外部エビデンス
+- `hypotheses.json` - HypothesisAgentの生成仮説
+- `judge.json` - JudgeAgentの診断結果
+- `decision.json` - DecisionAgentの選択結果
+- `dialogue.json` - DialogueAgentの最終応答
+
+## 🔍 トラブルシューティング
+
+### Python 3.14でpydantic-coreのビルドエラーが発生する
+
+```bash
+export PYO3_USE_ABI3_FORWARD_COMPATIBILITY=1
+pip install -r requirements.txt
+```
+
+### Neo4jに接続できない
+
+1. Docker Composeが起動しているか確認: `docker ps`
+2. Neo4j Browser (http://localhost:7474) にアクセスできるか確認
+3. `.env`ファイルの`NEO4J_URI`が `bolt://localhost:7687` になっているか確認
+
+### Serper APIエラーが発生する
+
+- Serper APIキーが設定されていない場合、ExplorerAgentはLLMの知識のみを使用（エラーではない）
+- APIキーを取得した場合は `.env` の `SERPER_API_KEY` に設定
+
+## 📚 参考文献
+
+詳細な研究デザインと実験プロトコルは [newresearch/README.md](newresearch/README.md) を参照してください。
+
+## 📄 ライセンス
 
 このプロジェクトはMITライセンスの下で公開されています。
 

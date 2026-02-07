@@ -1,30 +1,33 @@
+# Python 3.10-3.13 recommended (3.14 may require PYO3_USE_ABI3_FORWARD_COMPATIBILITY=1)
+
 # Core dependencies
-langchain==0.3.14
-langchain-openai==0.2.14
-langchain-community==0.3.14
-langgraph==0.2.55
+langchain>=1.2,<2.0
+langchain-openai>=1.1,<2.0
+langchain-community>=0.4,<1.0
+langgraph>=1.0,<2.0
 
 # Azure OpenAI
-openai==1.59.5
+openai>=2.0,<3.0
 
 # Neo4j
-neo4j==5.27.0
-langchain-neo4j==0.1.1
+neo4j>=6.0,<7.0
+langchain-neo4j>=0.8,<1.0
 
 # Utilities
-python-dotenv==1.0.1
-pydantic>=2.10.5
-pydantic-settings>=2.7.1
-requests==2.32.3
+python-dotenv>=1.0,<2.0
+pydantic>=2.12,<3.0
+pydantic-settings>=2.12,<3.0
+requests>=2.32,<3.0
 
 # Data processing
-typing-extensions==4.12.2
+typing-extensions>=4.12,<5.0
+numpy>=2.0,<3.0
 
 # Development
-pytest==8.3.4
-black==24.10.0
-flake8==7.1.1
+pytest>=9.0,<10.0
+black>=26.0,<27.0
+flake8>=7.3,<8.0
 
 # Visualization
-grandalf==0.8
+grandalf>=0.8,<1.0
 # pygraphviz; sys_platform != 'win32'

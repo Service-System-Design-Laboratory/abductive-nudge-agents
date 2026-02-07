@@ -1,17 +1,23 @@
 # セットアップガイド
 
+このガイドは、Abductive Nudge Agents プロジェクトのセットアップ手順を説明します。
+
+詳細なプロジェクト説明は [README.md](README.md) を参照してください。
+
 ## 前提条件
 
-- Python 3.8以上
-- Docker & Docker Compose
-- Azure OpenAIアカウント
+- **Python 3.10-3.13** 推奨（3.14でも動作可能）
+- **Docker & Docker Compose** - Neo4j実行用
+- **Azure OpenAI API** アカウント
+- **Serper API** アカウント（オプション、Google検索機能用）
 
 ## ステップバイステップセットアップ
 
-### 1. リポジトリのクローン（既にある場合はスキップ）
+### 1. リポジトリのクローン
 
 ```bash
-cd /Users/matsuokahiroshiyou/Documents/programming/AI-one-hour
+git clone <repository-url>
+cd abductive-nudge-agents
 ```
 
 ### 2. Neo4jの起動
@@ -23,168 +29,310 @@ docker-compose up -d
 # 起動確認
 docker ps | grep neo4j
 
-# Neo4jブラウザを開く
+# Neo4jブラウザを開く（ブラウザで以下にアクセス）
 # http://localhost:7474
 ```
 
-Neo4jブラウザでは認証なしでアクセスできます（NEO4J_AUTH=none設定のため）。
+Neo4jブラウザでは認証なしでアクセスできます（`docker-compose.yml`で`NEO4J_AUTH=none`設定済み）。
 
 ### 3. Python仮想環境のセットアップ
 
 ```bash
 # 仮想環境を作成
-python3 -m venv venv
+python3 -m venv .venv
 
 # 仮想環境を有効化
 # macOS/Linux:
-source venv/bin/activate
+source .venv/bin/activate
 
 # Windows:
-# .\venv\Scripts\activate
+# .venv\Scripts\activate
 
 # 依存関係をインストール
 pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-### 4. 環境変数の確認
+**Python 3.14を使用する場合:**
 
-`.env`ファイルが既に存在し、以下の内容が含まれています:
+一部のパッケージ（pydantic-core）のビルド時にPyO3の互換性問題が発生する可能性があります。以下の環境変数を設定してください:
+
+```bash
+export PYO3_USE_ABI3_FORWARD_COMPATIBILITY=1
+pip install -r requirements.txt
+```
+
+### 4. 環境変数の設定
+
+`.env.sample`ファイルをコピーして`.env`ファイルを作成します:
+
+```bash
+# .env.sampleを.envにコピー
+cp .env.sample .env
+```
+
+`.env`ファイルを開き、以下の項目に実際の値を設定します:
 
 ```env
-AZURE_OPENAI_API_KEY=EQx5NK7BQ5mf1oUvrG55Ad8UxXZ2jYz4YxRD0TqllxJJMi48VJsRJQQJ99BJACYeBjFXJ3w3AAABACOGeZ5b
-AZURE_OPENAI_ENDPOINT=https://aoi-res19.openai.azure.com/openai/deployments/gpt-4.1/chat/completions?api-version=2025-01-01-preview
+# Azure OpenAI設定
+AZURE_OPENAI_API_KEY=your_api_key_here
+AZURE_OPENAI_ENDPOINT=https://your-resource.openai.azure.com/openai/deployments/gpt-4.1/chat/completions?api-version=2025-01-01-preview
 AZURE_OPENAI_API_VERSION=2025-01-01-preview
 AZURE_OPENAI_DEPLOYMENT=gpt-4.1
 
+# Neo4j設定
 NEO4J_URI=bolt://localhost:7687
-NEO4J_USERNAME=
-NEO4J_PASSWORD=
+NEO4J_USERNAME=neo4j
+NEO4J_PASSWORD=password123
+
+# Serper API設定（オプション）
+# https://serper.dev/ でAPIキーを取得してください
+SERPER_API_KEY=your_serper_api_key_here
 ```
 
-### 5. 動作確認
+**API キーの取得方法:**
+
+- **Azure OpenAI**: [Azure Portal](https://portal.azure.com/) でOpenAIリソースを作成し、APIキーとエンドポイントを取得
+- **Serper API** (オプション): [Serper.dev](https://serper.dev/) でアカウントを作成し、APIキーを取得（無料プランあり）
+
+**注意**: Serper APIキーが未設定の場合、ExplorerAgentはLLMの既存知識のみを使用します。
+
+### 5. Personal Knowledge Graph (PKG) のシード
+
+```bash
+# 3つのペルソナをNeo4jデータベースにシード
+python -m newresearch.seed_pkg
+```
+
+成功すると、以下のペルソナがデータベースに登録されます:
+
+- **P01**: 杉浦 泰章 - 10ノード、8エッジ（里山散策、地域行事、書道など）
+- **P05**: 鈴木 弥一 - 10ノード、8エッジ（データ分析、節約志向、レトロゲームなど）
+- **P07**: 岡田 咲弥 - 10ノード、8エッジ（計画的運営、地域文化、有機野菜など）
+
+### 6. 動作確認
 
 #### Neo4j接続テスト
 
 ```bash
-# Python対話モードで確認
-python3 -c "from src.utils.neo4j_client import neo4j_db; print('Neo4j connection successful!')"
+# Neo4jブラウザ (http://localhost:7474) でCypherクエリを実行
+MATCH (u:ExpUser) RETURN u.name, u.persona_id
 ```
+
+3つのペルソナが表示されれば成功です。
 
 #### システムテスト
 
 ```bash
-# テストを実行
+# テストを実行（オプション）
 pytest tests/ -v
 ```
 
-### 6. システムの起動
+### 7. 実験の実行
 
-#### インタラクティブモード
-
-```bash
-python cli.py --user test_user
-```
-
-表示されるプロンプトで会話を開始できます:
-
-```
-You: 健康的な生活を送りたいです
-```
-
-#### シングルメッセージモード
+#### 単一シナリオの実行
 
 ```bash
-python cli.py --user test_user --message "運動習慣を身につけたいです"
+# 実験条件A（Full: PKG + RAG + Judge）でシナリオS1を実行
+python -m newresearch.run_A --scenario S1
+
+# 他の条件も実行可能
+python -m newresearch.run_B --scenario S1  # -PKG
+python -m newresearch.run_C --scenario S1  # -RAG
+python -m newresearch.run_D --scenario S1  # -Judge
 ```
+
+#### 全実験の実行
+
+```bash
+# 全条件・全シナリオを実行
+python -m newresearch.runner
+```
+
+実行結果は `newresearch/results/runs/` に保存されます。
 
 ## トラブルシューティング
 
-### Neo4j接続エラー
+### 1. Python 3.14でpydantic-coreのビルドエラー
 
+**症状**: `PyO3's maximum supported version (3.13)` エラー
+
+**解決策**:
+```bash
+export PYO3_USE_ABI3_FORWARD_COMPATIBILITY=1
+pip install -r requirements.txt
+```
+
+### 2. Neo4j接続エラー
+
+**症状**: `Unable to connect to Neo4j`
+
+**解決策**:
 ```bash
 # Neo4jコンテナの状態確認
 docker ps -a | grep neo4j
 
 # ログ確認
-docker logs neo4j-local
+docker logs <container-id>
 
 # 再起動
 docker-compose restart
+
+# 完全な再起動が必要な場合
+docker-compose down
+docker-compose up -d
 ```
 
-### Python依存関係エラー
+### 3. Azure OpenAI API エラー
 
-```bash
-# 仮想環境を削除して再作成
-rm -rf venv
-python3 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-```
+**症状**: `401 Unauthorized` または `429 Too Many Requests`
 
-### Azure OpenAI接続エラー
-
+**解決策**:
 1. `.env`ファイルのAPIキーとエンドポイントを確認
-2. Azure OpenAIのデプロイメント名が正しいか確認
-3. クォータ制限に達していないか確認
+2. Azure OpenAIのデプロイメント名が正しいか確認（`gpt-4.1`など）
+3. クォータ制限に達していないかAzure Portalで確認
+4. API バージョンが最新か確認
 
-## ユーザー属性の設定
+### 4. Serper API エラー
 
-初回使用時にユーザー属性を設定すると、よりパーソナライズされた応答が得られます:
+**症状**: Serper API関連のエラー
 
+**解決策**:
+- Serper APIキーが設定されていない場合、ExplorerAgentはLLMの知識のみを使用（正常動作）
+- APIキーを使用したい場合は [Serper.dev](https://serper.dev/) で取得し `.env` に設定
+
+### 5. PKGシードエラー
+
+**症状**: `ExpUser 'P01' not found`
+
+**解決策**:
 ```bash
-python cli.py --user your_user_id --update-attrs '{
-  "demographics": {
-    "age": 30,
-    "gender": "male",
-    "occupation": "engineer"
-  },
-  "preferences": {
-    "communication_style": "casual",
-    "topics_of_interest": ["technology", "health", "fitness"]
-  },
-  "nudge_receptivity": {
-    "social_proof": "high",
-    "loss_aversion": "medium",
-    "framing": "high"
-  }
-}'
+# PKGを再シード
+python -m newresearch.seed_pkg
+
+# Neo4jブラウザで確認
+# http://localhost:7474
+# Cypherクエリ: MATCH (u:ExpUser) RETURN u
 ```
 
 ## Neo4jブラウザでのデータ確認
 
-Neo4jブラウザ（http://localhost:7474）で以下のクエリを実行してデータを確認できます:
+Neo4jブラウザ（http://localhost:7474）で以下のCypherクエリを実行してデータを確認できます:
+
+### ペルソナの確認
 
 ```cypher
-// すべてのユーザーを表示
-MATCH (u:User) RETURN u LIMIT 25
+// すべてのペルソナを表示
+MATCH (u:ExpUser) 
+RETURN u.persona_id, u.name
 
-// 特定ユーザーの会話履歴
-MATCH (u:User {user_id: "test_user"})-[:HAS_CONVERSATION]->(c:Conversation)-[:CONTAINS]->(m:Message)
-RETURN u, c, m
-ORDER BY m.timestamp
+// 特定ペルソナのPKGを表示
+MATCH (u:ExpUser {persona_id: "P01"})-[:HAS_PKG_NODE]->(n:PKGNode)
+RETURN u, n
 
-// ナレッジグラフを表示
-MATCH (c:Conversation)-[:EXTRACTED_ENTITY]->(e:Entity)
-OPTIONAL MATCH (e)-[r:RELATES_TO]->(e2:Entity)
-RETURN c, e, r, e2
-LIMIT 50
+// PKGノード間の関係を表示
+MATCH (u:ExpUser {persona_id: "P01"})-[:HAS_PKG_NODE]->(n1:PKGNode)-[r]->(n2:PKGNode)
+RETURN n1, r, n2
+```
+
+### データのクリア（必要な場合）
+
+```cypher
+// すべてのデータを削除（注意: 実験データも消えます）
+MATCH (n)
+DETACH DELETE n
 ```
 
 ## 次のステップ
 
-1. インタラクティブモードで様々な質問を試してみる
-2. ユーザー属性を調整して応答の変化を確認
-3. Neo4jブラウザで蓄積されたナレッジグラフを確認
-4. 複数の会話セッションを作成して履歴を比較
+### 1. 実験の実行
 
-## 開発モード
-
-開発中は詳細なログを有効にすると便利です:
+単一シナリオから始めて、システムの動作を確認してください:
 
 ```bash
-python cli.py --user dev_user --verbose
+# シナリオS1を条件A（Full）で実行
+python -m newresearch.run_A --scenario S1
 ```
 
-これにより、各エージェントの処理内容が詳細に表示されます。
+### 2. 結果の確認
+
+実行結果は `newresearch/results/runs/` 以下に保存されています:
+
+- `context.json` - 観察(O)と仮定(A)
+- `evidence.json` - 外部エビデンス（RAG結果）
+- `hypotheses.json` - 生成された仮説
+- `judge.json` - 診断結果
+- `decision.json` - 選択された仮説
+- `dialogue.json` - 最終的な対話応答
+
+### 3. メトリクスの分析
+
+複数の実験を実行した後、メトリクスを抽出・可視化できます:
+
+```bash
+# メトリクスをCSVに抽出
+python -m newresearch.metrics
+
+# 結果を可視化
+python -m newresearch.visualize
+```
+
+### 4. CLIモードの探索（旧実装）
+
+インタラクティブなCLIモードも利用可能です:
+
+```bash
+python cli.py --user test_user
+```
+
+## 開発者向け情報
+
+### プロジェクト構造
+
+- `newresearch/` - メイン研究実装
+  - `agents/` - 各エージェントの実装
+  - `prompts/` - エージェントプロンプト
+  - `results/` - 実験結果
+- `src/` - 旧実装（参考用）
+- `neo4j/` - Neo4jデータ永続化
+
+### 詳細ドキュメント
+
+- [README.md](README.md) - プロジェクト概要とアーキテクチャ
+- [newresearch/README.md](newresearch/README.md) - 研究デザインと実験プロトコル
+
+### 開発モード
+
+詳細なログを確認したい場合は、各スクリプト内のログレベルを調整してください。
+
+## よくある質問（FAQ）
+
+**Q: Python 3.14は必須ですか？**
+
+A: いいえ。Python 3.10-3.13を推奨します。3.14でも動作しますが、一部パッケージのビルド時に追加の設定が必要になる場合があります。
+
+**Q: Serper APIは必須ですか？**
+
+A: いいえ。オプションです。未設定の場合、ExplorerAgentはLLMの既存知識のみを使用します。実験条件C (-RAG)では使用されません。
+
+**Q: Neo4jの認証情報は何ですか？**
+
+A: `docker-compose.yml`で`NEO4J_AUTH=none`と設定しているため、認証なしでアクセスできます。セキュリティが必要な環境では設定を変更してください。
+
+**Q: 実験結果はどこに保存されますか？**
+
+A: `newresearch/results/runs/{run_id}/` 以下に各実行のJSON形式の結果が保存されます。
+
+**Q: エラーが発生した場合はどうすればよいですか？**
+
+A: 上記の「トラブルシューティング」セクションを参照してください。解決しない場合はGitHubのissueを作成してください。
+
+## サポート
+
+問題が発生した場合は、以下の情報を含めてGitHubのissueを作成してください:
+
+1. Pythonバージョン（`python --version`）
+2. OSとバージョン
+3. エラーメッセージの全文
+4. 実行したコマンド
+5. `.env`ファイルの内容（APIキーは除く）
