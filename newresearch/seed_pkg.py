@@ -26,13 +26,13 @@ logger = logging.getLogger("newresearch")
 # ══════════════════════════════════════════════════════════════
 # Persona definitions — derived from Nemotron-Personas-Japan
 # 3 personas selected for diversity:
-#   P01: 杉浦泰章 (47M, 郵便局, 新潟) — ローカル・自然志向
-#   P05: 鈴木弥一 (53M, 遊技場経営, 千葉) — データ・節約志向
-#   P07: 岡田咲弥 (27F, 農業, 宮城) — 計画的・地域文化志向
+#   P01: Yasuaki Sugiura (47M, postal clerk, Niigata) — local/nature-oriented
+#   P05: Yaichi Suzuki (53M, arcade management, Chiba) — data/budget-oriented  
+#   P07: Sakiya Okada (27F, farming, Miyagi) — planned/regional culture-oriented
 # ══════════════════════════════════════════════════════════════
 
 PERSONA_DEFS = [
-    # ── P01: 杉浦 泰章 ──────────────────────────────────────────
+    # ── P01: Yasuaki Sugiura ─────────────────────────────────────────────────────
     {
         "persona_id": "P01",
         "name": "杉浦 泰章",
@@ -66,7 +66,7 @@ PERSONA_DEFS = [
         ],
     },
 
-    # ── P05: 鈴木 弥一 ──────────────────────────────────────────
+    # ── P05: Yaichi Suzuki ───────────────────────────────────────────────────────
     {
         "persona_id": "P05",
         "name": "鈴木 弥一",

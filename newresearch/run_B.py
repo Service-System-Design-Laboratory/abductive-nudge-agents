@@ -1,10 +1,10 @@
 """
-Condition B — −PKG (PKG ✗, RAG ✓, 批評家 ✓)
-PKGを無効化し、ユーザ知識グラフなしで対話を生成。
+Condition B — −PKG (PKG ✗, RAG ✓, Judge ✓)
+PKG disabled. Generate dialogue without user knowledge graph.
 
 Usage:
-    python -m newresearch.run_B                 # 全シナリオ (S1, S2, S3)
-    python -m newresearch.run_B --scenario S1   # 単一シナリオ
+    python -m newresearch.run_B                 # All scenarios (S1, S2, S3)
+    python -m newresearch.run_B --scenario S1   # Single scenario
 """
 from __future__ import annotations
 
@@ -21,7 +21,7 @@ from newresearch.scenarios import SCENARIOS, get_scenario, get_persona
 from newresearch.pipeline import Pipeline
 
 CONDITION = "B"
-CONDITION_LABEL = "−PKG (PKG✗ RAG✓ 批評家✓)"
+CONDITION_LABEL = "−PKG (PKG✗ RAG✓ Judge✓)"
 
 logging.basicConfig(
     level=logging.INFO,
@@ -61,9 +61,9 @@ def main():
         description=f"Condition {CONDITION}: {CONDITION_LABEL}",
     )
     parser.add_argument("--scenario", type=str, default=None,
-                        help="Scenario ID (S1..S10). 省略時は全シナリオ実行")
+                        help="Scenario ID (S1..S10). If omitted, run all scenarios")
     parser.add_argument("--persona", type=str, default=None,
-                        help="Persona ID (P01, P05, P07). 省略時は全ペルソナ実行")
+                        help="Persona ID (P01, P05, P07). If omitted, run all personas")
     args = parser.parse_args()
 
     persona_ids = [args.persona] if args.persona else PERSONA_IDS

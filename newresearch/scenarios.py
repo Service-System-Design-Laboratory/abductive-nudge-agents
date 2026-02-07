@@ -6,7 +6,7 @@ from __future__ import annotations
 from newresearch.neo4j_pkg import load_persona_from_neo4j
 
 
-# ── Persona IDs available for this experiment ─────────────────────
+# ── Persona IDs available for this experiment ─────────────────────────────
 
 PERSONA_IDS = ["P01", "P05", "P07"]
 
@@ -21,16 +21,16 @@ def get_persona(persona_id: str = "P01"):
 # S4-S10: new scenarios extending the same cognitive-bias patterns
 #
 # Bias categories:
-#   Authenticity fixation (S1, S4)    — "本物 vs 演出"
-#   Efficiency fixation   (S2, S5)    — "最適化 vs 偶発性"
-#   Expert knowledge      (S3, S6)    — "専門知識 vs 新事実"
-#   Safety fixation       (S7)        — "安全 vs 未知への開放"
-#   Nostalgia fixation    (S8)        — "過去への執着 vs 今"
-#   Cost fixation         (S9)        — "コスパ vs 価値転換"
-#   Record fixation       (S10)       — "記録 vs 体験没入"
+#   Authenticity fixation (S1, S4)    — "authentic vs staged"
+#   Efficiency fixation   (S2, S5)    — "optimization vs serendipity"
+#   Expert knowledge      (S3, S6)    — "expert knowledge vs new facts"
+#   Safety fixation       (S7)        — "safety vs openness to unknown"
+#   Nostalgia fixation    (S8)        — "attachment to past vs present"
+#   Cost fixation         (S9)        — "cost-performance vs value transformation"
+#   Record fixation       (S10)       — "recording vs immersive experience"
 
 SCENARIOS = {
-    # ── Original 3 (preserved exactly) ────────────────────────────
+    # ── Original 3 (preserved exactly) ────────────────────────────────────
     "S1": {
         "id": "S1",
         "focus": "Strong identity vs blind-spot collision — PKG × RAG integration test",
@@ -69,7 +69,7 @@ SCENARIOS = {
         ),
     },
 
-    # ── New scenarios (S4–S10) ────────────────────────────────────
+    # ── New scenarios (S4–S10) ──────────────────────────────────────────────
 
     "S4": {
         "id": "S4",

@@ -1,22 +1,22 @@
-# セットアップガイド
+# Setup Guide
 
-本プロジェクトの環境構築と実験再現の手順です。
-プロジェクト概要は [README.md](README.md) を参照してください。
+Instructions for environment setup and experiment reproduction.
+Refer to [README.md](README.md) for project overview.
 
 ---
 
-## 前提条件
+## Prerequisites
 
-| 項目 | 要件 |
+| Item | Requirement |
 |------|------|
-| Python | 3.10 以上（3.12 推奨） |
-| Docker & Docker Compose | Neo4j コンテナ実行用 |
-| Azure OpenAI API | GPT-4.1 デプロイメント |
-| Web Search API（任意） | Serper / Google Custom Search / Bing のいずれか |
+| Python | 3.10 or higher (3.12 recommended) |
+| Docker & Docker Compose | For Neo4j container execution |
+| Azure OpenAI API | GPT-4.1 deployment |
+| Web Search API (optional) | One of: Serper / Google Custom Search / Bing |
 
 ---
 
-## 1. リポジトリのクローン
+## 1. Clone Repository
 
 ```bash
 git clone <repository-url>
@@ -26,7 +26,7 @@ git checkout plan_masaki
 
 ---
 
-## 2. Python 仮想環境
+## 2. Python Virtual Environment
 
 ```bash
 python3 -m venv .venv
@@ -39,13 +39,13 @@ pip install -r requirements.txt
 
 ---
 
-## 3. 環境変数の設定
+## 3. Environment Variable Configuration
 
 ```bash
 cp .env.sample .env
 ```
 
-`.env` を開いて以下を設定：
+Open `.env` and configure the following:
 
 ```env
 # ── Azure OpenAI（必須）──────────────────────────
@@ -88,79 +88,79 @@ SERPER_API_KEY=your_serper_key
 
 ---
 
-## 4. Neo4j の起動
+## 4. Start Neo4j
 
 ```bash
 docker compose up -d graph-db
 ```
 
-起動確認：
+Verify startup:
 
 ```bash
-# コンテナ確認
+# Check container
 docker ps | grep neo4j-local
 
-# ブラウザでアクセス（認証なし）
+# Access in browser (no authentication)
 # http://localhost:7474
 ```
 
-> `docker-compose.yml` で `NEO4J_AUTH=none` に設定済みのため、認証不要です。
+> `docker-compose.yml` is configured with `NEO4J_AUTH=none`, so no authentication required.
 
 ---
 
-## 5. PKG シードデータの投入
+## 5. Seed PKG Data
 
-3 ペルソナ（P01, P05, P07）の Personal Knowledge Graph を Neo4j に投入します。
+Load the Personal Knowledge Graphs for 3 personas (P01, P05, P07) into Neo4j.
 
 ```bash
 python -m newresearch.seed_pkg
 ```
 
-確認：
+Verification:
 
 ```bash
 python -m newresearch.seed_pkg --check
 ```
 
-Neo4j Browser (http://localhost:7474) で確認：
+Verify in Neo4j Browser (http://localhost:7474):
 
 ```cypher
 MATCH (u:ExpUser) RETURN u.persona_id, u.name
 ```
 
-3 ペルソナが表示されれば成功です。
+If 3 personas are displayed, seeding succeeded.
 
 ---
 
-## 6. 実験の実行
+## 6. Run Experiments
 
-### 単一シナリオ実行
+### Single Scenario Execution
 
 ```bash
-# 条件 A (Full: PKG + RAG + Judge) × S1 × P01
+# Condition A (Full: PKG + RAG + Judge) × S1 × P01
 python -m newresearch.run_A --scenario S1 --persona P01
 
-# 条件 B (-PKG)
+# Condition B (-PKG)
 python -m newresearch.run_B --scenario S1 --persona P01
 
-# 条件 C (-RAG)
+# Condition C (-RAG)
 python -m newresearch.run_C --scenario S1 --persona P01
 
-# 条件 D (Single Agent)
+# Condition D (Single Agent)
 python -m newresearch.run_D --scenario S1 --persona P01
 ```
 
-### 全アブレーション実行
+### Run All Ablation Experiments
 
 ```bash
-# 4 条件 × 10 シナリオ × 3 ペルソナ = 120 runs
+# 4 conditions × 10 scenarios × 3 personas = 120 runs
 python -m newresearch.runner --all
 
-# 特定ペルソナ・シナリオを指定
+# Specify personas/scenarios
 python -m newresearch.runner --personas P01 --scenarios S1 S2 S3
 ```
 
-### メトリクス抽出
+### Extract Metrics
 
 ```bash
 python -m newresearch.metrics
@@ -169,66 +169,66 @@ python -m newresearch.metrics
 
 ---
 
-## 7. 結果の確認
+## 7. Check Results
 
-各実行は `newresearch/results/runs/{A,B,C,D}/{run_id}/` に保存されます：
+Each run is saved to `newresearch/results/runs/{A,B,C,D}/{run_id}/`:
 
 ```
-config.json       実行設定
-context.json      観察 (O)、仮定 (A)、トリガー
-evidence.json     外部エビデンス + 外部観察 (Oext)
-hypotheses.json   3–5 仮説
-judgements.json    診断結果
-decision.json     2 仮説対比選択
-final.json        最終応答 + empathy/nudge マーカー
-response.txt      プレーンテキスト応答
+config.json       Run configuration
+context.json      Observations (O), assumptions (A), triggers
+evidence.json     External evidence + external observations (Oext)
+hypotheses.json   3-5 hypotheses
+judgements.json   Diagnostic results
+decision.json     2-hypothesis contrastive selection
+final.json        Final response + empathy/nudge markers
+response.txt      Plain text response
 ```
 
-### Neo4j での動的グラフ確認
+### Dynamic Graph Verification in Neo4j
 
-条件 A/C (`use_pkg=true`) では、パイプライン実行中に推論結果が Neo4j に書き込まれます。
+In conditions A/C (`use_pkg=true`), reasoning results are written to Neo4j during pipeline execution.
 
 ```cypher
--- 全グラフ表示
+-- Display entire graph
 MATCH (n)-[r]->(m) RETURN n, r, m
 
--- ペルソナ別
+-- By persona
 MATCH (u:ExpUser {persona_id: "P01"})-[*1..3]-(connected)
 RETURN u, connected
 
--- ランタイム書き込みのみ
+-- Runtime writes only
 MATCH (n) WHERE n.run_id IS NOT NULL
 MATCH (n)-[r]-(m) RETURN n, r, m
 ```
 
 ---
 
-## トラブルシューティング
+## Troubleshooting
 
-### Neo4j に接続できない
+### Cannot Connect to Neo4j
 
 ```bash
-docker ps -a | grep neo4j     # コンテナ状態確認
-docker compose restart graph-db  # 再起動
+docker ps -a | grep neo4j     # Check container status
+docker compose restart graph-db  # Restart
 ```
 
-### Azure OpenAI 401 / 429 エラー
+### Azure OpenAI 401 / 429 Errors
 
-1. `.env` の API キーとエンドポイントを確認
-2. デプロイメント名が正しいか確認（デフォルト: `gpt-4.1`）
-3. Azure Portal でクォータ制限を確認
+1. Check API key and endpoint in `.env`
+2. Verify deployment name is correct (default: `gpt-4.1`)
+3. Check quota limits in Azure Portal
 
-### PKG シードエラー
+### PKG Seed Errors
 
 ```bash
-# 一度クリアして再シード
+# Clear and re-seed
 python -m newresearch.seed_pkg --clear
 ```
 
-### ポート 7474/7687 が既に使用中
+### Port 7474/7687 Already in Use
 
 ```bash
-# 既存の Neo4j コンテナを停止
+# Stop existing Neo4j container
 docker stop $(docker ps -q --filter "publish=7474")
 docker compose up -d graph-db
 ```

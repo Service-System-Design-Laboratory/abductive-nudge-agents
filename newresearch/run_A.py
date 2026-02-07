@@ -1,10 +1,10 @@
 """
-Condition A — Full (PKG ✓, RAG ✓, 批評家 ✓)
-全モジュール有効。提案手法のフルパイプライン。
+Condition A — Full (PKG ✓, RAG ✓, Judge ✓)
+All modules enabled. Full pipeline of proposed method.
 
 Usage:
-    python -m newresearch.run_A                 # 全シナリオ (S1, S2, S3)
-    python -m newresearch.run_A --scenario S1   # 単一シナリオ
+    python -m newresearch.run_A                 # All scenarios (S1, S2, S3)
+    python -m newresearch.run_A --scenario S1   # Single scenario
 """
 from __future__ import annotations
 
@@ -61,9 +61,9 @@ def main():
         description=f"Condition {CONDITION}: {CONDITION_LABEL}",
     )
     parser.add_argument("--scenario", type=str, default=None,
-                        help="Scenario ID (S1..S10). 省略時は全シナリオ実行")
+                        help="Scenario ID (S1..S10). If omitted, run all scenarios")
     parser.add_argument("--persona", type=str, default=None,
-                        help="Persona ID (P01, P05, P07). 省略時は全ペルソナ実行")
+                        help="Persona ID (P01, P05, P07). If omitted, run all personas")
     args = parser.parse_args()
 
     persona_ids = [args.persona] if args.persona else PERSONA_IDS
