@@ -2,6 +2,11 @@
 ExplorerAgent — Trigger identification, RAG query generation, and evidence retrieval.
 Always runs (trigger identification is unconditional).
 External search is conditional on use_rag.
+
+Search backend is configurable via SEARCH_PROVIDER env var:
+  - "serper"  (default) — Serper API  (SERPER_API_KEY)
+  - "google"            — Google Custom Search API  (GOOGLE_API_KEY + GOOGLE_CX)
+  - "bing"              — Bing Web Search API  (BING_API_KEY)
 """
 from __future__ import annotations
 import json
@@ -14,9 +19,11 @@ from newresearch.schemas import ExplorerOutput, EvidenceItem, ExternalObservatio
 
 logger = logging.getLogger("newresearch")
 
+# ── Search backend registry ───────────────────────────────────────
+
 
 def _serper_search(query: str, num_results: int = 5) -> list[dict]:
-    """Call Serper API for Google search."""
+    """Serper API (Google search proxy)."""
     api_key = os.environ.get("SERPER_API_KEY", "")
     if not api_key:
         logger.warning("SERPER_API_KEY not set — returning empty results")
@@ -37,6 +44,77 @@ def _serper_search(query: str, num_results: int = 5) -> list[dict]:
             "url": item.get("link", ""),
         })
     return results
+
+
+def _google_search(query: str, num_results: int = 5) -> list[dict]:
+    """Google Custom Search JSON API."""
+    api_key = os.environ.get("GOOGLE_API_KEY", "")
+    cx = os.environ.get("GOOGLE_CX", "")
+    if not api_key or not cx:
+        logger.warning("GOOGLE_API_KEY / GOOGLE_CX not set — returning empty results")
+        return []
+    resp = requests.get(
+        "https://www.googleapis.com/customsearch/v1",
+        params={"key": api_key, "cx": cx, "q": query,
+                "num": min(num_results, 10), "gl": "jp", "lr": "lang_ja"},
+        timeout=10,
+    )
+    resp.raise_for_status()
+    data = resp.json()
+    results = []
+    for item in data.get("items", [])[:num_results]:
+        results.append({
+            "title": item.get("title", ""),
+            "snippet": item.get("snippet", ""),
+            "url": item.get("link", ""),
+        })
+    return results
+
+
+def _bing_search(query: str, num_results: int = 5) -> list[dict]:
+    """Bing Web Search API v7."""
+    api_key = os.environ.get("BING_API_KEY", "")
+    if not api_key:
+        logger.warning("BING_API_KEY not set — returning empty results")
+        return []
+    resp = requests.get(
+        "https://api.bing.microsoft.com/v7.0/search",
+        headers={"Ocp-Apim-Subscription-Key": api_key},
+        params={"q": query, "count": num_results, "mkt": "ja-JP"},
+        timeout=10,
+    )
+    resp.raise_for_status()
+    data = resp.json()
+    results = []
+    for item in data.get("webPages", {}).get("value", [])[:num_results]:
+        results.append({
+            "title": item.get("name", ""),
+            "snippet": item.get("snippet", ""),
+            "url": item.get("url", ""),
+        })
+    return results
+
+
+# Provider lookup — add new backends here
+_SEARCH_PROVIDERS = {
+    "serper": _serper_search,
+    "google": _google_search,
+    "bing":   _bing_search,
+}
+
+
+def web_search(query: str, num_results: int = 5) -> list[dict]:
+    """Dispatch to the configured search backend (SEARCH_PROVIDER env var).
+    Always returns list[dict] with keys: title, snippet, url."""
+    provider = os.environ.get("SEARCH_PROVIDER", "serper").lower()
+    fn = _SEARCH_PROVIDERS.get(provider)
+    if fn is None:
+        logger.error(
+            f"Unknown SEARCH_PROVIDER='{provider}'. "
+            f"Available: {list(_SEARCH_PROVIDERS.keys())}. Falling back to serper."
+        )
+        fn = _serper_search
+    return fn(query, num_results)
 
 
 class ExplorerAgent(BaseAgent):
@@ -141,11 +219,11 @@ class ExplorerAgent(BaseAgent):
         all_results = []
         for q in rag_queries[:config.rag_top_k]:
             try:
-                results = _serper_search(q, num_results=3)
+                results = web_search(q, num_results=3)
                 all_results.extend(results)
             except Exception as e:
                 logger.error(
-                    f"[ExplorerAgent] Serper search failed for query '{q}': "
+                    f"[ExplorerAgent] Web search failed for query '{q}': "
                     f"{type(e).__name__}: {e}",
                     exc_info=True,
                 )
