@@ -1,0 +1,103 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_linkで参照しているPKGノード（pkg:n49, pkg:n150）がPKGに存在しない。"
+        ],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーが節約行動を自己効力感や達成感の源泉として重視していること。",
+          "節約自体が旅行の主目的の一部となりうるという心理的傾向があること。"
+        ],
+        "best_discriminating_question": "旅行の思い出よりも、節約できた金額や工夫を重視しているか？",
+        "testability_notes": "ユーザーへの直接質問で検証可能。SNS発信や記録行動の有無も観察できる。",
+        "safety_risk_notes": "ユーザーの価値観を断定的に扱うと誤解や反発を招く可能性がある。"
+      },
+      "rationale": "節約志向の心理的側面を説明するが、PKG参照の欠落と、観察O3～O5への説明力は限定的。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_link（pkg:n158）がPKGに存在しない。"
+        ],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "格安旅行市場や企業のマーケティングがユーザー行動に強く影響していること。"
+        ],
+        "best_discriminating_question": "節約方法はどこで知ったものが多いか？",
+        "testability_notes": "ユーザーへのヒアリングや、利用サービス・情報源の確認で検証可能。外部エビデンス（ev:1）も参照できる。",
+        "safety_risk_notes": "ユーザーの主体性を軽視していると受け取られるリスクがある。"
+      },
+      "rationale": "外部エビデンスと観察Oext1を含めて広く説明できるが、PKG参照の欠落がある。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_link（pkg:n158）がPKGに存在しない。"
+        ],
+        "explains_confirmed": [
+          "O5"
+        ],
+        "key_assumptions": [
+          "ユーザーが宿泊・移動・食事以外の節約情報を十分に持っていないこと。",
+          "PKGや既存情報に観光費用等の節約情報が不足していること。"
+        ],
+        "best_discriminating_question": "観光や日用品、通信費の節約についても調べているか？",
+        "testability_notes": "ユーザーの質問傾向や情報探索行動を観察することで検証可能。",
+        "safety_risk_notes": "ユーザーの知識不足を強調しすぎると不快感を与える可能性がある。"
+      },
+      "rationale": "O5の説明には有効だが、他の観察への説明力は限定的でPKG参照も欠落。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3",
+          "O5"
+        ],
+        "key_assumptions": [
+          "ユーザーが青春18きっぷや格安旅行の裏技・応用テクニックを十分に活用していないこと。"
+        ],
+        "best_discriminating_question": "青春18きっぷの最新の裏技や制度変更を把握しているか？",
+        "testability_notes": "ユーザーの知識や行動を質問・観察することで検証可能。外部エビデンス（ev:2）も参照できる。",
+        "safety_risk_notes": "ユーザーのスキル不足を指摘する形になるため、配慮が必要。"
+      },
+      "rationale": "O3・O5の説明に焦点を絞っており、外部エビデンスも活用できる。PKG参照はないが、欠点とはならない。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_link（pkg:n49, pkg:n150）がPKGに存在しない。"
+        ],
+        "explains_confirmed": [
+          "O1",
+          "O5",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "ユーザーが節約家としてのアイデンティティや立場を重視していること。",
+          "節約行動が自己像や社会的立場の維持・強化と結びついていること。"
+        ],
+        "best_discriminating_question": "節約の成果やプロセスを誰かに話したり、SNSで発信しているか？",
+        "testability_notes": "ユーザーの発信行動や自己認識を質問・観察することで検証可能。外部エビデンス（ev:2）も参照できる。",
+        "safety_risk_notes": "ユーザーの動機やアイデンティティに踏み込むため、誤解や反発を招くリスクが高い。"
+      },
+      "rationale": "節約行動の動機を深掘りし、Oext2も説明できるが、PKG参照の欠落がある。"
+    }
+  ]
+}

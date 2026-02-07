@@ -1,0 +1,95 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーは“本物”や“リアルな体験”に価値を置く価値観を持っている。",
+          "観光地化された場所や一般的な観光体験には本質的な興味を感じていない。"
+        ],
+        "best_discriminating_question": "ユーザーは旅先で現地住民と積極的に交流しようとするか？",
+        "testability_notes": "ユーザーの旅の嗜好や行動を1-2問の質問で直接確認でき、検証は比較的容易。",
+        "safety_risk_notes": "“本物志向”を断定的に提示すると、ユーザーの多様な動機を過度に単純化するリスクがある。"
+      },
+      "rationale": "PKGに十分な根拠があり、観察O1・O2をよく説明している。価値観の仮定が強いが、検証は容易。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "ユーザーは観光客として扱われる自己像を避けたいという深層心理を持つ。",
+          "“発見者”や“観察者”としての自己イメージを重視している。"
+        ],
+        "best_discriminating_question": "ユーザーは自分の旅の体験を語る際、“人と違う”ことを強調するか？",
+        "testability_notes": "ユーザーの語り口や自己認識に関する質問が必要で、やや間接的だがインタビュー等で検証可能。",
+        "safety_risk_notes": "深層心理を断定的に扱うため、ユーザーの自己認識と齟齬が生じると反発や違和感を生む可能性がある。"
+      },
+      "rationale": "PKGに根拠があり、観察O1～O3を広く説明。心理的動機の仮定が強く、検証には注意が必要。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "PKGや一般的な情報源には、ユーザーが求める場所の情報が不足している。",
+          "情報ギャップ自体がユーザーの探索欲求を刺激している。"
+        ],
+        "best_discriminating_question": "ユーザーは旅先の下調べをどの程度行うか？",
+        "testability_notes": "ユーザーの情報収集行動や情報ギャップへの反応を質問で確認でき、比較的検証しやすい。",
+        "safety_risk_notes": "“情報不足”を主因と断定すると、ユーザーの主体的な価値観を軽視した印象を与えるリスクがある。"
+      },
+      "rationale": "PKGに根拠があり、観察O1～O3を説明。情報ギャップの動機付け仮定が特徴で、検証は容易。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーは独自の情報収集力やコミュニケーションスキルに自信がある。",
+          "そのスキルを活かすこと自体に価値を感じている。"
+        ],
+        "best_discriminating_question": "ユーザーは旅先で現地の人に積極的に話しかけるか？",
+        "testability_notes": "ユーザーの行動やスキルへの自信を直接質問でき、検証は比較的容易。",
+        "safety_risk_notes": "スキルや自信の有無を断定すると、ユーザーの自己評価と齟齬が生じる場合がある。"
+      },
+      "rationale": "PKGに根拠があり、O2のみを説明。スキル重視の仮定が特徴で、他仮説より説明範囲は狭い。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O3"
+        ],
+        "key_assumptions": [
+          "観光地化が進むことで地域の本来の生活や文化が失われやすい。",
+          "ユーザーはその変化を敏感に感じ取っている。"
+        ],
+        "best_discriminating_question": "ユーザーは観光地化による地域の変化についてどのように考えているか？",
+        "testability_notes": "観光地化への意識や批判的意見を質問で確認でき、検証は容易。",
+        "safety_risk_notes": "“観光地化＝悪”と断定的に受け取られると、価値観の押し付けと感じるユーザーもいる。"
+      },
+      "rationale": "PKGに根拠があり、O1・O3を説明。観光地化への批判的視点が特徴で、O2の説明は弱い。"
+    }
+  ]
+}

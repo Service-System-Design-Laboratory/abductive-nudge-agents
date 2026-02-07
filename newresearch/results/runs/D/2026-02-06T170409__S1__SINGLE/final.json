@@ -1,0 +1,352 @@
+{
+  "context": {
+    "observations": [
+      {
+        "id": "O1",
+        "text": "ユーザーはガイドブックに載っているような場所には一切興味がないと述べている。"
+      },
+      {
+        "id": "O2",
+        "text": "ユーザーは地元の人しか知らない、看板も出ていないような『本物の生活』が残っている場所だけを歩きたいと述べている。"
+      },
+      {
+        "id": "O3",
+        "text": "ユーザーは観光客向けの演出にはもうお腹いっぱいだと述べている。"
+      }
+    ],
+    "assumptions": [
+      {
+        "id": "A1",
+        "text": "ユーザーは観光地化された場所では本物の生活や文化が失われていると感じている可能性がある。",
+        "status": "tentative"
+      },
+      {
+        "id": "A2",
+        "text": "ユーザーは『本物』であることに価値を置いている。",
+        "status": "tentative"
+      },
+      {
+        "id": "A3",
+        "text": "観光客向けの演出はユーザーにとって不自然または興味を削ぐ要因になっている。",
+        "status": "tentative"
+      }
+    ],
+    "questions": [
+      "なぜガイドブックに載っている場所に興味がないのか？",
+      "『本物の生活』とはユーザーにとってどのようなものか？",
+      "観光客向けの演出にどのような不満や違和感を感じているのか？"
+    ],
+    "constraints": {
+      "tone": "supportive",
+      "safety": "avoid determinism"
+    }
+  },
+  "evidence": {
+    "triggers": [
+      {
+        "type": "focus",
+        "text": "ユーザーは『本物の生活』や地元の人しか知らない場所への強い志向を示している。"
+      },
+      {
+        "type": "ambiguity",
+        "text": "『本物の生活』の定義や、観光客向けの演出がなぜ嫌なのかが明確でない。"
+      },
+      {
+        "type": "information_gap",
+        "text": "ユーザーが『本物』にこだわる背景や動機が明らかでない。"
+      }
+    ],
+    "external_observations": [
+      {
+        "id": "Oext1",
+        "text": "ガイドブックに載っていない場所の方が面白いという意見がSNS上で共感を集めている。",
+        "source_url": "https://x.com/Red_Tuxedo/status/2018246990816289097"
+      },
+      {
+        "id": "Oext2",
+        "text": "ガイドブックに載っていない地元の人との交流や体験が貴重で心に残るという観光地の店主のメッセージがある。",
+        "source_url": "https://www.echizenkani.com/20220513115750"
+      },
+      {
+        "id": "Oext3",
+        "text": "Googleマップには載っているが現地に案内がなく、探訪者が自力で見つけるような場所も存在する。",
+        "source_url": "https://www.ryosou.com/simanenokunifudoki2024izumo/"
+      }
+    ]
+  },
+  "hypotheses": [
+    {
+      "hypothesis_id": "H1",
+      "type": "psychological",
+      "explains": [
+        "O1",
+        "O2",
+        "O3"
+      ],
+      "assumes": [
+        "A2"
+      ],
+      "statement": "ユーザーは『本物』であることに強い価値を置いており、観光地化や演出によって失われる『本物らしさ』を求めている。",
+      "mechanism": "ユーザーは自己の価値観に基づき、観光地化された場所では得られないリアルな体験を重視している。",
+      "predictions": [
+        "ユーザーは観光地化されていない場所や地元の人との交流を好む。",
+        "観光地の演出やパッケージ化された体験を避ける傾向がある。"
+      ],
+      "discriminating_questions": [
+        "『本物』であることに価値を感じる理由は何ですか？"
+      ],
+      "persona_link": [
+        "pkg:n7"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H2",
+      "type": "social",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "Oext1"
+      ],
+      "assumes": [
+        "A1"
+      ],
+      "statement": "ユーザーは観光地化された場所では地域の本来の生活や文化が失われやすいと感じており、そうした環境的変化に敏感なため非観光地を志向している。",
+      "mechanism": "観光地化が進むことで地域の生活や文化が商品化・演出化されることに違和感を持ち、オリジナルな生活空間を求めている。",
+      "predictions": [
+        "観光地化に伴う文化の変容や消費に批判的な意見を持つ。",
+        "地元の人しか知らない場所や体験に価値を感じる。"
+      ],
+      "discriminating_questions": [
+        "観光地化による文化の変化についてどう感じますか？"
+      ],
+      "persona_link": [
+        "pkg:n5",
+        "pkg:n7"
+      ],
+      "evidence_link": [
+        "ev:1"
+      ],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H3",
+      "type": "value",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "Oext2"
+      ],
+      "assumes": [
+        "A2"
+      ],
+      "statement": "ユーザーは人とのリアルな交流や、観光客向けでない体験そのものに価値を感じている。",
+      "mechanism": "観光地の演出よりも、地元の人との偶発的な出会いや交流を重視している。",
+      "predictions": [
+        "地元の人との交流を重視した旅の計画を立てる。",
+        "観光スポットよりも地域の生活空間に惹かれる。"
+      ],
+      "discriminating_questions": [
+        "地元の人との交流や偶然の出会いにどのような価値を感じますか？"
+      ],
+      "persona_link": [
+        "pkg:n7"
+      ],
+      "evidence_link": [
+        "ev:2"
+      ],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H4",
+      "type": "environmental",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "Oext3"
+      ],
+      "assumes": [
+        "A3"
+      ],
+      "statement": "ユーザーは観光地の演出や案内表示が多いと、体験が『消費者向け』に最適化されてしまい、発見や探究の楽しさが損なわれると感じている。",
+      "mechanism": "情報が過剰に提供された環境では、自分で発見する喜びや偶発性が失われるため、あえて案内のない場所を選ぶ。",
+      "predictions": [
+        "ユーザーは自分で調べて行く場所や、案内のない場所を好む。",
+        "観光地の標準化された体験を避ける。"
+      ],
+      "discriminating_questions": [
+        "自分で発見することや偶然の出会いにどれくらい重きを置いていますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [
+        "ev:3"
+      ],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H5",
+      "type": "goal_mismatch",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "Oext1"
+      ],
+      "assumes": [
+        "A1",
+        "A2"
+      ],
+      "statement": "（裏切る仮説）ユーザーが『本物の生活』や地元の人しか知らない場所を求めるのは、実は『他の観光客と同じ体験をしたくない』『自分だけの特別な体験をしたい』という差異化欲求が根底にある。",
+      "mechanism": "『本物志向』は自己の独自性や希少性を確保したいという欲求の現れであり、実際には『本物』そのものよりも、他者との差異や優越感を重視している可能性がある。",
+      "predictions": [
+        "他人と同じ体験や写真を避ける傾向が強い。",
+        "『本物』の定義が主観的で、他者が注目し始めると興味を失うことがある。"
+      ],
+      "discriminating_questions": [
+        "他の人と同じ体験を避けたいという気持ちはありますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [
+        "ev:1"
+      ],
+      "is_reframing": true
+    }
+  ],
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A2"
+        ],
+        "best_discriminating_question": "『本物』であることに価値を感じる理由は何ですか？",
+        "testability_notes": "ユーザーが『本物』であることをどの程度重視しているか、体験談や選択基準を聞くことで検証可能。",
+        "safety_risk_notes": "価値観の肯定的解釈なのでリスクは低い。"
+      },
+      "rationale": "ユーザーの発言内容とPKGの『ユーザー価値の重視』が一致しており、表面的な動機説明として妥当。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "A1"
+        ],
+        "best_discriminating_question": "観光地化による文化の変化についてどう感じますか？",
+        "testability_notes": "観光地化や商品化に対する意見を聞くことで検証可能。",
+        "safety_risk_notes": "観光地化への批判的視点を含むが、一般的な関心領域なのでリスクは低い。"
+      },
+      "rationale": "PKGの『研究の意義』や『ユーザー価値の重視』とも関連し、外部観察Oext1も説明できている。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "A2"
+        ],
+        "best_discriminating_question": "地元の人との交流や偶然の出会いにどのような価値を感じますか？",
+        "testability_notes": "ユーザーの体験談や交流への志向性を聞くことで検証可能。",
+        "safety_risk_notes": "交流や体験価値の肯定的解釈なのでリスクは低い。"
+      },
+      "rationale": "外部観察Oext2と合致し、ユーザーの価値観に沿った説明。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "A3"
+        ],
+        "best_discriminating_question": "自分で発見することや偶然の出会いにどれくらい重きを置いていますか？",
+        "testability_notes": "旅の計画や行動パターンを聞くことで検証可能。",
+        "safety_risk_notes": "発見や探究心の肯定的解釈なのでリスクは低い。"
+      },
+      "rationale": "外部観察Oext3を説明し、ユーザーの行動傾向とも一致。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [
+          "ユーザーの発言の裏の動機を推定しており、直接的な証拠はない。"
+        ],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A2"
+        ],
+        "best_discriminating_question": "他の人と同じ体験を避けたいという気持ちはありますか？",
+        "testability_notes": "ユーザーが他者との差異化をどの程度重視しているかを質問で探る必要がある。",
+        "safety_risk_notes": "動機の裏返しを提示するため、やや不快感を与える可能性がある。慎重に扱う必要がある。"
+      },
+      "rationale": "裏切る仮説として、ユーザーの『本物志向』が実は差異化欲求や優越感に基づく可能性を指摘している。"
+    }
+  ],
+  "decision": {
+    "selected_hypothesis_id": "H5",
+    "contrasting_hypothesis_id": "H4",
+    "selection_rationale": "H5（裏切る仮説）を選ぶことで、ユーザーの発言『本物の生活が残る場所だけを歩きたい』の意味が『本物そのものではなく、他者との差異化や独自体験への欲求が動機になっている可能性』に変わる。H4は額面通りに『発見や探究の楽しさを求めている』という読み。どちらの立場に立つかで、今後の旅の選び方や自己理解が大きく変わる。",
+    "user_facing_frame": {
+      "framing": "options",
+      "questions": [
+        "あなたが本当に求めているのは『本物の生活』そのものですか？それとも、他の人と違う体験や自分だけの発見をしたいという気持ちが強いですか？",
+        "自分で発見することや偶然の出会いにどれくらい重きを置いていますか？"
+      ],
+      "options": [
+        "A. 『本物』そのものを求めているのではなく、他者と違う体験や独自性を重視している（H5）。",
+        "B. 発見や探究の楽しさ、偶然の出会いそのものに価値を感じている（H4）。"
+      ]
+    }
+  },
+  "final_response": "あなたが『ガイドブックに載っている場所には興味がない』と感じる背景には、いくつかの可能性が考えられます。ひとつは、他の人と同じ体験を避けて『自分だけの特別な発見』を求めているという気持ち（A）。もうひとつは、案内や演出がない場所で自分で発見することや偶然の出会いそのものに価値を感じているという気持ち（B）です。\n\nどちらの立場で旅を選ぶかによって、これからの行動や体験の意味も変わってくるかもしれません。例えば、Aの立場なら、他の人があまり行かない場所や独自の視点で旅を記録してみるのも面白いかもしれませんし、Bの立場なら、現地での偶然の出会いや小さな発見を大事にする旅のスタイルが合いそうです。\n\n今のあなたに近いのはどちらでしょうか？また、他の人と同じ体験を避けたいという気持ちや、自分で発見することへのこだわりについて、少し振り返ってみるのも新しい視点になるかもしれません。5分だけ、最近の旅や印象に残った体験を思い出して、『なぜその体験が心に残ったのか』をメモしてみませんか？\n\n同じように『本物』や独自の体験を求める人も多いので、SNSやブログで体験をシェアしてみるのもおすすめです。あなたの気持ちや旅のスタイルについて、どちらの立場が今の自分に近いか、ぜひ教えてください。",
+  "markers": {
+    "empathy": {
+      "acknowledgement": true,
+      "reflection": true,
+      "perspective_prompt": true
+    },
+    "nudge": {
+      "easy": true,
+      "attractive": true,
+      "social": true,
+      "timely": true,
+      "has_question": true,
+      "has_options": true,
+      "has_small_action": true,
+      "directive_level": "low"
+    }
+  }
+}

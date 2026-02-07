@@ -1,0 +1,77 @@
+{
+  "triggers": [
+    {
+      "type": "information_gap",
+      "text": "ユーザーは安全面を最優先して行動を制限しているが、具体的な安全対策やコツについてPKGに情報がない。"
+    },
+    {
+      "type": "ambiguity",
+      "text": "ユーザーが安全対策とコストのバランスを重視する傾向があると仮定されているが、実際にどのような安全対策がコスト面と両立できるかPKGでは明確でない。"
+    },
+    {
+      "type": "focus",
+      "text": "ユーザーは『もっと安全に旅行するためのコツ』を求めている点が特に注目される。"
+    }
+  ],
+  "rag_queries": [
+    "海外旅行で安全を確保するための具体的なコツや対策は何か？",
+    "ツアー旅行中やホテル周辺でできる安全対策にはどんなものがある？",
+    "海外旅行で安全対策とコストを両立する方法は？",
+    "海外旅行者が毎日チェックすべき治安情報の種類や入手方法は？"
+  ],
+  "evidence_items": [
+    {
+      "rank": 1,
+      "title": "海外旅行を予定されている皆様へ - 外務省 海外安全ホームページ",
+      "snippet": "一見、安全と思われる国・地域でも特定の場所や時間帯では、危険な場合があります。事前に渡航先の犯罪多発地域をチェックしておき、そうした場所には近づかないことが大切 ...",
+      "url": "https://www.anzen.mofa.go.jp/c_info/message.html",
+      "source_type": "gov"
+    },
+    {
+      "rank": 2,
+      "title": "海外での安全対策について | 京都文教短期大学",
+      "snippet": "十分な補償内容の海外旅行保険への加入を必ず行う · 感染症・風土病・気候、衛生事情や大気汚染などの情報を事前に収集する · 常備薬の準備、必要に応じてワクチンの予防接種.",
+      "url": "https://www.kbu.ac.jp/kbjc/campuslife/international/safety/",
+      "source_type": "edu"
+    },
+    {
+      "rank": 3,
+      "title": "豪雨、地震…旅先で自然災害にあったらどうする？防災のプロ ...",
+      "snippet": "旅行前にまず習慣づけたいのが、宿泊地や観光地周辺のハザードマップの確認。その地域でどのような災害が起き得るのかがわかるほか、避難場所も記載され ...",
+      "url": "https://travel.rakuten.co.jp/mytrip/howto/bousai-interview",
+      "source_type": "com"
+    },
+    {
+      "rank": 4,
+      "title": "海外渡航 安全ガイドブック",
+      "snippet": "安全確保や各種連絡のために，渡航前に連絡手段を検討しておきましょう。 ①海外 ... ○ キャッシュレスサービスがあるか（個人的に立替払いをする必要がないか）.",
+      "url": "https://web.isc.ehime-u.ac.jp/wp-content/uploads/2025/03/anzen_guide.pdf",
+      "source_type": "edu"
+    },
+    {
+      "rank": 5,
+      "title": "旅行業界のための",
+      "snippet": "最優先は、旅行者の安全確保です。 旅行者の安 全な場所への誘導、適切な情報収集、旅行者への状況説明、行程の変更や旅行の中止等を確実に実施 します。",
+      "url": "https://www.mlit.go.jp/kankocho/content/810001667.pdf",
+      "source_type": "gov"
+    }
+  ],
+  "external_observations": [
+    {
+      "id": "Oext1",
+      "text": "旅行業界は旅行者の安全確保を最優先とし、状況に応じて行程の変更や旅行の中止を積極的に実施することで、旅行体験そのものが安全志向に合わせて商品化されている。",
+      "source_url": "https://www.mlit.go.jp/kankocho/content/810001667.pdf"
+    },
+    {
+      "id": "Oext2",
+      "text": "災害や犯罪などのリスク情報は、旅行者自身が毎日チェックするだけでなく、旅行会社や行政によっても演出され、旅行の安全性が『本物らしさ』としてパッケージ化されている。",
+      "source_url": "https://www.anzen.mofa.go.jp/c_info/message.html"
+    },
+    {
+      "id": "Oext3",
+      "text": "安全な旅行を求める傾向が強まることで、観光地やホテル周辺の『安全な場所』が旅行者の集中によって新たなリスクや混雑を生み出し、観察者効果として安全性の構造が変質する可能性がある。",
+      "source_url": "https://travel.rakuten.co.jp/mytrip/howto/bousai-interview"
+    }
+  ],
+  "notes": ""
+}

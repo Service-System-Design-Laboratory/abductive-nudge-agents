@@ -1,0 +1,16 @@
+{
+  "triggers": [
+    {
+      "type": "information_gap",
+      "text": "ユーザーが求める『本物の生活』や『地元の人しか知らない場所』の具体的な特徴や判断基準が明確でない。"
+    },
+    {
+      "type": "ambiguity",
+      "text": "『本物の生活』や『地元の人しか知らない場所』がどのような場所を指すのか、観察からは複数の解釈が可能である。"
+    }
+  ],
+  "rag_queries": [],
+  "evidence_items": [],
+  "external_observations": [],
+  "notes": "RAG disabled (use_rag=false) — trigger identification only"
+}

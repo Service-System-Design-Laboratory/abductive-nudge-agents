@@ -1,0 +1,151 @@
+{
+  "hypotheses": [
+    {
+      "hypothesis_id": "H1",
+      "type": "psychological",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "O4"
+      ],
+      "assumes": [
+        "A1"
+      ],
+      "statement": "ユーザーはコスト削減自体に達成感や満足感を感じている。",
+      "mechanism": "節約行動が自己効力感や達成感につながっているため、旅行の目的が体験よりも節約そのものになっている。",
+      "predictions": [
+        "節約できた金額を記録したり、他人にシェアすることに喜びを感じる。",
+        "多少体験が犠牲になっても、コスト削減を優先する。"
+      ],
+      "discriminating_questions": [
+        "節約できたこと自体にどれくらい満足感がありますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H2",
+      "type": "value",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "O4",
+        "Oext2"
+      ],
+      "assumes": [
+        "A4"
+      ],
+      "statement": "ユーザーは本来『自然との調和』や『地域との交流』を重視しており、節約はその価値観を実現するための手段である。",
+      "mechanism": "コストを抑えることで、より多くの自然体験や地域交流の機会を得ようとしている。節約は目的ではなく、価値観に沿った体験のための手段である。",
+      "predictions": [
+        "浮いた予算で地域体験や自然散策などに使う可能性がある。",
+        "節約方法の中にも地域性や自然との関わりを意識した選択がある。"
+      ],
+      "discriminating_questions": [
+        "節約して浮いた分で何か体験したいことはありますか？"
+      ],
+      "persona_link": [
+        "pkg:p01_n4",
+        "pkg:p01_n1",
+        "pkg:p01_n5",
+        "pkg:p01_n2"
+      ],
+      "evidence_link": [
+        "ev:Oext2"
+      ],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H3",
+      "type": "evidence_gap",
+      "explains": [
+        "O5"
+      ],
+      "assumes": [
+        "A2"
+      ],
+      "statement": "ユーザーは現状の節約方法に限界を感じており、他者の工夫や新しい情報を求めている。",
+      "mechanism": "既存の節約方法では満足できず、さらに新しいアイデアや外部の知見を取り入れたいと考えている。",
+      "predictions": [
+        "ネットやSNSで他の人の節約旅行術を調べている。",
+        "新しい節約法を提案されると興味を示す。"
+      ],
+      "discriminating_questions": [
+        "他の人の節約方法や体験談をよく調べますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [
+        "ev:Oext3"
+      ],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H4",
+      "type": "goal_mismatch",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "O4",
+        "Oext1"
+      ],
+      "assumes": [
+        "A3",
+        "A4"
+      ],
+      "statement": "ユーザーは節約を優先するあまり、本来重視していた『自然との調和』や『地域との交流』といった価値観を犠牲にしている可能性がある。",
+      "mechanism": "コスト削減に集中しすぎて、旅行の本来の目的や楽しみが後回しになっている。",
+      "predictions": [
+        "節約のために観光や地域交流の機会を逃してしまう。",
+        "旅行後に『もっと体験を重視すればよかった』と感じることがある。"
+      ],
+      "discriminating_questions": [
+        "節約のために諦めた体験や交流はありますか？"
+      ],
+      "persona_link": [
+        "pkg:p01_n4",
+        "pkg:p01_n5"
+      ],
+      "evidence_link": [
+        "ev:Oext1"
+      ],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H5",
+      "type": "psychological",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "O4",
+        "Oext2"
+      ],
+      "assumes": [
+        "A1",
+        "A4"
+      ],
+      "statement": "ユーザーは『節約旅行』という行動を通じて、実は自分の価値観（自然との調和や地域との信頼）を商品化・演出している可能性がある。",
+      "mechanism": "節約やローカル体験をSNS等で発信することで、自己イメージや他者からの評価を意識している。節約自体が目的化しているように見えて、実は『本物らしさ』や『ローカルらしさ』を演出している。",
+      "predictions": [
+        "旅行の様子や節約術をSNS等で発信する。",
+        "『本物のローカル体験』や『自然との調和』を強調する表現を使う。"
+      ],
+      "discriminating_questions": [
+        "今回の旅行や節約の工夫を誰かにシェアしたい気持ちはありますか？"
+      ],
+      "persona_link": [
+        "pkg:p01_n4",
+        "pkg:p01_n5",
+        "pkg:p01_n7"
+      ],
+      "evidence_link": [
+        "ev:Oext2"
+      ],
+      "is_reframing": true
+    }
+  ]
+}

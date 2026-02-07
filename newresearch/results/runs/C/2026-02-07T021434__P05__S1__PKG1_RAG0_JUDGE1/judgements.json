@@ -1,0 +1,92 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーが本物志向・地域固有文化重視という価値観を持っていること",
+          "観光地の表層的演出がユーザーにとって魅力的でないこと"
+        ],
+        "best_discriminating_question": "伝統的な祭りや地元の生活に触れることに特別な魅力を感じますか？",
+        "testability_notes": "ユーザーの価値観や興味の方向性を1問で確認しやすい。PKGにも裏付けがある。",
+        "safety_risk_notes": "価値観の断定が強いと感じられる可能性があるが、一般的な範囲。"
+      },
+      "rationale": "PKGの節約志向・低予算旅行と連動しつつ、観察O1・O2を自然に説明。価値観の仮定がやや強いが、致命的な欠陥はない。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーがコスト最適化やデータ分析のスキルを持ち、それを旅行計画に活用していること",
+          "本物の生活圏の発見自体に達成感を感じるという動機があること"
+        ],
+        "best_discriminating_question": "旅行先を決める際、どのような手段で情報を集めていますか？",
+        "testability_notes": "ユーザーの情報収集行動を具体的に質問することで検証可能。PKGのスキル記述とも整合。",
+        "safety_risk_notes": "スキルや達成感の有無を断定的に述べると、ユーザーによっては違和感を覚える可能性がある。"
+      },
+      "rationale": "PKGのスキル（データ分析・コスト最適化）と整合し、O2の説明力は高いが、O1やO3の説明は限定的。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3"
+        ],
+        "key_assumptions": [
+          "ユーザーの旅行目的が『本物の生活』体験であること",
+          "観光地側の提供価値が『非日常の演出』であること"
+        ],
+        "best_discriminating_question": "観光地のイベントやショーを積極的に避ける理由は何ですか？",
+        "testability_notes": "ユーザーの目的と観光地の提供価値のズレを直接質問することで検証可能。",
+        "safety_risk_notes": "ユーザーの目的を一面的に決めつける印象を与えるリスクがある。"
+      },
+      "rationale": "O3（観光地の演出への不満）を明確に説明できるが、O1・O2への説明は間接的。PKGとの直接的なリンクは弱いが、致命的な欠陥はない。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O3"
+        ],
+        "key_assumptions": [
+          "ユーザーが強い節約志向・低予算旅行志向を持っていること",
+          "ガイドブック掲載の観光地がコストパフォーマンス的に魅力がないと感じていること"
+        ],
+        "best_discriminating_question": "旅行先で費用対効果を重視して行き先を選びますか？",
+        "testability_notes": "費用対効果の重視度を直接質問することで容易に検証可能。PKGにも裏付けあり。",
+        "safety_risk_notes": "金銭的動機のみを強調しすぎると、ユーザーの多面的な動機を矮小化するリスクがある。"
+      },
+      "rationale": "PKGの節約志向・低予算旅行と強く整合し、O1・O3を説明できる。O2の説明はやや弱いが、構造的な欠陥はない。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "ユーザーが無意識に他者との差別化や優越感を求めていること",
+          "『本物志向』の主張が心理的戦略として機能していること"
+        ],
+        "best_discriminating_question": "『観光客が行かない場所』へのこだわりは、他者との差別化を意識している部分がありますか？",
+        "testability_notes": "ユーザーの内面動機を問うため、直接的な質問では答えにくい可能性がある。間接的な行動観察も必要。",
+        "safety_risk_notes": "ユーザーの動機を『優越感』や『差別化』と断定することで、反発や不快感を生むリスクが高い。提示には慎重さが必要。"
+      },
+      "rationale": "O2・O3の説明力は高いが、心理的動機の仮定が強く、ユーザーへの配慮が必要。PKGとの整合性は間接的。"
+    }
+  ]
+}

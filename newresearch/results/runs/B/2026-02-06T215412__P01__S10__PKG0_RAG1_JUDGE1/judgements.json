@@ -1,0 +1,96 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーが自己効力感や達成感を求めて行動していること",
+          "SNSでの反響や承認がユーザーの動機に強く影響していること"
+        ],
+        "best_discriminating_question": "SNSで高評価を得た時や新しい撮影技術を身につけた時に、どのような気持ちになりますか？",
+        "testability_notes": "ユーザーへの直接質問やSNS行動の観察で比較的容易に検証可能。",
+        "safety_risk_notes": "動機を心理的側面に限定して断定的に語ると、ユーザーの多様な価値観を見落とすリスクがある。"
+      },
+      "rationale": "観察O1・O2は十分説明できているが、O3（旅の目的）については動機の深層を仮定しているため、やや解釈が入る。心理的要因を強調するため、他仮説との対比で有用。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O4"
+        ],
+        "key_assumptions": [
+          "ユーザーが撮影技術や機材の知識を重視していること",
+          "効率化やクオリティ向上が主な動機であること"
+        ],
+        "best_discriminating_question": "三脚やカメラ設定など、具体的な撮影テクニックを学ぶことにどの程度興味がありますか？",
+        "testability_notes": "ユーザーの情報収集行動や学習意欲をヒアリング・観察することで検証しやすい。",
+        "safety_risk_notes": "技術志向だけを強調すると、ユーザーの情緒的・社会的動機を過小評価する可能性がある。"
+      },
+      "rationale": "O2とO4の説明は十分。技術・効率志向にフォーカスしており、他仮説（心理・社会的要因）との対比に有用。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3",
+          "O4",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "SNS映え写真のノウハウが商品化・体系化されていること",
+          "ユーザーがそれらのノウハウを積極的に利用していること"
+        ],
+        "best_discriminating_question": "SNS映えを意識した商品やサービス（アプリ・講座など）を利用したことがありますか？",
+        "testability_notes": "外部エビデンスやユーザーの利用履歴確認で検証可能。やや外部情報依存度が高い。",
+        "safety_risk_notes": "ユーザーを“流行に流されている”と受け取られかねず、個人の創造性を軽視する印象を与える可能性がある。"
+      },
+      "rationale": "O3, O4, Oext1を外部エビデンスとともに説明できている。環境要因を重視する点で他仮説と明確に区別できる。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O4"
+        ],
+        "key_assumptions": [
+          "現時点でユーザーの具体的なニーズや課題が特定されていないこと"
+        ],
+        "best_discriminating_question": "どのようなシーンや被写体で特に効率化したいと考えていますか？",
+        "testability_notes": "追加質問による情報収集が必須。現状のままでは検証困難。",
+        "safety_risk_notes": "“分からない”という立場を取るため、ユーザーにとっては不親切・消極的に映るリスクがある。"
+      },
+      "rationale": "O4の説明には妥当だが、他の観察や動機の深掘りには寄与しない。現状分析・追加調査の必要性を示す仮説。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "Oext2",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "ユーザーの本質的な動機が“みんなと同じ”であること",
+          "SNS上のコミュニティ規範への適応が主な行動原理であること"
+        ],
+        "best_discriminating_question": "他の人と似たような写真が撮れたときに安心感や満足感を感じますか？",
+        "testability_notes": "ユーザーの価値観や行動理由を深掘りする質問が必要で、やや検証難度は高い。",
+        "safety_risk_notes": "ユーザーの個性や創造性を否定的に捉えられる可能性があり、断定的に提示すると反発や不快感を招くリスクが高い。"
+      },
+      "rationale": "観察・外部事実の多くを説明できるが、動機の“裏切り”解釈を含むため、ユーザーへの配慮や慎重な提示が必要。対比的な仮説として有用。"
+    }
+  ]
+}

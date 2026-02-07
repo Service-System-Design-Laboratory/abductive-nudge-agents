@@ -1,0 +1,33 @@
+{
+  "triggers": [
+    {
+      "type": "focus",
+      "text": "観光客向け・地元民向け・チェーン店の区別に強いこだわりがある"
+    },
+    {
+      "type": "ambiguity",
+      "text": "『本当の郷土料理』や『地元の人が通う店』の定義が曖昧"
+    },
+    {
+      "type": "information_gap",
+      "text": "なぜ観光客向けを避けたいのか、動機が明示されていない"
+    }
+  ],
+  "external_observations": [
+    {
+      "id": "Oext1",
+      "text": "観光地の飲食店や体験は、観光客向けに“本物らしさ”を演出することがあり、地元の人が日常的に利用するものとは限らない（performative authenticity）。",
+      "source_url": "https://wwwtb.mlit.go.jp/chugoku/content/000231443.pdf"
+    },
+    {
+      "id": "Oext2",
+      "text": "地元が作ったものが観光につながることもあるが、観光客のための地域ではないという意識も根強い。",
+      "source_url": "https://wwwtb.mlit.go.jp/chugoku/content/000231443.pdf"
+    },
+    {
+      "id": "Oext3",
+      "text": "郷土料理居酒屋など、観光客向けと地元民向けの境界が曖昧な場合もある（商品化・commodification）。",
+      "source_url": "https://travel.navitime.com/ja/area/jp/guide/NTJmat0520/"
+    }
+  ]
+}

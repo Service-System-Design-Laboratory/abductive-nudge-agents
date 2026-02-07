@@ -1,0 +1,371 @@
+{
+  "context": {
+    "observations": [
+      {
+        "id": "O1",
+        "text": "海外旅行は危険が多いと感じている"
+      },
+      {
+        "id": "O2",
+        "text": "ツアーでしか海外旅行に行かないことにしている"
+      },
+      {
+        "id": "O3",
+        "text": "自由行動の時間もホテルの周辺から離れないようにしている"
+      },
+      {
+        "id": "O4",
+        "text": "治安情報は毎日チェックしている"
+      },
+      {
+        "id": "O5",
+        "text": "もっと安全に旅行するためのコツを求めている"
+      }
+    ],
+    "assumptions": [
+      {
+        "id": "A1",
+        "text": "ユーザーは自分の安全を最優先して行動している",
+        "status": "tentative"
+      },
+      {
+        "id": "A2",
+        "text": "過去に危険な経験や不安を感じたことがある",
+        "status": "tentative"
+      },
+      {
+        "id": "A3",
+        "text": "ツアーやホテル周辺に限定することでコストや手間も抑えられると考えている",
+        "status": "tentative"
+      },
+      {
+        "id": "A4",
+        "text": "安全志向が強いことで旅行の楽しみや幅が狭まることを気にしている可能性がある",
+        "status": "tentative"
+      }
+    ],
+    "questions": [
+      "なぜツアー旅行を選ぶようになったのか？",
+      "自由行動の範囲を広げたい気持ちはあるか？",
+      "治安情報をどのように収集しているのか？",
+      "安全以外に重視している旅行のポイントは？"
+    ],
+    "constraints": {
+      "tone": "supportive",
+      "safety": "avoid determinism"
+    }
+  },
+  "evidence": {
+    "triggers": [
+      {
+        "type": "focus",
+        "text": "安全への強いこだわりが繰り返し現れている"
+      },
+      {
+        "type": "information_gap",
+        "text": "なぜここまで安全重視になったのか、背景が明示されていない"
+      },
+      {
+        "type": "ambiguity",
+        "text": "安全を優先することで他の価値（節約・体験など）とのバランスはどう考えているか不明"
+      },
+      {
+        "type": "contradiction",
+        "text": "節約志向や低予算旅行への関心と、ツアー参加・ホテル周辺限定という選択が必ずしも一致しない可能性"
+      }
+    ],
+    "external_observations": [
+      {
+        "id": "Oext1",
+        "text": "海外旅行ツアーの自由時間は、ホテルからあまり離れない方が良いという意見がある一方で、現地の市場やショッピングも推奨されている。",
+        "source_url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q10144674620"
+      },
+      {
+        "id": "Oext2",
+        "text": "旅費を節約するなら民泊がオススメで、友人と少人数での旅行ならプライバシーを確保しつつコストも抑えられる。",
+        "source_url": "https://www.facebook.com/groups/vamos.a.viajar/posts/10162490040045686/"
+      }
+    ]
+  },
+  "hypotheses": [
+    {
+      "hypothesis_id": "H1",
+      "type": "psychological",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "O4"
+      ],
+      "assumes": [
+        "A1",
+        "A2"
+      ],
+      "statement": "ユーザーは過去の不安やリスク経験から、強い安全志向を持つようになり、行動範囲を極端に限定している。",
+      "mechanism": "過去の不安体験やリスク情報が記憶に残り、予防的行動が強化されている。",
+      "predictions": [
+        "新しい場所や未知の体験に対しても慎重になる",
+        "旅行以外でもリスク回避的な行動が多い"
+      ],
+      "discriminating_questions": [
+        "過去に危険な目に遭ったことがありますか？",
+        "日常生活でも同じようにリスクを避ける傾向がありますか？"
+      ],
+      "persona_link": [
+        "p05_n2"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H2",
+      "type": "value",
+      "explains": [
+        "O2",
+        "O3",
+        "O4"
+      ],
+      "assumes": [
+        "A1",
+        "A3"
+      ],
+      "statement": "安全志向と節約志向が両立する選択肢として、ツアー参加やホテル周辺での行動を選んでいる。",
+      "mechanism": "ツアーやホテル周辺の行動は、コストパフォーマンスと安全確保を同時に満たすための合理的判断である。",
+      "predictions": [
+        "ツアーやホテル選びもコスト重視で選択している",
+        "安全とコストのバランスを常に意識している"
+      ],
+      "discriminating_questions": [
+        "ツアーやホテルを選ぶ際に、価格と安全のどちらをより重視しますか？"
+      ],
+      "persona_link": [
+        "p05_n2",
+        "p05_n3",
+        "p05_n6"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H3",
+      "type": "social",
+      "explains": [
+        "O2",
+        "O3"
+      ],
+      "assumes": [
+        "A1"
+      ],
+      "statement": "周囲（家族や友人）の影響で、安全重視の旅行スタイルを選択している。",
+      "mechanism": "家族や友人からの助言や体験談が、ユーザーの行動選択に影響を与えている。",
+      "predictions": [
+        "旅行計画を立てる際に家族や友人の意見をよく参考にしている",
+        "周囲も同じような旅行スタイルを好む"
+      ],
+      "discriminating_questions": [
+        "家族や友人から安全面でアドバイスを受けたことがありますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H4",
+      "type": "evidence_gap",
+      "explains": [
+        "O5"
+      ],
+      "assumes": [
+        "A1",
+        "A4"
+      ],
+      "statement": "ユーザーは安全を求めるあまり、旅行の幅や体験を狭めていることに無意識に不満や疑問を感じている。",
+      "mechanism": "安全重視の行動が習慣化しつつも、もっと広い体験や新しい発見への欲求が内在している。",
+      "predictions": [
+        "本当はもう少し自由に行動したい気持ちがある",
+        "安全以外の価値（体験・交流）にも関心がある"
+      ],
+      "discriminating_questions": [
+        "もし安全が完全に保証されるなら、もっと自由に行動したいと思いますか？"
+      ],
+      "persona_link": [
+        "p05_n6",
+        "p05_n7"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H5",
+      "type": "goal_mismatch",
+      "explains": [
+        "O2",
+        "O3",
+        "O4",
+        "O5",
+        "Oext2"
+      ],
+      "assumes": [
+        "A3",
+        "A4"
+      ],
+      "statement": "実は『安全』を理由にしているが、本当は節約やコスト最適化を最優先しており、ツアーやホテル周辺限定の行動はコスト重視の結果である（安全は表向きの理由）。",
+      "mechanism": "節約志向が強いため、コストのかかる自由行動や遠出を避ける合理化として『安全』を前面に出している。",
+      "predictions": [
+        "安全以外にもコストや効率を重視した行動が多い",
+        "民泊や格安プランなど、コスト重視の選択肢に強い関心がある"
+      ],
+      "discriminating_questions": [
+        "安全とコスト、どちらを優先して選択していますか？",
+        "民泊や格安プランには興味がありますか？"
+      ],
+      "persona_link": [
+        "p05_n2",
+        "p05_n3",
+        "p05_n6"
+      ],
+      "evidence_link": [
+        "ev:Oext2"
+      ],
+      "is_reframing": true
+    }
+  ],
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A2"
+        ],
+        "best_discriminating_question": "過去に危険な目に遭ったことがありますか？",
+        "testability_notes": "過去の体験や日常のリスク回避傾向を尋ねることで検証可能。",
+        "safety_risk_notes": "過去の不安体験を掘り返す可能性があるため、慎重な配慮が必要。"
+      },
+      "rationale": "安全志向の根拠として過去の経験を重視している点が妥当。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [
+          "ツアーやホテル周辺限定が必ずしもコスト最適化と一致しない場合がある"
+        ],
+        "explains_confirmed": [
+          "O2",
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A3"
+        ],
+        "best_discriminating_question": "ツアーやホテルを選ぶ際に、価格と安全のどちらをより重視しますか？",
+        "testability_notes": "選択基準を明確に尋ねることで検証可能。",
+        "safety_risk_notes": "価値観の優先順位を問うため、押し付けにならないよう注意。"
+      },
+      "rationale": "節約志向と安全志向の両立というPKGに沿った仮説。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [
+          "ユーザー発言に周囲の影響が明示されていない"
+        ],
+        "explains_confirmed": [
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A1"
+        ],
+        "best_discriminating_question": "家族や友人から安全面でアドバイスを受けたことがありますか？",
+        "testability_notes": "周囲の影響について尋ねることで検証可能。",
+        "safety_risk_notes": "本人の主体性を軽視しないように注意。"
+      },
+      "rationale": "社会的影響の可能性をカバー。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [
+          "ユーザーが本当に不満を感じているかは明示されていない"
+        ],
+        "explains_confirmed": [
+          "O5"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A4"
+        ],
+        "best_discriminating_question": "もし安全が完全に保証されるなら、もっと自由に行動したいと思いますか？",
+        "testability_notes": "理想の旅行スタイルを尋ねることで検証可能。",
+        "safety_risk_notes": "無理に行動範囲を広げることを勧めないよう注意。"
+      },
+      "rationale": "安全志向の裏にある欲求や葛藤を指摘。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [
+          "安全志向が本音か建前かは現状では断定できない"
+        ],
+        "explains_confirmed": [
+          "O2",
+          "O3",
+          "O4",
+          "O5",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "A3",
+          "A4"
+        ],
+        "best_discriminating_question": "安全とコスト、どちらを優先して選択していますか？",
+        "testability_notes": "選択の優先順位や民泊・格安プランへの関心を尋ねることで検証可能。",
+        "safety_risk_notes": "ユーザーの自己認識を揺さぶるため、慎重な言い回しが必要。"
+      },
+      "rationale": "『安全』という表向きの理由の裏に、実は節約志向が主因である可能性を指摘。"
+    }
+  ],
+  "decision": {
+    "selected_hypothesis_id": "H5",
+    "contrasting_hypothesis_id": "H4",
+    "selection_rationale": "H5は『安全』を理由にしているが、実は節約やコスト最適化が本当の動機であるという、ユーザー発言の意味を大きく反転させる仮説。しかも外部観察Oext2（民泊やコスト重視の旅の提案）を含み、PKGの節約志向とも整合する。H4は額面通り『安全志向が強すぎて体験の幅が狭まることへの葛藤』という読み。どちらの立場に立つかで、今後の旅行スタイルや選択肢が大きく変わる。",
+    "user_facing_frame": {
+      "framing": "options",
+      "questions": [
+        "安全とコスト、どちらを優先して旅行プランを選んでいますか？",
+        "もし安全が保証されるなら、もっと自由に行動したいと思いますか？"
+      ],
+      "options": [
+        "『安全』を強調しているけれど、本当は節約やコスト最適化が主な理由で、ツアーやホテル周辺限定の行動を選んでいる（H5）。",
+        "安全志向が強いことで、旅行の幅や体験が狭まっていることに無意識に不満や疑問を感じている（H4）。"
+      ]
+    }
+  },
+  "final_response": "ご相談ありがとうございます。『海外旅行は危険が多いから、ツアーでしか行かない』『自由行動もホテル周辺に限定している』というお話から、安全をとても大切にされていることが伝わってきました（acknowledgement）。\n\n一方で、実は『安全』という理由の裏に、節約やコスト最適化を本当は優先している可能性もあるかもしれません（reflection）。たとえば、民泊や格安プランを選ぶことで、コストを抑えつつ少人数で安全に旅行を楽しむ方法もあります（perspective_prompt）。\n\nそこで2つの立場を考えてみました：\n1. 『安全』を強調しているけれど、本当は節約やコスト最適化が主な理由で、ツアーやホテル周辺限定の行動を選んでいる。\n2. 安全志向が強いことで、旅行の幅や体験が狭まっていることに無意識に不満や疑問を感じている。\n\nどちらの立場がご自身の気持ちや行動に近いでしょうか？\n\nもし『コスト重視』の側面が強いと感じたら、民泊や現地の市場を活用することで、少人数でも安全かつ節約しながら新しい体験を増やすこともできます。逆に『もっと自由に行動したい』気持ちがある場合は、現地の治安情報を活用しつつ、ホテル周辺以外でも安全なエリアを少しずつ広げてみるのも一つの方法です。\n\nまずは、次の旅行で『民泊の情報を調べてみる』『ホテルの周辺以外で安全そうなスポットを1つだけリストアップしてみる』など、5分でできる小さな行動から始めてみませんか？\n\n安全とコスト、どちらを優先して選んでいるか、またはもっと自由な体験を求めているか、ぜひご自身の気持ちを振り返ってみてください。どちらの立場に立つかで、今後の旅行の選択肢や楽しみ方が変わってくるかもしれません。",
+  "markers": {
+    "empathy": {
+      "acknowledgement": true,
+      "reflection": true,
+      "perspective_prompt": true
+    },
+    "nudge": {
+      "easy": true,
+      "attractive": true,
+      "social": true,
+      "timely": true,
+      "has_question": true,
+      "has_options": true,
+      "has_small_action": true,
+      "directive_level": "low"
+    }
+  }
+}

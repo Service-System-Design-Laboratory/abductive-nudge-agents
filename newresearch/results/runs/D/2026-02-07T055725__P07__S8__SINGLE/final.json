@@ -1,0 +1,362 @@
+{
+  "context": {
+    "observations": [
+      {
+        "id": "O1",
+        "text": "学生時代に京都に行った経験が忘れられない。"
+      },
+      {
+        "id": "O2",
+        "text": "学生時代の静かな嵐山や人がいない竹林の道の空気をもう一度味わいたいと思っている。"
+      },
+      {
+        "id": "O3",
+        "text": "同じルートを辿るつもりである。"
+      },
+      {
+        "id": "O4",
+        "text": "あの頃と同じ感動を取り戻したいと考えている。"
+      }
+    ],
+    "assumptions": [
+      {
+        "id": "A1",
+        "text": "現在の嵐山や竹林の道も学生時代と同じような体験ができると期待している。",
+        "status": "tentative"
+      },
+      {
+        "id": "A2",
+        "text": "過去の体験が現在の自分にとって重要な意味を持っている。",
+        "status": "tentative"
+      },
+      {
+        "id": "A3",
+        "text": "感動を再現することが可能だと考えている。",
+        "status": "tentative"
+      }
+    ],
+    "questions": [
+      "学生時代の京都や嵐山で、特に印象に残っている出来事や瞬間は何ですか？",
+      "今の自分にとって、あの頃の感動を再び味わうことはどんな意味がありますか？",
+      "もし現在の嵐山が当時と違っていた場合、どんな気持ちになると思いますか？"
+    ],
+    "constraints": {
+      "tone": "supportive",
+      "safety": "avoid determinism"
+    }
+  },
+  "evidence": {
+    "triggers": [
+      {
+        "type": "information_gap",
+        "text": "現在の嵐山や竹林の道が過去と同じ体験を提供できるかどうかが明らかでない。"
+      },
+      {
+        "type": "ambiguity",
+        "text": "『同じ感動』が何を意味するのか、具体的な内容が不明。"
+      },
+      {
+        "type": "contradiction",
+        "text": "外部情報によると、現在の竹林の道は観光客増加や環境変化で当時と異なる可能性が高い。"
+      },
+      {
+        "type": "focus",
+        "text": "過去の体験の再現に強いこだわりがある。"
+      }
+    ],
+    "external_observations": [
+      {
+        "id": "Oext1",
+        "text": "現在の嵐山や竹林の道は観光客が増加し、以前のような静けさや雰囲気が失われているという口コミがある。",
+        "source_url": "https://www.tripadvisor.jp/ShowUserReviews-g298564-d1497822-r626895081-Bamboo_Forest_Street-Kyoto_Kyoto_Prefecture_Kinki.html"
+      },
+      {
+        "id": "Oext2",
+        "text": "竹林の道では落書きや私有地への無断侵入など、観光客によるマナー問題が深刻化している。",
+        "source_url": "https://www.youtube.com/watch?v=Wovh0x4x4eQ"
+      },
+      {
+        "id": "Oext3",
+        "text": "竹林の道の竹が間引きされ、スカスカになっているという指摘がある。",
+        "source_url": "https://www.tripadvisor.jp/ShowUserReviews-g298564-d1497822-r626895081-Bamboo_Forest_Street-Kyoto_Kyoto_Prefecture_Kinki.html"
+      }
+    ]
+  },
+  "hypotheses": [
+    {
+      "hypothesis_id": "H1",
+      "type": "psychological",
+      "explains": [
+        "O1",
+        "O2",
+        "O4"
+      ],
+      "assumes": [
+        "A2"
+      ],
+      "statement": "過去の体験が現在の自分にとって心の拠り所となっており、再び同じ体験を通じて安心感や一体感を得たいと考えている。",
+      "mechanism": "ノスタルジア効果により、過去の幸福な記憶が現在の自己肯定感や安心感に結びつく。",
+      "predictions": [
+        "過去の体験を思い出すことで気持ちが落ち着く",
+        "同じ場所を訪れることで過去の自分とつながる感覚を持つ"
+      ],
+      "discriminating_questions": [
+        "あの頃の感動を思い出すこと自体が、今の自分にとってどんな意味を持っていますか？"
+      ],
+      "persona_link": [
+        "pkg:p07_n2"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H2",
+      "type": "environmental",
+      "explains": [
+        "O2",
+        "O3",
+        "O4",
+        "Oext1",
+        "Oext3"
+      ],
+      "assumes": [
+        "A1",
+        "A3"
+      ],
+      "statement": "現在の嵐山や竹林の道は観光客の増加や環境変化により、当時と同じ感動を得ることが難しい可能性が高い。",
+      "mechanism": "観光地の環境変化（混雑・景観の変化）が体験の質に直接影響するため、過去の再現が困難になる。",
+      "predictions": [
+        "現地を訪れても当時のような静けさや雰囲気を感じにくい",
+        "人の多さや景観の変化に違和感を覚える"
+      ],
+      "discriminating_questions": [
+        "もし現地が当時と違っていた場合、どんな気持ちになると思いますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [
+        "ev:Oext1",
+        "ev:Oext3"
+      ],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H3",
+      "type": "value",
+      "explains": [
+        "O1",
+        "O2",
+        "O4"
+      ],
+      "assumes": [
+        "A2"
+      ],
+      "statement": "地域文化や伝統への敬意が強く、静かな自然や土地の空気を大切にしているため、過去の体験を再現したいと考えている。",
+      "mechanism": "地域文化や自然環境への価値観が、過去の静かな体験を理想化し、再現を望む動機となる。",
+      "predictions": [
+        "地域の伝統や文化に触れる活動にも関心がある",
+        "静かな自然環境を求める傾向がある"
+      ],
+      "discriminating_questions": [
+        "京都のどんな文化や空気感に特に惹かれますか？"
+      ],
+      "persona_link": [
+        "pkg:p07_n2",
+        "pkg:p07_n4"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H4",
+      "type": "goal_mismatch",
+      "explains": [
+        "O2",
+        "O3",
+        "O4"
+      ],
+      "assumes": [
+        "A3"
+      ],
+      "statement": "『同じ感動』を求めているが、実際には過去と現在の自分の心境や状況が異なるため、同じ体験をしても異なる感情になる可能性がある。",
+      "mechanism": "人は時間の経過とともに価値観や感受性が変化するため、同じ体験をしても同じ感動を得るとは限らない。",
+      "predictions": [
+        "現地を訪れても、期待したほどの感動が得られない",
+        "体験後に違和感や物足りなさを感じる"
+      ],
+      "discriminating_questions": [
+        "今の自分が、あの頃と同じ体験をしても同じように感動できると思いますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H5",
+      "type": "psychological",
+      "explains": [
+        "O2",
+        "O3",
+        "O4",
+        "Oext1",
+        "Oext2",
+        "Oext3"
+      ],
+      "assumes": [
+        "A2",
+        "A3"
+      ],
+      "statement": "実は『同じ感動』を求めているのではなく、過去の自分や失われた時間、理想化された記憶を追い求めているだけであり、現実の体験はそのギャップを埋める手段に過ぎない。",
+      "mechanism": "ノスタルジアや理想化された過去への執着が、現実の体験よりも記憶や自己像の再構築を目的化させている。",
+      "predictions": [
+        "現地の変化に強い違和感や失望を感じる",
+        "過去の自分や体験を思い出すこと自体が目的化している",
+        "現実の体験よりも記憶の中のイメージを大事にしている"
+      ],
+      "discriminating_questions": [
+        "本当に求めているのは『あの場所の空気』ですか？それとも『あの頃の自分』や『過去の記憶』ですか？"
+      ],
+      "persona_link": [
+        "pkg:p07_n2"
+      ],
+      "evidence_link": [
+        "ev:Oext1",
+        "ev:Oext2",
+        "ev:Oext3"
+      ],
+      "is_reframing": true
+    }
+  ],
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O4"
+        ],
+        "key_assumptions": [
+          "A2"
+        ],
+        "best_discriminating_question": "あの頃の感動を思い出すこと自体が、今の自分にとってどんな意味を持っていますか？",
+        "testability_notes": "ユーザーが過去の体験を思い出すことで安心感や一体感を得ているかどうかを尋ねることで検証可能。",
+        "safety_risk_notes": "過去への執着を肯定しすぎると現実逃避を助長する可能性があるため、現実とのバランスに配慮が必要。"
+      },
+      "rationale": "ノスタルジアや安心感の獲得という心理的動機は多くの人に普遍的であり、ユーザーの発言とも整合的。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3",
+          "O4",
+          "Oext1",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A3"
+        ],
+        "best_discriminating_question": "もし現地が当時と違っていた場合、どんな気持ちになると思いますか？",
+        "testability_notes": "現地訪問後の感想を聞くことで検証可能。",
+        "safety_risk_notes": "現実を直視させる内容のため、失望感を与えすぎないよう配慮が必要。"
+      },
+      "rationale": "外部エビデンスを活用し、環境変化が体験の質に影響するという現実的な視点を提供している。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O4"
+        ],
+        "key_assumptions": [
+          "A2"
+        ],
+        "best_discriminating_question": "京都のどんな文化や空気感に特に惹かれますか？",
+        "testability_notes": "地域文化や伝統への関心がどれほど強いかを追加質問で確認可能。",
+        "safety_risk_notes": "価値観への共感を示す内容のため、リスクは低い。"
+      },
+      "rationale": "PKGとの整合性が高く、ユーザーの価値観に寄り添った説明。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "A3"
+        ],
+        "best_discriminating_question": "今の自分が、あの頃と同じ体験をしても同じように感動できると思いますか？",
+        "testability_notes": "体験後の感情の変化を尋ねることで検証可能。",
+        "safety_risk_notes": "自己変化を指摘するため、ややセンシティブな内容。"
+      },
+      "rationale": "時間経過による自己変化という普遍的なテーマを扱っている。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3",
+          "O4",
+          "Oext1",
+          "Oext2",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "A2",
+          "A3"
+        ],
+        "best_discriminating_question": "本当に求めているのは『あの場所の空気』ですか？それとも『あの頃の自分』や『過去の記憶』ですか？",
+        "testability_notes": "体験後に現実の変化よりも記憶や自己像への執着が強いかどうかを尋ねることで検証可能。",
+        "safety_risk_notes": "自己像や記憶への執着を指摘するため、やや不快感を与える可能性があるが、深い自己洞察を促す。"
+      },
+      "rationale": "裏切る仮説として、ユーザーの発言の意味を大きく反転させ、現実体験よりも記憶や自己像への執着を指摘している。"
+    }
+  ],
+  "decision": {
+    "selected_hypothesis_id": "H5",
+    "contrasting_hypothesis_id": "H4",
+    "selection_rationale": "H5は『同じ感動を取り戻したい』というユーザー発言の意味を、『実は現実の体験ではなく、過去の自分や記憶への執着が本質である』と深く反転させる。しかも外部観察（Oext1, Oext2, Oext3）を活用し、現実の変化と記憶のギャップに着目した点が探索の成果を反映している。対してH4は額面通りに『同じ体験をしても同じ感動を得られないかもしれない』という自己変化の読み。H5を採用すると、次の行動は『現地で何を感じるか』よりも『自分が本当に求めているものは何か』を探る方向に変わる。H4を採用すると、現地体験の受け止め方や期待値調整が主眼となる。",
+    "user_facing_frame": {
+      "framing": "options",
+      "questions": [
+        "本当に求めているのは『あの場所の空気』ですか？それとも『あの頃の自分』や『過去の記憶』ですか？",
+        "今の自分が、あの頃と同じ体験をしても同じように感動できると思いますか？"
+      ],
+      "options": [
+        "現地で感じることよりも、過去の自分や記憶への思いが本質だと考える（H5）",
+        "今の自分で現地を訪れ、どんな感動が得られるかを確かめたい（H4）"
+      ]
+    }
+  },
+  "final_response": "学生時代に訪れた京都や嵐山の静かな空気、あの頃の感動が今も心に残っているんですね。その体験が、今のあなたにとってどんな意味を持つのか、とても大切な問いだと思います。\n\n最近の嵐山や竹林の道は、観光客が増えたり、景観や雰囲気が変わっているという声もあるようです。そんな中で『同じ感動を取り戻したい』という気持ちには、2つの見方ができるかもしれません。\n\nひとつは、実は『あの場所』そのものよりも、『あの頃の自分』や『過去の記憶』をもう一度感じたいという思いが本質かもしれない、という見方です。もうひとつは、今の自分で現地を訪れてみて、どんな感動や気持ちが湧くのかを確かめてみたい、という立場です。\n\nどちらの立場で考えてみたいでしょうか？\n\n例えば、現地に行く前に『自分が本当に求めているものは何か』を5分だけメモしてみるのもおすすめです。同じように昔の旅を振り返る人も多いですし、今のタイミングだからこそ新しい発見があるかもしれません。どちらの立場で考えるかによって、現地での過ごし方や感じ方もきっと変わるはずです。\n\nあなたは、どちらの立場が今の気持ちに近いと思いますか？",
+  "markers": {
+    "empathy": {
+      "acknowledgement": true,
+      "reflection": true,
+      "perspective_prompt": true
+    },
+    "nudge": {
+      "easy": true,
+      "attractive": true,
+      "social": true,
+      "timely": true,
+      "has_question": true,
+      "has_options": true,
+      "has_small_action": true,
+      "directive_level": "low"
+    }
+  }
+}

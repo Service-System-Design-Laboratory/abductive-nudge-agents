@@ -1,0 +1,133 @@
+{
+  "hypotheses": [
+    {
+      "hypothesis_id": "H1",
+      "type": "psychological",
+      "explains": [
+        "O1",
+        "O2",
+        "O3"
+      ],
+      "assumes": [
+        "A1",
+        "A3"
+      ],
+      "statement": "ユーザーは『本物の生活』を求めることで、他者との差異化や自分の旅の独自性を強調したいという心理が働いている可能性がある。",
+      "mechanism": "『本物』志向は、自己のアイデンティティや価値観を強調するための手段となりうる。",
+      "predictions": [
+        "他人と同じ体験や観光地を避ける傾向が強い",
+        "旅先での体験を語る際に『他の人が知らない』ことを重視する"
+      ],
+      "discriminating_questions": [
+        "『本物の生活』を求める理由は、他の人と違う体験をしたいからですか？"
+      ],
+      "persona_link": [
+        "pkg:p05_n2",
+        "pkg:p05_n6"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H2",
+      "type": "value",
+      "explains": [
+        "O1",
+        "O2"
+      ],
+      "assumes": [
+        "A1"
+      ],
+      "statement": "ユーザーは『本物の生活』や地元の人しか知らない場所に、観光地にはない深い価値や学びがあると考えている。",
+      "mechanism": "観光地化されていない場所には、その土地本来の文化や人々の暮らしが残っていると信じている。",
+      "predictions": [
+        "地元の人との交流や日常的な風景に強い関心を持つ",
+        "観光地の歴史や文化よりも、日常の営みに惹かれる"
+      ],
+      "discriminating_questions": [
+        "観光地でなくても、地元の人と交流できれば満足ですか？"
+      ],
+      "persona_link": [
+        "pkg:p05_n7"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H3",
+      "type": "evidence_gap",
+      "explains": [
+        "O3"
+      ],
+      "assumes": [
+        "A2"
+      ],
+      "statement": "観光客向けの演出に対する不満や拒否感の具体的な理由や体験が明らかでないため、そこに情報ギャップがある。",
+      "mechanism": "過去の体験や価値観による拒否反応だが、詳細が不明。",
+      "predictions": [
+        "過去に観光地で不快な思いをしたエピソードがある"
+      ],
+      "discriminating_questions": [
+        "観光客向けの演出で特に嫌だった経験はありますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H4",
+      "type": "environmental",
+      "explains": [
+        "O2"
+      ],
+      "assumes": [
+        "A1"
+      ],
+      "statement": "インターネットやSNSの普及で、地元の人しか知らない場所も徐々に情報が拡散し、実は『隠れた名所』も既に多くの人に知られている可能性が高い。",
+      "mechanism": "ネット情報の拡散により、『本物』や『隠れた場所』の希少性が相対的に低下している。",
+      "predictions": [
+        "ネットで調べれば『本物』の場所も簡単に見つかる",
+        "現地で他の観光客と遭遇することがある"
+      ],
+      "discriminating_questions": [
+        "ネットで見つかる場所も『本物』だと感じますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [
+        "ev:Oext1"
+      ],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H5",
+      "type": "social",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "Oext2"
+      ],
+      "assumes": [
+        "A3"
+      ],
+      "statement": "ユーザーが“本物の生活”や“地元の人しか知らない場所”を強く求めるのは、実は“本物を求めている自分”というアイデンティティや立場を維持したい心理が根底にあり、観光の本質的体験よりも“消費者としての差異化”を自己正当化するための手段となっている。",
+      "mechanism": "『本物志向』自体が、観光商品化や他者との差異化競争の一部となっているパラドックス。",
+      "predictions": [
+        "『本物』を求めること自体が他者との差別化や自分の立場の主張になっている",
+        "『本物』体験を語る際に、自分の選択や視点の独自性を強調する"
+      ],
+      "discriminating_questions": [
+        "『本物』を求めること自体が、実は他者との差別化や自己表現の一部になっていると感じたことはありますか？"
+      ],
+      "persona_link": [
+        "pkg:p05_n2",
+        "pkg:p05_n6",
+        "pkg:n36"
+      ],
+      "evidence_link": [
+        "ev:Oext2"
+      ],
+      "is_reframing": true
+    }
+  ]
+}

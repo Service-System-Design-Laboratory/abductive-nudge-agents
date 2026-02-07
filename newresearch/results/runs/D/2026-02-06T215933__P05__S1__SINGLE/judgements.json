@@ -1,0 +1,93 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A3"
+        ],
+        "best_discriminating_question": "『本物の生活』を求める理由は、他の人と違う体験をしたいからですか？",
+        "testability_notes": "ユーザーが他者との差異化や独自性をどの程度重視しているかを尋ねることで検証可能。",
+        "safety_risk_notes": "やや内面に踏み込むが、断定しなければリスクは低い。"
+      },
+      "rationale": "ユーザーの発言から独自性や差異化の動機が読み取れるが、直接的な証拠はない。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "A1"
+        ],
+        "best_discriminating_question": "観光地でなくても、地元の人と交流できれば満足ですか？",
+        "testability_notes": "地元の人との交流や日常体験への関心を尋ねることで検証可能。",
+        "safety_risk_notes": "価値観への共感を示す形で提示すればリスクは低い。"
+      },
+      "rationale": "ユーザーの価値観を素直に受け止めた仮説。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [
+          "観光客向けの演出への不満の具体的根拠が不足"
+        ],
+        "explains_confirmed": [
+          "O3"
+        ],
+        "key_assumptions": [
+          "A2"
+        ],
+        "best_discriminating_question": "観光客向けの演出で特に嫌だった経験はありますか？",
+        "testability_notes": "具体的なエピソードを尋ねることで検証可能。",
+        "safety_risk_notes": "過去の不快な経験に触れるため、配慮が必要。"
+      },
+      "rationale": "情報ギャップを指摘する仮説であり、他仮説の補助的役割。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2"
+        ],
+        "key_assumptions": [
+          "A1"
+        ],
+        "best_discriminating_question": "ネットで見つかる場所も『本物』だと感じますか？",
+        "testability_notes": "ネット情報の有無と『本物』感の関係を尋ねることで検証可能。",
+        "safety_risk_notes": "ユーザーの理想と現実のギャップを突くため、慎重な言い回しが必要。"
+      },
+      "rationale": "外部観察Oext1を活用し、情報化社会の影響を指摘。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "A3"
+        ],
+        "best_discriminating_question": "『本物』を求めること自体が、実は他者との差別化や自己表現の一部になっていると感じたことはありますか？",
+        "testability_notes": "ユーザーが『本物志向』の動機をどこまで自己表現や差異化と認識しているかを尋ねることで検証可能。",
+        "safety_risk_notes": "ユーザーの自己像やアイデンティティに踏み込むため、不快感を与えないよう配慮が必要。"
+      },
+      "rationale": "外部観察Oext2とPKG決定ノードn36を活用し、ユーザーの発言の意味を深く反転させる裏切る仮説。"
+    }
+  ]
+}

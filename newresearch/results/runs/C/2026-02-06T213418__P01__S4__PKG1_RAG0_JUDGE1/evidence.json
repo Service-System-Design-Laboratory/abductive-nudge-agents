@@ -1,0 +1,16 @@
+{
+  "triggers": [
+    {
+      "type": "ambiguity",
+      "text": "『本当の郷土料理』や『地元密着型』の定義が曖昧であり、ユーザーが求める店の具体的な条件が不明確である。"
+    },
+    {
+      "type": "information_gap",
+      "text": "観光マップに載っていない店の探し方や、地元住民が毎日通う店を客観的に判別する方法についてPKGに情報がない。"
+    }
+  ],
+  "rag_queries": [],
+  "evidence_items": [],
+  "external_observations": [],
+  "notes": "RAG disabled (use_rag=false) — trigger identification only"
+}

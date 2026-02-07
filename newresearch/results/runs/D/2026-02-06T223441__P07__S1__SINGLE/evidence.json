@@ -1,0 +1,33 @@
+{
+  "triggers": [
+    {
+      "type": "focus",
+      "text": "『本物の生活』や地元の人しか知らない場所への強いこだわり"
+    },
+    {
+      "type": "information_gap",
+      "text": "なぜ観光客向けの演出に強い拒否感を持つのか理由が明示されていない"
+    },
+    {
+      "type": "ambiguity",
+      "text": "『本物の生活』の定義が明確でない"
+    }
+  ],
+  "external_observations": [
+    {
+      "id": "Oext1",
+      "text": "Googleマップには載っているが現地に看板や案内が一切ない場所を探訪する人もいる",
+      "source_url": "https://www.ryosou.com/simanenokunifudoki2024izumo/"
+    },
+    {
+      "id": "Oext2",
+      "text": "ガイドブックに載っていない貴重な体験や人との交流が心に残る",
+      "source_url": "https://www.echizenkani.com/20220513115750"
+    },
+    {
+      "id": "Oext3",
+      "text": "写真や文章で紹介されるヨーロッパや下北沢の街も、観光地化と本物らしさの間で揺れている",
+      "source_url": "https://kazoo66.exblog.jp/"
+    }
+  ]
+}

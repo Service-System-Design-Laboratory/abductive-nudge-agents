@@ -1,0 +1,16 @@
+{
+  "triggers": [
+    {
+      "type": "information_gap",
+      "text": "PKGには『伝統建築や歴史的な街並みに強い関心』や『金沢の江戸時代の風情』『ひがし茶屋街の美的価値』に関する具体的なノードやエッジが存在せず、ユーザーの美意識や目的（伝統建築鑑賞）がPKGで説明されていない。"
+    },
+    {
+      "type": "ambiguity",
+      "text": "PKGの節約志向や低予算旅行のノードと、ユーザーの『日本の美の極み』へのこだわりや美的価値観が両立するかどうか、両者の関係性が曖昧である。"
+    }
+  ],
+  "rag_queries": [],
+  "evidence_items": [],
+  "external_observations": [],
+  "notes": "RAG disabled (use_rag=false) — trigger identification only"
+}

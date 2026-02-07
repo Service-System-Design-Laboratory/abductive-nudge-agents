@@ -1,0 +1,365 @@
+{
+  "context": {
+    "observations": [
+      {
+        "id": "O1",
+        "text": "ユーザーは伝統建築を見に金沢へ行くつもりである。"
+      },
+      {
+        "id": "O2",
+        "text": "ユーザーは金沢が江戸時代の風情を一番よく残している街だと述べている。"
+      },
+      {
+        "id": "O3",
+        "text": "ユーザーはひがし茶屋街の街並みを日本の美の極みだと思っている。"
+      }
+    ],
+    "assumptions": [
+      {
+        "id": "A1",
+        "text": "ユーザーは伝統建築や歴史的な街並みに特別な価値を感じている。",
+        "status": "tentative"
+      },
+      {
+        "id": "A2",
+        "text": "ユーザーは現代的なものよりも歴史的・文化的な要素に惹かれる傾向がある。",
+        "status": "tentative"
+      },
+      {
+        "id": "A3",
+        "text": "ユーザーは観光地としての金沢ではなく、本物の歴史や文化を体験したいと考えている。",
+        "status": "tentative"
+      }
+    ],
+    "questions": [
+      "なぜ伝統建築や江戸時代の風情に強く惹かれるのですか？",
+      "ひがし茶屋街でどんな体験を期待していますか？",
+      "現代的な街並みや観光地と比べて、金沢の伝統的な側面にどんな価値を感じますか？"
+    ],
+    "constraints": {
+      "tone": "supportive",
+      "safety": "avoid determinism"
+    }
+  },
+  "evidence": {
+    "triggers": [
+      {
+        "type": "focus",
+        "text": "伝統建築や江戸時代の風情、ひがし茶屋街への強い価値付けが繰り返されている。"
+      },
+      {
+        "type": "ambiguity",
+        "text": "『日本の美の極み』と感じる理由や、現代的なものとの比較が明示されていない。"
+      },
+      {
+        "type": "information_gap",
+        "text": "観光地としての側面と、個人的な体験としての側面の区別が曖昧。"
+      }
+    ],
+    "external_observations": [
+      {
+        "id": "Oext1",
+        "text": "ひがし茶屋街は金沢を代表する観光地であり、伝統的な茶屋建築が軒を連ね、写真映えするスポットとして人気が高い。",
+        "source_url": "https://www.kanazawa-kankoukyoukai.or.jp/spot/detail_10212.html"
+      },
+      {
+        "id": "Oext2",
+        "text": "ひがし茶屋街の美しい街並みは国の重要伝統的建造物群保存地区に選定されているが、観光地化が進み、和菓子や雑貨など観光客向けの店舗が多い。",
+        "source_url": "https://www.hot-ishikawa.jp/spot/detail_6320.html"
+      },
+      {
+        "id": "Oext3",
+        "text": "ひがし茶屋街の街並みは1820年に公許・形成されて以来、観光資源として保存・活用されている。",
+        "source_url": "https://kanazawa.hakuichi.co.jp/blog/detail.php?blog_id=86"
+      }
+    ]
+  },
+  "hypotheses": [
+    {
+      "hypothesis_id": "H1",
+      "type": "psychological",
+      "explains": [
+        "O1",
+        "O2",
+        "O3"
+      ],
+      "assumes": [
+        "A1"
+      ],
+      "statement": "ユーザーは歴史的なものに触れることで、日常から離れた特別な体験や心の安らぎを求めている。",
+      "mechanism": "伝統建築や江戸時代の風情が、現代社会の喧騒やデジタル化からの一時的な逃避や癒しを提供する。",
+      "predictions": [
+        "ユーザーは他の歴史的な街や建築にも興味を持っている。",
+        "現代的な観光地にはあまり魅力を感じていない。"
+      ],
+      "discriminating_questions": [
+        "伝統的な街並みを見ることで、どんな気持ちになりますか？",
+        "現代的な観光地と比べて、どちらにより惹かれますか？"
+      ],
+      "persona_link": [
+        "pkg:n1",
+        "pkg:n2"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H2",
+      "type": "social",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "Oext1",
+        "Oext2"
+      ],
+      "assumes": [
+        "A1",
+        "A3"
+      ],
+      "statement": "ユーザーは『本物の日本の美』を求めているが、実際には観光地として演出された空間や、他の観光客と同じ体験をすることに無意識に巻き込まれている。",
+      "mechanism": "伝統的な街並みや美の価値を強調することで、観光地化された空間で『本物』を感じようとしているが、実際は商品化された体験を享受している。",
+      "predictions": [
+        "観光客向けの店舗やサービスを利用することが多い。",
+        "写真映えや有名スポットを重視する傾向がある。"
+      ],
+      "discriminating_questions": [
+        "ひがし茶屋街で観光客向けの体験や店舗に惹かれることはありますか？",
+        "『本物の美』と感じる瞬間は、他の観光客と共有できるものですか？"
+      ],
+      "persona_link": [
+        "pkg:n5",
+        "pkg:n7"
+      ],
+      "evidence_link": [
+        "ev:Oext1",
+        "ev:Oext2"
+      ],
+      "is_reframing": true
+    },
+    {
+      "hypothesis_id": "H3",
+      "type": "value",
+      "explains": [
+        "O1",
+        "O2",
+        "O3"
+      ],
+      "assumes": [
+        "A1",
+        "A2"
+      ],
+      "statement": "ユーザーは日本の伝統や美意識を守ること自体に価値を見出しており、保存活動や文化継承に関心がある。",
+      "mechanism": "伝統建築や街並みを高く評価することで、文化的アイデンティティや社会的価値を確認している。",
+      "predictions": [
+        "文化財保護や伝統工芸にも興味を示す。",
+        "保存活動や文化継承に関する話題に積極的である。"
+      ],
+      "discriminating_questions": [
+        "伝統建築や文化財の保存活動に関心がありますか？",
+        "自分が文化継承に関わりたいと思いますか？"
+      ],
+      "persona_link": [
+        "pkg:n7"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H4",
+      "type": "environmental",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "Oext3"
+      ],
+      "assumes": [
+        "A1"
+      ],
+      "statement": "ユーザーは歴史的な環境や景観が現代に残されていること自体に感動し、それを体験することに価値を感じている。",
+      "mechanism": "保存されてきた街並みや環境が、過去と現在をつなぐリアルな体験を可能にしている。",
+      "predictions": [
+        "他の保存地区や歴史的な環境にも興味を持つ。",
+        "景観や環境の維持に関心がある。"
+      ],
+      "discriminating_questions": [
+        "保存地区や歴史的な環境に行くことが多いですか？",
+        "景観の維持や保存に関心がありますか？"
+      ],
+      "persona_link": [
+        "pkg:n5"
+      ],
+      "evidence_link": [
+        "ev:Oext3"
+      ],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H5",
+      "type": "evidence_gap",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "Oext1",
+        "Oext2"
+      ],
+      "assumes": [
+        "A3"
+      ],
+      "statement": "ユーザーが『本物の美』と感じているひがし茶屋街は、実際には観光地化・商品化が進み、演出された『本物らしさ』を消費している可能性がある。",
+      "mechanism": "観光地としての保存・演出が、ユーザーの感じる『本物』と実際の歴史的リアリティとの間にズレを生じさせている。",
+      "predictions": [
+        "観光客向けのサービスや商品に触れることで満足感を得ている。",
+        "本物と感じる一方で、どこかに違和感や演出感を覚えることがある。"
+      ],
+      "discriminating_questions": [
+        "ひがし茶屋街で『本物らしさ』に違和感を覚えたことはありますか？",
+        "観光地化された場所でも『本物』を感じられると思いますか？"
+      ],
+      "persona_link": [
+        "pkg:n156"
+      ],
+      "evidence_link": [
+        "ev:Oext1",
+        "ev:Oext2"
+      ],
+      "is_reframing": true
+    }
+  ],
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A1"
+        ],
+        "best_discriminating_question": "伝統的な街並みを見ることで、どんな気持ちになりますか？",
+        "testability_notes": "ユーザーの他の趣味や行動履歴、現代的な観光地への関心度を聞くことで検証できる。",
+        "safety_risk_notes": "ユーザーの価値観を肯定的に扱うためリスクは低い。"
+      },
+      "rationale": "伝統や歴史への憧れや癒しを動機とする説明は自然で、PKGの『ユーザー価値の重視』とも合致する。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "Oext1",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A3"
+        ],
+        "best_discriminating_question": "ひがし茶屋街で観光客向けの体験や店舗に惹かれることはありますか？",
+        "testability_notes": "観光客としての行動や、他者との共有体験への関心を問うことで検証できる。",
+        "safety_risk_notes": "ユーザーの『本物志向』を相対化するため、やや不快感を与える可能性がある。"
+      },
+      "rationale": "観光地化・商品化という外部観察を取り入れ、ユーザーの自己像を揺さぶる仮説。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A2"
+        ],
+        "best_discriminating_question": "伝統建築や文化財の保存活動に関心がありますか？",
+        "testability_notes": "文化財保護や継承活動への関心を直接質問することで検証できる。",
+        "safety_risk_notes": "価値観の肯定的な側面を扱うためリスクは低い。"
+      },
+      "rationale": "伝統や文化の保存という社会的価値への関心を説明する仮説。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "A1"
+        ],
+        "best_discriminating_question": "保存地区や歴史的な環境に行くことが多いですか？",
+        "testability_notes": "他の保存地区への訪問歴や関心を問うことで検証できる。",
+        "safety_risk_notes": "環境や景観の価値を問うためリスクは低い。"
+      },
+      "rationale": "保存された環境そのものへの感動や価値付けを説明。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "Oext1",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "A3"
+        ],
+        "best_discriminating_question": "ひがし茶屋街で『本物らしさ』に違和感を覚えたことはありますか？",
+        "testability_notes": "体験中に感じた違和感や、観光地化と本物感のギャップについて尋ねることで検証できる。",
+        "safety_risk_notes": "ユーザーの『本物』感覚に疑問を投げかけるため、やや不快感や自己防衛反応を引き起こす可能性がある。"
+      },
+      "rationale": "観光地化・商品化・演出された本物らしさという外部観察を統合し、ユーザーの発言の意味を根本的に揺さぶる。"
+    }
+  ],
+  "decision": {
+    "selected_hypothesis_id": "H5",
+    "contrasting_hypothesis_id": "H4",
+    "selection_rationale": "H5は、ユーザーの『ひがし茶屋街の街並みこそが日本の美の極み』という発言の意味を、『本物の美を体験している』から『観光地化・商品化された“演出された本物らしさ”を消費している』という新しい視点に変える。外部観察（Oext1, Oext2）を活用し、ユーザーの自己像に揺さぶりをかける裏切る仮説である。一方H4は、額面通りに『歴史的な環境の保存そのものに価値を感じている』という読み。どちらの立場に立つかで、金沢での体験の意味づけや今後の行動（例えば観光地化への批判的視点を持つか、純粋に保存の価値を味わうか）が変わる。",
+    "user_facing_frame": {
+      "framing": "options",
+      "questions": [
+        "ひがし茶屋街で『本物らしさ』に違和感を覚えたことはありますか？",
+        "あなたは、観光地化された場所でも『本物』を感じられると思いますか？",
+        "それとも、保存された歴史的な環境そのものに純粋な価値や感動を感じていますか？"
+      ],
+      "options": [
+        "ひがし茶屋街の『本物の美』は、観光地化や商品化による“演出された本物らしさ”を自分が消費している側面もあると捉えてみる（H5）。",
+        "ひがし茶屋街の保存された歴史的な環境そのものに純粋な価値や感動を感じていると捉える（H4）。"
+      ]
+    }
+  },
+  "final_response": "金沢のひがし茶屋街へのご関心、とても素敵ですね。伝統建築や江戸時代の風情に『日本の美の極み』を感じているというお気持ち、しっかり受け止めました。\n\n一方で、実はひがし茶屋街は観光地化や商品化が進み、写真映えや観光客向けの店舗が多いという側面もあるようです。もしかすると、私たちが『本物』だと感じているものには、観光地として“演出された本物らしさ”が含まれているのかもしれません。\n\nそこでお聞きしたいのですが、ひがし茶屋街を歩いていて『本物らしさ』に違和感を覚えたことはありますか？あるいは、観光地化された場所でも十分に『本物』を感じられると思いますか？\n\nまたは、やはり保存された歴史的な環境そのものに純粋な価値や感動を感じている、という立場もあると思います。\n\nこの2つの見方のどちらに立つかで、金沢での体験の意味や、これからの楽しみ方が少し変わるかもしれません。たとえば、次に訪れるときに『観光地化の演出』を意識して歩いてみるのも新しい発見につながりますし、逆に保存の努力や歴史そのものに目を向けてみるのも面白いかもしれません。\n\nどちらの立場に近いか、あるいは両方の視点を行き来してみるのも良いかもしれません。もしよければ、感じたことや気づいたことを教えてください。",
+  "markers": {
+    "empathy": {
+      "acknowledgement": true,
+      "reflection": true,
+      "perspective_prompt": true
+    },
+    "nudge": {
+      "easy": true,
+      "attractive": true,
+      "social": true,
+      "timely": true,
+      "has_question": true,
+      "has_options": true,
+      "has_small_action": true,
+      "directive_level": "low"
+    }
+  }
+}

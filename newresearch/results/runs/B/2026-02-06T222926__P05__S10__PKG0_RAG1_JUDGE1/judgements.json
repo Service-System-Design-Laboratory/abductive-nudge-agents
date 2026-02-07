@@ -1,0 +1,95 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーが写真撮影の効率やテクニックの向上自体に強い関心を持っていること",
+          "効率的な撮影スキルの習得がユーザーの主な動機であること"
+        ],
+        "best_discriminating_question": "撮影枚数を減らしても満足できる方法に興味はありますか？",
+        "testability_notes": "ユーザーへの直接質問や行動観察で比較的容易に検証可能。",
+        "safety_risk_notes": "断定的に提示すると、ユーザーの動機を単純化しすぎて誤解を招く可能性がある。"
+      },
+      "rationale": "撮影効率やスキル向上への関心はO1・O2をよく説明できるが、O4は『効率』への関心の有無を直接問わないためやや弱い。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3",
+          "O4",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "ユーザーがSNSでの承認や共感を写真撮影の主目的としていること",
+          "SNSでの評価が撮影行動に強く影響すること"
+        ],
+        "best_discriminating_question": "SNSでの反応が思わしくない場合、写真撮影へのモチベーションは下がりますか？",
+        "testability_notes": "SNS利用状況やモチベーションの変化をユーザーに尋ねることで検証しやすい。",
+        "safety_risk_notes": "ユーザーの動機を外的承認欲求に限定することで、内発的動機を軽視していると受け取られるリスクがある。"
+      },
+      "rationale": "SNS承認欲求を主軸に据えることでO3・O4・Oext1を一貫して説明できる。観察との整合性が高い。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "観光地や絶景ポイントの撮影環境が“映え”を意図して設計されていること",
+          "ユーザーの撮影行動が環境要因に強く影響されていること"
+        ],
+        "best_discriminating_question": "観光地の撮影スポットの案内やサポートがない場合、撮影への意欲は変わりますか？",
+        "testability_notes": "現地観察やユーザーインタビューで検証可能だが、環境要因の影響度を定量化するには工夫が必要。",
+        "safety_risk_notes": "ユーザーの主体性を軽視していると受け取られる可能性がある。"
+      },
+      "rationale": "撮影環境の設計がユーザー行動に与える影響を強調し、O2・Oext3をよく説明できるが、他の観察への説明力は限定的。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O4"
+        ],
+        "key_assumptions": [
+          "ユーザーが効率的な撮影方法や最新トレンドの知識を十分に持っていないこと",
+          "知識不足が情報探索行動の主因であること"
+        ],
+        "best_discriminating_question": "最近学んだ撮影テクニックや参考にした情報源はありますか？",
+        "testability_notes": "ユーザーの知識レベルや情報探索行動をヒアリングすれば比較的容易に検証可能。",
+        "safety_risk_notes": "ユーザーを“知識不足”と断定することで、無自覚なレッテル貼りや不快感を与えるリスクがある。"
+      },
+      "rationale": "O4の“コツを求めている”という観察を直接的に説明できるが、他の観察への説明力は限定的。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3",
+          "O4",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "ユーザーが“映え”の同質的な価値観に無意識に依存していること",
+          "オリジナリティよりも共通の価値観や承認を優先していること"
+        ],
+        "best_discriminating_question": "他の人と似たような写真になってしまうことに抵抗や不満はありますか？",
+        "testability_notes": "ユーザーの価値観や写真への満足度を深掘りする質問が必要で、やや検証に手間がかかる。",
+        "safety_risk_notes": "ユーザーの個性や創造性を否定的に捉えられる可能性があり、慎重な提示が必要。"
+      },
+      "rationale": "“裏切る仮説”として、O3・O4・Oext2の“同質化”現象を鋭く説明できるが、ユーザーの無意識的動機を推定するため検証難度が高い。"
+    }
+  ]
+}

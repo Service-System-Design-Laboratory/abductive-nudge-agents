@@ -1,0 +1,98 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_linkで参照されているPKGノード（pkg:n37, pkg:n38, pkg:n39, pkg:n40）が全てPKGに存在しない。"
+        ],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーが計画や管理感によって安心感・達成感を得るという心理的傾向（A1）が成立していること",
+          "効率的な計画や実行が自己効力感・自己コントロール欲求の充足に直結すること"
+        ],
+        "best_discriminating_question": "旅行の満足度は『計画通りに実行できたか』で判断しますか？",
+        "testability_notes": "ユーザーへの1問アンケートやインタビューで検証可能。観察O3・O4は直接的な証拠とは言い切れないため、追加質問が有効。",
+        "safety_risk_notes": "心理傾向を断定的に述べるとユーザーの自己認識と齟齬が生じる可能性があり、押し付け的に感じられるリスクがある。"
+      },
+      "rationale": "観察O1・O2は十分説明できるが、PKG参照の欠落が致命的。心理的動機の仮定は妥当だが、断定的提示には注意が必要。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_link（pkg:n44）がPKGに存在しない。"
+        ],
+        "explains_confirmed": [
+          "O5"
+        ],
+        "key_assumptions": [
+          "ユーザーが移動以外の効率化要素（休憩・食事・混雑・営業時間等）を十分考慮していないこと"
+        ],
+        "best_discriminating_question": "食事や休憩の時間・場所も事前に計画していますか？",
+        "testability_notes": "ユーザーの計画内容や発言から直接確認できるため、検証は比較的容易。",
+        "safety_risk_notes": "ユーザーの計画力や配慮不足を指摘する形になるため、配慮が必要。"
+      },
+      "rationale": "O5の説明は妥当だが、PKG参照の欠落が弱点。エビデンスの裏付けは十分で、検証もしやすい。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [],
+        "key_assumptions": [
+          "ユーザーがコストや予算最適化を重視する価値観（A2）を持っていること"
+        ],
+        "best_discriminating_question": "ルートや移動手段を選ぶ際、コストや割引情報も重視しましたか？",
+        "testability_notes": "ユーザーの発言や計画にコスト重視の痕跡があるかを確認する必要があり、追加質問が必要。",
+        "safety_risk_notes": "コスト重視の価値観を前提とすることで、ユーザーの意図とずれる可能性がある。"
+      },
+      "rationale": "コスト重視の仮定は観察からは直接確認できず、説明できている観察も現状なし。エビデンスはあるが、仮説の成立には追加情報が必要。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O4",
+          "O5",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "計画の厳格さと体験の質の間にトレードオフが存在すること",
+          "効率化だけを追求すると満足度が下がるという外部エビデンスがユーザーにも当てはまること"
+        ],
+        "best_discriminating_question": "旅行後、予定通りに進んだが『もっと余裕があればよかった』と感じたことがありますか？",
+        "testability_notes": "ユーザーの満足度評価や旅行後の感想を聞くことで検証可能。外部エビデンスとの照合も容易。",
+        "safety_risk_notes": "ユーザーの計画スタイルを否定的に捉えられる可能性があり、伝え方に注意が必要。"
+      },
+      "rationale": "観察O4・O5・Oext2をよく説明できており、エビデンスも強い。仮説の検証も比較的容易で、実用性が高い。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_linkで参照されているPKGノード（pkg:n37, pkg:n38, pkg:n39, pkg:n40）が全てPKGに存在しない。"
+        ],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "効率的な体験消費がユーザーの自己像や社会的役割の維持に直結していること（A1）",
+          "効率追求が無意識的な自己証明や社会的規範の内面化となっていること"
+        ],
+        "best_discriminating_question": "効率的な旅程を立て実行すること自体に、どのような自己満足や優越感を感じますか？",
+        "testability_notes": "ユーザーの自己認識やSNSでの発信傾向を確認する必要があり、やや深掘りした質問が必要。",
+        "safety_risk_notes": "ユーザーの動機や価値観を深く掘り下げるため、プライバシーや心理的抵抗を生む可能性がある。"
+      },
+      "rationale": "観察と外部事実を広く説明できるが、PKG参照の欠落が致命的。リフレーミング仮説として新規性は高いが、ユーザーへの配慮が必要。"
+    }
+  ]
+}

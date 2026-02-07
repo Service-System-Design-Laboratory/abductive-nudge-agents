@@ -1,0 +1,103 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_linkで指定されたPKGノード（pkg:n100, pkg:n99, pkg:n98）がPKGに存在しない。PKG利用可の条件下では根拠不在となる。"
+        ],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーが伝統的な美意識や歴史的価値観を重視していること",
+          "その価値観が金沢やひがし茶屋街への関心・評価に直結していること"
+        ],
+        "best_discriminating_question": "他の伝統的な町や建築にも同じような敬意や関心を持っていますか？",
+        "testability_notes": "ユーザーへの直接質問で検証可能だが、PKG根拠がないため裏付けが弱い。",
+        "safety_risk_notes": "断定的に提示するとユーザーの価値観を決めつける印象を与える可能性がある。"
+      },
+      "rationale": "PKG根拠不在が致命的だが、観察O1・O2は仮説で説明可能。O3（『日本の美の極み』）は価値判断の強さまで説明しきれていない。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_link（pkg:n80）がPKGに存在しない。PKG利用可の条件下では根拠不在となる。"
+        ],
+        "explains_confirmed": [
+          "O1",
+          "O3"
+        ],
+        "key_assumptions": [
+          "ユーザーが現実逃避や心の安定を求めていること",
+          "伝統的空間がユーザーにとって非日常的な癒しとなっていること"
+        ],
+        "best_discriminating_question": "伝統的な空間にいるとき、どのような感情や気分の変化を感じますか？",
+        "testability_notes": "ユーザーの主観的体験を問う必要があり、直接質問で検証可能だがPKG根拠がない。",
+        "safety_risk_notes": "『現実逃避』という表現がユーザーに否定的な印象を与えるリスクがある。"
+      },
+      "rationale": "PKG根拠不在が致命的。観察O1・O3は説明可能だが、O2（江戸時代の風情の評価）は直接説明していない。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_link（pkg:n98, pkg:n99, pkg:n100）がPKGに存在しない。PKG利用可の条件下では根拠不在となる。"
+        ],
+        "explains_confirmed": [
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "ユーザーが伝統や歴史を尊重する人々との共感・つながりを求めていること",
+          "その社会的欲求が金沢やひがし茶屋街への関心に結びついていること"
+        ],
+        "best_discriminating_question": "伝統文化や歴史好きな人たちと交流することに魅力を感じますか？",
+        "testability_notes": "ユーザーの社会的動機を問う必要があり、直接質問で検証可能だがPKG根拠がない。",
+        "safety_risk_notes": "ユーザーの動機を外部承認欲求と断定することで違和感や反発を招く可能性がある。"
+      },
+      "rationale": "PKG根拠不在が致命的。O2・O3は説明できるが、O1（伝統建築を見る目的）は社会的動機だけでは説明が弱い。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_link（pkg:n90, pkg:n103, pkg:n104）がPKGに存在しない。PKG利用可の条件下では根拠不在となる。"
+        ],
+        "explains_confirmed": [
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "ユーザーの評価が主観的であり、比較基準や根拠が明示されていないこと"
+        ],
+        "best_discriminating_question": "他の伝統的な町と比べて金沢が優れていると感じる具体的な理由は何ですか？",
+        "testability_notes": "ユーザーに比較経験や評価基準を直接質問することで検証可能。",
+        "safety_risk_notes": "ユーザーの評価を『主観的』と断定することで、価値判断を軽視していると受け取られるリスクがある。"
+      },
+      "rationale": "PKG根拠不在が致命的。O2・O3の説明は妥当だが、O1（訪問動機）は説明していない。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_link（pkg:n91, pkg:n80）がPKGに存在しない。PKG利用可の条件下では根拠不在となる。"
+        ],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "ユーザーが『伝統や本物を重視する自分』というアイデンティティを持ち、それを他者に示したいと考えていること"
+        ],
+        "best_discriminating_question": "伝統や本物を重視する自分であることを他者に伝えたいという気持ちはありますか？",
+        "testability_notes": "ユーザーの自己認識や社会的動機を直接質問で検証可能だが、PKG根拠がない。",
+        "safety_risk_notes": "ユーザーの動機を『演出』や『承認欲求』と表現することで不快感や反発を招くリスクが高い。"
+      },
+      "rationale": "PKG根拠不在が致命的。観察O1～O3を説明できるが、ユーザーの動機を深読みしすぎている可能性がある。"
+    }
+  ]
+}

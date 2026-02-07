@@ -1,0 +1,73 @@
+{
+  "triggers": [
+    {
+      "type": "information_gap",
+      "text": "ユーザーが求める『地元の人しか知らない、看板も出ていない本物の生活が残っている場所』の具体例や探し方に関する情報が観察・仮定間で不足している。"
+    },
+    {
+      "type": "focus",
+      "text": "ユーザーは観光客向けの演出や一般的な観光地を強く避けており、地域の生活や文化への直接的なアクセスに特化したニーズが際立っている。"
+    }
+  ],
+  "rag_queries": [
+    "地元の人しか知らない観光地やスポットの探し方",
+    "看板が出ていない本物の生活が残る場所の例",
+    "観光客向けではない地域の生活や文化を体験できる方法",
+    "観光地化されていない日本の街やエリアのリスト"
+  ],
+  "evidence_items": [
+    {
+      "rank": 1,
+      "title": "有名どころに負けない絶景ばかり！知る人ぞ知る穴場の絶景 ...",
+      "snippet": "標高169mに位置し、長崎市内を一望できる夜景スポット。長崎の夜景といえば稲佐山が有名ですが、鍋冠山は地元民しか知らない穴場で、世界新三大夜景の絶景 ...",
+      "url": "https://www.nta.co.jp/media/tripa/articles/W4f7p",
+      "source_type": "com"
+    },
+    {
+      "rank": 2,
+      "title": "本当は教えたくない、日本の「隠れ」絶景9選",
+      "snippet": "国内、海外の絶景スポットを知り尽くす旅行のプロが、おススメする国内の絶景スポットをご紹介します。絶景なのに意外と知られていない、そんな穴場スポットから、次の ...",
+      "url": "https://www.myrepi.com/wellness/travel-and-leisure/formen-150501/",
+      "source_type": "com"
+    },
+    {
+      "rank": 3,
+      "title": "旅行は「観光地」も「穴場」も満喫したい、そんな欲張りなあなたへ。",
+      "snippet": "せっかくの旅行だから有名な観光地へ！もいいけれど、地元の人しか知らない穴場の名店やスポットにも訪れてみたい！なんて思っている人は、きっと少なくないはず。",
+      "url": "https://localletter.jp/articles/trip-guide-roottrip/",
+      "source_type": "com"
+    },
+    {
+      "rank": 4,
+      "title": "なぜか京都にばかり残っている!?「仁丹」町名看板の謎",
+      "snippet": "本物は、夏の地蔵盆などの際に一般公開しているそうで、ここまでくれば立派な文化財だ。特定の時期しか見られないのも、なるほど中級向けといえる。 他方 ...",
+      "url": "https://serai.jp/hobby/1171957",
+      "source_type": "com"
+    },
+    {
+      "rank": 5,
+      "title": "これまでの放送｜ナニコレ珍百景｜テレビ朝日",
+      "snippet": "地元の方々も看板の意味を知らないようだった。 建物を訪ねて聞いてみたところ、そこはビルや戸建て・マンションアパート、駐車場などを清掃する会社で、 ...",
+      "url": "https://www.tv-asahi.co.jp/nanikore/backnumber2/0025/",
+      "source_type": "com"
+    }
+  ],
+  "external_observations": [
+    {
+      "id": "Oext1",
+      "text": "『地元民しか知らない穴場』という概念自体が観光業界のマーケティング戦略として商品化されており、隠れスポットが積極的に紹介されている。",
+      "source_url": "https://www.myrepi.com/wellness/travel-and-leisure/formen-150501/"
+    },
+    {
+      "id": "Oext2",
+      "text": "『本物の生活』や『地元民しか知らない場所』を求める旅行者の増加により、そうした場所が観光資源として演出される傾向が強まっている。",
+      "source_url": "https://localletter.jp/articles/trip-guide-roottrip/"
+    },
+    {
+      "id": "Oext3",
+      "text": "観光客向けの演出を避ける志向そのものが、旅行業界にとって新たなターゲット層となり、結果的に『非観光地』が観光化される逆説的現象が生じている。",
+      "source_url": "https://www.nta.co.jp/media/tripa/articles/W4f7p"
+    }
+  ],
+  "notes": ""
+}

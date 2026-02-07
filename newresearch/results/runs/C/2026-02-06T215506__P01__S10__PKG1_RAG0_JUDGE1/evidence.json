@@ -1,0 +1,16 @@
+{
+  "triggers": [
+    {
+      "type": "information_gap",
+      "text": "ユーザーが求めている『効率的に映える写真を撮るコツ』について、PKGには具体的な方法やテクニックの情報が存在しない。"
+    },
+    {
+      "type": "focus",
+      "text": "旅の目的が『SNSにアップするための完璧な写真を撮ること』に特化している点は、従来の旅行目的（体験や観光）と異なり、特に注目すべき観察である。"
+    }
+  ],
+  "rag_queries": [],
+  "evidence_items": [],
+  "external_observations": [],
+  "notes": "RAG disabled (use_rag=false) — trigger identification only"
+}

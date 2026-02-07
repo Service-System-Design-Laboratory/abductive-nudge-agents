@@ -1,0 +1,125 @@
+{
+  "hypotheses": [
+    {
+      "hypothesis_id": "H1",
+      "type": "psychological",
+      "explains": [
+        "O1",
+        "O2",
+        "O3"
+      ],
+      "assumes": [
+        "A1"
+      ],
+      "statement": "ユーザーはSNSでの承認や反応を得ることが、旅の大きな動機となっている。",
+      "mechanism": "SNSでの『いいね』やコメントが自己肯定感や達成感につながっている。",
+      "predictions": [
+        "SNSでの反応が良いと、次の旅行や撮影への意欲が高まる",
+        "反応が薄いと満足度が下がる"
+      ],
+      "discriminating_questions": [
+        "SNSでの反応が良かったとき、どんな気持ちになりますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H2",
+      "type": "value",
+      "explains": [
+        "O2",
+        "O3"
+      ],
+      "assumes": [
+        "A2"
+      ],
+      "statement": "ユーザーは自然との調和や絶景そのものの価値を大切にしており、その感動を写真という形で残したいと考えている。",
+      "mechanism": "写真撮影は自然体験の延長であり、記録と共有を通じて感動を再確認している。",
+      "predictions": [
+        "SNSでの反応よりも、自分が納得できる写真が撮れることが重要",
+        "現地での体験自体に強い満足感を感じている"
+      ],
+      "discriminating_questions": [
+        "SNSでの反応がなくても、良い写真が撮れたら満足できますか？"
+      ],
+      "persona_link": [
+        "p01_n4",
+        "p01_n1"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H3",
+      "type": "skill",
+      "explains": [
+        "O4"
+      ],
+      "assumes": [
+        "A3"
+      ],
+      "statement": "ユーザーは撮影技術や効率的な方法を学ぶことで、より多くの写真を撮り、旅の時間を有効活用したいと考えている。",
+      "mechanism": "効率的な撮影方法を知ることで、撮影以外の体験や移動時間も充実させたいという意図がある。",
+      "predictions": [
+        "撮影の段取りや機材準備にも関心がある",
+        "撮影時間の短縮や効率化に満足感を感じる"
+      ],
+      "discriminating_questions": [
+        "撮影以外の時間も大切にしたいと感じますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H4",
+      "type": "evidence_gap",
+      "explains": [
+        "O4",
+        "O2"
+      ],
+      "assumes": [
+        "A3"
+      ],
+      "statement": "ユーザーは『効率的な映え写真』の撮影方法を求めているが、実際には撮影行為自体が旅の楽しみであり、効率化が本当に満足度を上げるかは不明である。",
+      "mechanism": "撮影のプロセスそのものが体験の一部となっており、効率化が逆に満足度を下げる可能性もある。",
+      "predictions": [
+        "効率的に撮影しすぎると、旅の充実感が減ることがある"
+      ],
+      "discriminating_questions": [
+        "撮影が早く終わってしまうと、物足りなさを感じることはありませんか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H5",
+      "type": "social",
+      "explains": [
+        "O3",
+        "O4",
+        "O2",
+        "Oext2"
+      ],
+      "assumes": [
+        "A1"
+      ],
+      "statement": "ユーザーが『完璧な写真』を求める背景には、SNSで求められる『演出された本物らしさ（performative authenticity）』への無意識の適応がある。つまり、自然体験をシェアするというより、SNS上で“本物らしさ”を演出すること自体が目的化している可能性がある。",
+      "mechanism": "SNS文化の中で、自然な体験や絶景の“本物らしさ”を演出することが評価されるため、ユーザーも無意識にその規範に従っている。",
+      "predictions": [
+        "SNSで他者の“本物らしい”投稿を参考にしている",
+        "撮影や投稿の内容が徐々に他者の基準に近づいていく"
+      ],
+      "discriminating_questions": [
+        "SNSで他の人の投稿や流行を意識して写真を撮ることはありますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [
+        "Oext2"
+      ],
+      "is_reframing": true
+    }
+  ]
+}

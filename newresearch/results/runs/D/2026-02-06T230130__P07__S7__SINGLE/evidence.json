@@ -1,0 +1,33 @@
+{
+  "triggers": [
+    {
+      "type": "focus",
+      "text": "安全への強いこだわりが一貫している。"
+    },
+    {
+      "type": "information_gap",
+      "text": "なぜここまで慎重な行動を取るようになったのか、背景が語られていない。"
+    },
+    {
+      "type": "ambiguity",
+      "text": "本当は自由行動や冒険的な体験に興味がないのか、それとも安全を理由に控えているのか不明。"
+    }
+  ],
+  "external_observations": [
+    {
+      "id": "Oext1",
+      "text": "海外旅行ツアーの自由時間でも、ホテル周辺から大きく動かない人が多い。",
+      "source_url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q10144674620"
+    },
+    {
+      "id": "Oext2",
+      "text": "旅費を節約するために民泊を利用し、友人とプライバシーを確保しながら旅行する人もいる。",
+      "source_url": "https://www.facebook.com/groups/vamos.a.viajar/posts/10162490040045686/"
+    },
+    {
+      "id": "Oext3",
+      "text": "都市再開発や観光地の魅力づくりでは、自然や人々の交流の要素が重要視されている。",
+      "source_url": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/yokohamako/kkihon/keikaku/yamashita/joi/hokoseiiken.files/iken_itiran.pdf"
+    }
+  ]
+}

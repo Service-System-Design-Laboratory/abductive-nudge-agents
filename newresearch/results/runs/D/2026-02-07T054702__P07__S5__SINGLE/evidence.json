@@ -1,0 +1,23 @@
+{
+  "triggers": [
+    {
+      "type": "focus",
+      "text": "ユーザーは徹底的なコスト削減に強い関心を持っている。"
+    },
+    {
+      "type": "ambiguity",
+      "text": "旅行の目的や、どこまで快適さを犠牲にできるかが明確でない。"
+    },
+    {
+      "type": "information_gap",
+      "text": "節約以外の価値観や、地域体験への関心が不明。"
+    }
+  ],
+  "external_observations": [
+    {
+      "id": "Oext1",
+      "text": "日帰り旅行なら宿泊費が不要になり、旅費を大幅に節約できる。",
+      "source_url": "https://sakeinvest.com/hongkong-daytrip/"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "triggers": [
+    {
+      "type": "information_gap",
+      "text": "ユーザーは安全対策としてツアー参加やホテル周辺から離れないこと、治安情報のチェックを実施しているが、これ以外の安全対策やコツについてPKGに情報がない。"
+    },
+    {
+      "type": "focus",
+      "text": "ユーザーは『もっと安全に旅行するためのコツ』を求めているが、現状の対策以外の具体的な方法が観察・仮定・PKGに示されていない。"
+    }
+  ],
+  "rag_queries": [],
+  "evidence_items": [],
+  "external_observations": [],
+  "notes": "RAG disabled (use_rag=false) — trigger identification only"
+}

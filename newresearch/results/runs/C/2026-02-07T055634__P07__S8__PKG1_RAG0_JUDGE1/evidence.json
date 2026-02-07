@@ -1,0 +1,16 @@
+{
+  "triggers": [
+    {
+      "type": "information_gap",
+      "text": "学生時代に体験した嵐山や竹林の道の静けさと、現在も同じ感動や環境が得られるかどうかについてPKGに情報がない。"
+    },
+    {
+      "type": "ambiguity",
+      "text": "『同じルートを辿る』ことで過去の感動が再現できるかどうか、その因果関係や再現性についてPKGで明確な説明がない。"
+    }
+  ],
+  "rag_queries": [],
+  "evidence_items": [],
+  "external_observations": [],
+  "notes": "RAG disabled (use_rag=false) — trigger identification only"
+}

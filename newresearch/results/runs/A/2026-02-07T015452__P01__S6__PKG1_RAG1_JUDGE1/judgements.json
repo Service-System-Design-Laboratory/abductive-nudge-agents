@@ -1,0 +1,96 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O4"
+        ],
+        "key_assumptions": [
+          "ユーザーが『人の手が入っていない原生林』という価値観を本当に強く持っている",
+          "この価値観が縄文杉の神秘性や自己理解の根拠となっている"
+        ],
+        "best_discriminating_question": "屋久島以外で『人の手が入っていない』自然をどのように評価しますか？",
+        "testability_notes": "ユーザーへの価値観に関する質問で比較的容易に検証可能。PKGにも裏付けがある。",
+        "safety_risk_notes": "価値観の断定が強いと、ユーザーが自身の多様な動機を否定されたと感じるリスクがある。"
+      },
+      "rationale": "PKGに基づく価値観仮説で観察O2・O4をよく説明するが、価値観の単一性を過度に強調しない配慮が必要。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "Oext1",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "現地の『原生』イメージが観光管理や演出の結果である",
+          "利用者がその演出を十分に認識していない"
+        ],
+        "best_discriminating_question": "縄文杉周辺で観光向けの施設や管理の存在をどの程度意識しましたか？",
+        "testability_notes": "現地観察や外部エビデンス（ev:1, ev:5）で検証しやすい。ユーザーの認識確認も可能。",
+        "safety_risk_notes": "『演出』という表現がユーザーの体験価値を否定する印象を与える可能性がある。"
+      },
+      "rationale": "外部エビデンスに強く支えられ、観察O2や外部事実をよく説明するが、ユーザー体験の主観的価値を軽視しない配慮が必要。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "ユーザーが世界遺産登録前からの経験を社会的アイデンティティ形成に用いている",
+          "地域コミュニティやリピーターとの交流が実際に存在する"
+        ],
+        "best_discriminating_question": "地域住民や他の常連訪問者との交流経験はありますか？",
+        "testability_notes": "PKGの該当ノード（p01_n2, p01_n5）やユーザーの発言から検証可能。交流経験の有無が鍵。",
+        "safety_risk_notes": "ユーザーの『特別な立場』意識を過度に強調すると、他者との比較や優越感を煽るリスクがある。"
+      },
+      "rationale": "社会的アイデンティティ仮説としてO3・O4を説明するが、交流経験の実態確認が重要。PKGとの整合性も高い。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "ユーザーが原生林と人工林・二次林の区別や現地の実態を十分に認識していない",
+          "『手つかず』という表現に情報ギャップがある"
+        ],
+        "best_discriminating_question": "縄文杉周辺に人工林や二次林があることをご存知ですか？",
+        "testability_notes": "外部エビデンス（ev:3）やユーザーの知識確認で検証可能。情報ギャップの有無がポイント。",
+        "safety_risk_notes": "ユーザーの知識不足を指摘する形になると、恥をかかせたり防衛的反応を招く恐れがある。"
+      },
+      "rationale": "情報ギャップ仮説としてO2・O3を説明し、外部エビデンスとも整合するが、ユーザーの認識を問う際の配慮が必要。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O4",
+          "O2",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "ユーザーの『分かっているつもり』発言が自己像の維持・強化という心理的動機に基づく",
+          "実際の自然や管理の現実よりも自己イメージが重視されている"
+        ],
+        "best_discriminating_question": "『自分が一番分かっている』という感覚がどこから来ていると思いますか？",
+        "testability_notes": "ユーザーの自己認識や反応を深掘りする必要があり、直接的な質問で検証可能だが、ややセンシティブ。",
+        "safety_risk_notes": "ユーザーの動機や自己像に踏み込むため、防衛的反応や不快感を招くリスクが高い。表現に十分な配慮が必要。"
+      },
+      "rationale": "PKG・外部事実・観察を横断的に説明できるが、心理的動機の指摘はセンシティブで、提示時の慎重な配慮が不可欠。"
+    }
+  ]
+}

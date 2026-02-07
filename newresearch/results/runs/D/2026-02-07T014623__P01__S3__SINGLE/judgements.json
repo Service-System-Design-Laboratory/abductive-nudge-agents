@@ -1,0 +1,99 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A2"
+        ],
+        "best_discriminating_question": "伝統建築を見ているとき、どんな気持ちや安心感を感じますか？",
+        "testability_notes": "ユーザーの他の関心や行動履歴を聞き、伝統や自然との調和への志向が一貫しているか確認する。",
+        "safety_risk_notes": "価値観を肯定する内容なのでリスクは低い。"
+      },
+      "rationale": "PKGの価値観と観察が一致しており、ユーザーの発言を素直に説明できる。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "Oext1",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "A3"
+        ],
+        "best_discriminating_question": "ひがし茶屋街の美しさを感じるとき、他の人の評価や写真映えも意識していますか？",
+        "testability_notes": "観光地としての演出やSNSでの評価をどの程度意識しているかを尋ねる。",
+        "safety_risk_notes": "ユーザーの美意識が外部影響を受けている可能性を指摘するため、やや不快感を与えるリスクあり。"
+      },
+      "rationale": "外部観察（Oext1, Oext2）を取り入れ、ユーザーの美意識が観光地の演出や商品化に影響されている可能性を示す。発言の意味を大きく変える。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [
+          "H1と説明範囲が重複し、動機の深掘りが弱い"
+        ],
+        "explains_confirmed": [
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A2"
+        ],
+        "best_discriminating_question": "現代的な建築や街並みにはどのような印象を持っていますか？",
+        "testability_notes": "現代的なものへの評価を聞くことで、伝統重視かどうかを確認できる。",
+        "safety_risk_notes": "価値観の肯定なのでリスクは低い。"
+      },
+      "rationale": "価値観レベルの説明であり、PKGと整合的だが新規性は低い。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A2"
+        ],
+        "best_discriminating_question": "最近、都市やデジタル環境に疲れを感じることはありますか？",
+        "testability_notes": "都市生活やデジタル機器への態度を尋ねることで検証できる。",
+        "safety_risk_notes": "ユーザーの弱みやストレスに触れるため、配慮が必要。"
+      },
+      "rationale": "PKGの『デジタル苦手』や『紙ベース管理』とも関連し、環境要因の説明として妥当。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "A3"
+        ],
+        "best_discriminating_question": "観光客が多いときと少ないときで、街並みの印象は変わりますか？",
+        "testability_notes": "現地での体験の違いを尋ねることで、観察者効果の有無を確認できる。",
+        "safety_risk_notes": "ユーザーの美意識に疑問を投げかけるため、やや不快感を与える可能性あり。"
+      },
+      "rationale": "観察者効果という外部要因を持ち込み、ユーザーの美的体験が環境に左右されている可能性を示す。"
+    }
+  ]
+}

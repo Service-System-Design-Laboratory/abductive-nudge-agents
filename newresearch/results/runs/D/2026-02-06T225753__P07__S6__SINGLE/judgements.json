@@ -1,0 +1,90 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O4"
+        ],
+        "key_assumptions": [
+          "A1"
+        ],
+        "best_discriminating_question": "他の人が屋久島について語るとき、どんな気持ちになりますか？",
+        "testability_notes": "ユーザーの語りや態度から、誇りや愛着の強さ、他者との差別化意識を観察できる。",
+        "safety_risk_notes": "誇りや自負を肯定するため、リスクは低い。"
+      },
+      "rationale": "ユーザーの発言から強い愛着と自負が感じられるため、妥当性が高い。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A2"
+        ],
+        "best_discriminating_question": "世界遺産登録前と後で、屋久島や縄文杉の雰囲気に違いを感じますか？",
+        "testability_notes": "過去と現在の具体的なエピソードや感情の変化を尋ねることで検証可能。",
+        "safety_risk_notes": "変化への感受性を問うため、やや慎重な配慮が必要。"
+      },
+      "rationale": "外部観察（Oext1）とも整合し、環境変化への感受性を説明できる。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O4"
+        ],
+        "key_assumptions": [
+          "A3"
+        ],
+        "best_discriminating_question": "初めて屋久島を訪れる人にどんなアドバイスをしたいですか？",
+        "testability_notes": "他者との比較やアドバイスの内容から、差別化意識を観察できる。",
+        "safety_risk_notes": "他者との優越感を刺激しすぎないよう注意。"
+      },
+      "rationale": "『誰よりも分かっている』という発言の社会的側面に焦点を当てている。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A1"
+        ],
+        "best_discriminating_question": "屋久島の自然や文化を守るために、どんなことが大切だと思いますか？",
+        "testability_notes": "保全や文化活動への関心度を問うことで検証可能。",
+        "safety_risk_notes": "価値観を肯定する内容なのでリスクは低い。"
+      },
+      "rationale": "PKGの価値観とも合致し、自然保護や文化への敬意を説明できる。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O4",
+          "O2",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A2"
+        ],
+        "best_discriminating_question": "最近、屋久島の見え方や感じ方が変わったと感じることはありますか？",
+        "testability_notes": "体験や語りによる自己像の揺らぎや変化を尋ねることで検証可能。",
+        "safety_risk_notes": "ユーザーの自己像や誇りに揺さぶりをかけるため、慎重な配慮が必要。"
+      },
+      "rationale": "外部観察（Oext2）を活用し、ユーザーの発言の裏にある不安や揺らぎを指摘することで、発言の意味を大きく変える。"
+    }
+  ]
+}

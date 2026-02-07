@@ -1,0 +1,16 @@
+{
+  "triggers": [
+    {
+      "type": "information_gap",
+      "text": "屋久島や縄文杉の原生林の具体的な自然環境や人の手が入っていない状態についてPKGに情報がない。"
+    },
+    {
+      "type": "ambiguity",
+      "text": "『誰よりも分かっているつもり』という主張の根拠や比較対象がPKGに明示されていない。"
+    }
+  ],
+  "rag_queries": [],
+  "evidence_items": [],
+  "external_observations": [],
+  "notes": "RAG disabled (use_rag=false) — trigger identification only"
+}

@@ -1,0 +1,100 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A4"
+        ],
+        "best_discriminating_question": "節約の工夫を考えること自体が旅行の楽しみになっていますか？",
+        "testability_notes": "旅行の満足感や節約の工夫に対する反応を尋ねることで検証可能。",
+        "safety_risk_notes": "節約志向を肯定的に扱うためリスクは低い。"
+      },
+      "rationale": "ユーザーの節約志向や工夫への関心をPKGからも裏付けられる。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4",
+          "O5"
+        ],
+        "key_assumptions": [
+          "A2",
+          "A3"
+        ],
+        "best_discriminating_question": "今回の旅行で『体験』や『思い出』よりも『節約』を優先していると感じますか？",
+        "testability_notes": "旅行後の満足度や体験の質について尋ねることで検証可能。",
+        "safety_risk_notes": "節約志向の裏にある価値観の転倒を指摘するため、やや不快感を与える可能性がある。"
+      },
+      "rationale": "節約が目的化している可能性を指摘し、旅行の本来の意味を問い直す裏切る仮説。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "A3"
+        ],
+        "best_discriminating_question": "限られた予算でどれだけ多くの体験ができるかを重視していますか？",
+        "testability_notes": "旅行の計画や行動の優先度を尋ねることで検証可能。",
+        "safety_risk_notes": "肯定的な解釈のためリスクは低い。"
+      },
+      "rationale": "節約と体験のバランスを重視する立場。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O5"
+        ],
+        "key_assumptions": [
+          "A4"
+        ],
+        "best_discriminating_question": "他の人の節約旅行の工夫や裏技を調べるのが好きですか？",
+        "testability_notes": "情報収集の傾向を尋ねることで検証可能。",
+        "safety_risk_notes": "新しい知識への関心を前提とするためリスクは低い。"
+      },
+      "rationale": "節約アイディアの探索意欲に着目。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4",
+          "O5",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "A3"
+        ],
+        "best_discriminating_question": "日帰り旅行にして宿泊費をゼロにするという発想は検討したことがありますか？",
+        "testability_notes": "日帰り旅行という選択肢の有無を尋ねることで検証可能。",
+        "safety_risk_notes": "『旅行=宿泊』という前提を問い直すため、やや不快感や驚きを与える可能性がある。"
+      },
+      "rationale": "外部観察（Oext1）を活用し、旅行の定義自体を問い直す深い裏切る仮説。"
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "hypotheses": [
+    {
+      "hypothesis_id": "H1",
+      "type": "psychological",
+      "explains": [
+        "O1",
+        "O2",
+        "O3"
+      ],
+      "assumes": [
+        "A1",
+        "A2"
+      ],
+      "statement": "ユーザーは表面的な体験よりも、深い自己充足感や探究心を満たすために『本物の生活』を求めている。",
+      "mechanism": "観光地の演出や既知の情報では満たされない自己の探究心や独自性への欲求が強い。",
+      "predictions": [
+        "人があまり行かない場所や情報が少ない場所を好む",
+        "自分だけの発見や体験に価値を感じる"
+      ],
+      "discriminating_questions": [
+        "『本物の生活』を歩くことでどんな気持ちや満足感を得たいですか？"
+      ],
+      "persona_link": [
+        "pkg:p07_n2"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H2",
+      "type": "social",
+      "explains": [
+        "O2",
+        "O3",
+        "Oext2"
+      ],
+      "assumes": [
+        "A2",
+        "A3"
+      ],
+      "statement": "ユーザーは地元の人との交流や、観光客がいない空間での人間関係・文化体験に価値を置いている。",
+      "mechanism": "観光地化された場所では本来の地域文化や人との交流が薄れるため、地元密着の体験を求める。",
+      "predictions": [
+        "地元の人との会話や交流を重視する",
+        "観光客が多い場所では居心地の悪さを感じる"
+      ],
+      "discriminating_questions": [
+        "地元の人との交流や会話ができることが、その場所の魅力の中心ですか？"
+      ],
+      "persona_link": [
+        "pkg:p07_n2",
+        "pkg:p07_n7"
+      ],
+      "evidence_link": [
+        "ev:Oext2"
+      ],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H3",
+      "type": "value",
+      "explains": [
+        "O1",
+        "O2",
+        "Oext1"
+      ],
+      "assumes": [
+        "A2"
+      ],
+      "statement": "ユーザーは『本物の生活』を守ること自体に価値を感じており、観光による商品化や演出を避けたいと考えている。",
+      "mechanism": "観光地化による地域文化の変質や商品化を懸念し、未商品化の空間を選ぶことで価値を守ろうとしている。",
+      "predictions": [
+        "観光地化が進むと興味を失う",
+        "地域文化の保存や伝統行事に関心がある"
+      ],
+      "discriminating_questions": [
+        "観光地化による地域文化の変化をどのように感じていますか？"
+      ],
+      "persona_link": [
+        "pkg:p07_n2",
+        "pkg:p07_n4"
+      ],
+      "evidence_link": [
+        "ev:Oext1"
+      ],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H4",
+      "type": "evidence_gap",
+      "explains": [
+        "O1",
+        "O2",
+        "O3"
+      ],
+      "assumes": [
+        "A1",
+        "A2",
+        "A3"
+      ],
+      "statement": "ユーザーの『本物の生活』志向は、実は過去の観光体験での失望や違和感が強く影響している可能性がある。",
+      "mechanism": "過去の観光地での体験が期待外れだったため、極端に観光地を避ける傾向が強まった。",
+      "predictions": [
+        "観光地でのネガティブな経験を語ることが多い",
+        "新しい観光地にも懐疑的"
+      ],
+      "discriminating_questions": [
+        "観光地での体験で強く印象に残っている出来事はありますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H5",
+      "type": "paradox",
+      "explains": [
+        "O2",
+        "O3",
+        "Oext3"
+      ],
+      "assumes": [
+        "A2"
+      ],
+      "statement": "ユーザーが求める『本物の生活』も、実は観察者としての自分の存在や選択によってすでに『演出された本物らしさ』になっている可能性がある。",
+      "mechanism": "観光客が『本物』を求めて訪れることで、その空間自体が観察者効果やパフォーマティブな本物らしさに変質していく逆説が生じている。",
+      "predictions": [
+        "自分が訪れることで地元の人の行動が変わることに気づく",
+        "『本物』を求める人が増えるとその場所が変質することを懸念する"
+      ],
+      "discriminating_questions": [
+        "ご自身が『本物の生活』を求めて歩くことで、その場所や人に影響を与えていると感じたことはありますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [
+        "ev:Oext3"
+      ],
+      "is_reframing": true
+    }
+  ]
+}

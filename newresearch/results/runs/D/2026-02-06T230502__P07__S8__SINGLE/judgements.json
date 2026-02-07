@@ -1,0 +1,99 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O4"
+        ],
+        "key_assumptions": [
+          "A2",
+          "A3"
+        ],
+        "best_discriminating_question": "もし現地の雰囲気が変わっていたら、どのように感じますか？",
+        "testability_notes": "現地訪問後の感情の変化を観察することで検証可能。",
+        "safety_risk_notes": "ノスタルジアへの共感はリスクが低いが、失望感を強調しすぎないよう注意。"
+      },
+      "rationale": "ユーザーの発言に最も素直に対応する仮説であり、自己同一性やノスタルジアの説明力が高い。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3",
+          "O4",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A3"
+        ],
+        "best_discriminating_question": "現地の混雑や観光客の多さを知った場合、どのように行動を変えますか？",
+        "testability_notes": "現地の混雑状況やユーザーの反応を観察することで検証可能。",
+        "safety_risk_notes": "現実とのギャップを指摘する際は、ユーザーの期待を傷つけないよう配慮が必要。"
+      },
+      "rationale": "外部観察を取り入れ、環境変化による体験のギャップに焦点を当てている。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O4"
+        ],
+        "key_assumptions": [
+          "A3"
+        ],
+        "best_discriminating_question": "竹林以外の静かな自然でも同じような感動を感じますか？",
+        "testability_notes": "他の自然環境での感動体験の有無を尋ねることで検証可能。",
+        "safety_risk_notes": "価値観への共感を示すため、否定的な印象を与えないようにする。"
+      },
+      "rationale": "ユーザーの価値観（地域文化や自然への敬意）に基づく説明で、PKGとの整合性が高い。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "A2"
+        ],
+        "best_discriminating_question": "同じ体験ができなかった場合、新しい発見や感動を受け入れられますか？",
+        "testability_notes": "現地での新たな体験や感情の受け止め方を観察することで検証可能。",
+        "safety_risk_notes": "目的と手段のズレを指摘する際は、ユーザーの意欲を損なわないよう注意。"
+      },
+      "rationale": "過去の再現が不可能な場合の受容や新たな発見に焦点を当てている。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4",
+          "Oext1",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "A2",
+          "A3"
+        ],
+        "best_discriminating_question": "もし現地で『あの頃と同じ感動』が得られなかった場合、自分自身の変化についてどんなことを感じると思いますか？",
+        "testability_notes": "現地での体験後、自己像や感情の変化について内省を促すことで検証可能。",
+        "safety_risk_notes": "ユーザーの内面や自己像に踏み込むため、慎重な言葉選びが必要。"
+      },
+      "rationale": "裏切る仮説として、ユーザーの発言の表面的な意味を深く再解釈し、自己像や内面の変化に焦点を当てている。"
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A2"
+        ],
+        "best_discriminating_question": "計画が崩れた場合、どのような気持ちになりますか？",
+        "testability_notes": "旅行中に計画通りに進まなかった場合の感情や行動を観察することで検証可能。",
+        "safety_risk_notes": "ユーザーの計画重視の姿勢を肯定するため、リスクは低い。"
+      },
+      "rationale": "計画遂行による安心感や達成感を重視している可能性が高い。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A1"
+        ],
+        "best_discriminating_question": "旅行計画に使ったツールや工夫を他の分野にも応用していますか？",
+        "testability_notes": "他の活動でも同様の効率化志向が見られるかを確認する。",
+        "safety_risk_notes": "ユーザーのスキルや関心を肯定する内容でリスクは低い。"
+      },
+      "rationale": "PKGの実装力やHCIへの関心が行動に現れている。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [
+          "効率化自体が目的化していると断定するには根拠がやや弱い"
+        ],
+        "explains_confirmed": [
+          "O3",
+          "O4",
+          "O5"
+        ],
+        "key_assumptions": [
+          "A3"
+        ],
+        "best_discriminating_question": "旅行の思い出と計画の達成、どちらが印象に残りますか？",
+        "testability_notes": "旅行後の振り返りでどちらに重きを置いているかを確認する。",
+        "safety_risk_notes": "効率化重視を強調しすぎると体験の価値を軽視しているように受け取られる可能性がある。"
+      },
+      "rationale": "計画の完成度へのこだわりが強い場合に当てはまる。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [
+          "効率化ノウハウへの飽き足らなさが明示されていない"
+        ],
+        "explains_confirmed": [
+          "O5"
+        ],
+        "key_assumptions": [
+          "A3"
+        ],
+        "best_discriminating_question": "他の人の旅行計画ノウハウを参考にすることに満足できますか？",
+        "testability_notes": "他者のノウハウへの反応や独自性へのこだわりを確認する。",
+        "safety_risk_notes": "ユーザーの探究心を肯定する内容でリスクは低い。"
+      },
+      "rationale": "効率化の新規性や独自性に価値を置いている場合に該当。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4",
+          "O5",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "A4"
+        ],
+        "best_discriminating_question": "計画外の出来事や偶然の発見に魅力を感じることはありますか？",
+        "testability_notes": "旅行中に計画外の体験を意図的に取り入れてみて、満足度や印象を比較する。",
+        "safety_risk_notes": "計画重視の姿勢を疑問視するため、やや不快感を与える可能性があるが、自己発見につながる。"
+      },
+      "rationale": "外部観察（Oext1）も踏まえ、計画重視が本来の旅行の価値を損なうリスクを指摘できる。"
+    }
+  ]
+}

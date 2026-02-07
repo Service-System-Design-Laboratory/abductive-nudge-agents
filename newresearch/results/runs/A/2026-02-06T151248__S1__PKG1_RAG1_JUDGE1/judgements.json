@@ -1,0 +1,106 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_link（pkg:n18）がPKGに存在しない（use_pkg=trueのためマイナス要素）。"
+        ],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "技術的な面白さとユーザー価値の明確化は独立した要素であり、両者のバランスが評価に影響する。",
+          "ユーザー価値の説明不足が外部評価者の納得度や研究者の迷いに直結する。"
+        ],
+        "best_discriminating_question": "ユーザー価値を具体的に説明できるか？",
+        "testability_notes": "ユーザーや評価者に1問ヒアリングすれば検証可能。価値説明の有無と評価者の反応を観察できる。",
+        "safety_risk_notes": "『ユーザー価値が不十分』と断定的に述べると、開発者の努力を軽視しているように受け取られる可能性がある。"
+      },
+      "rationale": "技術的独自性とユーザー価値のバランス問題を的確に捉えているが、PKG不在が弱点。観察O1・O2を十分説明できている。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_link（pkg:n13）がPKGに存在しない（use_pkg=trueのためマイナス要素）。",
+          "evidence_linkが空（use_rag=trueのためエビデンス不在は弱点）。"
+        ],
+        "explains_confirmed": [
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "ユーザーの主観的達成感と外部評価者の価値評価は乖離しうる。",
+          "このギャップが研究の方向性の迷いにつながる。"
+        ],
+        "best_discriminating_question": "自身の手応えの根拠はどの部分にあるか？",
+        "testability_notes": "ユーザーと評価者双方にインタビューすることで検証可能。主観と外部評価の差異を観察する必要がある。",
+        "safety_risk_notes": "『主観的満足感がギャップの原因』と断定すると、ユーザーの感情を軽視していると誤解されるリスクがある。"
+      },
+      "rationale": "主観と外部評価のギャップに着目した点は有用だが、PKG・エビデンス不在が致命的ではないが明確な弱点。O3・O4は説明できている。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_link（pkg:n18）がPKGに存在しない（use_pkg=trueのためマイナス要素）。"
+        ],
+        "explains_confirmed": [
+          "O2",
+          "O4",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "ユーザー価値の伝達には客観的なエビデンスが不可欠である。",
+          "エビデンス不在が外部評価者の納得度や研究の迷いに直結する。"
+        ],
+        "best_discriminating_question": "ユーザー体験や価値を示す具体的なデータや指標を提示できるか？",
+        "testability_notes": "ユーザー体験指標やフィードバックの有無を確認すれば検証可能。外部データや評価指標の収集が必要。",
+        "safety_risk_notes": "『エビデンス不足』と断定すると、現状の努力を否定的に受け取られる可能性がある。"
+      },
+      "rationale": "エビデンスの有無という客観的観点を明確に示しており、O2・O4・Oext1を説明できる。PKG不在が弱点。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "Oext2",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "HCI分野ではユーザー価値重視の評価基準・トレンドが存在する。",
+          "この分野的要請が技術的独自性のみの評価を難しくしている。"
+        ],
+        "best_discriminating_question": "HCI分野の評価基準やトレンドはどのように変化しているか？",
+        "testability_notes": "分野の論文・カンファレンスの傾向分析や、評価者へのヒアリングで検証可能。外部データ参照が必要。",
+        "safety_risk_notes": "分野全体の傾向を一般化しすぎると、個別事例への適用に誤解を生む可能性がある。"
+      },
+      "rationale": "分野的要請というマクロな視点でO2・Oext2・Oext3を説明できており、エビデンスも存在。PKG不在は問題にならない。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_link（pkg:n18）がPKGに存在しない（use_pkg=trueのためマイナス要素）。",
+          "evidence_linkが空（use_rag=trueのためエビデンス不在は弱点）。"
+        ],
+        "explains_confirmed": [
+          "O2",
+          "O4"
+        ],
+        "key_assumptions": [
+          "技術説明とユーザー価値説明は異なるスキルセットであり、後者が不足していると価値が伝わらない。",
+          "ユーザー自身がそのスキル不足を自覚していない可能性がある。"
+        ],
+        "best_discriminating_question": "ユーザー価値をストーリーや利用例で説明することは得意か？",
+        "testability_notes": "プレゼン資料や説明内容を分析し、ストーリーテリング能力を評価することで検証可能。",
+        "safety_risk_notes": "『スキル不足』と断定すると、ユーザーの能力を否定的に捉えられるリスクがある。"
+      },
+      "rationale": "スキルの観点は有用だが、PKG・エビデンス不在が明確な弱点。O2・O4は説明できている。"
+    }
+  ]
+}

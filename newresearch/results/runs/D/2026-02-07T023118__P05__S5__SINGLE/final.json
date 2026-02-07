@@ -1,0 +1,360 @@
+{
+  "context": {
+    "observations": [
+      {
+        "id": "O1",
+        "text": "今回の旅行は徹底的にコストを抑えた。"
+      },
+      {
+        "id": "O2",
+        "text": "宿は最安値のカプセルホテルを利用する。"
+      },
+      {
+        "id": "O3",
+        "text": "移動は青春18きっぷを使う。"
+      },
+      {
+        "id": "O4",
+        "text": "食事は全部コンビニで済ませる予定である。"
+      },
+      {
+        "id": "O5",
+        "text": "この予算内でもっと節約できるポイントがあるか尋ねている。"
+      }
+    ],
+    "assumptions": [
+      {
+        "id": "A1",
+        "text": "ユーザーは節約自体を楽しんでいる可能性がある。",
+        "status": "tentative"
+      },
+      {
+        "id": "A2",
+        "text": "旅行の目的は観光や体験よりもコスト削減そのものにあるかもしれない。",
+        "status": "tentative"
+      },
+      {
+        "id": "A3",
+        "text": "ユーザーはコスト削減のために快適さや体験の質をある程度犠牲にしてもよいと考えている。",
+        "status": "tentative"
+      },
+      {
+        "id": "A4",
+        "text": "節約の工夫や新しい方法を知ること自体に関心がある。",
+        "status": "tentative"
+      }
+    ],
+    "questions": [
+      "節約以外に旅行で大事にしたいことはありますか？",
+      "今回の旅行で特に楽しみにしていることは何ですか？",
+      "コンビニ以外の食事方法も検討したことはありますか？",
+      "宿泊や移動以外で意外とコストがかかると感じる場面はありますか？"
+    ],
+    "constraints": {
+      "tone": "supportive",
+      "safety": "avoid determinism"
+    }
+  },
+  "evidence": {
+    "triggers": [
+      {
+        "type": "focus",
+        "text": "旅行の全要素を徹底的にコストカットしている点に集中している。"
+      },
+      {
+        "type": "information_gap",
+        "text": "節約以外の旅行の目的や楽しみについては言及がない。"
+      },
+      {
+        "type": "ambiguity",
+        "text": "どこまで快適さや体験を犠牲にしてもよいと考えているか不明。"
+      },
+      {
+        "type": "information_gap",
+        "text": "コンビニ以外の食事や無料体験の活用について検討したか不明。"
+      }
+    ],
+    "external_observations": [
+      {
+        "id": "Oext1",
+        "text": "日帰り旅行にすれば宿泊費が不要となり、さらに大幅な節約が可能である。",
+        "source_url": "https://sakeinvest.com/hongkong-daytrip/"
+      }
+    ]
+  },
+  "hypotheses": [
+    {
+      "hypothesis_id": "H1",
+      "type": "psychological",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "O4"
+      ],
+      "assumes": [
+        "A1",
+        "A4"
+      ],
+      "statement": "ユーザーは節約自体をゲーム感覚で楽しんでおり、限界に挑戦することに満足感を得ている。",
+      "mechanism": "節約の工夫や新しい方法を見つけること自体が自己効力感や達成感につながる。",
+      "predictions": [
+        "節約の新しいアイディアを知るとワクワクする",
+        "旅行後にどれだけ節約できたかを記録・共有する傾向がある"
+      ],
+      "discriminating_questions": [
+        "節約の工夫を考えること自体が旅行の楽しみになっていますか？"
+      ],
+      "persona_link": [
+        "pkg:p05_n2"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H2",
+      "type": "goal_mismatch",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "O4",
+        "O5"
+      ],
+      "assumes": [
+        "A2",
+        "A3"
+      ],
+      "statement": "旅行の本来の目的や体験よりもコスト削減自体が主目的になっており、結果として旅行の満足度が下がるリスクがある。",
+      "mechanism": "コスト削減を最優先するあまり、体験や快適さが犠牲になり、旅行後に物足りなさや後悔が残る可能性がある。",
+      "predictions": [
+        "旅行後に『もっと体験を重視してもよかった』と感じることがある",
+        "節約以外の思い出があまり残らない"
+      ],
+      "discriminating_questions": [
+        "今回の旅行で『体験』や『思い出』よりも『節約』を優先していると感じますか？"
+      ],
+      "persona_link": [
+        "pkg:p05_n2",
+        "pkg:p05_n6"
+      ],
+      "evidence_link": [],
+      "is_reframing": true
+    },
+    {
+      "hypothesis_id": "H3",
+      "type": "environmental",
+      "explains": [
+        "O2",
+        "O3",
+        "O4"
+      ],
+      "assumes": [
+        "A3"
+      ],
+      "statement": "ユーザーは限られた予算内で最大限の移動や体験を得るため、安価な選択肢を組み合わせている。",
+      "mechanism": "コストを抑えつつも、移動や宿泊の選択肢を工夫することで旅行の幅を広げている。",
+      "predictions": [
+        "移動や宿泊の選択肢を比較検討するのが得意",
+        "同じ予算でより多くの場所を訪れることに価値を感じる"
+      ],
+      "discriminating_questions": [
+        "限られた予算でどれだけ多くの体験ができるかを重視していますか？"
+      ],
+      "persona_link": [
+        "pkg:p05_n3",
+        "pkg:p05_n6"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H4",
+      "type": "evidence_gap",
+      "explains": [
+        "O5"
+      ],
+      "assumes": [
+        "A4"
+      ],
+      "statement": "ユーザーは既存の節約方法以外に、まだ知らない新しい節約アイディアや裏技を求めている。",
+      "mechanism": "情報収集や他者の体験談から新たな節約方法を学び、実践することに関心がある。",
+      "predictions": [
+        "SNSやブログで節約旅行の情報をよく調べている",
+        "他の人の節約体験談を参考にする"
+      ],
+      "discriminating_questions": [
+        "他の人の節約旅行の工夫や裏技を調べるのが好きですか？"
+      ],
+      "persona_link": [
+        "pkg:p05_n2"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H5",
+      "type": "constraint_conflict",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "O4",
+        "O5",
+        "Oext1"
+      ],
+      "assumes": [
+        "A3"
+      ],
+      "statement": "実は旅行のコストをさらに下げるには、宿泊自体をやめて日帰り旅行にするという選択肢もあるが、ユーザーは『旅行=宿泊』という無意識の前提に縛られている可能性がある。",
+      "mechanism": "『旅行には宿泊が必要』という固定観念がコスト削減のさらなる可能性を制限している。",
+      "predictions": [
+        "日帰り旅行という選択肢をあまり検討していない",
+        "宿泊費が最大のコスト要因であると気づいていない"
+      ],
+      "discriminating_questions": [
+        "日帰り旅行にして宿泊費をゼロにするという発想は検討したことがありますか？"
+      ],
+      "persona_link": [
+        "pkg:p05_n2",
+        "pkg:p05_n6"
+      ],
+      "evidence_link": [
+        "ev:Oext1"
+      ],
+      "is_reframing": true
+    }
+  ],
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A4"
+        ],
+        "best_discriminating_question": "節約の工夫を考えること自体が旅行の楽しみになっていますか？",
+        "testability_notes": "旅行の満足感や節約の工夫に対する反応を尋ねることで検証可能。",
+        "safety_risk_notes": "節約志向を肯定的に扱うためリスクは低い。"
+      },
+      "rationale": "ユーザーの節約志向や工夫への関心をPKGからも裏付けられる。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4",
+          "O5"
+        ],
+        "key_assumptions": [
+          "A2",
+          "A3"
+        ],
+        "best_discriminating_question": "今回の旅行で『体験』や『思い出』よりも『節約』を優先していると感じますか？",
+        "testability_notes": "旅行後の満足度や体験の質について尋ねることで検証可能。",
+        "safety_risk_notes": "節約志向の裏にある価値観の転倒を指摘するため、やや不快感を与える可能性がある。"
+      },
+      "rationale": "節約が目的化している可能性を指摘し、旅行の本来の意味を問い直す裏切る仮説。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "A3"
+        ],
+        "best_discriminating_question": "限られた予算でどれだけ多くの体験ができるかを重視していますか？",
+        "testability_notes": "旅行の計画や行動の優先度を尋ねることで検証可能。",
+        "safety_risk_notes": "肯定的な解釈のためリスクは低い。"
+      },
+      "rationale": "節約と体験のバランスを重視する立場。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O5"
+        ],
+        "key_assumptions": [
+          "A4"
+        ],
+        "best_discriminating_question": "他の人の節約旅行の工夫や裏技を調べるのが好きですか？",
+        "testability_notes": "情報収集の傾向を尋ねることで検証可能。",
+        "safety_risk_notes": "新しい知識への関心を前提とするためリスクは低い。"
+      },
+      "rationale": "節約アイディアの探索意欲に着目。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4",
+          "O5",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "A3"
+        ],
+        "best_discriminating_question": "日帰り旅行にして宿泊費をゼロにするという発想は検討したことがありますか？",
+        "testability_notes": "日帰り旅行という選択肢の有無を尋ねることで検証可能。",
+        "safety_risk_notes": "『旅行=宿泊』という前提を問い直すため、やや不快感や驚きを与える可能性がある。"
+      },
+      "rationale": "外部観察（Oext1）を活用し、旅行の定義自体を問い直す深い裏切る仮説。"
+    }
+  ],
+  "decision": {
+    "selected_hypothesis_id": "H5",
+    "contrasting_hypothesis_id": "H4",
+    "selection_rationale": "H5は外部観察（Oext1）を活用し、ユーザーの『旅行=宿泊』という無意識の前提を問い直すことで、発言の意味を『どう節約するか』から『そもそも旅行の枠組み自体を変えることで節約できる』に大きく転換する。H4は額面通り、さらなる節約アイディアの探索意欲に着目する仮説。どちらの立場に立つかで、今後の旅行計画や自己理解が大きく変わる。",
+    "user_facing_frame": {
+      "framing": "options",
+      "questions": [
+        "日帰り旅行にして宿泊費をゼロにするという発想は検討したことがありますか？",
+        "それとも、他の人の節約旅行の工夫や裏技を調べて、今のスタイルのまま新しい節約方法を探したいですか？"
+      ],
+      "options": [
+        "旅行の枠組み自体を変えて、日帰り旅行など宿泊費ゼロの新しい形を試してみる立場",
+        "今のスタイルをベースに、さらに節約の工夫や裏技を探してみる立場"
+      ]
+    }
+  },
+  "final_response": "ご自身で徹底的にコストを抑えた旅行プランを立てられているのですね。節約の工夫を考えること自体が、旅行の楽しみになっているのかもしれません。\n\n一つ視点を変えてみると、『旅行=宿泊』という前提を外して、日帰り旅行にしてみることで、さらに大きな節約ができる可能性もあります（実際、外部の旅行ガイドでも日帰りにすることで宿泊費をゼロにする方法が紹介されています）。\n\n一方で、今のスタイルをベースに、他の人の節約旅行の工夫や裏技を調べてみるのも面白いかもしれません。例えば、無料の観光スポットや、地元スーパーでの食材調達など、SNSやブログで新しい節約アイディアを探してみるのもおすすめです。\n\nどちらの立場に立つかで、今後の旅行計画や自己理解が変わるかもしれません。『旅行の枠組み自体を変えてみる』か、『今のスタイルでさらに工夫を重ねる』か、どちらに興味がありますか？\n\nまずは、日帰り旅行という選択肢を考えてみる、あるいはSNSで「節約旅行 裏技」などで検索してみるのも5分でできる小さなアクションです。どちらが今の気分や目的に合いそうでしょうか？",
+  "markers": {
+    "empathy": {
+      "acknowledgement": true,
+      "reflection": true,
+      "perspective_prompt": true
+    },
+    "nudge": {
+      "easy": true,
+      "attractive": true,
+      "social": true,
+      "timely": true,
+      "has_question": true,
+      "has_options": true,
+      "has_small_action": true,
+      "directive_level": "low"
+    }
+  }
+}

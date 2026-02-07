@@ -1,0 +1,97 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーが地域文化への敬意や伝統的な雰囲気を重視する価値観を持っていること",
+          "過去の静かな京都体験がその価値観に強く結びついていること"
+        ],
+        "best_discriminating_question": "近年訪れた伝統的な場所や祭りで、同様の感動を覚えたことがありますか？",
+        "testability_notes": "PKGにより価値観の裏付けがあり、ユーザーへの1～2問の質問で検証可能。",
+        "safety_risk_notes": "価値観の断定が強すぎると、ユーザーの多様な動機を見落とすリスクがある。"
+      },
+      "rationale": "PKGで価値観の根拠が補強されており、観察O1・O2をよく説明するが、O3・O4の説明はやや間接的。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O4"
+        ],
+        "key_assumptions": [
+          "ユーザーが計画的な行動傾向を持ち、過去の体験再現を重視していること"
+        ],
+        "best_discriminating_question": "旅行やイベントで、事前に細かく計画を立てることが多いですか？",
+        "testability_notes": "PKGに計画的運営の記述があり、ユーザーへの直接質問で検証しやすい。",
+        "safety_risk_notes": "行動傾向をスキルや性格に還元しすぎると、他の要因を過小評価する恐れがある。"
+      },
+      "rationale": "PKGで計画性の裏付けがあり、O4（同じルートを辿る）を明確に説明するが、感動の動機（O3）は説明が弱い。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3",
+          "O4",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "観光地の環境が過去と大きく変化し、静けさが失われていること",
+          "ユーザーの感動体験が環境要因に強く依存していること"
+        ],
+        "best_discriminating_question": "過去の静けさと現在の環境の違いを現地で強く感じたことがありますか？",
+        "testability_notes": "外部エビデンスで環境変化の裏付けがあり、現地体験やユーザーの主観的報告で検証可能。",
+        "safety_risk_notes": "環境変化を強調しすぎると、ユーザーの内的要因や価値観を軽視する印象を与える可能性がある。"
+      },
+      "rationale": "外部エビデンスにより環境変化の根拠が強く、O2～O4・Oext1を広く説明できる。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3",
+          "O4",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "静けさや本物体験を求める行動が社会的トレンドとして広く共有されていること",
+          "ユーザーの行動が個人的動機と社会的規範の双方に影響されていること"
+        ],
+        "best_discriminating_question": "SNSやネット情報を参考にした旅程計画を立てたことがありますか？",
+        "testability_notes": "外部エビデンスで社会的トレンドの裏付けがあり、ユーザーの情報収集行動を質問で検証可能。",
+        "safety_risk_notes": "個人の体験を社会的消費行動とみなすことで、ユーザーの独自性を軽視するリスクがある。"
+      },
+      "rationale": "外部エビデンスで社会的トレンドの根拠があり、O3・O4・Oext2を説明できるが、個人の内面動機の説明は限定的。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3",
+          "O4",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "ユーザーが自己像やアイデンティティの維持を深層的な動機として持っていること",
+          "静けさや空気自体よりも『本物を知る自分』という自己認識が行動を駆動していること"
+        ],
+        "best_discriminating_question": "静けさそのものよりも、『あの頃の自分』や『本物を知る自分』にこだわりを感じますか？",
+        "testability_notes": "ユーザーへの深掘り質問で検証可能だが、自己認識の深層動機は回答の主観性が高い。",
+        "safety_risk_notes": "ユーザーの動機を心理的に分析しすぎると、押し付けがましく感じられるリスクがある。"
+      },
+      "rationale": "PKGと外部エビデンスで補強され、O2～O4・Oext2を説明できるが、深層心理の仮定は検証がやや難しい。"
+    }
+  ]
+}

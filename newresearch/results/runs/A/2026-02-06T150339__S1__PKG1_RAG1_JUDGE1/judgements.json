@@ -1,0 +1,107 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_link（pkg:n5）がPKGに存在しないため、ペルソナ情報に基づく裏付けができない。"
+        ],
+        "explains_confirmed": [
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "ユーザーは自己効力感が高く、外部評価が自己評価に強く影響する。",
+          "外部からの『ユーザー価値の分かりにくさ』という指摘が、ユーザーの方向性に迷いを生じさせるほど重要である。"
+        ],
+        "best_discriminating_question": "過去にも外部評価と自分の手応えにギャップを感じて迷ったことがあったか？",
+        "testability_notes": "ユーザーへのインタビューや過去の経験のヒアリングで比較的容易に検証可能。",
+        "safety_risk_notes": "ユーザーの自己効力感や迷いを強調しすぎると、ネガティブな印象や自己評価の低下を招く可能性がある。"
+      },
+      "rationale": "観察O3・O4をよく説明しているが、PKG情報の裏付けがない点に注意。ユーザーの心理的反応に依存するため、主観的な検証が中心となる。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_link（pkg:n1）がPKGに存在しないため、ペルソナ情報に基づく裏付けができない。"
+        ],
+        "explains_confirmed": [
+          "O2",
+          "O4",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "ユーザーはユーザー価値や意味的価値を技術的評価以上に重視している。",
+          "ユーザー価値の説明が不十分だと、研究の方向性に迷いが生じる。"
+        ],
+        "best_discriminating_question": "技術的な評価だけで十分だと感じるか、それともユーザー価値の説明が不可欠だと感じるか？",
+        "testability_notes": "ユーザーの価値観や重視点を直接質問することで検証可能。外部エビデンス（ev:3）も参照できる。",
+        "safety_risk_notes": "価値観の押し付けや、技術的成果の軽視と受け取られないよう配慮が必要。"
+      },
+      "rationale": "O2, O4, Oext3を説明し、外部エビデンスもあるが、PKG情報の裏付けがない。価値観の違いを明確に問える点が強み。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_link（pkg:n3）がPKGに存在しないため、ペルソナ情報に基づく裏付けができない。"
+        ],
+        "explains_confirmed": [
+          "O2",
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "ユーザーは技術的スキルは高いが、ユーザー価値の伝達スキルが十分でない。",
+          "価値伝達スキルの不足が外部評価のギャップの主因である。"
+        ],
+        "best_discriminating_question": "ユーザー体験や価値を説明する際に難しさを感じているか？",
+        "testability_notes": "ユーザーの自己評価やプレゼン経験をヒアリングすることで検証可能。",
+        "safety_risk_notes": "スキル不足を断定的に述べるとユーザーの自尊心を傷つけるリスクがある。"
+      },
+      "rationale": "O2, O3, O4を説明できるが、PKG裏付けがない。スキル面の課題に焦点を当てている点が特徴。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O4",
+          "Oext1",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "ユーザー体験評価のための具体的な指標や方法論が不足している。",
+          "指標や方法論の明確化が価値伝達の課題解決に直結する。"
+        ],
+        "best_discriminating_question": "エンゲージメントやラポールなどの心理的指標を用いた評価設計を行っているか？",
+        "testability_notes": "評価設計の有無や指標活用の状況を確認することで客観的に検証可能。外部エビデンス（ev:1, ev:2）も豊富。",
+        "safety_risk_notes": "方法論の不足を指摘するだけで個人の努力不足と誤解されないよう注意が必要。"
+      },
+      "rationale": "O2, O4, Oext1, Oext2を広く説明し、外部エビデンスも充実。仮説の検証も比較的容易で、構造的な課題を指摘している。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_link（pkg:n5, pkg:n1）がPKGに存在しないため、ペルソナ情報に基づく裏付けができない。"
+        ],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O4"
+        ],
+        "key_assumptions": [
+          "技術的面白さとユーザー価値重視が対立し、優先順位のずれが迷いの主因となっている。",
+          "ユーザーはどちらを優先すべきか明確な基準を持っていない。"
+        ],
+        "best_discriminating_question": "今後の研究で技術的独自性とユーザー価値のどちらをより重視したいか？",
+        "testability_notes": "ユーザーの優先順位や葛藤の有無を直接質問することで検証可能。",
+        "safety_risk_notes": "対立構造を強調しすぎると、ユーザーの選択を狭めたり、葛藤を過度に意識させるリスクがある。"
+      },
+      "rationale": "O1, O2, O4を説明し、優先順位の葛藤に焦点。PKG裏付けがない点が弱みだが、ユーザーの意思決定プロセスを問える。"
+    }
+  ]
+}

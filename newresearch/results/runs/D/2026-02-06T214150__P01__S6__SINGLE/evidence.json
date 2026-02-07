@@ -1,0 +1,33 @@
+{
+  "triggers": [
+    {
+      "type": "ambiguity",
+      "text": "『人の手が入っていない』という表現が、実際の環境変化や観光客増加とどの程度一致しているか不明である。"
+    },
+    {
+      "type": "information_gap",
+      "text": "世界遺産登録後の森の変化や観光地化への認識が語られていない。"
+    },
+    {
+      "type": "focus",
+      "text": "『誰よりも分かっている』という自己認識の根拠や背景が明確でない。"
+    }
+  ],
+  "external_observations": [
+    {
+      "id": "Oext1",
+      "text": "縄文杉のある森はほぼ人の手が入っていない深い森の奥にあるが、観光客を魅了する神秘性が強調されている。",
+      "source_url": "https://bravo-m.futabanet.jp/articles/-/124052"
+    },
+    {
+      "id": "Oext2",
+      "text": "屋久島は自然好きにとって魅力的な場所であり、ハイキングやトレッキング体験が盛んである。",
+      "source_url": "https://www.lemon8-app.com/@proaso_momo/7418181876153270789?region=jp"
+    },
+    {
+      "id": "Oext3",
+      "text": "屋久島の自然景観や環境保全については、地元住民の間でも満足度と不満足度が分かれている。",
+      "source_url": "http://www.town.yakushima.kagoshima.jp/t_yakushima/wp-content/uploads/2025/09/20250908_02_sakutei_sanko_shiryo.pdf"
+    }
+  ]
+}

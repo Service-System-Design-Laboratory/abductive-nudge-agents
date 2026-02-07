@@ -1,0 +1,373 @@
+{
+  "context": {
+    "observations": [
+      {
+        "id": "O1",
+        "text": "今回の旅行は徹底的にコストを抑えた。"
+      },
+      {
+        "id": "O2",
+        "text": "宿は最安値のカプセルホテルを利用する。"
+      },
+      {
+        "id": "O3",
+        "text": "移動は青春18きっぷを使う。"
+      },
+      {
+        "id": "O4",
+        "text": "食事は全部コンビニで済ませる予定だ。"
+      },
+      {
+        "id": "O5",
+        "text": "この予算内でもっと節約できるポイントがあるか知りたい。"
+      }
+    ],
+    "assumptions": [
+      {
+        "id": "A1",
+        "text": "ユーザーは旅行の体験よりもコスト削減を優先している。",
+        "status": "tentative"
+      },
+      {
+        "id": "A2",
+        "text": "ユーザーは現状の節約方法に満足していない可能性がある。",
+        "status": "tentative"
+      },
+      {
+        "id": "A3",
+        "text": "ユーザーは旅行中の快適さや体験の質をある程度犠牲にしてもよいと考えている。",
+        "status": "tentative"
+      },
+      {
+        "id": "A4",
+        "text": "ユーザーは節約以外の旅行の目的（例：自然との調和や地域との交流）も持っている可能性がある。",
+        "status": "tentative"
+      }
+    ],
+    "questions": [
+      "なぜそこまで徹底的にコストを抑えたいと考えたのですか？",
+      "節約以外に旅行で大事にしたいことはありますか？",
+      "コンビニ食やカプセルホテルでの体験についてどう感じていますか？",
+      "今回の旅で一番楽しみにしていることは何ですか？"
+    ],
+    "constraints": {
+      "tone": "supportive",
+      "safety": "avoid determinism"
+    }
+  },
+  "evidence": {
+    "triggers": [
+      {
+        "type": "focus",
+        "text": "徹底的なコスト削減に強いこだわりが見られる。"
+      },
+      {
+        "type": "information_gap",
+        "text": "なぜここまで節約にこだわるのか動機が明確でない。"
+      },
+      {
+        "type": "ambiguity",
+        "text": "節約以外の価値観（自然との調和や地域との交流）とのバランスが不明。"
+      }
+    ],
+    "external_observations": [
+      {
+        "id": "Oext1",
+        "text": "青春18きっぷは『日本一海に近い駅』など観光地の景観を楽しむ目的で使われることが多い。",
+        "source_url": "https://jf-cmca.jp/attach/kenkyu/honbu/h27/chiikikasseikashindanyoumanual.pdf"
+      },
+      {
+        "id": "Oext2",
+        "text": "格安旅行の情報では、ボルネオやマレーシアなど美しい自然を体験する方法も紹介されている。節約旅行でも体験価値を重視する傾向がある。",
+        "source_url": "https://www.lemon8-app.com/@24bonsan/7410027308592513542?region=jp"
+      },
+      {
+        "id": "Oext3",
+        "text": "コストコなどのセールや口コミを活用して、さらに旅行費用を抑える事例がある。",
+        "source_url": "https://www.lemon8-app.com/@yuzusatoyuzu/7575333054147723788?region=jp"
+      }
+    ]
+  },
+  "hypotheses": [
+    {
+      "hypothesis_id": "H1",
+      "type": "psychological",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "O4"
+      ],
+      "assumes": [
+        "A1"
+      ],
+      "statement": "ユーザーはコスト削減自体に達成感や満足感を感じている。",
+      "mechanism": "節約行動が自己効力感や達成感につながっているため、旅行の目的が体験よりも節約そのものになっている。",
+      "predictions": [
+        "節約できた金額を記録したり、他人にシェアすることに喜びを感じる。",
+        "多少体験が犠牲になっても、コスト削減を優先する。"
+      ],
+      "discriminating_questions": [
+        "節約できたこと自体にどれくらい満足感がありますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H2",
+      "type": "value",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "O4",
+        "Oext2"
+      ],
+      "assumes": [
+        "A4"
+      ],
+      "statement": "ユーザーは本来『自然との調和』や『地域との交流』を重視しており、節約はその価値観を実現するための手段である。",
+      "mechanism": "コストを抑えることで、より多くの自然体験や地域交流の機会を得ようとしている。節約は目的ではなく、価値観に沿った体験のための手段である。",
+      "predictions": [
+        "浮いた予算で地域体験や自然散策などに使う可能性がある。",
+        "節約方法の中にも地域性や自然との関わりを意識した選択がある。"
+      ],
+      "discriminating_questions": [
+        "節約して浮いた分で何か体験したいことはありますか？"
+      ],
+      "persona_link": [
+        "pkg:p01_n4",
+        "pkg:p01_n1",
+        "pkg:p01_n5",
+        "pkg:p01_n2"
+      ],
+      "evidence_link": [
+        "ev:Oext2"
+      ],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H3",
+      "type": "evidence_gap",
+      "explains": [
+        "O5"
+      ],
+      "assumes": [
+        "A2"
+      ],
+      "statement": "ユーザーは現状の節約方法に限界を感じており、他者の工夫や新しい情報を求めている。",
+      "mechanism": "既存の節約方法では満足できず、さらに新しいアイデアや外部の知見を取り入れたいと考えている。",
+      "predictions": [
+        "ネットやSNSで他の人の節約旅行術を調べている。",
+        "新しい節約法を提案されると興味を示す。"
+      ],
+      "discriminating_questions": [
+        "他の人の節約方法や体験談をよく調べますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [
+        "ev:Oext3"
+      ],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H4",
+      "type": "goal_mismatch",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "O4",
+        "Oext1"
+      ],
+      "assumes": [
+        "A3",
+        "A4"
+      ],
+      "statement": "ユーザーは節約を優先するあまり、本来重視していた『自然との調和』や『地域との交流』といった価値観を犠牲にしている可能性がある。",
+      "mechanism": "コスト削減に集中しすぎて、旅行の本来の目的や楽しみが後回しになっている。",
+      "predictions": [
+        "節約のために観光や地域交流の機会を逃してしまう。",
+        "旅行後に『もっと体験を重視すればよかった』と感じることがある。"
+      ],
+      "discriminating_questions": [
+        "節約のために諦めた体験や交流はありますか？"
+      ],
+      "persona_link": [
+        "pkg:p01_n4",
+        "pkg:p01_n5"
+      ],
+      "evidence_link": [
+        "ev:Oext1"
+      ],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H5",
+      "type": "psychological",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "O4",
+        "Oext2"
+      ],
+      "assumes": [
+        "A1",
+        "A4"
+      ],
+      "statement": "ユーザーは『節約旅行』という行動を通じて、実は自分の価値観（自然との調和や地域との信頼）を商品化・演出している可能性がある。",
+      "mechanism": "節約やローカル体験をSNS等で発信することで、自己イメージや他者からの評価を意識している。節約自体が目的化しているように見えて、実は『本物らしさ』や『ローカルらしさ』を演出している。",
+      "predictions": [
+        "旅行の様子や節約術をSNS等で発信する。",
+        "『本物のローカル体験』や『自然との調和』を強調する表現を使う。"
+      ],
+      "discriminating_questions": [
+        "今回の旅行や節約の工夫を誰かにシェアしたい気持ちはありますか？"
+      ],
+      "persona_link": [
+        "pkg:p01_n4",
+        "pkg:p01_n5",
+        "pkg:p01_n7"
+      ],
+      "evidence_link": [
+        "ev:Oext2"
+      ],
+      "is_reframing": true
+    }
+  ],
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "A1"
+        ],
+        "best_discriminating_question": "節約できたこと自体にどれくらい満足感がありますか？",
+        "testability_notes": "ユーザーの満足感や達成感に関する自己報告で検証可能。",
+        "safety_risk_notes": "節約を目的化していると断定しすぎると、ユーザーの価値観を狭めるリスクがある。"
+      },
+      "rationale": "節約行動が自己効力感や達成感につながっている場合、体験よりも節約自体が目的化している可能性がある。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "A4"
+        ],
+        "best_discriminating_question": "節約して浮いた分で何か体験したいことはありますか？",
+        "testability_notes": "節約の目的や使い道を尋ねることで検証可能。",
+        "safety_risk_notes": "ユーザーの価値観を肯定的に受け止めやすいが、表層的な読みになりやすい。"
+      },
+      "rationale": "節約はあくまで手段であり、自然体験や地域交流のためというPKG情報とも整合的。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O5"
+        ],
+        "key_assumptions": [
+          "A2"
+        ],
+        "best_discriminating_question": "他の人の節約方法や体験談をよく調べますか？",
+        "testability_notes": "情報収集行動の有無を確認することで検証可能。",
+        "safety_risk_notes": "ユーザーの自己効力感を損ねないよう配慮が必要。"
+      },
+      "rationale": "現状の節約方法に満足していない場合、他者の知見を求める傾向がある。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "A3",
+          "A4"
+        ],
+        "best_discriminating_question": "節約のために諦めた体験や交流はありますか？",
+        "testability_notes": "旅行で諦めたことや後悔の有無を尋ねることで検証可能。",
+        "safety_risk_notes": "ユーザーの選択を否定的に受け取られないよう注意が必要。"
+      },
+      "rationale": "コスト削減を優先するあまり、本来の価値観を犠牲にしている可能性がある。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A4"
+        ],
+        "best_discriminating_question": "今回の旅行や節約の工夫を誰かにシェアしたい気持ちはありますか？",
+        "testability_notes": "SNSや他者への発信意図を尋ねることで検証可能。",
+        "safety_risk_notes": "『演出』や『商品化』という言葉がユーザーの自己像に不快感を与える可能性があるため、慎重な言い回しが必要。"
+      },
+      "rationale": "節約やローカル体験をSNS等で発信することで、自己イメージや他者からの評価を意識している可能性がある。"
+    }
+  ],
+  "decision": {
+    "selected_hypothesis_id": "H5",
+    "contrasting_hypothesis_id": "H2",
+    "selection_rationale": "H5はユーザーの『徹底的な節約旅行』という行動が、実は『自然との調和』や『地域との信頼』といった価値観を“本物らしさ”として演出・商品化している可能性を示唆します。これは、単なる節約や体験重視という額面通りの解釈（H2）とは異なり、ユーザーの行動の意味を『自己表現や他者への発信』という新しい文脈に変えるものです。外部観察Oext2（節約旅行でも体験価値や“本物らしさ”が重視される傾向）も裏付けとなっています。H2は従来の価値観に沿った読みで、H5は“裏切る仮説”として発言の意味を大きく変えます。",
+    "user_facing_frame": {
+      "framing": "options",
+      "questions": [
+        "今回の旅行や節約の工夫を誰かにシェアしたい気持ちはありますか？",
+        "節約して浮いた分で何か体験したいことはありますか？"
+      ],
+      "options": [
+        "節約やローカル体験を通じて、自分の価値観や工夫を誰かに伝えたり、発信したい気持ちがある（自己表現・本物らしさの演出）。",
+        "節約はあくまで手段で、浮いた分で自然体験や地域との交流をより深めたい（体験重視・価値観の実現）。"
+      ]
+    }
+  },
+  "final_response": "ご自身で徹底的にコストを抑えた旅行を計画されたこと、素晴らしい工夫と行動力ですね。こうした節約やローカル体験の工夫は、もしかすると『自分らしさ』や『本物の体験』を誰かに伝えたくなる気持ちにもつながるかもしれません。一方で、節約はあくまで手段で、浮いた分で自然とのふれあいや地域の方との交流など、体験そのものをより深めたいという思いもあるかもしれません。\n\n例えば、今回の旅行や節約の工夫を誰かにシェアしたい気持ちはありますか？それとも、節約で生まれた余裕を使って、現地でしかできない体験や出会いにチャレンジしてみたい気持ちが強いでしょうか？\n\nどちらの立場に立つかで、これからの行動や旅の楽しみ方も変わってくるかもしれません。もしよければ、SNSや日記に旅の工夫をまとめてみたり、現地で気になる体験イベントを5分だけ調べてみるのもおすすめです。同じように節約旅行を楽しむ方の投稿も参考になるかもしれません。\n\n今のタイミングだからこそ、節約の工夫を誰かと共有するのか、あるいは新しい体験に一歩踏み出すのか、どちらの視点がご自身にしっくりくるか考えてみてはいかがでしょうか？",
+  "markers": {
+    "empathy": {
+      "acknowledgement": true,
+      "reflection": true,
+      "perspective_prompt": true
+    },
+    "nudge": {
+      "easy": true,
+      "attractive": true,
+      "social": true,
+      "timely": true,
+      "has_question": true,
+      "has_options": true,
+      "has_small_action": true,
+      "directive_level": "low"
+    }
+  }
+}

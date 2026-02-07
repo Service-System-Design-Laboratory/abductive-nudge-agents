@@ -1,0 +1,42 @@
+{
+  "triggers": [
+    {
+      "type": "focus",
+      "text": "ひがし茶屋街の街並みを日本の美の極みと断言している点に強い価値観の集中が見られる。"
+    },
+    {
+      "type": "information_gap",
+      "text": "なぜ江戸時代の風情や伝統建築にそこまで惹かれるのか、動機の詳細が語られていない。"
+    },
+    {
+      "type": "ambiguity",
+      "text": "『日本の美の極み』という評価が、個人的体験・社会的価値・歴史的評価のどれに基づくものか不明。"
+    },
+    {
+      "type": "contradiction",
+      "text": "外部観察では、保存地区としての『演出された本物らしさ』や観光地化の側面が強調されている。"
+    }
+  ],
+  "external_observations": [
+    {
+      "id": "Oext1",
+      "text": "ひがし茶屋街は観光地として写真映えや体験型の価値が強調されており、伝統的な建築や街並みが保存・演出されている。",
+      "source_url": "https://www.kanazawa-kankoukyoukai.or.jp/spot/detail_10212.html"
+    },
+    {
+      "id": "Oext2",
+      "text": "ひがし茶屋街は国の重要伝統的建造物群保存地区に選定されており、観光資源としての側面が強い。",
+      "source_url": "https://www.hot-ishikawa.jp/spot/detail_6320.html"
+    },
+    {
+      "id": "Oext3",
+      "text": "江戸時代の町家を復元した施設が観光客向けに公開されており、当時の暮らしを体験できるようになっている。",
+      "source_url": "https://www.kanazawa-kankoukyoukai.or.jp/spot/index.html"
+    },
+    {
+      "id": "Oext4",
+      "text": "ひがし茶屋街の街並みは保存・再現・観光のために意図的に維持・演出されているという指摘がある。",
+      "source_url": "https://kanazawa.hakuichi.co.jp/blog/detail.php?blog_id=86"
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーの価値観がPKGで表現されている『Harmony with nature』『Satoyama hiking』と一致していること",
+          "観光地化や演出を拒否する姿勢が、地域密着・伝統重視の価値観から生じていること"
+        ],
+        "best_discriminating_question": "『Local events & festivals』が観光向けの演出を含む場合でも興味を持つか？",
+        "testability_notes": "ユーザーの行動や発言を追加でヒアリングすることで比較的容易に検証可能。",
+        "safety_risk_notes": "価値観を断定的に決めつける印象を与える可能性があるため、ニュアンスに注意が必要。"
+      },
+      "rationale": "PKGとの整合性が高く、観察O1・O2をよく説明できているが、O3（観光客向け演出への飽和感）はやや主観的な解釈に依存。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "PKGの価値観がユーザーの全志向をカバーしきれていないこと",
+          "『本物の生活』や拒否感の強度がPKGや一般的な枠組みでは十分に定義されていないこと"
+        ],
+        "best_discriminating_question": "ユーザーが『本物の生活』と認識する具体的な条件は何か？",
+        "testability_notes": "追加ヒアリングや詳細なユーザーインタビューが必要で、検証には手間がかかる。",
+        "safety_risk_notes": "ユーザーの志向を『不明』とすることで、理解不足や無関心と受け取られるリスクがある。"
+      },
+      "rationale": "PKGの限界を指摘し、観察O2・O3の説明に慎重な姿勢を取っている。仮説というよりも証拠不十分性の指摘であり、他仮説の補助的役割が強い。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーが地元住民との信頼関係や直接交流を重視していること",
+          "観光地化が住民との壁を作るという社会的メカニズムが働いていること"
+        ],
+        "best_discriminating_question": "現地の人と直接交流できる機会があれば、観光地化された場所でも興味を持つか？",
+        "testability_notes": "ユーザーの交流志向を具体的に質問すれば検証可能だが、行動観察も有効。",
+        "safety_risk_notes": "ユーザーの社会的欲求を過度に強調すると、動機の単純化や誤解を生む可能性がある。"
+      },
+      "rationale": "O2（本物の生活空間志向）を社会的動機で説明しており、PKGにも根拠があるが、O1やO3の説明力は限定的。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O3",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "観光産業がローカル志向を商品化しているという外部エビデンスが妥当であること",
+          "ユーザーが求める『本物』の場所が既に観光マーケティングに取り込まれていること"
+        ],
+        "best_discriminating_question": "ユーザーは『地元の人しか知らない』とされる場所が観光マーケティングの一部であると知った場合、どのように感じるか？",
+        "testability_notes": "外部エビデンスやユーザーの認識・反応を調査する必要があり、やや検証に手間がかかる。",
+        "safety_risk_notes": "ユーザーの体験や志向を否定的に捉えられる可能性があり、慎重な表現が求められる。"
+      },
+      "rationale": "外部エビデンス（Oext1）を活用し、観察O1・O3を環境要因で説明。ユーザーの志向が満たされにくい現実を指摘している。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3",
+          "Oext2",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "ユーザーの『本物志向』が自己イメージの維持や差異化欲求と結びついていること",
+          "『本物』志向の行動自体が観光消費の一部として商品化されているという外部エビデンスが妥当であること"
+        ],
+        "best_discriminating_question": "『本物らしさ』を求める行動自体が観光消費の一部であると指摘された場合、どのように感じるか？",
+        "testability_notes": "ユーザーの自己語りや反応を深く掘り下げる必要があり、検証には高度なインタビュー技術が必要。",
+        "safety_risk_notes": "ユーザーの動機を無自覚な消費行動と断じるため、反発や不快感を招くリスクが高い。"
+      },
+      "rationale": "外部エビデンスを根拠に、ユーザーの行動を逆説的・批判的に再解釈。観察O2・O3・Oext2・Oext3を広く説明できるが、ユーザーへの配慮が必要。"
+    }
+  ]
+}

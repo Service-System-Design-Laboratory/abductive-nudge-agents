@@ -1,0 +1,37 @@
+{
+  "triggers": [
+    {
+      "type": "information_gap",
+      "text": "現在の嵐山や竹林の道が過去と同じ体験を提供できるかどうかが明らかでない。"
+    },
+    {
+      "type": "ambiguity",
+      "text": "『同じ感動』が何を意味するのか、具体的な内容が不明。"
+    },
+    {
+      "type": "contradiction",
+      "text": "外部情報によると、現在の竹林の道は観光客増加や環境変化で当時と異なる可能性が高い。"
+    },
+    {
+      "type": "focus",
+      "text": "過去の体験の再現に強いこだわりがある。"
+    }
+  ],
+  "external_observations": [
+    {
+      "id": "Oext1",
+      "text": "現在の嵐山や竹林の道は観光客が増加し、以前のような静けさや雰囲気が失われているという口コミがある。",
+      "source_url": "https://www.tripadvisor.jp/ShowUserReviews-g298564-d1497822-r626895081-Bamboo_Forest_Street-Kyoto_Kyoto_Prefecture_Kinki.html"
+    },
+    {
+      "id": "Oext2",
+      "text": "竹林の道では落書きや私有地への無断侵入など、観光客によるマナー問題が深刻化している。",
+      "source_url": "https://www.youtube.com/watch?v=Wovh0x4x4eQ"
+    },
+    {
+      "id": "Oext3",
+      "text": "竹林の道の竹が間引きされ、スカスカになっているという指摘がある。",
+      "source_url": "https://www.tripadvisor.jp/ShowUserReviews-g298564-d1497822-r626895081-Bamboo_Forest_Street-Kyoto_Kyoto_Prefecture_Kinki.html"
+    }
+  ]
+}

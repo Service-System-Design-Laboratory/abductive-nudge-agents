@@ -1,0 +1,364 @@
+{
+  "context": {
+    "observations": [
+      {
+        "id": "O1",
+        "text": "今回の3日間の旅行は分刻みでスケジュールを組んだ"
+      },
+      {
+        "id": "O2",
+        "text": "Googleマップで移動時間を計算した"
+      },
+      {
+        "id": "O3",
+        "text": "最も効率的に主要スポットを回れるルートを確立した"
+      },
+      {
+        "id": "O4",
+        "text": "これを完璧に実行するだけだ"
+      },
+      {
+        "id": "O5",
+        "text": "効率化の見落としがないか尋ねている"
+      }
+    ],
+    "assumptions": [
+      {
+        "id": "A1",
+        "text": "ユーザーは旅行の効率化を重視している",
+        "status": "tentative"
+      },
+      {
+        "id": "A2",
+        "text": "ユーザーは計画通りに行動することに満足感を感じる",
+        "status": "tentative"
+      },
+      {
+        "id": "A3",
+        "text": "ユーザーは予期せぬ出来事や偶発的な発見を重視していない",
+        "status": "tentative"
+      },
+      {
+        "id": "A4",
+        "text": "ユーザーは旅行の目的を主要スポットの制覇に置いている",
+        "status": "tentative"
+      }
+    ],
+    "questions": [
+      "効率化以外に旅行で重視していることはありますか？",
+      "計画外の出来事が起きた場合はどう対応しますか？",
+      "今回の旅行で最も楽しみにしていることは何ですか？"
+    ],
+    "constraints": {
+      "tone": "supportive",
+      "safety": "avoid determinism"
+    }
+  },
+  "evidence": {
+    "triggers": [
+      {
+        "type": "focus",
+        "text": "効率化に強い関心を示しているが、他の価値観（偶発性や体験の質など）への言及がない"
+      },
+      {
+        "type": "information_gap",
+        "text": "効率化以外の旅行の目的や価値観が明示されていない"
+      },
+      {
+        "type": "ambiguity",
+        "text": "完璧な実行を目指す理由や背景が不明"
+      },
+      {
+        "type": "contradiction",
+        "text": "PKGでは『自然との調和』『里山散策』など、効率化と異なる価値観が強い"
+      }
+    ],
+    "external_observations": [
+      {
+        "id": "Oext1",
+        "text": "行政や地域活動においては、一方的な情報発信や効率化だけでなく、住民一人ひとりが自分のために関わることが信頼や理解につながるとされている",
+        "source_url": "https://www.tokyo23-kuchokai-kiko.jp/report/docs/50b1e925d256a8aa70a11a37810bb2c6c166dce8.pdf"
+      }
+    ]
+  },
+  "hypotheses": [
+    {
+      "hypothesis_id": "H1",
+      "type": "psychological",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "O4"
+      ],
+      "assumes": [
+        "A1",
+        "A2"
+      ],
+      "statement": "ユーザーは計画通りに物事を進めることで安心感や達成感を得ている。",
+      "mechanism": "計画の遂行が自己効力感やコントロール感を高めるため、効率化に強い関心を持つ。",
+      "predictions": [
+        "計画が崩れるとストレスを感じやすい",
+        "旅行以外でもスケジュール管理を重視する傾向がある"
+      ],
+      "discriminating_questions": [
+        "計画通りに進まなかった場合、どんな気持ちになりますか？"
+      ],
+      "persona_link": [
+        "p01_n6"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H2",
+      "type": "goal_mismatch",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "O4",
+        "O5"
+      ],
+      "assumes": [
+        "A1",
+        "A4"
+      ],
+      "statement": "効率化を追求するあまり、旅行の本来の目的や体験の質が二の次になっている可能性がある。",
+      "mechanism": "主要スポットの制覇や計画の完遂が目的化し、体験そのものや偶発的な出会いの価値が見落とされる。",
+      "predictions": [
+        "旅行後に『何か物足りなさ』や『思い出の印象が薄い』と感じることがある",
+        "効率化以外の視点を問われると答えに詰まる"
+      ],
+      "discriminating_questions": [
+        "効率を最優先した結果、印象的な体験が減ることに不安はありませんか？"
+      ],
+      "persona_link": [
+        "p01_n1",
+        "p01_n4"
+      ],
+      "evidence_link": [],
+      "is_reframing": true
+    },
+    {
+      "hypothesis_id": "H3",
+      "type": "value",
+      "explains": [
+        "O1",
+        "O2",
+        "O3"
+      ],
+      "assumes": [
+        "A1"
+      ],
+      "statement": "ユーザーは効率的な行動や計画性自体に価値を見出している。",
+      "mechanism": "効率的な行動が自己の価値観やアイデンティティと結びついている。",
+      "predictions": [
+        "他者にも効率的な行動を勧めることがある",
+        "効率化の工夫を楽しんでいる"
+      ],
+      "discriminating_questions": [
+        "効率化の工夫自体が旅行の楽しみになっていますか？"
+      ],
+      "persona_link": [
+        "p01_n6"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H4",
+      "type": "constraint_conflict",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "O4",
+        "O5"
+      ],
+      "assumes": [
+        "A1",
+        "A3"
+      ],
+      "statement": "効率化を重視する一方で、PKGにある『自然との調和』や『里山散策』など、偶発性やゆとりを大切にする価値観と内面で葛藤している可能性がある。",
+      "mechanism": "効率化と自然体験の価値観が両立しにくく、どちらかに偏ることで内的な違和感が生じる。",
+      "predictions": [
+        "旅行中に『もっとゆっくりしたい』と感じる瞬間がある",
+        "効率化と自然体験のどちらを優先するか迷うことがある"
+      ],
+      "discriminating_questions": [
+        "分刻みの計画と、自然の中での偶発的な体験、どちらにより魅力を感じますか？"
+      ],
+      "persona_link": [
+        "p01_n1",
+        "p01_n4"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H5",
+      "type": "social",
+      "explains": [
+        "O5",
+        "O1"
+      ],
+      "assumes": [
+        "A1"
+      ],
+      "statement": "効率化の追求は、社会的な期待や『ちゃんとしている人』というイメージを守るためでもある。",
+      "mechanism": "周囲からの評価や信頼を得るために、計画的な行動を重視している。",
+      "predictions": [
+        "他者と旅行する際は特に計画を重視する",
+        "効率的な行動が『信頼される人』という自己像と結びついている"
+      ],
+      "discriminating_questions": [
+        "計画を立てることは、自分の信頼や評価と関係していますか？"
+      ],
+      "persona_link": [
+        "p01_n5"
+      ],
+      "evidence_link": [
+        "ev:1"
+      ],
+      "is_reframing": false
+    }
+  ],
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A2"
+        ],
+        "best_discriminating_question": "計画通りに進まなかった場合、どんな気持ちになりますか？",
+        "testability_notes": "旅行中に計画が崩れた時の感情反応を観察することで検証可能。",
+        "safety_risk_notes": "自己効力感への言及は比較的安全だが、過度なコントロール志向を指摘しないよう注意。"
+      },
+      "rationale": "計画重視の行動パターンを説明できるが、効率化の動機が内的安心感に限定されている可能性がある。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4",
+          "O5"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A4"
+        ],
+        "best_discriminating_question": "効率を最優先した結果、印象的な体験が減ることに不安はありませんか？",
+        "testability_notes": "旅行後の満足度や印象深い体験の有無を振り返ることで検証可能。",
+        "safety_risk_notes": "旅行の目的や価値観のズレを指摘するため、やや不快感を与える可能性がある。"
+      },
+      "rationale": "効率化の裏にある目的のズレを指摘し、ユーザーの発言の意味を大きく変える仮説。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [
+          "効率化自体が目的であると決めつけている可能性"
+        ],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A1"
+        ],
+        "best_discriminating_question": "効率化の工夫自体が旅行の楽しみになっていますか？",
+        "testability_notes": "効率化の工夫を楽しんでいるかどうかを直接尋ねることで検証可能。",
+        "safety_risk_notes": "価値観の押し付けと受け取られないように注意。"
+      },
+      "rationale": "効率化を価値観と結びつけるが、旅行体験の質への影響は説明できない。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4",
+          "O5"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A3"
+        ],
+        "best_discriminating_question": "分刻みの計画と、自然の中での偶発的な体験、どちらにより魅力を感じますか？",
+        "testability_notes": "旅行中にどちらを優先したいかを問うことで検証可能。",
+        "safety_risk_notes": "内面の葛藤を指摘するため、やや敏感な話題となる可能性がある。"
+      },
+      "rationale": "PKGの価値観と現行行動のズレを指摘し、内的な葛藤を示唆する。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [
+          "外部観察（Oext1）は旅行ではなく社会的信頼に関するもので、直接的な関連が弱い"
+        ],
+        "explains_confirmed": [
+          "O5",
+          "O1"
+        ],
+        "key_assumptions": [
+          "A1"
+        ],
+        "best_discriminating_question": "計画を立てることは、自分の信頼や評価と関係していますか？",
+        "testability_notes": "他者との関係や評価を気にしているかを尋ねることで検証可能。",
+        "safety_risk_notes": "社会的評価への言及は慎重な配慮が必要。"
+      },
+      "rationale": "効率化を社会的信頼と結びつけるが、外部観察との関連はやや間接的。"
+    }
+  ],
+  "decision": {
+    "selected_hypothesis_id": "H2",
+    "contrasting_hypothesis_id": "H4",
+    "selection_rationale": "H2は『効率化の追求が旅行の本来の目的や体験の質を損なう可能性』を指摘し、ユーザーの『効率化の徹底』という発言の意味を『体験の質や偶発性を見落としているかもしれない』という新しい視点に変える。H4はPKGの価値観（自然との調和や偶発性）と現行行動（効率化）の葛藤を指摘し、額面通りの読みを補強する。どちらの立場に立つかで、今後の旅行中の行動や自己理解が大きく変わる。",
+    "user_facing_frame": {
+      "framing": "options",
+      "questions": [
+        "効率を最優先した結果、印象的な体験が減ることに不安はありませんか？",
+        "分刻みの計画と、自然の中での偶発的な体験、どちらにより魅力を感じますか？"
+      ],
+      "options": [
+        "効率化を徹底することで主要スポットを制覇することを優先する立場",
+        "計画にゆとりを持たせて、自然の中での偶発的な体験や発見を大切にする立場"
+      ]
+    }
+  },
+  "final_response": "分刻みのスケジュールで旅行を計画されているとのこと、計画を立てる力や効率化へのこだわりが伝わってきます。ご自身の工夫や準備が旅行の楽しみの一つになっているのですね。\n\n一方で、効率化を徹底することで、もしかすると印象的な体験や偶発的な出会いが減ってしまうことに不安はありませんか？たとえば、分刻みの計画通りに進めることと、自然の中での偶発的な発見やゆとりある時間、どちらにより魅力を感じますか？\n\n今のタイミングで、例えば1カ所だけ『時間を決めずに立ち寄る場所』を作ってみるのも一つの方法です。実際、同じように計画重視で旅をされる方でも、1つだけ“予定外”の行動を入れることで新たな発見があったという声もあります。\n\nこの旅行を『効率化で主要スポットを制覇する』ことに集中するのか、『計画にゆとりを持たせて偶発的な体験を大切にする』のか、どちらの立場に立つかで、旅の思い出や満足感が変わるかもしれません。どちらの考え方が今のあなたにしっくりきそうでしょうか？\n\nもしよければ、計画に“ゆとり”を入れることについてどう感じるか、教えていただけますか？",
+  "markers": {
+    "empathy": {
+      "acknowledgement": true,
+      "reflection": true,
+      "perspective_prompt": true
+    },
+    "nudge": {
+      "easy": true,
+      "attractive": true,
+      "social": true,
+      "timely": true,
+      "has_question": true,
+      "has_options": true,
+      "has_small_action": true,
+      "directive_level": "low"
+    }
+  }
+}

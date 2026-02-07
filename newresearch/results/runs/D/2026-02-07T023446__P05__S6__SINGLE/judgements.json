@@ -1,0 +1,99 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O4"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A3"
+        ],
+        "best_discriminating_question": "観光客が増えたり、森に人の手が入ることについてどう感じますか？",
+        "testability_notes": "ユーザーの観光地化や人の介入への感情を尋ねることで検証可能。",
+        "safety_risk_notes": "誇りや価値観を肯定的に扱うためリスクは低い。"
+      },
+      "rationale": "原生林の価値と知識への誇りを重視した仮説で、観察内容と整合的。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3",
+          "O4",
+          "Oext1",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "A2",
+          "A3"
+        ],
+        "best_discriminating_question": "最近の観光客や新しい屋久島の雰囲気についてどう思いますか？",
+        "testability_notes": "新参者や観光地化への態度を問うことで検証可能。",
+        "safety_risk_notes": "優越感や差別化を指摘するため、慎重な伝え方が必要。"
+      },
+      "rationale": "『古参』としての立場を強調し、外部観察とも整合的。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A4"
+        ],
+        "best_discriminating_question": "最近の森の様子や雰囲気に変化を感じていますか？",
+        "testability_notes": "環境変化への感受性や保全意識を問うことで検証可能。",
+        "safety_risk_notes": "自然保護への関心を刺激するが、批判的になりすぎないよう配慮が必要。"
+      },
+      "rationale": "環境変化への感受性を扱い、外部観察ともリンク。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A2"
+        ],
+        "best_discriminating_question": "他の場所でも何度も訪れて深く知ることを大切にしていますか？",
+        "testability_notes": "他の自然体験や旅へのアプローチを問うことで検証可能。",
+        "safety_risk_notes": "ユーザーの価値観を肯定的に扱うためリスクは低い。"
+      },
+      "rationale": "体験の積み重ねや自己実現を重視した仮説で、PKGとも親和性が高い。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O4",
+          "Oext1",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "A3",
+          "A4"
+        ],
+        "best_discriminating_question": "最近、屋久島の森について語る人が増えたり、情報が広まることにどんな気持ちを持っていますか？",
+        "testability_notes": "他者の参入や情報の普及に対する感情を尋ねることで検証可能。",
+        "safety_risk_notes": "ユーザーのアイデンティティの揺らぎや不安に触れるため、慎重な言い回しが必要。"
+      },
+      "rationale": "裏切る仮説として、自己像の揺らぎや観光地化によるアイデンティティの補強という新しい視点を提示。"
+    }
+  ]
+}

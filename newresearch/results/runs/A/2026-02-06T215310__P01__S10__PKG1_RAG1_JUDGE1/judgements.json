@@ -1,0 +1,100 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_link（pkg:n366, pkg:n361）がPKGに存在しない。PKG利用可条件下では根拠の弱さとなる。"
+        ],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーが写真撮影技術の向上と効率化に強い向上心を持っている",
+          "効率的な撮影が多様な構図やアングルの試行、SNS映えの成功確率向上に直結する"
+        ],
+        "best_discriminating_question": "撮影現場での準備や撤収の効率化についても工夫していますか？",
+        "testability_notes": "ユーザーへのインタビューや行動観察で、撮影プロセスの効率化への関心・工夫を具体的に問えば検証可能。",
+        "safety_risk_notes": "『効率化』や『向上心』を強調しすぎると、ユーザーの体験価値や楽しみを軽視していると受け取られる可能性がある。"
+      },
+      "rationale": "観察O1, O2をよく説明するが、PKG根拠が欠落しており、仮説の裏付けが弱い。効率化志向の有無は直接質問で検証しやすい。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_link（pkg:n360）がPKGに存在しない。PKG利用可条件下では根拠の弱さとなる。"
+        ],
+        "explains_confirmed": [
+          "O3"
+        ],
+        "key_assumptions": [
+          "ユーザーがSNSでの承認や反響を強く価値付けている",
+          "旅の目的が“映える写真”の獲得と発信による社会的評価にシフトしている"
+        ],
+        "best_discriminating_question": "SNSで反響が大きかった旅行とそうでなかった旅行の満足度に違いがありますか？",
+        "testability_notes": "SNSでの反響と満足度の関係をユーザーに尋ねることで比較的容易に検証可能。",
+        "safety_risk_notes": "『現地体験よりSNS評価重視』という断定は、ユーザーの旅の動機や価値観を狭く捉えすぎていると反発を招く恐れがある。"
+      },
+      "rationale": "O3（旅の目的がSNS投稿用写真）をよく説明するが、PKG根拠がなく、O2の説明は限定的。SNS評価重視の有無は質問で判別しやすい。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_link（pkg:n361）がPKGに存在しない。PKG利用可条件下では根拠の弱さとなる。"
+        ],
+        "explains_confirmed": [
+          "O2",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "SNS映え撮影ノウハウが広く普及し、ユーザーがそれにアクセスしている",
+          "ユーザーが商品化された情報を積極的に利用して撮影スタイルを効率化している"
+        ],
+        "best_discriminating_question": "SNS映えテクニック本やYouTubeチュートリアルを参考にしていますか？",
+        "testability_notes": "ユーザーの情報収集行動（講座・ガイド・アプリ利用）をヒアリングすれば検証しやすい。",
+        "safety_risk_notes": "『枠組みの中で効率的な映えを追求』という表現が、ユーザーの創造性や主体性を軽視していると受け取られる可能性がある。"
+      },
+      "rationale": "O2, Oext1（ノウハウの普及・利用）をよく説明するが、PKG根拠が欠如。ユーザーの情報収集行動の有無で他仮説と区別しやすい。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "SNS映えを重視する旅行者が増加し、現地体験や景観が変質している",
+          "ユーザーがその社会的トレンドの一部として行動している"
+        ],
+        "best_discriminating_question": "他の撮影者と撮影場所やタイミングを調整することがありますか？",
+        "testability_notes": "現地での他撮影者との関わりやルール意識について質問すれば検証可能。",
+        "safety_risk_notes": "『景観の変質』や『撮影者の存在』を強調しすぎると、ユーザーにネガティブな印象を与える恐れがある。"
+      },
+      "rationale": "Oext3（景観の変質）を的確に説明。PKG根拠は元からないが、社会的・環境的視点で他仮説と差別化しやすい。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_link（pkg:n366, pkg:n360）がPKGに存在しない。PKG利用可条件下では根拠の弱さとなる。"
+        ],
+        "explains_confirmed": [
+          "O3",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "ユーザーが『映える自分』や『撮影技術に長けた自分』という自己像・役割を維持・演出することを主目的としている",
+          "旅や自然体験が自己演出のための手段化している"
+        ],
+        "best_discriminating_question": "SNS投稿用の写真やエピソードを意識して旅の計画を立てていますか？",
+        "testability_notes": "ユーザーの旅の計画や自己表現への意識を問うことで検証可能。",
+        "safety_risk_notes": "『旅や自然体験が手段化』という指摘は、ユーザーの動機や体験価値を否定的に捉えられるリスクが高い。"
+      },
+      "rationale": "O3, Oext2（自己演出・手段化）をよく説明するが、PKG根拠がない。ユーザーの自己表現志向の有無で他仮説と明確に区別できる。"
+    }
+  ]
+}

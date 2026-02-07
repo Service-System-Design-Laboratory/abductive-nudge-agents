@@ -1,0 +1,100 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O5"
+        ],
+        "key_assumptions": [
+          "ユーザーが節約行動自体に達成感や自己効力感を感じていること",
+          "節約志向が旅行動機の中心であること"
+        ],
+        "best_discriminating_question": "旅行以外の場面でも節約やコスト最適化に強いこだわりがありますか？",
+        "testability_notes": "ユーザーへの直接質問で比較的容易に検証可能。日常生活での節約志向の有無を確認することで判別できる。",
+        "safety_risk_notes": "節約志向を強調しすぎると、ユーザーの価値観を決めつけてしまうリスクがある。"
+      },
+      "rationale": "節約行動の動機を心理的側面に求めており、観察O1・O5を十分説明できる。PKGリンク不在はuse_pkg条件下で欠点だが致命的ではない。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O3",
+          "O5"
+        ],
+        "key_assumptions": [
+          "ユーザーがデータ分析やコスト最適化のスキルを持ち、活用していること",
+          "既存手法以外の節約情報にはアクセスできていないこと"
+        ],
+        "best_discriminating_question": "旅行計画時にどのようなデータや比較指標を使っていますか？",
+        "testability_notes": "ユーザーの計画手法や情報収集行動を尋ねることで検証可能。やや詳細なヒアリングが必要。",
+        "safety_risk_notes": "スキル重視の仮説であり、ユーザーの能力や知識を過大評価・過小評価するリスクがある。"
+      },
+      "rationale": "観察O1, O3, O5を説明できるが、PKGリンクが無効（use_pkg条件下で弱み）。情報ギャップの有無が判別の鍵となる。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4",
+          "O5"
+        ],
+        "key_assumptions": [
+          "ユーザーが節約と快適さ・体験の質のバランスを重視していること",
+          "既存の節約手段を最大限活用していること"
+        ],
+        "best_discriminating_question": "どこまで快適さや体験の質を妥協できますか？",
+        "testability_notes": "ユーザーの価値観や過去の節約行動について具体的に質問する必要があり、やや検証に手間がかかる。",
+        "safety_risk_notes": "快適さや体験の質を妥協していると断定することで、ユーザーの選択を否定的に捉えられるリスクがある。"
+      },
+      "rationale": "全観察（O1-O5）を説明できる包括的仮説。PKGリンク不在はuse_pkg条件下で弱みだが、致命的ではない。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O5"
+        ],
+        "key_assumptions": [
+          "ユーザーが主要コスト項目以外の節約情報を十分に持っていないこと",
+          "追加の節約策を求めていること"
+        ],
+        "best_discriminating_question": "観光費用や日用品、通信費などの細かな出費も把握・管理していますか？",
+        "testability_notes": "ユーザーの知識範囲や情報収集状況を尋ねることで検証可能。比較的容易。",
+        "safety_risk_notes": "ユーザーの知識不足を指摘する形になるため、配慮が必要。"
+      },
+      "rationale": "O5のみ説明可能で説明範囲は限定的。PKGリンク不在はuse_pkg条件下で弱み。知識ギャップの有無が判別のポイント。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4",
+          "O5"
+        ],
+        "key_assumptions": [
+          "ユーザーが節約行動を自己アイデンティティや立場の強化手段としていること",
+          "節約自体が目的化していること"
+        ],
+        "best_discriminating_question": "今回の節約旅行について、他人に自慢したりSNSで発信したい気持ちがありますか？",
+        "testability_notes": "ユーザーの自己表現やSNS発信行動を尋ねることで検証可能。ややセンシティブな質問を含む。",
+        "safety_risk_notes": "ユーザーの動機を『自己顕示』と断定することで、誤解や不快感を与えるリスクが高い。"
+      },
+      "rationale": "全観察を説明できるが、動機の解釈がセンシティブでリスクが高い。PKGリンク不在はuse_pkg条件下で弱み。"
+    }
+  ]
+}

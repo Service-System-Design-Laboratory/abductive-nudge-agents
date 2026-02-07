@@ -1,0 +1,16 @@
+{
+  "triggers": [
+    {
+      "type": "information_gap",
+      "text": "ユーザーは移動時間と主要スポットの効率的なルート確立に注力しているが、効率化のポイントとしてコストや予算面、現地での混雑・待ち時間、突発的なトラブル対応などの要素が観察や仮定に含まれていない。PKGが参照されていないため、これらの観点が計画に反映されているか不明であり、情報のギャップが存在する。"
+    },
+    {
+      "type": "ambiguity",
+      "text": "ユーザーが『効率化の見落とし』として何を重視しているか（時間、コスト、体力、快適さなど）が観察・仮定からは明確でなく、複数の解釈が可能である。"
+    }
+  ],
+  "rag_queries": [],
+  "evidence_items": [],
+  "external_observations": [],
+  "notes": "RAG disabled (use_rag=false) — trigger identification only"
+}

@@ -1,0 +1,328 @@
+{
+  "context": {
+    "observations": [
+      {
+        "id": "O1",
+        "text": "今回の3日間の旅行は分刻みでスケジュールを組んだ"
+      },
+      {
+        "id": "O2",
+        "text": "Googleマップで移動時間を計算して、最も効率的に主要スポットを回れるルートを確立した"
+      },
+      {
+        "id": "O3",
+        "text": "あとはこれを完璧に実行するだけだ"
+      }
+    ],
+    "assumptions": [
+      {
+        "id": "A1",
+        "text": "ユーザーは旅行の効率を最大化することに価値を置いている",
+        "status": "tentative"
+      },
+      {
+        "id": "A2",
+        "text": "予期せぬ出来事や現地での偶発的な発見よりも、計画通りに進めることを優先している",
+        "status": "tentative"
+      },
+      {
+        "id": "A3",
+        "text": "ユーザーは効率化のさらなるポイントがあるかを気にしている",
+        "status": "tentative"
+      }
+    ],
+    "questions": [
+      "計画通りに進めることが最も重要だと感じる理由は何ですか？",
+      "現地での偶発的な発見や予定外の体験にはどの程度価値を感じますか？",
+      "効率化以外に旅行で大事にしたいことはありますか？"
+    ],
+    "constraints": {
+      "tone": "supportive",
+      "safety": "avoid determinism"
+    }
+  },
+  "evidence": {
+    "triggers": [
+      {
+        "type": "focus",
+        "text": "効率化と計画実行に強い関心が集中している"
+      },
+      {
+        "type": "information_gap",
+        "text": "偶発的な体験や余白の価値については触れられていない"
+      },
+      {
+        "type": "ambiguity",
+        "text": "効率化の目的や背景が明確でない"
+      }
+    ],
+    "external_observations": [
+      {
+        "id": "Oext1",
+        "text": "データ主導経済では、ネットワークとデータが新たな価値を創造するが、効率性の追求が体験の質や偶発性を損なうパラドックスがある",
+        "source_url": "https://www.soumu.go.jp/johotsusintokei/whitepaper/ja/h29/pdf/29honpen.pdf"
+      }
+    ]
+  },
+  "hypotheses": [
+    {
+      "hypothesis_id": "H1",
+      "type": "psychological",
+      "explains": [
+        "O1",
+        "O2",
+        "O3"
+      ],
+      "assumes": [
+        "A1"
+      ],
+      "statement": "ユーザーは計画通りに物事を進めることで安心感や達成感を得ている",
+      "mechanism": "計画を立てて実行することで、予測可能性と自己効力感が高まるため",
+      "predictions": [
+        "計画が乱れると不安やストレスを感じやすい",
+        "旅行後に計画通りに実行できたかを振り返る傾向がある"
+      ],
+      "discriminating_questions": [
+        "計画が崩れたとき、どのような気持ちになりますか？"
+      ],
+      "persona_link": [
+        "pkg:p07_n1"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H2",
+      "type": "value",
+      "explains": [
+        "O1",
+        "O2"
+      ],
+      "assumes": [
+        "A1",
+        "A2"
+      ],
+      "statement": "ユーザーは『計画的運営』という価値観を旅行にも適用している",
+      "mechanism": "普段から計画的に物事を進めることを重視しており、旅行も例外ではない",
+      "predictions": [
+        "他の活動でも事前に詳細な計画を立てる傾向がある",
+        "旅行の満足度は計画の実行度に左右される"
+      ],
+      "discriminating_questions": [
+        "普段の生活や仕事でも同じように計画を重視しますか？"
+      ],
+      "persona_link": [
+        "pkg:p07_n1"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H3",
+      "type": "environmental",
+      "explains": [
+        "O2",
+        "O3"
+      ],
+      "assumes": [
+        "A3"
+      ],
+      "statement": "デジタルツール（Googleマップなど）の発達が、効率化志向を強化している",
+      "mechanism": "移動や計画立案が容易になったことで、効率化への期待値が上がっている",
+      "predictions": [
+        "デジタルツールを使わない場合は効率化へのこだわりが弱まる",
+        "他の人にもツール活用を勧める傾向がある"
+      ],
+      "discriminating_questions": [
+        "デジタルツールがなかった場合、どのように計画を立てますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [
+        "ev:1"
+      ],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H4",
+      "type": "goal_mismatch",
+      "explains": [
+        "O1",
+        "O2",
+        "O3"
+      ],
+      "assumes": [
+        "A2"
+      ],
+      "statement": "効率化に注力するあまり、偶発的な発見や現地の文化体験を見落とすリスクがある",
+      "mechanism": "計画の最適化が目的化し、体験の幅が狭まるパラドックスが生じている",
+      "predictions": [
+        "予定外の出来事に柔軟に対応しづらい",
+        "現地の人との交流や偶然の発見が少なくなる"
+      ],
+      "discriminating_questions": [
+        "予定外の出来事や現地の人との交流にどの程度価値を感じますか？"
+      ],
+      "persona_link": [
+        "pkg:p07_n2",
+        "pkg:p07_n4"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H5",
+      "type": "paradox",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "Oext1"
+      ],
+      "assumes": [
+        "A1",
+        "A2"
+      ],
+      "statement": "効率化を極めるほど、旅行の本来の価値や偶発的な体験が失われるというパラドックスが生じている",
+      "mechanism": "データ主導の計画が体験の幅や深みを狭め、結果的に満足感や思い出の質が低下する可能性がある",
+      "predictions": [
+        "計画通りに進んでも、何か物足りなさを感じることがある",
+        "偶発的な出来事が強く記憶に残る場合がある"
+      ],
+      "discriminating_questions": [
+        "過去の旅行で予定外の出来事が印象に残ったことはありますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [
+        "ev:1"
+      ],
+      "is_reframing": true
+    }
+  ],
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A1"
+        ],
+        "best_discriminating_question": "計画が崩れたとき、どのような気持ちになりますか？",
+        "testability_notes": "計画が乱れた場合の感情や行動を観察することで検証可能",
+        "safety_risk_notes": "ユーザーの安心感や達成感を肯定する内容なのでリスクは低い"
+      },
+      "rationale": "ユーザーの計画重視の姿勢を内面の安心感や達成感と結びつけて説明できる"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A2"
+        ],
+        "best_discriminating_question": "普段の生活や仕事でも同じように計画を重視しますか？",
+        "testability_notes": "他の場面での計画性の有無を確認することで検証可能",
+        "safety_risk_notes": "ユーザーの価値観を肯定的に扱うためリスクは低い"
+      },
+      "rationale": "PKGの『計画的運営』とユーザー行動の一貫性を説明できる"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A3"
+        ],
+        "best_discriminating_question": "デジタルツールがなかった場合、どのように計画を立てますか？",
+        "testability_notes": "ツール利用の有無による行動変化を観察",
+        "safety_risk_notes": "ツール依存を指摘するため、若干の不快感の可能性あり"
+      },
+      "rationale": "外部環境（デジタルツール）が行動に与える影響を説明できる"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A2"
+        ],
+        "best_discriminating_question": "予定外の出来事や現地の人との交流にどの程度価値を感じますか？",
+        "testability_notes": "偶発的な体験をどれだけ重視するかを尋ねることで検証可能",
+        "safety_risk_notes": "計画重視の姿勢に疑問を投げかけるため、やや不快感を与える可能性あり"
+      },
+      "rationale": "効率化と体験の幅のトレードオフを指摘できる"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A2"
+        ],
+        "best_discriminating_question": "過去の旅行で予定外の出来事が印象に残ったことはありますか？",
+        "testability_notes": "過去の体験の印象深さや満足度を尋ねることで検証可能",
+        "safety_risk_notes": "ユーザーの効率化志向を逆説的に問い直すため、やや不快感があるが、深い自己洞察を促す"
+      },
+      "rationale": "外部観察（Oext1）を活用し、効率化のパラドックスという新たな視点を提示できる"
+    }
+  ],
+  "decision": {
+    "selected_hypothesis_id": "H5",
+    "contrasting_hypothesis_id": "H2",
+    "selection_rationale": "H5を採用すると、ユーザーの発言『効率的に主要スポットを回れるルートを確立した』の意味が『効率化を追求することで、旅行の本来の価値や偶発的な体験が失われる可能性がある』という逆説的な問い直しに変わる。H2は『計画的運営』という価値観の一貫性として額面通りに読む立場。どちらの立場に立つかで、今後の旅行の行動や重視するポイントが大きく変わる。",
+    "user_facing_frame": {
+      "framing": "options",
+      "questions": [
+        "過去の旅行で予定外の出来事が印象に残ったことはありますか？",
+        "今回の旅行で計画通りに進むことと、偶発的な発見のどちらをより重視したいですか？"
+      ],
+      "options": [
+        "効率化を追求することで体験の幅が狭まるパラドックスに目を向け、偶発的な出来事や現地の文化体験の余白を意識してみる",
+        "『計画的運営』という価値観を貫き、計画通りに進めること自体を旅行の満足度の基準とする"
+      ]
+    }
+  },
+  "final_response": "分刻みでスケジュールを組み、効率的に旅行を進める工夫をされたんですね。その計画力は普段の『計画的運営』の価値観ともつながっているように感じます。一方で、最近のデータ主導の社会では、効率化を極めるほど偶発的な体験や思いがけない発見が減るという逆説も指摘されています。\n\n例えば、過去の旅行で予定外の出来事が印象に残ったことはありませんか？今回も、計画通りに進むことと、現地での偶発的な発見のどちらをより大事にしたいか、少し考えてみるのも面白いかもしれません。\n\n選択肢としては、\n1. 効率化を追求することで体験の幅が狭まるパラドックスに目を向け、偶発的な出来事や現地の文化体験の余白を意識してみる\n2. 『計画的運営』という価値観を貫き、計画通りに進めること自体を旅行の満足度の基準とする\n\nどちらの立場に立つかで、次の行動や旅の思い出の質が変わるかもしれません。たとえば、1分だけ現地の人と話してみる、予定外の小道に立ち寄ってみるなど、5分でできる小さな行動を一つ加えてみるのもおすすめです。どちらの視点が今のあなたにしっくりきますか？",
+  "markers": {
+    "empathy": {
+      "acknowledgement": true,
+      "reflection": true,
+      "perspective_prompt": true
+    },
+    "nudge": {
+      "easy": true,
+      "attractive": true,
+      "social": true,
+      "timely": true,
+      "has_question": true,
+      "has_options": true,
+      "has_small_action": true,
+      "directive_level": "low"
+    }
+  }
+}

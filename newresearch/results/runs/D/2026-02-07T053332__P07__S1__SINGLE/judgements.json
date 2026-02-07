@@ -1,0 +1,95 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A2"
+        ],
+        "best_discriminating_question": "あなたが『本物の生活』にこだわるのは、他の人と違う体験をしたいからですか？",
+        "testability_notes": "ユーザーが独自性や発見の喜びを重視しているかを質問で確認できる",
+        "safety_risk_notes": "独自性の追求を強調しすぎると孤立感を助長する可能性"
+      },
+      "rationale": "ユーザーの発言全体を素直に説明できるが、背景の価値観や社会的側面には踏み込めていない"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A2"
+        ],
+        "best_discriminating_question": "観光地化による文化の変化や商品化に対して、どんな気持ちを持っていますか？",
+        "testability_notes": "文化や伝統への敬意が行動の動機かを尋ねる",
+        "safety_risk_notes": "価値観の押し付けにならないよう注意"
+      },
+      "rationale": "PKGの価値観と強く紐づくが、ユーザーの行動の多様な側面を十分に説明しきれていない"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O3",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "A3"
+        ],
+        "best_discriminating_question": "地元の人と同じ目線で交流したいという気持ちはありますか？",
+        "testability_notes": "社会的な一体感や外部者意識の有無を質問で確認",
+        "safety_risk_notes": "地元の人との距離感や境界を無視しないよう配慮"
+      },
+      "rationale": "社会的な動機を補強するが、ユーザーの内面の動機や価値観の深さには届いていない"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "A2"
+        ],
+        "best_discriminating_question": "情報が少ない場所を探すこと自体に面白さや価値を感じますか？",
+        "testability_notes": "情報探索や発見行動が目的かどうかを確認",
+        "safety_risk_notes": "アクセス困難な場所への誘導にならないよう注意"
+      },
+      "rationale": "外部観察と連動し、体験の希少性や発見の側面を説明できる"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A2"
+        ],
+        "best_discriminating_question": "『本物』を探すこと自体が、実は新しい観光のスタイルや自己表現になっていると感じることはありませんか？",
+        "testability_notes": "自己表現や新しい観光のスタイルとしての側面を意識しているかを尋ねる",
+        "safety_risk_notes": "ユーザーの自己像に揺さぶりをかけるため、不快感を与える可能性があるが、丁寧に扱えば深い内省を促す"
+      },
+      "rationale": "発言の意味を反転させ、自己像や行動のメタ的な側面に踏み込むことで新しい視点を提示できる"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O4"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A3"
+        ],
+        "best_discriminating_question": "屋久島以外の自然や森に対しても同じような愛着を感じますか？",
+        "testability_notes": "他の自然体験や語りの頻度・内容を尋ねることで検証可能。",
+        "safety_risk_notes": "自己肯定感を高める内容なのでリスクは低い。"
+      },
+      "rationale": "ユーザーの愛着や誇りを素直に説明できるが、外部環境の変化やパラドックスには触れていない。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A2"
+        ],
+        "best_discriminating_question": "観光地化や整備による変化についてどう感じていますか？",
+        "testability_notes": "世界遺産登録前後の体験談や感情を尋ねることで検証可能。",
+        "safety_risk_notes": "変化への危機感を刺激する可能性があるが、価値観を否定しない限りリスクは低い。"
+      },
+      "rationale": "外部観察と連動し、環境変化への意識を説明できる。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O4"
+        ],
+        "key_assumptions": [
+          "A3"
+        ],
+        "best_discriminating_question": "屋久島について他の人と意見が異なった経験はありますか？",
+        "testability_notes": "他者との比較や議論の経験を尋ねることで検証可能。",
+        "safety_risk_notes": "承認欲求や独自性への指摘がユーザーにとって不快な場合がある。"
+      },
+      "rationale": "社会的動機を説明できるが、内面の価値観や環境要因への言及は弱い。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A1"
+        ],
+        "best_discriminating_question": "自然保護活動や地域文化の継承に参加したことはありますか？",
+        "testability_notes": "保全活動や文化イベントへの参加歴を尋ねることで検証可能。",
+        "safety_risk_notes": "価値観を肯定する内容でリスクは低い。"
+      },
+      "rationale": "PKGの価値観と整合的で、ユーザーの発言を額面通りに説明できる。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "A2",
+          "A3"
+        ],
+        "best_discriminating_question": "最近の屋久島の森で、以前と比べて変わったと感じることはありますか？",
+        "testability_notes": "森の変化や観光地化についての気づきや違和感を尋ねることで検証可能。",
+        "safety_risk_notes": "ユーザーの自己像やノスタルジーを揺さぶるため、やや不快感を与えるリスクがある。"
+      },
+      "rationale": "外部観察を活用し、ユーザーの自己像や体験の意味を反転させる深い読みを提供できる。"
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーは観光地よりも地域のリアルな生活や文化的価値を重視している。",
+          "ガイドブック的な場所ではユーザーの価値観が満たされない。"
+        ],
+        "best_discriminating_question": "観光地でも、地元住民の生活が感じられる場所には興味を持つか？",
+        "testability_notes": "ユーザーへの直接質問で検証可能。観察O1, O2と整合性が高い。",
+        "safety_risk_notes": "断定的に提示すると、一般的な観光地を好むユーザーを排除する印象を与える可能性がある。"
+      },
+      "rationale": "観察O1, O2を素直に説明できており、外部エビデンスOext2とも整合する。前提がユーザーの価値観に強く依存する点に注意。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O3"
+        ],
+        "key_assumptions": [
+          "ユーザーは観光客向けの演出や商業化に飽きや違和感を感じている。",
+          "過去の観光体験が期待外れであった。"
+        ],
+        "best_discriminating_question": "観光地での体験がつまらなかった具体的な経験はあるか？",
+        "testability_notes": "ユーザーの過去体験や感情を問うことで検証可能だが、主観的な回答に依存する。",
+        "safety_risk_notes": "ユーザーの過去の否定的体験を掘り下げるため、感情的な反発や不快感を生むリスクがある。"
+      },
+      "rationale": "O1, O3を説明できており、心理的要因に焦点を当てている。主観的な感情の確認が必要な点が特徴。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2"
+        ],
+        "key_assumptions": [
+          "『本物』や『地元感』の具体的な基準が観察やエビデンスから明確でない。",
+          "ユーザー自身もその定義や探し方を明確に持っていない可能性がある。"
+        ],
+        "best_discriminating_question": "『本物の生活』を感じた具体的なエピソードはあるか？",
+        "testability_notes": "ユーザーの具体的な定義や行動を質問することで検証可能だが、答えが曖昧な場合も多い。",
+        "safety_risk_notes": "ユーザーの価値観や行動の曖昧さを指摘するため、否定的に受け取られる可能性がある。"
+      },
+      "rationale": "O2の説明に限定的だが、現状の情報不足や定義の曖昧さを指摘する仮説として有用。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "観光地化の波がローカルエリアにも及んでいる。",
+          "ユーザーはその変化に敏感で、より深い本物を求めている。"
+        ],
+        "best_discriminating_question": "過去に本物だと思った場所が観光地化されてがっかりした経験はあるか？",
+        "testability_notes": "ユーザーの過去の体験や意識変化を問うことで検証可能。外部エビデンスOext3とも整合。",
+        "safety_risk_notes": "観光地化を否定的に捉えるため、観光業関係者や一般観光客に誤解を与える可能性がある。"
+      },
+      "rationale": "O2, Oext3を説明し、環境変化へのユーザーの反応に着目している。観光地化現象の認識が前提。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "ユーザーの『本物志向』は社会的承認欲求や自己イメージの演出と結びついている。",
+          "『本物志向』自体が観光トレンドやマーケティングで商品化されている。"
+        ],
+        "best_discriminating_question": "自分の旅のスタイルが他の観光客と違うことを意識しているか？",
+        "testability_notes": "ユーザーの自己認識や他者との差別化意識を問うことで検証可能。やや間接的な質問が必要。",
+        "safety_risk_notes": "ユーザーの動機を無意識の承認欲求と断定するため、反発や不快感を生むリスクが高い。"
+      },
+      "rationale": "O1, O2, Oext1を広く説明でき、社会的・メタ的視点が特徴。ユーザーの動機を深堀りするため、慎重な提示が必要。"
+    }
+  ]
+}

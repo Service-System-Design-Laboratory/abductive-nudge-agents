@@ -1,0 +1,90 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A1"
+        ],
+        "best_discriminating_question": "SNSでの反応が良かったとき、どんな気持ちになりますか？",
+        "testability_notes": "SNSでの反応と満足度の相関を尋ねることで検証可能。",
+        "safety_risk_notes": "SNS依存を指摘しすぎると自己否定感を招くリスクあり。"
+      },
+      "rationale": "SNSでの反応が動機の中心である場合、行動の説明力が高い。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A2"
+        ],
+        "best_discriminating_question": "SNSでの反応がなくても、良い写真が撮れたら満足できますか？",
+        "testability_notes": "SNS反応の有無と満足度の関係を尋ねる。",
+        "safety_risk_notes": "価値観を肯定する内容なのでリスクは低い。"
+      },
+      "rationale": "PKGにも合致し、ユーザーの価値観を反映している。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O4"
+        ],
+        "key_assumptions": [
+          "A3"
+        ],
+        "best_discriminating_question": "撮影以外の時間も大切にしたいと感じますか？",
+        "testability_notes": "効率化の目的を尋ねることで検証可能。",
+        "safety_risk_notes": "行動改善提案なのでリスクは低い。"
+      },
+      "rationale": "効率化への関心に直接対応している。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O4",
+          "O2"
+        ],
+        "key_assumptions": [
+          "A3"
+        ],
+        "best_discriminating_question": "撮影が早く終わってしまうと、物足りなさを感じることはありませんか？",
+        "testability_notes": "効率化の副作用について尋ねる。",
+        "safety_risk_notes": "効率化の否定と受け取られないよう配慮が必要。"
+      },
+      "rationale": "効率化の目的と満足度の関係に疑問を投げかける。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3",
+          "O4",
+          "O2"
+        ],
+        "key_assumptions": [
+          "A1"
+        ],
+        "best_discriminating_question": "SNSで他の人の投稿や流行を意識して写真を撮ることはありますか？",
+        "testability_notes": "SNSでの他者意識や演出性について尋ねる。",
+        "safety_risk_notes": "ユーザーの自己像や動機に疑問を投げかけるため、やや不快感を与える可能性あり。表現に配慮が必要。"
+      },
+      "rationale": "外部観察（Oext2）を活用し、ユーザーの行動の社会的文脈を再解釈する。"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "triggers": [
+    {
+      "type": "information_gap",
+      "text": "屋久島の森について『誰よりも分かっているつもり』という主張の根拠や具体的な知識・経験の内容がPKGに記載されていない。"
+    },
+    {
+      "type": "ambiguity",
+      "text": "縄文杉の神秘的な雰囲気が『原生林だからこそ味わえる』という主張の科学的・文化的根拠がPKGで明示されていない。"
+    }
+  ],
+  "rag_queries": [],
+  "evidence_items": [],
+  "external_observations": [],
+  "notes": "RAG disabled (use_rag=false) — trigger identification only"
+}

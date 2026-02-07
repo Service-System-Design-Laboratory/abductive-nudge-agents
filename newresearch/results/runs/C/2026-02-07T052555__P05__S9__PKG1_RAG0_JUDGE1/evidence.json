@@ -1,0 +1,20 @@
+{
+  "triggers": [
+    {
+      "type": "information_gap",
+      "text": "旅館とビジネスホテルの宿泊費の差（6倍）が生じる理由や価値の違いについてPKGでは説明されていない。"
+    },
+    {
+      "type": "ambiguity",
+      "text": "『寝る場所はどこでも同じ』という認識が、実際の宿泊体験やサービス内容と一致するかどうかはPKGで明確になっていない。"
+    },
+    {
+      "type": "information_gap",
+      "text": "コスパの良い宿泊先の具体例や選定基準についてPKGでは情報が不足している。"
+    }
+  ],
+  "rag_queries": [],
+  "evidence_items": [],
+  "external_observations": [],
+  "notes": "RAG disabled (use_rag=false) — trigger identification only"
+}

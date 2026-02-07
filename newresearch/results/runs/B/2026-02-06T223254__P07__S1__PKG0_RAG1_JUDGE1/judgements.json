@@ -1,0 +1,100 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーが観光において『本物らしさ』や地域の日常性を最重視していること",
+          "商業的・演出的な観光体験がユーザーの価値観と根本的に相反すること"
+        ],
+        "best_discriminating_question": "ユーザーは観光地の商業化や演出についてどのように感じるか？",
+        "testability_notes": "ユーザーへの直接的な質問やインタビューで比較的容易に検証可能。",
+        "safety_risk_notes": "断定的に提示すると、ユーザーの多様な価値観を過度に単純化してしまうリスクがある。"
+      },
+      "rationale": "観察O1・O2をよく説明しているが、O3（演出への不満）が本質的価値観から来ているかは追加検証が必要。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "現状の観察だけではユーザーの具体的な行動や基準が明らかでないこと"
+        ],
+        "best_discriminating_question": "ユーザーが印象的だったローカルな体験や場所は具体的に何か？",
+        "testability_notes": "追加のインタビューや体験談の収集が必要で、検証にはやや手間がかかる。",
+        "safety_risk_notes": "仮説自体が『情報不足』を指摘する内容なので、断定的な誤解や傷つけるリスクは低い。"
+      },
+      "rationale": "現状の観察を否定せず、むしろ仮説の精緻化に必要な情報ギャップを明示している。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "ユーザーが『特別なつながり』や地元コミュニティへの参加を重視していること"
+        ],
+        "best_discriminating_question": "ユーザーはこれまでに地元の人とどのような交流をしたことがあるか？",
+        "testability_notes": "ユーザーの過去の行動や交流経験を尋ねることで検証可能。",
+        "safety_risk_notes": "ユーザーの社会的志向を強調しすぎると、内向的な動機や他の価値観を見落とすリスクがある。"
+      },
+      "rationale": "O2・O3の説明力は高いが、O1（ガイドブック否定）への直接的説明はやや弱い。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "Oext1",
+          "Oext2",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "ローカル体験や『本物志向』が現代の観光マーケティングやSNSで商品化・演出されていること",
+          "ユーザーの志向が社会的トレンドや情報拡散の影響を受けていること"
+        ],
+        "best_discriminating_question": "ユーザーが訪れたいと感じる場所は、SNSやガイドで紹介されていないか？",
+        "testability_notes": "SNSやガイドの情報とユーザーの志向の照合が必要で、外部データの参照が求められる。",
+        "safety_risk_notes": "ユーザーの主体性や独自性を否定する印象を与えやすく、反発や不快感を生む可能性がある。"
+      },
+      "rationale": "外部エビデンスとOext群を広く説明できるが、ユーザーの内的動機を軽視するリスクがある。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "Oext1",
+          "Oext2",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "ユーザーが『本物志向』を通じて独自性や反主流的自己像を維持したいという心理が強いこと",
+          "『本物志向』が流行化・商品化している現状をユーザーがある程度認識していること"
+        ],
+        "best_discriminating_question": "ユーザーは『本物志向』が観光の新しい流行であることをどう思うか？",
+        "testability_notes": "ユーザーの自己認識や価値観に関する深い質問が必要で、やや検証が難しい。",
+        "safety_risk_notes": "ユーザーの動機を心理的に分析・断定するため、誤解や不快感、自己否定感を与えるリスクが高い。"
+      },
+      "rationale": "観察・外部事実を広く説明できるが、ユーザーの心理を推測しすぎる点に注意が必要。"
+    }
+  ]
+}

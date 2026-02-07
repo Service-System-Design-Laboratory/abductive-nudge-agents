@@ -1,0 +1,97 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O3",
+          "O4",
+          "O5"
+        ],
+        "key_assumptions": [
+          "A1"
+        ],
+        "best_discriminating_question": "宿泊以外でも『コスパ』を重視する場面は多いですか？",
+        "testability_notes": "他の消費行動の傾向や、ユーザーの価値観を追加質問で確認することで検証可能。",
+        "safety_risk_notes": "ユーザーの価値観を肯定的に扱うため、リスクは低い。"
+      },
+      "rationale": "コスパ重視という一般的な心理傾向で説明できるが、深掘りには限界がある。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A2"
+        ],
+        "best_discriminating_question": "旅館とビジネスホテルのサービスやコストの違いを調べたことはありますか？",
+        "testability_notes": "ユーザーが情報を持っているかどうかを質問で確認できる。",
+        "safety_risk_notes": "知識不足を指摘する形になるため、配慮が必要。"
+      },
+      "rationale": "情報ギャップを埋めることで納得感が変わる可能性がある。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O4",
+          "O5",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "A1"
+        ],
+        "best_discriminating_question": "友人や家族もビジネスホテル派が多いですか？",
+        "testability_notes": "周囲の選択や社会的な影響を尋ねることで検証可能。",
+        "safety_risk_notes": "社会的同調を指摘するため、やや不快感を与える可能性あり。"
+      },
+      "rationale": "社会的影響を考慮した説明で、ユーザーの行動パターンと一致する。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O5",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "A3"
+        ],
+        "best_discriminating_question": "宿泊費を抑えて、その分他の体験にお金を使いたい気持ちはありますか？",
+        "testability_notes": "旅行の目的やお金の使い方を尋ねることで検証可能。",
+        "safety_risk_notes": "ユーザーの価値観（体験重視）を肯定するためリスクは低い。"
+      },
+      "rationale": "PKGとも整合的で、ユーザーの関心（里山散策や地域体験）と合致する。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O3",
+          "O4",
+          "O5",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A3"
+        ],
+        "best_discriminating_question": "コスパの良い選択をしたとき、どんな気持ちになりますか？",
+        "testability_notes": "コスパ重視の行動が自己像維持と結びついているかを尋ねることで検証可能。",
+        "safety_risk_notes": "ユーザーの自己像や動機の深層に踏み込むため、やや不快感や抵抗感を与える可能性がある。"
+      },
+      "rationale": "ユーザーの発言の意味を自己像レベルで再解釈し、外部観察（Oext2）も活用している。"
+    }
+  ]
+}

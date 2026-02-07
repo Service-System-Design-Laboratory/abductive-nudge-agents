@@ -1,0 +1,100 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "ユーザーの行動が主に不確実性や予期せぬ出来事への不安によって動機づけられている",
+          "コントロール可能な状況下でのみ行動する傾向が他の要因よりも強い"
+        ],
+        "best_discriminating_question": "日常生活でも予期せぬ変化や計画外の出来事を避ける傾向がありますか？",
+        "testability_notes": "ユーザーへの直接質問や行動履歴の確認で比較的容易に検証可能。",
+        "safety_risk_notes": "『不安が強い』など断定的な表現は、ユーザーにレッテル貼りや心理的負担を与える可能性がある。"
+      },
+      "rationale": "観察O1-O4を一貫して説明できており、PKG不在でも致命的な欠点はない。心理的要因の断定には配慮が必要。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3",
+          "O5"
+        ],
+        "key_assumptions": [
+          "ユーザーが『安全』という価値観を他の価値よりも優先している",
+          "安全志向が体験の幅を狭めている主因である"
+        ],
+        "best_discriminating_question": "安全が保証された場合、より自由な行動や新しい体験に関心がありますか？",
+        "testability_notes": "価値観の優先順位を尋ねることで比較的検証しやすい。",
+        "safety_risk_notes": "『体験の幅が狭い』などの表現はユーザーの選択を否定的に受け取られるリスクがある。"
+      },
+      "rationale": "O2・O3・O5を説明でき、PKGとのリンクもある。価値観の優先度を明確に問うことで他仮説と区別しやすい。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O4",
+          "O5"
+        ],
+        "key_assumptions": [
+          "ユーザーが現地の人々やガイドとの信頼関係を安全確保の主要手段とみなしている",
+          "PKGにある価値観や興味が実際の行動に反映されている"
+        ],
+        "best_discriminating_question": "現地のガイドや住民と交流することで安心感が高まりますか？",
+        "testability_notes": "PKG情報やユーザーへの質問で検証可能。現地交流の有無を確認する必要あり。",
+        "safety_risk_notes": "『信頼関係』の強調がユーザーの現地交流意欲を過大評価するリスク。"
+      },
+      "rationale": "PKGとの整合性が高く、O2・O4・O5を説明。現地交流が安全志向にどう影響するかを明確に問う必要がある。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O4",
+          "O5"
+        ],
+        "key_assumptions": [
+          "ユーザーが安全情報の収集方法や活用に自信がない",
+          "情報不足やノウハウの欠如が追加の安全対策ニーズを生んでいる"
+        ],
+        "best_discriminating_question": "治安情報をどのように選び、活用していますか？",
+        "testability_notes": "ユーザーの情報収集行動や質問傾向を観察することで検証可能。",
+        "safety_risk_notes": "知識不足を指摘する表現はユーザーの自尊心を損なう可能性がある。"
+      },
+      "rationale": "O4・O5を限定的に説明。安全対策のノウハウ不足に焦点を当てており、他仮説と補完的な関係。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O5"
+        ],
+        "key_assumptions": [
+          "ユーザーが本音では新しい体験や現地交流を求めているが、安全志向で抑えている",
+          "PKGに記載の価値観や興味が実際の行動とギャップを生んでいる"
+        ],
+        "best_discriminating_question": "安全が保証された場合、どのような現地体験や交流に挑戦したいと思いますか？",
+        "testability_notes": "ユーザーの内面の動機やギャップを引き出す質問が必要で、やや検証難度は高い。",
+        "safety_risk_notes": "『本音』や『抑圧』などの表現はユーザーの自己認識を揺さぶる可能性があり、慎重な提示が必要。"
+      },
+      "rationale": "PKGとのリンクが強く、O1-O3・O5を説明。内面のギャップに着目するため、他仮説と区別しやすいが、検証には配慮が必要。"
+    }
+  ]
+}

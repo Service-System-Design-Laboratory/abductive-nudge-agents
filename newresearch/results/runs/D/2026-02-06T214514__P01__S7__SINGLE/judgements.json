@@ -1,0 +1,108 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A2"
+        ],
+        "best_discriminating_question": "過去に危険な経験をしたことがあるか？",
+        "testability_notes": "ユーザーの過去の体験や不安の強さを聞くことで検証可能。",
+        "safety_risk_notes": "不安を強調しすぎると萎縮を助長するリスクがある。"
+      },
+      "rationale": "安全志向の行動を一貫して説明できる。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [
+          "家族や周囲の影響が明示されていないため根拠が弱い"
+        ],
+        "explains_confirmed": [
+          "O2",
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A2"
+        ],
+        "best_discriminating_question": "家族や友人から安全面でアドバイスを受けたことがあるか？",
+        "testability_notes": "周囲の影響を尋ねることで検証可能。",
+        "safety_risk_notes": "家族の価値観を否定する印象を与えないよう注意。"
+      },
+      "rationale": "社会的要因の可能性を示すが、直接的な証拠はない。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A2",
+          "A3"
+        ],
+        "best_discriminating_question": "国内旅行でも同じように安全を重視するか？",
+        "testability_notes": "国内外での行動パターンの違いを聞くことで検証可能。",
+        "safety_risk_notes": "ユーザーの価値観を肯定的に扱う必要あり。"
+      },
+      "rationale": "PKGの価値観と整合的で、自然な説明。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [
+          "実際の危険経験がない場合のみ成立"
+        ],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "A1"
+        ],
+        "best_discriminating_question": "治安情報を見て不安が強まることがあるか？",
+        "testability_notes": "リスク認知と実体験のギャップを尋ねることで検証可能。",
+        "safety_risk_notes": "リスク認知の過大評価を指摘する際は配慮が必要。"
+      },
+      "rationale": "情報の過剰摂取による行動制限の説明として有力。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [
+          "ユーザーの発言と逆説的で、受け入れにくい可能性がある"
+        ],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "A2",
+          "A3"
+        ],
+        "best_discriminating_question": "危険や不安を感じた旅行の方が印象に残っているか？",
+        "testability_notes": "過去の旅行の印象や満足度を尋ねることで検証可能。",
+        "safety_risk_notes": "ユーザーの自己像を揺さぶるため、慎重な言い回しが必要。"
+      },
+      "rationale": "外部観察（Oext3）を活用し、ユーザーの発言の意味を大きく反転させる。"
+    }
+  ]
+}

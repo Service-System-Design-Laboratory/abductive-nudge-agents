@@ -1,0 +1,99 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーが計画的運営のスキルを重視していること",
+          "旅行においてもそのスキルを最大限発揮しようとしていること"
+        ],
+        "best_discriminating_question": "普段の仕事や生活でも詳細な計画やスケジュール管理を行うことが多いですか？",
+        "testability_notes": "ユーザーへの1問インタビューやPKG参照で容易に検証可能。",
+        "safety_risk_notes": "スキル重視を断定的に提示すると、ユーザーの多様な動機を見落とすリスクがある。"
+      },
+      "rationale": "計画的運営のスキル重視はPKGで裏付けがあり、観察O1・O2を確実に説明。ただしO3以降は価値観や動機の説明が弱く、他仮説との区別には追加質問が有効。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O4",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "Googleマップ等の移動時間予測に誤差があること",
+          "ユーザーが分刻みの計画を現実的に実行しようとしていること"
+        ],
+        "best_discriminating_question": "現地での交通遅延や混雑など、予期せぬ事態への対応策は計画に含まれていますか？",
+        "testability_notes": "外部エビデンスやユーザーの計画内容を確認することで検証可能。",
+        "safety_risk_notes": "計画の現実性を指摘するため、ユーザーの努力や意図を否定的に受け取られる可能性がある。"
+      },
+      "rationale": "Googleマップの誤差やバッファ設定の見落としは外部エビデンスで支持され、O2・O4・Oext1を説明。観察O5は直接説明しきれないが、リスク指摘として有効。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3",
+          "O4",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "ユーザーが効率的な観光体験の追求自体を価値とみなしていること",
+          "計画の達成が観光の目的となっていること"
+        ],
+        "best_discriminating_question": "旅行の満足度は『計画通りに遂行できたか』で決まりますか？",
+        "testability_notes": "ユーザーの満足度指標や旅行後の振り返りを聞くことで検証可能。",
+        "safety_risk_notes": "効率化志向を強調しすぎると、ユーザーの多面的な価値観を矮小化するリスクがある。"
+      },
+      "rationale": "効率化の価値観はPKG・外部エビデンスで支持され、O3・O4・Oext2を説明。O5も間接的に説明可能で、満足度の指標を問うことで他仮説と区別しやすい。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O3"
+        ],
+        "key_assumptions": [
+          "ユーザーが地域文化や現地体験にも興味を持っていること",
+          "効率的な計画の中に文化的要素を組み込もうとしていること"
+        ],
+        "best_discriminating_question": "主要スポットの中に地域文化や祭り、郷土料理体験などは含まれていますか？",
+        "testability_notes": "PKGや旅行計画の詳細を確認することで検証可能。",
+        "safety_risk_notes": "文化体験重視を前提とすることで、ユーザーの主目的が効率化の場合にミスリードとなる可能性がある。"
+      },
+      "rationale": "PKGで文化体験志向が確認でき、O1・O3を説明。ただしO4・O5や外部事実の説明力は限定的で、文化要素の有無が区別の鍵となる。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O4",
+          "O5",
+          "Oext1",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "ユーザーが自己効力感や合理的な自己像の維持を重視していること",
+          "計画遂行がアイデンティティの一部となっていること"
+        ],
+        "best_discriminating_question": "計画通りに進まなかった場合、どのような感情が生まれますか？",
+        "testability_notes": "ユーザーの感情反応や自己評価を尋ねることで比較的容易に検証可能。",
+        "safety_risk_notes": "深層心理やアイデンティティへの言及は、ユーザーにとって踏み込み過ぎ・不快となるリスクがある。"
+      },
+      "rationale": "PKG・外部エビデンス双方から支持があり、観察・外部事実の多くを説明。自己効力感や感情反応を問うことで他仮説と明確に区別できるが、提示時の配慮が必要。"
+    }
+  ]
+}

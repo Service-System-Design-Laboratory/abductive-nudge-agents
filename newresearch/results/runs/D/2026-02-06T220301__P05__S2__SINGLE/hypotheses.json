@@ -1,0 +1,144 @@
+{
+  "hypotheses": [
+    {
+      "hypothesis_id": "H1",
+      "type": "psychological",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "O4"
+      ],
+      "assumes": [
+        "A1",
+        "A2"
+      ],
+      "statement": "ユーザーは計画通りに物事を進めること自体に達成感や安心感を感じている。",
+      "mechanism": "計画の実行が自己効力感やコントロール感を高める。",
+      "predictions": [
+        "計画通りに進むと満足感が高まる",
+        "予期せぬ変更にはストレスを感じやすい"
+      ],
+      "discriminating_questions": [
+        "計画から外れる出来事があった場合、どんな気持ちになりますか？"
+      ],
+      "persona_link": [
+        "pkg:p05_n3",
+        "pkg:p05_n2"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H2",
+      "type": "value",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "O4",
+        "O5"
+      ],
+      "assumes": [
+        "A1",
+        "A3"
+      ],
+      "statement": "ユーザーは限られた時間と予算の中で最大限の体験価値を得ることを重視している。",
+      "mechanism": "効率化によってコストパフォーマンスを最大化し、満足度を高めようとしている。",
+      "predictions": [
+        "旅行の計画段階で費用や時間配分を細かく検討する",
+        "無駄な移動や待ち時間を極力排除しようとする"
+      ],
+      "discriminating_questions": [
+        "今回の旅行で特にコストパフォーマンスを意識したポイントはどこですか？"
+      ],
+      "persona_link": [
+        "pkg:p05_n2",
+        "pkg:p05_n3",
+        "pkg:p05_n6"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H3",
+      "type": "skill",
+      "explains": [
+        "O2",
+        "O3"
+      ],
+      "assumes": [
+        "A1"
+      ],
+      "statement": "ユーザーはデータ分析や計画立案のスキルを活かすこと自体に楽しさや誇りを感じている。",
+      "mechanism": "Googleマップや分刻みの計画立案は、ユーザーの得意分野や関心領域と一致している。",
+      "predictions": [
+        "旅行以外でも計画や分析を重視する傾向がある",
+        "他者に計画を共有したりアドバイスを求められることがある"
+      ],
+      "discriminating_questions": [
+        "旅行の計画を立てる過程自体にどんな楽しさを感じますか？"
+      ],
+      "persona_link": [
+        "pkg:p05_n1"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H4",
+      "type": "evidence_gap",
+      "explains": [
+        "O5"
+      ],
+      "assumes": [
+        "A4"
+      ],
+      "statement": "ユーザーは効率化に集中するあまり、偶発的な発見やゆとりの価値を見落としている可能性がある。",
+      "mechanism": "計画重視の姿勢が、非計画的な楽しみや偶然の出会いを排除しているかもしれない。",
+      "predictions": [
+        "計画外の出来事を歓迎しにくい",
+        "旅行後に『もっと余裕を持てばよかった』と感じることがある"
+      ],
+      "discriminating_questions": [
+        "計画にない出来事や偶然の出会いにどれくらい価値を感じますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H5",
+      "type": "social",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "O4",
+        "O5",
+        "Oext1"
+      ],
+      "assumes": [
+        "A1",
+        "A4"
+      ],
+      "statement": "ユーザーが効率化にこだわる背景には、実は『主体的な関与』や『偶発性』への無意識の渇望がある。計画の完璧な実行を目指す一方で、心のどこかで偶然の出来事や自分が主導する体験を求めている。",
+      "mechanism": "効率化を徹底することで安心感を得つつ、実は偶発的な体験や自分の意思で選択する瞬間を待ち望んでいる（外部観察Oext1参照）。",
+      "predictions": [
+        "計画通りに進んだ後、ふとした偶然や自分の判断で予定を変えることに喜びを感じる",
+        "効率化の裏で『もっと自由に動きたい』という気持ちが芽生えることがある"
+      ],
+      "discriminating_questions": [
+        "もし計画外の素敵な出来事が起きたら、その時はどうしますか？",
+        "効率化と偶発的な体験、どちらにより魅力を感じますか？"
+      ],
+      "persona_link": [
+        "pkg:p05_n7"
+      ],
+      "evidence_link": [
+        "ev:Oext1"
+      ],
+      "is_reframing": true
+    }
+  ]
+}

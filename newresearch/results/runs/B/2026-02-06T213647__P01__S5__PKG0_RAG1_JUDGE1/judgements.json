@@ -1,0 +1,95 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O5"
+        ],
+        "key_assumptions": [
+          "ユーザーが節約行動自体に達成感や満足感を感じていること",
+          "節約の工夫が旅行の主目的の一つとなりうること"
+        ],
+        "best_discriminating_question": "節約の工夫自体を楽しんでいると感じることはありますか？",
+        "testability_notes": "ユーザーに1問質問することで比較的容易に検証可能。",
+        "safety_risk_notes": "ユーザーの価値観や動機を断定的に扱うと誤解や不快感を生む可能性がある。"
+      },
+      "rationale": "観察O1とO5を自然に説明できており、ユーザーの内的動機に着目した仮説。主観的要素が強いため、断定的表現には注意が必要。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "節約旅行がSNSやアンケートを通じて集団的なトレンドになっていること",
+          "ユーザーがその社会的影響を受けていること"
+        ],
+        "best_discriminating_question": "今回の旅行プランはSNSやネットで見かけた節約術を参考にしていますか？",
+        "testability_notes": "SNSやネットの利用履歴・本人の申告で検証可能だが、外部データや追加質問が必要。",
+        "safety_risk_notes": "ユーザーの自主性を軽視していると受け取られるリスクがある。"
+      },
+      "rationale": "外部エビデンス（ev:1）とOext1を根拠に、社会的影響を強調する仮説。個人の動機と区別しやすいが、やや外的要因に依存。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O4",
+          "O5",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "ユーザーがコンビニ食を最も安価と認識していること",
+          "実際にはスーパー利用の方が安価である場合が多いこと"
+        ],
+        "best_discriminating_question": "スーパーでの食材購入とコンビニ食のコスト比較をしたことがありますか？",
+        "testability_notes": "ユーザーへの質問と外部価格データの照合で検証可能。",
+        "safety_risk_notes": "ユーザーの選択を誤りと断定する印象を与える可能性がある。"
+      },
+      "rationale": "O4, O5, Oext2を説明し、外部エビデンス（ev:2）も根拠となる。ユーザーの認知ギャップに着目しており、実証性が高い。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O4",
+          "O5"
+        ],
+        "key_assumptions": [
+          "ユーザーが自炊やまとめ買いなどの節約スキルに不慣れ、または手間を避けていること"
+        ],
+        "best_discriminating_question": "旅先で自炊やスーパーの活用を検討したことはありますか？",
+        "testability_notes": "ユーザーの経験や計画について質問することで検証可能。",
+        "safety_risk_notes": "ユーザーの能力や努力不足を示唆するため、配慮が必要。"
+      },
+      "rationale": "O4とO5を説明し、ユーザーのスキルや行動選択に焦点を当てる。主観的評価が含まれるため、表現に注意が必要。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O5",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "ユーザーが節約行動を通じて他者からの承認や自己イメージの向上を求めていること"
+        ],
+        "best_discriminating_question": "節約旅行の内容を誰かに話したりSNSに投稿する予定がありますか？",
+        "testability_notes": "ユーザーの発信行動や意図を直接質問することで検証可能。",
+        "safety_risk_notes": "動機を『裏の目的』と断定することで、ユーザーの自己認識と齟齬が生じやすい。"
+      },
+      "rationale": "O1, O5, Oext1を説明し、社会的承認欲求という別の動機に着目。裏切る仮説として有効だが、断定的表現は避けるべき。"
+    }
+  ]
+}

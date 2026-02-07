@@ -1,0 +1,100 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーが過去の体験を理想化し、現実よりも記憶や雰囲気を重視している",
+          "ノスタルジアや原体験の心理的影響が現在の行動動機に強く作用している"
+        ],
+        "best_discriminating_question": "過去の体験を繰り返し求める傾向は他にもありますか？",
+        "testability_notes": "ユーザーへの直接質問で比較的容易に検証可能。",
+        "safety_risk_notes": "ユーザーの思い出や価値観の理想化を指摘するため、やや断定的・内面に踏み込む印象を与える可能性がある。"
+      },
+      "rationale": "ユーザーのノスタルジアや原体験の理想化に着目し、O1・O2をよく説明するが、O3以降の外部事実や環境変化には直接触れていない。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3",
+          "O4",
+          "Oext1",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "観光地の混雑や商品化が実際に静けさや雰囲気を大きく変化させている",
+          "ユーザーの期待が現実の環境変化によって満たされにくくなっている"
+        ],
+        "best_discriminating_question": "現在の嵐山や竹林の道の混雑状況や雰囲気を事前に調べましたか？",
+        "testability_notes": "外部エビデンスや現地情報で検証しやすい。ユーザーの体験と現地状況の照合が可能。",
+        "safety_risk_notes": "現実の変化を強調するため、ユーザーの期待や思い出を否定的に感じさせるリスクがある。"
+      },
+      "rationale": "観光地の環境変化を根拠に、観察事実と外部エビデンスの両方を広く説明できている。現実的な要因に基づく強い仮説。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3",
+          "O4",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "竹林や景観が観光地化や管理の変化で実際に荒廃している",
+          "ユーザーが最新の現地状況について十分な情報を持っていない"
+        ],
+        "best_discriminating_question": "竹林の最新の景観や管理状況について事前に調べましたか？",
+        "testability_notes": "現地の景観情報やユーザーの事前調査状況を確認することで検証可能。",
+        "safety_risk_notes": "ユーザーの情報収集不足を指摘するため、やや批判的に受け取られる可能性がある。"
+      },
+      "rationale": "景観の変化と情報ギャップに着目し、Oext3やO4を説明できるが、心理的要因や広範な環境変化には限定的。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3",
+          "O4",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "ユーザーの求める感動は場所や静けさそのものではなく、当時の心理状態や人生の文脈に強く依存している"
+        ],
+        "best_discriminating_question": "同じ景色を見ても、今の自分が当時と同じ気持ちになれると思いますか？",
+        "testability_notes": "ユーザーの内面や動機に関する質問が必要で、検証はやや主観的。",
+        "safety_risk_notes": "ユーザーの動機や自己理解に踏み込むため、誤解や不快感を生むリスクがある。"
+      },
+      "rationale": "感動の本質を心理的・文脈的要因に求め、O3・O4・Oext2を説明するが、外部環境の変化自体には直接依存しない。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3",
+          "O4",
+          "Oext1",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "ユーザーの主目的は現地体験の再現ではなく、過去の自己像や価値観の確認である",
+          "自己証明や安心感が行動の主な動機となっている"
+        ],
+        "best_discriminating_question": "今回の旅で得たいものは、場所そのものの体験ですか？それとも、過去の自分や思い出を確かめることですか？",
+        "testability_notes": "ユーザーの自己評価や旅の目的に関する深い質問が必要で、検証は主観的だが可能。",
+        "safety_risk_notes": "ユーザーの自己像や動機に踏み込むため、心理的抵抗や誤解を招くリスクが高い。"
+      },
+      "rationale": "現地体験よりも自己確認を主動機とする点で独自性が高く、Oext1・Oext2も説明できるが、ユーザーの内面に強く依存するため検証には配慮が必要。"
+    }
+  ]
+}

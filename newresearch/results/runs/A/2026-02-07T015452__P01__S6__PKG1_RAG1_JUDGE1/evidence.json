@@ -1,0 +1,73 @@
+{
+  "triggers": [
+    {
+      "type": "information_gap",
+      "text": "縄文杉の神秘的な雰囲気が『人の手が入っていない原生林』によるものと述べているが、実際に縄文杉周辺や屋久島の森がどの程度人の手が入っていないか、原生林としての現状や管理状況についてPKGでは説明できない。"
+    },
+    {
+      "type": "ambiguity",
+      "text": "『屋久島の森のことは誰よりも分かっているつもり』という主張が、具体的にどのような知識や経験に基づくものか、また一般的な屋久島訪問者と比べてどの程度深い理解なのかPKGでは明らかでない。"
+    }
+  ],
+  "rag_queries": [
+    "縄文杉周辺の原生林の現状と人の手の入り具合について",
+    "屋久島の森の管理や保護活動の歴史と現状",
+    "屋久島の森や縄文杉に関する専門的知識や経験を持つ人の特徴",
+    "世界遺産登録前後で屋久島の森の環境や管理がどう変化したか"
+  ],
+  "evidence_items": [
+    {
+      "rank": 1,
+      "title": "屋久島世界遺産地域 管理計画",
+      "snippet": "遺産地域の大部分を占める国有林は、そのほとんどが屋久島森林生態系保護地域に設. 定され、また、遺産地域においては、現在、木材生産を目的とした森林施業は行われて.",
+      "url": "https://www.env.go.jp/park/yakushima/ywhcc/common/data/wh/kanrikaitei.pdf",
+      "source_type": "gov"
+    },
+    {
+      "rank": 2,
+      "title": "令和 5 年度 屋久島の総面積と国有林の割合",
+      "snippet": "屋久島の総面積は 50,425ha、そのうち 38,240ha が国有林です。 国有林面積の 4 割にあたる 15,185ha が森林生態系保護地域に指定され、世 界自然遺産地域の約 95％と重複 ...",
+      "url": "https://www.rinya.maff.go.jp/kyusyu/yakusima_hozen_c/alps/bk/report2023_r5.pdf",
+      "source_type": "gov"
+    },
+    {
+      "rank": 3,
+      "title": "退屈な人工林には5000年の歴史が詰まっている",
+      "snippet": "濃い緑は人の手が殆ど入っていない原生林（Primary forest）、黄緑色は撹乱のあとに再生した二次林、そして紫色が人工林。人工林は、世界全体の森林 ...",
+      "url": "https://hibi-ki.co.jp/sugisensei023/",
+      "source_type": "com"
+    },
+    {
+      "rank": 4,
+      "title": "III 国有林の利用 - 1 屋久島生態系モニタリング調査",
+      "snippet": "... 屋久スギの保続施業を進めることが. 望ましいと思われる。 特に, 小杉谷周辺については, 人工林は強めの間伐を施し,. 屋久スギの稚樹を天然更新で導入するとともに, 垂直 ...",
+      "url": "https://www.rinya.maff.go.jp/j/kokuyu_rinya/kakusyu_siryo/pdf/00104_7_h10_part2.pdf",
+      "source_type": "gov"
+    },
+    {
+      "rank": 5,
+      "title": "屋久島世界遺産地域管理計画",
+      "snippet": "の姿が展望デッキから見える様に、縄文杉やその他の木々が樹林内に林立する空間が有. 2. する雰囲気や、縄文杉周辺の土壌流出、縄文杉の生育に配慮しつつ、適度に縄文杉 ...",
+      "url": "https://www.env.go.jp/park/yakushima/ywhcc/common/data/kaigi/kagaku/27/230217-6-4-2.pdf",
+      "source_type": "gov"
+    }
+  ],
+  "external_observations": [
+    {
+      "id": "Oext1",
+      "text": "屋久島の原生林や縄文杉周辺は観光客向けに展望デッキや管理計画が整備されており、『手つかず』のイメージが実際には観光商品として演出・管理されている。",
+      "source_url": "https://www.env.go.jp/park/yakushima/ywhcc/common/data/kaigi/kagaku/27/230217-6-4-2.pdf"
+    },
+    {
+      "id": "Oext2",
+      "text": "屋久島の国有林の大部分は森林生態系保護地域や世界遺産地域として指定されているが、これらの指定は観光資源としての価値を高める役割も果たしている。",
+      "source_url": "https://www.rinya.maff.go.jp/kyusyu/yakusima_hozen_c/alps/bk/report2023_r5.pdf"
+    },
+    {
+      "id": "Oext3",
+      "text": "屋久島では人工林や二次林も存在し、原生林とされる地域でも過去の人為的な撹乱や管理の影響が残っている場合がある。",
+      "source_url": "https://hibi-ki.co.jp/sugisensei023/"
+    }
+  ],
+  "notes": "外部観察は、屋久島の『原生林』や『手つかず』というイメージが実際には観光商品化や管理の対象となっている点、保護指定が観光価値と結びついている点、原生林にも人為的影響が残る場合がある点を揺さぶりとして抽出しています。"
+}

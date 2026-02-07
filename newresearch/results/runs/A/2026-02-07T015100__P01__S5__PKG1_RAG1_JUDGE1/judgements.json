@@ -1,0 +1,100 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーが旅行体験そのものよりも節約行為自体に価値を置いている",
+          "節約の達成感や工夫が旅行の主目的となりうる"
+        ],
+        "best_discriminating_question": "旅行の思い出として、節約できた金額や工夫した方法を最も重視しますか？",
+        "testability_notes": "ユーザーへの直接質問で検証可能。旅行後の行動や発言の観察も有効。",
+        "safety_risk_notes": "ユーザーの価値観を単純化・断定的に見せるリスクがある。"
+      },
+      "rationale": "節約行為自体が目的化しているという仮説はO1, O2をよく説明できるが、O3, O4, O5への説明はやや弱い。ユーザーの主観的価値観への依存が強い点に注意。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3",
+          "Oext1",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "業界側の料金体系や監視強化が節約行動に大きく影響している",
+          "節約志向の選択肢が制度的に規定されている"
+        ],
+        "best_discriminating_question": "最近の宿泊施設や移動手段で、以前より規約や監視が厳しくなったと感じますか？",
+        "testability_notes": "外部エビデンスや業界データで検証しやすい。ユーザーの体験談も参考になる。",
+        "safety_risk_notes": "業界批判や制度批判と受け取られる可能性がある。"
+      },
+      "rationale": "業界環境の変化が節約行動を規定しているという仮説はO2, O3, Oext1, Oext2を強く説明でき、外部エビデンスとも整合する。ユーザーの主体性をやや軽視する可能性がある。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O5"
+        ],
+        "key_assumptions": [
+          "ユーザーが既存の節約策に満足せず、さらなる情報やノウハウを求めている",
+          "情報収集や計画立案のスキルが節約行動に直結する"
+        ],
+        "best_discriminating_question": "節約旅行のノウハウや裏技を日頃から収集していますか？",
+        "testability_notes": "ユーザーの情報収集行動やSNS利用状況を調査することで検証可能。",
+        "safety_risk_notes": "スキル不足や知識不足を暗に指摘する印象を与える可能性がある。"
+      },
+      "rationale": "O5（さらなる節約ポイント探し）を最も直接的に説明できるが、他の観察への説明力は限定的。ユーザーの能動性を前提とする点が特徴。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "ユーザーのPKGにある『自然との調和』『里山散策』への価値観が強い",
+          "無料または低コストの地域体験が満足度向上に寄与する"
+        ],
+        "best_discriminating_question": "自然散策や地域体験を無料で楽しむことに興味がありますか？",
+        "testability_notes": "PKG情報やユーザーの価値観確認で検証しやすい。現地体験の有無も観察可能。",
+        "safety_risk_notes": "価値観の押し付けや、体験の選好を限定する印象を与えるリスクがある。"
+      },
+      "rationale": "PKGとの整合性が高く、O1-O4をよく説明できる。節約と価値観の両立を提案する点が強みだが、O5や外部事実への説明は弱い。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4",
+          "O5"
+        ],
+        "key_assumptions": [
+          "ユーザーが『徹底的な節約旅行者』という自己像を持ち、それを維持すること自体が目的化している",
+          "節約の実利以上に、アイデンティティや自己効力感が行動を駆動している"
+        ],
+        "best_discriminating_question": "節約の成果を他者に語ることや、節約旅行者として認識されることに満足感を感じますか？",
+        "testability_notes": "ユーザーの発言やSNSでの自己表現を観察することで検証可能。心理的要素のため深掘り質問が必要。",
+        "safety_risk_notes": "ユーザーの動機やアイデンティティに踏み込むため、誤解や不快感を与えるリスクが高い。"
+      },
+      "rationale": "全観察を説明できる最も包括的な仮説。心理的要素に踏み込むため、検証には慎重さが必要だが、動機の深層に迫る点が特徴。"
+    }
+  ]
+}

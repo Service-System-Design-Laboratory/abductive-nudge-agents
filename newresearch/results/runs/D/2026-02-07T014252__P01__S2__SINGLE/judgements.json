@@ -1,0 +1,105 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A2"
+        ],
+        "best_discriminating_question": "計画通りに進まなかった場合、どんな気持ちになりますか？",
+        "testability_notes": "旅行中に計画が崩れた時の感情反応を観察することで検証可能。",
+        "safety_risk_notes": "自己効力感への言及は比較的安全だが、過度なコントロール志向を指摘しないよう注意。"
+      },
+      "rationale": "計画重視の行動パターンを説明できるが、効率化の動機が内的安心感に限定されている可能性がある。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4",
+          "O5"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A4"
+        ],
+        "best_discriminating_question": "効率を最優先した結果、印象的な体験が減ることに不安はありませんか？",
+        "testability_notes": "旅行後の満足度や印象深い体験の有無を振り返ることで検証可能。",
+        "safety_risk_notes": "旅行の目的や価値観のズレを指摘するため、やや不快感を与える可能性がある。"
+      },
+      "rationale": "効率化の裏にある目的のズレを指摘し、ユーザーの発言の意味を大きく変える仮説。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [
+          "効率化自体が目的であると決めつけている可能性"
+        ],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A1"
+        ],
+        "best_discriminating_question": "効率化の工夫自体が旅行の楽しみになっていますか？",
+        "testability_notes": "効率化の工夫を楽しんでいるかどうかを直接尋ねることで検証可能。",
+        "safety_risk_notes": "価値観の押し付けと受け取られないように注意。"
+      },
+      "rationale": "効率化を価値観と結びつけるが、旅行体験の質への影響は説明できない。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4",
+          "O5"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A3"
+        ],
+        "best_discriminating_question": "分刻みの計画と、自然の中での偶発的な体験、どちらにより魅力を感じますか？",
+        "testability_notes": "旅行中にどちらを優先したいかを問うことで検証可能。",
+        "safety_risk_notes": "内面の葛藤を指摘するため、やや敏感な話題となる可能性がある。"
+      },
+      "rationale": "PKGの価値観と現行行動のズレを指摘し、内的な葛藤を示唆する。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [
+          "外部観察（Oext1）は旅行ではなく社会的信頼に関するもので、直接的な関連が弱い"
+        ],
+        "explains_confirmed": [
+          "O5",
+          "O1"
+        ],
+        "key_assumptions": [
+          "A1"
+        ],
+        "best_discriminating_question": "計画を立てることは、自分の信頼や評価と関係していますか？",
+        "testability_notes": "他者との関係や評価を気にしているかを尋ねることで検証可能。",
+        "safety_risk_notes": "社会的評価への言及は慎重な配慮が必要。"
+      },
+      "rationale": "効率化を社会的信頼と結びつけるが、外部観察との関連はやや間接的。"
+    }
+  ]
+}

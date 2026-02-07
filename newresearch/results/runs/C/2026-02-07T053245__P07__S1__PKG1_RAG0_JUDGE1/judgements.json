@@ -1,0 +1,93 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーが『地域文化への敬意』や『本来の生活様式』を重視していること",
+          "PKGの価値観が実際の行動（観光地回避）に強く影響していること"
+        ],
+        "best_discriminating_question": "ユーザーは地元住民との交流や伝統行事への参加を重視するか？",
+        "testability_notes": "PKGの価値観とユーザーの発言が一致しており、ユーザーに1-2問質問すれば検証可能。",
+        "safety_risk_notes": "断定的に提示すると『観光地好き』を否定する印象を与える可能性があるため、価値観の多様性に配慮が必要。"
+      },
+      "rationale": "PKGと観察内容が整合しており、説明力が高い。価値観の多様性への配慮が必要だが、致命的な欠陥はない。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3"
+        ],
+        "key_assumptions": [
+          "ユーザーが『本物志向』や『独自性の追求』という心理的欲求を持っていること",
+          "観光地の演出を『偽物』と感じていること"
+        ],
+        "best_discriminating_question": "ユーザーは『他の人と違う体験』を重視しているか？",
+        "testability_notes": "ユーザーの自己認識や価値観に関する質問で検証可能だが、主観的な回答に依存しやすい。",
+        "safety_risk_notes": "『偽物』という表現が強く、ユーザーの意図とズレると反感や誤解を生むリスクがある。"
+      },
+      "rationale": "O3の説明には有効だが、他観察への説明力は限定的。心理的動機の推定には慎重な提示が必要。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーが計画的運営やリスク回避のスキルを持ち、それを旅に活かしていること",
+          "探索行動がユーザーの満足感や行動選択に直結していること"
+        ],
+        "best_discriminating_question": "ユーザーは旅先の情報収集や計画を自分で行うか？",
+        "testability_notes": "PKGにスキル記載があり、ユーザーの行動や発言を直接確認することで検証しやすい。",
+        "safety_risk_notes": "スキル重視の解釈がユーザーの価値観や動機を過度に単純化するリスクがある。"
+      },
+      "rationale": "PKGとの整合性が高く、O2の説明として妥当。動機をスキルに還元しすぎない配慮が必要。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "ユーザーが地元住民との交流やコミュニティ参加を重視していること",
+          "観光地化された体験よりも地域コミュニティとの関わりを優先する傾向があること"
+        ],
+        "best_discriminating_question": "ユーザーは地元住民と一緒に何かをする体験に興味があるか？",
+        "testability_notes": "PKGに関連する興味が明記されており、ユーザーの行動や発言から検証しやすい。",
+        "safety_risk_notes": "『コミュニティ重視』の解釈がユーザーの個人主義的側面を見落とす可能性がある。"
+      },
+      "rationale": "PKGの興味と観察内容が一致しており、説明力が高い。個人主義的動機との区別が重要。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "ユーザーが『本物志向の自分』というアイデンティティを持ち、それを維持したいという欲求があること",
+          "観光地を避ける行動が自己像の維持に根ざしていること"
+        ],
+        "best_discriminating_question": "ユーザーは『観光地を避ける自分』という立場にこだわりがあるか？",
+        "testability_notes": "ユーザーの自己認識や他者へのアピール意識を問う必要があり、やや間接的な検証となる。",
+        "safety_risk_notes": "ユーザーの動機を『自己正当化』や『他者との差別化』と断定すると、反発や不快感を招くリスクが高い。"
+      },
+      "rationale": "観察全体を説明できるが、動機の解釈がユーザーの自己像に踏み込みすぎるため、提示には慎重さが求められる。"
+    }
+  ]
+}

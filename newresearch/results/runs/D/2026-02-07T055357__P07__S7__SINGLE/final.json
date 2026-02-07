@@ -1,0 +1,362 @@
+{
+  "context": {
+    "observations": [
+      {
+        "id": "O1",
+        "text": "海外旅行は危険が多いと感じている"
+      },
+      {
+        "id": "O2",
+        "text": "ツアーでしか海外旅行に行かないことにしている"
+      },
+      {
+        "id": "O3",
+        "text": "自由行動の時間もホテルの周辺から離れないようにしている"
+      },
+      {
+        "id": "O4",
+        "text": "治安情報を毎日チェックしている"
+      },
+      {
+        "id": "O5",
+        "text": "もっと安全に旅行するためのコツを知りたがっている"
+      }
+    ],
+    "assumptions": [
+      {
+        "id": "A1",
+        "text": "ユーザーはリスク回避を重視している",
+        "status": "tentative"
+      },
+      {
+        "id": "A2",
+        "text": "海外の環境や文化に対する不安がある",
+        "status": "tentative"
+      },
+      {
+        "id": "A3",
+        "text": "旅行の楽しみよりも安全性を優先している",
+        "status": "tentative"
+      },
+      {
+        "id": "A4",
+        "text": "ツアーやホテル周辺での行動が最も安全だと考えている",
+        "status": "tentative"
+      }
+    ],
+    "questions": [
+      "なぜ自由行動の範囲をホテル周辺に限定しているのか？",
+      "治安情報をどのようにチェックしているのか？",
+      "ツアー以外の旅行形態に興味はあるか？",
+      "安全以外に旅行で大事にしていることはあるか？"
+    ],
+    "constraints": {
+      "tone": "supportive",
+      "safety": "avoid determinism"
+    }
+  },
+  "evidence": {
+    "triggers": [
+      {
+        "type": "focus",
+        "text": "安全への強いこだわりが行動全体を規定している"
+      },
+      {
+        "type": "information_gap",
+        "text": "安全以外の価値観や旅行の楽しみについては語られていない"
+      },
+      {
+        "type": "ambiguity",
+        "text": "治安情報の具体的な入手方法や基準が不明"
+      },
+      {
+        "type": "contradiction",
+        "text": "旅行の本来の目的（楽しみ・発見）と安全優先の行動が両立しているか不明"
+      }
+    ],
+    "external_observations": [
+      {
+        "id": "Oext1",
+        "text": "エコツーリズムや文化体験ツアーでは、地域の関係者と観光客が交流することで、地域資源の価値や本物らしさが再認識されるが、観光客の行動範囲や関わり方が限定的だと満足度や体験の深さに影響する可能性がある（observer effect, performative authenticity）",
+        "source_url": "https://www.env.go.jp/nature/ecotourism/try-ecotourism/env/5policy/pdf/2-5.pdf"
+      },
+      {
+        "id": "Oext2",
+        "text": "町歩きや自由行動の時間配分が、旅行の満足度に大きく影響する（paradox: 安全を優先して行動範囲を狭めると、体験の幅や満足度が下がる可能性）",
+        "source_url": "http://dmo-kawagoe.or.jp/wp-content/uploads/2023/10/%E3%80%90JTB%E4%BD%9C%E6%88%90%E3%80%91%E5%B0%8F%E6%B1%9F%E6%88%B8%E5%B7%9D%E8%B6%8A%E3%81%AE%E6%96%87%E5%8C%96%E4%BD%93%E9%A8%93%E3%83%84%E3%82%A2%E3%83%BC%E5%AE%9F%E6%96%BD%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf"
+      }
+    ]
+  },
+  "hypotheses": [
+    {
+      "hypothesis_id": "H1",
+      "type": "psychological",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "O4"
+      ],
+      "assumes": [
+        "A1",
+        "A2"
+      ],
+      "statement": "ユーザーは新しい環境や予測できない状況に強い不安を感じるため、コントロール可能な範囲でのみ行動する傾向がある。",
+      "mechanism": "未知への不安が強く、予測可能性を高めることで安心感を得ている。",
+      "predictions": [
+        "旅行以外でも新しいことに挑戦する際は慎重な傾向がある",
+        "事前準備や情報収集に時間をかける"
+      ],
+      "discriminating_questions": [
+        "普段の生活でも新しいことに取り組むときは慎重に準備しますか？"
+      ],
+      "persona_link": [
+        "p07_n6"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H2",
+      "type": "value",
+      "explains": [
+        "O2",
+        "O3",
+        "O4"
+      ],
+      "assumes": [
+        "A1",
+        "A4"
+      ],
+      "statement": "ユーザーはリスク回避を重要な価値観として持っており、旅行の楽しみよりも安全確保を最優先している。",
+      "mechanism": "リスク回避が行動原理となり、選択肢を制限することで安心を得ている。",
+      "predictions": [
+        "安全が確保できない場合は旅行自体を控える",
+        "安全性が高いと感じる場所や活動を好む"
+      ],
+      "discriminating_questions": [
+        "安全が保証されない場所にはどんなに魅力があっても行きませんか？"
+      ],
+      "persona_link": [
+        "p07_n6"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H3",
+      "type": "social",
+      "explains": [
+        "O2",
+        "O3"
+      ],
+      "assumes": [
+        "A2"
+      ],
+      "statement": "ユーザーは集団行動やガイド付きツアーを通じて、社会的な安心感や一体感を得ている。",
+      "mechanism": "個人行動よりも集団の中にいることでリスクが分散されると感じている。",
+      "predictions": [
+        "一人旅よりもグループ旅行を好む",
+        "ガイドや現地スタッフとの交流を重視する"
+      ],
+      "discriminating_questions": [
+        "一人旅とグループ旅行、どちらが安心できますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H4",
+      "type": "goal_mismatch",
+      "explains": [
+        "O3",
+        "O4",
+        "O5"
+      ],
+      "assumes": [
+        "A3"
+      ],
+      "statement": "ユーザーは安全を最優先するあまり、旅行本来の楽しみや発見の機会を自ら制限している可能性がある。",
+      "mechanism": "安全志向が強くなりすぎて、体験の幅や満足度が下がる逆説的な状況（paradox）が生じている。",
+      "predictions": [
+        "旅行後に『もっといろいろ体験できたかも』と感じることがある",
+        "安全を優先することで得られない体験があると自覚している"
+      ],
+      "discriminating_questions": [
+        "旅行後に『もう少し冒険してもよかった』と感じることはありますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [
+        "ev:2"
+      ],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H5",
+      "type": "paradox",
+      "explains": [
+        "O2",
+        "O3",
+        "O5",
+        "Oext1",
+        "Oext2"
+      ],
+      "assumes": [
+        "A3",
+        "A4"
+      ],
+      "statement": "ユーザーが安全を最優先することで、実は旅行の本質的な満足や『本物らしさ』を体験する機会を自ら減らしてしまっている可能性がある（裏切る仮説）。",
+      "mechanism": "observer effectやperformative authenticityの観点から、観光客が安全圏にとどまることで、地域文化や本物の体験に触れる機会が減り、満足度が下がるパラドックスが生じている。",
+      "predictions": [
+        "安全重視の行動が結果的に印象の薄い旅行体験につながる",
+        "地域の人や文化との深い交流が少ない"
+      ],
+      "discriminating_questions": [
+        "安全を優先して行動した結果、印象に残る体験や現地の人との交流が少なかったと感じたことはありますか？"
+      ],
+      "persona_link": [
+        "p07_n2",
+        "p07_n4"
+      ],
+      "evidence_link": [
+        "ev:1",
+        "ev:2"
+      ],
+      "is_reframing": true
+    }
+  ],
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A2"
+        ],
+        "best_discriminating_question": "普段の生活でも新しいことに取り組むときは慎重に準備しますか？",
+        "testability_notes": "他の場面での行動パターンを聞くことで検証可能",
+        "safety_risk_notes": "不安の強調にならないよう配慮が必要"
+      },
+      "rationale": "ユーザーの慎重な行動が心理的な不安から来ている可能性を説明できる"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A4"
+        ],
+        "best_discriminating_question": "安全が保証されない場所にはどんなに魅力があっても行きませんか？",
+        "testability_notes": "安全と魅力のどちらを優先するかを尋ねることで検証可能",
+        "safety_risk_notes": "価値観の押し付けにならないよう注意"
+      },
+      "rationale": "リスク回避という価値観が行動を規定していることを説明"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [
+          "集団行動への言及がユーザー発言に明確でない"
+        ],
+        "explains_confirmed": [
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A2"
+        ],
+        "best_discriminating_question": "一人旅とグループ旅行、どちらが安心できますか？",
+        "testability_notes": "旅行形態の好みを聞くことで検証可能",
+        "safety_risk_notes": "集団行動を強調しすぎると個人の選択を軽視するリスク"
+      },
+      "rationale": "ツアー参加が社会的安心感から来ている可能性を示唆"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3",
+          "O4",
+          "O5"
+        ],
+        "key_assumptions": [
+          "A3"
+        ],
+        "best_discriminating_question": "旅行後に『もう少し冒険してもよかった』と感じることはありますか？",
+        "testability_notes": "旅行後の感想を聞くことで検証可能",
+        "safety_risk_notes": "ユーザーの選択を否定する印象にならないよう注意"
+      },
+      "rationale": "安全優先が体験の幅を狭めているパラドックスを指摘"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3",
+          "O5",
+          "Oext1",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "A3",
+          "A4"
+        ],
+        "best_discriminating_question": "安全を優先して行動した結果、印象に残る体験や現地の人との交流が少なかったと感じたことはありますか？",
+        "testability_notes": "旅行の満足度や印象に残った体験の有無を聞くことで検証可能",
+        "safety_risk_notes": "ユーザーの行動選択を否定的に受け取られないよう、あくまで一つの見方として提示する必要がある"
+      },
+      "rationale": "外部観察とPKGの価値観（地域文化への敬意・季節祭り参加）を踏まえ、ユーザーの安全志向が本来の関心や満足度と逆方向に働くパラドックスを示す"
+    }
+  ],
+  "decision": {
+    "selected_hypothesis_id": "H5",
+    "contrasting_hypothesis_id": "H2",
+    "selection_rationale": "H5はユーザーの『安全第一』という発言の意味を『安全を優先することで本来得られるはずの体験や満足を自ら減らしている可能性』に変える。外部観察（Oext1, Oext2）も参照し、自己像レベルでの再解釈を促す。H2は額面通りの『リスク回避が最優先の価値観』という読みで、行動の正当性を強調する立場。どちらの立場に立つかで、今後の旅行の行動や自己理解が大きく変わる。",
+    "user_facing_frame": {
+      "framing": "options",
+      "questions": [
+        "安全を最優先することで、印象に残る体験や現地の人との交流が少なくなったと感じたことはありますか？",
+        "それとも、やはり安全を確保することが一番大事だと感じますか？"
+      ],
+      "options": [
+        "安全を優先することで、体験の幅や満足度が狭まる可能性もあるという見方",
+        "安全を最優先すること自体が自分にとって最良の選択だという見方"
+      ]
+    }
+  },
+  "final_response": "ご自身の安全を大切にされているお気持ち、とてもよく伝わってきました。ツアーやホテル周辺で過ごすことで安心感を得ている一方で、『もっと安全に旅行するコツ』を探しているのですね。\n\n一つの見方として、安全を最優先することで現地の人との交流や印象に残る体験が少なくなってしまう、というパラドックスがあるかもしれません。逆に、安全を最優先すること自体が自分にとって最良の選択だ、という価値観もとても大切です。\n\n例えば、同じように安全志向の方でも、現地の文化体験ツアーや、ガイド付きの町歩きなど『安全を確保しつつ新しい体験を少しだけ広げる』工夫をしている方もいます。5分でできる小さな一歩として、次回の旅行ではホテルのフロントで『おすすめの安全な散策コース』を聞いてみるのはいかがでしょうか？\n\n『安全を優先して行動した結果、印象に残る体験や現地の人との交流が少なかったと感じたことはありますか？』それとも『やはり安全を確保することが一番大事だ』と感じますか？\n\nどちらの立場に立つかで、今後の旅行の楽しみ方や自己理解が少し変わるかもしれません。ご自身の気持ちに近い方を選んでみてくださいね。",
+  "markers": {
+    "empathy": {
+      "acknowledgement": true,
+      "reflection": true,
+      "perspective_prompt": true
+    },
+    "nudge": {
+      "easy": true,
+      "attractive": true,
+      "social": true,
+      "timely": true,
+      "has_question": true,
+      "has_options": true,
+      "has_small_action": true,
+      "directive_level": "low"
+    }
+  }
+}

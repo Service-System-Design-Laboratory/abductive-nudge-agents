@@ -1,0 +1,152 @@
+{
+  "hypotheses": [
+    {
+      "hypothesis_id": "H1",
+      "type": "psychological",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "O4",
+        "O5"
+      ],
+      "assumes": [
+        "A1",
+        "A3"
+      ],
+      "statement": "ユーザーは機能的価値（寝る場所としての役割）を重視し、体験価値や文化的価値を宿泊先選びの主軸にしていない。",
+      "mechanism": "コストと機能のバランスを重視する思考パターンが、価格差への納得のなさやコスパ志向を生み出している。",
+      "predictions": [
+        "旅館の体験やサービスにはあまり関心を示さない。",
+        "宿泊先選びで価格と最低限の快適さを最優先する。"
+      ],
+      "discriminating_questions": [
+        "旅館でしか得られない体験やサービスに興味を感じたことはありますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [
+        "ev:Oext1",
+        "ev:Oext2"
+      ],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H2",
+      "type": "value",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "O4",
+        "O5"
+      ],
+      "assumes": [
+        "A3"
+      ],
+      "statement": "コストパフォーマンスを重視する価値観が強く、無駄な出費を避けることが自己効力感や安心感につながっている。",
+      "mechanism": "コスパ重視が自己管理やリスク回避の価値観と結びつき、高額な支出に対して強い抵抗感を生む。",
+      "predictions": [
+        "他の消費行動でもコスパを重視する傾向がある。",
+        "高額なサービスや商品に対しては常に慎重になる。"
+      ],
+      "discriminating_questions": [
+        "他の場面でもコスパを重視して選択することが多いですか？"
+      ],
+      "persona_link": [
+        "pkg:p07_n6",
+        "pkg:p07_n1"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H3",
+      "type": "social",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "O4",
+        "O5",
+        "Oext1"
+      ],
+      "assumes": [
+        "A2"
+      ],
+      "statement": "周囲の多くの人がビジネスホテルを選ぶ傾向に影響されており、社会的規範として『寝る場所はどこでも同じ』という考えが強化されている。",
+      "mechanism": "社会的証明や周囲の選択が自身の判断基準に影響し、旅館の価値を再評価しにくくなっている。",
+      "predictions": [
+        "友人や家族もビジネスホテルを選ぶことが多い。",
+        "他人の選択を参考にして宿泊先を決める傾向がある。"
+      ],
+      "discriminating_questions": [
+        "周囲の人もビジネスホテルを選ぶことが多いですか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [
+        "ev:Oext1"
+      ],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H4",
+      "type": "goal_mismatch",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "O4",
+        "O5"
+      ],
+      "assumes": [
+        "A1",
+        "A4"
+      ],
+      "statement": "宿泊先に文化体験や地域とのつながりを求めていないため、旅館の価格や価値を実感しにくい。",
+      "mechanism": "宿泊の目的が『寝る』ことに限定されており、旅館の提供する文化的・体験的価値が自分のニーズと合致していない。",
+      "predictions": [
+        "地域文化や伝統体験に関心が薄い場合、旅館の価値を感じにくい。",
+        "旅館のサービス内容を詳しく知らない可能性がある。"
+      ],
+      "discriminating_questions": [
+        "地域文化や伝統体験に興味がありますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H5",
+      "type": "value",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "O4",
+        "O5",
+        "Oext3"
+      ],
+      "assumes": [
+        "A3"
+      ],
+      "statement": "（裏切る仮説）実は『コスパ』を重視しているのではなく、旅館の価格や体験価値に対する納得感を得られていないことが本質的な違和感の原因である。つまり、価格に見合う『納得できる体験』があれば高額でも受け入れられる可能性がある。",
+      "mechanism": "本当は体験価値や文化的価値にも興味があるが、現状の旅館が提供する内容が自分の価値観や期待に合致していないため、価格への違和感として表出している。",
+      "predictions": [
+        "地元の料理や特別な体験に強い納得感や満足感を得た場合、高額な宿泊費でも受け入れることができる。",
+        "『価格に見合う』と感じる体験があれば、コスパ以外の価値も重視する傾向が表れる。"
+      ],
+      "discriminating_questions": [
+        "これまでに『高いけど納得できた』体験やサービスはありますか？"
+      ],
+      "persona_link": [
+        "pkg:p07_n2",
+        "pkg:p07_n4",
+        "pkg:p07_n5"
+      ],
+      "evidence_link": [
+        "ev:Oext3"
+      ],
+      "is_reframing": true
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "triggers": [
+    {
+      "type": "information_gap",
+      "text": "縄文杉の神秘的な雰囲気が『人の手が入っていない原生林だからこそ味わえる』という主張について、屋久島の原生林や縄文杉周辺の実際の人為的影響や管理状況に関する具体的な情報がPKGに存在しない。"
+    },
+    {
+      "type": "ambiguity",
+      "text": "『世界遺産になる前から通っている』という発言が、屋久島の森や縄文杉の環境・雰囲気にどのような変化をもたらしたかについてPKGで明確な説明がない。"
+    },
+    {
+      "type": "focus",
+      "text": "『屋久島の森について誰よりも分かっているつもり』という自負が、実際の専門家や地元住民の知識と比較してどの程度妥当か、PKGで評価できない。"
+    }
+  ],
+  "rag_queries": [
+    "縄文杉周辺の原生林に人為的な影響や管理が行われているか",
+    "屋久島が世界遺産登録される前後で縄文杉や森の環境・雰囲気に変化はあったか",
+    "屋久島の森や縄文杉について専門家や地元住民が持つ知識と一般訪問者の知識の違い"
+  ],
+  "evidence_items": [
+    {
+      "rank": 1,
+      "title": "屋久島における観光産業の発展とその空間的特徴",
+      "snippet": "世界遺産や縄文杉が地域のイメージとして定着し、多くの観光者を集めているが、こうした集中的な状況に違和感を抱く人も多く ...",
+      "url": "https://hiroshima.repo.nii.ac.jp/record/2032868/files/StudiesInEnvironmentalSciences_6_65.pdf",
+      "source_type": "edu"
+    },
+    {
+      "rank": 2,
+      "title": "世界遺産登録後の屋久島の課題とエコツーリズムの現状",
+      "snippet": "当初は屋久島の魅力は全て縄文杉に収斂されており、縄文杉を見ずして屋久島を語るなかれといった雰囲気が形成されていった。このため、観光客の増加が ...",
+      "url": "https://www.airies.or.jp/attach.php/6a6f75726e616c5f31332d316a706e/save/0/0/13_1-08.pdf",
+      "source_type": "org"
+    },
+    {
+      "rank": 3,
+      "title": "屋久島森林生態系保護地域 - 林野庁 - 農林水産省",
+      "snippet": "森林生態系保護地域は、国有林のうち原生的な天然林を保存することにより、自然環境の維持、動植物の保護、遺伝資源の保存、学術研究などに役立てるとともに、これらの ...",
+      "url": "https://www.rinya.maff.go.jp/kyusyu/keikaku/hogorin/shinrin_seitaikei/yakusima.html",
+      "source_type": "gov"
+    }
+  ],
+  "external_observations": [
+    {
+      "id": "Oext1",
+      "text": "屋久島の縄文杉や原生林は世界遺産登録によって地域イメージの中心となり、観光客の増加とともに『本物らしさ』が商品化されている。",
+      "source_url": "https://hiroshima.repo.nii.ac.jp/record/2032868/files/StudiesInEnvironmentalSciences_6_65.pdf"
+    },
+    {
+      "id": "Oext2",
+      "text": "縄文杉を見ずして屋久島を語るなかれという雰囲気が観光産業によって形成され、訪問体験そのものが『本物』を演出する産業構造になっている。",
+      "source_url": "https://www.airies.or.jp/attach.php/6a6f75726e616c5f31332d316a706e/save/0/0/13_1-08.pdf"
+    },
+    {
+      "id": "Oext3",
+      "text": "屋久島の原生林は学術研究や保護の対象であると同時に、観光資源として管理されており、自然環境の維持と観光利用が並行して行われている。",
+      "source_url": "https://www.rinya.maff.go.jp/kyusyu/keikaku/hogorin/shinrin_seitaikei/yakusima.html"
+    }
+  ],
+  "notes": "外部観察は、屋久島の原生林や縄文杉が観光産業・商品化・演出された本物らしさの対象となっている構造的事実に着目しています。ユーザーの『本物』志向と矛盾する可能性のある観察を優先しました。"
+}

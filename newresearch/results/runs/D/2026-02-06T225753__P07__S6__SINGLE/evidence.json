@@ -1,0 +1,28 @@
+{
+  "triggers": [
+    {
+      "type": "focus",
+      "text": "ユーザーは屋久島の原生林の神秘性と自身の理解度に強い自負を持っている。"
+    },
+    {
+      "type": "ambiguity",
+      "text": "『誰よりも分かっている』という自負が、他者との比較や変化への反応なのか不明。"
+    },
+    {
+      "type": "information_gap",
+      "text": "世界遺産登録前後での体験や印象の変化について具体的な言及がない。"
+    }
+  ],
+  "external_observations": [
+    {
+      "id": "Oext1",
+      "text": "屋久島町の住民アンケートでは『自然景観・環境の保全と整備』と『土産品や食の開発と島内消費の促進』について満足度・不満足度がともに高く、意見が分かれている。",
+      "source_url": "http://www.town.yakushima.kagoshima.jp/t_yakushima/wp-content/uploads/2025/09/20250908_02_sakutei_sanko_shiryo.pdf"
+    },
+    {
+      "id": "Oext2",
+      "text": "自然の見え方は、語りや体験を通じて変化しうる（例：ミモリラジオの自然テーマトーク）。",
+      "source_url": "https://creators.spotify.com/pod/profile/mimoriradio/episodes/61----4-e27rsoe"
+    }
+  ]
+}

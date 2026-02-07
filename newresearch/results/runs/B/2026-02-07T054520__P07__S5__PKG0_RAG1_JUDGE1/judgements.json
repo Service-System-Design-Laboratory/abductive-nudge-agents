@@ -1,0 +1,95 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1"
+        ],
+        "key_assumptions": [
+          "ユーザーが費用削減そのものに強い達成感や満足感を感じるという心理傾向がある",
+          "節約行為自体が旅行体験よりも優先される価値観を持つ"
+        ],
+        "best_discriminating_question": "旅行の思い出よりも、どれだけ節約できたかを他人に話したい気持ちが強いですか？",
+        "testability_notes": "ユーザーへの1問インタビューや、SNS投稿履歴の確認で比較的容易に検証可能。",
+        "safety_risk_notes": "ユーザーの価値観を断定的に扱うと、本人の多様な動機を過小評価するリスクがある。"
+      },
+      "rationale": "節約行為自体への満足感を重視する仮説で、O1（コスト徹底）をよく説明するが、O5（さらなる節約探し）は説明が弱い。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "節約商品やサービスの選択肢が企業によって設計・誘導されている",
+          "ユーザーは企業提供の枠組み外の節約手段をあまり検討していない"
+        ],
+        "best_discriminating_question": "企業の割引サービスやパッケージ以外の節約方法（例：民泊、ヒッチハイクなど）を検討しましたか？",
+        "testability_notes": "ユーザーへのヒアリングや、利用履歴・情報源の調査で検証可能。外部エビデンスも参照できる。",
+        "safety_risk_notes": "ユーザーの主体性を軽視していると受け取られる可能性がある。"
+      },
+      "rationale": "企業設計の節約商品への依存を指摘し、O2・O3・Oext2をよく説明。外部エビデンスもあり、環境要因の視点が強み。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O5"
+        ],
+        "key_assumptions": [
+          "ユーザーは既存の節約方法以外の情報を十分に持っていない",
+          "情報ギャップがさらなる節約行動の動機となっている"
+        ],
+        "best_discriminating_question": "ネットカフェ泊や株主優待券の利用など、他の節約手段を知っていますか？",
+        "testability_notes": "ユーザーの知識や情報収集行動を1-2問で確認でき、検証しやすい。外部エビデンスも利用可能。",
+        "safety_risk_notes": "ユーザーの知識不足を強調することで、無知と受け取られるリスクがある。"
+      },
+      "rationale": "情報ギャップに着目し、O5（さらなる節約探し）を的確に説明。エビデンスもあり、検証容易。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O4"
+        ],
+        "key_assumptions": [
+          "ユーザーは快適さや食の楽しみよりも支出最小化を価値観の最上位に置いている",
+          "快適さや体験の質を犠牲にしても問題と感じない"
+        ],
+        "best_discriminating_question": "旅行中、快適さや食事の質が下がっても気になりませんか？",
+        "testability_notes": "ユーザーの価値観に直接質問することで比較的容易に検証可能。",
+        "safety_risk_notes": "ユーザーの価値観を単純化しすぎると、実際の動機の多様性を損なう恐れがある。"
+      },
+      "rationale": "支出最小化の価値観を仮定し、O1・O4（コスト徹底・コンビニ食）を説明。価値観の単純化には注意が必要。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O5",
+          "Oext1",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "節約旅行の実践や発信がユーザーのアイデンティティや承認欲求の一部となっている",
+          "節約行動自体を他者や自分に示すことが目的化している"
+        ],
+        "best_discriminating_question": "節約旅行の体験を他人に詳細に伝えたり、SNSで発信したい気持ちが強いですか？",
+        "testability_notes": "SNS投稿や発信行動の有無、自己評価の動機を問うことで検証可能。外部エビデンスも参照できる。",
+        "safety_risk_notes": "ユーザーの動機を“承認欲求”や“演出”と断定することで、侮蔑的に受け取られるリスクがある。"
+      },
+      "rationale": "節約行動の自己演出・承認欲求を重視し、O1・O5・Oext1・Oext2を広く説明。現代的な視点だが、動機の断定には配慮が必要。"
+    }
+  ]
+}

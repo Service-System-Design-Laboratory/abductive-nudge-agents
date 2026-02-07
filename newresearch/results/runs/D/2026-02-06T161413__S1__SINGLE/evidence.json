@@ -1,0 +1,28 @@
+{
+  "triggers": [
+    {
+      "type": "information_gap",
+      "text": "ユーザーが求める『地元の人しか知らない、本物の生活が残っている場所』の具体例や探索方法に関する情報が不足している。"
+    },
+    {
+      "type": "ambiguity",
+      "text": "『本物の生活』の定義やユーザーが何をもって本物と感じるかが明確でない。"
+    },
+    {
+      "type": "focus",
+      "text": "ユーザーは観光地よりも地元の生活に強い関心を示している。"
+    }
+  ],
+  "external_observations": [
+    {
+      "id": "Oext1",
+      "text": "福井の隠れた名店『滝の川』は地元の人しか知らない本当に美味しいお店として紹介されている。",
+      "source_url": "https://www.echizenkani.com/20220513115750"
+    },
+    {
+      "id": "Oext2",
+      "text": "母里の郷を巡る旅ではGoogleマップには載っているが現地に看板や道順案内がなく、初見では登り口が分かりにくい場所が紹介されている。",
+      "source_url": "https://www.ryosou.com/simanenokunifudoki2024izumo/"
+    }
+  ]
+}

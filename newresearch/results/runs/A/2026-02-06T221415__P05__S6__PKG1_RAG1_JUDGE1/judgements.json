@@ -1,0 +1,109 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_link（pkg:n194, pkg:n191, pkg:n192）がPKGに存在しないため、ペルソナ知識グラフによる裏付けができない。"
+        ],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーが屋久島や縄文杉に対して特別な愛着や自己同一性を感じていること。",
+          "自己効力感や自己価値の確認が屋久島体験を通じて行われていること。"
+        ],
+        "best_discriminating_question": "屋久島について語るとき、どんな点で自分が特別だと感じますか？",
+        "testability_notes": "ユーザーへのインタビューや発話分析で比較的容易に検証可能。",
+        "safety_risk_notes": "心理的動機を断定的に述べると、ユーザーの自己認識と齟齬が生じ反発や不快感を招く恐れがある。"
+      },
+      "rationale": "観察O1・O2をよく説明するが、PKG裏付けが不可。自己同一性への言及は妥当だが、主観的解釈の域を出ない点に注意。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_link（pkg:n193）がPKGに存在しない。",
+          "O3の説明は妥当だが、O2の『人の手が入っていない』という主張の根拠としてはやや弱い。"
+        ],
+        "explains_confirmed": [
+          "O3"
+        ],
+        "key_assumptions": [
+          "ユーザーが観光地化以前の屋久島体験を重視していること。",
+          "観光産業による変化を明確に認識し、価値観に影響していること。"
+        ],
+        "best_discriminating_question": "世界遺産登録後の屋久島の雰囲気や観光客の増加についてどう感じますか？",
+        "testability_notes": "ユーザーの発言や態度から比較的容易に検証できるが、観光地化以前の体験有無の確認が必要。",
+        "safety_risk_notes": "『本物』や『観光商品』の区別を強調しすぎると、他者や現代の観光客を暗に否定する印象を与える可能性がある。"
+      },
+      "rationale": "観察O3を強く説明し、外部エビデンスとも整合的だが、PKG裏付け不可。O2の説明力は限定的。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_link（pkg:n194）がPKGに存在しない。"
+        ],
+        "explains_confirmed": [
+          "O3",
+          "O4",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "社会的承認や優越感が屋久島体験の動機となっていること。",
+          "『本物』を知ることが社会的に価値ある行為とみなされていること。"
+        ],
+        "best_discriminating_question": "屋久島について語るとき、他者からどんな反応や評価を期待していますか？",
+        "testability_notes": "ユーザーの発言やSNSでの交流パターン等から検証可能だが、内面の動機は推測の域を出ない。",
+        "safety_risk_notes": "社会的承認欲求を指摘することで、ユーザーの自尊心を傷つけるリスクがある。"
+      },
+      "rationale": "O3・O4・Oext2を説明でき、社会的文脈の指摘は妥当。ただしPKG裏付け不可で、内面動機の推測には注意が必要。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_link（pkg:n198）がPKGに存在しない。"
+        ],
+        "explains_confirmed": [
+          "O2",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "ユーザーが屋久島の原生林管理実態を十分に知らないこと。",
+          "理想化された自然観が現実と乖離していること。"
+        ],
+        "best_discriminating_question": "屋久島の原生林がどのように管理されているかご存知ですか？",
+        "testability_notes": "知識確認の質問で直接検証可能。外部エビデンスも利用しやすい。",
+        "safety_risk_notes": "ユーザーの知識不足や誤解を指摘する形になるため、配慮が必要。"
+      },
+      "rationale": "O2・Oext3を説明し、エビデンスとも整合的。知識ギャップの指摘は有効だが、PKG裏付け不可。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_link（pkg:n194, pkg:n193, pkg:n192）がPKGに存在しない。"
+        ],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4",
+          "Oext1",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "ユーザーが『本物』や『特別な知識』を自己価値の源泉としていること。",
+          "観光産業の『本物らしさ』の商品化に反発する態度も、自己演出の一部であること。"
+        ],
+        "best_discriminating_question": "『本物の自然』や『知っている自分』という自己像が、屋久島へのこだわりにどう影響していると感じますか？",
+        "testability_notes": "ユーザーの発言分析や自己認識の深掘りインタビューで検証可能だが、内面の動機は主観的評価に依存する。",
+        "safety_risk_notes": "ユーザーの動機や自己演出を指摘することで、反発や不快感を招くリスクが高い。"
+      },
+      "rationale": "観察・外部事実を最も広く説明し、エビデンスとも整合的。ただしPKG裏付け不可で、動機の解釈には慎重さが必要。"
+    }
+  ]
+}

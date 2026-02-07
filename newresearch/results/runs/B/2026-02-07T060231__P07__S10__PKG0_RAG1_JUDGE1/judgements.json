@@ -1,0 +1,92 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーが写真撮影技術の向上自体に強い関心を持っていること",
+          "効率的かつ高品質な写真を得ることが主目的であること"
+        ],
+        "best_discriminating_question": "写真技術向上のためにどのような勉強や練習をしているか？",
+        "testability_notes": "ユーザーへの直接質問や行動履歴の確認で比較的容易に検証可能。",
+        "safety_risk_notes": "技術志向を強調しすぎると、他の動機（例：承認欲求や自己表現）を軽視していると誤解される可能性がある。"
+      },
+      "rationale": "観察O1・O2は十分説明できているが、O4（効率化のコツ探し）は技術向上動機だけでは説明がやや弱い。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "ユーザーがSNSでの承認や評価を強く意識していること",
+          "他者からの反応が撮影行動の主な動機であること"
+        ],
+        "best_discriminating_question": "SNSでの反応が撮影意欲や満足度にどの程度影響するか？",
+        "testability_notes": "SNSでの反応と撮影行動の関係をユーザーに尋ねることで検証可能。",
+        "safety_risk_notes": "承認欲求を強調することでユーザーが否定的に受け取るリスクや、動機を単純化しすぎるリスクがある。"
+      },
+      "rationale": "O3・O4の説明は妥当だが、O4（効率化のコツ探し）がSNS承認欲求だけで十分説明できるかはやや弱い。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "ユーザーの撮影行動が外部環境（テレビ業界やSNSトレンド等）の影響を強く受けていること"
+        ],
+        "best_discriminating_question": "撮影方法の参考にしているメディアやインフルエンサーはいるか？",
+        "testability_notes": "ユーザーの情報源や模倣行動を尋ねることで検証可能。外部エビデンス（ev:5）も参照できる。",
+        "safety_risk_notes": "ユーザーの主体性を軽視していると受け取られる可能性がある。"
+      },
+      "rationale": "O2とOext1の説明は十分。外部エビデンスもあり、環境要因の影響を検証しやすい。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O4"
+        ],
+        "key_assumptions": [
+          "ユーザーがSNS映え写真の撮影・加工テクニックに関する知識が十分でないこと"
+        ],
+        "best_discriminating_question": "SNS映え写真の最新トレンドやテクニックをどの程度知っているか？",
+        "testability_notes": "ユーザーの知識レベルや情報収集行動を直接質問することで検証可能。",
+        "safety_risk_notes": "知識不足を指摘することでユーザーが不快に感じるリスクがある。"
+      },
+      "rationale": "O4（効率化のコツ探し）は知識ギャップ仮説で自然に説明できるが、他の観察には直接的な説明力はない。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3",
+          "O4",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "ユーザーが写真を通じて自己表現や現実の演出に価値を感じていること",
+          "SNS上での自己像の提示が重要な動機となっていること"
+        ],
+        "best_discriminating_question": "現地の体験そのものと、SNS上での写真の見え方のどちらをより重視しているか？",
+        "testability_notes": "ユーザーの価値観や写真へのこだわりを深掘りする質問が必要で、やや主観的な検証となる。",
+        "safety_risk_notes": "ユーザーの深層心理や価値観に踏み込むため、誤解や反発を招くリスクがある。"
+      },
+      "rationale": "O3・O4・Oext3を包括的に説明でき、自己表現や演出志向という新たな視点を提供している。"
+    }
+  ]
+}

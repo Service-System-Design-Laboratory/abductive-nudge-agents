@@ -1,0 +1,92 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーが写真撮影において自己表現や達成感を重視している",
+          "『完璧な写真』を撮ること自体がユーザーの主目的である"
+        ],
+        "best_discriminating_question": "旅のスケジュールや行動が撮影中心に組み立てられることはありますか？",
+        "testability_notes": "ユーザーに1～2問質問すれば直接検証可能。SNS投稿や行動計画の重視度も観察しやすい。",
+        "safety_risk_notes": "『自己表現』や『達成感』の価値観を断定的に扱うと、ユーザーの多様な動機を見落とすリスクがある。"
+      },
+      "rationale": "観察O1・O2は十分説明できているが、O3はSNS承認欲求仮説（H3）とも重なるため、主観的動機の判別が必要。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O4"
+        ],
+        "key_assumptions": [
+          "ユーザーがコストや効率性を写真撮影にも強く反映させている",
+          "PKGの節約志向・コスト最適化傾向が撮影行動に波及している"
+        ],
+        "best_discriminating_question": "撮影機材やアプリの選択基準にコストや効率性を重視していますか？",
+        "testability_notes": "PKG情報とユーザーの具体的な撮影行動・選択理由を聞くことで検証しやすい。",
+        "safety_risk_notes": "『効率化』や『コスト重視』を過度に強調すると、写真撮影の楽しみや情熱を軽視していると受け取られる可能性がある。"
+      },
+      "rationale": "PKGとの整合性が高く、O2・O4の説明力も十分。価値観仮説（H1）との区別が重要。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3"
+        ],
+        "key_assumptions": [
+          "ユーザーがSNSでの承認や他者評価を強く意識している",
+          "SNS投稿が旅の主目的となっている"
+        ],
+        "best_discriminating_question": "SNSでの反応が良くないとき、気持ちに影響がありますか？",
+        "testability_notes": "SNSでの反応や投稿行動について直接質問すれば検証可能。外部エビデンス不要。",
+        "safety_risk_notes": "『承認欲求』という表現はユーザーにネガティブな印象を与える可能性があり、配慮が必要。"
+      },
+      "rationale": "O3の説明は強いが、O4は効率化動機（H2, H5）とも重なるため、動機の深掘りが必要。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O4"
+        ],
+        "key_assumptions": [
+          "ユーザーが低予算旅行や節約志向と写真撮影の手間・時間の間でジレンマを感じている",
+          "効率化への関心がコスト・時間配分の悩みに直結している"
+        ],
+        "best_discriminating_question": "写真撮影のために他の観光や体験を諦めたことはありますか？",
+        "testability_notes": "ユーザーの行動選択や葛藤経験を尋ねることで検証可能。PKG情報も補助的に利用できる。",
+        "safety_risk_notes": "『葛藤』や『ジレンマ』の指摘は、ユーザーの価値観を否定的に捉えられるリスクがある。"
+      },
+      "rationale": "O2・O4の説明は妥当。PKGとの整合性も高いが、実際に葛藤があるかはユーザーへの丁寧な質問が必要。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O4"
+        ],
+        "key_assumptions": [
+          "ユーザーが旅そのものよりも『効率よく成果を出す自分』という自己像を重視している",
+          "PKGのコスト最適化・節約志向が自己効率性の追求に結びついている"
+        ],
+        "best_discriminating_question": "旅先での体験そのものよりも、効率よく『良い写真』を得ることに満足感を感じますか？",
+        "testability_notes": "ユーザーの自己像や満足感の源泉を深掘りする必要があり、やや検証難度は高い。",
+        "safety_risk_notes": "ユーザーのアイデンティティや価値観に踏み込むため、断定的な表現や誘導的質問は避けるべき。"
+      },
+      "rationale": "O4の説明は可能だが、O3やO2との関連は仮定が多く、動機の深層を探る追加質問が不可欠。"
+    }
+  ]
+}

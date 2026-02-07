@@ -1,0 +1,16 @@
+{
+  "triggers": [
+    {
+      "type": "information_gap",
+      "text": "金沢の伝統建築やひがし茶屋街の街並みが『日本の美の極み』と評価される具体的な理由や根拠がPKGに存在しない。"
+    },
+    {
+      "type": "ambiguity",
+      "text": "『江戸時代の風情がよく残っている』という表現が、どのような建築や街並みの特徴を指しているのかPKGでは明確でない。"
+    }
+  ],
+  "rag_queries": [],
+  "evidence_items": [],
+  "external_observations": [],
+  "notes": "RAG disabled (use_rag=false) — trigger identification only"
+}

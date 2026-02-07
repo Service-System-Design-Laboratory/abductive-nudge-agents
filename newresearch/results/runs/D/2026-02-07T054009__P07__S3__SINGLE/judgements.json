@@ -1,0 +1,91 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A2"
+        ],
+        "best_discriminating_question": "伝統建築や街並みを見ることで、どんな気持ちや安心感を得たいと感じていますか？",
+        "testability_notes": "ユーザーの他の発言や、伝統以外への関心の有無を確認することで検証可能。",
+        "safety_risk_notes": "心理的動機への言及は慎重に行う必要がある。"
+      },
+      "rationale": "ユーザーの発言全体に『本物』『変わらないもの』への価値付与が見られるため、妥当性が高い。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3",
+          "Oext1",
+          "Oext4"
+        ],
+        "key_assumptions": [
+          "A3"
+        ],
+        "best_discriminating_question": "保存や演出された伝統と、自然に残った伝統の違いについてどう思われますか？",
+        "testability_notes": "観光地化や演出に対するユーザーの反応・認識を尋ねることで検証可能。",
+        "safety_risk_notes": "ユーザーの『本物』感を揺さぶるため、やや不快感を与える可能性がある。"
+      },
+      "rationale": "外部観察（Oext1, Oext4）とユーザーの価値観のズレを突いており、発言の意味を大きく転換する。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "A2"
+        ],
+        "best_discriminating_question": "伝統建築や街並みを守る人々や活動にどんな思いがありますか？",
+        "testability_notes": "地域文化や保存活動への関心の有無を確認することで検証可能。",
+        "safety_risk_notes": "価値観の肯定的側面を強調するため、リスクは低い。"
+      },
+      "rationale": "PKGの『地域文化への敬意』と強く整合し、ユーザーの額面通りの発言を支持する。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "Oext2",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "A1"
+        ],
+        "best_discriminating_question": "保存政策や観光資源化について、どんな印象や意見を持っていますか？",
+        "testability_notes": "保存政策や観光の仕組みに対するユーザーの意識を尋ねることで検証可能。",
+        "safety_risk_notes": "外部要因への関心を促すため、リスクは低い。"
+      },
+      "rationale": "観光資源化や保存政策の影響を明示し、ユーザーの体験の外部構造を説明する。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3"
+        ],
+        "key_assumptions": [],
+        "best_discriminating_question": "他の伝統的な街並みと比べて、ひがし茶屋街のどこが特に美しいと感じますか？",
+        "testability_notes": "比較対象や根拠を具体的に尋ねることで検証可能。",
+        "safety_risk_notes": "根拠の明示を求めることで、やや防衛的な反応を引き起こす可能性がある。"
+      },
+      "rationale": "ユーザーの主観的評価の根拠の曖昧さを指摘し、説明の空白を埋める。"
+    }
+  ]
+}

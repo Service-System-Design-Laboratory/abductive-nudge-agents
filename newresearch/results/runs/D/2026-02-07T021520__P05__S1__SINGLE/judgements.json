@@ -1,0 +1,98 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A2"
+        ],
+        "best_discriminating_question": "最近、観光地での体験に物足りなさを感じたことはありますか？",
+        "testability_notes": "ユーザーの過去の旅の満足度や、偶発的な出会いへの反応を尋ねることで検証可能。",
+        "safety_risk_notes": "ユーザーの価値観を肯定する形なのでリスクは低い。"
+      },
+      "rationale": "観光地での予定調和的な体験に飽きているという説明は、ユーザーの発言と整合的。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "A2"
+        ],
+        "best_discriminating_question": "地元の人との交流やコスト面は旅先選びでどれくらい重要ですか？",
+        "testability_notes": "旅の計画や優先順位を聞くことで検証可能。",
+        "safety_risk_notes": "価値観の肯定なのでリスクは低い。"
+      },
+      "rationale": "PKGの少人数交流・節約志向と一致しており、発言の表面的な意味をよく説明する。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "A3"
+        ],
+        "best_discriminating_question": "『地元の人しか知らない』と思って行った場所で、他の観光客に出会った経験はありますか？",
+        "testability_notes": "実際に現地で観光客に出会ったエピソードを尋ねることで検証可能。",
+        "safety_risk_notes": "『本物』の価値への疑念を含むため、やや不快感を与える可能性がある。"
+      },
+      "rationale": "外部観察（Oext1）を取り入れ、情報化による『本物』のパラドクスを指摘している。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A3"
+        ],
+        "best_discriminating_question": "旅先で地元の人と完全に打ち解けられたと感じたことはありますか？",
+        "testability_notes": "地元の人との距離感や違和感の有無を尋ねることで検証可能。",
+        "safety_risk_notes": "理想と現実のギャップを指摘するため、やや不快感のリスクあり。"
+      },
+      "rationale": "観察者効果や外部者の立場を踏まえ、ユーザーの理想と現実のズレに着目している。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A2",
+          "A3"
+        ],
+        "best_discriminating_question": "他の人が知らない場所を見つけたとき、どんな気持ちになりますか？",
+        "testability_notes": "ユーザーの自己イメージや差異化欲求について深堀りする質問で検証可能。",
+        "safety_risk_notes": "『本物志向』が実は差異化欲求である可能性を指摘するため、やや不快感を伴うが、自己理解を深めるきっかけにもなりうる。"
+      },
+      "rationale": "裏切る仮説として、ユーザーの発言の動機を『体験そのもの』から『自己イメージの差異化』へと転換している。Oext1のパラドクスも取り込んでいる。"
+    }
+  ]
+}

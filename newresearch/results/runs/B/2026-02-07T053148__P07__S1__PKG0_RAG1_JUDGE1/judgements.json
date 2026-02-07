@@ -1,0 +1,97 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーは観光客向け情報の氾濫によって驚きや発見の感覚を失っていると感じている",
+          "『本物の生活』や未発見の場所への欲求が心理的動機として強い"
+        ],
+        "best_discriminating_question": "ユーザーは旅の計画を立てる際、どの程度まで事前に情報を調べるか？",
+        "testability_notes": "ユーザーの旅の計画や行動傾向を直接質問することで比較的容易に検証できる。",
+        "safety_risk_notes": "『本物志向』を強調しすぎると、他の旅行スタイルを否定的に受け取られるリスクがある。"
+      },
+      "rationale": "観察O1・O2をよく説明しており、ユーザーの心理的動機に焦点を当てている。外部エビデンスがないが、致命的な欠陥はない。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "Oext1",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "観光業界が『穴場』や『地元民しか知らない場所』まで商品化・演出している",
+          "その結果、ユーザーがどこでも観光客向けの仕掛けを感じるようになっている"
+        ],
+        "best_discriminating_question": "最近訪れた『地元の人しか知らない場所』にも観光客向けの要素を感じたことがあるか？",
+        "testability_notes": "外部エビデンスやユーザーの体験談を通じて検証しやすい。",
+        "safety_risk_notes": "観光業界への批判的なニュアンスが強く、断定的に伝えると誤解や反発を招く可能性がある。"
+      },
+      "rationale": "観察O1・O2に加え、外部事実Oext1・Oext2を直接説明できており、エビデンスも存在する。環境要因に焦点を当てた強い仮説。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "観光地化が進むことで地元住民との距離や摩擦が生じる",
+          "ユーザーは親密な交流や共感を求めている"
+        ],
+        "best_discriminating_question": "旅先で地元住民とどのような交流を求めているか？",
+        "testability_notes": "ユーザーの交流体験や意識をインタビュー等で確認する必要があり、やや検証に手間がかかる。",
+        "safety_risk_notes": "地元住民との交流を理想化しすぎると、現実とのギャップや摩擦を過小評価するリスクがある。"
+      },
+      "rationale": "O2とOext3を説明できており、社会的要因に着目した仮説。検証にはユーザーの主観的体験の深掘りが必要。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "『本物の生活』や『地元の人しか知らない場所』の定義や基準がユーザーの中で曖昧である"
+        ],
+        "best_discriminating_question": "『本物の生活』の具体的な条件を3つ挙げられるか？",
+        "testability_notes": "ユーザーに具体的な定義や基準を尋ねることで比較的容易に検証可能。",
+        "safety_risk_notes": "ユーザーの価値観や欲求を曖昧・未熟と断じる印象を与えると、反発や不快感を招く恐れがある。"
+      },
+      "rationale": "観察O1～O3を説明できるが、現象の背景を説明するというよりは、定義の曖昧さに着目したメタ的仮説。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "ユーザーの『本物志向』は自己イメージや他者との差異化欲求に基づいている"
+        ],
+        "best_discriminating_question": "『観光客らしい行動』や『ありきたりの旅』に対してどのような感情を抱くか？",
+        "testability_notes": "ユーザーの自己認識や他者との比較意識を質問することで検証可能だが、ややセンシティブな内容を含む。",
+        "safety_risk_notes": "ユーザーの動機を自己顕示や差異化欲求と断定することで、侮蔑的・攻撃的に受け取られるリスクが高い。"
+      },
+      "rationale": "O1～O3とOext2を説明でき、価値観・自己イメージに着目した仮説。リフレーミング要素が強く、提示時の配慮が必要。"
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [
+          "PKGではユーザーが地域文化や体験価値にも関心があることが示唆されており、観察の一部と矛盾する可能性がある。"
+        ],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4",
+          "O5"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A3"
+        ],
+        "best_discriminating_question": "旅館でしか得られない体験やサービスに興味を感じたことはありますか？",
+        "testability_notes": "ユーザーの体験価値への関心を具体的な質問で確認する。",
+        "safety_risk_notes": "体験価値を軽視していると受け取られないよう配慮が必要。"
+      },
+      "rationale": "観察を広く説明できるが、PKGとのズレがある。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4",
+          "O5"
+        ],
+        "key_assumptions": [
+          "A3"
+        ],
+        "best_discriminating_question": "他の場面でもコスパを重視して選択することが多いですか？",
+        "testability_notes": "他の消費行動でのコスパ重視傾向を尋ねる。",
+        "safety_risk_notes": "コスパ重視を肯定的に扱うことで安心感を与えやすい。"
+      },
+      "rationale": "ユーザーの価値観と整合的で、説明力が高い。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4",
+          "O5",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "A2"
+        ],
+        "best_discriminating_question": "周囲の人もビジネスホテルを選ぶことが多いですか？",
+        "testability_notes": "社会的影響の有無を確認する。",
+        "safety_risk_notes": "他人の選択に流されていると受け取られないよう注意。"
+      },
+      "rationale": "外部観察と整合し、社会的要因を説明できる。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [
+          "PKGでは地域文化や伝統体験への関心が高いことが示唆されており、仮説と矛盾する可能性がある。"
+        ],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4",
+          "O5"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A4"
+        ],
+        "best_discriminating_question": "地域文化や伝統体験に興味がありますか？",
+        "testability_notes": "文化体験への関心を直接確認する。",
+        "safety_risk_notes": "文化的価値を軽視していると受け取られないよう注意。"
+      },
+      "rationale": "観察は説明できるが、PKGとの整合性に課題。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4",
+          "O5",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "A3"
+        ],
+        "best_discriminating_question": "これまでに『高いけど納得できた』体験やサービスはありますか？",
+        "testability_notes": "納得感や体験価値への関心を問うことで検証可能。",
+        "safety_risk_notes": "『本当は体験価値も重視しているのでは？』という問いかけが、ユーザーにとって少し不快に感じる可能性がある。"
+      },
+      "rationale": "PKGの文化・体験価値への関心と外部観察を統合し、発言の意味を深く再解釈できる。"
+    }
+  ]
+}

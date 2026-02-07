@@ -1,0 +1,28 @@
+{
+  "triggers": [
+    {
+      "type": "information_gap",
+      "text": "現在の嵐山や竹林の状況が、ユーザーの記憶とどの程度異なるかが不明である。"
+    },
+    {
+      "type": "ambiguity",
+      "text": "『同じ感動』が何を意味するのか、具体的な内容が明確でない。"
+    },
+    {
+      "type": "focus",
+      "text": "過去の体験の再現に強いこだわりがあるが、なぜそこにこだわるのかは明示されていない。"
+    }
+  ],
+  "external_observations": [
+    {
+      "id": "Oext1",
+      "text": "現在の嵐山竹林は観光客が増え、混雑やマナー問題（落書き、私有地侵入など）が深刻化している。",
+      "source_url": "https://www.youtube.com/watch?v=Wovh0x4x4eQ"
+    },
+    {
+      "id": "Oext2",
+      "text": "朝早い時間帯や特定のルートでは、今でも比較的人が少なく静かな竹林を体験できる場合がある。",
+      "source_url": "https://souljem.hateblo.jp/entry/2021/06/30/232723"
+    }
+  ]
+}

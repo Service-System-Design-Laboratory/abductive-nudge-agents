@@ -1,0 +1,16 @@
+{
+  "triggers": [
+    {
+      "type": "information_gap",
+      "text": "対話システムの『技術的な面白さ』はPKGの興味・スキル領域で説明可能だが、『ユーザーにとってどんな価値があるのか分かりにくい』というフィードバックに対し、PKG内の『ユーザー価値の重視』ノードと観察O2の具体的な価値内容のギャップが埋まっていない。ユーザー価値の具体的な定義や評価指標がPKGに存在しない。"
+    },
+    {
+      "type": "ambiguity",
+      "text": "ペルソナは『研究の意義』『将来性への不安』『ユーザー価値の重視』を関心として持つが、観察O3（自分の手応え）とO4（方向性修正への迷い）がどの要素に基づいているか曖昧であり、フィードバックの受け止め方や修正の方向性が複数の解釈に分かれる。"
+    }
+  ],
+  "rag_queries": [],
+  "evidence_items": [],
+  "external_observations": [],
+  "notes": "RAG disabled (use_rag=false) — trigger identification only"
+}

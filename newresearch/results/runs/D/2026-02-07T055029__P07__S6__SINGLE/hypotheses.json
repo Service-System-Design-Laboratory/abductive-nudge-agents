@@ -1,0 +1,142 @@
+{
+  "hypotheses": [
+    {
+      "hypothesis_id": "H1",
+      "type": "psychological",
+      "explains": [
+        "O2",
+        "O4"
+      ],
+      "assumes": [
+        "A1",
+        "A3"
+      ],
+      "statement": "ユーザーは屋久島の原生林に対して深い敬意と愛着を持ち、自己の知識や体験を通じて特別なつながりを感じている。",
+      "mechanism": "繰り返し訪れることで自己効力感や親密感が高まり、他者との差異を意識するようになる。",
+      "predictions": [
+        "他の観光地よりも屋久島に特別な思い入れがある。",
+        "自分の体験や知識を語ることに誇りを感じる。"
+      ],
+      "discriminating_questions": [
+        "屋久島以外の自然や森に対しても同じような愛着を感じますか？"
+      ],
+      "persona_link": [
+        "pkg:p07_n2",
+        "pkg:p07_n7"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H2",
+      "type": "environmental",
+      "explains": [
+        "O2",
+        "O3"
+      ],
+      "assumes": [
+        "A2"
+      ],
+      "statement": "世界遺産登録による観光地化や人の手の介入が進み、ユーザーは『本来の原生林』へのノスタルジーや危機感を抱いている。",
+      "mechanism": "観光客の増加や整備による環境変化を目の当たりにし、かつての静けさや神秘性を守りたいという意識が強まる。",
+      "predictions": [
+        "世界遺産登録前後で雰囲気や体験の違いを感じている。",
+        "観光客の増加や整備に対して複雑な思いがある。"
+      ],
+      "discriminating_questions": [
+        "観光地化や整備による変化についてどう感じていますか？"
+      ],
+      "persona_link": [
+        "pkg:p07_n2"
+      ],
+      "evidence_link": [
+        "ev:Oext1",
+        "ev:Oext2",
+        "ev:Oext3"
+      ],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H3",
+      "type": "social",
+      "explains": [
+        "O4"
+      ],
+      "assumes": [
+        "A3"
+      ],
+      "statement": "『誰よりも分かっているつもり』という発言は、屋久島に関する知識や経験を通じて他者との差別化や承認欲求を満たそうとする意図がある。",
+      "mechanism": "専門性や独自性を強調することで、自己の社会的地位やアイデンティティを確立しようとする。",
+      "predictions": [
+        "他者と屋久島の知識や体験について語り合うことが多い。",
+        "自分の経験が独自であることを強調する傾向がある。"
+      ],
+      "discriminating_questions": [
+        "屋久島について他の人と意見が異なった経験はありますか？"
+      ],
+      "persona_link": [
+        "pkg:p07_n3"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H4",
+      "type": "value",
+      "explains": [
+        "O2",
+        "O3"
+      ],
+      "assumes": [
+        "A1"
+      ],
+      "statement": "ユーザーは屋久島の原生林の『人の手が入っていない』という価値そのものを大切にしており、自然のままの姿を守ることに強い関心がある。",
+      "mechanism": "地域文化や自然環境に敬意を持つ価値観が、原生林の保全や伝統への共感につながっている。",
+      "predictions": [
+        "自然保護や伝統文化の継承に関心が高い。",
+        "人為的な変化や開発に対して慎重な立場をとる。"
+      ],
+      "discriminating_questions": [
+        "自然保護活動や地域文化の継承に参加したことはありますか？"
+      ],
+      "persona_link": [
+        "pkg:p07_n2",
+        "pkg:p07_n4"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H5",
+      "type": "paradox",
+      "explains": [
+        "O2",
+        "O3",
+        "O4",
+        "Oext1",
+        "Oext3"
+      ],
+      "assumes": [
+        "A2",
+        "A3"
+      ],
+      "statement": "『人の手が入っていない原生林』と感じているが、実際は観光地化や保護政策による人為的な介入が進んでおり、ユーザーの『誰よりも分かっている』という感覚は、かえって変化への無自覚やノスタルジーの表れかもしれない。",
+      "mechanism": "長年通うことで『変わらないもの』として森を捉えたい気持ちが強くなり、実際の変化や人為的な要素を無意識に見逃している可能性がある。",
+      "predictions": [
+        "観光地化や整備の変化に気づきにくい、あるいは受け入れにくい傾向がある。",
+        "『本来の森』というイメージを大切にし、現状とのギャップに気づきにくい。"
+      ],
+      "discriminating_questions": [
+        "最近の屋久島の森で、以前と比べて変わったと感じることはありますか？"
+      ],
+      "persona_link": [
+        "pkg:p07_n2"
+      ],
+      "evidence_link": [
+        "ev:Oext1",
+        "ev:Oext3"
+      ],
+      "is_reframing": true
+    }
+  ]
+}

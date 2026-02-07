@@ -1,0 +1,92 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーがPKGで示された『地域文化への敬意』という価値観を実際に持っている",
+          "伝統建築や歴史的街並みへの評価がその価値観に基づいている"
+        ],
+        "best_discriminating_question": "金沢以外の伝統的な街並みにも同様の美しさや価値を感じますか？",
+        "testability_notes": "ユーザーへの追加質問で比較的容易に検証可能。PKGの価値観ノードとも整合性が取れている。",
+        "safety_risk_notes": "価値観の断定が強すぎると、ユーザーの多様な動機を見落とすリスクがある。"
+      },
+      "rationale": "PKGとの整合性が高く、観察O1・O2をよく説明するが、O3の『日本の美の極み』という強い表現の内面動機までは十分にカバーしきれていない。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1"
+        ],
+        "key_assumptions": [
+          "ユーザーがPKGで示された『計画的運営』スキルを旅行計画にも発揮している",
+          "旅行先選定に文化的価値を重視する傾向がある"
+        ],
+        "best_discriminating_question": "金沢旅行の計画を立てる際、どれくらい事前に情報収集をしましたか？",
+        "testability_notes": "旅行計画の詳細や事前調査の有無をユーザーに質問することで検証可能。",
+        "safety_risk_notes": "スキル主導の解釈がユーザーの価値観や感情的動機を過小評価する可能性がある。"
+      },
+      "rationale": "PKGのスキルノードに基づきO1（行動）を説明できるが、O2・O3の感情的・価値的側面までは十分に説明できていない。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "ユーザーが伝統文化の評価を通じて社会的承認やつながりを求めている",
+          "PKGの『地域文化への敬意』が社会的動機と結びついている"
+        ],
+        "best_discriminating_question": "金沢で地元の人と交流したいと思いますか？",
+        "testability_notes": "ユーザーの社会的動機や現地交流への関心を尋ねることで検証可能。",
+        "safety_risk_notes": "社会的承認欲求を強調しすぎると、ユーザーの純粋な美的体験や個人的価値観を軽視するリスクがある。"
+      },
+      "rationale": "PKGの価値観ノードと社会的動機を結びつけてO2・O3を説明できるが、O1（行動の直接的動機）にはやや弱い。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3"
+        ],
+        "key_assumptions": [
+          "ユーザーが伝統的な美や秩序に心理的な安心感や充足感を求めている"
+        ],
+        "best_discriminating_question": "伝統的な美しさの中にいるとき、どのような気持ちになりますか？",
+        "testability_notes": "ユーザーの感情や心理的充足感について直接質問する必要があり、やや主観的だが検証は可能。",
+        "safety_risk_notes": "心理的動機の推定はユーザーの自己認識とズレる場合があり、断定的に伝えると違和感を与える恐れがある。"
+      },
+      "rationale": "O3の『日本の美の極み』という強い感情的評価を最も直接的に説明できるが、他の観察（O1・O2）への説明力は限定的。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "ユーザーが伝統文化の評価を通じて自己像やアイデンティティを確認・誇示したいという動機を持っている",
+          "PKGの価値観ノードが自己承認の手段として機能している"
+        ],
+        "best_discriminating_question": "伝統文化を評価することで、どのような自分でありたいと思っていますか？",
+        "testability_notes": "ユーザーの自己認識やアイデンティティに関する質問が必要で、やや深い自己開示を要するため検証は難易度中程度。",
+        "safety_risk_notes": "ユーザーの動機を『誇示』や『自己承認』と解釈することは、場合によっては不快感や反発を招くリスクがある。"
+      },
+      "rationale": "観察O1～O3を一貫して説明できるが、動機の解釈がやや深読みであり、ユーザーの受け止め方によっては抵抗感を生じやすい。"
+    }
+  ]
+}

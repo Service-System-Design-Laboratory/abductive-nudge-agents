@@ -1,0 +1,16 @@
+{
+  "triggers": [
+    {
+      "type": "information_gap",
+      "text": "ユーザーが『ひがし茶屋街の街並みこそが日本の美の極み』と述べているが、PKGにはひがし茶屋街や日本の美に関する具体的な価値観・評価基準が記載されていない。"
+    },
+    {
+      "type": "information_gap",
+      "text": "ユーザーが金沢を『江戸時代の風情が一番よく残っている街』と評価しているが、PKGには江戸時代の風情や他都市との比較に関する情報が存在しない。"
+    }
+  ],
+  "rag_queries": [],
+  "evidence_items": [],
+  "external_observations": [],
+  "notes": "RAG disabled (use_rag=false) — trigger identification only"
+}

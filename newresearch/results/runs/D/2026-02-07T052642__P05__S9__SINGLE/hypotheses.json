@@ -1,0 +1,146 @@
+{
+  "hypotheses": [
+    {
+      "hypothesis_id": "H1",
+      "type": "psychological",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "O4"
+      ],
+      "assumes": [
+        "A3"
+      ],
+      "statement": "ユーザーは節約志向が強く、宿泊費にお金をかけること自体に心理的抵抗を感じている。",
+      "mechanism": "節約志向やコスト最適化の価値観が、宿泊費の高額化を無駄と感じさせている。",
+      "predictions": [
+        "他の消費行動でもコストパフォーマンスを重視する傾向がある",
+        "高価格なサービス全般に懐疑的である"
+      ],
+      "discriminating_questions": [
+        "他の分野でも価格が高いものに対して同じような感覚を持ちますか？"
+      ],
+      "persona_link": [
+        "pkg:p05_n2",
+        "pkg:p05_n3"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H2",
+      "type": "value",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "O4",
+        "Oext1"
+      ],
+      "assumes": [
+        "A3"
+      ],
+      "statement": "ユーザーは『寝る場所はどこでも同じ』という価値観を持ち、体験やサービスよりもコスト効率を最重視している。",
+      "mechanism": "宿泊先の選択基準が体験や快適さではなく、費用対効果に集中している。",
+      "predictions": [
+        "旅先での宿泊以外の体験や食事にはお金をかける可能性がある",
+        "宿泊先の選定理由を他人に説明する際もコスパを強調する"
+      ],
+      "discriminating_questions": [
+        "宿泊以外の部分にはお金をかけたいと思いますか？"
+      ],
+      "persona_link": [
+        "pkg:p05_n2",
+        "pkg:p05_n6"
+      ],
+      "evidence_link": [
+        "ev:Oext1"
+      ],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H3",
+      "type": "social",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "O4",
+        "Oext2"
+      ],
+      "assumes": [
+        "A2",
+        "A3"
+      ],
+      "statement": "ユーザーは限られた予算内での旅行が、むしろ高額な旅行よりも楽しいという社会的経験やストーリーを重視している。",
+      "mechanism": "コスト制約の中で工夫すること自体が満足感や話題になると感じている。",
+      "predictions": [
+        "低予算旅行の体験談を語ることが多い",
+        "安くて良い体験を見つけることに達成感を感じる"
+      ],
+      "discriminating_questions": [
+        "低予算で工夫した旅行の体験を人に話すのが好きですか？"
+      ],
+      "persona_link": [
+        "pkg:p05_n6"
+      ],
+      "evidence_link": [
+        "ev:Oext2"
+      ],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H4",
+      "type": "evidence_gap",
+      "explains": [
+        "O1",
+        "O4"
+      ],
+      "assumes": [
+        "A4"
+      ],
+      "statement": "ユーザーは旅館の高価格の理由や価値を十分に知らず、情報不足から納得できていない。",
+      "mechanism": "体験やサービスの違いについての情報が不足しており、価格差の根拠が曖昧なまま不満を感じている。",
+      "predictions": [
+        "旅館のサービス内容や価値について詳細を知らない",
+        "説明を受ければ見方が変わる可能性がある"
+      ],
+      "discriminating_questions": [
+        "旅館の高価格の理由やサービス内容を詳しく知っていますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H5",
+      "type": "psychological",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "O4",
+        "Oext3"
+      ],
+      "assumes": [
+        "A1",
+        "A4"
+      ],
+      "statement": "（裏切る仮説）ユーザーが強くコスパを主張するのは、実は『高い宿泊先で得られる体験やサービスに価値を見出せない自分』を認めたくないためであり、他者との比較や自己正当化のためにコストを強調している。",
+      "mechanism": "高価格な体験を楽しめない・理解できない自分を守るために、コストパフォーマンスを前面に出して合理化している。",
+      "predictions": [
+        "高価格な宿泊先の体験を他者と比較して引け目や違和感を感じることがある",
+        "本当は高価格な体験に興味があるが、納得できる理由がないと選べない"
+      ],
+      "discriminating_questions": [
+        "高価格な宿泊先を選ぶ友人や知人に対して、どんな気持ちになりますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [
+        "ev:Oext3"
+      ],
+      "is_reframing": true
+    }
+  ]
+}

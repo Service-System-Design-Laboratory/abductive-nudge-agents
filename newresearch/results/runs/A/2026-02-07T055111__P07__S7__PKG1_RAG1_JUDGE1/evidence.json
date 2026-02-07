@@ -1,0 +1,73 @@
+{
+  "triggers": [
+    {
+      "type": "information_gap",
+      "text": "ユーザーは治安情報を毎日チェックし、ツアーやホテル周辺に限定して行動しているが、これ以外の安全対策やコツについてPKGに情報がない。"
+    },
+    {
+      "type": "focus",
+      "text": "ユーザーはもっと安全に旅行するための具体的なコツを求めているが、PKGではその詳細がカバーされていない。"
+    }
+  ],
+  "rag_queries": [
+    "海外旅行でさらに安全に過ごすための具体的なコツや対策",
+    "海外旅行の安全対策でツアーや治安情報以外に有効な方法",
+    "海外旅行中にホテル周辺以外でも安全を確保する方法",
+    "海外旅行者が実践している安全確保のベストプラクティス"
+  ],
+  "evidence_items": [
+    {
+      "rank": 1,
+      "title": "海外旅行を予定されている皆様へ - 外務省 海外安全ホームページ",
+      "snippet": "一見、安全と思われる国・地域でも特定の場所や時間帯では、危険な場合があります。事前に渡航先の犯罪多発地域をチェックしておき、そうした場所には近づかないことが大切 ...",
+      "url": "https://www.anzen.mofa.go.jp/c_info/message.html",
+      "source_type": "gov"
+    },
+    {
+      "rank": 2,
+      "title": "海外旅行を安全・健康に楽しむために必要な準備と知識",
+      "snippet": "安全に海外旅行を楽しむため、事件に巻き込まれないよう防犯対策を徹底しましょう。また、病気や体調不良にならないように食事や行動にも注意が必要です。 防犯対策の徹底.",
+      "url": "https://www.gov-online.go.jp/article/202412/entry-6907.html",
+      "source_type": "gov"
+    },
+    {
+      "rank": 3,
+      "title": "ホテルの鍵と防犯の秘密: 安全な滞在をサポートする方法",
+      "snippet": "ホテルの部屋に入ったら、最初に確認したいのがドアロックの状態です。ドアロックは宿泊者の安全を守る最も基本的な設備ですが、時に見落としがちです。",
+      "url": "https://kagipro-tsuchiura.com/column/b0ad2c1e-d8dd-4f67-90d7-88f10bba1bee",
+      "source_type": "com"
+    },
+    {
+      "rank": 4,
+      "title": "海外旅行で犯罪被害に遭わないために！旅行中の心得と ...",
+      "snippet": "防犯グッズを活用することで犯罪被害に遭うリスクを低減できます。 代表的なものとしてはスーツケースを固定しておくセキュリティーワイヤーやケースの中 ...",
+      "url": "https://www.alsok.co.jp/person/recommend/175/",
+      "source_type": "com"
+    },
+    {
+      "rank": 5,
+      "title": "【海外旅のトラブル大全】旅先で危ない目にあわないため ...",
+      "snippet": "事前に下調べすること · ◾️旅先の治安を外務省のホームページで調べる。 · ◾️現地のよくある犯罪の手口を調べておく · 乗ると危ない交通機関？",
+      "url": "https://note.com/sara_niconico/n/nbc0e0046c809",
+      "source_type": "other"
+    }
+  ],
+  "external_observations": [
+    {
+      "id": "Oext1",
+      "text": "安全とされる観光地でも、特定の場所や時間帯は危険であり、観光客の行動パターンが犯罪者に狙われやすい構造がある。",
+      "source_url": "https://www.anzen.mofa.go.jp/c_info/message.html"
+    },
+    {
+      "id": "Oext2",
+      "text": "防犯対策や安全情報の提供は観光産業の一部として商品化されており、旅行者の不安を解消するサービスやグッズが多数販売されている。",
+      "source_url": "https://www.alsok.co.jp/person/recommend/175/"
+    },
+    {
+      "id": "Oext3",
+      "text": "『安全な旅』というイメージ自体が演出されており、ホテルや旅行会社は本物らしさや安心感を強調するマーケティングを行っている。",
+      "source_url": "https://kagipro-tsuchiura.com/column/b0ad2c1e-d8dd-4f67-90d7-88f10bba1bee"
+    }
+  ],
+  "notes": ""
+}

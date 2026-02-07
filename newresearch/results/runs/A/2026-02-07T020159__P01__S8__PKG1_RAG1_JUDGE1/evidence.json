@@ -1,0 +1,73 @@
+{
+  "triggers": [
+    {
+      "type": "information_gap",
+      "text": "学生時代に体験した嵐山や竹林の静けさ・空気が、現在も同じように味わえるかどうかPKGでは説明できない。観察O2とO4、仮定A3の間に、現状の京都の観光地の混雑状況や環境変化に関する情報が欠落している。"
+    },
+    {
+      "type": "ambiguity",
+      "text": "『同じルートを辿る』ことで過去と同じ感動が得られるかどうかは複数の解釈が可能。感動の再現性や、体験の主観的要素についてPKGでは明確な説明がない。"
+    }
+  ],
+  "rag_queries": [
+    "現在の嵐山や竹林の道の混雑状況や静けさはどうなっているか",
+    "京都の観光地（嵐山・竹林の道）の環境や雰囲気は過去と比べて変化しているか",
+    "過去と同じルートを辿った場合、同じ感動を得られる可能性はどの程度あるか",
+    "嵐山や竹林の道で静けさや自然を味わうためのおすすめの時間帯や方法"
+  ],
+  "evidence_items": [
+    {
+      "rank": 1,
+      "title": "混雑回避に役立つ観光快適度マップ",
+      "snippet": "ビッグデータをもとに予測したエリア別の混雑情報を発信しています。ライブカメラの映像や、おすすめスポット記事も参考に、混雑する時間や場所を上手に避けながら、 ...",
+      "url": "https://ja.kyoto.travel/comfort/saga-arashiyama/",
+      "source_type": "org"
+    },
+    {
+      "rank": 2,
+      "title": "嵐山の混雑状況をLIVEカメラでお出かけ前にチェック！",
+      "snippet": "お出かけ前に気になりますよね！ 嵐山周辺の混雑状況を知りたいときはぜひライブカメラをご活用ください♪ 【LIVE】 京都 嵯峨嵐山 渡月橋北詰ライブ中継カメラ（京都市 ...",
+      "url": "https://hotel-binario.jp/arashiyama/news/675",
+      "source_type": "com"
+    },
+    {
+      "rank": 3,
+      "title": "嵐山竹林の小径(竹林の道)周辺の渋滞情報",
+      "snippet": "嵐山竹林の小径(竹林の道)周辺の渋滞情報です。現在の渋滞情報および過去のデータを元に各道路で発生が予想される渋滞情報を確認できます。",
+      "url": "https://www.navitime.co.jp/probetraffic/poi?spot=02301-PN0000668",
+      "source_type": "com"
+    },
+    {
+      "rank": 4,
+      "title": "京都嵐山の絶景！美しい竹の道を散策しよう",
+      "snippet": "写真で見る以上に緑の瑞々しさや竹の高さを実感できます。 竹林の小径は比較的人も多くありませんので、ゆっくり歩きながら自分のペースで自然と調和でき ...",
+      "url": "https://www.lemon8-app.com/@creator_cotton/7538762400275677701?region=jp",
+      "source_type": "com"
+    },
+    {
+      "rank": 5,
+      "title": "京都観光におすすめの名所＆人気のスポットランキング",
+      "snippet": "嵯峨・嵐山が幻想的な灯りで彩られ、竹林の小径や渡月橋周辺が幽玄な雰囲気に包まれます。夜の静けさの中で、特別な京都の美しさを堪能できます。 4位 ...",
+      "url": "https://www.hankyu-travel.com/guide/kansai/kyoto/",
+      "source_type": "com"
+    }
+  ],
+  "external_observations": [
+    {
+      "id": "Oext1",
+      "text": "嵐山や竹林の道の混雑状況はビッグデータやライブカメラによってリアルタイムで監視・商品化されており、静けさや自然体験も観光快適度として数値化・提供されている。",
+      "source_url": "https://ja.kyoto.travel/comfort/saga-arashiyama/"
+    },
+    {
+      "id": "Oext2",
+      "text": "観光地の『静けさ』や『本物らしさ』は、夜間イベントや幻想的な演出によって意図的に作り出され、観光資源として消費されている。",
+      "source_url": "https://www.hankyu-travel.com/guide/kansai/kyoto/"
+    },
+    {
+      "id": "Oext3",
+      "text": "嵐山竹林の道は渋滞や混雑情報が日常的に配信されており、訪問者の行動がデータ化されることで観光地の体験そのものが変質している可能性がある。",
+      "source_url": "https://www.navitime.co.jp/probetraffic/poi?spot=02301-PN0000668"
+    }
+  ],
+  "notes": ""
+}

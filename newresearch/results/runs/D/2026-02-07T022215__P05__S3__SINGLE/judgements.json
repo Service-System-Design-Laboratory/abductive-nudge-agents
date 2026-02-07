@@ -1,0 +1,97 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A1"
+        ],
+        "best_discriminating_question": "伝統的な街並みを歩くことでどんな気持ちになりますか？",
+        "testability_notes": "ユーザーの感情や体験談を聞くことで検証可能。",
+        "safety_risk_notes": "個人的な感情への言及のため、慎重な表現が必要。"
+      },
+      "rationale": "伝統建築や歴史的な街並みがユーザーにとって心の安らぎや非日常感をもたらしている可能性を説明できる。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A3"
+        ],
+        "best_discriminating_question": "他の伝統的な街並みや文化財にも同じような美しさを感じますか？",
+        "testability_notes": "他の伝統的な場所への関心や評価を尋ねることで検証可能。",
+        "safety_risk_notes": "価値観への共感を示しつつ、押し付けにならないよう注意。"
+      },
+      "rationale": "伝統美や歴史的価値を重視する価値観が、ユーザーの発言をよく説明している。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "A2"
+        ],
+        "best_discriminating_question": "観光地化や商業化についてどう感じますか？",
+        "testability_notes": "観光地化に対する意見を聞くことで検証可能。",
+        "safety_risk_notes": "現代社会や観光業への批判的な立場を示す場合、ユーザーの意図とズレるリスクあり。"
+      },
+      "rationale": "伝統的な価値観の強調が、観光地化へのアンチテーゼとして機能している可能性を示す。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "A3"
+        ],
+        "best_discriminating_question": "保存状態や景観の良さが旅行先選びの決め手になりますか？",
+        "testability_notes": "保存状態や景観へのこだわりを尋ねることで検証可能。",
+        "safety_risk_notes": "景観重視の価値観を肯定的に扱う必要がある。"
+      },
+      "rationale": "保存状態や景観の良さがユーザーの評価に影響していることを説明できる。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3",
+          "Oext2",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "A1"
+        ],
+        "best_discriminating_question": "観光客向けに保存・演出された伝統的な街並みについて、どのように感じますか？",
+        "testability_notes": "観光地化や保存活動に対する意識を尋ねることで検証可能。",
+        "safety_risk_notes": "ユーザーの美的評価の根拠を問い直すため、やや不快感を与える可能性あり。丁寧な言い回しが必要。"
+      },
+      "rationale": "ユーザーの美的評価が観光地としての商品化や演出された本物らしさ（performative authenticity）に依存している可能性を指摘し、発言の意味を大きく変える。"
+    }
+  ]
+}

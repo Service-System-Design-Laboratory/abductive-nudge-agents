@@ -1,0 +1,59 @@
+{
+  "triggers": [
+    {
+      "type": "information_gap",
+      "text": "ユーザーが求める『本物の生活が残っている場所』や『地元の人しか知らない場所』の具体例や特徴がPKGや観察・仮定からは明らかでない。どのような場所や活動が該当するのか情報が不足している。"
+    },
+    {
+      "type": "focus",
+      "text": "ユーザーは観光客向けの演出を避け、地元の人の日常や生活に強く興味を持っている点が特に注目される。"
+    }
+  ],
+  "rag_queries": [
+    "地元の人しか知らない本物の生活が残っている場所の具体例",
+    "観光地化されていない地域文化や生活を体験できるスポット",
+    "看板が出ていない地元民向けの場所を探す方法",
+    "観光客向け演出がない本物の生活を感じられる活動やイベント"
+  ],
+  "evidence_items": [
+    {
+      "rank": 1,
+      "title": "地元文化や生活を体験する新しいスタイル！着地型旅行とは ...",
+      "snippet": "例えば、地元の家庭に滞在して家庭料理を味わったり、伝統的な工芸品作りを体験したりすることが一般的です。さらに、地元のガイドが案内するツアーに参加 ...",
+      "url": "https://match.sharebase.jp/article/144?srsltid=AfmBOopNTqcyZrWYtPq-mRDF5Gk70FbHrFiAQIpcC0DkP8B7vpSaX6AG",
+      "source_type": "com"
+    },
+    {
+      "rank": 2,
+      "title": "外国人向け日本文化体験アクティビティ20選！インバウンド ...",
+      "snippet": "本記事では、インバウンド観光の意味、日本らしい文化・日本らしい体験の特徴、外国人が日本文化を体験できるアクティビティ20選を紹介します。",
+      "url": "https://ikusa.jp/20180403730",
+      "source_type": "com"
+    },
+    {
+      "rank": 3,
+      "title": "〔第3回〕地域に眠っているお宝を探し出すまちづくり",
+      "snippet": "今回は、地域の中で眠っている地域のお宝を探し出すための手法についてお伝えしたいと思います。 (1)地域の個性とは. 卑近な例として、人の個性から考えて ...",
+      "url": "https://www.machi-dukurikumagaya.com/sports/sports-5740/",
+      "source_type": "org"
+    }
+  ],
+  "external_observations": [
+    {
+      "id": "Oext1",
+      "text": "『地元の人しか知らない』生活や文化体験は、観光商品として積極的に企画・販売されており、ローカル志向自体がマーケティングの対象となっている。",
+      "source_url": "https://match.sharebase.jp/article/144?srsltid=AfmBOopNTqcyZrWYtPq-mRDF5Gk70FbHrFiAQIpcC0DkP8B7vpSaX6AG"
+    },
+    {
+      "id": "Oext2",
+      "text": "『本物の生活』や伝統的な体験は、外国人観光客向けに『日本らしさ』として演出され、体験型アクティビティとしてパッケージ化されている。",
+      "source_url": "https://ikusa.jp/20180403730"
+    },
+    {
+      "id": "Oext3",
+      "text": "地域の『隠れたお宝』や個性的な場所は、まちづくりや観光振興の文脈で発掘・再定義され、外部からの注目によって本来の姿が変質する可能性がある。",
+      "source_url": "https://www.machi-dukurikumagaya.com/sports/sports-5740/"
+    }
+  ],
+  "notes": ""
+}

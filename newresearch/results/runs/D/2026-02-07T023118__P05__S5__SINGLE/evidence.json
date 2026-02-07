@@ -1,0 +1,27 @@
+{
+  "triggers": [
+    {
+      "type": "focus",
+      "text": "旅行の全要素を徹底的にコストカットしている点に集中している。"
+    },
+    {
+      "type": "information_gap",
+      "text": "節約以外の旅行の目的や楽しみについては言及がない。"
+    },
+    {
+      "type": "ambiguity",
+      "text": "どこまで快適さや体験を犠牲にしてもよいと考えているか不明。"
+    },
+    {
+      "type": "information_gap",
+      "text": "コンビニ以外の食事や無料体験の活用について検討したか不明。"
+    }
+  ],
+  "external_observations": [
+    {
+      "id": "Oext1",
+      "text": "日帰り旅行にすれば宿泊費が不要となり、さらに大幅な節約が可能である。",
+      "source_url": "https://sakeinvest.com/hongkong-daytrip/"
+    }
+  ]
+}

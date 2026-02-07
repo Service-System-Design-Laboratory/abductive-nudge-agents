@@ -1,0 +1,99 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーが予期しないリスクに対して強い不安を持っていること",
+          "不安が行動範囲や旅行形態の選択に直接影響していること"
+        ],
+        "best_discriminating_question": "日常生活でも突発的な出来事を避ける傾向がありますか？",
+        "testability_notes": "ユーザーへの1～2問の質問で傾向を確認できるため、検証は比較的容易。",
+        "safety_risk_notes": "『不安傾向』という表現がユーザーの性格を断定的に見なされるリスクがある。"
+      },
+      "rationale": "O1, O2は説明できるが、O3, O4は不安傾向だけでは十分に説明しきれない可能性がある。心理的要因の強調は有力だが、断定的提示には注意が必要。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O4",
+          "O5"
+        ],
+        "key_assumptions": [
+          "ユーザーが節約志向と安全志向を同時に持っていること",
+          "コスト効率を重視した安全確保策を選択していること"
+        ],
+        "best_discriminating_question": "安全のために追加費用をかけることに抵抗がありますか？",
+        "testability_notes": "ユーザーの価値観や行動選好を直接質問することで検証可能。PKG情報とも整合的。",
+        "safety_risk_notes": "『節約志向』の強調がユーザーの経済状況を過度に推測していると受け取られる可能性がある。"
+      },
+      "rationale": "PKGの内容と観察O2, O4, O5を無理なく説明できる。コストと安全の両立という観点は他仮説と区別しやすい。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O4",
+          "O5"
+        ],
+        "key_assumptions": [
+          "ユーザーがデータ分析スキルを持ち、それを旅行の安全確保に活用していること",
+          "主観的な不安よりも客観的データを重視して意思決定していること"
+        ],
+        "best_discriminating_question": "安全対策を選ぶ際、口コミよりも公式なデータや統計を重視しますか？",
+        "testability_notes": "PKGのスキル情報とユーザーの行動を照合することで検証可能。追加質問で裏付けやすい。",
+        "safety_risk_notes": "スキルの過大評価や、主観的な不安を軽視していると受け取られるリスクがある。"
+      },
+      "rationale": "O4, O5の説明には有力だが、他の観察（O1, O2, O3）には直接的な説明力が弱い。PKGとの整合性は高い。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3",
+          "O5"
+        ],
+        "key_assumptions": [
+          "ユーザーが安全性と低予算という2つの制約を同時に重視していること",
+          "その結果として自由行動や冒険性を抑制していること"
+        ],
+        "best_discriminating_question": "安全とコストのどちらかを優先しなければならない場合、どちらを選びますか？",
+        "testability_notes": "ユーザーの優先順位や行動選好を質問することで検証可能。PKG情報とも合致。",
+        "safety_risk_notes": "『冒険性を犠牲にしている』という表現がユーザーの主体性を否定的に捉えられるリスクがある。"
+      },
+      "rationale": "O2, O3, O5をバランスよく説明でき、PKGとも整合的。制約のトレードオフという観点が他仮説と差別化しやすい。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4",
+          "O5"
+        ],
+        "key_assumptions": [
+          "ユーザーが本質的に変化や未知の体験を避ける傾向を持っていること",
+          "安全志向はその自己イメージの合理化手段であること"
+        ],
+        "best_discriminating_question": "安全が完全に保証された場合でも、自由行動や未知の体験に積極的になれますか？",
+        "testability_notes": "ユーザーの自己認識や行動理由を深掘りする必要があり、検証にはやや踏み込んだ質問が必要。",
+        "safety_risk_notes": "ユーザーの自己像や動機を否定的に捉える可能性があり、傷つけるリスクや反発を招きやすい。"
+      },
+      "rationale": "全観察を説明できるが、心理的動機の深読みが強く、ユーザーへの配慮が特に重要。リフレーミング仮説として有用だが、慎重な提示が必要。"
+    }
+  ]
+}

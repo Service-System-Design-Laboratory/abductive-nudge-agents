@@ -1,0 +1,135 @@
+{
+  "hypotheses": [
+    {
+      "hypothesis_id": "H1",
+      "type": "psychological",
+      "explains": [
+        "O1",
+        "O2",
+        "O3"
+      ],
+      "assumes": [
+        "A1",
+        "A4"
+      ],
+      "statement": "ユーザーは計画的な行動や準備を好み、写真撮影もその一環として徹底している。",
+      "mechanism": "計画的運営やリスク回避の価値観が、撮影行動の徹底性や効率化志向に現れている。",
+      "predictions": [
+        "撮影前にロケーションや天候、時間帯を事前に調べている",
+        "機材や撮影手順にこだわりがある"
+      ],
+      "discriminating_questions": [
+        "撮影前にどの程度計画や下調べをしていますか？"
+      ],
+      "persona_link": [
+        "pkg:p07_n1",
+        "pkg:p07_n6"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H2",
+      "type": "social",
+      "explains": [
+        "O3",
+        "O4"
+      ],
+      "assumes": [
+        "A2"
+      ],
+      "statement": "SNSでの反応や評価がユーザーの満足度や行動に強く影響している。",
+      "mechanism": "他者からの承認や評価が、完璧な写真を求める動機となり、効率化もSNS投稿の頻度や質向上のためである。",
+      "predictions": [
+        "SNSでの『いいね』やコメント数を気にしている",
+        "他者の投稿と自分の写真を比較することが多い"
+      ],
+      "discriminating_questions": [
+        "SNSでの反応や評価は、写真撮影のモチベーションにどのくらい影響しますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H3",
+      "type": "skill",
+      "explains": [
+        "O2",
+        "O4"
+      ],
+      "assumes": [
+        "A1",
+        "A4"
+      ],
+      "statement": "ユーザーは撮影技術や機材の工夫による効率化を求めている。",
+      "mechanism": "プロの写真家のように、機材や撮影テクニックの最適化が効率化の鍵と考えている。",
+      "predictions": [
+        "新しい撮影機材やフィルターに関心がある",
+        "撮影手順や設定を工夫している"
+      ],
+      "discriminating_questions": [
+        "撮影機材やテクニックの工夫に興味はありますか？"
+      ],
+      "persona_link": [
+        "pkg:p07_n1",
+        "pkg:p07_n8"
+      ],
+      "evidence_link": [
+        "ev:Oext3"
+      ],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H4",
+      "type": "environmental",
+      "explains": [
+        "O2",
+        "O4"
+      ],
+      "assumes": [
+        "A1"
+      ],
+      "statement": "自然光や時間帯など環境要因を活かすことで、効率的に映える写真が撮れると考えている。",
+      "mechanism": "『ゴールデンアワー』など、環境条件の工夫が効率化のポイントである。",
+      "predictions": [
+        "撮影時刻や天候に強いこだわりがある",
+        "自然光を活かした写真が多い"
+      ],
+      "discriminating_questions": [
+        "撮影時刻や自然光の使い方にこだわりはありますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [
+        "ev:Oext2"
+      ],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H5",
+      "type": "evidence_gap",
+      "explains": [
+        "O3",
+        "O4",
+        "Oext1"
+      ],
+      "assumes": [
+        "A3"
+      ],
+      "statement": "『完璧な写真』やSNS映えを追求する旅の目的自体が、時代や社会の変化に影響されており、今後価値観が大きく変わる可能性がある。実は効率化を求める背景には、写真以外の旅の体験や新しい価値観への関心が芽生えつつあるのかもしれない。",
+      "mechanism": "写真体験やSNSの価値観が変化しつつあり、ユーザーも無意識にその影響を受けている。効率化志向は、写真以外の体験へのシフトや、写真そのものの意味の再考を促している可能性がある。",
+      "predictions": [
+        "最近、写真以外の旅の体験にも関心が出てきている",
+        "SNS投稿や写真撮影への熱意に揺らぎや違和感を感じることがある"
+      ],
+      "discriminating_questions": [
+        "写真以外の旅の体験や新しい価値観に興味が出てきたことはありますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [
+        "ev:Oext1"
+      ],
+      "is_reframing": true
+    }
+  ]
+}

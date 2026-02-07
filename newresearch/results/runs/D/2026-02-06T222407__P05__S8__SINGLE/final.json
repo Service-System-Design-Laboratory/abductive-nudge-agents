@@ -1,0 +1,348 @@
+{
+  "context": {
+    "observations": [
+      {
+        "id": "O1",
+        "text": "学生時代に京都に行った経験が忘れられない。"
+      },
+      {
+        "id": "O2",
+        "text": "学生時代の静かな嵐山や人がいない竹林の道の空気をもう一度味わいたいと思っている。"
+      },
+      {
+        "id": "O3",
+        "text": "同じルートを辿るつもりである。"
+      },
+      {
+        "id": "O4",
+        "text": "あの頃と同じ感動を取り戻したいと考えている。"
+      }
+    ],
+    "assumptions": [
+      {
+        "id": "A1",
+        "text": "現在の嵐山や竹林の道も、学生時代と同じように静かで人が少ないと考えている。",
+        "status": "tentative"
+      },
+      {
+        "id": "A2",
+        "text": "過去の体験と同じ感動を再現できると信じている。",
+        "status": "tentative"
+      },
+      {
+        "id": "A3",
+        "text": "静けさや人の少なさが感動の本質的要素である。",
+        "status": "tentative"
+      }
+    ],
+    "questions": [
+      "現在の嵐山や竹林の道がどれほど変化しているか知っているか？",
+      "過去の感動のどの部分が最も印象的だったのか？",
+      "同じルートを辿ること以外に、感動を再現するために考えていることはあるか？"
+    ],
+    "constraints": {
+      "tone": "supportive",
+      "safety": "avoid determinism"
+    }
+  },
+  "evidence": {
+    "triggers": [
+      {
+        "type": "information_gap",
+        "text": "現在の嵐山や竹林の道の状況が、ユーザーの記憶と一致しているか不明である。"
+      },
+      {
+        "type": "ambiguity",
+        "text": "『同じ感動』の具体的な内容が明確でない。"
+      },
+      {
+        "type": "contradiction",
+        "text": "外部情報では嵐山の竹林が観光客で賑わい、落書きや混雑など過去と異なる様子が報告されている。"
+      },
+      {
+        "type": "focus",
+        "text": "静けさや人の少なさが感動の本質かどうかに焦点がある。"
+      }
+    ],
+    "external_observations": [
+      {
+        "id": "Oext1",
+        "text": "嵐山の竹林は現在、朝でも観光客が多く、修学旅行生や外国人観光客で賑わっている。",
+        "source_url": "https://www.instagram.com/reel/DTiSDmMklFa/"
+      },
+      {
+        "id": "Oext2",
+        "text": "竹林の小径では落書きや私有地への無断侵入など、観光公害が深刻化している。",
+        "source_url": "https://www.asahi.com/articles/ASV1Y0J2HV1YPLZB00YM.html"
+      }
+    ]
+  },
+  "hypotheses": [
+    {
+      "hypothesis_id": "H1",
+      "type": "psychological",
+      "explains": [
+        "O1",
+        "O2",
+        "O4"
+      ],
+      "assumes": [
+        "A2",
+        "A3"
+      ],
+      "statement": "ユーザーは過去の体験に強いノスタルジーを感じており、同じ場所を訪れることでその感情を再現しようとしている。",
+      "mechanism": "記憶と感情が強く結びついており、同じ環境に身を置くことで当時の感動を呼び起こそうとする心理的傾向。",
+      "predictions": [
+        "同じ場所を訪れても、何かが違うと感じる可能性がある",
+        "過去の体験を理想化している"
+      ],
+      "discriminating_questions": [
+        "過去の感動と現在の体験が異なった場合、どのように感じると思いますか？"
+      ],
+      "persona_link": [
+        "p05_n6"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H2",
+      "type": "environmental",
+      "explains": [
+        "O2",
+        "O3",
+        "O4",
+        "Oext1"
+      ],
+      "assumes": [
+        "A1",
+        "A3"
+      ],
+      "statement": "現在の嵐山や竹林の道は観光客が増加し、学生時代のような静けさや人の少なさは失われている可能性が高い。",
+      "mechanism": "観光地化とインバウンド需要の増加により、環境が大きく変化している。",
+      "predictions": [
+        "訪問時に混雑や観光公害に直面する",
+        "静けさを感じることが難しい"
+      ],
+      "discriminating_questions": [
+        "最近の嵐山や竹林の道の写真やレビューを見たことがありますか？"
+      ],
+      "persona_link": [
+        "p05_n6"
+      ],
+      "evidence_link": [
+        "ev:1"
+      ],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H3",
+      "type": "value",
+      "explains": [
+        "O2",
+        "O4"
+      ],
+      "assumes": [
+        "A3"
+      ],
+      "statement": "静けさや人の少なさ自体がユーザーの価値観の中で重要な位置を占めており、それが感動の本質である。",
+      "mechanism": "節約志向や少人数交流を重視する価値観が、静かな環境を好む傾向と結びついている。",
+      "predictions": [
+        "混雑した場所では満足感が得られない",
+        "静かな場所を選んで旅行する傾向がある"
+      ],
+      "discriminating_questions": [
+        "人が多い場所でも同じように感動できると思いますか？"
+      ],
+      "persona_link": [
+        "p05_n2",
+        "p05_n7"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H4",
+      "type": "evidence_gap",
+      "explains": [
+        "O2",
+        "O3",
+        "O4",
+        "Oext1",
+        "Oext2"
+      ],
+      "assumes": [
+        "A1"
+      ],
+      "statement": "ユーザーが『同じ感動』を求めて同じルートを辿ろうとしているのは、実は現在の嵐山や竹林の環境変化（混雑・観光公害など）を知らない、あるいは直視していないためであり、情報ギャップが存在する。",
+      "mechanism": "過去の記憶と現実のギャップに気づいていないため、再現可能だと信じている。",
+      "predictions": [
+        "現地で予想外の混雑や環境変化に驚く",
+        "事前に現状を調べると計画を見直す可能性がある"
+      ],
+      "discriminating_questions": [
+        "現地の最新情報や混雑状況を調べてみたいと思いますか？"
+      ],
+      "persona_link": [
+        "n211"
+      ],
+      "evidence_link": [
+        "ev:1",
+        "ev:2"
+      ],
+      "is_reframing": true
+    },
+    {
+      "hypothesis_id": "H5",
+      "type": "goal_mismatch",
+      "explains": [
+        "O2",
+        "O4"
+      ],
+      "assumes": [
+        "A2"
+      ],
+      "statement": "ユーザーが『同じ感動』を求めているように見えるが、実は本当に求めているのは『過去の自分』や『あの頃の心の状態』であり、場所やルートは象徴に過ぎない。",
+      "mechanism": "体験の再現を通じて、過去の自己や安心感を取り戻したいという深層心理。",
+      "predictions": [
+        "同じ場所を訪れても、感動が再現できない場合に『自分が変わった』と感じる",
+        "他の場所でも同じような心の安らぎを求める傾向がある"
+      ],
+      "discriminating_questions": [
+        "もし同じ場所で同じ感動が得られなかった場合、それは場所のせいだと思いますか？それとも自分の変化だと感じますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [],
+      "is_reframing": true
+    }
+  ],
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O4"
+        ],
+        "key_assumptions": [
+          "A2",
+          "A3"
+        ],
+        "best_discriminating_question": "過去の感動と現在の体験が異なった場合、どのように感じると思いますか？",
+        "testability_notes": "再訪問時の感情の変化を観察することで検証可能。",
+        "safety_risk_notes": "ノスタルジーの肯定は安心感を与えるが、現実とのギャップに直面した際の落胆リスクあり。"
+      },
+      "rationale": "過去の体験と感情の再現を求める心理は自然だが、現実とのギャップを埋める説明には弱い。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3",
+          "O4",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A3"
+        ],
+        "best_discriminating_question": "最近の嵐山や竹林の道の写真やレビューを見たことがありますか？",
+        "testability_notes": "現地の現状を事前に調査し、体験と比較することで検証可能。",
+        "safety_risk_notes": "現実を伝えることでユーザーの期待を損なう可能性がある。"
+      },
+      "rationale": "外部情報とユーザーの期待のギャップを指摘できるが、ユーザーの内面動機には踏み込めていない。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O4"
+        ],
+        "key_assumptions": [
+          "A3"
+        ],
+        "best_discriminating_question": "人が多い場所でも同じように感動できると思いますか？",
+        "testability_notes": "異なる環境での感情の変化を比較することで検証可能。",
+        "safety_risk_notes": "価値観の肯定は安心感を与えるが、他の要素を見落とすリスクあり。"
+      },
+      "rationale": "価値観に基づく説明は納得感があるが、環境変化や情報ギャップの説明には弱い。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3",
+          "O4",
+          "Oext1",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "A1"
+        ],
+        "best_discriminating_question": "現地の最新情報や混雑状況を調べてみたいと思いますか？",
+        "testability_notes": "事前に現地の現状を調査し、計画や期待が変化するか観察することで検証可能。",
+        "safety_risk_notes": "情報ギャップを指摘することでユーザーの期待を裏切る可能性があるが、現実的な選択肢を提示できる。"
+      },
+      "rationale": "外部観察を踏まえ、ユーザーの期待と現実のギャップを明確に示す。発言の意味を大きく変える。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O4"
+        ],
+        "key_assumptions": [
+          "A2"
+        ],
+        "best_discriminating_question": "もし同じ場所で同じ感動が得られなかった場合、それは場所のせいだと思いますか？それとも自分の変化だと感じますか？",
+        "testability_notes": "体験後の自己評価や感情の変化を振り返ることで検証可能。",
+        "safety_risk_notes": "自己像の変化を指摘するため、やや不快感を与える可能性がある。"
+      },
+      "rationale": "感動の本質が場所ではなく自己像にある可能性を示し、深い再解釈を促す。"
+    }
+  ],
+  "decision": {
+    "selected_hypothesis_id": "H4",
+    "contrasting_hypothesis_id": "H1",
+    "selection_rationale": "H4を採用すると、ユーザーの『同じルートを辿れば、あの頃と同じ感動を取り戻せる』という発言の意味が、『実は現実の環境変化を知らないまま、過去の記憶を再現しようとしている』という情報ギャップの問題提起に変わる。H1は額面通り、ノスタルジーに基づく感情再現の試みとして読む。どちらの立場に立つかで、事前調査や現地での行動が大きく変わる。",
+    "user_facing_frame": {
+      "framing": "options",
+      "questions": [
+        "現地の最新の混雑状況や観光地の変化を事前に調べてみるのはどう思いますか？",
+        "それとも、過去の感動を信じて、あえて何も調べずに現地で感じるままに行動してみたいですか？"
+      ],
+      "options": [
+        "現実の変化を受け入れ、事前に情報を集めて新しい体験を計画する立場",
+        "過去の感動を大切にし、記憶のまま現地で感じることを重視する立場"
+      ]
+    }
+  },
+  "final_response": "京都の嵐山や竹林の道、学生時代の静けさや空気が忘れられないというお気持ち、よく伝わってきます。『同じルートを辿れば、あの頃と同じ感動が取り戻せるかもしれない』という思いはとても自然なものですよね。\n\nただ、最近の嵐山や竹林の道は観光客が増え、以前とは少し雰囲気が変わっているという情報もあります。もしよければ、現地の最新の混雑状況や観光地の変化を事前に調べてみるのはどう思いますか？それとも、あえて何も調べずに、現地で感じるままに行動してみるのも一つの選択です。\n\nどちらの立場に立つかで、きっと旅の準備や現地での過ごし方も変わってくるはずです。例えば、事前に情報を集めておけば、静かな時間帯や穴場スポットを見つけやすくなりますし、逆に記憶のまま現地に身を任せることで、思いがけない発見や新しい感動があるかもしれません。\n\n他にも、最近行った人のSNSやブログを5分だけ見てみるのも簡単ですし、同じように昔の思い出を大切にして旅をしている人の体験談も参考になるかもしれません。\n\nあなたは、どちらの立場で今回の旅を準備してみたいと思いますか？",
+  "markers": {
+    "empathy": {
+      "acknowledgement": true,
+      "reflection": true,
+      "perspective_prompt": true
+    },
+    "nudge": {
+      "easy": true,
+      "attractive": true,
+      "social": true,
+      "timely": true,
+      "has_question": true,
+      "has_options": true,
+      "has_small_action": true,
+      "directive_level": "low"
+    }
+  }
+}

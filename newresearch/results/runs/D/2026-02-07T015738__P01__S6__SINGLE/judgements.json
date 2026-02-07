@@ -1,0 +1,98 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "A1"
+        ],
+        "best_discriminating_question": "屋久島以外でも、同じように繰り返し訪れる場所はありますか？",
+        "testability_notes": "他の自然体験や繰り返し訪問の有無を聞くことで検証可能。",
+        "safety_risk_notes": "自己の誇りや愛着を肯定する内容なのでリスクは低い。"
+      },
+      "rationale": "ユーザーの発言全体を素直に説明できる。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3",
+          "O4",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "A2",
+          "A3"
+        ],
+        "best_discriminating_question": "最近の観光客の増加や変化について、どのように感じていますか？",
+        "testability_notes": "観光客や外部との比較意識を尋ねることで検証可能。",
+        "safety_risk_notes": "差別化欲求を指摘するため、ややセンシティブ。"
+      },
+      "rationale": "外部環境の変化と自己認識の関係に着目している。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3",
+          "O4",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "A1"
+        ],
+        "best_discriminating_question": "観光開発や新しい施設について、どのように感じますか？",
+        "testability_notes": "観光開発への態度を尋ねることで検証可能。",
+        "safety_risk_notes": "価値観の肯定なのでリスクは低い。"
+      },
+      "rationale": "自然との調和や本物志向という価値観を強調している。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O4"
+        ],
+        "key_assumptions": [
+          "A3"
+        ],
+        "best_discriminating_question": "屋久島の森について、他の人が知らないような知識やエピソードはありますか？",
+        "testability_notes": "具体的な知識やエピソードの有無で検証可能。",
+        "safety_risk_notes": "知識の有無を問うため、ややプライドに触れる可能性あり。"
+      },
+      "rationale": "知識や経験の豊富さを根拠にしている。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3",
+          "O4",
+          "Oext1",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "A2",
+          "A3"
+        ],
+        "best_discriminating_question": "ご自身の感じる『神秘性』や『本物らしさ』は、他の人やメディアの表現とどのように違うと思いますか？",
+        "testability_notes": "体験の語り口や表現がメディアと重なるかどうかを確認する。",
+        "safety_risk_notes": "本人の体験の独自性や本物感を疑うため、やや不快感を与えるリスクがある。"
+      },
+      "rationale": "体験の本物らしさが、実は外部の語りや期待に影響されている可能性を示唆し、発言の意味を大きく変える。"
+    }
+  ]
+}

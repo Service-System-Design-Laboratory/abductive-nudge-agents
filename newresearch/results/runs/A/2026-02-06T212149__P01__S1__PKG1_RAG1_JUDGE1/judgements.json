@@ -1,0 +1,108 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_link（pkg:n6, pkg:n2）がPKGに存在しないため、PKGとの整合性主張に根拠がない。"
+        ],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーが観光地化されていない地域の生活や文化を重視している。",
+          "ガイドブック的な場所よりも地域住民の日常や自然な営みへの共感・体験を求めている。"
+        ],
+        "best_discriminating_question": "観光地化されていない場所でどのような価値や魅力を感じましたか？",
+        "testability_notes": "ユーザーへの直接質問で検証可能。過去の体験や価値観を具体的に聞くことで判定しやすい。",
+        "safety_risk_notes": "価値観の断定的表現が強く、ユーザーの多様な動機や嗜好を見落とすリスクがある。"
+      },
+      "rationale": "観察O1・O2をよく説明するが、PKGとの根拠付けが不十分。価値観の断定が強く、他動機の可能性を排除しがち。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "観光メディアや旅行サイトによる商品化・マーケティングがユーザーの価値観や行動に強く影響している。",
+          "ユーザーが“本物”の喪失に幻滅している。"
+        ],
+        "best_discriminating_question": "観光サイトやSNSで紹介される『穴場』情報について、どのように感じますか？",
+        "testability_notes": "ユーザーのSNSや観光情報への反応を聞くことで比較的容易に検証可能。外部エビデンス（ev:1）も利用できる。",
+        "safety_risk_notes": "観光業界やメディアへの批判的視点が強調されるため、業界関係者や一般的観光客への配慮が必要。"
+      },
+      "rationale": "観察・外部事実を広く説明し、エビデンスもある。ユーザーの幻滅感に焦点を当てており、環境要因の影響を強調。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_link（pkg:n2）がPKGに存在しないため、PKGとの整合性主張に根拠がない。"
+        ],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "ユーザーは観光客として扱われることや演出された体験に抵抗感を持っている。",
+          "より主体的な参加や没入感を求めている。"
+        ],
+        "best_discriminating_question": "観光地で『お客さん』として扱われることに不快感を感じたことはありますか？",
+        "testability_notes": "ユーザーの心理的反応や体験談を聞くことで検証可能。主観的だが質問で明確化しやすい。",
+        "safety_risk_notes": "ユーザーの心理的動機を断定するため、本人の意図とズレる場合に違和感や反発を生む可能性がある。"
+      },
+      "rationale": "観察O1-O3をよく説明するが、PKGとの根拠付けに欠陥。心理的動機への踏み込みが深いが、断定的表現に注意。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_link（pkg:n6, pkg:n7）がPKGに存在しないため、PKGとの整合性主張に根拠がない。"
+        ],
+        "explains_confirmed": [
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "PKGや外部情報に『本物の生活が残る場所』の具体的定義が存在しない。",
+          "ユーザーの理想や欲求が曖昧である。"
+        ],
+        "best_discriminating_question": "『本物の生活』とは具体的にどのような場所や状況を指しますか？",
+        "testability_notes": "追加質問を通じてユーザーの認識の曖昧さを確認できる。情報ギャップの有無は比較的容易に検証可能。",
+        "safety_risk_notes": "ユーザーの価値観や欲求の曖昧さを指摘するため、否定的・批判的に受け取られるリスクがある。"
+      },
+      "rationale": "情報ギャップを指摘する仮説で、観察O2・O3の説明力は限定的。PKG根拠がなく、やや消極的な立場。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_link（pkg:n7）がPKGに存在しないため、PKGとの整合性主張に根拠がない。"
+        ],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "Oext2",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "ユーザーの“本物志向”は自己イメージや希少性欲求の表現である。",
+          "観光業界のマーケティングが希少性や本物らしさを演出している。"
+        ],
+        "best_discriminating_question": "『本物を知っている自分』という感覚に特別な価値を感じますか？",
+        "testability_notes": "ユーザーの自己認識や動機を深掘りする質問が必要で、やや検証に手間がかかるが、外部エビデンス（ev:3）も参照可能。",
+        "safety_risk_notes": "ユーザーの動機を“自己演出”や“差異化欲求”と解釈するため、侮蔑的・否定的に受け取られるリスクが高い。"
+      },
+      "rationale": "観察・外部事実を広く説明し、リフレーミング仮説として有力。ただしPKG根拠がなく、ユーザーへの配慮が必要。"
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーは計画性と効率性を重視している",
+          "事前リサーチや準備が現場での撮影効率に直結している"
+        ],
+        "best_discriminating_question": "旅行前に撮影スポットやアングルを事前にリサーチしていますか？",
+        "testability_notes": "ユーザーへの直接質問やPKG参照で容易に検証可能。旅前の行動履歴やインタビューで裏付けやすい。",
+        "safety_risk_notes": "計画性や効率性を重視しないユーザーにとっては疎外感や否定的印象を与える可能性がある。"
+      },
+      "rationale": "PKGに該当ノードがあり、観察O1・O2を十分説明できる。O4（コツを求めている）は部分的説明に留まるが、致命的な欠陥はない。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3"
+        ],
+        "key_assumptions": [
+          "ユーザーは地域文化や現地の人々への敬意を持っている",
+          "SNS映えと文化的配慮の両立を意識している"
+        ],
+        "best_discriminating_question": "SNS投稿用の写真に現地の文化や人々を意識的に取り入れていますか？",
+        "testability_notes": "SNS投稿内容やユーザーインタビューで検証可能。PKGにも関連ノードが存在し、裏付けしやすい。",
+        "safety_risk_notes": "文化的配慮を強調しすぎると、ユーザーの動機や価値観を一面的に決めつけるリスクがある。"
+      },
+      "rationale": "PKGに該当ノードがあり、O3（SNS投稿目的）を説明できるが、O2（撮影行動）への説明は弱い。エビデンス不足は現状の実験条件では致命的欠陥とならない。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O4",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "SNS映え撮影テクニックが商品化・標準化されている",
+          "ユーザーはその情報を積極的に収集・活用している"
+        ],
+        "best_discriminating_question": "SNS映えのための撮影テクニックや商品を積極的に試した経験がありますか？",
+        "testability_notes": "外部エビデンスや観察事実で裏付けやすい。ユーザーの行動履歴や発言からも検証可能。",
+        "safety_risk_notes": "ユーザーが“流行に流されている”と受け取ると否定的印象を与える可能性がある。"
+      },
+      "rationale": "外部エビデンス（ev:1, ev:2）やOext1により、環境要因としての説明力が高い。O2・O4も十分説明できている。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O4"
+        ],
+        "key_assumptions": [
+          "PKG内に撮影効率化やSNS映えテクニックの情報が不足している"
+        ],
+        "best_discriminating_question": "PKGに映える写真の効率的な撮影方法に関する具体的なノードや事例はありますか？",
+        "testability_notes": "PKGのノード数や内容を直接確認することで容易に検証可能。",
+        "safety_risk_notes": "知識ギャップの指摘はユーザーにとって有益だが、PKGの信頼性を損なうリスクもある。"
+      },
+      "rationale": "PKGの内容を直接参照することで検証でき、O4（コツを求めている）を的確に説明する。仮説自体はメタ的で、他仮説と補完的。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3",
+          "O4",
+          "Oext2",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "ユーザーは独自性よりも標準化された“映え”に安心感や承認を求めている",
+          "SNS映えの規範が強く内面化されている"
+        ],
+        "best_discriminating_question": "SNS投稿の際、他の人気投稿の構図や演出を強く参考にしていますか？",
+        "testability_notes": "ユーザーのSNS投稿傾向やインタビュー、外部事実で検証可能。心理的要因のため主観的な回答に依存しやすい。",
+        "safety_risk_notes": "ユーザーの動機や承認欲求を断定的に語ると、誤解や不快感を与えるリスクがある。"
+      },
+      "rationale": "外部エビデンスや観察Oext2・Oext3により、標準化・承認欲求の心理的メカニズムをよく説明できる。リフレーミング仮説として新規性が高い。"
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーが『寝る場所はどこでも同じ』という信念を持っていること",
+          "認知的単純化が価格判断に強く影響していること"
+        ],
+        "best_discriminating_question": "ユーザーは他の分野（例えばレストランや交通手段）でも体験価値を重視せずに価格だけで選ぶ傾向があるか？",
+        "testability_notes": "ユーザーの他分野での意思決定傾向を1問で確認できるため、比較的検証しやすい。",
+        "safety_risk_notes": "ユーザーの価値観を単純化しすぎて断定的に見える可能性があり、配慮が必要。"
+      },
+      "rationale": "観察O1・O2は十分説明できているが、O3はユーザーの信念の記述であり説明というより仮説の前提となっている。認知的単純化の影響を他分野で検証することで差別化が可能。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O4"
+        ],
+        "key_assumptions": [
+          "ユーザーが現時点で自然や地域行事への関心が薄いこと",
+          "コストパフォーマンス重視の価値観が強いこと"
+        ],
+        "best_discriminating_question": "ユーザーは自然体験や地域行事に興味があるが、宿泊代に上乗せされることに抵抗があるのか？",
+        "testability_notes": "PKG情報やユーザーへの直接質問で検証可能。やや深掘りが必要。",
+        "safety_risk_notes": "ユーザーの価値観を一面的に捉えてしまうリスクがある。"
+      },
+      "rationale": "O4（コスパ重視の希望）は説明できているが、他の観察には直接対応していない。PKGとの整合性が高く、価値観の現状把握として有効。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "ユーザーが市場構造や業界変化を実感していること"
+        ],
+        "best_discriminating_question": "ユーザーは宿泊業界の価格戦略や市場の変化についてどの程度知識や関心があるか？",
+        "testability_notes": "ユーザーの知識・関心を問う必要があり、やや検証しにくい（外部データや追加質問が必要）。",
+        "safety_risk_notes": "業界知識の有無を前提とするため、ユーザーにとっては説明が遠回りに感じられる可能性がある。"
+      },
+      "rationale": "外部エビデンス（ev:3）とOext3を根拠に業界構造の説明が成立。ユーザーの知識レベルが仮説の成立に大きく影響する点が課題。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "ユーザーの『コスパ』の定義が業界の価値定義とズレていること",
+          "ユーザーが体験価値を自身の目的と結びつけていないこと"
+        ],
+        "best_discriminating_question": "ユーザーは旅館での『体験の質』や『記念性』を自分の旅の目的として重視したことがあるか？",
+        "testability_notes": "ユーザーの価値観や目的を直接質問することで検証可能。比較的容易。",
+        "safety_risk_notes": "価値観のズレを指摘するため、ユーザーが否定的に受け取る可能性がある。"
+      },
+      "rationale": "O1とOext1の説明に強みがあり、価値観のズレという観点は他仮説と区別しやすい。ユーザーの自己認識への配慮が必要。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O3",
+          "O4",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "ユーザーが『高価格な体験を享受しない自分』という自己像を守っていること",
+          "本心では地域体験や自然との調和に関心があること"
+        ],
+        "best_discriminating_question": "『贅沢な体験を受ける自分』にどこか抵抗や違和感を感じるか？",
+        "testability_notes": "ユーザーの深層心理や自己像への質問が必要で、やや検証が難しい（自己申告の信頼性に依存）。",
+        "safety_risk_notes": "ユーザーの無意識や自己像に踏み込むため、誤解や不快感を与えるリスクが高い。"
+      },
+      "rationale": "O1, O3, O4, Oext2の広範な説明力があり、PKGとも整合。だが、心理的防衛という解釈は検証・提示ともに慎重さが求められる。"
+    }
+  ]
+}

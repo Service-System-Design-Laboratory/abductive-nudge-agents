@@ -1,0 +1,97 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O3"
+        ],
+        "key_assumptions": [
+          "ユーザーが自然との調和や里山散策といった価値観を強く持っている",
+          "写真撮影やSNS発信がその価値観の表現手段となっている"
+        ],
+        "best_discriminating_question": "SNSに投稿する写真の主なテーマや被写体は何ですか？",
+        "testability_notes": "SNS投稿内容やキャプションの分析、ユーザーインタビューで比較的容易に検証可能。",
+        "safety_risk_notes": "価値観の断定的提示や、ユーザーの動機を一面的に決めつける印象を与えないよう注意が必要。"
+      },
+      "rationale": "PKGとの連携が明確で、観察O1・O3を自然に説明できている。価値観の多様性を無視しない配慮が必要。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O4"
+        ],
+        "key_assumptions": [
+          "ユーザーが撮影技術や機材選びの知識・スキル向上を重視している",
+          "効率化やクオリティ向上が主な動機である"
+        ],
+        "best_discriminating_question": "最近学んだ撮影テクニックや購入した機材はありますか？",
+        "testability_notes": "ユーザーの行動履歴や発言、SNS投稿の内容から比較的容易に検証可能。外部エビデンスも利用可。",
+        "safety_risk_notes": "技術志向を過度に強調すると、趣味性や価値観の側面を軽視していると受け取られるリスクあり。"
+      },
+      "rationale": "O2・O4の説明力が高く、外部エビデンスも補強材料となる。動機の多様性への配慮が必要。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "三脚などの機材利用がユーザーの撮影スタイルに不可欠である",
+          "景観保護や公共空間の規制が今後も強まる傾向にある"
+        ],
+        "best_discriminating_question": "三脚の使用を断られたり制限された経験はありますか？",
+        "testability_notes": "ユーザー体験のヒアリングや、規制情報の収集で検証可能。外部エビデンスも存在。",
+        "safety_risk_notes": "規制強化の話題はユーザーの不安を煽る可能性があるため、断定的表現は避けるべき。"
+      },
+      "rationale": "O2・Oext2を的確に説明し、外部エビデンスも整合。規制の影響度合いは個人差が大きい点に注意。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3",
+          "Oext1",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "SNS映えや流行がユーザー行動に強い影響を与えている",
+          "写真撮影が社会的・商業的文脈に巻き込まれている"
+        ],
+        "best_discriminating_question": "SNSで流行している撮影スタイルやテクニックを参考にしていますか？",
+        "testability_notes": "SNS投稿の傾向分析や、ユーザーの意識調査で検証可能。外部エビデンスも利用可。",
+        "safety_risk_notes": "個人の趣味や創造性を軽視していると受け取られないよう、表現に配慮が必要。"
+      },
+      "rationale": "O3・Oext1・Oext3の説明力が高く、社会的背景の指摘も妥当。個人動機とのバランスに注意。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O3",
+          "O4",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "ユーザーのSNS投稿動機は差異化よりも同調・安心感の獲得にある",
+          "同質的な写真文化がユーザー心理に影響を与えている"
+        ],
+        "best_discriminating_question": "他の人と同じような写真になってしまうことに抵抗はありますか？",
+        "testability_notes": "ユーザーの自己認識や動機に関する深掘りインタビューが必要で、やや検証難度は高い。",
+        "safety_risk_notes": "ユーザーの無意識的動機を指摘するため、断定的・決めつけ的な表現は避け、配慮が必要。"
+      },
+      "rationale": "O1・O3・O4・Oext3を広く説明できるが、心理的動機の推定には慎重な検証と配慮が求められる。"
+    }
+  ]
+}

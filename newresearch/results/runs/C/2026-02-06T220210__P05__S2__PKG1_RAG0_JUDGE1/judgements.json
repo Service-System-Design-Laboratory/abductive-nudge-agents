@@ -1,0 +1,90 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーが計画立案や最適化スキルを旅行計画において積極的に活用し、それ自体に価値を感じていること"
+        ],
+        "best_discriminating_question": "日常生活や仕事でも同様に計画や最適化にこだわる場面はありますか？",
+        "testability_notes": "ユーザーへの1-2問のインタビューで検証可能。特に他領域での行動傾向を聞くと良い。",
+        "safety_risk_notes": "スキル重視と断定しすぎると、ユーザーの価値観を単純化してしまうリスクがある。"
+      },
+      "rationale": "観察O1・O2を無理なく説明できており、仮説のメカニズムも妥当。ただし、PKGリンクが全て無効（実験条件上は致命的欠点ではない）が、根拠の幅は限定的。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "ユーザーがコストパフォーマンスや資源配分の最適化を旅行計画の主要な価値基準としていること"
+        ],
+        "best_discriminating_question": "今回の旅行でも予算やコストを細かく管理していますか？",
+        "testability_notes": "ユーザーにコスト意識や比較検討の有無を直接質問することで検証しやすい。",
+        "safety_risk_notes": "コスト重視と断定することで、他の動機（例：体験重視）を過小評価する誤解を生む可能性がある。"
+      },
+      "rationale": "O3・O4の説明は妥当だが、観察からコスト意識が直接読み取れるとは限らないため、追加の確認が必要。PKGリンクは無効だが、実験条件上は問題としない。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O4",
+          "O5"
+        ],
+        "key_assumptions": [
+          "ユーザーが自己効力感や自己コントロール欲求を強く持っており、計画の精密さや完璧な実行がそれを満たす手段となっていること"
+        ],
+        "best_discriminating_question": "旅行中に予定外の出来事が起きた場合、どのような気持ちになりますか？",
+        "testability_notes": "ユーザーの感情反応を尋ねることで比較的容易に検証可能。",
+        "safety_risk_notes": "心理的動機を断定的に述べると、ユーザーが意図しない解釈をされるリスクがある。"
+      },
+      "rationale": "O1, O4, O5を自然に説明できるが、PKGリンクが無効で根拠の厚みは限定的。心理的要因の仮説は検証質問が明確。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O5"
+        ],
+        "key_assumptions": [
+          "ユーザーの計画が移動や主要スポットに偏っており、休憩・食事・混雑対応などの要素が十分考慮されていない可能性があること"
+        ],
+        "best_discriminating_question": "現地の混雑や営業時間、休憩・食事のタイミングも事前に計画していますか？",
+        "testability_notes": "旅行計画の詳細やユーザーの意識を直接確認する必要があり、やや検証に手間がかかる。",
+        "safety_risk_notes": "ユーザーの計画力や配慮の不足を指摘する形になるため、否定的に受け取られるリスクがある。"
+      },
+      "rationale": "O5の説明は妥当だが、仮説自体が『可能性』に留まるため、他仮説よりも補助的な位置づけ。PKGリンクは無効。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O4",
+          "O5"
+        ],
+        "key_assumptions": [
+          "ユーザーが『効率的に体験を消費する自分』という現代的な自己像を重視し、それが計画や効率化への執着の主因となっていること"
+        ],
+        "best_discriminating_question": "『効率よく体験を消費する自分』という自己像に満足感や誇りを感じますか？",
+        "testability_notes": "ユーザーの自己認識や価値観を深掘りする質問が必要で、やや検証が難しい。",
+        "safety_risk_notes": "ユーザーの無意識的動機や自己像を指摘するため、違和感や反発を招きやすい。断定的表現は避けるべき。"
+      },
+      "rationale": "O1, O4, O5を説明できるが、PKGリンクが無効で根拠が弱い。リフレーミング仮説として新規性はあるが、検証・提示時の配慮が必要。"
+    }
+  ]
+}

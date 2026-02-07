@@ -1,0 +1,96 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーは観光地化や商業化を本質的に価値が低いとみなしている",
+          "『本来の生活様式』や『地元の文化』を体験すること自体に価値を感じている"
+        ],
+        "best_discriminating_question": "観光地化されていない場所に行くことで、どのような価値や感動を得たいと考えていますか？",
+        "testability_notes": "ユーザーの価値観や動機を直接質問することで比較的容易に検証可能。",
+        "safety_risk_notes": "『観光地化＝価値がない』と断定的に受け取られると、一般的な観光体験を好む人を否定する印象を与える可能性がある。"
+      },
+      "rationale": "観察O1・O2をよく説明しているが、O3（演出への不満）が価値観由来かは追加確認が必要。価値観の前提が強く、ユーザーの多様性に注意。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "ユーザーは受動的な観光体験に不満を持ち、能動的な関与や交流を求めている",
+          "地元の人との交流や参加型体験がユーザーの主な動機である"
+        ],
+        "best_discriminating_question": "観光地で地元の人と交流することにどれほど関心がありますか？",
+        "testability_notes": "ユーザーの行動や体験への志向性を質問することで検証可能。観察と照合しやすい。",
+        "safety_risk_notes": "『消費者としての観光』を否定的に捉えていると受け取られる可能性があり、価値観の押し付けに注意。"
+      },
+      "rationale": "O1～O3を一貫して説明できる。能動性や交流志向が本質かどうかは追加質問で明確化が必要。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "観光協会やメディアの情報発信がユーザーの行動に強く影響している",
+          "ユーザーは“本物志向”の情報を積極的に収集・活用している"
+        ],
+        "best_discriminating_question": "地元の人しか知らない場所を探す際、どのような情報源を利用していますか？",
+        "testability_notes": "ユーザーの情報収集行動を尋ねることで検証可能。外部データとの照合も有効。",
+        "safety_risk_notes": "ユーザーの主体的な動機を軽視し、流行や情報に流されていると受け取られるリスクがある。"
+      },
+      "rationale": "O2と外部事実Oext2を説明するが、ユーザーの内的動機（O1, O3）への説明力は限定的。情報行動の有無が識別点。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "現状の観察・仮説ではユーザーの具体的嗜好や行動が特定できない"
+        ],
+        "best_discriminating_question": "『本物の生活』の体験とは具体的にどのようなものですか？",
+        "testability_notes": "追加の質問やヒアリングが必須。現状では検証困難。",
+        "safety_risk_notes": "ユーザーの意図や体験を曖昧と断じることで、理解不足と受け取られる可能性がある。"
+      },
+      "rationale": "現状の情報不足を指摘する仮説であり、他仮説の前提を検証するための補助的役割。追加調査の必要性を明示。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "ユーザーの『本物志向』は観光体験への飽きや違和感から生じている",
+          "観光客として扱われること自体に抵抗や否定的感情がある"
+        ],
+        "best_discriminating_question": "観光地で“観光客として扱われること”自体に抵抗や違和感を感じますか？",
+        "testability_notes": "ユーザーの自己認識や旅の目的の変化を尋ねることで検証可能。やや深い質問が必要。",
+        "safety_risk_notes": "ユーザーの動機を“否定”や“飽き”と解釈することが、本人の意図とずれる場合に誤解や不快感を生む可能性がある。"
+      },
+      "rationale": "観察全体と外部事実Oext3を広く説明できるが、ユーザーの自己認識との齟齬やレッテル貼りに注意が必要。"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "triggers": [
+    {
+      "type": "information_gap",
+      "text": "効率化以外の旅行の目的や価値観が不明。"
+    },
+    {
+      "type": "ambiguity",
+      "text": "完璧な実行が本当に満足につながるのか明確でない。"
+    },
+    {
+      "type": "focus",
+      "text": "効率化に強くフォーカスしているが、他の要素が排除されている可能性。"
+    }
+  ],
+  "external_observations": [
+    {
+      "id": "Oext1",
+      "text": "区民等の理解と信頼が深まるには一方的な情報発信ではなく、主体的な関与が重要とされる。",
+      "source_url": "https://www.tokyo23-kuchokai-kiko.jp/report/docs/50b1e925d256a8aa70a11a37810bb2c6c166dce8.pdf"
+    }
+  ]
+}

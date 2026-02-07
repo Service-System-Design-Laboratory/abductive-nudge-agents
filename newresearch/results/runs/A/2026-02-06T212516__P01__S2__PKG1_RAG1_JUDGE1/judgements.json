@@ -1,0 +1,99 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O4"
+        ],
+        "key_assumptions": [
+          "ユーザーが自己効力感やコントロール感を強く求めていること",
+          "分刻みの計画や効率化が安心感や不安低減に直結していること"
+        ],
+        "best_discriminating_question": "計画通りに進まなかった場合、どの程度不快感やストレスを感じますか？",
+        "testability_notes": "ユーザーへの1～2問の質問で検証可能。旅行以外の行動傾向も追加質問で確認できる。",
+        "safety_risk_notes": "ユーザーの性格特性を断定的に扱うとレッテル貼りや不快感を与えるリスクがある。"
+      },
+      "rationale": "観察O1, O2, O4をよく説明しているが、PKGリンクが実質機能していない点は現状の実験条件下では欠点としない。心理的動機の仮定は妥当だが、断定的提示には注意が必要。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "ユーザーの計画が現実の不確実性（トラブル・遅延等）と衝突しやすいほど精緻であること",
+          "ユーザーが柔軟な対応力を十分持っていないこと"
+        ],
+        "best_discriminating_question": "過去に計画通りにいかなかった旅行で、どのように対応しましたか？",
+        "testability_notes": "ユーザーの過去の対応経験やバッファ設定有無を問うことで比較的容易に検証可能。",
+        "safety_risk_notes": "ユーザーの計画性や柔軟性を否定的に評価する印象を与える可能性がある。"
+      },
+      "rationale": "観察と外部事実を広く説明できており、現実的なリスク指摘として有用。PKGリンクは機能していないが、エビデンスは十分。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "ユーザーが効率化を最優先し、他の価値観（自然・交流等）を軽視していること",
+          "PKGに示された価値観がユーザーにとっても本来重要であること"
+        ],
+        "best_discriminating_question": "スケジュールに現地住民との交流や自然体験の時間を確保していますか？",
+        "testability_notes": "ユーザーの計画内容を具体的に確認することで検証可能。価値観の優先度は追加質問が必要。",
+        "safety_risk_notes": "ユーザーの価値観や旅行スタイルを否定的に評価する印象を与える可能性がある。"
+      },
+      "rationale": "効率化偏重の側面を指摘し、観察O3や外部事実Oext2と整合。PKG参照は実質機能していないが、仮説自体の論理性は保たれている。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O5",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "ユーザーの計画にバッファや代替案が十分に盛り込まれていないこと",
+          "効率化志向が計画外事象への対応力を低下させること"
+        ],
+        "best_discriminating_question": "スケジュールに臨機応変な調整時間や代替案を設定していますか？",
+        "testability_notes": "ユーザーの計画詳細や過去の対応経験を確認することで検証可能。",
+        "safety_risk_notes": "ユーザーの計画力や準備不足を指摘する形になるため、配慮が必要。"
+      },
+      "rationale": "観察O5と外部事実Oext1の情報ギャップを的確に指摘。PKGリンクは機能していないが、エビデンスは十分。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O3",
+          "O4",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "ユーザーが『理想的な旅行者』像や社会的承認を強く意識していること",
+          "効率化や完璧さへのこだわりが自己満足や現地体験よりも優先されていること"
+        ],
+        "best_discriminating_question": "旅行体験を他者にシェアする際、効率性や計画の達成をどの程度アピールしますか？",
+        "testability_notes": "SNS発信内容や自己評価の傾向を確認する必要があり、やや検証に手間がかかる。",
+        "safety_risk_notes": "ユーザーの動機や自己像に踏み込むため、誤解や反発を招くリスクが高い。"
+      },
+      "rationale": "観察と外部事実Oext3をよく説明し、リフレーミング仮説として有用。PKGリンクは機能していないが、仮説の独自性と説明力は高い。"
+    }
+  ]
+}

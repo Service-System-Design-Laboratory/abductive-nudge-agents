@@ -1,0 +1,73 @@
+{
+  "triggers": [
+    {
+      "type": "information_gap",
+      "text": "学生時代に体験した『静かな嵐山』『人がいない竹林の道』の雰囲気や空気が、現在も同じように体験できるかどうかPKGでは説明できない。"
+    },
+    {
+      "type": "ambiguity",
+      "text": "『同じルートを辿る』ことで過去と同じ感動を得られるかどうか、具体的な条件や要因がPKGでは明らかでない。"
+    }
+  ],
+  "rag_queries": [
+    "現在の嵐山や竹林の道の混雑状況や静けさはどうなっているか",
+    "嵐山や竹林の道で静かな雰囲気を味わうためのおすすめの時間帯や季節",
+    "過去と同じ感動を得るための嵐山・竹林の道の体験談や口コミ",
+    "京都嵐山で静けさや自然を感じられる穴場スポットやルート"
+  ],
+  "evidence_items": [
+    {
+      "rank": 1,
+      "title": "嵐山竹林の小径(竹林の道)周辺の渋滞情報",
+      "snippet": "嵐山竹林の小径(竹林の道)周辺の渋滞情報です。現在の渋滞情報および過去のデータを元に各道路で発生が予想される渋滞情報を確認できます。",
+      "url": "https://www.navitime.co.jp/probetraffic/poi?spot=02301-PN0000668",
+      "source_type": "com"
+    },
+    {
+      "rank": 2,
+      "title": "混雑回避に役立つ観光快適度マップ",
+      "snippet": "ビッグデータをもとに予測したエリア別の混雑情報を発信しています。ライブカメラの映像や、おすすめスポット記事も参考に、混雑する時間や場所を上手に避けながら、 ...",
+      "url": "https://ja.kyoto.travel/comfort/saga-arashiyama/",
+      "source_type": "org"
+    },
+    {
+      "rank": 3,
+      "title": "【京都】嵐山観光の「半日コース」！朝の竹林散策やライト ...",
+      "snippet": "観光客が比較的少ない午前中を狙って、嵐山の大自然を心ゆくまで満喫するコース。澄んだ空気の中で、趣ある時間を過ごしたい方におすすめです。",
+      "url": "https://www.jalan.net/news/article/755924/",
+      "source_type": "com"
+    },
+    {
+      "rank": 4,
+      "title": "京都・嵐山竹林の小径の魅力を紹介！観光のポイントや ...",
+      "snippet": "ゆっくり静かに竹林の小径の雰囲気を堪能したい方は、比較的人が少ない時間帯や時期に行くのがおすすめです。人が少ない時期・時間帯は、早朝。日が ...",
+      "url": "https://www.veltra.com/jp/guide/domestic/spot-domestic/860/",
+      "source_type": "com"
+    },
+    {
+      "rank": 5,
+      "title": "嵐山の混雑状況をLIVEカメラでお出かけ前にチェック！",
+      "snippet": "嵐山周辺の混雑状況を知りたいときはぜひライブカメラをご活用ください♪ 【LIVE】 京都 嵯峨嵐山 渡月橋北詰ライブ中継カメラ（京都市 ...",
+      "url": "https://hotel-binario.jp/arashiyama/news/675",
+      "source_type": "com"
+    }
+  ],
+  "external_observations": [
+    {
+      "id": "Oext1",
+      "text": "嵐山や竹林の道の混雑状況はビッグデータやライブカメラによってリアルタイムで監視・商品化されており、静けさや非日常体験も観光産業の管理対象となっている。",
+      "source_url": "https://ja.kyoto.travel/comfort/saga-arashiyama/"
+    },
+    {
+      "id": "Oext2",
+      "text": "観光客が静かな体験を求めて早朝などの時間帯を狙う傾向が広まり、結果として『静けさ』そのものが観光資源として演出・消費される現象が生じている。",
+      "source_url": "https://www.veltra.com/jp/guide/domestic/spot-domestic/860/"
+    },
+    {
+      "id": "Oext3",
+      "text": "嵐山や竹林の道の混雑回避情報や快適度マップは、観光客の行動を誘導するマーケティングツールとして機能し、個人の体験が産業的に最適化されている。",
+      "source_url": "https://ja.kyoto.travel/comfort/saga-arashiyama/"
+    }
+  ],
+  "notes": ""
+}

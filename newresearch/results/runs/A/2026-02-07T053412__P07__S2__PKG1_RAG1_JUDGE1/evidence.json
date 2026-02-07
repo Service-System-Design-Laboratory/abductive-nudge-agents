@@ -1,0 +1,73 @@
+{
+  "triggers": [
+    {
+      "type": "information_gap",
+      "text": "ユーザーはGoogleマップで移動時間を計算し効率的なルートを確立したが、現地の交通事情や突発的な遅延、混雑、天候などによるスケジュールの柔軟性やリスク回避策についてPKGでは説明されていない。"
+    },
+    {
+      "type": "information_gap",
+      "text": "分刻みのスケジュールを完璧に実行する計画だが、主要スポット以外の現地体験や文化的要素を取り入れる余地についてPKGではカバーされていない。"
+    },
+    {
+      "type": "ambiguity",
+      "text": "効率化のポイントとして、移動や観光の効率だけでなく、休憩や食事、予期せぬトラブル対応などのバッファ時間の設定が考慮されているか不明であり、PKGではその重要性が明示されていない。"
+    }
+  ],
+  "rag_queries": [
+    "旅行スケジュールの効率化で見落としがちなポイントは何か",
+    "Googleマップの移動時間計算の精度と現地交通事情の違いについて",
+    "旅行計画に柔軟性やリスク回避策を組み込む方法",
+    "主要スポット以外の現地体験や文化的要素を効率的に取り入れる方法",
+    "旅行中の突発的なトラブルや遅延への対応策"
+  ],
+  "evidence_items": [
+    {
+      "rank": 1,
+      "title": "Googleマップナビの到着予定時間は参考にしても大丈夫なん...",
+      "snippet": "Googleマップナビの到着予定時間は参考にしても大丈夫なんでしょうか？以前、予定時間は35分だったのに、実際に着いた時間は60分くらいでした。",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q10258404360",
+      "source_type": "com"
+    },
+    {
+      "rank": 2,
+      "title": "Google Mapsの移動時間の予測って正確なの？",
+      "snippet": "Googleマップの移動時間は、大体正確で、運転状況もちゃんと反映されてるよ。",
+      "url": "https://www.reddit.com/r/newzealand_travel/comments/1im3drw/is_google_maps_accurate_for_estimated_travel_time/?tl=ja",
+      "source_type": "other"
+    },
+    {
+      "rank": 3,
+      "title": "後悔ゼロ！旅のプランニング完全ガイド｜見落としがちな ...",
+      "snippet": "ポイントは、移動時間を考慮した無理のないスケジュールを立てることです。 例えば、都市間の移動には時間がかかるため、事前に交通手段や所要時間を調べ ...",
+      "url": "https://note.com/315life/n/n5e92360da180",
+      "source_type": "com"
+    },
+    {
+      "rank": 4,
+      "title": "旅行の計画の立て方とコツとは？目的・行き先・予算の決め方を ...",
+      "snippet": "旅行の計画は「目的」「行き先」「スケジュール」「予算」「持ち物」の5ステップで立てていくと失敗を防ぎやすくなります。",
+      "url": "https://www.jre-travel.com/article/00102/",
+      "source_type": "com"
+    },
+    {
+      "rank": 5,
+      "title": "【FPが解説】旅行計画の立て方は？予算、貯金、行き先などの ...",
+      "snippet": "旅行を万全に楽しむためには、計画段階で「見落としがちなポイント」にも注意を払う必要があります。 まずは、宿泊施設や航空券のキャンセル規定は必ず ...",
+      "url": "https://moneycanvas.bk.mufg.jp/know/column/zkimJxIzmVdYbBk/",
+      "source_type": "com"
+    }
+  ],
+  "external_observations": [
+    {
+      "id": "Oext1",
+      "text": "Googleマップの移動時間予測は参考になるが、実際の到着時間が大幅に遅れるケースが頻繁に報告されており、完璧なスケジュール実行を目指すほど予測誤差がストレスや失敗につながる逆説が存在する。",
+      "source_url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q10258404360"
+    },
+    {
+      "id": "Oext2",
+      "text": "旅行計画の効率化が進むほど、移動やスケジュールの最適化自体が『旅行の本質』とみなされる傾向があり、観光体験が商品化されている構造がある。",
+      "source_url": "https://note.com/315life/n/n5e92360da180"
+    }
+  ],
+  "notes": "Googleマップの移動時間予測の精度や、効率化された旅行計画が観光体験の商品化につながる構造的事実を揺さぶりとして抽出しました。"
+}

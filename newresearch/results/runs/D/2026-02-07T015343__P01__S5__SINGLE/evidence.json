@@ -1,0 +1,33 @@
+{
+  "triggers": [
+    {
+      "type": "focus",
+      "text": "徹底的なコスト削減に強いこだわりが見られる。"
+    },
+    {
+      "type": "information_gap",
+      "text": "なぜここまで節約にこだわるのか動機が明確でない。"
+    },
+    {
+      "type": "ambiguity",
+      "text": "節約以外の価値観（自然との調和や地域との交流）とのバランスが不明。"
+    }
+  ],
+  "external_observations": [
+    {
+      "id": "Oext1",
+      "text": "青春18きっぷは『日本一海に近い駅』など観光地の景観を楽しむ目的で使われることが多い。",
+      "source_url": "https://jf-cmca.jp/attach/kenkyu/honbu/h27/chiikikasseikashindanyoumanual.pdf"
+    },
+    {
+      "id": "Oext2",
+      "text": "格安旅行の情報では、ボルネオやマレーシアなど美しい自然を体験する方法も紹介されている。節約旅行でも体験価値を重視する傾向がある。",
+      "source_url": "https://www.lemon8-app.com/@24bonsan/7410027308592513542?region=jp"
+    },
+    {
+      "id": "Oext3",
+      "text": "コストコなどのセールや口コミを活用して、さらに旅行費用を抑える事例がある。",
+      "source_url": "https://www.lemon8-app.com/@yuzusatoyuzu/7575333054147723788?region=jp"
+    }
+  ]
+}

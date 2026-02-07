@@ -1,0 +1,101 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "A1"
+        ],
+        "best_discriminating_question": "節約できたこと自体にどれくらい満足感がありますか？",
+        "testability_notes": "ユーザーの満足感や達成感に関する自己報告で検証可能。",
+        "safety_risk_notes": "節約を目的化していると断定しすぎると、ユーザーの価値観を狭めるリスクがある。"
+      },
+      "rationale": "節約行動が自己効力感や達成感につながっている場合、体験よりも節約自体が目的化している可能性がある。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "A4"
+        ],
+        "best_discriminating_question": "節約して浮いた分で何か体験したいことはありますか？",
+        "testability_notes": "節約の目的や使い道を尋ねることで検証可能。",
+        "safety_risk_notes": "ユーザーの価値観を肯定的に受け止めやすいが、表層的な読みになりやすい。"
+      },
+      "rationale": "節約はあくまで手段であり、自然体験や地域交流のためというPKG情報とも整合的。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O5"
+        ],
+        "key_assumptions": [
+          "A2"
+        ],
+        "best_discriminating_question": "他の人の節約方法や体験談をよく調べますか？",
+        "testability_notes": "情報収集行動の有無を確認することで検証可能。",
+        "safety_risk_notes": "ユーザーの自己効力感を損ねないよう配慮が必要。"
+      },
+      "rationale": "現状の節約方法に満足していない場合、他者の知見を求める傾向がある。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "A3",
+          "A4"
+        ],
+        "best_discriminating_question": "節約のために諦めた体験や交流はありますか？",
+        "testability_notes": "旅行で諦めたことや後悔の有無を尋ねることで検証可能。",
+        "safety_risk_notes": "ユーザーの選択を否定的に受け取られないよう注意が必要。"
+      },
+      "rationale": "コスト削減を優先するあまり、本来の価値観を犠牲にしている可能性がある。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A4"
+        ],
+        "best_discriminating_question": "今回の旅行や節約の工夫を誰かにシェアしたい気持ちはありますか？",
+        "testability_notes": "SNSや他者への発信意図を尋ねることで検証可能。",
+        "safety_risk_notes": "『演出』や『商品化』という言葉がユーザーの自己像に不快感を与える可能性があるため、慎重な言い回しが必要。"
+      },
+      "rationale": "節約やローカル体験をSNS等で発信することで、自己イメージや他者からの評価を意識している可能性がある。"
+    }
+  ]
+}

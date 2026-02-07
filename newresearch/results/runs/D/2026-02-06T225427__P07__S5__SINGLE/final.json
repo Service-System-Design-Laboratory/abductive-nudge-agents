@@ -1,0 +1,349 @@
+{
+  "context": {
+    "observations": [
+      {
+        "id": "O1",
+        "text": "今回の旅行は徹底的にコストを抑えた。"
+      },
+      {
+        "id": "O2",
+        "text": "宿は最安値のカプセルホテルを利用する予定である。"
+      },
+      {
+        "id": "O3",
+        "text": "移動は青春18きっぷを利用する予定である。"
+      },
+      {
+        "id": "O4",
+        "text": "食事は全部コンビニで済ませる予定である。"
+      },
+      {
+        "id": "O5",
+        "text": "この予算内でもっと節約できるポイントを探している。"
+      }
+    ],
+    "assumptions": [
+      {
+        "id": "A1",
+        "text": "ユーザーは旅行の体験価値よりもコスト削減を優先している。",
+        "status": "tentative"
+      },
+      {
+        "id": "A2",
+        "text": "ユーザーは既存の節約方法に満足していない可能性がある。",
+        "status": "tentative"
+      },
+      {
+        "id": "A3",
+        "text": "ユーザーは節約を通じて何か達成感や自己効力感を得たいと考えている。",
+        "status": "tentative"
+      },
+      {
+        "id": "A4",
+        "text": "ユーザーは他の節約の工夫や新しいアイディアに関心がある。",
+        "status": "tentative"
+      }
+    ],
+    "questions": [
+      "旅行の目的はコスト削減自体ですか？それとも他に重視していることがありますか？",
+      "コンビニ以外の食事方法（例：スーパーの割引品や自炊）は検討しましたか？",
+      "カプセルホテル以外の選択肢（例：ネットカフェや知人宅）は考えていますか？",
+      "節約以外に旅行で達成したいことはありますか？"
+    ],
+    "constraints": {
+      "tone": "supportive",
+      "safety": "avoid determinism"
+    }
+  },
+  "evidence": {
+    "triggers": [
+      {
+        "type": "information_gap",
+        "text": "ユーザーが節約をどこまで重視しているのか、体験価値とのバランスが不明。"
+      },
+      {
+        "type": "ambiguity",
+        "text": "コンビニ食やカプセルホテル以外の選択肢をどこまで許容するかが曖昧。"
+      },
+      {
+        "type": "focus",
+        "text": "節約のための具体的な工夫や新しいアイディアへの関心が強い。"
+      }
+    ],
+    "external_observations": [
+      {
+        "id": "Oext1",
+        "text": "日帰り旅行にすることで宿泊費をゼロにできる。高級ホテルが多い都市では宿泊費を気にせず遊べるのは大きな利点。",
+        "source_url": "https://sakeinvest.com/hongkong-daytrip/"
+      },
+      {
+        "id": "Oext2",
+        "text": "夏休み後の格安旅行では、現地の自然体験や割引情報を活用することでコストをさらに抑えられる。",
+        "source_url": "https://www.lemon8-app.com/@24bonsan/7410027308592513542?region=jp"
+      }
+    ]
+  },
+  "hypotheses": [
+    {
+      "hypothesis_id": "H1",
+      "type": "psychological",
+      "explains": [
+        "O1",
+        "O5"
+      ],
+      "assumes": [
+        "A3"
+      ],
+      "statement": "ユーザーは節約自体に達成感や自己効力感を求めている。",
+      "mechanism": "限られた予算で最大限の工夫をすることが、ユーザーにとって自己効力感や満足感につながる。",
+      "predictions": [
+        "節約の工夫を見つけること自体が旅行の楽しみになっている。",
+        "他人と節約術を共有したり、SNS等で発信することに関心がある。"
+      ],
+      "discriminating_questions": [
+        "節約の工夫を考えること自体が楽しいと感じますか？"
+      ],
+      "persona_link": [
+        "pkg:p07_n6"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H2",
+      "type": "environmental",
+      "explains": [
+        "O2",
+        "O3",
+        "O4",
+        "O5",
+        "Oext1"
+      ],
+      "assumes": [
+        "A1",
+        "A4"
+      ],
+      "statement": "ユーザーは宿泊費をさらに削減するため、日帰り旅行や夜行移動など宿泊自体を省略する選択肢も検討できる。",
+      "mechanism": "外部情報のように、宿泊費をゼロにすることで大幅なコスト削減が可能になる。",
+      "predictions": [
+        "日帰り旅行や夜行バス・夜行列車の利用に関心がある。",
+        "宿泊費を完全にカットする選択肢を受け入れる可能性がある。"
+      ],
+      "discriminating_questions": [
+        "宿泊自体をなくす（例：日帰り・夜行移動）ことも検討できますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [
+        "ev:Oext1"
+      ],
+      "is_reframing": true
+    },
+    {
+      "hypothesis_id": "H3",
+      "type": "value",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "O4"
+      ],
+      "assumes": [
+        "A1"
+      ],
+      "statement": "ユーザーは計画的運営やリスク回避の価値観から、徹底的なコスト管理を重視している。",
+      "mechanism": "PKGの計画的運営やリスク回避の価値観が、旅行のコスト最小化という行動に現れている。",
+      "predictions": [
+        "旅行前に詳細な予算計画やリスク評価を行っている。",
+        "予期せぬ出費を極力避けたいと考えている。"
+      ],
+      "discriminating_questions": [
+        "旅行前に細かい予算計画やリスク評価をしましたか？"
+      ],
+      "persona_link": [
+        "pkg:p07_n1",
+        "pkg:p07_n6"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H4",
+      "type": "skill",
+      "explains": [
+        "O5",
+        "O2",
+        "O3",
+        "O4"
+      ],
+      "assumes": [
+        "A4"
+      ],
+      "statement": "ユーザーは新しい節約方法や工夫を学ぶこと自体に関心があり、情報収集や実践を楽しんでいる。",
+      "mechanism": "節約の工夫を探し、実際に試すことが知的好奇心やスキル向上につながっている。",
+      "predictions": [
+        "旅行以外でも節約術やコスト管理の工夫を日常的に実践している。",
+        "他人の節約アイディアを積極的に調べている。"
+      ],
+      "discriminating_questions": [
+        "新しい節約方法を調べたり試したりするのが好きですか？"
+      ],
+      "persona_link": [
+        "pkg:p07_n1"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H5",
+      "type": "evidence_gap",
+      "explains": [
+        "O5",
+        "Oext2"
+      ],
+      "assumes": [
+        "A4"
+      ],
+      "statement": "ユーザーは現地の自然体験や割引情報など、旅行先での体験を工夫することでコストを抑える余地があるが、その方法をまだ十分に知らない。",
+      "mechanism": "外部情報のように、現地での無料・格安体験や割引情報を活用することで、さらに節約が可能になる。",
+      "predictions": [
+        "現地の無料イベントや割引体験を調べることで、食費や移動費以外のコストも削減できる。",
+        "旅行先の情報収集に時間をかけるほど節約効果が高まる。"
+      ],
+      "discriminating_questions": [
+        "現地の無料イベントや割引体験を調べたことはありますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [
+        "ev:Oext2"
+      ],
+      "is_reframing": false
+    }
+  ],
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O5"
+        ],
+        "key_assumptions": [
+          "A3"
+        ],
+        "best_discriminating_question": "節約の工夫を考えること自体が楽しいと感じますか？",
+        "testability_notes": "ユーザーが節約自体に楽しみや達成感を感じているかを尋ねることで検証可能。",
+        "safety_risk_notes": "自己効力感への言及は肯定的だが、節約以外の価値を否定しないよう注意。"
+      },
+      "rationale": "節約行動の動機を内面的な達成感や自己効力感に求める仮説。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3",
+          "O4",
+          "O5"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A4"
+        ],
+        "best_discriminating_question": "宿泊自体をなくす（例：日帰り・夜行移動）ことも検討できますか？",
+        "testability_notes": "ユーザーが宿泊を完全に省略する選択肢を受け入れられるかを確認する。",
+        "safety_risk_notes": "体力的・安全面のリスクや、旅行体験の質低下に配慮が必要。"
+      },
+      "rationale": "外部観察を活用し、宿泊費ゼロという極端な選択肢を提示することで、ユーザーの節約志向の本質に迫る。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "A1"
+        ],
+        "best_discriminating_question": "旅行前に細かい予算計画やリスク評価をしましたか？",
+        "testability_notes": "計画性やリスク回避の価値観がどれほど行動に影響しているかを尋ねる。",
+        "safety_risk_notes": "価値観の肯定的な側面を強調することでリスクは低い。"
+      },
+      "rationale": "PKGの価値観と行動の一貫性を説明する仮説。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O5",
+          "O2",
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "A4"
+        ],
+        "best_discriminating_question": "新しい節約方法を調べたり試したりするのが好きですか？",
+        "testability_notes": "節約術の情報収集や実践への関心を尋ねる。",
+        "safety_risk_notes": "ユーザーの知的好奇心を肯定するためリスクは低い。"
+      },
+      "rationale": "節約術の学習や実践自体が目的化している可能性を説明。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O5"
+        ],
+        "key_assumptions": [
+          "A4"
+        ],
+        "best_discriminating_question": "現地の無料イベントや割引体験を調べたことはありますか？",
+        "testability_notes": "現地体験や割引情報の活用度を尋ねる。",
+        "safety_risk_notes": "新しい情報提供の形なのでリスクは低いが、情報過多にならないよう注意。"
+      },
+      "rationale": "外部観察を使い、現地体験や割引情報の活用余地を指摘する仮説。"
+    }
+  ],
+  "decision": {
+    "selected_hypothesis_id": "H2",
+    "contrasting_hypothesis_id": "H4",
+    "selection_rationale": "H2は『宿泊費を削る＝日帰りや夜行移動も選択肢』という、ユーザーの発言の意味を『徹底的な節約』から『そもそも宿泊自体を不要とする発想』に転換する。H4は額面通り、節約の工夫自体を楽しむ立場。どちらの立場に立つかで、今後の旅行計画や行動が大きく変わる。",
+    "user_facing_frame": {
+      "framing": "options",
+      "questions": [
+        "宿泊自体をなくす（例：日帰りや夜行移動）という発想も検討できますか？",
+        "それとも、節約方法を工夫したり新しいアイディアを試すこと自体に楽しみを感じていますか？"
+      ],
+      "options": [
+        "宿泊費をゼロにするために、日帰りや夜行移動も選択肢に入れてみる",
+        "新しい節約方法や工夫を探して、旅行の中で実践すること自体を楽しむ"
+      ]
+    }
+  },
+  "final_response": "ご自身で徹底的にコストを抑える工夫をされていること、素晴らしいですね。『この予算内でもっと節約できるポイント』を探しているとのことですが、例えば宿泊自体をなくして日帰りや夜行移動にすることで、さらに宿泊費をゼロにするという発想もあります（実際、都市部では日帰り旅行でホテル代を完全に省く人もいます）。一方で、新しい節約方法や工夫を探して実践すること自体が旅行の楽しみになっている方も多いです。\n\nどちらの立場で考えるかによって、今後の旅行の計画や行動も大きく変わるかもしれません。\n\n・宿泊費をゼロにするために、日帰りや夜行移動も選択肢に入れてみる\n・新しい節約方法や工夫を探して、旅行の中で実践すること自体を楽しむ\n\nもしよければ、どちらの考え方が今の気分や目的に近いでしょうか？また、宿泊を省略することに抵抗がないか、あるいは節約の工夫自体が楽しいか、ぜひ教えてください。\n\nちなみに、同じように節約旅行を楽しんでいる人の中には、現地の無料イベントや割引体験を活用したり、スーパーの値引き品やご当地食材を工夫して楽しむ方もいます。5分だけ現地の無料イベントや割引情報を調べてみるのも、新しい発見につながるかもしれません。",
+  "markers": {
+    "empathy": {
+      "acknowledgement": true,
+      "reflection": true,
+      "perspective_prompt": true
+    },
+    "nudge": {
+      "easy": true,
+      "attractive": true,
+      "social": true,
+      "timely": true,
+      "has_question": true,
+      "has_options": true,
+      "has_small_action": true,
+      "directive_level": "low"
+    }
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O3"
+        ],
+        "key_assumptions": [
+          "ユーザーが宿泊において機能的価値（寝る場所）を最重視している",
+          "体験的・文化的価値への関心が本当に薄い"
+        ],
+        "best_discriminating_question": "宿泊体験において、文化体験や特別なサービスに追加料金を払うことにどの程度価値を感じますか？",
+        "testability_notes": "ユーザーへの直接質問で検証可能。PKGや過去の選択行動も参照できる。",
+        "safety_risk_notes": "価値観の単純化・レッテル貼りと受け取られるリスクがある。"
+      },
+      "rationale": "ユーザーの発言や観察O1・O3をよく説明するが、PKGに文化的価値への関心が示唆されており、仮説の前提が揺らぐ可能性がある。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "旅館とビジネスホテルの価格差は主に業界構造・コスト要因による"
+        ],
+        "best_discriminating_question": "旅館の価格が高い理由をどの程度ご存知ですか？",
+        "testability_notes": "外部エビデンスが豊富で、業界データやユーザーの知識確認で検証しやすい。",
+        "safety_risk_notes": "ユーザーの価値観や体験を軽視している印象を与える可能性がある。"
+      },
+      "rationale": "業界構造の説明として妥当で、外部エビデンスも豊富。ユーザーの主観的価値観には直接触れていない点が弱み。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O4"
+        ],
+        "key_assumptions": [
+          "ユーザーが宿泊先選択において十分な情報を持っていない"
+        ],
+        "best_discriminating_question": "過去に価格以外の基準で宿泊先を選んだことはありますか？",
+        "testability_notes": "ユーザーの情報量や選択経験を質問することで比較的容易に検証可能。",
+        "safety_risk_notes": "ユーザーの知識不足を指摘する形になるため、配慮が必要。"
+      },
+      "rationale": "O4の説明には有効だが、他の観察やPKGとの関連が薄く、仮説の射程が限定的。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "ユーザーが社会的・情緒的価値への関心が低い",
+          "旅館の価格差はこうした価値提供に由来する"
+        ],
+        "best_discriminating_question": "宿泊先での特別な体験やサプライズにどの程度価値を感じますか？",
+        "testability_notes": "ユーザーのSNS利用や体験共有意欲などを質問・観察することで検証可能。",
+        "safety_risk_notes": "ユーザーの感受性や価値観を断定的に扱うと反発を招く可能性がある。"
+      },
+      "rationale": "社会的・情緒的価値への関心の有無という観点は新規性があるが、PKGには地域文化への敬意が示唆されており、仮説の前提がやや弱い。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O3",
+          "O4",
+          "Oext1",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "ユーザーは本音では地域文化や特別体験に興味があるが、それを表に出していない",
+          "コスパ重視発言は自己像を守るための合理化である"
+        ],
+        "best_discriminating_question": "地域文化や季節祭り、郷土料理体験に対し、どの程度『本当は』興味がありますか？",
+        "testability_notes": "深層インタビューや投影法的質問が必要で、検証はやや難しい。",
+        "safety_risk_notes": "ユーザーの内面や自己認識に踏み込むため、心理的抵抗や不快感を生むリスクが高い。"
+      },
+      "rationale": "PKGの内容と観察を広く説明できるが、仮説の検証には高度な質問や配慮が必要で、ユーザーの自己認識を揺さぶるリスクがある。"
+    }
+  ]
+}

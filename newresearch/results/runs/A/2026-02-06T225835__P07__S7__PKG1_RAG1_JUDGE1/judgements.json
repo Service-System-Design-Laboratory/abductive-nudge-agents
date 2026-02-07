@@ -1,0 +1,109 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_linkが全てPKGに存在しない（use_pkg=trueのため、ペルソナ裏付けが欠如）"
+        ],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーが予測不能なリスクに強い不安を感じていること",
+          "不安が行動制限や情報収集行動に直結していること"
+        ],
+        "best_discriminating_question": "旅行中に予定外の出来事が起きた場合、どれくらいストレスを感じますか？",
+        "testability_notes": "ユーザーへの直接質問で比較的容易に検証可能。過去の行動や感情の自己申告が必要。",
+        "safety_risk_notes": "『不安』を強調することでユーザーの心理的負担やレッテル貼りのリスクがある。断定的表現は避けるべき。"
+      },
+      "rationale": "観察O1, O2をよく説明するが、PKG裏付けがなく、O3, O4は直接的な説明が弱い。心理的要因の断定には注意が必要。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_linkが全てPKGに存在しない（use_pkg=trueのため、ペルソナ裏付けが欠如）"
+        ],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "Oext1",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "業界や観光産業の安全商品化がユーザー行動に強く影響していること"
+        ],
+        "best_discriminating_question": "個人で手配する旅行や現地ツアーガイドの利用にはどれくらい抵抗がありますか？",
+        "testability_notes": "業界の影響度合いは外部エビデンスやユーザーの選択理由のヒアリングで検証可能。",
+        "safety_risk_notes": "ユーザーの主体性を軽視していると受け取られる可能性がある。業界依存の断定は慎重に。"
+      },
+      "rationale": "外部エビデンスとOext観察を強く説明できるが、PKG裏付けがない。ユーザーの主体的動機を軽視するリスクあり。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_linkが全てPKGに存在しない（use_pkg=trueのため、ペルソナ裏付けが欠如）"
+        ],
+        "explains_confirmed": [
+          "O4",
+          "O5"
+        ],
+        "key_assumptions": [
+          "ユーザーがリスク回避スキルの向上に強い意欲を持っていること"
+        ],
+        "best_discriminating_question": "安全対策に関する新しい知識やスキルを積極的に学ぼうとしていますか？",
+        "testability_notes": "ユーザーの学習意欲や行動の有無を直接質問で検証しやすい。",
+        "safety_risk_notes": "『スキル不足』と受け取られる表現はユーザーの自尊心を損なう可能性がある。"
+      },
+      "rationale": "O4, O5の説明力は高いが、他観察への説明は限定的。PKG裏付けがなく、仮説の適用範囲に注意。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_linkが全てPKGに存在しない（use_pkg=trueのため、ペルソナ裏付けが欠如）"
+        ],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "ユーザーが現地文化や習慣の尊重を安全確保の手段とみなしていること"
+        ],
+        "best_discriminating_question": "現地のマナーやルールを学ぶことにどれくらい関心がありますか？",
+        "testability_notes": "文化・マナーへの関心度は質問で容易に検証可能。",
+        "safety_risk_notes": "文化尊重を強調しすぎると、ユーザーの多様な価値観を狭めるリスクがある。"
+      },
+      "rationale": "O1-O3の説明力はあるが、O5や外部観察への説明は弱い。PKG裏付けがなく、文化的価値観の押し付けに注意。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_linkが全てPKGに存在しない（use_pkg=trueのため、ペルソナ裏付けが欠如）"
+        ],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4",
+          "O5",
+          "Oext2",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "ユーザーが無意識に本来の欲求を抑圧していること",
+          "安全志向のアイデンティティが社会的・産業的に強化されていること"
+        ],
+        "best_discriminating_question": "本当はもう少し自由に旅をしたい、と思うことはありませんか？",
+        "testability_notes": "無意識の動機は自己申告だけでは検証困難。深掘りインタビューや投影法が必要。",
+        "safety_risk_notes": "ユーザーの内面や無意識を断定的に扱うため、心理的抵抗や不快感を生むリスクが高い。"
+      },
+      "rationale": "多くの観察・外部事実を説明できるが、PKG裏付けがなく、無意識の動機推定は検証・提示ともにリスクが高い。"
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O4"
+        ],
+        "key_assumptions": [
+          "A2",
+          "A3"
+        ],
+        "best_discriminating_question": "過去の感動の中で、静けさ以外に印象に残っていることはありますか？",
+        "testability_notes": "ユーザーの記憶や価値観の変化を自己報告で確認できる。",
+        "safety_risk_notes": "自己理解を促すが、過去の思い出の美化を否定しないよう配慮が必要。"
+      },
+      "rationale": "感動の再現が内的要因にも依存するという説明は妥当で、自己理解を深める助けになる。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3",
+          "O4",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A3"
+        ],
+        "best_discriminating_question": "もし現地が混雑していた場合、どのように感じると思いますか？",
+        "testability_notes": "実際に現地を訪れた際の印象を確認することで検証可能。",
+        "safety_risk_notes": "現実とのギャップを強調しすぎると落胆を招く可能性があるため、配慮が必要。"
+      },
+      "rationale": "外部情報を活用し、現実の変化を指摘できている。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O4"
+        ],
+        "key_assumptions": [
+          "A3"
+        ],
+        "best_discriminating_question": "静かな自然の中で感動した他の経験はありますか？",
+        "testability_notes": "他の体験との比較で価値観の一貫性を検証できる。",
+        "safety_risk_notes": "価値観を肯定するためリスクは低い。"
+      },
+      "rationale": "価値観に基づく説明で、ユーザーの自己像と整合性が高い。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A2"
+        ],
+        "best_discriminating_question": "新しい体験やルートに挑戦してみたい気持ちはありますか？",
+        "testability_notes": "新しい体験を試すことで満足度の変化を観察できる。",
+        "safety_risk_notes": "新しい提案が負担にならないよう配慮が必要。"
+      },
+      "rationale": "過去の再現に固執しない選択肢を示し、行動の幅を広げる。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O4",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "A1"
+        ],
+        "best_discriminating_question": "観光地の変化やマナーの悪化について、どのように感じますか？",
+        "testability_notes": "観光地の現状や社会的変化への反応を尋ねることで検証可能。",
+        "safety_risk_notes": "現代社会への違和感や失望感を指摘するため、やや不快感を与える可能性があるが、否定しきれない現実を突く。"
+      },
+      "rationale": "外部観察（観光公害）を取り入れ、ユーザーの『感動』の根底に現代社会への違和感がある可能性を示す。裏切る仮説として十分な深さがある。"
+    }
+  ]
+}

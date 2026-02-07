@@ -1,0 +1,349 @@
+{
+  "context": {
+    "observations": [
+      {
+        "id": "O1",
+        "text": "今回の旅行で徹底的にコストを抑えた。"
+      },
+      {
+        "id": "O2",
+        "text": "宿は最安値のカプセルホテルにした。"
+      },
+      {
+        "id": "O3",
+        "text": "移動は青春18きっぷを利用している。"
+      },
+      {
+        "id": "O4",
+        "text": "食事はすべてコンビニで済ませる予定である。"
+      },
+      {
+        "id": "O5",
+        "text": "この予算内でもっと節約できるポイントを探している。"
+      }
+    ],
+    "assumptions": [
+      {
+        "id": "A1",
+        "text": "ユーザーは旅行の目的がコスト削減そのものにある可能性がある。",
+        "status": "tentative"
+      },
+      {
+        "id": "A2",
+        "text": "ユーザーは体験や快適さよりも費用の最小化を優先している。",
+        "status": "tentative"
+      },
+      {
+        "id": "A3",
+        "text": "ユーザーは節約の工夫や新しい方法に関心がある。",
+        "status": "tentative"
+      },
+      {
+        "id": "A4",
+        "text": "ユーザーは地域文化や地元体験には特にこだわっていない。",
+        "status": "tentative"
+      }
+    ],
+    "questions": [
+      "旅行の目的は何か？",
+      "コスト以外に重視していることはあるか？",
+      "どの程度まで快適さや体験を犠牲にできるか？",
+      "地域の人との交流や地元体験への興味はあるか？"
+    ],
+    "constraints": {
+      "tone": "supportive",
+      "safety": "avoid determinism"
+    }
+  },
+  "evidence": {
+    "triggers": [
+      {
+        "type": "focus",
+        "text": "ユーザーは徹底的なコスト削減に強い関心を持っている。"
+      },
+      {
+        "type": "ambiguity",
+        "text": "旅行の目的や、どこまで快適さを犠牲にできるかが明確でない。"
+      },
+      {
+        "type": "information_gap",
+        "text": "節約以外の価値観や、地域体験への関心が不明。"
+      }
+    ],
+    "external_observations": [
+      {
+        "id": "Oext1",
+        "text": "日帰り旅行なら宿泊費が不要になり、旅費を大幅に節約できる。",
+        "source_url": "https://sakeinvest.com/hongkong-daytrip/"
+      }
+    ]
+  },
+  "hypotheses": [
+    {
+      "hypothesis_id": "H1",
+      "type": "psychological",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "O4",
+        "O5"
+      ],
+      "assumes": [
+        "A1",
+        "A2"
+      ],
+      "statement": "ユーザーは旅行自体よりも、限界までコストを削減すること自体に達成感や楽しさを感じている。",
+      "mechanism": "節約行動が自己効力感や達成感をもたらし、旅行の目的の一部となっている。",
+      "predictions": [
+        "さらに節約できる新しい方法を見つけること自体に満足感を感じる。",
+        "多少の不便や快適さの低下は許容できる。"
+      ],
+      "discriminating_questions": [
+        "節約そのものに達成感や楽しさを感じますか？",
+        "旅の目的はコスト削減自体にありますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H2",
+      "type": "environmental",
+      "explains": [
+        "O2",
+        "O3",
+        "O4",
+        "O5",
+        "Oext1"
+      ],
+      "assumes": [
+        "A2",
+        "A3"
+      ],
+      "statement": "ユーザーは外部環境（例えば日帰り旅行や無料スポットの活用など）をさらに利用することで、追加のコスト削減が可能だと考えている。",
+      "mechanism": "既存の節約手段に加え、外部の新しい方法（例：日帰り化、無料体験）を取り入れることで、さらなる費用削減が可能になる。",
+      "predictions": [
+        "宿泊をやめて日帰りにするなど、旅程自体を見直すことに関心がある。",
+        "無料の観光スポットや体験を積極的に探す。"
+      ],
+      "discriminating_questions": [
+        "宿泊自体をなくす（例：日帰り旅行）ことも検討できますか？",
+        "無料体験や公共スペースの活用に興味はありますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [
+        "ev:1"
+      ],
+      "is_reframing": true
+    },
+    {
+      "hypothesis_id": "H3",
+      "type": "value",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "O4"
+      ],
+      "assumes": [
+        "A2",
+        "A3"
+      ],
+      "statement": "ユーザーは計画的運営やリスク回避の価値観が強く、予算内で最大限の成果を出すことに意義を感じている。",
+      "mechanism": "PKGの『計画的運営』や『リスク回避』の価値観が、徹底したコスト管理行動につながっている。",
+      "predictions": [
+        "旅行前に詳細な予算計画やシミュレーションをしている。",
+        "予算超過への強い抵抗感がある。"
+      ],
+      "discriminating_questions": [
+        "旅行前に詳細な予算計画を立てましたか？",
+        "予算を超えることに強い抵抗感がありますか？"
+      ],
+      "persona_link": [
+        "pkg:p07_n1",
+        "pkg:p07_n6"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H4",
+      "type": "goal_mismatch",
+      "explains": [
+        "O5"
+      ],
+      "assumes": [
+        "A4"
+      ],
+      "statement": "ユーザーは本来、地域文化体験や地元交流にも関心があるが、今回はコストに意識が集中しすぎて他の目的を見失っている可能性がある。",
+      "mechanism": "PKGには『地域文化への敬意』や『季節祭り参加』などの関心があるが、今回はそれが抑制されている。",
+      "predictions": [
+        "本来は地元体験や交流も楽しみたい気持ちがある。",
+        "節約に集中するあまり、他の楽しみを後回しにしている。"
+      ],
+      "discriminating_questions": [
+        "本当は地域文化や地元体験も楽しみたい気持ちはありますか？",
+        "今回はコスト重視で他の目的を抑えている感覚はありますか？"
+      ],
+      "persona_link": [
+        "pkg:p07_n2",
+        "pkg:p07_n4"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H5",
+      "type": "evidence_gap",
+      "explains": [
+        "O5"
+      ],
+      "assumes": [
+        "A3"
+      ],
+      "statement": "ユーザーはまだ知らない節約方法や、他の人が実践している工夫を知りたいだけかもしれない。",
+      "mechanism": "情報不足が動機であり、実際には既存の方法で十分満足している可能性もある。",
+      "predictions": [
+        "他人の節約アイデアや体験談を聞くと興味を持つ。",
+        "新しい方法を知ること自体が目的である。"
+      ],
+      "discriminating_questions": [
+        "他の人の節約体験や工夫を知ることに関心はありますか？",
+        "今の節約方法で十分満足していますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [],
+      "is_reframing": false
+    }
+  ],
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4",
+          "O5"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A2"
+        ],
+        "best_discriminating_question": "節約そのものに達成感や楽しさを感じますか？",
+        "testability_notes": "ユーザーが節約自体を目的化しているか直接質問することで検証可能。",
+        "safety_risk_notes": "節約行動を自己目的化していると受け取られると、ユーザーの意図を単純化しすぎるリスクあり。"
+      },
+      "rationale": "観察された行動全体を説明できるが、動機が節約自体にあると断定しすぎないよう注意が必要。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3",
+          "O4",
+          "O5"
+        ],
+        "key_assumptions": [
+          "A2",
+          "A3"
+        ],
+        "best_discriminating_question": "宿泊自体をなくす（例：日帰り旅行）ことも検討できますか？",
+        "testability_notes": "日帰り旅行や無料スポット利用など、旅程自体の見直し提案に対する反応で検証可能。",
+        "safety_risk_notes": "旅行の楽しみや体験を軽視していると受け取られないよう配慮が必要。"
+      },
+      "rationale": "外部観察（Oext1）を活用し、従来の枠組みを超えた節約案を提示できる。裏切る仮説として意味変容が大きい。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "A2",
+          "A3"
+        ],
+        "best_discriminating_question": "旅行前に詳細な予算計画を立てましたか？",
+        "testability_notes": "計画性やリスク回避への価値観を尋ねることで検証可能。",
+        "safety_risk_notes": "価値観の押し付けや、行動の動機を単純化しすぎないよう注意。"
+      },
+      "rationale": "PKGと整合し、ユーザーの価値観に基づく説明だが、行動の表層的な説明に留まる可能性あり。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O5"
+        ],
+        "key_assumptions": [
+          "A4"
+        ],
+        "best_discriminating_question": "本当は地域文化や地元体験も楽しみたい気持ちはありますか？",
+        "testability_notes": "地域文化体験への興味や、今回の旅行でそれを抑制しているかを尋ねることで検証可能。",
+        "safety_risk_notes": "ユーザーの本来の関心を推測するため、意図を誤解されないよう注意。"
+      },
+      "rationale": "PKGの深い関心を反映した仮説で、節約以外の動機の抑制に着目している。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O5"
+        ],
+        "key_assumptions": [
+          "A3"
+        ],
+        "best_discriminating_question": "他の人の節約体験や工夫を知ることに関心はありますか？",
+        "testability_notes": "情報収集欲求が強いかどうかを尋ねることで検証可能。",
+        "safety_risk_notes": "単なる情報不足と決めつけないよう注意。"
+      },
+      "rationale": "ユーザーの質問意図を表層的にとらえ、情報ニーズに焦点を当てている。"
+    }
+  ],
+  "decision": {
+    "selected_hypothesis_id": "H2",
+    "contrasting_hypothesis_id": "H4",
+    "selection_rationale": "H2は外部観察（Oext1）を取り入れ、ユーザーの『もっと節約できるポイント』という問いを『そもそも宿泊自体をなくす（例：日帰り旅行）という選択肢もある』という意味に変える。これは従来の旅行観や節約観を大きく揺さぶる裏切る仮説である。一方H4は、節約に集中しすぎて本来の地域体験への関心を抑制しているという、発言の額面通りの読み方を提供する。どちらの立場に立つかで、次の行動（旅程の大胆な見直し or 体験の重視）が大きく変わる。",
+    "user_facing_frame": {
+      "framing": "options",
+      "questions": [
+        "もし宿泊自体をなくして日帰り旅行にしたら、さらに大幅な節約ができそうですが、そういった選択肢も検討できますか？",
+        "それとも、今回は節約を重視しつつも、本当は地域文化や地元体験も楽しみたい気持ちがありますか？"
+      ],
+      "options": [
+        "旅程自体を見直して、日帰り旅行や無料体験など『徹底的なコスト削減』をさらに追求する立場",
+        "節約も大事だけど、地域文化や地元体験など『本来の楽しみ』も重視する立場"
+      ]
+    }
+  },
+  "final_response": "ご自身で徹底的にコストを抑える工夫をされていること、本当に素晴らしいですね。『宿は最安値のカプセルホテル』『青春18きっぷ』『コンビニ食』と、既に多くの節約ポイントを実践されています。\n\n一つ新しい視点として、もし宿泊自体をなくして日帰り旅行に切り替えると、さらに大幅な節約が可能になるかもしれません（実際、日帰り旅行なら宿泊費が不要という外部事例もあります）。このように旅程そのものを見直すのはどう感じますか？\n\n一方で、PKGには『地域文化への敬意』や『季節祭り参加』といった関心も見られます。本当は節約だけでなく、地元の文化や人との交流も楽しみたい気持ちもあるのではないでしょうか？\n\nどちらの立場に立つかで、次の行動や旅の満足感が大きく変わるかもしれません。『徹底的なコスト削減をさらに追求する』か、『節約も大事だけど地域体験も重視する』か、どちらが今のあなたに合いそうでしょう？\n\nもし5分あれば、日帰り旅行プランや無料体験スポットを調べてみる、あるいは地域のイベント情報をチェックしてみるのもおすすめです。同じように節約を意識しつつ、地元体験を楽しんでいる人の体験談も参考になるかもしれません。\n\nどちらの立場により興味がありますか？また、今の旅で『これだけは譲れない』ポイントがあれば教えてください。",
+  "markers": {
+    "empathy": {
+      "acknowledgement": true,
+      "reflection": true,
+      "perspective_prompt": true
+    },
+    "nudge": {
+      "easy": true,
+      "attractive": true,
+      "social": true,
+      "timely": true,
+      "has_question": true,
+      "has_options": true,
+      "has_small_action": true,
+      "directive_level": "low"
+    }
+  }
+}

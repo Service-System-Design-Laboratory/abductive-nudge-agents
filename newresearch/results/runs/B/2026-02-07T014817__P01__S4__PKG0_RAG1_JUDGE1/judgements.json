@@ -1,0 +1,90 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーが『本物』や『地元らしさ』という価値観を強く持っていること",
+          "観光客向けやチェーン店がユーザーにとって画一的・商業的で魅力がないと感じられていること"
+        ],
+        "best_discriminating_question": "飲食以外の旅先体験でも『本物』や『地元らしさ』を重視するか？",
+        "testability_notes": "ユーザーの価値観や行動傾向を直接質問することで比較的容易に検証可能。",
+        "safety_risk_notes": "断定的な価値観の押し付けや、他の価値観を否定する印象を与えないよう注意が必要。"
+      },
+      "rationale": "観察O1・O2をよく説明できており、外部エビデンスとも整合的。ただし、ユーザーの価値観を前提とするため、個人差や例外に注意が必要。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1"
+        ],
+        "key_assumptions": [
+          "ユーザーが観光客扱いされることに抵抗感や疎外感を感じる心理を持っていること"
+        ],
+        "best_discriminating_question": "地元の人との交流や会話を重視しているか？",
+        "testability_notes": "ユーザーの心理的動機を直接尋ねる必要があり、やや主観的な回答に依存する。",
+        "safety_risk_notes": "ユーザーの心理を推測するため、断定的な表現や決めつけに注意が必要。"
+      },
+      "rationale": "O1の『観光客向け店を避ける』理由として妥当だが、O2やO3への説明力は限定的。心理的要因の検証には追加の質問が必要。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "観光マーケティングやネット情報の発達により、地元密着型の店も観光客対応を意識するようになっていること"
+        ],
+        "best_discriminating_question": "観光客対応をしている店でも味や雰囲気が良ければ許容できるか？",
+        "testability_notes": "外部エビデンスや現地調査による検証が可能だが、ユーザーの許容範囲については追加質問が必要。",
+        "safety_risk_notes": "ユーザーの理想と現実のギャップを指摘するため、否定的・冷笑的に受け取られないよう配慮が必要。"
+      },
+      "rationale": "O2や外部事実Oext2を的確に説明。ユーザーの理想と現実のズレに着目しており、現実的な視点を提供する。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "ユーザーが情報収集スキルやノウハウを持つ、またはその習得に関心が高いこと"
+        ],
+        "best_discriminating_question": "現地で飲食店を探す際、どのような情報収集手段を使うか？",
+        "testability_notes": "ユーザーの行動や情報収集手段を具体的に質問することで比較的容易に検証可能。",
+        "safety_risk_notes": "スキルやノウハウの有無を問うため、ユーザーに能力差を感じさせないよう配慮が必要。"
+      },
+      "rationale": "O2やOext1を説明でき、ユーザーの行動面に焦点を当てている。スキルの有無は個人差が大きいため、追加確認が重要。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "ユーザーが『本物志向の自分』というアイデンティティを他者に示したい、または自己確認したいという社会的欲求を持っていること"
+        ],
+        "best_discriminating_question": "地元密着店での体験を他人に話したりSNSに投稿することに価値を感じるか？",
+        "testability_notes": "SNS投稿や他者へのアピール行動の有無を質問・観察することで検証可能。",
+        "safety_risk_notes": "ユーザーの動機を社会的承認欲求と断定するため、レッテル貼りや否定的印象を与えないよう注意が必要。"
+      },
+      "rationale": "O1・O2・Oext1を説明でき、現代的な消費者行動の側面を捉えている。動機の指摘がユーザーに不快感を与えないよう配慮が必要。"
+    }
+  ]
+}

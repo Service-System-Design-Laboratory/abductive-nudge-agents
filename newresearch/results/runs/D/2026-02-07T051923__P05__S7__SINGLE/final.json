@@ -1,0 +1,327 @@
+{
+  "context": {
+    "observations": [
+      {
+        "id": "O1",
+        "text": "海外旅行は危険が多いと感じている"
+      },
+      {
+        "id": "O2",
+        "text": "ツアーでしか海外旅行に行かないことにしている"
+      },
+      {
+        "id": "O3",
+        "text": "自由行動の時間もホテルの周辺から離れないようにしている"
+      },
+      {
+        "id": "O4",
+        "text": "治安情報を毎日チェックしている"
+      }
+    ],
+    "assumptions": [
+      {
+        "id": "A1",
+        "text": "安全への強いこだわりが旅行の行動選択に大きく影響している",
+        "status": "tentative"
+      },
+      {
+        "id": "A2",
+        "text": "過去に危険な経験や不安を感じたことがある",
+        "status": "tentative"
+      },
+      {
+        "id": "A3",
+        "text": "コスト最適化や節約志向が旅行スタイルに影響している",
+        "status": "tentative"
+      }
+    ],
+    "questions": [
+      "なぜツアー旅行を選ぶのか？",
+      "自由行動の範囲を広げたいと思ったことはあるか？",
+      "安全以外に旅行で重視していることは？",
+      "治安情報のどのような点を特に気にしているか？"
+    ],
+    "constraints": {
+      "tone": "supportive",
+      "safety": "avoid determinism"
+    }
+  },
+  "evidence": {
+    "triggers": [
+      {
+        "type": "focus",
+        "text": "安全への強いこだわりが行動制限につながっている"
+      },
+      {
+        "type": "information_gap",
+        "text": "なぜそこまで危険を感じるのか、具体的な理由が不明"
+      },
+      {
+        "type": "ambiguity",
+        "text": "安全以外の価値観（節約志向やコスト最適化）がどの程度影響しているか不明"
+      }
+    ],
+    "external_observations": [
+      {
+        "id": "Oext1",
+        "text": "多くの旅行者が自由時間もホテル周辺で過ごすことを選択しているが、これは安全志向だけでなく土地勘のなさや情報不足、観察者効果（他の旅行者の行動を見て自分も同じように行動する）も影響している可能性がある",
+        "source_url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q10144674620"
+      },
+      {
+        "id": "Oext2",
+        "text": "自由行動の範囲や過ごし方によって旅行の満足度が大きく変わることがある（performative authenticity：本物らしさを演出するために敢えて制限された行動を選ぶ場合もある）",
+        "source_url": "http://dmo-kawagoe.or.jp/wp-content/uploads/2023/10/%E3%80%90JTB%E4%BD%9C%E6%88%90%E3%80%91%E5%B0%8F%E6%B1%9F%E6%88%B8%E5%B7%9D%E8%B6%8A%E3%81%AE%E6%96%87%E5%8C%96%E4%BD%93%E9%A8%93%E3%83%84%E3%82%A2%E3%83%BC%E5%AE%9F%E6%96%BD%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf"
+      }
+    ]
+  },
+  "hypotheses": [
+    {
+      "hypothesis_id": "H1",
+      "type": "psychological",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "O4"
+      ],
+      "assumes": [
+        "A1",
+        "A2"
+      ],
+      "statement": "ユーザーは過去の不安や危険体験、またはそれに類する情報に強く影響されており、安全への強いこだわりが旅行スタイルを大きく制限している。",
+      "mechanism": "過去の体験や不安がリスク回避行動を強化し、ツアーやホテル周辺に限定した行動選択を促している。",
+      "predictions": [
+        "新しい場所や自由行動に対して強い不安を感じる",
+        "安全情報への関心が高い",
+        "他者の体験談やニュースなどからも影響を受けやすい"
+      ],
+      "discriminating_questions": [
+        "過去に危険な目にあったことがありますか？",
+        "安全以外の理由でツアーやホテル周辺にこだわることはありますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H2",
+      "type": "value",
+      "explains": [
+        "O2",
+        "O3"
+      ],
+      "assumes": [
+        "A3"
+      ],
+      "statement": "節約志向やコスト最適化の価値観が、ツアー選択や行動範囲の限定に影響している。安全志向は表向きの理由で、実際にはコスト管理が主な動機となっている可能性がある。",
+      "mechanism": "ツアーはコストパフォーマンスが高く、自由行動の制限も余計な出費やリスクを避けるための選択となっている。",
+      "predictions": [
+        "旅行の計画段階で費用を重視している",
+        "自由行動での追加出費を避ける傾向がある"
+      ],
+      "discriminating_questions": [
+        "ツアーやホテル周辺にこだわる理由に、コスト面の意識はありますか？"
+      ],
+      "persona_link": [
+        "p05_n2",
+        "p05_n3",
+        "p05_n6"
+      ],
+      "evidence_link": [],
+      "is_reframing": true
+    },
+    {
+      "hypothesis_id": "H3",
+      "type": "social",
+      "explains": [
+        "O3",
+        "O4",
+        "Oext1"
+      ],
+      "assumes": [],
+      "statement": "他の旅行者の行動や一般的な安全志向の雰囲気（観察者効果）が、ユーザーの行動範囲の制限に影響している。",
+      "mechanism": "周囲の人々が安全を重視する姿勢を見て、自分も同じように行動することで安心感を得ている。",
+      "predictions": [
+        "他の旅行者の行動を参考にしている",
+        "ガイドやツアー仲間の意見を重視する"
+      ],
+      "discriminating_questions": [
+        "他の旅行者の行動を見て自分の行動を決めることはありますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [
+        "ev:1"
+      ],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H4",
+      "type": "goal_mismatch",
+      "explains": [
+        "O2",
+        "O3",
+        "Oext2"
+      ],
+      "assumes": [],
+      "statement": "本当は現地体験や自由な探索に興味があるが、安全志向や習慣によって自分の本来の目的（旅行の満足度向上）と行動がずれている可能性がある。",
+      "mechanism": "安全志向が強すぎることで、本来の旅行の楽しみや満足度を犠牲にしている。",
+      "predictions": [
+        "自由行動や現地体験への興味があるが、実際は制限している",
+        "旅行後に『もっと色々できたかも』と感じることがある"
+      ],
+      "discriminating_questions": [
+        "本当はもっと自由に行動したいと思うことはありますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [
+        "ev:2"
+      ],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H5",
+      "type": "evidence_gap",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "O4"
+      ],
+      "assumes": [],
+      "statement": "ユーザーが感じている『危険』は、実際のリスクとズレている可能性がある。情報の過剰取得や偏りが不安を増幅させているのかもしれない。",
+      "mechanism": "治安情報を毎日チェックすることで、リスク認知が過度に強化されている。",
+      "predictions": [
+        "実際のリスクよりも危険を大きく感じている",
+        "情報収集が不安を増幅させている"
+      ],
+      "discriminating_questions": [
+        "治安情報を見て不安が増すことはありますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [],
+      "is_reframing": false
+    }
+  ],
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A2"
+        ],
+        "best_discriminating_question": "過去に危険な目にあったことがありますか？",
+        "testability_notes": "過去の体験や不安の有無を尋ねることで検証可能",
+        "safety_risk_notes": "過去の体験に触れるため、慎重な配慮が必要"
+      },
+      "rationale": "安全志向の心理的要因を中心に説明しており、観察事実をよく説明している"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A3"
+        ],
+        "best_discriminating_question": "ツアーやホテル周辺にこだわる理由に、コスト面の意識はありますか？",
+        "testability_notes": "旅行の計画や行動選択時のコスト意識を確認する質問で検証可能",
+        "safety_risk_notes": "安全志向を否定する形にならないよう配慮が必要"
+      },
+      "rationale": "PKGの節約志向・コスト最適化と行動の関連を指摘し、表面的な理由の裏に別の動機がある可能性を示す（裏切る仮説）"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3",
+          "O4",
+          "Oext1"
+        ],
+        "key_assumptions": [],
+        "best_discriminating_question": "他の旅行者の行動を見て自分の行動を決めることはありますか？",
+        "testability_notes": "集団内での行動選択や他者の影響を尋ねることで検証可能",
+        "safety_risk_notes": "個人の主体性を軽視しないよう注意"
+      },
+      "rationale": "外部観察（Oext1）を活用し、観察者効果の社会的側面を説明"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3",
+          "Oext2"
+        ],
+        "key_assumptions": [],
+        "best_discriminating_question": "本当はもっと自由に行動したいと思うことはありますか？",
+        "testability_notes": "旅行への満足度や本音を尋ねることで検証可能",
+        "safety_risk_notes": "ユーザーの現状満足度を否定しないよう配慮"
+      },
+      "rationale": "旅行の目的と実際の行動にズレがある可能性を指摘し、満足度向上のヒントとなる"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [],
+        "best_discriminating_question": "治安情報を見て不安が増すことはありますか？",
+        "testability_notes": "情報収集と不安の関係を尋ねることで検証可能",
+        "safety_risk_notes": "不安を煽らないよう慎重な表現が必要"
+      },
+      "rationale": "リスク認知と情報収集の関係に着目し、行動の背景を説明"
+    }
+  ],
+  "decision": {
+    "selected_hypothesis_id": "H2",
+    "contrasting_hypothesis_id": "H4",
+    "selection_rationale": "H2はユーザーの『安全志向』という発言の表面的な意味を反転させ、『実は節約志向やコスト最適化が主な動機で、安全は表向きの理由かもしれない』と読み替える裏切る仮説です。H4は『本当は現地体験や自由な探索に興味があるが、安全志向が強くて行動を制限している』という額面通りの読みです。どちらの立場に立つかで、今後の旅行計画や自己理解が大きく変わります。",
+    "user_facing_frame": {
+      "framing": "options",
+      "questions": [
+        "ツアーやホテル周辺にこだわる理由に、コスト面の意識はありますか？",
+        "本当はもっと自由に行動したいと思うことはありますか？"
+      ],
+      "options": [
+        "実はコスト最適化や節約志向が行動の主な理由で、安全志向は表向きの説明かもしれないという見方",
+        "やはり安全志向が最優先で、自由行動への興味や満足度向上の可能性は今は重視していないという見方"
+      ]
+    }
+  },
+  "final_response": "ご相談ありがとうございます。『海外旅行は危険が多いから、ツアーでしか行かない』『自由行動もホテル周辺だけ』というご自身のスタイル、とても慎重で計画的ですね。安全を大事にされているお気持ち、しっかり伝わってきます。\n\n一方で、実は『節約志向やコスト最適化』が行動の主な理由で、安全志向は表向きの説明になっている可能性もあるかもしれません（例えば、ツアーやホテル周辺にこだわることで余計な出費やリスクを避けているなど）。逆に、『本当はもっと自由に行動したいけれど、安全志向が強くて行動を制限している』という見方もできます。\n\nどちらの立場に立つかで、今後の旅行の計画や楽しみ方が変わるかもしれません。たとえば、\n・実はコスト面を重視しているなら、現地の無料イベントや格安の交通手段を調べてみる\n・安全志向が最優先なら、現地ガイド付きの短時間ツアーや、現地の治安情報をリアルタイムで共有するアプリを活用する\nなど、5分でできる小さな工夫も考えられます。\n\nちなみに、他の旅行者も自由時間はホテル周辺で過ごすことが多いようですし、満足度を上げるには『自分なりの安心できる範囲で新しい体験を少しだけ加えてみる』のも一つの方法です。\n\n質問ですが、\n・ツアーやホテル周辺にこだわる理由に、コスト面の意識はありますか？\n・本当はもっと自由に行動したいと思うことはありますか？\n\nどちらの立場に近いか、あるいは全く別の考えでも構いません。ご自身の気持ちに合った選択肢を探してみませんか？",
+  "markers": {
+    "empathy": {
+      "acknowledgement": true,
+      "reflection": true,
+      "perspective_prompt": true
+    },
+    "nudge": {
+      "easy": true,
+      "attractive": true,
+      "social": true,
+      "timely": true,
+      "has_question": true,
+      "has_options": true,
+      "has_small_action": true,
+      "directive_level": "low"
+    }
+  }
+}

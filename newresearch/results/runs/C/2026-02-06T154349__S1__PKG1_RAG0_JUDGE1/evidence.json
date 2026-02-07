@@ -1,0 +1,12 @@
+{
+  "triggers": [
+    {
+      "type": "information_gap",
+      "text": "PKGにはユーザーが求める『地元の人しか知らない、本物の生活が残っている場所』の具体例や探索方法に関する情報が不足している。"
+    }
+  ],
+  "rag_queries": [],
+  "evidence_items": [],
+  "external_observations": [],
+  "notes": "RAG disabled (use_rag=false) — trigger identification only"
+}

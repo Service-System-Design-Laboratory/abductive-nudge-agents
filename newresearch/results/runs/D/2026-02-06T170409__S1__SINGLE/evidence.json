@@ -1,0 +1,33 @@
+{
+  "triggers": [
+    {
+      "type": "focus",
+      "text": "ユーザーは『本物の生活』や地元の人しか知らない場所への強い志向を示している。"
+    },
+    {
+      "type": "ambiguity",
+      "text": "『本物の生活』の定義や、観光客向けの演出がなぜ嫌なのかが明確でない。"
+    },
+    {
+      "type": "information_gap",
+      "text": "ユーザーが『本物』にこだわる背景や動機が明らかでない。"
+    }
+  ],
+  "external_observations": [
+    {
+      "id": "Oext1",
+      "text": "ガイドブックに載っていない場所の方が面白いという意見がSNS上で共感を集めている。",
+      "source_url": "https://x.com/Red_Tuxedo/status/2018246990816289097"
+    },
+    {
+      "id": "Oext2",
+      "text": "ガイドブックに載っていない地元の人との交流や体験が貴重で心に残るという観光地の店主のメッセージがある。",
+      "source_url": "https://www.echizenkani.com/20220513115750"
+    },
+    {
+      "id": "Oext3",
+      "text": "Googleマップには載っているが現地に案内がなく、探訪者が自力で見つけるような場所も存在する。",
+      "source_url": "https://www.ryosou.com/simanenokunifudoki2024izumo/"
+    }
+  ]
+}

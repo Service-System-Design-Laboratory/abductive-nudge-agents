@@ -1,0 +1,16 @@
+{
+  "triggers": [
+    {
+      "type": "information_gap",
+      "text": "縄文杉の神秘的な雰囲気が『人の手が入っていない原生林』だからこそ味わえると述べているが、PKGには縄文杉や屋久島の原生林の状態（人の手が入っているか否か）やその雰囲気に関する具体的な情報が存在しない。"
+    },
+    {
+      "type": "ambiguity",
+      "text": "『屋久島の森のことは誰よりも分かっているつもりだ』という主張が、実際の知識や経験に基づくものか、主観的な自信なのかPKGでは判断できない。"
+    }
+  ],
+  "rag_queries": [],
+  "evidence_items": [],
+  "external_observations": [],
+  "notes": "RAG disabled (use_rag=false) — trigger identification only"
+}

@@ -1,0 +1,93 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーが『地域文化への敬意』という価値観を強く持っていること",
+          "この価値観が飲食店選びの主要な動機となっていること"
+        ],
+        "best_discriminating_question": "ユーザーは飲食以外の場面でも地域文化への敬意を示す行動を取るか？",
+        "testability_notes": "PKG上の価値観とユーザーの発言・行動の一貫性を確認すれば比較的検証しやすい。",
+        "safety_risk_notes": "価値観の断定的な提示は、ユーザーの多様な動機を見落とすリスクがある。"
+      },
+      "rationale": "PKGの内容と観察O1・O2を矛盾なく説明できているが、動機が価値観に限定されている点に注意が必要。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーが『計画的運営』や『有機野菜ブランド』への関心・スキルを持っていること",
+          "これらのスキルや関心が飲食店選びに具体的に影響していること"
+        ],
+        "best_discriminating_question": "ユーザーは飲食店選びで食材の産地や生産者情報を重視するか？",
+        "testability_notes": "PKGとユーザーの具体的な質問・行動の記録があれば検証可能だが、観察O2のみではやや弱い。",
+        "safety_risk_notes": "スキルや知識の有無を前提とするため、ユーザーの実態と乖離している場合に誤解を生む可能性がある。"
+      },
+      "rationale": "PKGのスキル・関心ノードとO2の内容は整合するが、O1やO3の説明力は限定的。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "ユーザーが地元コミュニティとのつながりや一体感を重視していること",
+          "この社会的動機が飲食店選びに強く反映されていること"
+        ],
+        "best_discriminating_question": "ユーザーは飲食店で地元の人と会話したり、交流したいと思うか？",
+        "testability_notes": "PKGの関連ノードや、ユーザーの交流行動の有無を確認できれば検証しやすい。",
+        "safety_risk_notes": "社会的動機を強調しすぎると、個人の嗜好や他の要因を過小評価するリスクがある。"
+      },
+      "rationale": "PKGの『地域文化への敬意』『季節祭り参加』と観察O2・O3を矛盾なく説明できている。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーの『本当の郷土料理』や『地元の人が毎日通う店』の基準が曖昧であること",
+          "PKGにも明確な定義が存在しないこと"
+        ],
+        "best_discriminating_question": "ユーザー自身は『本当の郷土料理』や『地元の人が毎日通う店』の明確な条件を言語化できるか？",
+        "testability_notes": "ユーザーに直接基準を尋ねることで容易に検証可能。",
+        "safety_risk_notes": "ユーザーの選択基準の曖昧さを指摘するため、やや否定的・批判的に受け取られる可能性がある。"
+      },
+      "rationale": "観察O2の根拠の曖昧さを指摘する仮説であり、他仮説の前提を問い直す役割を持つ。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "ユーザーが『本物志向』や『地元密着』を自己アイデンティティの一部として強調したいという心理的欲求を持っていること",
+          "PKGの『地域文化への敬意』や『季節祭り参加』が自己承認や差異化の手段となっていること"
+        ],
+        "best_discriminating_question": "ユーザーは自分の飲食店選びの基準やこだわりを他人に話したり、SNSで発信することが多いか？",
+        "testability_notes": "ユーザーの発信行動や発言内容を観察・質問することで検証可能。",
+        "safety_risk_notes": "ユーザーの動機を深層心理に帰属させるため、本人の意図と異なる解釈や不快感を生むリスクが高い。"
+      },
+      "rationale": "観察O1～O3を広く説明し、PKGとも整合するが、心理的解釈のため主観的・センシティブな側面が強い。"
+    }
+  ]
+}

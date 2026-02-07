@@ -1,0 +1,90 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーが『自然との調和』や『地域の伝統文化』を価値観として強く持っていること",
+          "これらの価値観が伝統建築や街並みへの関心に直結していること"
+        ],
+        "best_discriminating_question": "金沢以外の伝統的な街や自然と調和した場所にも同様の魅力を感じますか？",
+        "testability_notes": "PKG情報とユーザーへの追加質問で比較的容易に検証可能。",
+        "safety_risk_notes": "価値観の決めつけと受け取られる可能性があるため、断定的な表現は避けるべき。"
+      },
+      "rationale": "PKGの内容と観察O1・O2をよく説明しているが、O3（美の極みと感じる理由）には直接的な説明力がやや弱い。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーが地域コミュニティや住民との信頼関係を重視していること",
+          "伝統の継承や保存活動への関心が街並みへの価値評価に結びついていること"
+        ],
+        "best_discriminating_question": "金沢で地域住民と直接交流することに興味がありますか？",
+        "testability_notes": "PKGの『地域住民との信頼』や『地域行事』の記述と、ユーザーへの追加質問で検証可能。",
+        "safety_risk_notes": "ユーザーの社会的関心を過大評価すると誤解を生む可能性がある。"
+      },
+      "rationale": "PKGの『地域住民との信頼』や『地域行事』を根拠にO2を説明できるが、O1やO3への説明力は限定的。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1"
+        ],
+        "key_assumptions": [
+          "ユーザーが現代社会の喧騒から距離を置きたいという心理的傾向を持っていること",
+          "伝統的な街並みが心の安らぎやノスタルジーをもたらすと感じていること"
+        ],
+        "best_discriminating_question": "現代的な観光地よりも、歴史的な町や静かな場所を選ぶ傾向がありますか？",
+        "testability_notes": "ユーザーの旅先選択や発言傾向を追加質問で確認する必要があるため、やや検証に手間がかかる。",
+        "safety_risk_notes": "ユーザーの心理状態を推測するため、断定的な表現は避け、配慮が必要。"
+      },
+      "rationale": "O1（伝統建築への関心）を心理的動機で説明できるが、O2・O3への説明は間接的で限定的。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3"
+        ],
+        "key_assumptions": [
+          "観察やPKGから美的評価の基準が十分に読み取れないこと"
+        ],
+        "best_discriminating_question": "なぜひがし茶屋街が他の伝統的な街並みより美しいと感じるのですか？",
+        "testability_notes": "ユーザーに直接追加質問を行うことで容易に検証可能。",
+        "safety_risk_notes": "ユーザーの価値観や感性に疑問を投げかけるため、問いかけ方に配慮が必要。"
+      },
+      "rationale": "O3（美の極みとする理由の不明確さ）を指摘し、情報ギャップを明確化する仮説。追加質問の必要性を示唆する点で有用。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーが伝統や自然を重視する自己像を維持・表明したいという欲求を持っていること",
+          "この自己像が行動や発言に強く影響していること"
+        ],
+        "best_discriminating_question": "伝統や自然を重視する価値観を他者に伝えたり、誇りに感じることはありますか？",
+        "testability_notes": "ユーザーの発言や行動パターンを観察・質問することで検証可能だが、やや主観的な解釈を要する。",
+        "safety_risk_notes": "ユーザーの動機を内面化・心理化するため、誤解や不快感を与えるリスクがある。表現に十分配慮が必要。"
+      },
+      "rationale": "PKGの価値観を深掘りし、O1・O2を説明できるが、O3（美の極み）への説明はやや間接的。自己像仮説ゆえに検証には慎重さが求められる。"
+    }
+  ]
+}

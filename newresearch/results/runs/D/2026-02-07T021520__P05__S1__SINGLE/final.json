@@ -1,0 +1,345 @@
+{
+  "context": {
+    "observations": [
+      {
+        "id": "O1",
+        "text": "ガイドブックに載っているような場所には一切興味がない"
+      },
+      {
+        "id": "O2",
+        "text": "地元の人しか知らない、看板も出ていないような『本物の生活』が残っている場所だけを歩きたい"
+      },
+      {
+        "id": "O3",
+        "text": "観光客向けの演出はもうお腹いっぱいだ"
+      }
+    ],
+    "assumptions": [
+      {
+        "id": "A1",
+        "text": "観光客向けの場所は本物の生活を体験できない",
+        "status": "tentative"
+      },
+      {
+        "id": "A2",
+        "text": "地元の人しか知らない場所には独自の価値がある",
+        "status": "tentative"
+      },
+      {
+        "id": "A3",
+        "text": "『本物の生活』は観光地化されていない場所にしか存在しない",
+        "status": "tentative"
+      }
+    ],
+    "questions": [
+      "なぜ観光客向けの演出が嫌になったのか？",
+      "『本物の生活』とはどのようなものだと考えているのか？",
+      "地元の人しか知らない場所でどんな体験を求めているのか？"
+    ],
+    "constraints": {
+      "tone": "supportive",
+      "safety": "avoid determinism"
+    }
+  },
+  "evidence": {
+    "triggers": [
+      {
+        "type": "focus",
+        "text": "『本物の生活』や地元の人しか知らない場所への強いこだわり"
+      },
+      {
+        "type": "ambiguity",
+        "text": "『本物の生活』の定義や、なぜ観光客向けの演出を避けたいのかが明確でない"
+      },
+      {
+        "type": "information_gap",
+        "text": "地元の人しか知らない場所で何を得たいのかが不明"
+      }
+    ],
+    "external_observations": [
+      {
+        "id": "Oext1",
+        "text": "Googleマップには載っているが現地に看板や案内が一切ない場所も、実は観光客が探訪していることがある",
+        "source_url": "https://www.ryosou.com/simanenokunifudoki2024izumo/"
+      },
+      {
+        "id": "Oext2",
+        "text": "人情味あふれる地元の人々との交流が、ガイドブックに載っていない旅の価値として語られている",
+        "source_url": "https://www.echizenkani.com/20220513115750"
+      }
+    ]
+  },
+  "hypotheses": [
+    {
+      "hypothesis_id": "H1",
+      "type": "psychological",
+      "explains": [
+        "O1",
+        "O2",
+        "O3"
+      ],
+      "assumes": [
+        "A1",
+        "A2"
+      ],
+      "statement": "ユーザーは観光地での『演出された体験』に飽き、よりリアルで偶発的な出会いや体験を求めている。",
+      "mechanism": "繰り返し観光地化された場所を訪れた結果、予定調和的な体験に満足できなくなった。予測不能な体験や地元の人との偶然の交流に価値を感じている。",
+      "predictions": [
+        "観光地での定番体験には関心を示さない",
+        "地元の人との交流を重視する旅の計画を立てる"
+      ],
+      "discriminating_questions": [
+        "最近、観光地での体験に物足りなさを感じたことはありますか？"
+      ],
+      "persona_link": [
+        "pkg:p05_n7",
+        "pkg:p05_n6"
+      ],
+      "evidence_link": [
+        "ev:Oext2"
+      ],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H2",
+      "type": "value",
+      "explains": [
+        "O1",
+        "O2"
+      ],
+      "assumes": [
+        "A2"
+      ],
+      "statement": "ユーザーは『少人数交流』や『節約志向』の価値観から、観光客向けの場所よりも地元密着型の体験を重視している。",
+      "mechanism": "大勢の観光客が集まる場所や高コストな観光地よりも、地元の人と密に交流できる環境やコストを抑えた旅に価値を感じている。",
+      "predictions": [
+        "少人数での旅や地元の人と直接関わる計画を好む",
+        "観光地の入場料や高額な体験を避ける"
+      ],
+      "discriminating_questions": [
+        "地元の人との交流やコスト面は旅先選びでどれくらい重要ですか？"
+      ],
+      "persona_link": [
+        "pkg:p05_n2",
+        "pkg:p05_n7",
+        "pkg:p05_n6"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H3",
+      "type": "environmental",
+      "explains": [
+        "O2",
+        "O3",
+        "Oext1"
+      ],
+      "assumes": [
+        "A3"
+      ],
+      "statement": "『地元の人しか知らない場所』も、実はネットや地図アプリで観光客がアクセスできるようになっており、『本物』と感じる体験自体が商品化されつつある。",
+      "mechanism": "情報化社会で、かつての『隠れた場所』も簡単に見つけられるようになり、観光客が増えて本来の生活感が薄れている。",
+      "predictions": [
+        "ネットやSNSで紹介された場所も『本物』として扱われるが実際は観光客が多い",
+        "現地で思ったより観光客が多くてがっかりすることがある"
+      ],
+      "discriminating_questions": [
+        "『地元の人しか知らない』と思って行った場所で、他の観光客に出会った経験はありますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [
+        "ev:Oext1"
+      ],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H4",
+      "type": "goal_mismatch",
+      "explains": [
+        "O1",
+        "O2",
+        "O3"
+      ],
+      "assumes": [
+        "A1",
+        "A3"
+      ],
+      "statement": "ユーザーは『本物の生活』を求めているが、実際には『観光客である自分』という立場から完全に地元の生活に溶け込むことはできず、理想と現実にギャップがある。",
+      "mechanism": "観光客である以上、どんなに地元密着を目指しても、観察者効果や外部者としての立場が消えないため、求める『本物』には本質的に到達できない。",
+      "predictions": [
+        "どこに行っても『本物』に近づけない感覚を持つ",
+        "地元の人との距離感や違和感を感じることがある"
+      ],
+      "discriminating_questions": [
+        "旅先で地元の人と完全に打ち解けられたと感じたことはありますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H5",
+      "type": "psychological",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "Oext1"
+      ],
+      "assumes": [
+        "A1",
+        "A2",
+        "A3"
+      ],
+      "statement": "ユーザーが『本物の生活』や『地元の人しか知らない場所』にこだわるのは、実は『観光客向けでない自分』というアイデンティティを強調したいからであり、体験そのものよりも『他者との差異化』が本質的な動機になっている。",
+      "mechanism": "観光客向けの場所を避けることで、一般的な観光客とは違う自分を確認し、自己イメージや独自性を保とうとしている。だが、情報化により『隠れた場所』もまた観光商品化されており、差異化の欲求が満たされにくくなっている。",
+      "predictions": [
+        "『自分だけが知っている』という感覚に強い満足を感じる",
+        "他の観光客と同じ体験をすることに抵抗や違和感を覚える",
+        "ネットやSNSで話題になると興味を失う"
+      ],
+      "discriminating_questions": [
+        "他の人が知らない場所を見つけたとき、どんな気持ちになりますか？"
+      ],
+      "persona_link": [
+        "pkg:p05_n6",
+        "pkg:p05_n2"
+      ],
+      "evidence_link": [
+        "ev:Oext1"
+      ],
+      "is_reframing": true
+    }
+  ],
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A2"
+        ],
+        "best_discriminating_question": "最近、観光地での体験に物足りなさを感じたことはありますか？",
+        "testability_notes": "ユーザーの過去の旅の満足度や、偶発的な出会いへの反応を尋ねることで検証可能。",
+        "safety_risk_notes": "ユーザーの価値観を肯定する形なのでリスクは低い。"
+      },
+      "rationale": "観光地での予定調和的な体験に飽きているという説明は、ユーザーの発言と整合的。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "A2"
+        ],
+        "best_discriminating_question": "地元の人との交流やコスト面は旅先選びでどれくらい重要ですか？",
+        "testability_notes": "旅の計画や優先順位を聞くことで検証可能。",
+        "safety_risk_notes": "価値観の肯定なのでリスクは低い。"
+      },
+      "rationale": "PKGの少人数交流・節約志向と一致しており、発言の表面的な意味をよく説明する。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "A3"
+        ],
+        "best_discriminating_question": "『地元の人しか知らない』と思って行った場所で、他の観光客に出会った経験はありますか？",
+        "testability_notes": "実際に現地で観光客に出会ったエピソードを尋ねることで検証可能。",
+        "safety_risk_notes": "『本物』の価値への疑念を含むため、やや不快感を与える可能性がある。"
+      },
+      "rationale": "外部観察（Oext1）を取り入れ、情報化による『本物』のパラドクスを指摘している。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A3"
+        ],
+        "best_discriminating_question": "旅先で地元の人と完全に打ち解けられたと感じたことはありますか？",
+        "testability_notes": "地元の人との距離感や違和感の有無を尋ねることで検証可能。",
+        "safety_risk_notes": "理想と現実のギャップを指摘するため、やや不快感のリスクあり。"
+      },
+      "rationale": "観察者効果や外部者の立場を踏まえ、ユーザーの理想と現実のズレに着目している。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A2",
+          "A3"
+        ],
+        "best_discriminating_question": "他の人が知らない場所を見つけたとき、どんな気持ちになりますか？",
+        "testability_notes": "ユーザーの自己イメージや差異化欲求について深堀りする質問で検証可能。",
+        "safety_risk_notes": "『本物志向』が実は差異化欲求である可能性を指摘するため、やや不快感を伴うが、自己理解を深めるきっかけにもなりうる。"
+      },
+      "rationale": "裏切る仮説として、ユーザーの発言の動機を『体験そのもの』から『自己イメージの差異化』へと転換している。Oext1のパラドクスも取り込んでいる。"
+    }
+  ],
+  "decision": {
+    "selected_hypothesis_id": "H5",
+    "contrasting_hypothesis_id": "H2",
+    "selection_rationale": "H5を採用すると、ユーザーの発言『観光客向けの演出はもうお腹いっぱい、本物の生活が残る場所だけを歩きたい』の意味が、『本物の体験そのものを求めている』から『他の観光客と違う自分でありたい、差異化された自己イメージを確認したい』に変わる。H2は額面通り、少人数交流や節約志向から地元密着型の体験を重視しているという読み。どちらの立場に立つかで、今後の旅の選び方や自己理解が大きく変わる。",
+    "user_facing_frame": {
+      "framing": "options",
+      "questions": [
+        "他の人が知らない場所を見つけたとき、どんな気持ちになりますか？",
+        "地元の人との交流やコスト面は旅先選びでどれくらい重要ですか？"
+      ],
+      "options": [
+        "『本物』の体験そのものよりも、他の観光客と違う自分でありたいという気持ちが強いかもしれないという立場",
+        "少人数交流や節約志向から、地元密着型の体験そのものに価値を感じているという立場"
+      ]
+    }
+  },
+  "final_response": "なるほど、観光客向けの演出にはもう満足できず、『本物の生活』が残る場所に強く惹かれているんですね。その気持ち、とてもよく分かります。実は、こうしたこだわりの背景には2つの見方があるかもしれません。\n\n一つは、少人数交流や節約志向の価値観から、地元密着型の体験そのものに価値を感じているという立場です。もう一つは、他の観光客と同じ体験を避けることで、『自分だけが知っている』『他と違う自分』という感覚を大事にしている可能性もある、という見方です。\n\n例えば、他の人が知らない場所を見つけたとき、どんな気持ちになりますか？また、地元の人との交流やコスト面は旅先選びでどれくらい重要ですか？\n\nどちらの立場に立つかで、今後の旅の選び方や自分の満足感も変わってくるかもしれません。次の旅先を考えるとき、まずは『誰とどんな体験をしたいか』を5分だけメモしてみるのもおすすめです。同じように『本物』を求める人の旅の記録を読んでみるのも新しい発見につながるかもしれません。どちらの視点が今の自分にしっくりくるか、ぜひ考えてみてください。",
+  "markers": {
+    "empathy": {
+      "acknowledgement": true,
+      "reflection": true,
+      "perspective_prompt": true
+    },
+    "nudge": {
+      "easy": true,
+      "attractive": true,
+      "social": true,
+      "timely": true,
+      "has_question": true,
+      "has_options": true,
+      "has_small_action": true,
+      "directive_level": "low"
+    }
+  }
+}

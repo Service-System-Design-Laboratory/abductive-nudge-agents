@@ -1,0 +1,360 @@
+{
+  "context": {
+    "observations": [
+      {
+        "id": "O1",
+        "text": "ユーザーはガイドブックに載っているような場所には一切興味がないと述べている。"
+      },
+      {
+        "id": "O2",
+        "text": "ユーザーは地元の人しか知らない、看板も出ていないような『本物の生活』が残っている場所だけを歩きたいと述べている。"
+      },
+      {
+        "id": "O3",
+        "text": "ユーザーは観光客向けの演出にはもうお腹いっぱいだと述べている。"
+      }
+    ],
+    "assumptions": [
+      {
+        "id": "A1",
+        "text": "ユーザーは『本物の生活』やローカルな文化・日常体験に独自の価値を強く感じている。",
+        "status": "tentative"
+      },
+      {
+        "id": "A2",
+        "text": "観光地化された場所や一般的な観光体験には本質的な興味を持っていない。",
+        "status": "tentative"
+      },
+      {
+        "id": "A3",
+        "text": "観光客向けの演出はユーザーにとって過剰であり、価値を感じない。",
+        "status": "tentative"
+      },
+      {
+        "id": "A4",
+        "text": "ユーザーは体験の『本物らしさ』を重視しているが、その定義は曖昧かもしれない。",
+        "status": "tentative"
+      }
+    ],
+    "questions": [
+      "なぜ『本物の生活』にこだわるのか？",
+      "観光客向けの演出が嫌いな理由は何か？",
+      "地元の人しか知らない場所でどんな体験を求めているのか？",
+      "『本物らしさ』とは具体的にどんなものか？"
+    ],
+    "constraints": {
+      "tone": "supportive",
+      "safety": "avoid determinism"
+    }
+  },
+  "evidence": {
+    "triggers": [
+      {
+        "type": "ambiguity",
+        "text": "『本物の生活』や『本物らしさ』の定義が曖昧で、何をもって本物とするのか不明。"
+      },
+      {
+        "type": "information_gap",
+        "text": "なぜ観光客向けの演出を避けたいのか、その理由や背景が明示されていない。"
+      },
+      {
+        "type": "paradox",
+        "text": "地元の人しか知らない場所を歩きたいと言いつつ、外部者としてその場所にアクセスすること自体が観光行為になりうる。"
+      },
+      {
+        "type": "observer effect",
+        "text": "ユーザーが『本物の生活』を求めて訪れることで、その場の本物らしさが変化する可能性がある。"
+      }
+    ],
+    "external_observations": [
+      {
+        "id": "Oext1",
+        "text": "Googleマップには載っているが、現地に看板や道順案内が一切ないため初見では登り口が分かりづらい場所が存在する。",
+        "source_url": "https://www.ryosou.com/simanenokunifudoki2024izumo/"
+      },
+      {
+        "id": "Oext2",
+        "text": "ガイドブックに載っていない地元の人々との交流が貴重な体験とされているが、こうした体験も商品化されつつある。",
+        "source_url": "https://www.echizenkani.com/20220513115750"
+      },
+      {
+        "id": "Oext3",
+        "text": "観光客が『本物』を求めて訪れることで、その場の本物らしさが変化する（観察者効果）。",
+        "source_url": "https://www.echizenkani.com/20220513115750"
+      }
+    ]
+  },
+  "hypotheses": [
+    {
+      "hypothesis_id": "H1",
+      "type": "psychological",
+      "explains": [
+        "O1",
+        "O2",
+        "O3"
+      ],
+      "assumes": [
+        "A1",
+        "A4"
+      ],
+      "statement": "ユーザーは自己の独自性や探求心を満たすために、他者が知らない場所や体験を求めている。",
+      "mechanism": "一般的な観光地では得られない新鮮さや発見を通じて、自己の価値観やアイデンティティを強化しようとしている。",
+      "predictions": [
+        "ユーザーは人と違う体験や情報を得ることに満足感を覚える。",
+        "観光地化された場所では退屈や疎外感を感じる。"
+      ],
+      "discriminating_questions": [
+        "あなたにとって『本物の生活』を歩くことは、他者との差別化や独自性の実感につながっていますか？"
+      ],
+      "persona_link": [
+        "pkg:n1",
+        "pkg:n7"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H2",
+      "type": "value",
+      "explains": [
+        "O1",
+        "O2",
+        "O3"
+      ],
+      "assumes": [
+        "A1",
+        "A2"
+      ],
+      "statement": "ユーザーは『本物の生活』やローカルな文化・日常体験に独自の価値を強く感じており、観光地化された場所や一般的な観光体験には本質的な興味を持っていない。",
+      "mechanism": "ユーザー価値の重視という価値観が、観光地化や演出された体験を否定し、日常的・ローカルな体験を求める動機となっている。",
+      "predictions": [
+        "ユーザーは観光地化された場所や演出された体験を避ける傾向がある。",
+        "地元の人しか知らない場所や体験を積極的に探す。"
+      ],
+      "discriminating_questions": [
+        "観光地化された場所や演出された体験に対して、価値を感じない理由は何ですか？"
+      ],
+      "persona_link": [
+        "pkg:n7"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H3",
+      "type": "social",
+      "explains": [
+        "O2",
+        "O3",
+        "Oext2"
+      ],
+      "assumes": [
+        "A1",
+        "A3"
+      ],
+      "statement": "『本物の生活』や地元体験も観光商品化されつつあり、ユーザーはその商品化に対する反発として演出を避けている。",
+      "mechanism": "本物らしさやローカル体験が観光資源として commodification されることで、ユーザーはその価値が損なわれていると感じている。",
+      "predictions": [
+        "ユーザーは地元体験の『商品化』や観光資源化に敏感に反応する。",
+        "地元の人との交流も演出や商業目的がある場合は避ける。"
+      ],
+      "discriminating_questions": [
+        "地元体験が観光商品化されていることに違和感や抵抗感を覚えますか？"
+      ],
+      "persona_link": [
+        "pkg:n7"
+      ],
+      "evidence_link": [
+        "ev:Oext2"
+      ],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H4",
+      "type": "environmental",
+      "explains": [
+        "O2",
+        "Oext1"
+      ],
+      "assumes": [
+        "A4"
+      ],
+      "statement": "ユーザーはアクセス困難な場所や案内がない場所に価値を感じており、体験の希少性や難易度が満足感につながっている。",
+      "mechanism": "案内や看板がないことで、体験の希少性や達成感が高まり、他者との差別化や自己効力感を得られる。",
+      "predictions": [
+        "ユーザーはアクセスが難しい場所や情報が少ない場所を好む。",
+        "ガイドブックに載っていない場所を探す行為自体に喜びを感じる。"
+      ],
+      "discriminating_questions": [
+        "案内や看板がない場所を歩くこと自体に達成感や満足感を感じますか？"
+      ],
+      "persona_link": [
+        "pkg:n1"
+      ],
+      "evidence_link": [
+        "ev:Oext1"
+      ],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H5",
+      "type": "paradox",
+      "explains": [
+        "O2",
+        "O3",
+        "Oext3"
+      ],
+      "assumes": [
+        "A4"
+      ],
+      "statement": "ユーザーが『本物の生活』を求めて訪れることで、その場の本物らしさが変化し、結果的に自分自身が観光客向けの演出を生み出す側になっている可能性がある。",
+      "mechanism": "観察者効果により、外部者が本物を求めて訪れることで、地元の人が対応や演出を始め、結果的に本物らしさが損なわれる。",
+      "predictions": [
+        "ユーザーが訪れることで地元の人が対応や演出を始めることがある。",
+        "本物らしさを求める行為自体が本物らしさを変化させてしまう。"
+      ],
+      "discriminating_questions": [
+        "あなたが『本物の生活』を求めて訪れることで、その場の本物らしさが変化してしまう可能性についてどう思いますか？"
+      ],
+      "persona_link": [
+        "pkg:n7"
+      ],
+      "evidence_link": [
+        "ev:Oext3"
+      ],
+      "is_reframing": true
+    }
+  ],
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A4"
+        ],
+        "best_discriminating_question": "あなたにとって『本物の生活』を歩くことは、他者との差別化や独自性の実感につながっていますか？",
+        "testability_notes": "ユーザーが独自性や探求心を重視しているか、自己効力感や満足感の源泉を尋ねることで検証可能。",
+        "safety_risk_notes": "独自性の追求を強調しすぎると、ユーザーの価値観や動機を単純化してしまうリスクがある。"
+      },
+      "rationale": "独自性や探求心はPKGのHCIやユーザー価値重視と関連するが、発言の背景として十分説明できる。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A2"
+        ],
+        "best_discriminating_question": "観光地化された場所や演出された体験に対して、価値を感じない理由は何ですか？",
+        "testability_notes": "価値観の違いをユーザーに直接尋ねることで検証可能。",
+        "safety_risk_notes": "価値観の押し付けや断定的な表現を避ける必要がある。"
+      },
+      "rationale": "PKGのユーザー価値重視と一致し、発言の額面通りの読みとして妥当。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [
+          "商品化への反発が明示されていないため、根拠がやや弱い。"
+        ],
+        "explains_confirmed": [
+          "O2",
+          "O3",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A3"
+        ],
+        "best_discriminating_question": "地元体験が観光商品化されていることに違和感や抵抗感を覚えますか？",
+        "testability_notes": "商品化や演出に対するユーザーの反応を尋ねることで検証可能。",
+        "safety_risk_notes": "商品化を否定する表現は、地元の人や観光業者への配慮が必要。"
+      },
+      "rationale": "外部エビデンスとPKGの価値観を組み合わせて説明できるが、ユーザーの発言から直接は読み取りにくい。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [
+          "希少性や達成感だけが動機とは限らない。"
+        ],
+        "explains_confirmed": [
+          "O2",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "A4"
+        ],
+        "best_discriminating_question": "案内や看板がない場所を歩くこと自体に達成感や満足感を感じますか？",
+        "testability_notes": "アクセス困難な場所へのこだわりや満足感の有無を尋ねることで検証可能。",
+        "safety_risk_notes": "達成感の強調がユーザーの価値観を単純化するリスク。"
+      },
+      "rationale": "外部エビデンスとPKGのHCI関連性を活用し、体験の希少性や難易度に着目した説明。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "A4"
+        ],
+        "best_discriminating_question": "あなたが『本物の生活』を求めて訪れることで、その場の本物らしさが変化してしまう可能性についてどう思いますか？",
+        "testability_notes": "観察者効果や本物らしさの変化についてユーザーの意識を尋ねることで検証可能。",
+        "safety_risk_notes": "ユーザーの行動や価値観を否定する印象を与えないよう、丁寧に提示する必要がある。"
+      },
+      "rationale": "裏切る仮説として、ユーザーの発言の表面的な意味を反転させ、観察者効果やパラドックスを突く。"
+    }
+  ],
+  "decision": {
+    "selected_hypothesis_id": "H5",
+    "contrasting_hypothesis_id": "H2",
+    "selection_rationale": "H5を採用すると、ユーザーの発言『本物の生活が残っている場所だけを歩きたい』の意味が『本物を求めて歩くことで、その場の本物らしさ自体を変化させてしまう可能性がある』に変わる。H2は額面通り、ユーザーが本物の生活やローカル体験に価値を感じているという読み。どちらの立場に立つかで、今後の行動や自己理解が大きく変わる。",
+    "user_facing_frame": {
+      "framing": "options",
+      "questions": [
+        "あなたが『本物の生活』を求めて訪れることで、その場の本物らしさが変化してしまう可能性についてどう思いますか？",
+        "それとも、やはり本物の生活やローカル体験そのものに価値を感じているのでしょうか？"
+      ],
+      "options": [
+        "自分が本物を求めて歩くことで、その場の本物らしさが変化する可能性を意識してみる。",
+        "本物の生活やローカル体験そのものに価値を感じている立場を貫く。"
+      ]
+    }
+  },
+  "final_response": "あなたの『本物の生活』へのこだわり、とても共感できます。地元の人しか知らない場所や日常体験に独自の価値を感じているんですね。改めて考えてみると、あなたが本物を求めて歩くことで、その場の本物らしさ自体が変化してしまう可能性もあるかもしれません。これは少し不思議ですが、外部者が訪れることで地元の人が対応や演出を始めることもあるようです。\n\n一つの視点として、どちらの立場に立つかで今後の行動や自己理解が変わるかもしれません。例えば、今週末にガイドブックに載っていない場所を訪れる際、『自分の存在がその場に影響を与えているかも？』と意識してみるのも面白いですし、やはり本物の生活やローカル体験そのものに価値を感じている立場を貫くのも素敵です。同じような価値観を持つ人も増えてきており、SNSやブログで体験を共有する人もいます。\n\nどちらの立場に立つと、次の行動や自己理解がどう変わると思いますか？5分だけ、自分の体験や感じたことをメモしてみると、新しい気づきが得られるかもしれません。あなたはどちらの立場に惹かれますか？",
+  "markers": {
+    "empathy": {
+      "acknowledgement": true,
+      "reflection": true,
+      "perspective_prompt": true
+    },
+    "nudge": {
+      "easy": true,
+      "attractive": true,
+      "social": true,
+      "timely": true,
+      "has_question": true,
+      "has_options": true,
+      "has_small_action": true,
+      "directive_level": "low"
+    }
+  }
+}

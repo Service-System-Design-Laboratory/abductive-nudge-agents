@@ -1,0 +1,110 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_link（pkg:n318, pkg:n319）がPKGに存在せず、ペルソナ根拠が不在。",
+          "O3（寝る場所はどこでも同じだと考えている）は『体験価値を重視しない』と必ずしも同義ではなく、O4（コスパの良い宿泊先を知りたい）も価値観のみによる説明とは限らない。"
+        ],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーが旅館の体験価値（食事・温泉・もてなし等）を重視していない。",
+          "価格差への納得感が価値観のみによって決まる。"
+        ],
+        "best_discriminating_question": "旅館でしか味わえない体験やサービスに追加料金を払うことに納得できますか？",
+        "testability_notes": "ユーザーへの価値観・選好に関する直接質問で検証可能。追加料金や付加価値への納得度を問えば判別しやすい。",
+        "safety_risk_notes": "『価値を重視していない』と断定的に聞こえる可能性があり、ユーザーの価値観を否定的に捉えられるリスクがある。"
+      },
+      "rationale": "観察O1・O2は説明できるが、PKG根拠不在とO3・O4の説明力にやや疑義。価値観のみで全てを説明するには根拠が弱い。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_link（pkg:n324）がPKGに存在せず、ペルソナ根拠が不在。"
+        ],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "Oext1",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "ユーザーが旅館とビジネスホテルの価格差の背景（経営構造）を十分に知らない。",
+          "情報提供によって納得感が変化する。"
+        ],
+        "best_discriminating_question": "旅館の価格が高い理由（稼働率や固定費）を知った上で納得できますか？",
+        "testability_notes": "外部エビデンスや説明資料を用いて、事実認知前後の納得感の変化を調査することで検証可能。",
+        "safety_risk_notes": "『知らないから納得できない』とするため、ユーザーの知識不足を指摘する印象を与える可能性がある。"
+      },
+      "rationale": "外部エビデンスと観察Oext1, Oext2を強く説明できるが、PKG根拠がない。情報ギャップ仮説として妥当性は高い。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_link（pkg:n318, pkg:n319）がPKGに存在せず、ペルソナ根拠が不在。"
+        ],
+        "explains_confirmed": [
+          "O1",
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "ユーザーの宿泊目的が『快適な睡眠』『移動の利便性』に限定されている。",
+          "旅館の提供価値とユーザーの目的がズレていることが価格不満の主因である。"
+        ],
+        "best_discriminating_question": "宿泊先に求める最優先事項は何ですか？",
+        "testability_notes": "ユーザーの宿泊目的や優先事項を質問することで容易に検証可能。",
+        "safety_risk_notes": "ユーザーの目的を限定的に解釈するため、他の価値観を排除しているように受け取られるリスクがある。"
+      },
+      "rationale": "O1, O3, O4の説明力は高いが、PKG根拠がなく、目的の限定性に依存している。目的ズレ仮説としては有力。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_link（pkg:n324）がPKGに存在せず、ペルソナ根拠が不在。"
+        ],
+        "explains_confirmed": [
+          "O1",
+          "O4",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "ユーザーが旅館の経営状況や価格の背景情報を十分に持っていない。",
+          "情報提供によってコスパ評価が変化する。"
+        ],
+        "best_discriminating_question": "旅館が倒産しやすい業態であることを知っていましたか？",
+        "testability_notes": "倒産リスクや経営情報を提示し、認知前後の評価変化を調査することで検証可能。",
+        "safety_risk_notes": "ユーザーの情報不足を強調するため、知識レベルを低く見積もっていると受け取られる可能性がある。"
+      },
+      "rationale": "O1, O4, Oext3を説明でき、情報ギャップ仮説として有効だが、PKG根拠がない。情報提供による納得感変化の検証が重要。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_link（pkg:n324, pkg:n319）がPKGに存在せず、ペルソナ根拠が不在。"
+        ],
+        "explains_confirmed": [
+          "O1",
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "コスパ重視や寝るだけで十分という主張が心理的防衛である。",
+          "高級消費や贅沢への忌避感が根底にある。"
+        ],
+        "best_discriminating_question": "『コスパ重視』を強調することで、自分の価値観を正当化していると感じることはありませんか？",
+        "testability_notes": "深層心理や自己認識への問いかけが必要で、直接的な検証は難しいが、心理的傾向の自己申告や反応観察で一部検証可能。",
+        "safety_risk_notes": "ユーザーの心理的防衛や無意識の動機に踏み込むため、プライバシーや自己認識への配慮が必要。誤解や不快感を生むリスクが高い。"
+      },
+      "rationale": "O1, O3, O4を説明できるが、PKG根拠がなく、心理的要因の仮定に依存。検証難易度とユーザー配慮が課題。"
+    }
+  ]
+}

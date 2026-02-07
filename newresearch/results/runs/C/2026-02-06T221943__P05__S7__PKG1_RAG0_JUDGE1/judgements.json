@@ -1,0 +1,106 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_linkで参照しているPKGノード（pkg:n251, pkg:n253, pkg:n254）が全てPKGに存在しない。PKG利用可の条件下では根拠不在となる。"
+        ],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーは予測不能なリスクに対して強い不安やコントロール欲求を持つ。",
+          "この心理的特性が実際の旅行行動（ツアー選択やホテル周辺に限定した行動）に直結している。"
+        ],
+        "best_discriminating_question": "普段の生活でも予測できない事態を避けるために準備を徹底することが多いですか？",
+        "testability_notes": "ユーザーへの1問インタビューで心理的傾向を確認できるため検証しやすい。",
+        "safety_risk_notes": "ユーザーの不安傾向を断定的に扱うと、レッテル貼りや不快感を与えるリスクがある。"
+      },
+      "rationale": "PKG根拠が全て欠落しており、致命的な裏付け不足。O1, O2の説明力はあるが、O3, O4は直接的には説明しきれていない。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_link（pkg:n257）がPKGに存在しないため、PKG利用可条件下では根拠不在。"
+        ],
+        "explains_confirmed": [
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "ユーザーは安全とコストのバランスを重視して意思決定している。",
+          "ツアーやホテル周辺での行動が最も合理的な選択肢と認識されている。"
+        ],
+        "best_discriminating_question": "安全が保証されていてコストも同じなら、ツアー以外の旅行形態も選んでみたいと思いますか？",
+        "testability_notes": "ユーザーの意思決定基準を1～2問で確認可能。検証容易。",
+        "safety_risk_notes": "合理性を強調しすぎると、ユーザーの価値観や他の動機を軽視していると受け取られる可能性がある。"
+      },
+      "rationale": "PKG根拠が欠如しているため致命的な弱点。O2, O3の説明は妥当だが、O4やO5への説明力は限定的。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_link（pkg:n254, pkg:n255）がPKGに存在しないため、PKG利用可条件下では根拠不在。"
+        ],
+        "explains_confirmed": [
+          "O4",
+          "O5"
+        ],
+        "key_assumptions": [
+          "ユーザーは情報収集やリスク評価スキルを高めることに価値を感じている。",
+          "スキル向上が安心感や行動選択に直結している。"
+        ],
+        "best_discriminating_question": "安全対策のために最近新たに学んだ情報収集方法やツールはありますか？",
+        "testability_notes": "ユーザーの学習・行動履歴を聞くことで比較的容易に検証可能。",
+        "safety_risk_notes": "スキル不足を指摘する形になると、ユーザーの自尊心を損なうリスクがある。"
+      },
+      "rationale": "PKG根拠がないため致命的な裏付け不足。O4, O5の説明は妥当だが、他の観察への説明力は弱い。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_link（pkg:n259）がPKGに存在しないため、PKG利用可条件下では根拠不在。"
+        ],
+        "explains_confirmed": [
+          "O5"
+        ],
+        "key_assumptions": [
+          "PKG内に安全対策の具体的情報が不足している。",
+          "ユーザーは現状の安全対策に満足しておらず、さらなる情報を求めている。"
+        ],
+        "best_discriminating_question": "現状の安全対策以外で、具体的に知りたい・試したい安全策はありますか？",
+        "testability_notes": "PKGの情報量とユーザーのニーズを照合する必要があり、やや検証に手間がかかる。",
+        "safety_risk_notes": "『情報が足りない』と断定することで、ユーザーの知識や努力を過小評価する印象を与える可能性がある。"
+      },
+      "rationale": "PKG根拠がなく、致命的な弱点。O5のみ説明しており、他の観察には説明力がない。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_link（pkg:n251, pkg:n255, pkg:n259）がPKGに存在しないため、PKG利用可条件下では根拠不在。"
+        ],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4",
+          "O5"
+        ],
+        "key_assumptions": [
+          "ユーザーの安全志向やリスク回避行動がアイデンティティの一部となっている。",
+          "自己像の維持が行動の主な動機となっている。"
+        ],
+        "best_discriminating_question": "安全対策を十分に行った後も、さらに新しい方法を探し続けることが多いですか？",
+        "testability_notes": "ユーザーの自己認識や行動パターンを深掘りする必要があり、やや検証に時間がかかる。",
+        "safety_risk_notes": "ユーザーの動機を『自己満足』と捉えられる表現は、侮辱的・不快感を与えるリスクが高い。"
+      },
+      "rationale": "PKG根拠が全て欠如しており致命的。全観察を説明できるが、仮説の性質上ユーザーへの配慮が特に重要。"
+    }
+  ]
+}

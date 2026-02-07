@@ -1,0 +1,73 @@
+{
+  "triggers": [
+    {
+      "type": "information_gap",
+      "text": "PKGには『効率的に映える写真を撮る具体的なコツ』や『SNS映えを重視した撮影テクニック』に関する詳細な情報が不足している。ユーザーが求めている効率的な撮影方法や映える写真の撮り方についてPKGでは十分に説明できていない。"
+    },
+    {
+      "type": "focus",
+      "text": "ユーザーの旅の目的が『SNSにアップするための完璧な写真を撮ること』であり、効率性や成果を強く重視している点が特に注目される。"
+    }
+  ],
+  "rag_queries": [
+    "SNS映えする写真を効率的に撮影するコツ",
+    "旅行中に三脚を使ったベストアングル撮影のテクニック",
+    "短時間で多くの映える写真を撮る方法",
+    "SNSで人気の写真撮影アイディアや機材活用法"
+  ],
+  "evidence_items": [
+    {
+      "rank": 1,
+      "title": "インスタ映えする「おしゃれな写真の撮り方」入門ガイド",
+      "snippet": "インスタ映えする写真を撮るには、自然光を取り入れるのもおススメです。 自然光は太陽からの光であり、自然な色合いを引き出すことができます。被写体の ...",
+      "url": "https://unique1.co.jp/column/sns_operation/8580/",
+      "source_type": "com"
+    },
+    {
+      "rank": 2,
+      "title": "インスタ映えする写真の撮り方と加工方法を徹底解説",
+      "snippet": "風景を美しく撮影するには、アングルを水平に保ち、自然光が差し込む時間帯を選ぶことが大切です。 水平に撮ることで写真に安定感が生まれ、バランスの ...",
+      "url": "https://sns-nakodo.com/photographs-that-shine/",
+      "source_type": "com"
+    },
+    {
+      "rank": 3,
+      "title": "写真が変われば「いいね」が増える！インスタ映えする写真の ...",
+      "snippet": "まず、なるべく引きの構図で撮影することを心がけます。どこで撮っているのかわかるようにすることや、空を広く写して圧迫感のない写真に仕上げることがポイントです。",
+      "url": "https://jp.omsystem.com/product/dslr/beginner/photo-technique-instagram/index.html?srsltid=AfmBOorpiBpRMEv9wy7vK7NGjhL94xyZlmWqG2XvDgbLgtu3ncek13-0",
+      "source_type": "com"
+    },
+    {
+      "rank": 4,
+      "title": "写真の秘訣 トラベル三脚の使い方",
+      "snippet": "... / 米 美知子 · 【撮影術】《三脚の使い方③》三脚と雲台の選び方！ご自身に合った三脚選びをご紹介します. Michiko Yone / 米 美知子•50K views.",
+      "url": "https://www.youtube.com/watch?v=3xsnfbqu63E",
+      "source_type": "other"
+    },
+    {
+      "rank": 5,
+      "title": "「旅する自分」をカメラで残そう！あなたの写真がもっと魅力的に ...",
+      "snippet": "目線以上のアングルから撮影 · 水平を意識する · 主役を端に置きすぎない · 景色をできるだけ隠さない · #人気のタグ · おすすめの記事.",
+      "url": "https://tabippo.net/travel-selfie/",
+      "source_type": "com"
+    }
+  ],
+  "external_observations": [
+    {
+      "id": "Oext1",
+      "text": "『インスタ映え』やSNS向け写真の撮影テクニックが、企業やメディアによって体系化・商品化されており、個人の撮影行動がマーケティングの対象となっている。",
+      "source_url": "https://unique1.co.jp/column/sns_operation/8580/"
+    },
+    {
+      "id": "Oext2",
+      "text": "写真の『本物らしさ』や自然な美しさを演出するための技術や構図が、SNSでの評価を得るために意図的に設計されている。",
+      "source_url": "https://sns-nakodo.com/photographs-that-shine/"
+    },
+    {
+      "id": "Oext3",
+      "text": "SNSで映える写真を撮る人が増えることで、絶景ポイントや観光地の景観や雰囲気自体が『映える写真用』に変質していく現象が指摘されている。",
+      "source_url": "https://jp.omsystem.com/product/dslr/beginner/photo-technique-instagram/index.html?srsltid=AfmBOorpiBpRMEv9wy7vK7NGjhL94xyZlmWqG2XvDgbLgtu3ncek13-0"
+    }
+  ],
+  "notes": ""
+}

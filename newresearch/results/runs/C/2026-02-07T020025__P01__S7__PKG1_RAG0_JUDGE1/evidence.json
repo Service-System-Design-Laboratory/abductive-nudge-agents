@@ -1,0 +1,20 @@
+{
+  "triggers": [
+    {
+      "type": "information_gap",
+      "text": "ユーザーは安全を最優先に海外旅行の行動を決定しているが、PKGには『もっと安全に旅行するためのコツ』や具体的な安全対策の詳細が記載されていない。"
+    },
+    {
+      "type": "information_gap",
+      "text": "ユーザーは治安情報を毎日チェックしているが、PKGにはどのような情報源や方法が有効かについての記載がない。"
+    },
+    {
+      "type": "focus",
+      "text": "ユーザーはホテル周辺から離れないなど慎重な行動を取っているが、PKGには『ローカルツアー』や『地域住民との信頼』への関心が安全な体験につながる可能性が示唆されているものの、具体的な実践例やリスク管理方法が不足している。"
+    }
+  ],
+  "rag_queries": [],
+  "evidence_items": [],
+  "external_observations": [],
+  "notes": "RAG disabled (use_rag=false) — trigger identification only"
+}

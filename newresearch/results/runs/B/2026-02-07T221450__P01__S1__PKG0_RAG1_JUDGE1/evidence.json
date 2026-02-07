@@ -1,0 +1,59 @@
+{
+  "triggers": [
+    {
+      "type": "information_gap",
+      "text": "ユーザーが求める『地元の人しか知らない、本物の生活が残っている場所』の具体例や探し方が観察・仮定からは不明であり、どのような場所や方法が該当するか情報が不足している。"
+    },
+    {
+      "type": "focus",
+      "text": "ユーザーは観光客向けの演出や商業化された場所を強く避けたいという意志を示しており、そのニーズに合致する体験や場所への具体的なアプローチが重要である。"
+    }
+  ],
+  "rag_queries": [
+    "地元の人しか知らない観光地ではない本物の生活が残る場所の探し方",
+    "観光客向けの演出がない地域の日常を体験できるスポットや方法",
+    "看板が出ていない地元民しか知らない場所を見つけるコツ",
+    "商業化されていない地域文化や生活を体験するためのおすすめアプローチ"
+  ],
+  "evidence_items": [
+    {
+      "rank": 1,
+      "title": "【今年の旅に】世界が知らない「日本一○○な穴場エリア」8選",
+      "snippet": "全国のレジャースポットや地域経済に詳しい8名のプロピッカーに、メジャーな観光地以外で「本当に面白いエリア」を教えてもらいました。",
+      "url": "https://newspicks.com/news/15723031/body/",
+      "source_type": "com"
+    },
+    {
+      "rank": 2,
+      "title": "地域の魅力を体験する方法とは？ 観光地では味わえない ...",
+      "snippet": "体験型観光の最大の魅力は、観光客自身が積極的に体験の主体となり、地域の文化や生活に深く触れる機会を持てることです。例えば、地元の料理教室に参加 ...",
+      "url": "https://match.sharebase.jp/article/128?srsltid=AfmBOooA-kqeng7sCBeCCGIPm83Egco170bG4ras7OW2MMUw0e5RQSdx",
+      "source_type": "com"
+    },
+    {
+      "rank": 3,
+      "title": "人知れず楽しめる！日本の魅力的な観光穴場スポット ...",
+      "snippet": "観光穴場を見つけるためのコツは、計画を立てる段階から始まります。普段の観光地とは違った体験を求める方にとって、選び方にはいくつかのポイントが ...",
+      "url": "https://fishon-okazaki.com/column/a52f522e-a6e6-4f86-9a47-b354fad54f89",
+      "source_type": "com"
+    }
+  ],
+  "external_observations": [
+    {
+      "id": "Oext1",
+      "text": "『地元民しか知らない』や『本物の生活』といったローカル志向が、観光業界でマーケティングの売り文句として積極的に商品化されている。",
+      "source_url": "https://newspicks.com/news/15723031/body/"
+    },
+    {
+      "id": "Oext2",
+      "text": "体験型観光やローカル体験を求める観光客の増加により、地域の生活や文化そのものが観光商品として演出される傾向が強まっている。",
+      "source_url": "https://match.sharebase.jp/article/128?srsltid=AfmBOooA-kqeng7sCBeCCGIPm83Egco170bG4ras7OW2MMUw0e5RQSdx"
+    },
+    {
+      "id": "Oext3",
+      "text": "『穴場』や『非観光地』が注目されることで、従来の観光地と同様に観光客の流入や演出が進み、結果的に本物らしさが変質する現象が起きている。",
+      "source_url": "https://fishon-okazaki.com/column/a52f522e-a6e6-4f86-9a47-b354fad54f89"
+    }
+  ],
+  "notes": ""
+}

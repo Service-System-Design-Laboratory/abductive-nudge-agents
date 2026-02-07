@@ -1,0 +1,33 @@
+{
+  "triggers": [
+    {
+      "type": "information_gap",
+      "text": "なぜ旅館が高価格なのか、ユーザーが納得できていない。"
+    },
+    {
+      "type": "focus",
+      "text": "コストパフォーマンスへの強い関心が繰り返し表明されている。"
+    },
+    {
+      "type": "ambiguity",
+      "text": "『寝る場所はどこでも同じ』という価値観が、体験やサービスへの関心の有無を曖昧にしている。"
+    }
+  ],
+  "external_observations": [
+    {
+      "id": "Oext1",
+      "text": "多くの旅行者が観光メインでホテルは寝るだけの場所と考え、安いビジネスホテルを選んでいる。",
+      "source_url": "https://komachi.yomiuri.co.jp/topics/id/787363/"
+    },
+    {
+      "id": "Oext2",
+      "text": "限られた予算で旅をしても、高額な旅行よりも楽しいと感じる人がいる。安い地元の料理や体験が高級なものより満足度が高い場合もある。",
+      "source_url": "https://www.reddit.com/r/travel/comments/1qdkave/what_country_gave_you_the_most_value_for_the/?tl=ja"
+    },
+    {
+      "id": "Oext3",
+      "text": "ホテルの宿泊人数や予約方法によって価格が大きく変動する場合がある。",
+      "source_url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11303706736"
+    }
+  ]
+}

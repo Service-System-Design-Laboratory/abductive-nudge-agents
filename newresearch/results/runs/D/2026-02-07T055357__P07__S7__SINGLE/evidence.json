@@ -1,0 +1,32 @@
+{
+  "triggers": [
+    {
+      "type": "focus",
+      "text": "安全への強いこだわりが行動全体を規定している"
+    },
+    {
+      "type": "information_gap",
+      "text": "安全以外の価値観や旅行の楽しみについては語られていない"
+    },
+    {
+      "type": "ambiguity",
+      "text": "治安情報の具体的な入手方法や基準が不明"
+    },
+    {
+      "type": "contradiction",
+      "text": "旅行の本来の目的（楽しみ・発見）と安全優先の行動が両立しているか不明"
+    }
+  ],
+  "external_observations": [
+    {
+      "id": "Oext1",
+      "text": "エコツーリズムや文化体験ツアーでは、地域の関係者と観光客が交流することで、地域資源の価値や本物らしさが再認識されるが、観光客の行動範囲や関わり方が限定的だと満足度や体験の深さに影響する可能性がある（observer effect, performative authenticity）",
+      "source_url": "https://www.env.go.jp/nature/ecotourism/try-ecotourism/env/5policy/pdf/2-5.pdf"
+    },
+    {
+      "id": "Oext2",
+      "text": "町歩きや自由行動の時間配分が、旅行の満足度に大きく影響する（paradox: 安全を優先して行動範囲を狭めると、体験の幅や満足度が下がる可能性）",
+      "source_url": "http://dmo-kawagoe.or.jp/wp-content/uploads/2023/10/%E3%80%90JTB%E4%BD%9C%E6%88%90%E3%80%91%E5%B0%8F%E6%B1%9F%E6%88%B8%E5%B7%9D%E8%B6%8A%E3%81%AE%E6%96%87%E5%8C%96%E4%BD%93%E9%A8%93%E3%83%84%E3%82%A2%E3%83%BC%E5%AE%9F%E6%96%BD%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf"
+    }
+  ]
+}

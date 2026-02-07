@@ -1,0 +1,54 @@
+{
+  "triggers": [
+    {
+      "type": "information_gap",
+      "text": "縄文杉の森が『人の手が入っていない原生林』とされているが、実際にどの程度人為的な影響が排除されているのか、具体的な根拠や定義が観察・仮定からは不明である。"
+    },
+    {
+      "type": "ambiguity",
+      "text": "『誰よりも分かっているつもり』という主観的な表現が、客観的な知識や経験とどのように対応するのか曖昧である。"
+    }
+  ],
+  "rag_queries": [
+    "縄文杉の森は本当に人の手が入っていない原生林なのか？",
+    "縄文杉の森の人為的影響や管理履歴について",
+    "縄文杉の森の自然環境や歴史に詳しい人の条件や基準",
+    "屋久島・縄文杉の森の原生林の定義と実態"
+  ],
+  "evidence_items": [
+    {
+      "rank": 1,
+      "title": "縄文杉登山におけるエコツーリズム - 屋久島世界遺産センター",
+      "snippet": "利用者の9割以上が、縄文杉を見るための日帰り登山者。登山者数は、2008（平成20）年のピーク時は9万人を超えたが、近年は年間約6万人。",
+      "url": "https://www.env.go.jp/park/yakushima/ywhcc/ecotour/jyoumon_e.html",
+      "source_type": "gov"
+    },
+    {
+      "rank": 2,
+      "title": "屋久島が世界自然遺産に登録された理由とは？名スポット ...",
+      "snippet": "屋久杉の原生林 樹齢1,000年以上の巨木が生息し、太古の森が残る貴重なエリア。年間降水量8,000mm超の山岳地帯が、美しい森や清流 ...",
+      "url": "https://yakushima-tour.com/column/world-heritage",
+      "source_type": "com"
+    },
+    {
+      "rank": 3,
+      "title": "原生林とは？日本でも見られる手付かずの森林をご紹介",
+      "snippet": "日本には、原生林と言われる人の手が入っていない自然そのままの森林が存在します。そんな森を原生林と言いますが、日本にはわずかしか残っていない ...",
+      "url": "https://ecotopia.earth/article-4860/",
+      "source_type": "com"
+    }
+  ],
+  "external_observations": [
+    {
+      "id": "Oext1",
+      "text": "縄文杉を目的とした登山者が年間6万人規模で訪れており、原生林体験が大規模な観光商品として消費されている。",
+      "source_url": "https://www.env.go.jp/park/yakushima/ywhcc/ecotour/jyoumon_e.html"
+    },
+    {
+      "id": "Oext2",
+      "text": "屋久島の原生林は『太古の森』としてマーケティングされ、世界遺産登録や観光プロモーションの中心的な素材となっている。",
+      "source_url": "https://yakushima-tour.com/column/world-heritage"
+    }
+  ],
+  "notes": "外部観察は、屋久島の原生林や縄文杉が『本物』や『純粋』として消費される構造や、観光商品化・マーケティングの現状に着目して抽出しています。"
+}

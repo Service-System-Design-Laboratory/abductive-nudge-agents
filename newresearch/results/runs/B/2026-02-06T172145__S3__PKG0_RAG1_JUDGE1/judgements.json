@@ -1,0 +1,94 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーが伝統建築や歴史的街並みに触れることで非日常感や心の安らぎを得るという心理的傾向があること"
+        ],
+        "best_discriminating_question": "現代的な都市や新しい建築物に対してどう感じますか？",
+        "testability_notes": "ユーザーの趣味嗜好や感情を直接質問することで比較的容易に検証可能。",
+        "safety_risk_notes": "ユーザーの動機を単純化しすぎると、個人の多様な価値観を見落とすリスクがある。"
+      },
+      "rationale": "観察O1・O2を素直に説明できており、致命的な欠陥はない。心理的充足感という仮定の妥当性がカギとなる。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "Oext1",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "ユーザーの訪問動機や期待が観光地のマーケティングやSNS等の外部情報に大きく影響されていること"
+        ],
+        "best_discriminating_question": "旅行前にひがし茶屋街の写真や体験記をよく調べましたか？",
+        "testability_notes": "ユーザーの情報収集行動や現地での行動を尋ねることで検証可能。外部エビデンスも利用しやすい。",
+        "safety_risk_notes": "ユーザーの主体的な動機を軽視していると受け取られる可能性がある。"
+      },
+      "rationale": "外部エビデンスと観察O1, Oext1, Oext2をよく説明できる。ユーザーの動機を外部要因に帰しすぎる点がリスク。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "ユーザーの評価が主観的な印象や限定的な情報に基づいていること"
+        ],
+        "best_discriminating_question": "『日本の美の極み』と感じる具体的な理由を説明できますか？",
+        "testability_notes": "ユーザーに評価の根拠や他の町並みとの比較経験を尋ねることで検証しやすい。",
+        "safety_risk_notes": "ユーザーの感性や価値判断を疑問視する印象を与えやすい。"
+      },
+      "rationale": "観察O2, O3の説明に有効だが、やや消極的・批判的な立場。根拠の明確化を促す点が特徴。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "ユーザーが歴史的な社交文化や芸事の現代的継承に価値を見出していること",
+          "伝統文化と現代消費の融合が美的価値として認識されていること"
+        ],
+        "best_discriminating_question": "街並みだけでなく、現地の芸事や社交文化も重要だと考えますか？",
+        "testability_notes": "ユーザーの文化体験への関心を問うことで検証可能。外部エビデンスも参照しやすい。",
+        "safety_risk_notes": "伝統文化への関心を前提とするため、ユーザーの関心が限定的な場合は誤解を招く恐れがある。"
+      },
+      "rationale": "O3, Oext3を説明し、社会的・文化的側面に着目している。伝統文化への関心が前提となる。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "ユーザーが『本物らしさ』や伝統的価値を理解する自己イメージを重視していること",
+          "観光地での体験や価値観の発信が自己承認欲求と結びついていること"
+        ],
+        "best_discriminating_question": "伝統や本物らしさに関心があることを他人に伝えることに満足感を感じますか？",
+        "testability_notes": "ユーザーのSNS発信や自己表現の傾向を尋ねることで検証可能だが、無意識的動機のため深掘りが必要。",
+        "safety_risk_notes": "ユーザーの動機を自己顕示欲や承認欲求に還元するため、反発や不快感を招くリスクが高い。"
+      },
+      "rationale": "観察・外部事実を広く説明できるが、ユーザーの動機を裏読みするため提示時の配慮が必要。"
+    }
+  ]
+}

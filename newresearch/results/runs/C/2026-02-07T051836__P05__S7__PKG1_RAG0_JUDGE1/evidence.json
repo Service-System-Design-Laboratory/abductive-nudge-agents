@@ -1,0 +1,16 @@
+{
+  "triggers": [
+    {
+      "type": "information_gap",
+      "text": "ユーザーは安全面を最優先して海外旅行の行動を決定しているが、PKGには安全対策や安全志向に関する情報が含まれていないため、ユーザーの安全志向の具体的な背景や理由が説明できない。"
+    },
+    {
+      "type": "information_gap",
+      "text": "ユーザーはもっと安全に旅行するためのコツを求めているが、PKGには安全対策や旅行時の安全向上策に関する情報が不足している。"
+    }
+  ],
+  "rag_queries": [],
+  "evidence_items": [],
+  "external_observations": [],
+  "notes": "RAG disabled (use_rag=false) — trigger identification only"
+}

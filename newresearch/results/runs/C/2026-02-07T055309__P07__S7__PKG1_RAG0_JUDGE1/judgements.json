@@ -1,0 +1,94 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O4"
+        ],
+        "key_assumptions": [
+          "ユーザーは計画的運営やリスク回避のスキルを持ち、それを旅行時にも積極的に応用している"
+        ],
+        "best_discriminating_question": "普段の生活や仕事でもリスク回避や計画的運営を重視する場面は多いですか？",
+        "testability_notes": "ユーザーへの1-2問の質問で検証可能。PKGにも該当情報があり、裏付けが取れる。",
+        "safety_risk_notes": "断定的に提示すると『慎重すぎる』などの評価と受け取られる可能性があるが、比較的リスクは低い。"
+      },
+      "rationale": "PKGとの整合性が高く、観察O1,O2,O4を十分説明できている。スキル起因の説明として妥当性が高い。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "ユーザーは地域文化への敬意を持つが、安全を最優先する価値観がそれを上回る"
+        ],
+        "best_discriminating_question": "現地文化体験に興味はあるが、安全面で不安を感じた場合は参加を控えますか？",
+        "testability_notes": "ユーザーの価値観に関する質問で検証可能。PKGのp07_n2が根拠となる。",
+        "safety_risk_notes": "『文化体験より安全を優先』と断定することで、ユーザーの多様な価値観を単純化しすぎるリスクがある。"
+      },
+      "rationale": "PKGの内容と整合し、観察O1,O2,O3を説明できている。価値観の優先順位に着目した仮説として有効。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O5"
+        ],
+        "key_assumptions": [
+          "ユーザーは既存の安全対策を十分に講じているにもかかわらず、不確実性への不安が強い"
+        ],
+        "best_discriminating_question": "十分な安全対策をしても、なお新たな不安や警戒心が湧くことがありますか？",
+        "testability_notes": "ユーザーの心理傾向に関する質問で検証可能。PKGのp07_n1が間接的に補強。",
+        "safety_risk_notes": "『不安が強い』という表現がユーザーにネガティブに響く可能性があり、配慮が必要。"
+      },
+      "rationale": "観察O1,O5を説明でき、追加の安全策を求める心理的動機に焦点を当てている点が特徴。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O5"
+        ],
+        "key_assumptions": [
+          "ユーザーは既存の安全対策以上の情報やノウハウを持っていない"
+        ],
+        "best_discriminating_question": "最新の安全グッズや防犯ノウハウに関心がありますか？",
+        "testability_notes": "ユーザーの情報収集行動を問うことで検証可能。PKGや外部エビデンスがないため裏付けは弱い。",
+        "safety_risk_notes": "『情報不足』と断定することでユーザーの能力や努力を否定的に受け取られるリスクがある。"
+      },
+      "rationale": "O5の説明にはなるが、他の観察やPKGとの接点が薄く、仮説としての広がりは限定的。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4",
+          "O5"
+        ],
+        "key_assumptions": [
+          "ユーザーは『リスクを管理する自分』という自己像や役割を維持すること自体を重視している",
+          "計画的運営やリスク回避の価値観が強い"
+        ],
+        "best_discriminating_question": "安全対策を徹底する自分に誇りや安心感を感じることはありますか？",
+        "testability_notes": "ユーザーの自己認識や満足感に関する質問で検証可能。PKGのp07_n1が補強材料となる。",
+        "safety_risk_notes": "『自己効力感』や『役割の目的化』という指摘がユーザーに自己否定的に響く可能性があり、慎重な表現が必要。"
+      },
+      "rationale": "全観察を説明でき、PKGとも整合性が高い。動機の深層に踏み込むため、他仮説との差別化が明確。"
+    }
+  ]
+}

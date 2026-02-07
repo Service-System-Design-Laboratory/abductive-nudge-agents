@@ -1,0 +1,37 @@
+{
+  "triggers": [
+    {
+      "type": "focus",
+      "text": "写真撮影が旅の主目的であることに強いこだわりがある。"
+    },
+    {
+      "type": "information_gap",
+      "text": "『効率的』の意味が曖昧で、枚数を減らしたいのか、良い写真を早く撮りたいのか不明。"
+    },
+    {
+      "type": "ambiguity",
+      "text": "SNSでの『完璧な写真』の基準が明示されていない。"
+    },
+    {
+      "type": "contradiction",
+      "text": "節約志向や低予算旅行の価値観と、撮影機材や撮影へのこだわりが両立しているか不明。"
+    }
+  ],
+  "external_observations": [
+    {
+      "id": "Oext1",
+      "text": "SNSや動画投稿サイトでは、ユーザー自身が映像を撮影・制作して投稿することが一般化している。360度カメラや多様な機材を使った制作も広がっている。",
+      "source_url": "https://www.vipo.or.jp/u/II_SenshinContents_ContentProduction.pdf"
+    },
+    {
+      "id": "Oext2",
+      "text": "絶景スポットでは構図や遠近感を工夫することで、より迫力ある写真が撮れる。近くにカフェや散策路があるスポットも人気。",
+      "source_url": "https://www.lemon8-app.com/@lornasakamoto0/7513636863522062854?region=jp"
+    },
+    {
+      "id": "Oext3",
+      "text": "ライブ配信サービスの普及により、リアルタイムでの映像発信や視聴者とのインタラクションが一般化している。",
+      "source_url": "https://www.showroom-live.com/"
+    }
+  ]
+}

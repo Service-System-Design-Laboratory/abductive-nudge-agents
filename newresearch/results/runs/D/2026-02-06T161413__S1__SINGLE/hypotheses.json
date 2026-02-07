@@ -1,0 +1,145 @@
+{
+  "hypotheses": [
+    {
+      "hypothesis_id": "H1",
+      "type": "psychological",
+      "explains": [
+        "O1",
+        "O2",
+        "O3"
+      ],
+      "assumes": [
+        "A1",
+        "A2"
+      ],
+      "statement": "ユーザーは観光地の商業化や演出に対して心理的な反発を感じており、純粋な生活文化への接触を求めている。",
+      "mechanism": "観光地の演出や商業化が本物らしさを損なうと感じるため、地元の人しか知らない場所を選ぶことで自己の価値観を満たそうとしている。",
+      "predictions": [
+        "観光地や有名スポットを避ける傾向がある",
+        "地元の人との交流や生活感のある体験を重視する"
+      ],
+      "discriminating_questions": [
+        "観光地の演出に対してどんな感情を持ちますか？",
+        "地元の人との交流を求める理由は何ですか？"
+      ],
+      "persona_link": [
+        "pkg:n7",
+        "pkg:n1"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H2",
+      "type": "environmental",
+      "explains": [
+        "O2",
+        "Oext1",
+        "Oext2"
+      ],
+      "assumes": [
+        "A2",
+        "A3"
+      ],
+      "statement": "ユーザーは情報ギャップを感じており、ガイドブックに載っていない場所を探すこと自体が探索の価値になっている。",
+      "mechanism": "情報が少ない場所を自力で見つけることで達成感や独自性を感じる。",
+      "predictions": [
+        "ネットや地元の人から情報を収集する",
+        "探索の過程自体を楽しむ"
+      ],
+      "discriminating_questions": [
+        "情報が少ない場所を探すこと自体にどんな魅力を感じますか？",
+        "探索の過程で印象に残った体験はありますか？"
+      ],
+      "persona_link": [
+        "pkg:n66"
+      ],
+      "evidence_link": [
+        "ev:1",
+        "ev:2"
+      ],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H3",
+      "type": "value",
+      "explains": [
+        "O1",
+        "O2",
+        "O3"
+      ],
+      "assumes": [
+        "A2"
+      ],
+      "statement": "ユーザーは『本物の生活』に触れることで自分の価値観や人生観を深めたいと考えている。",
+      "mechanism": "本物の生活や文化に触れることで自己の価値観や人生観を再構築しようとしている。",
+      "predictions": [
+        "深い学びや気づきを求めている",
+        "観光よりも生活文化の理解を重視する"
+      ],
+      "discriminating_questions": [
+        "『本物の生活』を体験することでどんなことを得たいですか？",
+        "その体験があなたの価値観にどう影響しますか？"
+      ],
+      "persona_link": [
+        "pkg:n7"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H4",
+      "type": "goal_mismatch",
+      "explains": [
+        "O1",
+        "O2"
+      ],
+      "assumes": [
+        "A1"
+      ],
+      "statement": "ユーザーは実は観光そのものには興味がなく、探索や発見のプロセス自体を楽しみたいだけかもしれない。",
+      "mechanism": "観光地を避けるのは目的地よりも探索の体験やプロセスに価値を置いているから。",
+      "predictions": [
+        "目的地の情報よりも探索方法やプロセスに関心がある",
+        "到達した場所そのものよりも発見の体験を重視する"
+      ],
+      "discriminating_questions": [
+        "目的地そのものよりも探索の過程に価値を感じますか？",
+        "発見の体験が印象に残っていますか？"
+      ],
+      "persona_link": [
+        "pkg:n66"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H5",
+      "type": "psychological",
+      "explains": [
+        "O1",
+        "O2",
+        "O3"
+      ],
+      "assumes": [
+        "A1",
+        "A2"
+      ],
+      "statement": "ユーザーが『本物の生活』にこだわるのは、実は観光地や演出された場所に対する過去の失望体験が強く影響している可能性がある。つまり、ユーザーは『本物』を求めていると言いつつ、実は過去の期待外れの体験から逃避している。",
+      "mechanism": "過去の観光地での失望や違和感が強く残っており、それを避けるために『本物』という理想を追い求めている。",
+      "predictions": [
+        "観光地や演出された場所でのネガティブな体験談がある",
+        "『本物』へのこだわりが過去の失望体験と関連している"
+      ],
+      "discriminating_questions": [
+        "観光地や演出された場所でどんな失望体験がありましたか？",
+        "『本物』へのこだわりは過去の体験と関係していますか？"
+      ],
+      "persona_link": [
+        "pkg:n7"
+      ],
+      "evidence_link": [],
+      "is_reframing": true
+    }
+  ]
+}

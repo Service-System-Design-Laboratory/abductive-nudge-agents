@@ -1,0 +1,94 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A2",
+          "A3"
+        ],
+        "best_discriminating_question": "あなたにとって『本物の郷土料理』や『地元の人が通う店』のどんな点が特に大事ですか？",
+        "testability_notes": "価値観や好みを直接聞くことで検証可能。",
+        "safety_risk_notes": "価値観の肯定なのでリスクは低い。"
+      },
+      "rationale": "ユーザーのPKGにある『節約志向』『少人数交流』などの価値観と整合的で、発言内容を素直に説明できる。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "A1"
+        ],
+        "best_discriminating_question": "観光客向けの店やチェーン店で嫌な思いをしたことがありますか？",
+        "testability_notes": "過去の経験やエピソードを尋ねることで検証可能。",
+        "safety_risk_notes": "過去のネガティブ体験を掘り返すため、慎重な配慮が必要。"
+      },
+      "rationale": "強い拒否感の背景に個人的な体験がある可能性を示すが、直接的な根拠は発言からは読み取れない。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "A1"
+        ],
+        "best_discriminating_question": "観光地の中心部と周辺部、どちらの飲食店に魅力を感じますか？",
+        "testability_notes": "旅先の選び方や行動パターンを聞くことで検証可能。",
+        "safety_risk_notes": "観光地の中心部を否定するニュアンスが強くなりすぎないよう注意。"
+      },
+      "rationale": "外部観察Oext1と整合し、観光地の飲食店事情に関する環境要因を説明できる。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A2"
+        ],
+        "best_discriminating_question": "食事そのものよりも、地元の人と同じ空間や体験をすることに魅力を感じますか？",
+        "testability_notes": "食事以外の行動や興味の有無を聞くことで検証可能。",
+        "safety_risk_notes": "目的のすり替えと受け取られないよう配慮が必要。"
+      },
+      "rationale": "食事が目的ではなく、地元体験そのものが目的という読み替え。PKGの『少人数交流』とも合致。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "A2"
+        ],
+        "best_discriminating_question": "地元民しか知らない店に行ったことを誰かに話したり、SNSで発信したくなりますか？",
+        "testability_notes": "行動やSNSでの発信傾向を尋ねることで検証可能。",
+        "safety_risk_notes": "ユーザーの動機を疑う形になるため、慎重な言い回しが必要。"
+      },
+      "rationale": "『本物志向』の裏に、実は社会的な自己演出や差別化欲求があるという裏切る仮説。外部観察Oext2とも整合。"
+    }
+  ]
+}

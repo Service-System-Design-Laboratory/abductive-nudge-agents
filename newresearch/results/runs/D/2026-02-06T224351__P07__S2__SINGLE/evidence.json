@@ -1,0 +1,23 @@
+{
+  "triggers": [
+    {
+      "type": "focus",
+      "text": "効率化と計画実行への強い集中"
+    },
+    {
+      "type": "information_gap",
+      "text": "効率化以外の価値観や旅行の目的が明示されていない"
+    },
+    {
+      "type": "ambiguity",
+      "text": "偶発的な出来事や計画外の体験への態度が不明"
+    }
+  ],
+  "external_observations": [
+    {
+      "id": "Oext1",
+      "text": "データ主導経済では、ネットワークとデータが新たな価値を創造する一方で、効率化が本来の体験や価値を商品化・形式化するリスクが指摘されている",
+      "source_url": "https://www.soumu.go.jp/johotsusintokei/whitepaper/ja/h29/pdf/29honpen.pdf"
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A2"
+        ],
+        "best_discriminating_question": "他の場面でも『高すぎる』と感じて選択を変えることはありますか？",
+        "testability_notes": "他分野での価格感度を尋ねることで検証可能。",
+        "safety_risk_notes": "損得勘定ばかりと受け取られると不快感を与える可能性がある。"
+      },
+      "rationale": "価格差への心理的抵抗は多くの人に共通するが、ユーザーの価値観（PKG）との関連は弱い。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O5"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A4"
+        ],
+        "best_discriminating_question": "地域の人や自然とのふれあいがある宿泊先なら、価格が少し高くても興味がありますか？",
+        "testability_notes": "体験型宿泊への関心を尋ねることで検証可能。",
+        "safety_risk_notes": "価値観のギャップを指摘することで違和感を与える可能性がある。"
+      },
+      "rationale": "PKGの価値観と発言のギャップを埋める仮説。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3",
+          "O4",
+          "O5",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "A2"
+        ],
+        "best_discriminating_question": "旅館ならではのサービスや体験について、知っていることはありますか？",
+        "testability_notes": "情報提供後の反応で検証可能。",
+        "safety_risk_notes": "知識不足を指摘する形になるため、配慮が必要。"
+      },
+      "rationale": "情報ギャップを埋めることで納得感が変わる可能性がある。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O5",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A3"
+        ],
+        "best_discriminating_question": "旅行で一番重視するのは宿泊先ですか？それとも観光や体験ですか？",
+        "testability_notes": "旅行の目的を明確にする質問で検証可能。",
+        "safety_risk_notes": "宿泊施設の価値を軽視していると受け取られる可能性がある。"
+      },
+      "rationale": "外部観察Oext2と合致し、合理的なコスパ重視の立場を説明。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4",
+          "O5",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A2"
+        ],
+        "best_discriminating_question": "高級な旅館や特別な体験に対して、気後れや不安を感じることはありますか？",
+        "testability_notes": "高価格帯や特別体験への感情を尋ねることで検証可能。",
+        "safety_risk_notes": "ユーザーの自己防衛や不安を指摘するため、やや不快感を与えるリスクがある。"
+      },
+      "rationale": "表面的なコスパ重視の裏に、自己防衛や不安が隠れている可能性を示す。"
+    }
+  ]
+}

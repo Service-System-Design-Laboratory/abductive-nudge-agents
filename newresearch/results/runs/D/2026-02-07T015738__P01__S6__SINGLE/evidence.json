@@ -1,0 +1,33 @@
+{
+  "triggers": [
+    {
+      "type": "focus",
+      "text": "『誰よりも分かっているつもり』という強い自己認識がある。"
+    },
+    {
+      "type": "ambiguity",
+      "text": "世界遺産登録前後での変化についての明言がない。"
+    },
+    {
+      "type": "information_gap",
+      "text": "原生林の『神秘的な雰囲気』の具体的な意味や体験内容が不明。"
+    }
+  ],
+  "external_observations": [
+    {
+      "id": "Oext1",
+      "text": "屋久島は世界遺産登録後、多くの旅行者が訪れるようになり、白谷雲水峡など観光スポットの『神秘的な景観』が広く知られるようになった。",
+      "source_url": "https://www.lemon8-app.com/r.30.papi/6840738511587492358?region=jp"
+    },
+    {
+      "id": "Oext2",
+      "text": "屋久島町民アンケートでは『自然景観・環境の保全と整備』に対する満足と不満が分かれており、住民や訪問者の間で意見が分かれている。",
+      "source_url": "http://www.town.yakushima.kagoshima.jp/t_yakushima/wp-content/uploads/2025/09/20250908_02_sakutei_sanko_shiryo.pdf"
+    },
+    {
+      "id": "Oext3",
+      "text": "自然の見え方は人によって異なり、メディアや観光の影響で『本物らしさ』が演出されることがある。",
+      "source_url": "https://creators.spotify.com/pod/profile/mimoriradio/episodes/61----4-e27rsoe"
+    }
+  ]
+}

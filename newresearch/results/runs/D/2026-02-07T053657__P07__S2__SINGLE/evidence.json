@@ -1,0 +1,23 @@
+{
+  "triggers": [
+    {
+      "type": "focus",
+      "text": "効率化と計画実行に強い関心が集中している"
+    },
+    {
+      "type": "information_gap",
+      "text": "偶発的な体験や余白の価値については触れられていない"
+    },
+    {
+      "type": "ambiguity",
+      "text": "効率化の目的や背景が明確でない"
+    }
+  ],
+  "external_observations": [
+    {
+      "id": "Oext1",
+      "text": "データ主導経済では、ネットワークとデータが新たな価値を創造するが、効率性の追求が体験の質や偶発性を損なうパラドックスがある",
+      "source_url": "https://www.soumu.go.jp/johotsusintokei/whitepaper/ja/h29/pdf/29honpen.pdf"
+    }
+  ]
+}

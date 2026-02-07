@@ -1,0 +1,100 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーは不安軽減や自己効力感向上を主目的として詳細な計画を立てている",
+          "計画の詳細化が不安コントロールに直結している"
+        ],
+        "best_discriminating_question": "旅行中に予定外のトラブルが起きた場合、どの程度ストレスを感じるか？",
+        "testability_notes": "ユーザーへの直接質問で検証可能。観察O1, O2の行動だけでは心理的動機の裏付けは弱い。",
+        "safety_risk_notes": "ユーザーの不安傾向や自己効力感への言及が、断定的・病理的に受け取られるリスクあり。"
+      },
+      "rationale": "観察O1, O2の行動説明には妥当性があるが、O3, O4は動機の裏付けが弱く、心理的要因の推定はやや飛躍がある。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3",
+          "O4",
+          "Oext1",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "予約システムや外部環境の制約がユーザーの計画実行に大きく影響している",
+          "ユーザーが計画通りに動けない主因は外的要因である"
+        ],
+        "best_discriminating_question": "主要スポットの予約状況やキャンセル規定は事前に確認済みか？",
+        "testability_notes": "外部エビデンス(ev:1)や観察Oext1, Oext3で裏付け可能。ユーザーの計画と実際の予約状況を照合する必要あり。",
+        "safety_risk_notes": "ユーザーの努力不足ではなく外的要因を強調するため、責任転嫁や無力感を与えるリスクは低い。"
+      },
+      "rationale": "外部エビデンスと観察の整合性が高く、計画実行の困難さを外部要因で説明できている。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O5"
+        ],
+        "key_assumptions": [
+          "ユーザーの計画が移動やスポット巡りに偏っている",
+          "休憩・食事・トラブル対応など他の効率化ポイントが十分に考慮されていない"
+        ],
+        "best_discriminating_question": "休憩や食事の計画はどの程度具体的に決めているか？",
+        "testability_notes": "ユーザーの計画内容を直接確認することで検証可能。外部エビデンス(ev:2)も補強材料となる。",
+        "safety_risk_notes": "ユーザーの計画力や配慮不足を指摘する形になるため、配慮した表現が望ましい。"
+      },
+      "rationale": "O5の観察に直接対応し、外部エビデンスも補強しているが、他の観察への説明力は限定的。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O3",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "ユーザーが効率化・パッケージ化された体験に価値を置いている",
+          "計画やルートの最適化自体が満足度の源泉である"
+        ],
+        "best_discriminating_question": "旅行の満足度は計画通りに進んだ度合いとどの程度関係しているか？",
+        "testability_notes": "ユーザーの価値観を問う質問で検証可能。外部エビデンス(ev:2)やOext2が補強材料。",
+        "safety_risk_notes": "ユーザーの価値観を断定的に決めつけると反発を招く可能性がある。"
+      },
+      "rationale": "O1, O3, Oext2の説明に妥当性があり、現代的な旅行観の変化を捉えているが、O5への説明はやや弱い。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4",
+          "O5",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "ユーザーが『効率的に動く自分』という自己像を守ることを重視している",
+          "計画の達成自体が旅行体験よりも重要になっている"
+        ],
+        "best_discriminating_question": "旅行の満足度は『どれだけ計画が達成できたか』と『どんな体験ができたか』のどちらにより左右されるか？",
+        "testability_notes": "ユーザーの自己評価や満足度の源泉を問うことで検証可能。外部エビデンス(ev:2)やOext2が補強材料。",
+        "safety_risk_notes": "ユーザーの動機や価値観を深く掘り下げるため、自己否定や違和感を与えない配慮が必要。"
+      },
+      "rationale": "観察全体を広く説明でき、現代的な旅行体験の自己目的化という再定義的視点も含むが、ユーザーの自己像への踏み込みは慎重さが求められる。"
+    }
+  ]
+}

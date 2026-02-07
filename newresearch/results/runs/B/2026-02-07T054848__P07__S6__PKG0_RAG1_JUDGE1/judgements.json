@@ -1,0 +1,97 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O5"
+        ],
+        "key_assumptions": [
+          "ユーザーが縄文杉や原生林に対して強い愛着や感動を感じている",
+          "自然の純粋さや希少性がユーザーの満足感や自己認識に直結している"
+        ],
+        "best_discriminating_question": "屋久島以外の原生林や自然環境にも同じような感動を覚えますか？",
+        "testability_notes": "ユーザーへの直接質問で検証可能。観察O2, O5の発言と整合性を確認しやすい。",
+        "safety_risk_notes": "ユーザーの自己認識や価値観に踏み込むため、断定的な表現は避けるべき。"
+      },
+      "rationale": "ユーザーの感動や自己認識の源泉を説明する仮説として妥当性が高いが、他の自然体験への関心が限定的かどうかは追加確認が必要。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3",
+          "O5",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "縄文杉の森が純粋な原生林ではなく、何らかの人為的影響を受けている",
+          "ユーザーがその事実を十分に認識していない"
+        ],
+        "best_discriminating_question": "縄文杉周辺で人為的な植林や管理の痕跡を見たことがありますか？",
+        "testability_notes": "外部エビデンスや現地ガイドの説明、ユーザーの体験談から検証可能。",
+        "safety_risk_notes": "ユーザーの信念や感動を否定する形になりやすく、慎重な表現が必要。"
+      },
+      "rationale": "外部エビデンスに裏付けられた事実認識のギャップを指摘しており、観察O3やOext3をよく説明できる。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O4",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "ユーザーが長期的に屋久島を訪れており、環境変化を体感している",
+          "その体験が自己の知識や価値の希少性意識につながっている"
+        ],
+        "best_discriminating_question": "世界遺産登録前後で屋久島の自然や雰囲気にどのような違いを感じますか？",
+        "testability_notes": "ユーザーの具体的なエピソードや意見を聞くことで検証可能。",
+        "safety_risk_notes": "過去の体験や知識の希少性を強調しすぎると、他者との比較意識を刺激する可能性がある。"
+      },
+      "rationale": "屋久島の変化に対するユーザーの感受性や自己認識を説明する仮説として一貫性がある。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "ユーザーが自然の純粋性や人為的介入のない環境に価値を見出している",
+          "縄文杉の神秘性がその価値観の体現であると感じている"
+        ],
+        "best_discriminating_question": "人工林や整備された登山道と、原生林の雰囲気の違いについてどう感じますか？",
+        "testability_notes": "ユーザーの価値観や興味の対象を質問することで検証しやすい。",
+        "safety_risk_notes": "価値観の押し付けや断定的な評価にならないよう注意が必要。"
+      },
+      "rationale": "ユーザーの自然観や価値観に基づく感動を説明する仮説として妥当だが、O5（自己認識の強調）への説明はやや弱い。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O4",
+          "O5",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "屋久島の観光化や変化がユーザーの特別な体験や自己像を脅かしている",
+          "ユーザーがその優越的自己像を守るために純粋性や独自性を強調している"
+        ],
+        "best_discriminating_question": "新しい観光客やガイドブック的な屋久島の楽しみ方についてどう思いますか？",
+        "testability_notes": "ユーザーの発言や態度から間接的に検証可能だが、心理的動機のため直接的な証明は難しい。",
+        "safety_risk_notes": "ユーザーの動機や心理を疑う内容のため、誤解や反発を招きやすい。配慮した提示が必要。"
+      },
+      "rationale": "ユーザーの自己認識や行動の裏にある社会的・心理的動機を説明する仮説であり、O5やOext3の背景を深掘りできるが、センシティブな内容を含む。"
+    }
+  ]
+}

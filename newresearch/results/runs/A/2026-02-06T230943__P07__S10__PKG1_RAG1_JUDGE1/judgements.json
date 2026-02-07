@@ -1,0 +1,104 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_link（pkg:n359, pkg:n360）がPKGに存在しないため、ペルソナ知識グラフによる裏付けができない。"
+        ],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーが自己効力感や成果達成感を重視していること",
+          "SNSでの承認や反響が行動の強化因となっていること"
+        ],
+        "best_discriminating_question": "SNSでの反響が少なかった場合、旅行や撮影の満足度に影響しますか？",
+        "testability_notes": "ユーザーへの直接質問やSNS投稿履歴の分析で検証可能。比較的検証しやすい。",
+        "safety_risk_notes": "『承認欲求』や『成果志向』の強調がユーザーにネガティブな印象を与える可能性がある。断定的表現に注意。"
+      },
+      "rationale": "観察O1・O2をよく説明しているが、PKG裏付けがなく、SNS承認動機の有無を直接問う必要がある。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_link（pkg:n358, pkg:n360）がPKGに存在しないため、ペルソナ知識グラフによる裏付けができない。"
+        ],
+        "explains_confirmed": [
+          "O2",
+          "O4"
+        ],
+        "key_assumptions": [
+          "ユーザーが撮影技術や機材活用の最適化に関心を持っていること"
+        ],
+        "best_discriminating_question": "撮影技術を学ぶためにどのような情報源を活用していますか？",
+        "testability_notes": "ユーザーの行動観察やインタビュー、SNS投稿内容から検証可能。検証しやすい。",
+        "safety_risk_notes": "技術志向を強調しすぎると、ユーザーの多様な動機を見落とすリスクがある。"
+      },
+      "rationale": "O2・O4の説明力が高く、技術志向の検証も容易だが、PKG裏付けがない点に注意。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "観光地や絶景ポイントが『映える写真』を意識して設計・変化していること",
+          "ユーザーがその環境変化に適応していること"
+        ],
+        "best_discriminating_question": "訪れる場所の選択に、SNSで話題のスポットや撮影環境が影響していますか？",
+        "testability_notes": "観光地の設計やSNSトレンドの分析、ユーザーの選択理由のヒアリングで検証可能。やや外部データ依存。",
+        "safety_risk_notes": "環境要因の強調により、ユーザーの主体性を軽視していると受け取られる可能性がある。"
+      },
+      "rationale": "Oext3を含め環境変化の観察をよく説明しているが、ユーザーの主体的動機との区別が必要。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_link（pkg:n359）がPKGに存在しないため、ペルソナ知識グラフによる裏付けができない。"
+        ],
+        "explains_confirmed": [
+          "O3",
+          "O4",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "ユーザーが『本物らしさ』や現地の雰囲気を写真で表現することに価値を見出していること",
+          "SNSでの評価のために自然さやリアリティの演出を重視していること"
+        ],
+        "best_discriminating_question": "写真を撮る際、現地らしさや自然な雰囲気をどの程度重視しますか？",
+        "testability_notes": "写真の内容分析やユーザーインタビューで検証可能。比較的検証しやすい。",
+        "safety_risk_notes": "『演出』や『本物らしさ』の価値観を断定的に扱うと、ユーザーの意図とズレるリスクがある。"
+      },
+      "rationale": "O3・O4・Oext2を説明できるが、PKG裏付けがなく、価値観の個人差に注意が必要。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_link（pkg:n359, pkg:n360）がPKGに存在しないため、ペルソナ知識グラフによる裏付けができない。"
+        ],
+        "explains_confirmed": [
+          "O3",
+          "O4",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "ユーザーの本来の動機が自己演出や社会的評価の獲得であること",
+          "写真や旅そのものよりもSNS上での自己像や承認が重要視されていること"
+        ],
+        "best_discriminating_question": "SNSに投稿しない場合でも同じように写真を撮り続けますか？",
+        "testability_notes": "ユーザーへの直接質問やSNS非投稿時の行動観察が必要。やや検証難度が高い。",
+        "safety_risk_notes": "ユーザーの動機を『本来の目的』と断定することで、本人の価値観を否定する印象を与えるリスクが高い。"
+      },
+      "rationale": "O3・O4・Oext1を説明できるが、動機の断定性が高く、PKG裏付けもないため慎重な扱いが必要。"
+    }
+  ]
+}

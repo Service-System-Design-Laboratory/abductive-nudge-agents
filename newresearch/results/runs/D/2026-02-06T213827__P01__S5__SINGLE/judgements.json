@@ -1,0 +1,102 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [
+          "コスト削減以外の価値観（体験・交流）への関心を説明できていない。"
+        ],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "A3"
+        ],
+        "best_discriminating_question": "節約自体が楽しい・やりがいと感じることはありますか？",
+        "testability_notes": "ユーザーの節約行動へのモチベーションを直接質問することで検証可能。",
+        "safety_risk_notes": "節約志向を過度に強調すると、他の価値観を無視した印象を与える可能性。"
+      },
+      "rationale": "節約行動の心理的側面に着目しているが、ユーザーの他の価値観を十分に説明できていない。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [
+          "新しい選択肢を既に知っている場合は当てはまらない。"
+        ],
+        "explains_confirmed": [
+          "O5"
+        ],
+        "key_assumptions": [
+          "A1"
+        ],
+        "best_discriminating_question": "無料宿泊やボランティア滞在など、今まで試したことのない節約方法に興味はありますか？",
+        "testability_notes": "新しい節約手段を提案したときの反応で検証可能。",
+        "safety_risk_notes": "情報提供の範囲を超えて押し付けにならないよう注意。"
+      },
+      "rationale": "情報ギャップに着目し、ユーザーの選択肢拡大に寄与する仮説。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [
+          "節約行動が必ずしも地域体験や自然との調和を意図しているとは限らない。"
+        ],
+        "explains_confirmed": [
+          "O2",
+          "O3",
+          "O4",
+          "O5"
+        ],
+        "key_assumptions": [
+          "A2"
+        ],
+        "best_discriminating_question": "節約によって、地域の人や自然と触れ合うことに価値を感じますか？",
+        "testability_notes": "旅行中の体験や価値観の優先度を尋ねることで検証可能。",
+        "safety_risk_notes": "ユーザーの本来の目的を誤解してしまうリスク。"
+      },
+      "rationale": "PKGの価値観（自然との調和、地域体験）と節約行動を結びつける説明。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [
+          "ユーザーが本当に体験の質を求めているかは不明。"
+        ],
+        "explains_confirmed": [
+          "O5",
+          "O2"
+        ],
+        "key_assumptions": [
+          "A2"
+        ],
+        "best_discriminating_question": "節約を優先することで、体験の質が下がることに不満を感じることはありますか？",
+        "testability_notes": "体験の質とコストのバランスについての考えを尋ねることで検証可能。",
+        "safety_risk_notes": "節約努力を否定する印象を与えないよう配慮が必要。"
+      },
+      "rationale": "節約と体験価値の葛藤に着目した仮説。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [
+          "ユーザーが自己像や他者へのアピールを意識していない場合は当てはまらない。"
+        ],
+        "explains_confirmed": [
+          "O5",
+          "O2"
+        ],
+        "key_assumptions": [
+          "A2"
+        ],
+        "best_discriminating_question": "節約の工夫や成果を誰かに話したり、SNSで共有したことはありますか？",
+        "testability_notes": "節約行動の社会的側面や自己表現の有無を尋ねることで検証可能。",
+        "safety_risk_notes": "動機の裏側を指摘するため、やや不快感を与える可能性がある。"
+      },
+      "rationale": "節約行動の背後にある自己像や社会的動機に踏み込むことで、発言の意味を大きく変える仮説。"
+    }
+  ]
+}

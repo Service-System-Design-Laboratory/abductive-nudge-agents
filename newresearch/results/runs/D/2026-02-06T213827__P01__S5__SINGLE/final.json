@@ -1,0 +1,344 @@
+{
+  "context": {
+    "observations": [
+      {
+        "id": "O1",
+        "text": "今回の旅行は徹底的にコストを抑えた。"
+      },
+      {
+        "id": "O2",
+        "text": "宿は最安値のカプセルホテルを利用する予定である。"
+      },
+      {
+        "id": "O3",
+        "text": "移動は青春18きっぷを利用する予定である。"
+      },
+      {
+        "id": "O4",
+        "text": "食事は全部コンビニで済ませる予定である。"
+      },
+      {
+        "id": "O5",
+        "text": "この予算内でもっと節約できるポイントがあるか知りたい。"
+      }
+    ],
+    "assumptions": [
+      {
+        "id": "A1",
+        "text": "ユーザーは現行の節約手段以外の選択肢を十分に認識していない可能性がある。",
+        "status": "tentative"
+      },
+      {
+        "id": "A2",
+        "text": "ユーザーは節約自体を目的としているのではなく、他の価値観（例：体験や交流）も重視している可能性がある。",
+        "status": "tentative"
+      },
+      {
+        "id": "A3",
+        "text": "ユーザーは安全や快適さよりもコスト削減を優先している。",
+        "status": "tentative"
+      }
+    ],
+    "questions": [
+      "今まで試したことのない節約方法に興味はありますか？",
+      "宿泊や移動以外で、旅行中に重視していることは何ですか？",
+      "コンビニ以外で安く食事を済ませる方法を探したことはありますか？"
+    ],
+    "constraints": {
+      "tone": "supportive",
+      "safety": "avoid determinism"
+    }
+  },
+  "evidence": {
+    "triggers": [
+      {
+        "type": "information_gap",
+        "text": "ユーザーが現行の節約手段以外をどれだけ知っているかが不明。"
+      },
+      {
+        "type": "ambiguity",
+        "text": "節約の目的がコスト削減そのものか、他の価値観（体験・交流）も含むのかが曖昧。"
+      },
+      {
+        "type": "focus",
+        "text": "宿泊・移動・食事以外の節約ポイントに言及がない。"
+      }
+    ],
+    "external_observations": [
+      {
+        "id": "Oext1",
+        "text": "日帰り旅行なら宿泊費が不要で旅費を大幅に節約できる。",
+        "source_url": "https://sakeinvest.com/hongkong-daytrip/"
+      },
+      {
+        "id": "Oext2",
+        "text": "夏休み後は格安で美しい自然体験ができる旅行先がある。",
+        "source_url": "https://www.lemon8-app.com/@24bonsan/7410027308592513542?region=jp"
+      }
+    ]
+  },
+  "hypotheses": [
+    {
+      "hypothesis_id": "H1",
+      "type": "psychological",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "O4"
+      ],
+      "assumes": [
+        "A3"
+      ],
+      "statement": "ユーザーはコスト削減自体に強い達成感や満足感を感じており、極限まで節約することが旅行の目的の一部となっている。",
+      "mechanism": "節約行動が自己効力感や達成感をもたらすため、選択肢が限られていても満足できる。",
+      "predictions": [
+        "さらに節約できる新しい手段を知ると積極的に試したくなる",
+        "節約の成果を他人に話したくなる"
+      ],
+      "discriminating_questions": [
+        "節約自体が楽しい・やりがいと感じることはありますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H2",
+      "type": "evidence_gap",
+      "explains": [
+        "O5"
+      ],
+      "assumes": [
+        "A1"
+      ],
+      "statement": "ユーザーは現行の節約手段（最安宿・青春18きっぷ・コンビニ食）しか知らないため、無料宿泊やお手伝いサービスなどの新しい選択肢を十分に認識・検討できていない可能性がある。",
+      "mechanism": "情報不足により、既存の枠組み内でしか節約策を選べていない。",
+      "predictions": [
+        "新しい節約手段を提案すると驚きや関心を示す",
+        "他の旅行者の節約体験談に興味を持つ"
+      ],
+      "discriminating_questions": [
+        "無料宿泊やボランティア滞在など、今まで試したことのない節約方法に興味はありますか？"
+      ],
+      "persona_link": [
+        "p01_n4",
+        "p01_n1"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H3",
+      "type": "environmental",
+      "explains": [
+        "O2",
+        "O3",
+        "O4",
+        "O5"
+      ],
+      "assumes": [
+        "A2"
+      ],
+      "statement": "ユーザーはコスト削減を通じて、より地域に密着した体験や自然との調和を求めている。",
+      "mechanism": "節約のためにローカルな移動手段や簡素な食事を選ぶことで、地域の生活や自然と触れ合う機会が増える。",
+      "predictions": [
+        "地域の人との交流や自然体験に関心が高い",
+        "節約旅行の中で印象に残った地域体験を語る"
+      ],
+      "discriminating_questions": [
+        "節約によって、地域の人や自然と触れ合うことに価値を感じますか？"
+      ],
+      "persona_link": [
+        "p01_n1",
+        "p01_n4",
+        "p01_n7"
+      ],
+      "evidence_link": [
+        "ev:2"
+      ],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H4",
+      "type": "goal_mismatch",
+      "explains": [
+        "O5",
+        "O2"
+      ],
+      "assumes": [
+        "A2"
+      ],
+      "statement": "ユーザーは節約を重視しているが、本当はコスト以外の価値（快適さや体験の質）も求めており、節約と体験価値のバランスに悩んでいる。",
+      "mechanism": "コスト削減を優先するあまり、体験の質が下がることに無意識に不満を感じている可能性がある。",
+      "predictions": [
+        "節約による不便さや妥協について語ることがある",
+        "もう少しお金をかけても良い体験をしたいと思う瞬間がある"
+      ],
+      "discriminating_questions": [
+        "節約を優先することで、体験の質が下がることに不満を感じることはありますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H5",
+      "type": "constraint_conflict",
+      "explains": [
+        "O5",
+        "O2"
+      ],
+      "assumes": [
+        "A2"
+      ],
+      "statement": "（裏切る仮説）ユーザーは節約の追求自体が目的ではなく、むしろ『徹底的に節約する自分』という自己像や他者へのアピールを意識している可能性がある。",
+      "mechanism": "コスト削減の選択肢を強調することで、自己管理能力や合理性を示したいという動機が働いている。",
+      "predictions": [
+        "節約の工夫や成果を他人に話すことが多い",
+        "実際には多少の出費があっても、節約努力を強調する傾向がある"
+      ],
+      "discriminating_questions": [
+        "節約の工夫や成果を誰かに話したり、SNSで共有したことはありますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [],
+      "is_reframing": true
+    }
+  ],
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [
+          "コスト削減以外の価値観（体験・交流）への関心を説明できていない。"
+        ],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "A3"
+        ],
+        "best_discriminating_question": "節約自体が楽しい・やりがいと感じることはありますか？",
+        "testability_notes": "ユーザーの節約行動へのモチベーションを直接質問することで検証可能。",
+        "safety_risk_notes": "節約志向を過度に強調すると、他の価値観を無視した印象を与える可能性。"
+      },
+      "rationale": "節約行動の心理的側面に着目しているが、ユーザーの他の価値観を十分に説明できていない。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [
+          "新しい選択肢を既に知っている場合は当てはまらない。"
+        ],
+        "explains_confirmed": [
+          "O5"
+        ],
+        "key_assumptions": [
+          "A1"
+        ],
+        "best_discriminating_question": "無料宿泊やボランティア滞在など、今まで試したことのない節約方法に興味はありますか？",
+        "testability_notes": "新しい節約手段を提案したときの反応で検証可能。",
+        "safety_risk_notes": "情報提供の範囲を超えて押し付けにならないよう注意。"
+      },
+      "rationale": "情報ギャップに着目し、ユーザーの選択肢拡大に寄与する仮説。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [
+          "節約行動が必ずしも地域体験や自然との調和を意図しているとは限らない。"
+        ],
+        "explains_confirmed": [
+          "O2",
+          "O3",
+          "O4",
+          "O5"
+        ],
+        "key_assumptions": [
+          "A2"
+        ],
+        "best_discriminating_question": "節約によって、地域の人や自然と触れ合うことに価値を感じますか？",
+        "testability_notes": "旅行中の体験や価値観の優先度を尋ねることで検証可能。",
+        "safety_risk_notes": "ユーザーの本来の目的を誤解してしまうリスク。"
+      },
+      "rationale": "PKGの価値観（自然との調和、地域体験）と節約行動を結びつける説明。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [
+          "ユーザーが本当に体験の質を求めているかは不明。"
+        ],
+        "explains_confirmed": [
+          "O5",
+          "O2"
+        ],
+        "key_assumptions": [
+          "A2"
+        ],
+        "best_discriminating_question": "節約を優先することで、体験の質が下がることに不満を感じることはありますか？",
+        "testability_notes": "体験の質とコストのバランスについての考えを尋ねることで検証可能。",
+        "safety_risk_notes": "節約努力を否定する印象を与えないよう配慮が必要。"
+      },
+      "rationale": "節約と体験価値の葛藤に着目した仮説。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [
+          "ユーザーが自己像や他者へのアピールを意識していない場合は当てはまらない。"
+        ],
+        "explains_confirmed": [
+          "O5",
+          "O2"
+        ],
+        "key_assumptions": [
+          "A2"
+        ],
+        "best_discriminating_question": "節約の工夫や成果を誰かに話したり、SNSで共有したことはありますか？",
+        "testability_notes": "節約行動の社会的側面や自己表現の有無を尋ねることで検証可能。",
+        "safety_risk_notes": "動機の裏側を指摘するため、やや不快感を与える可能性がある。"
+      },
+      "rationale": "節約行動の背後にある自己像や社会的動機に踏み込むことで、発言の意味を大きく変える仮説。"
+    }
+  ],
+  "decision": {
+    "selected_hypothesis_id": "H5",
+    "contrasting_hypothesis_id": "H4",
+    "selection_rationale": "H5を採用すると、ユーザーの発言『今回の旅行は徹底的にコストを抑えた』の意味が『節約自体が目的なのではなく、節約する自分をアピールしたいという動機がある』に変わります。一方、H4は額面通り『節約と体験価値のバランスに悩んでいる』という読みです。どちらの立場に立つかで、今後の旅行の選択や自己理解が大きく変わります。",
+    "user_facing_frame": {
+      "framing": "options",
+      "questions": [
+        "あなたの節約行動は、どちらの側面が強いと思いますか？",
+        "節約の工夫や成果を誰かに話したり、SNSで共有したことはありますか？",
+        "節約を優先することで、体験の質が下がることに不満を感じることはありますか？"
+      ],
+      "options": [
+        "節約する自分を意識している（H5：自己表現・アピールの側面）",
+        "節約と体験価値のバランスに悩んでいる（H4：体験の質との葛藤）"
+      ]
+    }
+  },
+  "final_response": "ご自身の旅行スタイルについて、徹底的な節約を実践されていること、本当に素晴らしい工夫だと感じます。『節約自体が目的なのか、それとも節約する自分をどこかで意識しているのか』という視点や、『節約と体験の質のバランスで悩むことはないか』という問いかけも、今後の選択肢を広げるヒントになるかもしれません。\n\n例えば、節約の工夫や成果を誰かに話したり、SNSで共有したことはありますか？あるいは、節約を優先することで体験の質が下がることに不満を感じたことはありますか？\n\nもし新しい節約方法や、体験の質を高める工夫に興味があれば、日帰り旅行や地域の無料イベント、ボランティア滞在なども選択肢に入れてみるのも一つの方法です。5分だけ、次の旅行で「何を一番大事にしたいか」をメモしてみるのもおすすめです。同じように節約旅行を楽しむ人たちも、SNSやブログで体験談を発信していますので、参考にしてみるのも良いかもしれません。\n\nどちらの立場が今のご自身に近いか、あるいはどちらの視点で次の旅行を考えてみたいか、ぜひ教えてください。",
+  "markers": {
+    "empathy": {
+      "acknowledgement": true,
+      "reflection": true,
+      "perspective_prompt": true
+    },
+    "nudge": {
+      "easy": true,
+      "attractive": true,
+      "social": true,
+      "timely": true,
+      "has_question": true,
+      "has_options": true,
+      "has_small_action": true,
+      "directive_level": "low"
+    }
+  }
+}

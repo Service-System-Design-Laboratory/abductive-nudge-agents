@@ -1,0 +1,60 @@
+{
+  "triggers": [
+    {
+      "type": "information_gap",
+      "text": "ユーザーが求めている『効率的に映える写真を撮るコツ』や具体的なテクニックに関する情報がPKGに存在しない。"
+    },
+    {
+      "type": "focus",
+      "text": "SNSにアップするための完璧な写真を撮ることが旅の目的であり、映える写真の撮影効率向上に強い関心がある点が特に注目される。"
+    }
+  ],
+  "rag_queries": [
+    "SNS映えする写真を効率的に撮影するコツやテクニック",
+    "絶景ポイントで三脚を使ったベストアングル撮影の効率化方法",
+    "旅行中に短時間で高品質な写真を撮るためのプロのアドバイス",
+    "SNS投稿用の写真撮影におすすめの機材や設定",
+    "映える写真を量産するためのワークフローや撮影手順"
+  ],
+  "evidence_items": [
+    {
+      "rank": 1,
+      "title": "インスタ映えする「おしゃれな写真の撮り方」入門ガイド",
+      "snippet": "インスタ映えする写真を撮るには、自然光を取り入れるのもおススメです。 自然光は太陽からの光であり、自然な色合いを引き出すことができます。被写体の ...",
+      "url": "https://unique1.co.jp/column/sns_operation/8580/",
+      "source_type": "com"
+    },
+    {
+      "rank": 2,
+      "title": "企業の公式SNSで活用できる写真の撮り方のコツ",
+      "snippet": "コツの1つ目は「明暗差」をつくること。これはInstagramの「ビネット」というフィルター機能でも加工できます。 次は一眼レフカメラなどでよくある「 ...",
+      "url": "https://www.nippon-ag.co.jp/take_photo_forsns/",
+      "source_type": "com"
+    },
+    {
+      "rank": 3,
+      "title": "31 一脚のすすめ",
+      "snippet": "一部の庭園などでは、三脚の使用が禁止されている。この傾向は、公園、植物園でも広まっているようだ。そこで、今回は一脚を使ったローアングル撮影の方法を紹介したい。",
+      "url": "http://tsuideni-walking.la.coocan.jp/gihou_31.html",
+      "source_type": "other"
+    }
+  ],
+  "external_observations": [
+    {
+      "id": "Oext1",
+      "text": "SNS映えする写真撮影のテクニックや機材選びは、個人の趣味領域を超えて企業マーケティングや商品化の対象となっており、撮影方法そのものが商業的に体系化されている。",
+      "source_url": "https://www.nippon-ag.co.jp/take_photo_forsns/"
+    },
+    {
+      "id": "Oext2",
+      "text": "三脚などの撮影機材は、景観保護や公共空間の管理の観点から使用が制限される場所が増えており、撮影者の自由な表現活動が制度的に規制される傾向がある。",
+      "source_url": "http://tsuideni-walking.la.coocan.jp/gihou_31.html"
+    },
+    {
+      "id": "Oext3",
+      "text": "SNSで『本物らしさ』や『自然な美しさ』を演出するための撮影テクニックが広く普及し、結果として多くの写真が同質的なスタイルに収束する現象が起きている。",
+      "source_url": "https://unique1.co.jp/column/sns_operation/8580/"
+    }
+  ],
+  "notes": ""
+}

@@ -1,0 +1,73 @@
+{
+  "triggers": [
+    {
+      "type": "information_gap",
+      "text": "ユーザーが求める『地元の人しか知らない、看板も出ていない場所』や『本物の生活が残っている場所』の具体例や探索方法が観察・仮定からは不明であり、情報のギャップが存在する。"
+    },
+    {
+      "type": "focus",
+      "text": "ユーザーは観光客向けの演出や商業化された場所を強く避けたいという意志を示しており、そのニーズに応えるための具体的な場所や体験の提案が必要である。"
+    }
+  ],
+  "rag_queries": [
+    "地元の人しか知らない観光地ではない場所の探し方",
+    "日本で看板が出ていない本物の生活が残っている地域の例",
+    "観光客向けの演出がない地元住民の日常に触れられるスポット",
+    "商業化されていないローカルな体験ができる方法"
+  ],
+  "evidence_items": [
+    {
+      "rank": 1,
+      "title": "有名どころに負けない絶景ばかり！知る人ぞ知る穴場の絶景スポット20選",
+      "snippet": "有名どころに負けない絶景ばかり！知る人ぞ知る穴場の絶景スポット20選 · 【北海道】神威岬 · 【青森県】蔦沼 · 【秋田県】小安峡大噴湯 · 【宮城県】鳳鳴四十八滝 · 【福島県】 ...",
+      "url": "https://www.nta.co.jp/media/tripa/articles/W4f7p",
+      "source_type": "com"
+    },
+    {
+      "rank": 2,
+      "title": "本当は教えたくない、日本の「隠れ」絶景9選",
+      "snippet": "国内、海外の絶景スポットを知り尽くす旅行のプロが、おススメする国内の絶景スポットをご紹介します。絶景なのに意外と知られていない、そんな穴場スポットから、次の ...",
+      "url": "https://www.myrepi.com/wellness/travel-and-leisure/formen-150501/",
+      "source_type": "com"
+    },
+    {
+      "rank": 3,
+      "title": "【消えゆく日本の村】廃村と限界集落～かつて栄えた村は今",
+      "snippet": "歴史にも古代史から現代史まで、いろいろあるが、ここでは日本史を集落という側面から見つめてみたい。 かつて栄えた村が今どうなっているのか、日本 ...",
+      "url": "https://www.youtube.com/watch?v=Fw1prTW8BdA",
+      "source_type": "other"
+    },
+    {
+      "rank": 4,
+      "title": "日本人はなぜ、古き良きものを捨てて、コンクリートと蛍光灯を ...",
+      "snippet": "古美術商のかたわら、「古民家再生の第一人者」としても名高いアレックスさんは、これまでに、徳島県の祖谷や、奈良県の十津川村、香川県の宇多津、京都などで、古民家 ...",
+      "url": "https://www.bepal.net/archives/257745",
+      "source_type": "com"
+    },
+    {
+      "rank": 5,
+      "title": "行ったことのある観光客に聞け、地元の人じゃなくて。 : r/travel",
+      "snippet": "もし、ウザくてうるさくてマナーの悪い連中でごった返してない、マジで面白い隠れた名所を見たいなら、地元の人に聞くのが一番だよ。もしくは、俺みたいに ...",
+      "url": "https://www.reddit.com/r/travel/comments/1c99qiu/ask_a_tourist_whos_been_there_not_a_local/?tl=ja",
+      "source_type": "other"
+    }
+  ],
+  "external_observations": [
+    {
+      "id": "Oext1",
+      "text": "日本国内にはガイドブックに載っていない穴場の絶景スポットが多数存在し、旅行業界でもそれらを特集する動きがある。",
+      "source_url": "https://www.nta.co.jp/media/tripa/articles/W4f7p"
+    },
+    {
+      "id": "Oext2",
+      "text": "日本各地で廃村や限界集落が増えており、かつて栄えた村が今は人がほとんど住んでいない状態になっている。",
+      "source_url": "https://www.youtube.com/watch?v=Fw1prTW8BdA"
+    },
+    {
+      "id": "Oext3",
+      "text": "古民家再生の取り組みが各地で進められており、伝統的な生活や建築を残そうとする動きが見られる。",
+      "source_url": "https://www.bepal.net/archives/257745"
+    }
+  ],
+  "notes": ""
+}

@@ -1,0 +1,16 @@
+{
+  "triggers": [
+    {
+      "type": "information_gap",
+      "text": "PKGには『地元の人が毎日通うような、観光マップに載っていない本当の郷土料理を出す店』の具体的な特徴や選定基準、またそのような店を見分ける方法に関する情報が存在しない。"
+    },
+    {
+      "type": "ambiguity",
+      "text": "『観光客向けの飲食店』と『地元の人が毎日通う店』の区別や定義がPKG内で明確になっていないため、どの店が該当するか判断基準が曖昧である。"
+    }
+  ],
+  "rag_queries": [],
+  "evidence_items": [],
+  "external_observations": [],
+  "notes": "RAG disabled (use_rag=false) — trigger identification only"
+}

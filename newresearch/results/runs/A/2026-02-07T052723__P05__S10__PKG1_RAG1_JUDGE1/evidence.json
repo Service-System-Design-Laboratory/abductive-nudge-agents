@@ -1,0 +1,73 @@
+{
+  "triggers": [
+    {
+      "type": "information_gap",
+      "text": "ユーザーが求めている『効率的に映える写真を撮るコツ』について、PKGや観察・仮定には具体的な方法やテクニックの情報が含まれていない。"
+    },
+    {
+      "type": "focus",
+      "text": "SNSにアップするための完璧な写真を撮ることが旅の目的であり、そのための効率的な撮影方法に強い関心がある点が注目される。"
+    }
+  ],
+  "rag_queries": [
+    "SNS映えする写真を効率的に撮るコツやテクニック",
+    "絶景ポイントで三脚を使ったベストアングル撮影の効率化方法",
+    "旅行中に短時間で高品質な写真を撮るためのプロのアドバイス",
+    "SNSアップ用写真の撮影効率を上げるための機材やアプリのおすすめ"
+  ],
+  "evidence_items": [
+    {
+      "rank": 1,
+      "title": "インスタ映えする「おしゃれな写真の撮り方」入門ガイド",
+      "snippet": "インスタ映えする写真を撮るには、自然光を取り入れるのもおススメです。 自然光は太陽からの光であり、自然な色合いを引き出すことができます。被写体の ...",
+      "url": "https://unique1.co.jp/column/sns_operation/8580/",
+      "source_type": "com"
+    },
+    {
+      "rank": 2,
+      "title": "【初心者でもOK】おしゃれな写真の撮り方とは インスタ映えな ...",
+      "snippet": "光の量をたくさん集める ことが、被写体を綺麗に写すコツです。室内で撮影する際に暗く写ってしまう人は、窓際やベランダなどの太陽光が当たる場所に移動 ...",
+      "url": "https://app-liv.jp/articles/135312/",
+      "source_type": "com"
+    },
+    {
+      "rank": 3,
+      "title": "プロが教える！インスタ映えする写真のコツ",
+      "snippet": "自然光は被写体を美しく輝かせてくれます。外でスナップを撮る場合は、できるだけ日が当たる場所を選べば顔色がきれいになります。白壁など白色が多い場所 ...",
+      "url": "https://zexy.net/contents/lovenews/article.php?d=20181207",
+      "source_type": "com"
+    },
+    {
+      "rank": 4,
+      "title": "写真の秘訣 ローアングル三脚",
+      "snippet": "写真の秘訣 廣瀬雅弘写真術→http://www.masahirohirose.com 1958年12月31日生まれ東京写真専門学校卒（現 東京ビジュアルアーツ） フォト ...",
+      "url": "https://www.youtube.com/watch?v=f2GiH5KS29Q",
+      "source_type": "other"
+    },
+    {
+      "rank": 5,
+      "title": "31 一脚のすすめ",
+      "snippet": "一部の庭園などでは、三脚の使用が禁止されている。この傾向は、公園、植物園でも広まっているようだ。そこで、今回は一脚を使ったローアングル撮影の方法を紹介したい。",
+      "url": "http://tsuideni-walking.la.coocan.jp/gihou_31.html",
+      "source_type": "other"
+    }
+  ],
+  "external_observations": [
+    {
+      "id": "Oext1",
+      "text": "インスタ映えやSNS向けの写真撮影テクニックが商業サイトや専門家によって体系化され、商品化されたノウハウとして提供されている。",
+      "source_url": "https://unique1.co.jp/column/sns_operation/8580/"
+    },
+    {
+      "id": "Oext2",
+      "text": "公園や庭園など公共空間では三脚の使用が禁止される傾向が広がっており、写真撮影のための行動が社会的規制の対象となっている。",
+      "source_url": "http://tsuideni-walking.la.coocan.jp/gihou_31.html"
+    },
+    {
+      "id": "Oext3",
+      "text": "『映える写真』を撮るためのテクニックや演出がプロや一般向けに広く共有されており、個人の創造性よりも標準化された方法が重視される傾向がある。",
+      "source_url": "https://zexy.net/contents/lovenews/article.php?d=20181207"
+    }
+  ],
+  "notes": ""
+}

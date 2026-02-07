@@ -1,0 +1,99 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A3"
+        ],
+        "best_discriminating_question": "伝統建築を見たとき、どんな気持ちや考えが湧きますか？",
+        "testability_notes": "ユーザーが伝統文化や歴史的な体験を通じて自己充足や安心感を感じているかを尋ねる。",
+        "safety_risk_notes": "内面の価値観に踏み込むが、共感的に扱えばリスクは低い。"
+      },
+      "rationale": "PKGの価値観と行動が一致しており、伝統文化への敬意と精神的充足を説明できる。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A2",
+          "A3"
+        ],
+        "best_discriminating_question": "金沢の美しさを他の人にどう伝えたいですか？",
+        "testability_notes": "ユーザーが美意識や価値観の表現・他者との差別化を意識しているか確認する。",
+        "safety_risk_notes": "自己主張や他者との差異化への言及は慎重に扱う必要がある。"
+      },
+      "rationale": "『極み』という強い言葉選びが自己表現や価値観の強調を示唆している。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "A2"
+        ],
+        "best_discriminating_question": "保存活動や観光政策についてどのように感じますか？",
+        "testability_notes": "制度的保存や観光政策への関心や評価を尋ねる。",
+        "safety_risk_notes": "制度や政策への批判的視点が含まれる場合は配慮が必要。"
+      },
+      "rationale": "外部観察Oext2を活用し、制度的な保存と個人の評価の関係に着目している。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A2"
+        ],
+        "best_discriminating_question": "伝統建築や街並みを見て、地域の人や歴史にどんな思いを持ちますか？",
+        "testability_notes": "地域社会や先人への敬意やつながりの意識を尋ねる。",
+        "safety_risk_notes": "地域社会への帰属意識を刺激するが、PKGと整合的でリスクは低い。"
+      },
+      "rationale": "PKGの『地域文化への敬意』『先輩農家への敬意』と一致し、社会的つながりを説明できる。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "Oext1",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "A2"
+        ],
+        "best_discriminating_question": "ひがし茶屋街の美しさは、観光地としての演出や写真映えの影響もあると思いますか？",
+        "testability_notes": "観光地としての演出や商品化が美意識に影響しているかを尋ねる。",
+        "safety_risk_notes": "ユーザーの価値観や美意識の根拠に疑問を投げかけるため、やや不快感を与える可能性があるが、丁寧に扱えば対話の深まりにつながる。"
+      },
+      "rationale": "外部観察Oext1, Oext3を活用し、ユーザーの美意識が観光商品としての演出や消費文化に影響されている可能性を指摘する裏切り仮説。"
+    }
+  ]
+}

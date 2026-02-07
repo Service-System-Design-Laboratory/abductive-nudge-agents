@@ -1,0 +1,33 @@
+{
+  "triggers": [
+    {
+      "type": "focus",
+      "text": "『誰よりも分かっている』という強い自己認識と、世界遺産登録前からの訪問歴の強調"
+    },
+    {
+      "type": "ambiguity",
+      "text": "『人の手が入っていない原生林』という表現と、実際の観光地としての整備状況とのギャップ"
+    },
+    {
+      "type": "information_gap",
+      "text": "なぜ3回も訪れるほど惹かれるのか、その動機の深層"
+    }
+  ],
+  "external_observations": [
+    {
+      "id": "Oext1",
+      "text": "屋久島は世界自然遺産登録地であり、観光地としても整備が進んでいるが、町民アンケートでは『自然景観・環境の保全と整備』について満足・不満足の両意見があり、実際には人の手が入っている部分もある。",
+      "source_url": "http://www.town.yakushima.kagoshima.jp/t_yakushima/wp-content/uploads/2025/09/20250908_02_sakutei_sanko_shiryo.pdf"
+    },
+    {
+      "id": "Oext2",
+      "text": "屋久島の白谷雲水峡や温泉など、観光客向けの整備されたスポットも数多く存在する。",
+      "source_url": "https://www.lemon8-app.com/@shino3698/7218274503422591493?region=jp"
+    },
+    {
+      "id": "Oext3",
+      "text": "屋久島の自然や原生林は観光資源として積極的にプロモーションされており、観察者（観光客）の存在が自然の見え方や価値付けに影響を与えている可能性がある（観察者効果）。",
+      "source_url": "https://creators.spotify.com/pod/profile/mimoriradio/episodes/61----4-e27rsoe"
+    }
+  ]
+}

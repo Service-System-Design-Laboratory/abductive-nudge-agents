@@ -1,0 +1,37 @@
+{
+  "triggers": [
+    {
+      "type": "focus",
+      "text": "写真撮影が旅の主目的となっている点に強いこだわりがある。"
+    },
+    {
+      "type": "information_gap",
+      "text": "効率化の目的（時間・体力・他の活動との両立など）が明確でない。"
+    },
+    {
+      "type": "ambiguity",
+      "text": "SNSでの評価がどの程度重要なのかが不明。"
+    },
+    {
+      "type": "contradiction",
+      "text": "節約志向やコスト最適化と、三脚やカメラ機材への投資・撮影への時間投下が両立しているのか。"
+    }
+  ],
+  "external_observations": [
+    {
+      "id": "Oext1",
+      "text": "絶景をより美しく撮影するには、早朝や夕方の『ゴールデンアワー』を狙うと自然光が柔らかく色彩が豊かになる。",
+      "source_url": "https://www.lemon8-app.com/@lornasakamoto0/7513636863522062854?region=jp"
+    },
+    {
+      "id": "Oext2",
+      "text": "今後10年で予想もつかない現象が次々に起こるほど、時代の変化が加速している（コンテンツや写真の価値観も変化しうる）。",
+      "source_url": "https://www.vipo.or.jp/u/II_SenshinContents_ContentProduction.pdf"
+    },
+    {
+      "id": "Oext3",
+      "text": "ライブ配信サービスでは、誰でも気軽に配信できる一方、演出された本物らしさ（performative authenticity）が求められる傾向が強い。",
+      "source_url": "https://www.showroom-live.com/"
+    }
+  ]
+}

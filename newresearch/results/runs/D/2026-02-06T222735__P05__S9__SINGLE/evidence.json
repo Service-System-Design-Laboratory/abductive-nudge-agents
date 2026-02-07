@@ -1,0 +1,33 @@
+{
+  "triggers": [
+    {
+      "type": "focus",
+      "text": "価格差への強い疑問とコスパへの関心が明確。"
+    },
+    {
+      "type": "ambiguity",
+      "text": "『寝る場所なんてどこでも同じ』という価値観が、サービスや体験の違いをどこまで考慮しているか不明。"
+    },
+    {
+      "type": "information_gap",
+      "text": "コスパの良い宿泊先の具体的な基準や、ユーザーが重視するポイントが明確でない。"
+    }
+  ],
+  "external_observations": [
+    {
+      "id": "Oext1",
+      "text": "多くの旅行者が観光メインの場合、ホテルは寝るだけの場所と考え、安いビジネスホテルを選ぶ傾向がある。",
+      "source_url": "https://komachi.yomiuri.co.jp/topics/id/787363/"
+    },
+    {
+      "id": "Oext2",
+      "text": "安いビジネスホテルではアメニティやサービスが限定的で、パジャマやバスローブがない場合もある。",
+      "source_url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11240618061"
+    },
+    {
+      "id": "Oext3",
+      "text": "限られた予算での旅行が高額な旅行よりも楽しいと感じる人もいるが、安い地元の体験が高級なものより価値があると感じる場合もある。",
+      "source_url": "https://www.reddit.com/r/travel/comments/1qdkave/what_country_gave_you_the_most_value_for_the/?tl=ja"
+    }
+  ]
+}

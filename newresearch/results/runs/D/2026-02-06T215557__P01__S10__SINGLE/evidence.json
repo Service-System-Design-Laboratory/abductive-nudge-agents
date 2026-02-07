@@ -1,0 +1,37 @@
+{
+  "triggers": [
+    {
+      "type": "focus",
+      "text": "『SNSにアップするための完璧な写真』が旅の目的と明言している点に強いフォーカスがある。"
+    },
+    {
+      "type": "information_gap",
+      "text": "写真撮影の効率化によって、他の体験や満足度がどう変化するかは不明。"
+    },
+    {
+      "type": "ambiguity",
+      "text": "『完璧な写真』の基準や、SNSでの反応がどれほど重要かが曖昧。"
+    },
+    {
+      "type": "contradiction",
+      "text": "PKGでは『自然との調和』『里山散策』など自然体験や地域との関係も重視しているが、現発言は写真撮影への集中が強い。"
+    }
+  ],
+  "external_observations": [
+    {
+      "id": "Oext1",
+      "text": "SNSや動画投稿サイトでは、ユーザー自身が映像を撮影・制作して投稿することが一般化しており、360度カメラなど多様な撮影手法が広がっている。",
+      "source_url": "https://www.vipo.or.jp/u/II_SenshinContents_ContentProduction.pdf"
+    },
+    {
+      "id": "Oext2",
+      "text": "VRや特殊なカメラアングルによる映像表現は、実際の体験とは異なる違和感や演出された印象を与えることがある。",
+      "source_url": "https://www.osaka-geidai.ac.jp/files/seikahoukoku_2022.pdf"
+    },
+    {
+      "id": "Oext3",
+      "text": "美しい自然を写真で表現する活動は、環境保護や社会貢献と結びつくこともある。",
+      "source_url": "https://www.kitamura.jp/photo/seasons/pdf/shiki-Vol106.pdf"
+    }
+  ]
+}

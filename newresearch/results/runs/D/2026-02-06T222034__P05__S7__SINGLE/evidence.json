@@ -1,0 +1,32 @@
+{
+  "triggers": [
+    {
+      "type": "focus",
+      "text": "安全への強いこだわりが繰り返し現れている"
+    },
+    {
+      "type": "information_gap",
+      "text": "なぜここまで安全重視になったのか、背景が明示されていない"
+    },
+    {
+      "type": "ambiguity",
+      "text": "安全を優先することで他の価値（節約・体験など）とのバランスはどう考えているか不明"
+    },
+    {
+      "type": "contradiction",
+      "text": "節約志向や低予算旅行への関心と、ツアー参加・ホテル周辺限定という選択が必ずしも一致しない可能性"
+    }
+  ],
+  "external_observations": [
+    {
+      "id": "Oext1",
+      "text": "海外旅行ツアーの自由時間は、ホテルからあまり離れない方が良いという意見がある一方で、現地の市場やショッピングも推奨されている。",
+      "source_url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q10144674620"
+    },
+    {
+      "id": "Oext2",
+      "text": "旅費を節約するなら民泊がオススメで、友人と少人数での旅行ならプライバシーを確保しつつコストも抑えられる。",
+      "source_url": "https://www.facebook.com/groups/vamos.a.viajar/posts/10162490040045686/"
+    }
+  ]
+}

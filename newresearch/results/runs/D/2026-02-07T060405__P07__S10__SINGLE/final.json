@@ -1,0 +1,349 @@
+{
+  "context": {
+    "observations": [
+      {
+        "id": "O1",
+        "text": "旅行中は常にカメラを持って歩いている。"
+      },
+      {
+        "id": "O2",
+        "text": "絶景ポイントでは必ず三脚を立てて、ベストアングルで何十枚も撮影する。"
+      },
+      {
+        "id": "O3",
+        "text": "SNSにアップするための完璧な写真を撮ることが旅の目的である。"
+      },
+      {
+        "id": "O4",
+        "text": "もっと効率的に映える写真を撮るコツを知りたがっている。"
+      }
+    ],
+    "assumptions": [
+      {
+        "id": "A1",
+        "text": "ユーザーは他者からの評価や反応を意識している可能性がある。",
+        "status": "tentative"
+      },
+      {
+        "id": "A2",
+        "text": "ユーザーは撮影自体や写真の出来栄えに強いこだわりを持っている。",
+        "status": "tentative"
+      },
+      {
+        "id": "A3",
+        "text": "ユーザーは効率性や計画性を重視する傾向がある。",
+        "status": "tentative"
+      },
+      {
+        "id": "A4",
+        "text": "ユーザーは地域文化や現地の雰囲気を大切にしている。",
+        "status": "tentative"
+      }
+    ],
+    "questions": [
+      "SNSにアップした写真にどんな反応があると嬉しいですか？",
+      "撮影の効率化で一番困っているのはどんな場面ですか？",
+      "現地の雰囲気や文化を写真にどう表現したいですか？",
+      "写真を撮ることと旅そのもの、どちらにより重きを置いていますか？"
+    ],
+    "constraints": {
+      "tone": "supportive",
+      "safety": "avoid determinism"
+    }
+  },
+  "evidence": {
+    "triggers": [
+      {
+        "type": "focus",
+        "text": "『完璧な写真』や『効率的に映える写真』への強い関心が見られる。"
+      },
+      {
+        "type": "information_gap",
+        "text": "効率的な撮影とは具体的に何を指すのかが不明。"
+      },
+      {
+        "type": "ambiguity",
+        "text": "『旅の目的が写真』という発言の裏に、他の動機や価値観が隠れている可能性。"
+      },
+      {
+        "type": "contradiction",
+        "text": "地域文化への敬意や現地体験を重視するPKGと、SNS映えのための撮影行動にズレがあるかもしれない。"
+      }
+    ],
+    "external_observations": [
+      {
+        "id": "Oext1",
+        "text": "写真撮影においては構図や遠近感を活かすことが映える写真につながるが、近くにカフェや散策路があるスポットもおすすめされている（撮影以外の体験も価値として提示）。",
+        "source_url": "https://www.lemon8-app.com/@lornasakamoto0/7513636863522062854?region=jp"
+      },
+      {
+        "id": "Oext2",
+        "text": "VRや新しい撮影技術では、視点やアングルの変化が違和感や演出感を生む場合がある（演出された本物らしさ、observer effect）。",
+        "source_url": "https://www.osaka-geidai.ac.jp/files/seikahoukoku_2022.pdf"
+      },
+      {
+        "id": "Oext3",
+        "text": "今後10年で予想外の現象が次々に起こるとされ、時代の変化が加速している（撮影やSNSの価値観も変化しうる）。",
+        "source_url": "https://www.vipo.or.jp/u/II_SenshinContents_ContentProduction.pdf"
+      }
+    ]
+  },
+  "hypotheses": [
+    {
+      "hypothesis_id": "H1",
+      "type": "psychological",
+      "explains": [
+        "O1",
+        "O2",
+        "O3"
+      ],
+      "assumes": [
+        "A1",
+        "A2"
+      ],
+      "statement": "ユーザーは他者からの評価や承認欲求が強く、SNSでの反応が撮影行動の主な動機となっている。",
+      "mechanism": "SNSでの『いいね』やコメントが自己効力感や満足感につながり、完璧な写真を追い求める。",
+      "predictions": [
+        "SNSでの反応が良いときに満足感が高まる。",
+        "反応が薄いときは落ち込むことがある。"
+      ],
+      "discriminating_questions": [
+        "SNSでの反応が写真撮影の満足度にどの程度影響しますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H2",
+      "type": "skill",
+      "explains": [
+        "O1",
+        "O2",
+        "O4"
+      ],
+      "assumes": [
+        "A2",
+        "A3"
+      ],
+      "statement": "ユーザーは撮影技術や計画的運営のスキルを高めること自体にやりがいを感じており、効率化は自己成長や達成感のためである。",
+      "mechanism": "撮影の手順や構図決定を効率化することで、より多くのスポットやアングルに挑戦できる。",
+      "predictions": [
+        "新しい撮影技術や効率化ツールに関心が高い。",
+        "撮影計画を事前に立てる傾向がある。"
+      ],
+      "discriminating_questions": [
+        "撮影の効率化自体に達成感や楽しさを感じますか？"
+      ],
+      "persona_link": [
+        "p07_n1"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H3",
+      "type": "value",
+      "explains": [
+        "O3",
+        "O4"
+      ],
+      "assumes": [
+        "A4"
+      ],
+      "statement": "ユーザーは地域文化や現地の雰囲気を写真で伝えることに価値を感じており、映える写真もその一環として追求している。",
+      "mechanism": "地域文化への敬意や現地体験を写真に込めることで、SNSを通じてその価値を広めたいと考えている。",
+      "predictions": [
+        "写真のキャプションや内容に現地文化の要素が多く含まれる。",
+        "映える写真でも、現地らしさや文化的要素を重視する傾向がある。"
+      ],
+      "discriminating_questions": [
+        "現地の文化や雰囲気を伝えることと、映える写真を撮ることのどちらを重視していますか？"
+      ],
+      "persona_link": [
+        "p07_n2"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H4",
+      "type": "environmental",
+      "explains": [
+        "O2",
+        "O4",
+        "Oext1"
+      ],
+      "assumes": [
+        "A2"
+      ],
+      "statement": "ユーザーは撮影スポットの環境や周辺体験（カフェや散策路など）も写真の一部として取り入れたいと考えている。",
+      "mechanism": "撮影だけでなく、周辺の体験や雰囲気も含めて写真を構成することで、より魅力的なSNS投稿を目指している。",
+      "predictions": [
+        "写真にカフェや散策路、現地の人々なども登場することが多い。",
+        "撮影スポット選びの基準に周辺環境も含まれる。"
+      ],
+      "discriminating_questions": [
+        "写真に現地のカフェや散策路などの要素を意識的に入れていますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [
+        "ev:1"
+      ],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H5",
+      "type": "evidence_gap",
+      "explains": [
+        "O3",
+        "O4",
+        "Oext2"
+      ],
+      "assumes": [
+        "A2"
+      ],
+      "statement": "『完璧な写真』や『映える写真』を追求する行動は、実は現地体験や偶然性を演出・商品化している側面が強く、旅の本質的な体験から距離を置いてしまっているかもしれない。",
+      "mechanism": "撮影行動が『本物らしさ』を演出するパフォーマンスとなり、観察者効果や商品化のジレンマが生じている。",
+      "predictions": [
+        "写真撮影の準備や演出に多くの時間を割き、現地体験が二次的になることがある。",
+        "SNS投稿のために現地体験を『映える』形に再構成している。"
+      ],
+      "discriminating_questions": [
+        "写真を撮ることが現地での偶然の出会いや体験を妨げていると感じることはありますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [
+        "ev:2"
+      ],
+      "is_reframing": true
+    }
+  ],
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A2"
+        ],
+        "best_discriminating_question": "SNSでの反応が写真撮影の満足度にどの程度影響しますか？",
+        "testability_notes": "SNS反応と満足度の自己報告を比較。",
+        "safety_risk_notes": "承認欲求の指摘は繊細なため、断定を避ける必要あり。"
+      },
+      "rationale": "SNS投稿が目的と明言されているため、説明力は高いが、動機の一側面に留まる可能性も。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O4"
+        ],
+        "key_assumptions": [
+          "A2",
+          "A3"
+        ],
+        "best_discriminating_question": "撮影の効率化自体に達成感や楽しさを感じますか？",
+        "testability_notes": "効率化の工夫や計画性への満足度をヒアリング。",
+        "safety_risk_notes": "ユーザーのスキル志向を肯定的に扱うためリスク低。"
+      },
+      "rationale": "PKGの『計画的運営』と親和性が高く、ユーザーの成長志向を説明できる。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "A4"
+        ],
+        "best_discriminating_question": "現地の文化や雰囲気を伝えることと、映える写真を撮ることのどちらを重視していますか？",
+        "testability_notes": "写真の内容やキャプションを分析。",
+        "safety_risk_notes": "価値観の肯定的側面を強調するためリスク低。"
+      },
+      "rationale": "PKGの『地域文化への敬意』に基づき、映えと文化発信の両立を説明。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O4",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "A2"
+        ],
+        "best_discriminating_question": "写真に現地のカフェや散策路などの要素を意識的に入れていますか？",
+        "testability_notes": "写真の被写体やスポット選びを観察。",
+        "safety_risk_notes": "行動提案として扱えばリスク低。"
+      },
+      "rationale": "外部観察Oext1を活用し、写真以外の体験も価値とみなす新しい視点を提供。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3",
+          "O4",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "A2"
+        ],
+        "best_discriminating_question": "写真を撮ることが現地での偶然の出会いや体験を妨げていると感じることはありますか？",
+        "testability_notes": "撮影行動と現地体験のバランスや満足度を自己評価してもらう。",
+        "safety_risk_notes": "『本物らしさの演出』や『商品化』の指摘はやや不快感を与える可能性があるため、慎重な表現が必要。"
+      },
+      "rationale": "外部観察Oext2を活用し、ユーザーの行動を『演出』や『商品化』という観点で再解釈する裏切る仮説となっている。"
+    }
+  ],
+  "decision": {
+    "selected_hypothesis_id": "H5",
+    "contrasting_hypothesis_id": "H4",
+    "selection_rationale": "H5は『完璧な写真を撮ることが旅の目的』という発言の意味を、『現地体験を商品化・演出する行為かもしれない』という自己像レベルの再解釈に変える。Oext2（観察者効果・演出された本物らしさ）を活用し、ユーザーの行動の裏にある構造的ジレンマを示唆するため、発言の意味を最も変える。対してH4は、写真以外の体験も写真の一部として取り入れるという額面通りの読みであり、どちらの立場に立つかで旅や撮影の行動選択が大きく変わる。",
+    "user_facing_frame": {
+      "framing": "options",
+      "questions": [
+        "写真を撮ることが現地での偶然の出会いや体験を妨げていると感じることはありますか？",
+        "それとも、撮影スポットの周辺体験や雰囲気も写真の一部として楽しんでいますか？"
+      ],
+      "options": [
+        "写真撮影が現地体験を『演出』や『商品化』してしまう側面があると考えてみる。",
+        "写真撮影と現地体験を一体化し、周辺体験も含めて楽しむ立場をとる。"
+      ]
+    }
+  },
+  "final_response": "ご相談ありがとうございます。『旅の目的はSNSにアップする完璧な写真を撮ること』というお話、とても情熱を感じます。実際、絶景ポイントで三脚を立てて何十枚も撮影されているご様子から、撮影そのものや効率化へのこだわりも伝わってきます。\n\n一つの視点として、写真を撮ることが現地での偶然の出会いや体験を妨げてしまうことはありませんか？たとえば、撮影に集中するあまり、その場の空気や思わぬ発見を逃してしまうことがあるかもしれません。逆に、近くのカフェや散策路など、周辺の体験も写真の一部として取り入れている場合、撮影と現地体験を一体化して楽しんでいるとも言えそうです。\n\nどちらの立場を意識するかで、次の旅や撮影スタイルも変わってくるかもしれません。たとえば、次回は『撮影の合間に現地の人と話してみる』『カフェで一息つきながら新しいアングルを探す』など、5分でできる小さな行動を取り入れてみるのもおすすめです。同じようにSNS映えを意識している方でも、現地体験を重視することで新しい発見があったという声も多いですよ。\n\nもしよければ、『写真を撮ることが現地体験にどんな影響を与えているか』について、あなた自身はどちらの立場に近いと感じますか？",
+  "markers": {
+    "empathy": {
+      "acknowledgement": true,
+      "reflection": true,
+      "perspective_prompt": true
+    },
+    "nudge": {
+      "easy": true,
+      "attractive": true,
+      "social": true,
+      "timely": true,
+      "has_question": true,
+      "has_options": true,
+      "has_small_action": true,
+      "directive_level": "low"
+    }
+  }
+}

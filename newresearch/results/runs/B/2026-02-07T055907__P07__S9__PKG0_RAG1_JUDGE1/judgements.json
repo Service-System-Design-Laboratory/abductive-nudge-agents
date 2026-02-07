@@ -1,0 +1,97 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーが本当に体験やサービスに価値を見出していないこと（A1）",
+          "ユーザーの発言が本音であり、合理的判断に基づいている"
+        ],
+        "best_discriminating_question": "ユーザーは旅館の食事や温泉、接客サービスなどに興味があるか？",
+        "testability_notes": "ユーザーへの直接質問で容易に検証可能。追加でユーザーの選択履歴や嗜好データがあればより確実。",
+        "safety_risk_notes": "断定的に提示するとユーザーの価値観を単純化しすぎて誤解を生む可能性がある。"
+      },
+      "rationale": "ユーザーの発言（O1, O2）には合致するが、体験やサービスへの価値観を完全に否定しているかは追加確認が必要。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3",
+          "O4",
+          "O5"
+        ],
+        "key_assumptions": [
+          "ユーザーが旅館の価格構造や付加価値要素について十分な知識を持っていない"
+        ],
+        "best_discriminating_question": "ユーザーは旅館の価格がどのような要素で決まっているか知っているか？",
+        "testability_notes": "ユーザーに価格構造や料金内訳の知識を尋ねることで容易に検証可能。",
+        "safety_risk_notes": "『無知』と断定する印象を与えないよう配慮が必要。"
+      },
+      "rationale": "価格差への疑問やコスパ志向（O3, O4, O5）は知識不足でも説明可能で、外部エビデンスとも整合する。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O3",
+          "O5",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "宿泊業界全体で高付加価値化・価格上昇が進行している",
+          "ユーザーが従来の価格感覚を保持している"
+        ],
+        "best_discriminating_question": "ユーザーは最近の宿泊費全体の値上がりをどう感じているか？",
+        "testability_notes": "業界データやユーザーの過去経験との比較を通じて検証可能。外部データが有用。",
+        "safety_risk_notes": "ユーザーの認識や不満を『業界全体のせい』と一般化しすぎるリスクあり。"
+      },
+      "rationale": "業界変化とユーザーの価格感覚のズレ（Oext2, O1, O3, O5）を説明できるが、個人の価値観や知識不足とは異なる観点。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O4",
+          "Oext1",
+          "O5"
+        ],
+        "key_assumptions": [
+          "ユーザーの宿泊目的が休息のみであり、体験や満足感を重視しない（A2）"
+        ],
+        "best_discriminating_question": "ユーザーが旅先で重視するのは体験かコストか？",
+        "testability_notes": "ユーザーの旅行目的や重視点を直接質問することで検証可能。",
+        "safety_risk_notes": "ユーザーのニーズを限定的に解釈しすぎると誤解を生む可能性がある。"
+      },
+      "rationale": "ユーザーの目的と旅館の提供価値のミスマッチ（O4, Oext1, O5）を説明できるが、ユーザーの多様な動機を排除しないよう注意が必要。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O3",
+          "O4",
+          "O5"
+        ],
+        "key_assumptions": [
+          "ユーザーが高価格な体験を否定する心理的動機（自己防衛や合理化）が働いている（A1, A2）"
+        ],
+        "best_discriminating_question": "もし旅館が無料または格安で利用できるとしたら、体験やサービスに興味を持つか？",
+        "testability_notes": "ユーザーの深層心理や仮定状況での反応を問う必要があり、やや検証が難しい。インタビューや投影法が有効。",
+        "safety_risk_notes": "ユーザーの心理を推測・断定するため、誤解や不快感を与えるリスクが高い。配慮が必須。"
+      },
+      "rationale": "表層的な発言の背後に心理的要因がある可能性を示すが、検証難度と提示リスクが高い。"
+    }
+  ]
+}

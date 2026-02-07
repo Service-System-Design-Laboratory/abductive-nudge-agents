@@ -1,0 +1,33 @@
+{
+  "triggers": [
+    {
+      "type": "focus",
+      "text": "ユーザーが『ひがし茶屋街の街並みこそが日本の美の極み』と強調している点に注目。"
+    },
+    {
+      "type": "information_gap",
+      "text": "なぜ他の伝統的な街並みではなく、金沢・ひがし茶屋街を特別視するのか理由が明示されていない。"
+    },
+    {
+      "type": "ambiguity",
+      "text": "『江戸時代の風情』や『日本の美』の具体的な意味や基準が曖昧。"
+    }
+  ],
+  "external_observations": [
+    {
+      "id": "Oext1",
+      "text": "ひがし茶屋街は写真映えする観光スポットとしても人気であり、観光客が歴史的な街並みを体験しつつSNS等で発信する傾向がある。",
+      "source_url": "https://www.kanazawa-kankoukyoukai.or.jp/spot/detail_10212.html"
+    },
+    {
+      "id": "Oext2",
+      "text": "ひがし茶屋街は国の重要伝統的建造物群保存地区に選定されており、伝統的な茶屋建築や石畳の美しさが保存・演出されている。",
+      "source_url": "https://www.hot-ishikawa.jp/spot/detail_6320.html"
+    },
+    {
+      "id": "Oext3",
+      "text": "ひがし茶屋街の町並みは、歴史的な保存と観光消費の両立のために意図的に『美しさ』が演出されている側面がある。",
+      "source_url": "https://kanazawa.hakuichi.co.jp/blog/detail.php?blog_id=86"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "triggers": [
+    {
+      "type": "information_gap",
+      "text": "観光マップに載っていない本当の郷土料理店の具体的な探し方や基準がPKGに記載されていない。"
+    },
+    {
+      "type": "ambiguity",
+      "text": "『地元の人が毎日通う店』や『本当の郷土料理』の定義や判断基準がPKGで明確になっていない。"
+    },
+    {
+      "type": "focus",
+      "text": "ユーザーがチェーン店やフードコートを強く拒否している理由や背景がPKGで十分に説明されていない。"
+    }
+  ],
+  "rag_queries": [],
+  "evidence_items": [],
+  "external_observations": [],
+  "notes": "RAG disabled (use_rag=false) — trigger identification only"
+}

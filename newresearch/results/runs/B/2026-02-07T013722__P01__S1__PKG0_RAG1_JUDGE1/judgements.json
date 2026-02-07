@@ -1,0 +1,100 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーが自己決定感や独自性への欲求を強く持っていること",
+          "観光地化・演出化された体験がユーザーにとって魅力を失わせる要因であること"
+        ],
+        "best_discriminating_question": "一人旅や自分だけのルートを作ることに魅力を感じるか？",
+        "testability_notes": "ユーザーへの直接的な質問で比較的容易に検証可能。",
+        "safety_risk_notes": "『他人と違うこと』を過度に強調すると、ユーザーの価値観を単純化・断定的に見せてしまうリスクがある。"
+      },
+      "rationale": "観察O1・O2をよく説明しているが、O3（演出への不満）は直接的な説明がやや弱い。心理的欲求への依存が強いため、価値観の多様性を無視しない配慮が必要。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "Oext1",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "『本物』と『演出』の区別が情報的に曖昧であること",
+          "ユーザー自身もその区別を明確にできていない可能性があること"
+        ],
+        "best_discriminating_question": "『本物』と『演出』の境界線をどのように判断しているか？",
+        "testability_notes": "ユーザーの認知・判断基準を問う必要があり、やや抽象的だがインタビュー等で検証可能。",
+        "safety_risk_notes": "ユーザーの認知の曖昧さを指摘するため、無自覚な混乱や不快感を与える可能性がある。"
+      },
+      "rationale": "観察O2や外部事実Oext1, Oext2を的確に説明。『情報ギャップ』の指摘は有効だが、ユーザーの主体的な価値観を軽視しすぎないよう注意が必要。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "ユーザーが地元住民との交流や特権的な体験を重視していること",
+          "観察者としての立場に価値を感じていること"
+        ],
+        "best_discriminating_question": "旅先で地元の人とどのような交流を求めるか？",
+        "testability_notes": "ユーザーの行動や志向性を具体的に問うことで検証しやすい。",
+        "safety_risk_notes": "『特権的立場』という表現がユーザーに誤解や不快感を与える可能性がある。"
+      },
+      "rationale": "O2, Oext3の説明力が高い。社会的動機の仮定は妥当だが、ユーザーの意図を過度に一般化しない配慮が必要。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "ユーザーが文化的・生活的価値を重視し、消費的価値観を否定していること",
+          "観光地の演出や消費行動を表層的とみなしていること"
+        ],
+        "best_discriminating_question": "旅の思い出として、どのような写真や記録を重視しているか？",
+        "testability_notes": "ユーザーの記録や発言を観察することで比較的容易に検証可能。",
+        "safety_risk_notes": "『消費的価値観』の否定が断定的・攻撃的に響くリスクがある。"
+      },
+      "rationale": "O1, O2, O3, Oext2を広く説明できており、価値観の側面を強調する点が特徴。断定的な表現には注意が必要。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3",
+          "Oext1",
+          "Oext2",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "ユーザーが他者との差異化や『特別な自分』の演出を重視していること",
+          "『本物志向』自体が消費的な自己演出の一部であること"
+        ],
+        "best_discriminating_question": "『本物の生活』を求める理由を他人と差別化したい気持ちと感じたことはあるか？",
+        "testability_notes": "ユーザーの自己認識や動機を深掘りする必要があり、ややセンシティブだが面接等で検証可能。",
+        "safety_risk_notes": "ユーザーの動機を『自己演出』と断定することで、反発や不快感を招くリスクが高い。"
+      },
+      "rationale": "外部事実を広く説明し、裏の動機に焦点を当てている。センシティブな内容のため、提示時の配慮が特に重要。"
+    }
+  ]
+}

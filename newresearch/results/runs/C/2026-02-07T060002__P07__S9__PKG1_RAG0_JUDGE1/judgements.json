@@ -1,0 +1,95 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーは宿泊先選びにおいて体験やサービスよりも睡眠という機能価値を最重視している",
+          "体験や文化的価値を重視しない場合、価格に見合った機能しか評価されない"
+        ],
+        "best_discriminating_question": "寝る以外の宿泊体験に価値を感じることはあるか？",
+        "testability_notes": "ユーザーに1～2問質問することで検証可能。特に体験やサービスへの価値認識を直接問えばよい。",
+        "safety_risk_notes": "価値観の単純化や『体験を重視しない人』と断定的に見える表現は、ユーザーの多様な価値観を狭めてしまうリスクがある。"
+      },
+      "rationale": "機能価値重視の仮説はO1・O2をよく説明するが、O3の説明はやや弱い。PKGとの整合性は特に問題ない。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O4"
+        ],
+        "key_assumptions": [
+          "ユーザーはコントロール感や合理性を重視する認知傾向が強い",
+          "価格差に納得できない主因は説明不足や根拠の不明瞭さである"
+        ],
+        "best_discriminating_question": "価格差の理由が詳細に説明された場合、納得度は上がるか？",
+        "testability_notes": "ユーザーに価格説明の有無で納得感が変わるかを尋ねることで比較的容易に検証できる。",
+        "safety_risk_notes": "『合理性重視』と断定することで、ユーザーの感情的・直感的側面を過小評価するリスクがある。"
+      },
+      "rationale": "合理性や説明の有無に着目した仮説で、O1・O2・O4をバランスよく説明。PKGの記述が直接的ではないが、致命的な問題はない。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O4"
+        ],
+        "key_assumptions": [
+          "ユーザーは計画的運営やコスト管理のスキルを持っている",
+          "そのスキルが宿泊先選びにも反映されている"
+        ],
+        "best_discriminating_question": "旅行全体の予算や費用対効果を詳細に計画することが多いか？",
+        "testability_notes": "PKGに該当ノードがあり、ユーザーの消費行動全般を尋ねることで検証可能。やや間接的な検証となる。",
+        "safety_risk_notes": "『スキルがある』と断定することで、ユーザーの自己認識と齟齬が生じる可能性がある。"
+      },
+      "rationale": "PKGの『計画的運営』と整合し、O4の説明には強いが、他の観察への説明力は限定的。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "旅館の価格には地域文化や体験の付加価値が含まれている",
+          "ユーザーはその価値を自分のニーズや興味と結びつけられていない"
+        ],
+        "best_discriminating_question": "地域文化や伝統体験に追加料金を支払うことに納得できるか？",
+        "testability_notes": "PKGの関連ノードを参照しつつ、ユーザーの体験価値認識を直接質問することで検証可能。",
+        "safety_risk_notes": "『興味がない』と断定することで、ユーザーの関心の幅を狭めてしまうリスクがある。"
+      },
+      "rationale": "PKGの『地域文化への敬意』等と連動し、O1・O2の説明に妥当性がある。O4への説明はやや弱い。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "ユーザーはコスパ重視の自己像を守りたいという心理が強い",
+          "そのために体験価値を無視する傾向がある"
+        ],
+        "best_discriminating_question": "自分がコスパ重視であることを他者に伝える場面が多いか？",
+        "testability_notes": "ユーザーの自己認識や他者への語り方を尋ねることで検証可能だが、やや主観的な回答に依存する。",
+        "safety_risk_notes": "ユーザーの無意識的な動機や心理を指摘するため、納得感を損なったり不快感を与えるリスクが高い。"
+      },
+      "rationale": "PKGの計画性・リスク回避と整合し、O1・O3・O4をよく説明。リフレーミング要素が強く、提示時の配慮が必要。"
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A1"
+        ],
+        "best_discriminating_question": "計画が崩れたとき、どのような気持ちになりますか？",
+        "testability_notes": "計画が乱れた場合の感情や行動を観察することで検証可能",
+        "safety_risk_notes": "ユーザーの安心感や達成感を肯定する内容なのでリスクは低い"
+      },
+      "rationale": "ユーザーの計画重視の姿勢を内面の安心感や達成感と結びつけて説明できる"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A2"
+        ],
+        "best_discriminating_question": "普段の生活や仕事でも同じように計画を重視しますか？",
+        "testability_notes": "他の場面での計画性の有無を確認することで検証可能",
+        "safety_risk_notes": "ユーザーの価値観を肯定的に扱うためリスクは低い"
+      },
+      "rationale": "PKGの『計画的運営』とユーザー行動の一貫性を説明できる"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A3"
+        ],
+        "best_discriminating_question": "デジタルツールがなかった場合、どのように計画を立てますか？",
+        "testability_notes": "ツール利用の有無による行動変化を観察",
+        "safety_risk_notes": "ツール依存を指摘するため、若干の不快感の可能性あり"
+      },
+      "rationale": "外部環境（デジタルツール）が行動に与える影響を説明できる"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A2"
+        ],
+        "best_discriminating_question": "予定外の出来事や現地の人との交流にどの程度価値を感じますか？",
+        "testability_notes": "偶発的な体験をどれだけ重視するかを尋ねることで検証可能",
+        "safety_risk_notes": "計画重視の姿勢に疑問を投げかけるため、やや不快感を与える可能性あり"
+      },
+      "rationale": "効率化と体験の幅のトレードオフを指摘できる"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A2"
+        ],
+        "best_discriminating_question": "過去の旅行で予定外の出来事が印象に残ったことはありますか？",
+        "testability_notes": "過去の体験の印象深さや満足度を尋ねることで検証可能",
+        "safety_risk_notes": "ユーザーの効率化志向を逆説的に問い直すため、やや不快感があるが、深い自己洞察を促す"
+      },
+      "rationale": "外部観察（Oext1）を活用し、効率化のパラドックスという新たな視点を提示できる"
+    }
+  ]
+}

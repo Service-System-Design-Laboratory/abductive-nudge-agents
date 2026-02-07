@@ -1,0 +1,145 @@
+{
+  "hypotheses": [
+    {
+      "hypothesis_id": "H1",
+      "type": "psychological",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "O4"
+      ],
+      "assumes": [
+        "A1",
+        "A2"
+      ],
+      "statement": "ユーザーは価格差に納得できないことで、損失回避バイアスが強く働いている。",
+      "mechanism": "高額な出費に対する心理的抵抗が、旅館の体験価値を過小評価させている。",
+      "predictions": [
+        "他の分野でも価格差に敏感に反応する傾向がある",
+        "旅館の付加価値説明にも納得しにくい"
+      ],
+      "discriminating_questions": [
+        "他の場面でも『高すぎる』と感じて選択を変えることはありますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H2",
+      "type": "value",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "O5"
+      ],
+      "assumes": [
+        "A1",
+        "A4"
+      ],
+      "statement": "ユーザーは本来、自然や地域との調和や信頼を重視しており、コスパ重視の発言はその価値観と現実の価格とのギャップに由来する。",
+      "mechanism": "内面では体験価値や地域との関わりを求めているが、価格の高さがそれを阻害しているため、コスパを強調している。",
+      "predictions": [
+        "地域体験や自然とのふれあいが含まれるなら、価格以外の価値に納得する可能性がある",
+        "安価な体験型宿泊施設に関心を示す"
+      ],
+      "discriminating_questions": [
+        "地域の人や自然とのふれあいがある宿泊先なら、価格が少し高くても興味がありますか？"
+      ],
+      "persona_link": [
+        "pkg:p01_n4",
+        "pkg:p01_n1",
+        "pkg:p01_n5"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H3",
+      "type": "evidence_gap",
+      "explains": [
+        "O3",
+        "O4",
+        "O5",
+        "Oext1"
+      ],
+      "assumes": [
+        "A2"
+      ],
+      "statement": "ユーザーは『寝る場所なんてどこでも同じ』という考えを持っているが、旅館とビジネスホテルの本質的な違いについて十分な情報を持っていない。",
+      "mechanism": "情報不足が価格差への疑問やコスパ重視の発言につながっている。",
+      "predictions": [
+        "旅館のサービスや体験内容を詳しく知ると意見が変わる可能性がある"
+      ],
+      "discriminating_questions": [
+        "旅館ならではのサービスや体験について、知っていることはありますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [
+        "ev:1"
+      ],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H4",
+      "type": "goal_mismatch",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "O5",
+        "Oext2"
+      ],
+      "assumes": [
+        "A1",
+        "A3"
+      ],
+      "statement": "ユーザーの旅行の目的は『寝る』ことではなく、観光や体験であり、宿泊は必要最小限でよいと考えている。",
+      "mechanism": "宿泊施設に高い機能や体験を求めておらず、コスパ重視の選択が合理的な判断となっている。",
+      "predictions": [
+        "宿泊先選びよりも観光や体験に時間やお金を使いたいと考えている",
+        "宿泊施設の豪華さやサービスに興味が薄い"
+      ],
+      "discriminating_questions": [
+        "旅行で一番重視するのは宿泊先ですか？それとも観光や体験ですか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [
+        "ev:2"
+      ],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H5",
+      "type": "psychological",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "O4",
+        "O5",
+        "Oext1"
+      ],
+      "assumes": [
+        "A1",
+        "A2"
+      ],
+      "statement": "『コスパ重視』の発言は本心ではなく、実は高額な旅館に泊まることへの不安や自己防衛から来ている。体験価値を受け取る自信や、場違い感への抵抗があるのかもしれない。",
+      "mechanism": "高価格帯の旅館に対する心理的ハードルや、期待に応えられるかという不安が『どこでも同じ』という合理化につながっている。",
+      "predictions": [
+        "高級旅館や特別な体験に対して『自分には合わない』と感じることがある",
+        "他人と比較してコスパを強調する傾向がある"
+      ],
+      "discriminating_questions": [
+        "高級な旅館や特別な体験に対して、気後れや不安を感じることはありますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [
+        "ev:1"
+      ],
+      "is_reframing": true
+    }
+  ]
+}

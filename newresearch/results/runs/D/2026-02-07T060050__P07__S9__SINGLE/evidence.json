@@ -1,0 +1,37 @@
+{
+  "triggers": [
+    {
+      "type": "focus",
+      "text": "コストパフォーマンスへの強い関心と、価格差への納得のなさが明確に表明されている。"
+    },
+    {
+      "type": "information_gap",
+      "text": "旅館の価格に含まれる価値や体験についての認識が不明確。"
+    },
+    {
+      "type": "ambiguity",
+      "text": "『寝る場所なんてどこでも同じ』という価値観が、体験価値や文化的価値をどこまで排除しているか不明。"
+    },
+    {
+      "type": "contradiction",
+      "text": "PKGでは『地域文化への敬意』や『季節祭り参加』など文化的価値を重視しているが、今回の発言では文化的価値を軽視しているように見える。"
+    }
+  ],
+  "external_observations": [
+    {
+      "id": "Oext1",
+      "text": "多くの旅行者は観光メインでホテルは寝るだけの場所と考え、安いビジネスホテルを選ぶ傾向がある。",
+      "source_url": "https://komachi.yomiuri.co.jp/topics/id/787363/"
+    },
+    {
+      "id": "Oext2",
+      "text": "ビジネスホテルの価格は1泊5000円程度だが、旅館は1泊3万円を超えることもあり、価格差が大きい。",
+      "source_url": "https://forzastyle.com/articles/-/72821"
+    },
+    {
+      "id": "Oext3",
+      "text": "限られた予算でも地元の料理や体験が高級なものより楽しい場合があるという声もある。",
+      "source_url": "https://www.reddit.com/r/travel/comments/1qdkave/what_country_gave_you_the_most_value_for_the/?tl=ja"
+    }
+  ]
+}

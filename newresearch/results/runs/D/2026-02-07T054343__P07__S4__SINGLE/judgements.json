@@ -1,0 +1,98 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A2"
+        ],
+        "best_discriminating_question": "観光客向けの店でも地元の人が通う場合はどう感じますか？",
+        "testability_notes": "ユーザーの本物志向や地域文化への敬意の有無を追加質問で確認できる。",
+        "safety_risk_notes": "価値観の肯定的側面を扱うためリスクは低い。"
+      },
+      "rationale": "PKGの価値観や関心と一致し、観察を素直に説明できる。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A2"
+        ],
+        "best_discriminating_question": "観光地化による地域文化の変化についてどう思いますか？",
+        "testability_notes": "観光地化や商品化に対する意見を尋ねることで検証可能。",
+        "safety_risk_notes": "観光産業全体への批判と受け取られないよう配慮が必要。"
+      },
+      "rationale": "外部観察（Oext1）とPKGの価値観を結びつけ、社会的動機を説明できる。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A2",
+          "A3"
+        ],
+        "best_discriminating_question": "地元の人の日常を感じられる体験にどんな魅力を感じますか？",
+        "testability_notes": "日常性や生活文化への関心を具体的に尋ねて確認できる。",
+        "safety_risk_notes": "肯定的な価値観の強調でリスクは低い。"
+      },
+      "rationale": "日常性や生活文化への共感を重視し、PKGとも整合的。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [],
+        "best_discriminating_question": "観光客向けでも地元の人が認める店があれば、行ってみたいと思いますか？",
+        "testability_notes": "ユーザーの前提や情報ギャップを補う質問で検証できる。",
+        "safety_risk_notes": "ユーザーの前提を疑問視するため、伝え方に注意が必要。"
+      },
+      "rationale": "ユーザーの認知バイアスや情報ギャップに着目し、別の可能性を示唆。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A2",
+          "A3"
+        ],
+        "best_discriminating_question": "観光客として扱われることに違和感や抵抗を感じますか？",
+        "testability_notes": "観光客扱いへの感情や自己像への質問で検証できる。",
+        "safety_risk_notes": "自己像や動機の裏側を突くため、やや不快感を与えるリスクがある。"
+      },
+      "rationale": "表面的な価値観の裏に、自己像や観察者効果への抵抗という深い動機を持ち込む。外部観察（Oext1）とも連動。"
+    }
+  ]
+}

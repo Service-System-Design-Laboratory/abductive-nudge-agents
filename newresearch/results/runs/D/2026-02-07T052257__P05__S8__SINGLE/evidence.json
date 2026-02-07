@@ -1,0 +1,37 @@
+{
+  "triggers": [
+    {
+      "type": "information_gap",
+      "text": "現在の嵐山や竹林の道が、学生時代と同じ静けさや雰囲気を保っているかどうかが不明である。"
+    },
+    {
+      "type": "ambiguity",
+      "text": "『同じ感動』が何によってもたらされるのか（場所、状況、心境など）が明確でない。"
+    },
+    {
+      "type": "contradiction",
+      "text": "外部情報では観光客増加や竹林の変化が報告されており、過去と現在の体験にギャップがある可能性が高い。"
+    },
+    {
+      "type": "focus",
+      "text": "ユーザーは『あの頃と同じ感動』に強いこだわりを持っている。"
+    }
+  ],
+  "external_observations": [
+    {
+      "id": "Oext1",
+      "text": "嵐山の竹林の道は、観光客増加の影響で竹林が間引きされ、以前のような鬱蒼とした雰囲気が失われている。",
+      "source_url": "https://www.tripadvisor.jp/ShowUserReviews-g298564-d1497822-r626895081-Bamboo_Forest_Street-Kyoto_Kyoto_Prefecture_Kinki.html"
+    },
+    {
+      "id": "Oext2",
+      "text": "竹林の道では落書きや私有地への無断侵入など、観光客のマナー問題が深刻化している。",
+      "source_url": "https://www.youtube.com/watch?v=Wovh0x4x4eQ"
+    },
+    {
+      "id": "Oext3",
+      "text": "朝早い時間帯や人の少ないタイミングであれば、静かな竹林の雰囲気を味わえることもある。",
+      "source_url": "https://souljem.hateblo.jp/entry/2021/06/30/232723"
+    }
+  ]
+}

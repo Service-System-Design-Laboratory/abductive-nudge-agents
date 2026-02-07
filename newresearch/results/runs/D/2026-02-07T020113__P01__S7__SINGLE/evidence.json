@@ -1,0 +1,33 @@
+{
+  "triggers": [
+    {
+      "type": "focus",
+      "text": "安全への強いこだわりが旅行行動を大きく制限している"
+    },
+    {
+      "type": "information_gap",
+      "text": "本当に安全だけが理由で自由行動を避けているのか、他に動機があるのか不明"
+    },
+    {
+      "type": "ambiguity",
+      "text": "現地文化や自然への関心と安全志向のバランスが不明"
+    }
+  ],
+  "external_observations": [
+    {
+      "id": "Oext1",
+      "text": "海外旅行ツアーの自由時間は、ホテルからあまり離れずに過ごす人が多いが、ショッピングや市場なども選択肢となる",
+      "source_url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q10144674620"
+    },
+    {
+      "id": "Oext2",
+      "text": "農山漁村での宿泊体験や自然体験が、都市部の人々の新たな観光ニーズとして注目されている",
+      "source_url": "https://www.soumu.go.jp/main_content/000689291.pdf"
+    },
+    {
+      "id": "Oext3",
+      "text": "新型コロナ以降、観光に求めるニーズや行動様式が変化し、地域の持続的な観光地経営が課題となっている",
+      "source_url": "https://wwwtb.mlit.go.jp/hokushin/content/000348793.pdf"
+    }
+  ]
+}

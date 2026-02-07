@@ -1,0 +1,100 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーが旅行の全体をコントロールしたいという強い欲求を持っている",
+          "予測可能性や計画遂行が安心感や満足感に直結している"
+        ],
+        "best_discriminating_question": "旅行中に計画通りに進まなかった場合、どの程度ストレスや不安を感じますか？",
+        "testability_notes": "ユーザーへの1問インタビューで検証可能。主観的な回答に依存するが、比較的容易。",
+        "safety_risk_notes": "『コントロール欲求』という表現がユーザーの性格を断定的に見せるリスクがある。"
+      },
+      "rationale": "観察O1・O2は十分説明できるが、O3・O4は必ずしも『コントロール欲求』だけで説明しきれない可能性がある。ユーザーの内面動機への仮定が強い。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "観光産業の効率・利便性訴求がユーザーの行動に強く影響している"
+        ],
+        "best_discriminating_question": "観光地のパンフレットやウェブサイトの効率化アピールに影響されましたか？",
+        "testability_notes": "ユーザーの情報収集経路や意思決定プロセスをヒアリングする必要があり、やや検証に手間がかかる。",
+        "safety_risk_notes": "ユーザーの主体性を軽視していると受け取られる可能性がある。"
+      },
+      "rationale": "外部エビデンス(ev:2)とOext1により、観光産業の影響仮説は一定の裏付けがある。O5は直接的には説明しない。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O5"
+        ],
+        "key_assumptions": [
+          "現地の気候・混雑・イベント等の外部要因が計画に十分反映されていない"
+        ],
+        "best_discriminating_question": "現地の天候や混雑、イベント情報を事前に調べて、計画に反映させていますか？",
+        "testability_notes": "ユーザーの計画内容や準備状況を具体的に確認する必要があり、やや詳細なヒアリングが必要。",
+        "safety_risk_notes": "『対策が十分でない』という指摘がユーザーの準備不足を断定する印象を与える可能性がある。"
+      },
+      "rationale": "O5（効率化の見落としがないか）を説明できる点が強み。外部エビデンス(ev:3)もあり、現状の計画の限界を指摘する仮説として有効。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "ユーザーの計画立案スキルが高い",
+          "現地での柔軟な対応力が相対的に弱い"
+        ],
+        "best_discriminating_question": "現地での即興的な判断や予定変更に自信がありますか？",
+        "testability_notes": "過去の旅行経験や自己評価を尋ねることで比較的容易に検証可能。",
+        "safety_risk_notes": "ユーザーのスキルや適応力を一面的に評価していると受け取られるリスクがある。"
+      },
+      "rationale": "O1～O3の事前準備行動は説明できるが、O5やO4の『完璧な遂行』や『効率化の見落とし』への関心は直接的には説明しきれない。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4",
+          "O5",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "ユーザーが効率的な旅行計画の遂行自体を価値基準としている",
+          "観光産業の標準化された枠組みを内面化している"
+        ],
+        "best_discriminating_question": "旅行の満足度は、計画通りに進んだかどうかで決まりますか？",
+        "testability_notes": "ユーザーの価値観や満足度評価を直接尋ねることで検証可能だが、深層心理の把握には追加質問が必要。",
+        "safety_risk_notes": "ユーザーの価値観や主体性を断定的に解釈している印象を与える可能性がある。"
+      },
+      "rationale": "O1～O5およびOext2まで広く説明でき、外部エビデンス(ev:1)も補強材料となる。仮説の射程が広い分、ユーザーの内面解釈に依存するリスクもある。"
+    }
+  ]
+}

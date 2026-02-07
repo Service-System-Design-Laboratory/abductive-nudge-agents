@@ -1,0 +1,91 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーが屋久島の原生林や縄文杉に、他の観光地では得られない独自の精神的価値や象徴性を見出していること"
+        ],
+        "best_discriminating_question": "屋久島以外の自然地にも同じような価値や思い入れを感じますか？",
+        "testability_notes": "ユーザーへの直接質問で検証可能。価値観の比較を問うことで判別しやすい。",
+        "safety_risk_notes": "価値観の断定や他の観光地を軽視しているように受け取られる可能性がある。"
+      },
+      "rationale": "O2は明確に説明できているが、O3（世界遺産前から通っている）は精神的価値だけでなく他の動機も考えられるため、説明範囲は限定的。PKGリンクは全て不在だが、use_pkg=trueのため致命的欠陥にはならない。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O4"
+        ],
+        "key_assumptions": [
+          "ユーザーが自己効力感や専門性への欲求を持っていること",
+          "『誰よりも分かっている』という発言が自己認識の強調に基づくものであること"
+        ],
+        "best_discriminating_question": "屋久島について他者と話すとき、自分の経験をどの程度強調しますか？",
+        "testability_notes": "ユーザーの発言や態度を観察・質問することで比較的容易に検証可能。",
+        "safety_risk_notes": "ユーザーの自己認識やプライドに触れるため、断定的な表現は避けるべき。"
+      },
+      "rationale": "O1とO4を説明できている。PKGリンクは全て不在だが、実験条件下では致命的欠陥とならない。心理的動機の解釈には主観が入るため、慎重な提示が必要。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "ユーザーが森の変化や保護に関する知識・経験を実際に積み重ねていること",
+          "世界遺産登録前からの訪問が観察力や自信の根拠となっていること"
+        ],
+        "best_discriminating_question": "屋久島の森や地域について、どのような変化や保護活動を観察しましたか？",
+        "testability_notes": "具体的な知識やエピソードの有無を質問することで検証可能。",
+        "safety_risk_notes": "知識や経験の有無を問うため、ユーザーが不快に感じる可能性がある。"
+      },
+      "rationale": "O3とO4を説明できるが、PKGに知識・経験の裏付けがないため、仮説の根拠はやや弱い。検証は比較的容易。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O4"
+        ],
+        "key_assumptions": [
+          "『誰よりも分かっている』という主張に具体的根拠が現時点で示されていないこと"
+        ],
+        "best_discriminating_question": "屋久島の森について、他者にはない具体的な知識や経験をどのように説明できますか？",
+        "testability_notes": "ユーザーに具体的な知識や経験を尋ねることで容易に検証可能。",
+        "safety_risk_notes": "主張の根拠が不十分であることを指摘するため、ユーザーの自尊心を傷つけるリスクがある。"
+      },
+      "rationale": "O4の説明に限定されるが、PKGにも具体的根拠がない現状を指摘する仮説として妥当。PKGリンク不在は条件下では致命的ではない。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "ユーザーが“特別な理解者である自分”という自己像を維持したいという動機を持っていること",
+          "屋久島への愛着よりも自己アイデンティティの保持が主な動機であること"
+        ],
+        "best_discriminating_question": "屋久島以外でも“自分だけが知っている”という感覚を大事にすることがありますか？",
+        "testability_notes": "ユーザーの他の行動や発言を観察・質問することで検証可能だが、動機の深層を探るためやや難易度が高い。",
+        "safety_risk_notes": "ユーザーの自己像や動機に踏み込むため、誤解や不快感を与えるリスクが高い。"
+      },
+      "rationale": "O2, O3, O4を広く説明できるが、動機の推測が主観的であり、PKG裏付けもないため慎重な扱いが必要。"
+    }
+  ]
+}

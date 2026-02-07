@@ -1,0 +1,101 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A2"
+        ],
+        "best_discriminating_question": "普段の生活でも新しいことに取り組むときは慎重に準備しますか？",
+        "testability_notes": "他の場面での行動パターンを聞くことで検証可能",
+        "safety_risk_notes": "不安の強調にならないよう配慮が必要"
+      },
+      "rationale": "ユーザーの慎重な行動が心理的な不安から来ている可能性を説明できる"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A4"
+        ],
+        "best_discriminating_question": "安全が保証されない場所にはどんなに魅力があっても行きませんか？",
+        "testability_notes": "安全と魅力のどちらを優先するかを尋ねることで検証可能",
+        "safety_risk_notes": "価値観の押し付けにならないよう注意"
+      },
+      "rationale": "リスク回避という価値観が行動を規定していることを説明"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [
+          "集団行動への言及がユーザー発言に明確でない"
+        ],
+        "explains_confirmed": [
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A2"
+        ],
+        "best_discriminating_question": "一人旅とグループ旅行、どちらが安心できますか？",
+        "testability_notes": "旅行形態の好みを聞くことで検証可能",
+        "safety_risk_notes": "集団行動を強調しすぎると個人の選択を軽視するリスク"
+      },
+      "rationale": "ツアー参加が社会的安心感から来ている可能性を示唆"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3",
+          "O4",
+          "O5"
+        ],
+        "key_assumptions": [
+          "A3"
+        ],
+        "best_discriminating_question": "旅行後に『もう少し冒険してもよかった』と感じることはありますか？",
+        "testability_notes": "旅行後の感想を聞くことで検証可能",
+        "safety_risk_notes": "ユーザーの選択を否定する印象にならないよう注意"
+      },
+      "rationale": "安全優先が体験の幅を狭めているパラドックスを指摘"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3",
+          "O5",
+          "Oext1",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "A3",
+          "A4"
+        ],
+        "best_discriminating_question": "安全を優先して行動した結果、印象に残る体験や現地の人との交流が少なかったと感じたことはありますか？",
+        "testability_notes": "旅行の満足度や印象に残った体験の有無を聞くことで検証可能",
+        "safety_risk_notes": "ユーザーの行動選択を否定的に受け取られないよう、あくまで一つの見方として提示する必要がある"
+      },
+      "rationale": "外部観察とPKGの価値観（地域文化への敬意・季節祭り参加）を踏まえ、ユーザーの安全志向が本来の関心や満足度と逆方向に働くパラドックスを示す"
+    }
+  ]
+}

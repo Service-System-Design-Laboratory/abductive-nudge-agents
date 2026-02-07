@@ -1,0 +1,153 @@
+{
+  "hypotheses": [
+    {
+      "hypothesis_id": "H1",
+      "type": "psychological",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "O5"
+      ],
+      "assumes": [
+        "A1",
+        "A4"
+      ],
+      "statement": "ユーザーは強い節約志向から、価格差に敏感になり、コスパを最重視して宿泊先を選ぼうとしている。",
+      "mechanism": "節約志向が意思決定の中心にあり、価格と価値のバランスに強い関心を持つ。",
+      "predictions": [
+        "他の消費行動でも価格差に敏感である",
+        "旅行以外でもコストパフォーマンスを重視する傾向がある"
+      ],
+      "discriminating_questions": [
+        "普段の買い物や外食でも、価格差に強く反応することはありますか？"
+      ],
+      "persona_link": [
+        "pkg:p05_n2",
+        "pkg:p05_n3",
+        "pkg:p05_n6"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H2",
+      "type": "value",
+      "explains": [
+        "O4",
+        "O5",
+        "Oext1"
+      ],
+      "assumes": [
+        "A2",
+        "A4"
+      ],
+      "statement": "ユーザーは宿泊施設の主な価値を『寝る場所』に限定しており、追加サービスや体験には価値を感じていない。",
+      "mechanism": "宿泊に求める機能が限定的なため、価格以外の価値を認識しにくい。",
+      "predictions": [
+        "旅館のサービスや食事、温泉などに特別な魅力を感じていない",
+        "旅行の主目的は観光や外での体験であり、宿泊自体は重要視していない"
+      ],
+      "discriminating_questions": [
+        "旅館の食事や温泉、サービスに特別な魅力を感じたことはありますか？"
+      ],
+      "persona_link": [
+        "pkg:p05_n6",
+        "pkg:p05_n7"
+      ],
+      "evidence_link": [
+        "ev:Oext1"
+      ],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H3",
+      "type": "evidence_gap",
+      "explains": [
+        "O3",
+        "O5",
+        "Oext2"
+      ],
+      "assumes": [
+        "A1",
+        "A2"
+      ],
+      "statement": "ユーザーはビジネスホテルのサービス内容や旅館との違いを十分に比較できていないため、価格差の根拠に納得できていない。",
+      "mechanism": "情報ギャップにより、価格差の理由やサービス内容の違いが不透明なまま判断している。",
+      "predictions": [
+        "ビジネスホテルと旅館のサービス内容の違いを詳細に説明できない",
+        "アメニティやサービスの違いに気づいていない"
+      ],
+      "discriminating_questions": [
+        "ビジネスホテルと旅館で体験できるサービスの違いを具体的に挙げられますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [
+        "ev:Oext2"
+      ],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H4",
+      "type": "social",
+      "explains": [
+        "O1",
+        "O2",
+        "Oext1",
+        "Oext3"
+      ],
+      "assumes": [
+        "A4"
+      ],
+      "statement": "ユーザーは『コスパ重視』という社会的な価値観や、同様の選択をする他者の存在に影響されているため、価格差に強い疑問を持っている。",
+      "mechanism": "周囲の旅行者やネット上の意見に共感し、コスパ重視の選択が『正しい』と感じている。",
+      "predictions": [
+        "ネットや友人の意見を参考にして宿泊先を選ぶ",
+        "『みんなが安いホテルを選んでいる』という情報に安心感を持つ"
+      ],
+      "discriminating_questions": [
+        "他の人の宿泊先選びや口コミを参考にしていますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [
+        "ev:Oext1",
+        "ev:Oext3"
+      ],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H5",
+      "type": "goal_mismatch",
+      "explains": [
+        "O1",
+        "O3",
+        "O4",
+        "O5",
+        "Oext3"
+      ],
+      "assumes": [
+        "A1",
+        "A2",
+        "A3"
+      ],
+      "statement": "実はユーザーが本当に求めているのは『価格の安さ』そのものではなく、『自分にとって価値ある体験』であり、高額な旅館の価値や体験をまだ発見できていないだけかもしれない。",
+      "mechanism": "コスパ志向の裏には、価格以外の価値（例えば特別な体験や人との交流）を見落としている可能性がある。安い宿泊先を選ぶことで得られる満足感は、実は『自分に合った体験』を求める気持ちの表れ。",
+      "predictions": [
+        "安い宿でも地元の人との交流や特別な体験ができると満足度が高い",
+        "高額な宿でも自分にとって意味のある体験があれば納得して支払う可能性がある"
+      ],
+      "discriminating_questions": [
+        "過去に『高いけど価値があった』と感じた体験はありますか？",
+        "安い宿で思いがけず良い体験をしたことはありますか？"
+      ],
+      "persona_link": [
+        "pkg:p05_n6",
+        "pkg:p05_n7"
+      ],
+      "evidence_link": [
+        "ev:Oext3"
+      ],
+      "is_reframing": true
+    }
+  ]
+}

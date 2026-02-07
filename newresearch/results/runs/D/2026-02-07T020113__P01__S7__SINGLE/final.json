@@ -1,0 +1,356 @@
+{
+  "context": {
+    "observations": [
+      {
+        "id": "O1",
+        "text": "海外旅行は危険が多いと感じている"
+      },
+      {
+        "id": "O2",
+        "text": "ツアーでしか海外旅行に行かない"
+      },
+      {
+        "id": "O3",
+        "text": "自由行動の時間もホテルの周辺から離れないようにしている"
+      },
+      {
+        "id": "O4",
+        "text": "治安情報を毎日チェックしている"
+      }
+    ],
+    "assumptions": [
+      {
+        "id": "A1",
+        "text": "安全への強い関心が旅行スタイルに影響している",
+        "status": "tentative"
+      },
+      {
+        "id": "A2",
+        "text": "自由行動に対する不安がある",
+        "status": "tentative"
+      },
+      {
+        "id": "A3",
+        "text": "現地の文化や自然に触れることにも関心がある",
+        "status": "tentative"
+      }
+    ],
+    "questions": [
+      "なぜ自由行動の時間もホテル周辺にとどまることを選んでいるのか？",
+      "安全以外に旅行で大事にしていることはあるか？",
+      "現地の自然や文化への興味はどの程度あるか？"
+    ],
+    "constraints": {
+      "tone": "supportive",
+      "safety": "avoid determinism"
+    }
+  },
+  "evidence": {
+    "triggers": [
+      {
+        "type": "focus",
+        "text": "安全への強いこだわりが旅行行動を大きく制限している"
+      },
+      {
+        "type": "information_gap",
+        "text": "本当に安全だけが理由で自由行動を避けているのか、他に動機があるのか不明"
+      },
+      {
+        "type": "ambiguity",
+        "text": "現地文化や自然への関心と安全志向のバランスが不明"
+      }
+    ],
+    "external_observations": [
+      {
+        "id": "Oext1",
+        "text": "海外旅行ツアーの自由時間は、ホテルからあまり離れずに過ごす人が多いが、ショッピングや市場なども選択肢となる",
+        "source_url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q10144674620"
+      },
+      {
+        "id": "Oext2",
+        "text": "農山漁村での宿泊体験や自然体験が、都市部の人々の新たな観光ニーズとして注目されている",
+        "source_url": "https://www.soumu.go.jp/main_content/000689291.pdf"
+      },
+      {
+        "id": "Oext3",
+        "text": "新型コロナ以降、観光に求めるニーズや行動様式が変化し、地域の持続的な観光地経営が課題となっている",
+        "source_url": "https://wwwtb.mlit.go.jp/hokushin/content/000348793.pdf"
+      }
+    ]
+  },
+  "hypotheses": [
+    {
+      "hypothesis_id": "H1",
+      "type": "psychological",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "O4"
+      ],
+      "assumes": [
+        "A1"
+      ],
+      "statement": "ユーザーは不確実性や予測できない事態に対する不安から、コントロールできる範囲内でのみ行動する傾向がある。",
+      "mechanism": "不安を低減するために、ツアーやホテル周辺など管理された環境を選択し、情報収集（治安情報チェック）で安心感を得ている。",
+      "predictions": [
+        "旅行以外でも新しい環境や予測不能な状況を避ける傾向がある",
+        "現地での突発的な誘いには消極的になりやすい"
+      ],
+      "discriminating_questions": [
+        "普段の生活でも、計画外の出来事には不安を感じやすいですか？"
+      ],
+      "persona_link": [
+        "p01_n4"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H2",
+      "type": "value",
+      "explains": [
+        "O2",
+        "O3",
+        "O4"
+      ],
+      "assumes": [
+        "A1",
+        "A3"
+      ],
+      "statement": "ユーザーは安全を最優先する価値観を持ちつつも、現地の自然や文化に触れることにも本来関心があるが、両立が難しいと感じている。",
+      "mechanism": "安全志向と好奇心の間で葛藤があり、安全を優先することで現地体験の幅が狭まっている。",
+      "predictions": [
+        "本当は現地の自然や文化体験にも興味があるが、リスクを感じて踏み出せない",
+        "安全が確保されていれば、より多様な体験に関心を持つ"
+      ],
+      "discriminating_questions": [
+        "安全が十分確保されていると感じた場合、現地の自然や文化体験にも参加したいと思いますか？"
+      ],
+      "persona_link": [
+        "p01_n4",
+        "p01_n1",
+        "p01_n2"
+      ],
+      "evidence_link": [
+        "ev:Oext2"
+      ],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H3",
+      "type": "environmental",
+      "explains": [
+        "O2",
+        "O3",
+        "O4",
+        "Oext1"
+      ],
+      "assumes": [
+        "A1"
+      ],
+      "statement": "海外旅行における安全志向は、個人の不安だけでなく、ツアー参加者全体に共通する環境要因や社会的規範の影響も大きい。",
+      "mechanism": "多くのツアー参加者がホテル周辺で過ごす傾向があり、集団行動や社会的同調圧力が個人の選択にも影響している。",
+      "predictions": [
+        "他のツアー参加者も同様に自由行動を制限している",
+        "周囲の人が積極的に行動すると、自分も影響を受ける"
+      ],
+      "discriminating_questions": [
+        "他の参加者が自由に行動しているとき、自分も安心して行動できると感じますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [
+        "ev:Oext1"
+      ],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H4",
+      "type": "goal_mismatch",
+      "explains": [
+        "O2",
+        "O3",
+        "O4"
+      ],
+      "assumes": [
+        "A1",
+        "A2"
+      ],
+      "statement": "ユーザーの旅行の主目的は『安全』であり、現地体験や観光自体は二次的なものになっている。",
+      "mechanism": "旅行の本来の目的が『新しい体験』や『現地との交流』ではなく、『安全に過ごすこと』自体になっているため、自由行動や冒険を避ける。",
+      "predictions": [
+        "現地での新しい体験よりも、安心して過ごせることに満足感を感じる",
+        "旅行後も『何事もなく帰れた』ことを重視している"
+      ],
+      "discriminating_questions": [
+        "旅行で最も満足を感じる瞬間はどんなときですか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H5",
+      "type": "psychological",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "O4",
+        "Oext2"
+      ],
+      "assumes": [
+        "A3"
+      ],
+      "statement": "（裏切る仮説）本当は現地の自然や文化に触れたいが、『安全』を理由に自分の好奇心や冒険心を抑えている。安全志向は自己防衛のための表向きの理由であり、実際は新しい体験への不安や自信のなさが根底にある。",
+      "mechanism": "『安全』を強調することで、未知の体験への不安や自分の行動範囲を狭めていることへの葛藤を正当化している。",
+      "predictions": [
+        "安全が保証されていても、実際には新しい体験に踏み出すのに躊躇する",
+        "現地体験をしたい気持ちはあるが、行動に移せない自分に少し後ろめたさや葛藤を感じている"
+      ],
+      "discriminating_questions": [
+        "安全が確保されていても、実際に新しい体験に踏み出すことにためらいを感じることはありますか？"
+      ],
+      "persona_link": [
+        "p01_n1",
+        "p01_n4"
+      ],
+      "evidence_link": [
+        "ev:Oext2"
+      ],
+      "is_reframing": true
+    }
+  ],
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "A1"
+        ],
+        "best_discriminating_question": "普段の生活でも、計画外の出来事には不安を感じやすいですか？",
+        "testability_notes": "ユーザーの他の行動や日常での不安傾向を尋ねることで検証可能",
+        "safety_risk_notes": "不安傾向の指摘は慎重に行う必要がある"
+      },
+      "rationale": "安全志向の行動全般を説明できるが、価値観や環境要因との関連は限定的"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A3"
+        ],
+        "best_discriminating_question": "安全が十分確保されていると感じた場合、現地の自然や文化体験にも参加したいと思いますか？",
+        "testability_notes": "安全条件下での興味の有無を尋ねることで検証可能",
+        "safety_risk_notes": "価値観の葛藤を指摘するため、慎重な言い回しが必要"
+      },
+      "rationale": "安全と好奇心の葛藤を説明し、PKGの価値観とも整合的"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3",
+          "O4",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "A1"
+        ],
+        "best_discriminating_question": "他の参加者が自由に行動しているとき、自分も安心して行動できると感じますか？",
+        "testability_notes": "他者の行動が自分に与える影響を尋ねることで検証可能",
+        "safety_risk_notes": "社会的同調圧力の指摘はやや間接的でリスクは低い"
+      },
+      "rationale": "外部観察を活用し、個人だけでなく環境要因も説明できる"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A2"
+        ],
+        "best_discriminating_question": "旅行で最も満足を感じる瞬間はどんなときですか？",
+        "testability_notes": "旅行の満足ポイントを尋ねることで検証可能",
+        "safety_risk_notes": "旅行目的の再定義はややデリケートだがリスクは低い"
+      },
+      "rationale": "旅行の目的自体に着目し、行動の動機を説明する"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "A3"
+        ],
+        "best_discriminating_question": "安全が確保されていても、実際に新しい体験に踏み出すことにためらいを感じることはありますか？",
+        "testability_notes": "安全条件下でも行動に移せるかどうかを尋ねることで検証可能",
+        "safety_risk_notes": "ユーザーの自己認識や葛藤に触れるため、慎重な言い回しが必要"
+      },
+      "rationale": "表面的な安全志向の裏に、自己防衛や行動へのためらいがある可能性を指摘し、PKGの好奇心とも関連"
+    }
+  ],
+  "decision": {
+    "selected_hypothesis_id": "H5",
+    "contrasting_hypothesis_id": "H4",
+    "selection_rationale": "H5はユーザーの『安全志向』という発言の意味を『本当は現地体験への好奇心や冒険心があるが、自信のなさや不安から安全を理由に行動を抑えている』という自己像レベルにまで読み替える。Oext2（外部観察）も活用し、発言の意味を大きく変える。一方H4は額面通り『安全が主目的』という解釈で、行動の動機をそのまま受け取る。どちらの立場に立つかで、次の旅行の計画や自己理解が大きく変わる。",
+    "user_facing_frame": {
+      "framing": "options",
+      "questions": [
+        "旅行で最も大事にしているのは『安全に過ごすこと』でしょうか？それとも『新しい体験への好奇心』もどこかにあると感じますか？",
+        "安全が確保されていても、新しい体験に踏み出すことにためらいを感じることはありますか？"
+      ],
+      "options": [
+        "安全が最優先で、安心して過ごすこと自体が旅行の目的になっている（H4）",
+        "本当は新しい体験にも興味があるが、安全を理由に自分の好奇心や冒険心を抑えている（H5）"
+      ]
+    }
+  },
+  "final_response": "ご相談ありがとうございます。『海外旅行は危険が多いから、ツアーでしか行かない』『自由行動もホテル周辺だけ』というお気持ち、とてもよく分かります。安全を大事にされている姿勢はとても自然なことですし、治安情報を毎日チェックされているご様子からも、その丁寧さが伝わってきます。\n\n一方で、もしかすると『本当は現地の自然や文化にも興味があるけれど、安全を理由に自分の好奇心や冒険心を抑えている』というお気持ちもどこかにあるのかもしれません。あるいは、『安心して過ごすこと自体が旅行の目的』という考えも、とても大切な価値観です。\n\nたとえば、同じように安全を重視する方の中には、事前に現地の体験プログラムを予約しておき、信頼できるガイドと一緒に短時間だけ自然や文化体験をすることで、少しずつ行動範囲を広げている方もいます。『安全』と『新しい体験』のどちらを大事にするかは人それぞれですし、どちらを選んでも間違いではありません。\n\nもしよければ、\n- 旅行で最も大事にしているのは『安全に過ごすこと』でしょうか？それとも『新しい体験への好奇心』もどこかにあると感じますか？\n- 安全が確保されていても、新しい体験に踏み出すことにためらいを感じることはありますか？\n\nどちらの立場に近いか、考えてみてください。たとえば、次の旅行で『5分だけホテルの近くの市場を覗いてみる』『信頼できる現地ガイドの短いツアーに申し込む』など、小さな一歩から始めてみるのもおすすめです。今のご自身の気持ちに合った選択肢を見つけていけるといいですね。",
+  "markers": {
+    "empathy": {
+      "acknowledgement": true,
+      "reflection": true,
+      "perspective_prompt": true
+    },
+    "nudge": {
+      "easy": true,
+      "attractive": true,
+      "social": true,
+      "timely": true,
+      "has_question": true,
+      "has_options": true,
+      "has_small_action": true,
+      "directive_level": "low"
+    }
+  }
+}

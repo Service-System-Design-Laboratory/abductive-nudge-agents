@@ -1,0 +1,146 @@
+{
+  "hypotheses": [
+    {
+      "hypothesis_id": "H1",
+      "type": "psychological",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "O4"
+      ],
+      "assumes": [
+        "A1",
+        "A2"
+      ],
+      "statement": "ユーザーは宿泊施設の機能的価値（寝る場所）を最重視し、付加価値や体験には関心が薄い。",
+      "mechanism": "費用対効果を重視する性格特性が、価格差への強い反発や体験価値の軽視につながっている。",
+      "predictions": [
+        "今後も価格が安い宿泊先を優先して選ぶ",
+        "高額な宿泊先のサービス内容にはあまり関心を示さない"
+      ],
+      "discriminating_questions": [
+        "旅館でしか得られない体験やサービスに興味を持ったことはありますか？"
+      ],
+      "persona_link": [
+        "pkg:p07_n6"
+      ],
+      "evidence_link": [
+        "ev:Oext1"
+      ],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H2",
+      "type": "value",
+      "explains": [
+        "O1",
+        "O3",
+        "O5"
+      ],
+      "assumes": [
+        "A2",
+        "A3"
+      ],
+      "statement": "ユーザーはコストパフォーマンスを重視する価値観を持ち、無駄な出費を避けることが自己効力感や満足感につながっている。",
+      "mechanism": "コスパ志向が強く、支出を抑えること自体が達成感や安心感をもたらす。",
+      "predictions": [
+        "他の分野でもコスパ重視の選択をする傾向がある",
+        "高額なサービスには理由がない限り納得しない"
+      ],
+      "discriminating_questions": [
+        "旅行以外でもコスパを重視して選択することが多いですか？"
+      ],
+      "persona_link": [
+        "pkg:p07_n6",
+        "pkg:p07_n1"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H3",
+      "type": "social",
+      "explains": [
+        "O5",
+        "Oext1"
+      ],
+      "assumes": [
+        "A4"
+      ],
+      "statement": "ユーザーは他者の選択や一般的な傾向を気にしており、周囲と同じようなコスパ重視の宿泊選びをしたいと考えている。",
+      "mechanism": "社会的証明や同調圧力が、コスパの良い選択を求める動機となっている。",
+      "predictions": [
+        "口コミや他人の選択を参考にする",
+        "『みんなが選ぶ』宿泊先を好む"
+      ],
+      "discriminating_questions": [
+        "他の人の宿泊先選びや口コミを参考にしていますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [
+        "ev:Oext1"
+      ],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H4",
+      "type": "environmental",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "Oext3"
+      ],
+      "assumes": [
+        "A2"
+      ],
+      "statement": "宿泊料金の高騰は時期や需給によるもので、ユーザーの価値観とは別に外部環境が価格を押し上げている。",
+      "mechanism": "旅行シーズンやイベント時には価格が高騰し、通常のコスパ感覚が通用しなくなる。",
+      "predictions": [
+        "オフシーズンは旅館も安くなる",
+        "価格変動を調べれば納得できる場合がある"
+      ],
+      "discriminating_questions": [
+        "時期による価格変動について調べたことはありますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [
+        "ev:Oext3"
+      ],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H5",
+      "type": "goal_mismatch",
+      "explains": [
+        "O1",
+        "O3",
+        "O4",
+        "Oext4"
+      ],
+      "assumes": [
+        "A1",
+        "A3"
+      ],
+      "statement": "ユーザーは『寝る場所はどこでも同じ』と考えているが、実は旅館の価格には体験やサービス、文化的価値が含まれており、その価値を見落としている可能性がある。",
+      "mechanism": "機能的価値だけに注目し、体験価値や文化的側面を無意識に軽視しているため、価格の意味を誤解している。",
+      "predictions": [
+        "旅館の体験や文化的サービスに触れると印象が変わるかもしれない",
+        "他人が体験価値を重視して選ぶ理由に共感しにくい"
+      ],
+      "discriminating_questions": [
+        "旅館での食事やおもてなし、文化体験に価値を感じたことはありますか？"
+      ],
+      "persona_link": [
+        "pkg:p07_n2",
+        "pkg:p07_n4",
+        "pkg:p07_n5"
+      ],
+      "evidence_link": [
+        "ev:Oext4"
+      ],
+      "is_reframing": true
+    }
+  ]
+}

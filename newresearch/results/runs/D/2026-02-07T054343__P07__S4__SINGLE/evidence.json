@@ -1,0 +1,32 @@
+{
+  "triggers": [
+    {
+      "type": "focus",
+      "text": "観光客向けと地元向けの飲食店への強い二分法的態度"
+    },
+    {
+      "type": "information_gap",
+      "text": "なぜ観光客向けの店を『絶対に』避けたいのか、動機が明示されていない"
+    },
+    {
+      "type": "ambiguity",
+      "text": "『本当の郷土料理』の定義や基準が明確でない"
+    },
+    {
+      "type": "contradiction",
+      "text": "観光マップに載らない店＝本物という前提が本当に成立するのか？"
+    }
+  ],
+  "external_observations": [
+    {
+      "id": "Oext1",
+      "text": "県庁所在地や観光地ではチェーン店や観光客向け飲食店が増え、地元の本物の味が埋もれてしまうことがある。",
+      "source_url": "https://note.com/tourism_japan/n/nd2daf6aa4b1d"
+    },
+    {
+      "id": "Oext2",
+      "text": "観光客がお金を払うだけの経験価値を持った観光拠点づくりが進められているが、行政主導ではなく公民連携が重視されている。",
+      "source_url": "https://www.city.akune.lg.jp/material/files/group/104/seikaitiba_houkokusyo_r6.pdf"
+    }
+  ]
+}

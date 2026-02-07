@@ -1,0 +1,106 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_link（pkg:n1, pkg:n2, pkg:n3）が全てPKGに存在しないため、ペルソナ知識グラフとの整合性が取れていない。"
+        ],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーが本物志向の価値観を持ち、観光地の定番スポットや演出された体験に関心を示さないこと。",
+          "ユーザーの発言が一貫しており、観察O1・O2がその価値観の表出であること。"
+        ],
+        "best_discriminating_question": "ユーザーは有名観光地に案内された場合でも関心を示さないか？",
+        "testability_notes": "ユーザーへの直接質問や旅程選択の観察で比較的容易に検証可能。",
+        "safety_risk_notes": "価値観の断定が強いため、ユーザーの多様な動機や一時的な興味を見落とすリスクがある。"
+      },
+      "rationale": "観察O1・O2はよく説明できているが、PKGとのリンクが全て無効である点が重大な弱点。価値観の断定が強く、他の動機を排除しがち。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3",
+          "Oext1",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "観光産業が『本物志向』を商品化するトレンドが実際に存在すること。",
+          "ユーザーがその商業化に敏感に反発しているという心理が観察O3等に現れていること。"
+        ],
+        "best_discriminating_question": "ユーザーは『本物の生活』を体験できると謳うツアーやイベントにも否定的か？",
+        "testability_notes": "外部エビデンスや観光商品への態度調査で検証可能だが、ユーザーの本音を引き出すには工夫が必要。",
+        "safety_risk_notes": "産業批判的なニュアンスが強く、観光業関係者や一般ユーザーに誤解・反発を招く可能性がある。"
+      },
+      "rationale": "外部エビデンスと観察O3, Oext1, Oext2をよく説明している。仮説自体に大きな論理的欠陥はないが、ユーザーの反発感情の有無は追加検証が必要。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_link（pkg:n2）がPKGに存在しない。"
+        ],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーが『発見する喜び』や『人と違う体験』への強い欲求を持っていること。",
+          "O1, O2の発言が独自性欲求や探検欲求に基づくものであること。"
+        ],
+        "best_discriminating_question": "ユーザーは他人が知らない場所や体験を発見した時、特に強い達成感を感じるか？",
+        "testability_notes": "ユーザーの自己報告やSNS投稿傾向の分析で検証可能。やや主観的な要素が強い。",
+        "safety_risk_notes": "ユーザーの動機を『優越感』や『独自性欲求』に還元しすぎると、本人の意図と齟齬が生じるリスクがある。"
+      },
+      "rationale": "O1, O2の説明力は高いが、PKGとのリンク不在が弱点。心理的動機の仮定は検証がやや難しい。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_link（pkg:n6）がPKGに存在しない。"
+        ],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "『本物の生活』や『地元らしさ』の基準が主観的かつ曖昧であること。",
+          "ユーザー自身もその基準を明確に説明できない可能性が高いこと。"
+        ],
+        "best_discriminating_question": "ユーザーは『本物の生活』の具体的な特徴や体験例を明確に挙げられるか？",
+        "testability_notes": "ユーザーへの直接質問で比較的容易に検証可能。",
+        "safety_risk_notes": "ユーザーの価値観や発言の曖昧さを指摘するため、本人の自己認識を揺るがす可能性がある。"
+      },
+      "rationale": "観察O1-3を広く説明できるが、PKGリンクが無効。ユーザーの主観性や曖昧さを指摘する点で有用だが、やや批判的に響く可能性。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_link（pkg:n2, pkg:n3）がPKGに存在しない。"
+        ],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "ユーザーの『本物志向』が自己アイデンティティや差異化欲求に根ざしていること。",
+          "観光商品化が進むほどユーザーの満足度が下がるという逆説的現象が観察されること。"
+        ],
+        "best_discriminating_question": "ユーザーは『本物の生活』を体験したと感じたことがこれまでに一度でもあるか？",
+        "testability_notes": "ユーザーの発言・態度の変遷や、観光商品化への反応を時系列で観察する必要があり、やや検証は難しい。",
+        "safety_risk_notes": "ユーザーの動機を『自己正当化』や『パラドックス』と断定するため、本人の自己像を否定・揶揄する印象を与えやすい。"
+      },
+      "rationale": "観察・外部事実を広く説明できるが、PKGリンクが全て無効。動機の深掘りとパラドックス指摘は鋭いが、ユーザーへの配慮が必要。"
+    }
+  ]
+}

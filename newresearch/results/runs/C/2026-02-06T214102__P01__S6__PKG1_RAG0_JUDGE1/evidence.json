@@ -1,0 +1,16 @@
+{
+  "triggers": [
+    {
+      "type": "information_gap",
+      "text": "縄文杉の森が『人の手が入っていない原生林』であるという主張（O3）はPKGの『自然との調和』や『里山散策』への興味と関連するが、PKGには屋久島や縄文杉の具体的な知識や訪問経験が記載されていないため、屋久島訪問や縄文杉への特別な関心・知識の根拠がPKGで説明できない。"
+    },
+    {
+      "type": "ambiguity",
+      "text": "『誰よりも屋久島の森を分かっているつもりだ』（O5）という主張は、どのような知識や経験に基づくものか曖昧であり、PKGではその根拠や具体性が説明されていない。"
+    }
+  ],
+  "rag_queries": [],
+  "evidence_items": [],
+  "external_observations": [],
+  "notes": "RAG disabled (use_rag=false) — trigger identification only"
+}

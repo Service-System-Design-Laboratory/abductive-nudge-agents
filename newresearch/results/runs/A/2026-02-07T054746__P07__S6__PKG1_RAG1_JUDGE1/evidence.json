@@ -1,0 +1,59 @@
+{
+  "triggers": [
+    {
+      "type": "information_gap",
+      "text": "縄文杉周辺の森が『人の手が入っていない原生林』であるという主張について、実際にどの程度人為的な影響が排除されているのか、PKGでは具体的な環境保全状況や歴史的背景が説明されていない。"
+    },
+    {
+      "type": "ambiguity",
+      "text": "『屋久島の森のことは誰よりも分かっているつもり』という自己評価が、客観的な知識や経験とどの程度一致するのか、PKGではその基準や根拠が明示されていない。"
+    }
+  ],
+  "rag_queries": [
+    "縄文杉周辺の屋久島の原生林はどの程度人の手が入っていないのか",
+    "屋久島の森の保全活動や歴史的な人為的影響の有無について",
+    "屋久島の森に関する専門家や長期訪問者の知識や経験の基準",
+    "世界遺産登録前後の屋久島の環境や森の変化について"
+  ],
+  "evidence_items": [
+    {
+      "rank": 1,
+      "title": "平成 30 年度 第 4 回屋久島世界自然遺産・国立公園 ...",
+      "snippet": "縄文杉付近の、人の手は入っているが原生性が感じられる巨木の森。【③】翁杉、ウィルソン株、大王杉、夫婦杉などの杉の巨木。",
+      "url": "https://www.env.go.jp/park/yakushima/ywhcc/common/data/kaigi/arikata/10/190114.pdf",
+      "source_type": "gov"
+    },
+    {
+      "rank": 2,
+      "title": "屋久島世界遺産地域 管理計画",
+      "snippet": "平成5年（1993年）に地元町によって策定された屋久島憲章で「屋久島は、近世森林の保全と活用で人々が苦しみ葛藤した島であり、その存在そのものが人間に対する ...」",
+      "url": "https://www.env.go.jp/park/yakushima/ywhcc/common/data/wh/kanrikaitei.pdf",
+      "source_type": "gov"
+    },
+    {
+      "rank": 3,
+      "title": "原生林とは？日本でも見られる手付かずの森林をご紹介",
+      "snippet": "原生林と言われる人の手が入っていない森林が存在し ... 樹齢1000年を超える屋久杉による深い森は、同じ日本とは思えない神秘的な ...",
+      "url": "https://ecotopia.earth/article-4860/",
+      "source_type": "com"
+    }
+  ],
+  "external_observations": [
+    {
+      "id": "Oext1",
+      "text": "縄文杉付近の森は一部人の手が入っているが、原生性を感じさせるように管理・演出されている。",
+      "source_url": "https://www.env.go.jp/park/yakushima/ywhcc/common/data/kaigi/arikata/10/190114.pdf"
+    },
+    {
+      "id": "Oext2",
+      "text": "屋久島は歴史的に森林資源の保全と活用をめぐって人々が葛藤してきた島であり、現在もその管理が社会的・制度的に行われている。",
+      "source_url": "https://www.env.go.jp/park/yakushima/ywhcc/common/data/wh/kanrikaitei.pdf"
+    },
+    {
+      "id": "Oext3",
+      "text": "『原生林』や『神秘的な森』というイメージは観光や商品化の文脈で強調されており、屋久島の森もその対象となっている。",
+      "source_url": "https://ecotopia.earth/article-4860/"
+    }
+  ],
+  "notes": "外部観察は、屋久島の森が『本物』や『原生』として演出・管理されている構造や、商品化・観光化の文脈で扱われている事実、歴史的な人為的影響と社会的管理の存在を揺さぶり要素として抽出しています。"
+}

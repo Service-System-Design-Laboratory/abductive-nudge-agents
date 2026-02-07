@@ -1,0 +1,99 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーの節約志向とコスト最適化価値観が旅行時にも一貫して強く働く",
+          "宿・移動・食事の全てで最安値を選ぶことがユーザーの行動原理である"
+        ],
+        "best_discriminating_question": "旅行以外の日常でも徹底したコスト最適化を行っているか？",
+        "testability_notes": "ユーザーへの直接質問やPKGの追加情報で容易に検証可能。",
+        "safety_risk_notes": "ユーザーの価値観を断定的に決めつける印象を与える可能性がある。"
+      },
+      "rationale": "節約志向の価値観が行動に反映されている点はO1,O2で確認できるが、O3,O4の説明はやや過剰な一般化。PKGとの整合性は高いが、個別の動機や状況要因を見落とすリスクがある。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O5"
+        ],
+        "key_assumptions": [
+          "ユーザーがデータ分析やコスト最適化のスキルを持ち、それを旅行計画に活用している",
+          "節約手法の発見自体に楽しみや満足感を感じている"
+        ],
+        "best_discriminating_question": "節約方法の発見や分析自体が旅行の楽しみになっているか？",
+        "testability_notes": "ユーザーの主観的動機を問う必要があり、直接質問が有効。",
+        "safety_risk_notes": "ユーザーの楽しみ方を限定的に解釈するリスクがある。"
+      },
+      "rationale": "O1,O5の説明には十分だが、他の観察（特にO2-O4）への説明力は限定的。PKGのスキルノードと整合するが、動機の主観的側面の検証が不可欠。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O4",
+          "O5"
+        ],
+        "key_assumptions": [
+          "ユーザーがコンビニ以外の安価な選択肢を十分に検討していない",
+          "情報ギャップが行動に影響している"
+        ],
+        "best_discriminating_question": "コンビニ以外の食事選択肢を事前に比較検討したか？",
+        "testability_notes": "ユーザーへのヒアリングや外部エビデンスの参照で比較的容易に検証可能。",
+        "safety_risk_notes": "ユーザーの情報収集能力や合理性を暗に疑う形となり、配慮が必要。"
+      },
+      "rationale": "外部エビデンスとO4,O5の観察を的確に説明。仮説自体は限定的だが、他仮説と組み合わせて有用。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "節約旅行市場の環境変化がユーザーの選択肢に影響を与えている",
+          "ユーザーが市場変化を体感している"
+        ],
+        "best_discriminating_question": "数年前と比べて格安宿や移動手段のコストや内容に変化を感じるか？",
+        "testability_notes": "ユーザーの過去経験や市場データの参照が必要で、やや検証難度高め。",
+        "safety_risk_notes": "ユーザーの選択を外的要因のみに帰属させることで主体性を軽視するリスクがある。"
+      },
+      "rationale": "市場環境の変化という外的要因に着目し、O3,Oext3を説明。個人の動機や価値観とは異なる観点を提供する。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4",
+          "O5",
+          "Oext1",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "ユーザーが『本物の節約旅行者』としての自己像や社会的立場を重視している",
+          "節約旅行が社会的に商品化・イメージ化されているという外部事実がユーザーの動機に影響している"
+        ],
+        "best_discriminating_question": "節約旅行の体験を誰かに語ったり、SNS等で発信したいと思うか？",
+        "testability_notes": "ユーザーの自己表現や発信行動の有無を確認する必要があり、やや間接的な検証となる。",
+        "safety_risk_notes": "ユーザーの動機を『自己誇示』や『社会的承認』に還元しすぎることで、本人の意図とズレる可能性や不快感を与えるリスクがある。"
+      },
+      "rationale": "観察・外部事実の広範囲を説明できるが、ユーザーの内面動機を推測するため断定的提示には注意が必要。リフレーミング仮説として有用。"
+    }
+  ]
+}

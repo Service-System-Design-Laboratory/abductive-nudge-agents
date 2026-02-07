@@ -1,0 +1,137 @@
+{
+  "hypotheses": [
+    {
+      "hypothesis_id": "H1",
+      "type": "psychological",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "O4"
+      ],
+      "assumes": [
+        "A1",
+        "A2"
+      ],
+      "statement": "ユーザーは計画通りに物事を進めることで安心感や達成感を得ている。",
+      "mechanism": "計画の遂行が自己効力感やコントロール感を高めるため、細かくスケジュールを立てている。",
+      "predictions": [
+        "予期せぬトラブルが発生するとストレスを感じやすい",
+        "計画通り進んだ場合に満足感が高い"
+      ],
+      "discriminating_questions": [
+        "計画が崩れた場合、どのような気持ちになりますか？"
+      ],
+      "persona_link": [
+        "pkg:n3"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H2",
+      "type": "skill",
+      "explains": [
+        "O2",
+        "O3"
+      ],
+      "assumes": [
+        "A1"
+      ],
+      "statement": "ユーザーはプログラミングやHCIのスキルを旅行計画にも応用している。",
+      "mechanism": "効率化や最適化への関心が、旅行計画の手法にも現れている。",
+      "predictions": [
+        "ツールやアプリを活用してルートを自動生成することに興味がある",
+        "他の場面でも効率化を重視する傾向がある"
+      ],
+      "discriminating_questions": [
+        "旅行計画に使ったツールや工夫を他の分野にも応用していますか？"
+      ],
+      "persona_link": [
+        "pkg:n3",
+        "pkg:n1",
+        "pkg:n2"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H3",
+      "type": "value",
+      "explains": [
+        "O3",
+        "O4",
+        "O5"
+      ],
+      "assumes": [
+        "A3"
+      ],
+      "statement": "ユーザーは効率化そのものに価値を置き、旅行の体験よりも計画の完成度を重視している。",
+      "mechanism": "計画の最適化や効率性の追求が自己満足や達成感につながっている。",
+      "predictions": [
+        "旅行後も計画の達成度を振り返る",
+        "効率化の方法論について他者と共有したい気持ちがある"
+      ],
+      "discriminating_questions": [
+        "旅行の思い出と計画の達成、どちらが印象に残りますか？"
+      ],
+      "persona_link": [
+        "pkg:n7"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H4",
+      "type": "evidence_gap",
+      "explains": [
+        "O5"
+      ],
+      "assumes": [
+        "A3"
+      ],
+      "statement": "ユーザーは効率化の新たな手法や外部の知見を求めているが、既存の情報源では満足できていない。",
+      "mechanism": "PKGや一般的な情報源では、ユーザーの求める効率化の具体例や探索方法が不足しているため、自分で工夫すること自体に価値を見出している。",
+      "predictions": [
+        "既存の効率化ノウハウに飽き足らず、自分なりの方法を模索している"
+      ],
+      "discriminating_questions": [
+        "他の人の旅行計画ノウハウを参考にすることに満足できますか？"
+      ],
+      "persona_link": [
+        "pkg:n120"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H5",
+      "type": "goal_mismatch",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "O4",
+        "O5",
+        "Oext1"
+      ],
+      "assumes": [
+        "A4"
+      ],
+      "statement": "ユーザーが効率化と計画の完遂に集中するあまり、現地での偶発的な発見や『本物の生活』に触れる機会を無意識に排除している可能性がある。",
+      "mechanism": "計画重視の姿勢が、実は旅行の本来の価値（現地での新しい体験や偶然の出会い）を損なっているかもしれない。",
+      "predictions": [
+        "計画外の出来事を避ける傾向が強い",
+        "現地の人との予期せぬ交流やローカルな体験が少なくなる"
+      ],
+      "discriminating_questions": [
+        "計画外の出来事や偶然の発見に魅力を感じることはありますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [
+        "ev:Oext1"
+      ],
+      "is_reframing": true
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A2"
+        ],
+        "best_discriminating_question": "本物らしさや地元らしさをどのように判断していますか？",
+        "testability_notes": "ユーザーが“本物”や“地元らしさ”をどう定義し、どのように選択しているかを尋ねることで検証できる。",
+        "safety_risk_notes": "価値観への共感を前提にすればリスクは低い。"
+      },
+      "rationale": "ユーザーの発言内容とPKGの価値観（自然との調和、里山散策）に整合的。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A2",
+          "A3"
+        ],
+        "best_discriminating_question": "地元の人との交流や信頼関係にどんな価値を感じますか？",
+        "testability_notes": "地域住民との交流や信頼を重視する発言・行動があるか確認する。",
+        "safety_risk_notes": "地域社会への憧れや帰属意識を刺激するが、断定しなければリスクは低い。"
+      },
+      "rationale": "PKGの『地域住民との信頼』や『地域行事』への関心と一致。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "A1"
+        ],
+        "best_discriminating_question": "伝統や自然との調和を感じる体験にどんな魅力を感じますか？",
+        "testability_notes": "伝統や自然との調和を重視する具体的な行動や選択を尋ねる。",
+        "safety_risk_notes": "価値観の確認なのでリスクは低い。"
+      },
+      "rationale": "PKGの価値観（自然との調和、伝統調理法）と整合的。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A2",
+          "A3"
+        ],
+        "best_discriminating_question": "地元民向けと観光客向けの違いを、どのように見分けていますか？",
+        "testability_notes": "ユーザーが“本物”と信じる体験が、実は観光客向けの演出である可能性を指摘し、気づきや違和感を尋ねる。",
+        "safety_risk_notes": "“本物”志向に疑問を投げかけるため、やや不快感を与えるリスクあり。"
+      },
+      "rationale": "外部エビデンス（performative authenticity, commodification）に基づき、ユーザーの世界観を揺さぶる。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "Oext1",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A2"
+        ],
+        "best_discriminating_question": "観光客向けを避けることで、どんな自分でありたいと感じますか？",
+        "testability_notes": "“本物志向”や“通”であることを他者や自分に示したいという動機があるかを尋ねる。",
+        "safety_risk_notes": "自己イメージや動機に踏み込むため、やや不快感や防衛的反応のリスクがある。"
+      },
+      "rationale": "PKGの過去選択（n58, n78）や外部エビデンス（performative authenticity, commodification）と合致し、発言の意味を最も大きく変える。"
+    }
+  ]
+}

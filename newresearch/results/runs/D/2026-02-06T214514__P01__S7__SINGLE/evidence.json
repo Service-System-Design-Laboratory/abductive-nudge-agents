@@ -1,0 +1,37 @@
+{
+  "triggers": [
+    {
+      "type": "focus",
+      "text": "安全への強いこだわりと、自由行動を極力制限している点に注目。"
+    },
+    {
+      "type": "information_gap",
+      "text": "なぜここまで安全を重視するようになったのか、背景が不明。"
+    },
+    {
+      "type": "ambiguity",
+      "text": "安全以外の旅行の楽しみや目的が語られていない。"
+    },
+    {
+      "type": "contradiction",
+      "text": "旅行に行く一方で、危険を強調し行動を極端に制限している。"
+    }
+  ],
+  "external_observations": [
+    {
+      "id": "Oext1",
+      "text": "海外旅行ツアーでは自由時間が設けられているが、自由行動の幅を広げるかどうかは個人の判断に委ねられている。",
+      "source_url": "https://www2.jalux.com/hoken/column/post004/"
+    },
+    {
+      "id": "Oext2",
+      "text": "自由時間でもホテルからあまり離れないほうが良いという意見があるが、街でショッピングや市場に行く人も多い。",
+      "source_url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q10144674620"
+    },
+    {
+      "id": "Oext3",
+      "text": "海外旅行は行かないのが一番安全でお金もかからないが、怖がるほど得られるものが多いという逆説的な意見もある。",
+      "source_url": "https://note.com/yuitabi1990/n/nd9da45786a00"
+    }
+  ]
+}

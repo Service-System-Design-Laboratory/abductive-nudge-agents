@@ -1,0 +1,33 @@
+{
+  "triggers": [
+    {
+      "type": "focus",
+      "text": "観光客向けと地元向けの飲食店の違いに強いこだわりがある"
+    },
+    {
+      "type": "ambiguity",
+      "text": "『本当の郷土料理』や『地元の人が通う店』の定義が曖昧"
+    },
+    {
+      "type": "information_gap",
+      "text": "なぜ観光客向けの店を強く避けるのか、背景が明示されていない"
+    }
+  ],
+  "external_observations": [
+    {
+      "id": "Oext1",
+      "text": "観光拠点の開発や観光客向けの店舗は、しばしば『経験価値』や『稼ぐ力』を重視し、地元住民のためではなく観光客の消費行動をターゲットにしている",
+      "source_url": "https://www.city.akune.lg.jp/material/files/group/104/seikaitiba_houkokusyo_r6.pdf"
+    },
+    {
+      "id": "Oext2",
+      "text": "観光マップに掲載される飲食店は、観光客のニーズや消費行動を意識して選定されることが多い",
+      "source_url": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/yokohamako/kkihon/keikaku/yamashita/joi/hokoseiiken.files/iken_itiran.pdf"
+    },
+    {
+      "id": "Oext3",
+      "text": "観光地の飲食店や体験は、しばしば『本物らしさ』を演出するためにパフォーマティブな要素を取り入れているが、必ずしも地元住民の生活実態とは一致しない",
+      "source_url": "https://www.city.akune.lg.jp/material/files/group/104/seikaitiba_houkokusyo_r6.pdf"
+    }
+  ]
+}

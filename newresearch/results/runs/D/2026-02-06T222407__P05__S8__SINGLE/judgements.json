@@ -1,0 +1,97 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O4"
+        ],
+        "key_assumptions": [
+          "A2",
+          "A3"
+        ],
+        "best_discriminating_question": "過去の感動と現在の体験が異なった場合、どのように感じると思いますか？",
+        "testability_notes": "再訪問時の感情の変化を観察することで検証可能。",
+        "safety_risk_notes": "ノスタルジーの肯定は安心感を与えるが、現実とのギャップに直面した際の落胆リスクあり。"
+      },
+      "rationale": "過去の体験と感情の再現を求める心理は自然だが、現実とのギャップを埋める説明には弱い。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3",
+          "O4",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A3"
+        ],
+        "best_discriminating_question": "最近の嵐山や竹林の道の写真やレビューを見たことがありますか？",
+        "testability_notes": "現地の現状を事前に調査し、体験と比較することで検証可能。",
+        "safety_risk_notes": "現実を伝えることでユーザーの期待を損なう可能性がある。"
+      },
+      "rationale": "外部情報とユーザーの期待のギャップを指摘できるが、ユーザーの内面動機には踏み込めていない。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O4"
+        ],
+        "key_assumptions": [
+          "A3"
+        ],
+        "best_discriminating_question": "人が多い場所でも同じように感動できると思いますか？",
+        "testability_notes": "異なる環境での感情の変化を比較することで検証可能。",
+        "safety_risk_notes": "価値観の肯定は安心感を与えるが、他の要素を見落とすリスクあり。"
+      },
+      "rationale": "価値観に基づく説明は納得感があるが、環境変化や情報ギャップの説明には弱い。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3",
+          "O4",
+          "Oext1",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "A1"
+        ],
+        "best_discriminating_question": "現地の最新情報や混雑状況を調べてみたいと思いますか？",
+        "testability_notes": "事前に現地の現状を調査し、計画や期待が変化するか観察することで検証可能。",
+        "safety_risk_notes": "情報ギャップを指摘することでユーザーの期待を裏切る可能性があるが、現実的な選択肢を提示できる。"
+      },
+      "rationale": "外部観察を踏まえ、ユーザーの期待と現実のギャップを明確に示す。発言の意味を大きく変える。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O4"
+        ],
+        "key_assumptions": [
+          "A2"
+        ],
+        "best_discriminating_question": "もし同じ場所で同じ感動が得られなかった場合、それは場所のせいだと思いますか？それとも自分の変化だと感じますか？",
+        "testability_notes": "体験後の自己評価や感情の変化を振り返ることで検証可能。",
+        "safety_risk_notes": "自己像の変化を指摘するため、やや不快感を与える可能性がある。"
+      },
+      "rationale": "感動の本質が場所ではなく自己像にある可能性を示し、深い再解釈を促す。"
+    }
+  ]
+}

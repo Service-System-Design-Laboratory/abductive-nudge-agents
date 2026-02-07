@@ -1,0 +1,76 @@
+{
+  "triggers": [
+    {
+      "type": "information_gap",
+      "text": "ユーザーは旅館とビジネスホテルの価格差（6倍）を高すぎると感じているが、その理由や旅館の付加価値についてPKGでは説明されていない。"
+    },
+    {
+      "type": "information_gap",
+      "text": "寝る場所はどこでも同じとユーザーは考えているが、実際に旅館とビジネスホテルのサービスや体験の違いについてPKGに情報がない。"
+    },
+    {
+      "type": "focus",
+      "text": "ユーザーはコスパの良い宿泊先を求めているが、具体的な選択肢や比較情報がPKGに存在しない。"
+    }
+  ],
+  "rag_queries": [
+    "旅館とビジネスホテルの価格差の理由や付加価値は何か？",
+    "旅館とビジネスホテルのサービスや体験の違いは何か？",
+    "コスパの良い宿泊先の具体例やおすすめは？"
+  ],
+  "evidence_items": [
+    {
+      "rank": 1,
+      "title": "【2025年版】ホテル・旅館のマーケティング調査レポート",
+      "snippet": "価格帯による旅行目的の違いを見ると価格が上がるにつれ宿泊施設の利用のされ方が、「利便性・効率性」から「体験の質・記念性」へと移行しています。",
+      "url": "https://www.yadoken.net/archives/column/hotel-and-ryokan-marketing-research-report",
+      "source_type": "com"
+    },
+    {
+      "rank": 2,
+      "title": "知ってる？ 旅館とホテルの違い！メリット・デメリットをご ...",
+      "snippet": "旅館はおもてなしのサービスが充実しており、ホテルはプライバシーが重視されているとも言われます。",
+      "url": "https://sotetsu-hotels.com/column/390/",
+      "source_type": "com"
+    },
+    {
+      "rank": 3,
+      "title": "なぜ駅前のビジネスホテルは温泉旅館より安いのか？",
+      "snippet": "観光庁の出している全国の宿泊施設の稼働率のデータを見ると、ビジネスホテルと旅館の稼働率は約2倍の差があります。",
+      "url": "https://diamond.jp/articles/-/338697",
+      "source_type": "com"
+    },
+    {
+      "rank": 4,
+      "title": "ホテルと旅館の違いとは？働き方やサービスの違いなど徹底 ...",
+      "snippet": "ホテルが宿泊機能を重視する一方、旅館は温泉に入りゆっくりする為の宿泊機能であり、施設を利用する目的が異なっています。",
+      "url": "https://inthehotel.jp/magazine/ryokanhotel/",
+      "source_type": "com"
+    },
+    {
+      "rank": 5,
+      "title": "旅行サイトについて・・・同じ宿なのに宿泊料金が違うのは ...",
+      "snippet": "宿泊する時の付加価値として『サービス』がありますので、その辺りに違いがあるのか知りたかったのです。",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1296036637",
+      "source_type": "other"
+    }
+  ],
+  "external_observations": [
+    {
+      "id": "Oext1",
+      "text": "旅館の高価格は単なる寝る場所の提供ではなく、『体験の質』や『記念性』という商品化された価値が付加されているためであり、宿泊施設の価格はマーケティングによって体験価値として演出されている。",
+      "source_url": "https://www.yadoken.net/archives/column/hotel-and-ryokan-marketing-research-report"
+    },
+    {
+      "id": "Oext2",
+      "text": "『おもてなし』や『本物らしさ』は、旅館業界で差別化や集客のために意図的に演出されており、サービスの質そのものが産業として設計されている。",
+      "source_url": "https://sotetsu-hotels.com/column/390/"
+    },
+    {
+      "id": "Oext3",
+      "text": "ビジネスホテルと旅館の稼働率の違いは、宿泊施設の価格やサービス構造が市場の需要や消費者の志向によって変化し続けていることを示しており、消費者の価値観が宿泊業界の構造を変質させている。",
+      "source_url": "https://diamond.jp/articles/-/338697"
+    }
+  ],
+  "notes": ""
+}

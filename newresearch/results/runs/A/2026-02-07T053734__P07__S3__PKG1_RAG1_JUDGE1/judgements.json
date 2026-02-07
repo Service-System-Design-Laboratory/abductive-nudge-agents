@@ -1,0 +1,97 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーの価値観に『地域文化への敬意』と『日本的美意識』が強く根付いていること（PKGで裏付けあり）",
+          "伝統建築や江戸時代の風情を重視する動機が、他の要因（例：SNS映え、制度的演出等）よりも主要であること"
+        ],
+        "best_discriminating_question": "金沢以外の伝統的な街並みにも同様の価値を感じますか？",
+        "testability_notes": "PKG情報とユーザーへの1-2問の質問で検証可能。外部エビデンスも補強材料となる。",
+        "safety_risk_notes": "価値観の断定的表現が含まれるため、ユーザーの多様な動機を排除しない配慮が必要。"
+      },
+      "rationale": "PKGと外部エビデンスで一定の裏付けがあり、観察O1・O2をよく説明するが、O3（美の極み評価）は他仮説との重複余地がある。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1"
+        ],
+        "key_assumptions": [
+          "ユーザーが旅行先選定において計画的運営スキルを主要な動機として発揮している（PKGで裏付けあり）",
+          "旅行の目的や行動計画が価値観や社会的要因よりも優先されている"
+        ],
+        "best_discriminating_question": "旅行前に詳細なスケジュールやリサーチを行いますか？",
+        "testability_notes": "PKG情報とユーザーへの直接質問で容易に検証可能。",
+        "safety_risk_notes": "スキル重視の解釈がユーザーの情緒的・価値観的動機を過小評価するリスクあり。"
+      },
+      "rationale": "計画的運営スキルのPKG裏付けは強いが、説明できる観察はO1のみで、他の動機を排除しきれない。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3",
+          "Oext1",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "ユーザーの美的評価や行動が、制度的保護や観光商品化の影響を受けている",
+          "『演出された本物らしさ』がユーザーの認識や発言に反映されている"
+        ],
+        "best_discriminating_question": "保存地区の保護や観光プロモーションが美的評価に影響を与えていると感じますか？",
+        "testability_notes": "外部エビデンスが豊富で、ユーザーの意識確認により検証可能。",
+        "safety_risk_notes": "ユーザーの主体的な価値観を軽視していると受け取られる可能性がある。"
+      },
+      "rationale": "外部エビデンスと観察O2・O3・Oext1・Oext2を広く説明でき、制度的要因の影響を重視する点で他仮説と差別化できる。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "ユーザーが写真映えや他者との共有を重視している",
+          "『日本の美の極み』という評価が社会的承認欲求やSNS発信と結びついている"
+        ],
+        "best_discriminating_question": "旅行の写真や体験を他者と共有することに重きを置いていますか？",
+        "testability_notes": "SNS利用状況やユーザーへの質問で比較的容易に検証可能。",
+        "safety_risk_notes": "動機を社会的承認欲求に還元することで、ユーザーの内発的価値観を軽視するリスクあり。"
+      },
+      "rationale": "観察O3と外部事実Oext2を説明できるが、O1・O2への説明力は限定的。社会的要因を強調する点が特徴。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "ユーザーが『本物を愛する自分』という自己像を維持・強化したいという心理的欲求を持っている",
+          "伝統や美意識への執着が自己同一性の確認と結びついている"
+        ],
+        "best_discriminating_question": "『本物の日本の美』を求める理由は、ご自身の価値観を確かめたいという思いと関係していますか？",
+        "testability_notes": "ユーザーの内面動機に踏み込むため、直接的な質問や深掘りが必要。検証はやや難度高。",
+        "safety_risk_notes": "ユーザーの心理を推測するため、断定的表現や過度な内面分析は誤解や不快感を生むリスクがある。"
+      },
+      "rationale": "観察・外部事実を広く説明でき、自己同一性や価値観の純粋性という深い動機に踏み込むが、検証には慎重さが求められる。"
+    }
+  ]
+}

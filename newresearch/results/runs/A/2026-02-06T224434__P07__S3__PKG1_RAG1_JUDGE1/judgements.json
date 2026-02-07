@@ -1,0 +1,106 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_linkが全てPKGに存在しない（use_pkg=trueのため、知識グラフ根拠が欠如）。"
+        ],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーが伝統的な美意識や歴史的価値観を本当に重視していること",
+          "ユーザーの満足感の源泉が伝統・歴史体験にあること"
+        ],
+        "best_discriminating_question": "現代的な観光スポットと伝統的な街並みのどちらにより魅力を感じますか？",
+        "testability_notes": "ユーザーへの価値観や動機の直接質問で比較的検証しやすいが、主観的回答に依存する。",
+        "safety_risk_notes": "価値観の断定的提示は、ユーザーの多様な動機を見落とすリスクや、押し付けと受け取られる可能性がある。"
+      },
+      "rationale": "伝統重視の価値観仮説はO1・O2をよく説明するが、PKG根拠が欠如しており、根拠の信頼性に課題がある。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "Oext1",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "ユーザーの動機形成に観光資源としての演出や写真映えが大きく影響していること",
+          "伝統的街並みの商業的価値がユーザーの訪問意欲に直結していること"
+        ],
+        "best_discriminating_question": "訪問先で写真を撮ることやSNS投稿は重視しますか？",
+        "testability_notes": "SNS利用や写真撮影の重視度を直接質問することで検証可能。観察データや行動履歴があればより客観的に検証できる。",
+        "safety_risk_notes": "ユーザーの動機を商業的・表層的と受け取られる可能性があり、動機の多様性を狭めてしまうリスクがある。"
+      },
+      "rationale": "観光資源の演出・写真映え重視の仮説は外部事実（Oext1, Oext2）と合致し、説明力が高いが、ユーザーの内的価値観を軽視するリスクもある。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_linkが全てPKGに存在しない（use_pkg=trueのため、知識グラフ根拠が欠如）。",
+          "evidence_linkが存在しないため、外部エビデンスに基づく裏付けがない（use_rag=trueのため、弱点となる）。"
+        ],
+        "explains_confirmed": [
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "ユーザーが現実逃避や心の安定を求めていること",
+          "伝統美や歴史的街並みがその心理的ニーズを満たす手段となっていること"
+        ],
+        "best_discriminating_question": "伝統的な街並みを訪れることでどのような気持ちになりますか？",
+        "testability_notes": "ユーザーの心理状態や動機を直接質問することで検証可能だが、主観的回答に依存しやすい。",
+        "safety_risk_notes": "ユーザーの心理的弱さや逃避傾向を暗示するため、配慮なく提示すると不快感や抵抗感を生む可能性がある。"
+      },
+      "rationale": "心理的動機仮説はO2・O3を説明できるが、PKG・エビデンス根拠が共に欠如し、信頼性に大きな課題がある。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_linkが全てPKGに存在しない（use_pkg=trueのため、知識グラフ根拠が欠如）。"
+        ],
+        "explains_confirmed": [
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "ユーザーの評価基準が主観的であり、他地域との比較や具体的根拠が不足していること"
+        ],
+        "best_discriminating_question": "なぜ金沢やひがし茶屋街を『日本の美の極み』と感じるのですか？",
+        "testability_notes": "ユーザーに評価理由や他地域との比較経験を尋ねることで検証可能。回答の具体性が重要。",
+        "safety_risk_notes": "ユーザーの評価を根拠薄弱・主観的と断じるため、否定的・攻撃的に受け取られるリスクがある。"
+      },
+      "rationale": "エビデンスギャップ仮説は主観性の指摘として有効だが、PKG根拠がなく、ユーザーへの配慮が必要。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_linkが全てPKGに存在しない（use_pkg=trueのため、知識グラフ根拠が欠如）。"
+        ],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "Oext1",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "ユーザーが社会的アイデンティティや承認欲求のために伝統美を強調していること",
+          "伝統や本物を重視する発言が自己イメージの演出に結びついていること"
+        ],
+        "best_discriminating_question": "伝統建築や歴史的な街並みについて語ることで、どのような自分像を周囲に伝えたいですか？",
+        "testability_notes": "ユーザーの発言傾向やSNS投稿、自己イメージへの意識を質問・観察することで検証可能。",
+        "safety_risk_notes": "ユーザーの動機を打算的・演出的と断じるため、自己認識やプライドを傷つけるリスクが高い。"
+      },
+      "rationale": "社会的アイデンティティ仮説は幅広い観察を説明できるが、PKG根拠がなく、ユーザーへの配慮が特に重要。"
+    }
+  ]
+}

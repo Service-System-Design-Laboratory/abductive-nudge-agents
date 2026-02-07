@@ -1,0 +1,90 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A2"
+        ],
+        "best_discriminating_question": "過去に危険な目にあったことがありますか？",
+        "testability_notes": "過去の体験や不安の有無を尋ねることで検証可能",
+        "safety_risk_notes": "過去の体験に触れるため、慎重な配慮が必要"
+      },
+      "rationale": "安全志向の心理的要因を中心に説明しており、観察事実をよく説明している"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A3"
+        ],
+        "best_discriminating_question": "ツアーやホテル周辺にこだわる理由に、コスト面の意識はありますか？",
+        "testability_notes": "旅行の計画や行動選択時のコスト意識を確認する質問で検証可能",
+        "safety_risk_notes": "安全志向を否定する形にならないよう配慮が必要"
+      },
+      "rationale": "PKGの節約志向・コスト最適化と行動の関連を指摘し、表面的な理由の裏に別の動機がある可能性を示す（裏切る仮説）"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3",
+          "O4",
+          "Oext1"
+        ],
+        "key_assumptions": [],
+        "best_discriminating_question": "他の旅行者の行動を見て自分の行動を決めることはありますか？",
+        "testability_notes": "集団内での行動選択や他者の影響を尋ねることで検証可能",
+        "safety_risk_notes": "個人の主体性を軽視しないよう注意"
+      },
+      "rationale": "外部観察（Oext1）を活用し、観察者効果の社会的側面を説明"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3",
+          "Oext2"
+        ],
+        "key_assumptions": [],
+        "best_discriminating_question": "本当はもっと自由に行動したいと思うことはありますか？",
+        "testability_notes": "旅行への満足度や本音を尋ねることで検証可能",
+        "safety_risk_notes": "ユーザーの現状満足度を否定しないよう配慮"
+      },
+      "rationale": "旅行の目的と実際の行動にズレがある可能性を指摘し、満足度向上のヒントとなる"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [],
+        "best_discriminating_question": "治安情報を見て不安が増すことはありますか？",
+        "testability_notes": "情報収集と不安の関係を尋ねることで検証可能",
+        "safety_risk_notes": "不安を煽らないよう慎重な表現が必要"
+      },
+      "rationale": "リスク認知と情報収集の関係に着目し、行動の背景を説明"
+    }
+  ]
+}

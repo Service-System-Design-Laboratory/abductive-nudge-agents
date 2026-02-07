@@ -1,0 +1,99 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーが計画的運営スキルを持ち、それを発揮すること自体に満足感を感じている",
+          "節約行動が自己効力感や達成感と結びついている"
+        ],
+        "best_discriminating_question": "普段の生活や仕事でも、計画的に物事を進めることに満足感を感じますか？",
+        "testability_notes": "ユーザーへの1～2問の質問で傾向を把握しやすい。PKGにも該当ノードがあり、裏付けが取りやすい。",
+        "safety_risk_notes": "ユーザーの性格や価値観を断定的に見せる表現は避ける必要がある。"
+      },
+      "rationale": "計画的運営スキルの活用というPKG裏付けがあり、O1・O2の説明力は高いが、他の観察（O3～O5）への説明はやや弱い。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "ユーザーが宿泊施設の最新情報を十分に把握していない",
+          "外部環境として安価な宿泊オプションが増加している"
+        ],
+        "best_discriminating_question": "ネットカフェやサウナ、ゲストハウスなどの宿泊体験はありますか？",
+        "testability_notes": "ユーザーの経験や情報収集範囲を直接質問することで検証可能。外部エビデンスも利用できる。",
+        "safety_risk_notes": "ユーザーの情報感度やリテラシーを低く見積もっているように受け取られるリスクがある。"
+      },
+      "rationale": "外部エビデンスで裏付けがあり、O2・Oext1の説明力は高いが、他の観察への説明は限定的。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O3",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "ユーザーが地域文化への敬意や現地体験を重視している",
+          "節約行動と現地体験重視が両立しうる"
+        ],
+        "best_discriminating_question": "現地の無料イベントや地域体験に興味を持っていますか？",
+        "testability_notes": "PKGに該当ノードがあり、ユーザーへの質問でも検証しやすい。外部エビデンスも利用可。",
+        "safety_risk_notes": "価値観の多様性を認めつつ提示しないと、ユーザーの動機を単純化しすぎるリスクがある。"
+      },
+      "rationale": "PKG・エビデンスの両面で裏付けがあり、O1・O3・Oext3の説明力が高い。O5への説明はやや弱い。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O4",
+          "O5"
+        ],
+        "key_assumptions": [
+          "ユーザーがスーパーや地元食堂などの安価な食事方法の情報を十分に持っていない",
+          "外部の節約術情報がユーザーの選択肢に影響しうる"
+        ],
+        "best_discriminating_question": "旅行先のスーパーや格安食堂を調べたり利用したことはありますか？",
+        "testability_notes": "ユーザーへの直接質問や、エビデンスの参照で検証しやすい。",
+        "safety_risk_notes": "ユーザーの情報収集力や判断を否定的に受け取られる可能性がある。"
+      },
+      "rationale": "O4・O5の説明力が高く、外部エビデンスも存在する。仮説の射程が限定的で、他の観察への説明は弱い。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4",
+          "O5",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "ユーザーが節約志向を自己や他者に示すこと自体に価値を感じている",
+          "節約行動がアイデンティティの一部となっている"
+        ],
+        "best_discriminating_question": "節約旅行の工夫や結果を人に話したり、SNSで発信したことはありますか？",
+        "testability_notes": "ユーザーへの質問やSNS発信履歴の確認で検証可能。PKG・エビデンス両方で裏付けがある。",
+        "safety_risk_notes": "ユーザーの動機を「見栄」や「誇示」と受け取られるリスクがあり、配慮した表現が必要。"
+      },
+      "rationale": "PKG・エビデンス両面で裏付けがあり、ほぼ全ての観察を説明できる。動機の解釈がセンシティブなため、提示時の配慮が重要。"
+    }
+  ]
+}

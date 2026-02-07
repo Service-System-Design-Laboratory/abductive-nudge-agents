@@ -1,0 +1,95 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーがデータ分析やコスト最適化のスキルを持ち、それを撮影プロセスに応用している",
+          "効率化への関心がスキルに基づく合理的動機から生じている"
+        ],
+        "best_discriminating_question": "撮影後に写真の出来やSNSでの反応を数値化して評価していますか？",
+        "testability_notes": "ユーザーへの直接質問や行動観察で比較的容易に検証可能。",
+        "safety_risk_notes": "スキルや合理性を強調しすぎると、ユーザーの感情的・創造的動機を軽視していると受け取られる可能性がある。"
+      },
+      "rationale": "PKGとの整合性が高く、観察O1・O2をよく説明するが、O4（効率的なコツの模索）への説明はやや間接的。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O4",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "三脚利用規制がユーザーの撮影行動に実際に影響を与えている",
+          "ユーザーが規制回避のために効率化を求めている"
+        ],
+        "best_discriminating_question": "三脚が使えない場所ではどのように撮影していますか？",
+        "testability_notes": "外部エビデンスやユーザーの行動観察で検証しやすい。",
+        "safety_risk_notes": "規制の影響を強調しすぎると、ユーザーの主体的な工夫や価値観を過小評価するリスクがある。"
+      },
+      "rationale": "外部エビデンス（ev:5）とOext2を直接説明し、O2・O4も納得感をもってカバー。環境要因に依存する点が明確。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O3"
+        ],
+        "key_assumptions": [
+          "ユーザーが節約志向・コスト最適化の価値観を持ち、それが撮影行動に反映されている",
+          "効率化の動機が経済的合理性に基づく"
+        ],
+        "best_discriminating_question": "撮影機材や旅行先を選ぶ際に費用を重視していますか？",
+        "testability_notes": "PKGとの照合やユーザーインタビューで検証可能。",
+        "safety_risk_notes": "コスト意識を強調しすぎると、ユーザーの趣味性や審美的動機を軽視していると受け取られる可能性がある。"
+      },
+      "rationale": "PKGの節約志向・コスト最適化と合致し、O1・O3を説明。O4への説明はやや間接的。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O4"
+        ],
+        "key_assumptions": [
+          "ユーザーが効率的な撮影ノウハウや最新トレンドに十分アクセスできていない",
+          "知識や経験の不足が効率化ニーズの主因である"
+        ],
+        "best_discriminating_question": "映える写真の撮り方について専門家のガイドや記事を参考にしていますか？",
+        "testability_notes": "ユーザーの情報収集行動や知識レベルの確認が必要で、やや検証に手間がかかる。",
+        "safety_risk_notes": "知識不足を指摘する内容が、ユーザーの自尊心を損なうリスクがある。"
+      },
+      "rationale": "O4（効率的なコツの模索）に特化して説明し、外部エビデンスとも整合。説明範囲は限定的。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3",
+          "O4",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "ユーザーの主動機が他者承認や社会的期待への適応である",
+          "効率化志向が独自性よりも標準化・承認欲求に基づく"
+        ],
+        "best_discriminating_question": "SNSでの反応や『いいね』の数を気にして撮影方法を変えることがありますか？",
+        "testability_notes": "ユーザーの自己認識やSNS行動の観察で検証可能だが、内面動機のためやや主観的。",
+        "safety_risk_notes": "ユーザーの動機を『他者承認』に還元しすぎると、個人の創造性や主体性を否定的に捉えられるリスクがある。"
+      },
+      "rationale": "O3・O4・Oext3をよく説明し、PKGとも一部整合。リフレーミング仮説として動機の深層を掘り下げている。"
+    }
+  ]
+}

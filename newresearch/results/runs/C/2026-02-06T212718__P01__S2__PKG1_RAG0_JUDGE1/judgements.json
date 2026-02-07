@@ -1,0 +1,97 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O4",
+          "O5"
+        ],
+        "key_assumptions": [
+          "ユーザーはコントロール欲求が強く、安心感や自己効力感を得るために計画・管理を重視している"
+        ],
+        "best_discriminating_question": "過去に計画が崩れたとき、どのような感情や行動が現れましたか？",
+        "testability_notes": "ユーザーへの1～2問の質問で検証可能。PKGにも一部根拠がある。",
+        "safety_risk_notes": "コントロール欲求や不安傾向を指摘するため、断定的・病理的に受け取られないよう配慮が必要。"
+      },
+      "rationale": "観察の多くを説明でき、PKGにも裏付けがある。ユーザーの内的動機に踏み込むため、慎重な伝え方が望ましい。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "ユーザーは観光地の網羅やスポット制覇自体に価値を感じている"
+        ],
+        "best_discriminating_question": "旅行後、訪れた場所の数やルートを他人に説明したくなりますか？",
+        "testability_notes": "ユーザーの価値観や満足感の源泉を尋ねる質問で検証可能。PKGに一部根拠あり。",
+        "safety_risk_notes": "『数稼ぎ』的な価値観と受け取られ、ユーザーの旅行観を単純化しすぎるリスクがある。"
+      },
+      "rationale": "スポット制覇志向を説明できるが、観察O2やO5は直接説明しない。価値観の押し付けに注意。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "現地の混雑や交通制約など外的要因が効率化行動の主因である"
+        ],
+        "best_discriminating_question": "現地の混雑状況や交通機関の本数などを事前に調査しましたか？",
+        "testability_notes": "現地事情の調査有無を聞くことで検証可能。PKGには直接的根拠はないが、use_pkg条件下では問題なし。",
+        "safety_risk_notes": "ユーザーの主体性を軽視していると受け取られる可能性がある。"
+      },
+      "rationale": "外的要因に着目し、観察の一部を説明。内発的動機を仮定しない点が他仮説と異なる。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O3",
+          "O5"
+        ],
+        "key_assumptions": [
+          "ユーザーの計画には現地体験や交流の要素が十分に組み込まれていない"
+        ],
+        "best_discriminating_question": "スケジュールに現地の人との交流やイベント参加の時間は含まれていますか？",
+        "testability_notes": "スケジュール内容やユーザーの重視点を確認することで検証可能。PKGに強い根拠あり。",
+        "safety_risk_notes": "『情報ギャップ』の指摘がユーザーの計画力や価値観を否定的に捉えられるリスクがある。"
+      },
+      "rationale": "PKGと強く連動し、現地体験の不足という観点で独自性がある。ユーザーの意図を誤解しない配慮が必要。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4",
+          "O5"
+        ],
+        "key_assumptions": [
+          "ユーザーは『理想的な旅行者』像を意識し、他者への誇示や社会的役割の演出を重視している"
+        ],
+        "best_discriminating_question": "旅行計画や実績を他人に伝えたりSNSで発信することに重きを置いていますか？",
+        "testability_notes": "SNS発信や他者への説明行動の有無を問うことで検証可能。PKGに一部根拠あり。",
+        "safety_risk_notes": "ユーザーの行動を『見栄』や『演出』と断定する印象を与えやすく、配慮が必要。"
+      },
+      "rationale": "観察全体を説明でき、社会的動機の仮説として有力。他仮説と区別しやすいが、伝え方に注意。"
+    }
+  ]
+}

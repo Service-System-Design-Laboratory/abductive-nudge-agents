@@ -1,0 +1,92 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーが本物志向や地元文化への関心を強く持っている",
+          "観光地化された体験を一貫して避ける価値観が行動に反映されている"
+        ],
+        "best_discriminating_question": "飲食以外の場面でも観光地化された体験を避ける傾向がありますか？",
+        "testability_notes": "ユーザーの他分野での選択傾向や価値観を1-2問で確認できるため、比較的検証しやすい。",
+        "safety_risk_notes": "価値観を断定的に決めつける印象を与えやすい。ユーザーの多様な動機を排除しない表現が望ましい。"
+      },
+      "rationale": "観察O1・O2を自然に説明でき、PKGとも整合的。ただし価値観の一元的解釈には注意が必要。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーがデータ分析や情報探索のスキルを実際に活用している",
+          "飲食店選びにおいて直感よりも情報分析を重視している"
+        ],
+        "best_discriminating_question": "飲食店選びの際にどのような情報収集や分析を行っていますか？",
+        "testability_notes": "ユーザーの行動や意思決定プロセスを具体的に質問することで検証可能。PKGのスキル記述とも照合しやすい。",
+        "safety_risk_notes": "スキル活用を過大評価すると、ユーザーの実態と乖離する可能性がある。"
+      },
+      "rationale": "PKGのスキル情報と整合的で、O2の説明力は高いが、O1やO3には直接的な説明力が弱い。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3"
+        ],
+        "key_assumptions": [
+          "ユーザーが節約志向・低予算旅行を重視している",
+          "コストパフォーマンスを重視した結果として地元密着型の店を選んでいる"
+        ],
+        "best_discriminating_question": "チェーン店やフードコートを避けるのはコスト面も理由ですか？",
+        "testability_notes": "コスト意識や選択理由を直接質問することで検証しやすい。PKGの節約志向とも照合可能。",
+        "safety_risk_notes": "コスト重視と断定することで、他の動機（文化・体験重視等）を軽視していると受け取られるリスクがある。"
+      },
+      "rationale": "O3の説明には強いが、O1・O2の文化的側面の説明は弱い。PKGとの整合性は高い。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーが『地元の人が通う店』や『本当の郷土料理』の明確な定義を持っていない",
+          "意思決定が理想像やイメージに依存している"
+        ],
+        "best_discriminating_question": "『地元の人が毎日通う店』の基準や見分け方を具体的に説明できますか？",
+        "testability_notes": "ユーザーに基準や定義を尋ねることで容易に検証可能。曖昧さの有無が明確に分かる。",
+        "safety_risk_notes": "ユーザーの判断力や知識を否定的に捉えられる可能性があるため、配慮した表現が必要。"
+      },
+      "rationale": "O2の背景にある曖昧さを指摘する仮説で、他仮説と補完的。PKGに基準情報がない点も妥当。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "ユーザーが『通』である自分のアイデンティティを強く求めている",
+          "実際の体験よりも自己像や他者との差異化が主目的となっている"
+        ],
+        "best_discriminating_question": "本当に重要なのは食体験そのものですか、それとも“通”である自分の立場ですか？",
+        "testability_notes": "ユーザーの自己認識や他者への語り方を問うことで検証可能だが、やや内省的な質問となる。",
+        "safety_risk_notes": "ユーザーの動機を自己満足や承認欲求と断定するため、誤解や不快感を与えるリスクが高い。慎重な提示が必要。"
+      },
+      "rationale": "全観察を説明できるが、動機の解釈が主観的でセンシティブ。PKGの複数要素を統合的に扱っている点は強み。"
+    }
+  ]
+}

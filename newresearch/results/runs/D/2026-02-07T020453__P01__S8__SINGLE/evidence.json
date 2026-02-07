@@ -1,0 +1,28 @@
+{
+  "triggers": [
+    {
+      "type": "information_gap",
+      "text": "現在の嵐山や竹林の道の状況が、ユーザーの記憶と一致するか不明。"
+    },
+    {
+      "type": "ambiguity",
+      "text": "『同じ感動』が何によってもたらされるのかが明確ではない。"
+    },
+    {
+      "type": "focus",
+      "text": "静けさや人の少なさが感動の中心にあるようだが、他の要素が関与していないか。"
+    }
+  ],
+  "external_observations": [
+    {
+      "id": "Oext1",
+      "text": "現在の嵐山・竹林の小径は、海外からの観光客で埋め尽くされていることが多い。",
+      "source_url": "https://www.instagram.com/p/DL8WpLoz_of/"
+    },
+    {
+      "id": "Oext2",
+      "text": "竹林の小径では落書きや私有地への無断侵入など、観光公害が深刻化している。",
+      "source_url": "https://www.youtube.com/watch?v=Wovh0x4x4eQ"
+    }
+  ]
+}

@@ -1,0 +1,377 @@
+{
+  "context": {
+    "observations": [
+      {
+        "id": "O1",
+        "text": "旅館に一泊3万円は高すぎると感じている。"
+      },
+      {
+        "id": "O2",
+        "text": "ビジネスホテルなら5000円で泊まれると認識している。"
+      },
+      {
+        "id": "O3",
+        "text": "6倍も払う必要があることに納得していない。"
+      },
+      {
+        "id": "O4",
+        "text": "寝る場所はどこでも同じだと考えている。"
+      },
+      {
+        "id": "O5",
+        "text": "コスパの良い宿泊先をもっと知りたいと希望している。"
+      }
+    ],
+    "assumptions": [
+      {
+        "id": "A1",
+        "text": "宿泊施設の主な価値は寝る場所としての機能にある。",
+        "status": "tentative"
+      },
+      {
+        "id": "A2",
+        "text": "価格が高い宿泊先はコストパフォーマンスが悪い。",
+        "status": "tentative"
+      },
+      {
+        "id": "A3",
+        "text": "体験やサービスよりも費用対効果を重視している。",
+        "status": "tentative"
+      },
+      {
+        "id": "A4",
+        "text": "他の人も同じように感じている可能性がある。",
+        "status": "tentative"
+      }
+    ],
+    "questions": [
+      "なぜ旅館の価格が高いのか、その理由に納得できる点はあるか？",
+      "ビジネスホテルと旅館で、寝る以外の体験に違いを感じたことはあるか？",
+      "コスパ以外で宿泊先に求めるものは何か？",
+      "他の人の選択や価値観が気になるか？"
+    ],
+    "constraints": {
+      "tone": "supportive",
+      "safety": "avoid determinism"
+    }
+  },
+  "evidence": {
+    "triggers": [
+      {
+        "type": "information_gap",
+        "text": "旅館とビジネスホテルの価格差の理由や価値の違いについて、ユーザーが十分な情報を持っていない。"
+      },
+      {
+        "type": "ambiguity",
+        "text": "『寝る場所はどこでも同じ』という考えが、体験やサービスの違いを無視している可能性がある。"
+      },
+      {
+        "type": "contradiction",
+        "text": "コスパ重視だが、体験や価値の多様性を考慮していない点。"
+      },
+      {
+        "type": "focus",
+        "text": "コスパの良い宿泊先に強い関心がある。"
+      }
+    ],
+    "external_observations": [
+      {
+        "id": "Oext1",
+        "text": "多くの人が観光メインの場合、ホテルは寝るだけの場所と考え、安いビジネスホテルを選ぶ傾向がある。",
+        "source_url": "https://komachi.yomiuri.co.jp/topics/id/787363/"
+      },
+      {
+        "id": "Oext2",
+        "text": "限られた予算で旅をしても、地元の安い料理や体験が高級なものより楽しいと感じる人もいる。",
+        "source_url": "https://www.reddit.com/r/travel/comments/1qdkave/what_country_gave_you_the_most_value_for_the/?tl=ja"
+      },
+      {
+        "id": "Oext3",
+        "text": "ホテルの価格は時期によって大きく変動し、同じ施設でも倍以上になることがある。",
+        "source_url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q14299803274"
+      },
+      {
+        "id": "Oext4",
+        "text": "ビジネスホテルに高額を払うことを避け、少しの追加でシティホテルを選ぶ人もいる。価格だけでなく体験を重視する選択も存在する。",
+        "source_url": "https://www.threads.com/@randorhythm/post/DUCnwTADyrI/%E7%A7%81%E3%81%AF%E3%83%93%E3%82%B8%E3%83%8D%E3%82%B9%E3%83%9B%E3%83%86%E3%83%AB%E3%81%AB%E9%80%9A%E5%B8%B8%E3%81%AE%E4%BD%95%E5%80%8D%E3%82%82%E6%89%95%E3%81%A3%E3%81%A6%E6%B3%8A%E3%81%BE%E3%82%8B%E3%81%AE%E3%81%8C%E5%AB%8C%E3%81%AA%E3%81%AE%E3%81%A7%E3%81%9D%E3%81%93%E3%81%AF%E6%84%8F%E5%9C%B0%E3%81%A7%E3%82%82%E9%81%B8%E3%81%B3%E3%81%BE%E3%81%9B%E3%82%93%E7%AC%91%E3%81%9D%E3%82%8C%E3%82%88%E3%82%8A%E9%AB%98%E3%81%8F%E3%81%AA%E3%81%A3%E3%81%A6%E3%82%82%E5%B0%91%E3%81%97%E3%81%AE%E3%82%A2%E3%83%83%E3%83%97%E3%81%A7%E6%B3%8A%E3%81%BE%E3%82%8C%E3%82%8B%E3%82%B7%E3%83%86%E3%82%A3%E3%83%9B%E3%83%86%E3%83%AB%E9%81%B8%E3%82%93%E3%81%A7%E3%81%BE%E3%81%99%E5%87%BA%E8%B2%BB%E5%A2%97%E3%81%88%E3%81%A6%E3%82%82%E3%81%AA"
+      }
+    ]
+  },
+  "hypotheses": [
+    {
+      "hypothesis_id": "H1",
+      "type": "psychological",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "O4"
+      ],
+      "assumes": [
+        "A1",
+        "A2"
+      ],
+      "statement": "ユーザーは宿泊施設の機能的価値（寝る場所）を最重視し、付加価値や体験には関心が薄い。",
+      "mechanism": "費用対効果を重視する性格特性が、価格差への強い反発や体験価値の軽視につながっている。",
+      "predictions": [
+        "今後も価格が安い宿泊先を優先して選ぶ",
+        "高額な宿泊先のサービス内容にはあまり関心を示さない"
+      ],
+      "discriminating_questions": [
+        "旅館でしか得られない体験やサービスに興味を持ったことはありますか？"
+      ],
+      "persona_link": [
+        "pkg:p07_n6"
+      ],
+      "evidence_link": [
+        "ev:Oext1"
+      ],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H2",
+      "type": "value",
+      "explains": [
+        "O1",
+        "O3",
+        "O5"
+      ],
+      "assumes": [
+        "A2",
+        "A3"
+      ],
+      "statement": "ユーザーはコストパフォーマンスを重視する価値観を持ち、無駄な出費を避けることが自己効力感や満足感につながっている。",
+      "mechanism": "コスパ志向が強く、支出を抑えること自体が達成感や安心感をもたらす。",
+      "predictions": [
+        "他の分野でもコスパ重視の選択をする傾向がある",
+        "高額なサービスには理由がない限り納得しない"
+      ],
+      "discriminating_questions": [
+        "旅行以外でもコスパを重視して選択することが多いですか？"
+      ],
+      "persona_link": [
+        "pkg:p07_n6",
+        "pkg:p07_n1"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H3",
+      "type": "social",
+      "explains": [
+        "O5",
+        "Oext1"
+      ],
+      "assumes": [
+        "A4"
+      ],
+      "statement": "ユーザーは他者の選択や一般的な傾向を気にしており、周囲と同じようなコスパ重視の宿泊選びをしたいと考えている。",
+      "mechanism": "社会的証明や同調圧力が、コスパの良い選択を求める動機となっている。",
+      "predictions": [
+        "口コミや他人の選択を参考にする",
+        "『みんなが選ぶ』宿泊先を好む"
+      ],
+      "discriminating_questions": [
+        "他の人の宿泊先選びや口コミを参考にしていますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [
+        "ev:Oext1"
+      ],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H4",
+      "type": "environmental",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "Oext3"
+      ],
+      "assumes": [
+        "A2"
+      ],
+      "statement": "宿泊料金の高騰は時期や需給によるもので、ユーザーの価値観とは別に外部環境が価格を押し上げている。",
+      "mechanism": "旅行シーズンやイベント時には価格が高騰し、通常のコスパ感覚が通用しなくなる。",
+      "predictions": [
+        "オフシーズンは旅館も安くなる",
+        "価格変動を調べれば納得できる場合がある"
+      ],
+      "discriminating_questions": [
+        "時期による価格変動について調べたことはありますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [
+        "ev:Oext3"
+      ],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H5",
+      "type": "goal_mismatch",
+      "explains": [
+        "O1",
+        "O3",
+        "O4",
+        "Oext4"
+      ],
+      "assumes": [
+        "A1",
+        "A3"
+      ],
+      "statement": "ユーザーは『寝る場所はどこでも同じ』と考えているが、実は旅館の価格には体験やサービス、文化的価値が含まれており、その価値を見落としている可能性がある。",
+      "mechanism": "機能的価値だけに注目し、体験価値や文化的側面を無意識に軽視しているため、価格の意味を誤解している。",
+      "predictions": [
+        "旅館の体験や文化的サービスに触れると印象が変わるかもしれない",
+        "他人が体験価値を重視して選ぶ理由に共感しにくい"
+      ],
+      "discriminating_questions": [
+        "旅館での食事やおもてなし、文化体験に価値を感じたことはありますか？"
+      ],
+      "persona_link": [
+        "pkg:p07_n2",
+        "pkg:p07_n4",
+        "pkg:p07_n5"
+      ],
+      "evidence_link": [
+        "ev:Oext4"
+      ],
+      "is_reframing": true
+    }
+  ],
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A2"
+        ],
+        "best_discriminating_question": "旅館でしか得られない体験やサービスに興味を持ったことはありますか？",
+        "testability_notes": "体験価値やサービスへの関心度を質問で確認できる。",
+        "safety_risk_notes": "価値観を否定しないよう配慮が必要。"
+      },
+      "rationale": "ユーザーの発言全体を素直に説明できるが、体験価値を完全に無視している可能性あり。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O3",
+          "O5"
+        ],
+        "key_assumptions": [
+          "A2",
+          "A3"
+        ],
+        "best_discriminating_question": "旅行以外でもコスパを重視して選択することが多いですか？",
+        "testability_notes": "他分野での選択傾向を聞くことで検証可能。",
+        "safety_risk_notes": "コスパ志向を肯定的に扱う必要がある。"
+      },
+      "rationale": "コスパ重視の価値観を説明するが、体験価値や外部要因を考慮していない。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [
+          "ユーザーが他人の意見を重視している証拠が弱い。"
+        ],
+        "explains_confirmed": [
+          "O5",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "A4"
+        ],
+        "best_discriminating_question": "他の人の宿泊先選びや口コミを参考にしていますか？",
+        "testability_notes": "他者参照行動の有無を質問で確認。",
+        "safety_risk_notes": "他者依存と受け取られないよう注意。"
+      },
+      "rationale": "外部観察と合致するが、ユーザー発言の根拠がやや薄い。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "A2"
+        ],
+        "best_discriminating_question": "時期による価格変動について調べたことはありますか？",
+        "testability_notes": "価格変動の認識有無を質問で確認。",
+        "safety_risk_notes": "価格変動の説明がユーザーの価値観を否定しないよう配慮。"
+      },
+      "rationale": "外部要因による価格変動の説明が加わり、納得感を補強できる。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O3",
+          "O4",
+          "Oext4"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A3"
+        ],
+        "best_discriminating_question": "旅館での食事やおもてなし、文化体験に価値を感じたことはありますか？",
+        "testability_notes": "体験価値や文化的側面への関心を質問で確認。",
+        "safety_risk_notes": "『見落としている』という表現が上から目線にならないよう注意。"
+      },
+      "rationale": "ユーザーの発言の前提を反転させ、体験価値や文化的側面への気づきを促す。"
+    }
+  ],
+  "decision": {
+    "selected_hypothesis_id": "H5",
+    "contrasting_hypothesis_id": "H4",
+    "selection_rationale": "H5はユーザーの『寝る場所はどこでも同じ』という主張を、実は体験価値や文化的サービスを見落としている可能性として再解釈する。これにより、ユーザーの発言の意味が『コスパ重視』から『価値の捉え方に盲点があるかもしれない』に変わる。H4は価格差を外部環境要因で説明し、ユーザーの価値観自体は肯定する立場。どちらの立場に立つかで、今後の宿泊先選びや体験への注目点が大きく変わる。",
+    "user_facing_frame": {
+      "framing": "options",
+      "questions": [
+        "旅館での食事やおもてなし、文化体験に価値を感じたことはありますか？",
+        "それとも、価格差は単に時期や外部要因によるものだと感じますか？"
+      ],
+      "options": [
+        "体験や文化的価値に注目してみる立場（H5）",
+        "価格変動など外部環境に注目する立場（H4）"
+      ]
+    }
+  },
+  "final_response": "ご自身が『寝る場所はどこでも同じ』と感じるのはとても自然なことだと思いますし、コスパを重視する姿勢も大切な価値観ですね（acknowledgement）。一方で、旅館の価格には食事やおもてなし、地域文化の体験といった『寝る』以外の価値が含まれていることもあります（reflection）。もし、これまで旅館での体験やサービスに注目したことがなければ、次回は少しだけその視点で見てみると新しい発見があるかもしれません（perspective_prompt）。\n\nまた、ホテルや旅館の価格は時期や需要によって大きく変動することも多いので、オフシーズンを狙うと同じ施設でもずっと安く泊まれる場合もあります。実際に他の方も『寝るだけならビジネスホテル』という選択をしている例が多いようです。\n\nそこで、次の2つの立場から選んでみてはいかがでしょうか？\n1. 体験や文化的価値に注目してみる（例えば、旅館の食事やおもてなし、地域の文化イベントに参加してみる）\n2. 価格変動など外部環境に注目して、コスパの良い時期や宿泊先を探してみる\n\nどちらの立場で次の旅行を考えてみたいですか？また、旅館でしか得られない体験に興味を持ったことがあるか、あるいは価格差は外部要因だと感じるか、ぜひ教えてください。\n\nまずは5分だけ、気になる旅館の『体験』や『サービス』の口コミを調べてみるのもおすすめです。あなたの価値観を大切にしつつ、新しい選択肢が広がるきっかけになれば嬉しいです。",
+  "markers": {
+    "empathy": {
+      "acknowledgement": true,
+      "reflection": true,
+      "perspective_prompt": true
+    },
+    "nudge": {
+      "easy": true,
+      "attractive": true,
+      "social": true,
+      "timely": true,
+      "has_question": true,
+      "has_options": true,
+      "has_small_action": true,
+      "directive_level": "low"
+    }
+  }
+}

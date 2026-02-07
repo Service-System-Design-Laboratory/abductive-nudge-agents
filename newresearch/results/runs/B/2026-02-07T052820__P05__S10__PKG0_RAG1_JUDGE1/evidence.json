@@ -1,0 +1,73 @@
+{
+  "triggers": [
+    {
+      "type": "information_gap",
+      "text": "ユーザーが求めている『効率的に映える写真を撮るコツ』の具体的な方法やテクニックが観察・仮定からは明らかでない。"
+    },
+    {
+      "type": "focus",
+      "text": "SNSにアップするための完璧な写真を撮ることが旅の目的であり、SNS映えを重視している点に特に注目すべき。"
+    }
+  ],
+  "rag_queries": [
+    "SNS映えする写真を効率的に撮影するコツ",
+    "旅行中に三脚を使ってベストアングルを素早く見つける方法",
+    "SNSで高評価を得られる写真の撮影テクニック",
+    "写真撮影の効率化に役立つアイテムやアプリ"
+  ],
+  "evidence_items": [
+    {
+      "rank": 1,
+      "title": "インスタ映えする「おしゃれな写真の撮り方」入門ガイド",
+      "snippet": "インスタ映えする写真を撮るには、自然光を取り入れるのもおススメです。 自然光は太陽からの光であり、自然な色合いを引き出すことができます。被写体の ...",
+      "url": "https://unique1.co.jp/column/sns_operation/8580/",
+      "source_type": "com"
+    },
+    {
+      "rank": 2,
+      "title": "インスタ映えする写真の撮り方と加工方法を徹底解説",
+      "snippet": "風景を美しく撮影するには、アングルを水平に保ち、自然光が差し込む時間帯を選ぶことが大切です。 水平に撮ることで写真に安定感が生まれ、バランスの ...",
+      "url": "https://sns-nakodo.com/photographs-that-shine/",
+      "source_type": "com"
+    },
+    {
+      "rank": 3,
+      "title": "写真が変われば「いいね」が増える！インスタ映えする写真の ...",
+      "snippet": "まず、なるべく引きの構図で撮影することを心がけます。どこで撮っているのかわかるようにすることや、空を広く写して圧迫感のない写真に仕上げることがポイントです。",
+      "url": "https://jp.omsystem.com/product/dslr/beginner/photo-technique-instagram/index.html?srsltid=AfmBOopuSEc1CkUEb1pJP66QFyacMDlmIXj8jB2PjwQrDernsQ8dESfA",
+      "source_type": "com"
+    },
+    {
+      "rank": 4,
+      "title": "くねくね三脚で快適撮影へのステップ",
+      "snippet": "まず、100均の鏡を使って反射を利用する方法が効果的です。また、スマホを逆さまにして撮影することで、ユニークなアングルを得ることができます。次 ...",
+      "url": "https://www.lemon8-app.com/yuimonca/7144653976611455494?region=jp",
+      "source_type": "com"
+    },
+    {
+      "rank": 5,
+      "title": "@みさに返信 手元って俯瞰撮影のことだと思うんですが、三脚 ...",
+      "snippet": "@みさ に返信 手元って俯瞰撮影のことだと思うんですが、三脚の脚が映らないように角度を少し調整すれば使えますよ！ 撮影 機材 · カメラ撮ってる風編集.",
+      "url": "https://www.tiktok.com/@nacchi_gadget/video/7226908474146344193",
+      "source_type": "com"
+    }
+  ],
+  "external_observations": [
+    {
+      "id": "Oext1",
+      "text": "SNS映えする写真の撮影テクニックや機材が商品化され、一般消費者向けに大量に販売・紹介されている。",
+      "source_url": "https://unique1.co.jp/column/sns_operation/8580/"
+    },
+    {
+      "id": "Oext2",
+      "text": "『本物らしい』写真を演出するための加工や構図のテクニックが、SNSでの評価やマーケティングの一部として体系化されている。",
+      "source_url": "https://sns-nakodo.com/photographs-that-shine/"
+    },
+    {
+      "id": "Oext3",
+      "text": "多くの人が映える写真を求めて同じ絶景ポイントや撮影方法を模倣することで、景観や写真の個性が失われる現象が起きている。",
+      "source_url": "https://jp.omsystem.com/product/dslr/beginner/photo-technique-instagram/index.html?srsltid=AfmBOopuSEc1CkUEb1pJP66QFyacMDlmIXj8jB2PjwQrDernsQ8dESfA"
+    }
+  ],
+  "notes": "外部観察は、商品化・演出された本物らしさ・観察者効果（模倣による個性の喪失）を意識して抽出しています。ユーザーの価値観を揺さぶる構造的事実を優先しました。"
+}

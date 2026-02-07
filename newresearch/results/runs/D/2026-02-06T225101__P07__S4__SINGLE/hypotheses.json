@@ -1,0 +1,148 @@
+{
+  "hypotheses": [
+    {
+      "hypothesis_id": "H1",
+      "type": "psychological",
+      "explains": [
+        "O1",
+        "O2",
+        "O3"
+      ],
+      "assumes": [
+        "A1",
+        "A2"
+      ],
+      "statement": "ユーザーは本物志向やオーセンティシティへの強い欲求から、観光客向けやチェーン店を避けている。",
+      "mechanism": "本物の体験や食文化を大切にしたいという価値観が、選択行動に現れている。",
+      "predictions": [
+        "観光地でも地元民が集う場所を優先する",
+        "観光地らしい演出や装飾を嫌う"
+      ],
+      "discriminating_questions": [
+        "観光地らしい演出があっても、味が本物なら受け入れられるか？"
+      ],
+      "persona_link": [
+        "pkg:p07_n2",
+        "pkg:p07_n5"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H2",
+      "type": "social",
+      "explains": [
+        "O1",
+        "O2",
+        "O3"
+      ],
+      "assumes": [
+        "A2"
+      ],
+      "statement": "ユーザーは地元コミュニティとのつながりや、地域文化への敬意を大事にしているため、観光客向けの店を避けている。",
+      "mechanism": "地域文化への敬意や、地元の人々との交流を重視する価値観が、飲食店選びに現れている。",
+      "predictions": [
+        "地元の人と会話できる店を好む",
+        "観光客が多い店では落ち着かない"
+      ],
+      "discriminating_questions": [
+        "地元の人と交流できるなら、観光客向けの店でも受け入れられるか？"
+      ],
+      "persona_link": [
+        "pkg:p07_n2",
+        "pkg:p07_n7",
+        "pkg:p07_n4"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H3",
+      "type": "constraint_conflict",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "Oext1"
+      ],
+      "assumes": [
+        "A1",
+        "A2",
+        "A3"
+      ],
+      "statement": "観光地化が進むことで、地元の人が本当に通う店や本物の郷土料理が減少し、選択肢が狭まっていることへの反発がある。",
+      "mechanism": "観光地化による商品化・均質化への危機感が、強い拒否反応として現れている。",
+      "predictions": [
+        "観光地化が進む地域では食事の選択肢が減ったと感じる",
+        "昔ながらの店が減ったことに不満を感じる"
+      ],
+      "discriminating_questions": [
+        "昔と比べて、地元の人が通う店が減ったと感じることはあるか？"
+      ],
+      "persona_link": [
+        "pkg:p07_n2",
+        "pkg:p07_n3"
+      ],
+      "evidence_link": [
+        "ev:Oext1"
+      ],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H4",
+      "type": "value",
+      "explains": [
+        "O1",
+        "O2"
+      ],
+      "assumes": [
+        "A2"
+      ],
+      "statement": "ユーザーは『本当の郷土料理』という価値観自体を大切にしており、食事体験を通じてその価値を守りたいと考えている。",
+      "mechanism": "郷土料理や地域文化を守ることが、自己のアイデンティティや満足感につながっている。",
+      "predictions": [
+        "郷土料理の歴史や背景に興味を持つ",
+        "保存食や伝統的な調理法に関心がある"
+      ],
+      "discriminating_questions": [
+        "郷土料理の歴史や作り方を学ぶことにも興味があるか？"
+      ],
+      "persona_link": [
+        "pkg:p07_n5",
+        "pkg:p07_n2"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H5",
+      "type": "goal_mismatch",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "Oext2"
+      ],
+      "assumes": [
+        "A1",
+        "A2"
+      ],
+      "statement": "実は『地元の人が通う店』や『本当の郷土料理』という理想像自体が、観光地の文脈で商品化・演出されている可能性がある。つまり、ユーザーが求めているものもまた観光的な演出の一部かもしれない。",
+      "mechanism": "『本物志向』の消費行動自体が、観光地の新たな商品化戦略（performative authenticity）に組み込まれている逆説。",
+      "predictions": [
+        "観光地で『地元民しか知らない』と宣伝されている店も、実は観光客向けに設計されている場合がある",
+        "本物志向の消費者をターゲットにしたマーケティングが存在する"
+      ],
+      "discriminating_questions": [
+        "『地元の人しか知らない』と紹介されている店が、本当に地元の人だけのものか疑ったことはあるか？"
+      ],
+      "persona_link": [
+        "pkg:p07_n2"
+      ],
+      "evidence_link": [
+        "ev:Oext2"
+      ],
+      "is_reframing": true
+    }
+  ]
+}

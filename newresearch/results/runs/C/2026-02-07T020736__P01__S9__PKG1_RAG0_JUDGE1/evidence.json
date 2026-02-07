@@ -1,0 +1,16 @@
+{
+  "triggers": [
+    {
+      "type": "information_gap",
+      "text": "ユーザーが『寝る場所はどこでも同じ』と考えているが、旅館とビジネスホテルの価格差の理由や価値の違いについてPKGでは説明されていない。"
+    },
+    {
+      "type": "information_gap",
+      "text": "ユーザーが求める『コスパの良い宿泊先』の具体的な条件や選択肢についてPKGでは情報が不足している。"
+    }
+  ],
+  "rag_queries": [],
+  "evidence_items": [],
+  "external_observations": [],
+  "notes": "RAG disabled (use_rag=false) — trigger identification only"
+}

@@ -1,0 +1,96 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーの不安傾向が強いことが主因である",
+          "安全確保のために行動や情報収集を制限するという心理的メカニズムが働いている"
+        ],
+        "best_discriminating_question": "国内旅行や日常でも、未知の場所や新しい体験に対して強い不安を感じることがありますか？",
+        "testability_notes": "ユーザーへの直接質問で比較的容易に検証可能。観察O1, O2との整合性も高い。",
+        "safety_risk_notes": "『不安傾向が強い』という表現がユーザーの性格診断やラベリングと受け取られ、抵抗感や不快感を生む可能性がある。"
+      },
+      "rationale": "観察O1, O2を心理的要因で説明する妥当性が高いが、O3, O4はやや行動的・環境的要素も絡むため限定的。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O5"
+        ],
+        "key_assumptions": [
+          "ユーザーが現状の安全対策に満足していない",
+          "知識やスキルのアップデート欲求が行動の主因である"
+        ],
+        "best_discriminating_question": "最近新しく学んだ安全対策や、実践してみてよかった方法はありますか？",
+        "testability_notes": "ユーザーの情報収集行動や学習履歴を尋ねることで検証しやすい。",
+        "safety_risk_notes": "ユーザーの不安や不満を強調しすぎると、自己効力感を損なうリスクがある。"
+      },
+      "rationale": "O5（コツを求めている）を自然に説明できるが、他の観察（O1-O4）への説明力は限定的。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3",
+          "O4",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "観光地やホテル周辺＝安全という一般的イメージが強く影響している",
+          "ユーザーが現実のリスクを十分に認識していない"
+        ],
+        "best_discriminating_question": "ホテル周辺や観光地で犯罪が多発しているという情報を見聞きしたことがありますか？",
+        "testability_notes": "ユーザーのリスク認知や情報への反応を質問で検証可能。外部エビデンスとも照合しやすい。",
+        "safety_risk_notes": "『リスク認知が歪んでいる』という指摘がユーザーの判断力を否定する印象を与える可能性がある。"
+      },
+      "rationale": "O3, O4, Oext1を環境要因と認知バイアスで説明でき、外部エビデンスとも整合的。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O5",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "ユーザーが安全情報サービスのビジネス的側面や限界を十分に認識していない"
+        ],
+        "best_discriminating_question": "利用している安全情報サービスの提供元や、その情報がどのように作られているかを調べたことがありますか？",
+        "testability_notes": "ユーザーの情報リテラシーや意識を質問で検証可能。外部エビデンス（Oext2）との照合も容易。",
+        "safety_risk_notes": "情報サービスへの信頼を損なう可能性があり、ユーザーの不安を煽るリスクがある。"
+      },
+      "rationale": "O5, Oext2を情報ギャップの観点から説明できるが、他の観察への説明力は限定的。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4",
+          "O5"
+        ],
+        "key_assumptions": [
+          "ユーザーが『安全志向の自分』というアイデンティティを重視している",
+          "安全追求が自己肯定感や満足感の源泉になっている"
+        ],
+        "best_discriminating_question": "旅を終えたとき、『無事で帰れた』ことにどれくらい満足感や誇りを感じますか？",
+        "testability_notes": "ユーザーの価値観や満足感の源泉を尋ねる必要があり、やや深いインタビューが必要。",
+        "safety_risk_notes": "ユーザーの価値観やアイデンティティに踏み込むため、断定的な提示は反発や不快感を生むリスクが高い。"
+      },
+      "rationale": "全観察を包括的に説明できるが、仮説自体がユーザーの深層心理や価値観に依存しており、検証には慎重さが必要。"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "ユーザーが『自然との調和』や『人の手が入っていない原生林』という価値観を強く持っていること",
+          "屋久島や縄文杉への繰り返し訪問が、主にその価値観に基づく行動であること"
+        ],
+        "best_discriminating_question": "観光地化が進んだ場所には興味を持ちにくいですか？",
+        "testability_notes": "ユーザーへの価値観や他の原生林への興味について質問することで比較的容易に検証可能。",
+        "safety_risk_notes": "価値観の断定が強い印象を与える可能性があるが、攻撃的・傷つけるリスクは低い。"
+      },
+      "rationale": "PKGとの整合性が高く、観察O2・O3を自然に説明できている。価値観起点の仮説として妥当性が高い。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "ユーザーが知識や経験を他者との差別化やコミュニティとの関係構築に重視していること",
+          "PKGの『地域住民との信頼』や『地域行事・祭り』への関心が実際の行動に反映されていること"
+        ],
+        "best_discriminating_question": "地域住民との交流や行事に参加した経験はありますか？",
+        "testability_notes": "ユーザーの交流経験や地域密着型体験への志向を尋ねることで検証可能。",
+        "safety_risk_notes": "コミュニティ志向を前提とするため、ユーザーが孤立志向の場合は誤解を生む可能性がある。"
+      },
+      "rationale": "PKGの『地域住民との信頼』等と連動し、O3・O4の説明力がある。社会的動機を重視した仮説。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O4"
+        ],
+        "key_assumptions": [
+          "ユーザーが自己効力感や有能感を重視し、専門家的自己イメージを持っていること",
+          "繰り返し訪問や知識蓄積が自己認識の源泉となっていること"
+        ],
+        "best_discriminating_question": "屋久島について他者と話すとき、自分の知識や経験をアピールすることがありますか？",
+        "testability_notes": "自己認識や他者との比較意識について質問することで検証可能。",
+        "safety_risk_notes": "自己有能感への言及が、ユーザーによっては過度な評価や誤解を生む可能性がある。"
+      },
+      "rationale": "O4の発言を心理的動機で説明しており、PKGとも一定の整合性がある。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O4"
+        ],
+        "key_assumptions": [
+          "ユーザーの主張が主観的であり、客観的証拠が不足している可能性があること"
+        ],
+        "best_discriminating_question": "縄文杉の現状や変化について客観的な情報源を参照したことはありますか？",
+        "testability_notes": "ユーザーの発言や知識の根拠を尋ねることで検証可能。",
+        "safety_risk_notes": "ユーザーの主観や知識を疑う形になるため、やや防衛的反応や不快感を招くリスクがある。"
+      },
+      "rationale": "観察O2・O4の主観性や根拠の曖昧さを指摘する仮説で、他仮説の前提を問い直す役割がある。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O4"
+        ],
+        "key_assumptions": [
+          "ユーザーが実際には森の全てを理解していないこと",
+          "『理解している自分』という自己像の維持が主たる動機であること"
+        ],
+        "best_discriminating_question": "森について他者から知識を指摘されたとき、どのような気持ちになりますか？",
+        "testability_notes": "自己像や防衛的反応についてユーザーに尋ねることで検証可能だが、やや間接的。",
+        "safety_risk_notes": "ユーザーの自己認識や動機を疑う内容のため、傷つけたり反発を招くリスクが比較的高い。"
+      },
+      "rationale": "O4の発言の裏にある心理的防衛や自己像維持を指摘する仮説で、リフレーミング的価値があるが、提示には配慮が必要。"
+    }
+  ]
+}

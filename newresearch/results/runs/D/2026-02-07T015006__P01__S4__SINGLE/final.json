@@ -1,0 +1,361 @@
+{
+  "context": {
+    "observations": [
+      {
+        "id": "O1",
+        "text": "観光客向けの飲食店には絶対に入りたくない"
+      },
+      {
+        "id": "O2",
+        "text": "地元の人が毎日通うような、観光マップに載っていない本当の郷土料理を出す店だけで食事がしたい"
+      },
+      {
+        "id": "O3",
+        "text": "チェーン店やフードコートは論外だ"
+      }
+    ],
+    "assumptions": [
+      {
+        "id": "A1",
+        "text": "観光客向けの飲食店は本物の郷土料理を提供していない可能性が高い",
+        "status": "tentative"
+      },
+      {
+        "id": "A2",
+        "text": "地元の人が通う店こそが地域の本質を知る手段である",
+        "status": "tentative"
+      },
+      {
+        "id": "A3",
+        "text": "チェーン店やフードコートは地域性や本物らしさが欠けている",
+        "status": "tentative"
+      }
+    ],
+    "questions": [
+      "なぜ観光客向けの飲食店を強く避けたいのか？",
+      "地元の人が通う店でどんな体験を求めているのか？",
+      "チェーン店やフードコートに対してどんな印象を持っているのか？"
+    ],
+    "constraints": {
+      "tone": "supportive",
+      "safety": "avoid determinism"
+    }
+  },
+  "evidence": {
+    "triggers": [
+      {
+        "type": "focus",
+        "text": "観光客向けと地元向けの飲食店の違いに強いこだわりがある"
+      },
+      {
+        "type": "ambiguity",
+        "text": "『本当の郷土料理』や『地元の人が通う店』の定義が曖昧"
+      },
+      {
+        "type": "information_gap",
+        "text": "なぜ観光客向けの店を強く避けるのか、背景が明示されていない"
+      }
+    ],
+    "external_observations": [
+      {
+        "id": "Oext1",
+        "text": "観光拠点の開発や観光客向けの店舗は、しばしば『経験価値』や『稼ぐ力』を重視し、地元住民のためではなく観光客の消費行動をターゲットにしている",
+        "source_url": "https://www.city.akune.lg.jp/material/files/group/104/seikaitiba_houkokusyo_r6.pdf"
+      },
+      {
+        "id": "Oext2",
+        "text": "観光マップに掲載される飲食店は、観光客のニーズや消費行動を意識して選定されることが多い",
+        "source_url": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/yokohamako/kkihon/keikaku/yamashita/joi/hokoseiiken.files/iken_itiran.pdf"
+      },
+      {
+        "id": "Oext3",
+        "text": "観光地の飲食店や体験は、しばしば『本物らしさ』を演出するためにパフォーマティブな要素を取り入れているが、必ずしも地元住民の生活実態とは一致しない",
+        "source_url": "https://www.city.akune.lg.jp/material/files/group/104/seikaitiba_houkokusyo_r6.pdf"
+      }
+    ]
+  },
+  "hypotheses": [
+    {
+      "hypothesis_id": "H1",
+      "type": "value",
+      "explains": [
+        "O1",
+        "O2",
+        "O3"
+      ],
+      "assumes": [
+        "A2"
+      ],
+      "statement": "ユーザーは地域の本質や本物らしさを重視し、観光客向けの演出や表層的な体験を避けたいと考えている。",
+      "mechanism": "観光客向けの店は本来の地域性が薄れ、地元の人の生活や文化を感じられないと感じているため。",
+      "predictions": [
+        "地元の人しか知らないような場所や体験を好む",
+        "観光地化された場所やイベントには関心が薄い"
+      ],
+      "discriminating_questions": [
+        "観光地化されたイベントや場所にも、地域の本質を感じられることがあれば興味を持つことはありますか？"
+      ],
+      "persona_link": [
+        "pkg:p01_n4",
+        "pkg:p01_n1"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H2",
+      "type": "psychological",
+      "explains": [
+        "O1",
+        "O2",
+        "O3"
+      ],
+      "assumes": [
+        "A1",
+        "A2"
+      ],
+      "statement": "ユーザーは『観光客』という立場から距離を置き、自分自身が地域の一部であるかのような体験を求めている。",
+      "mechanism": "観光客として扱われることに違和感や疎外感を感じるため、地元住民のような立場で地域を味わいたいという欲求が強い。",
+      "predictions": [
+        "旅先でも地元の人と同じ行動を取ることを好む",
+        "観光客扱いされると不快に感じる"
+      ],
+      "discriminating_questions": [
+        "地元の人と同じように扱われることに特別な価値を感じますか？"
+      ],
+      "persona_link": [
+        "pkg:p01_n5"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H3",
+      "type": "social",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "Oext3"
+      ],
+      "assumes": [
+        "A1",
+        "A2",
+        "A3"
+      ],
+      "statement": "観光地の飲食店や体験は、しばしば『本物らしさ』を演出するパフォーマティブな要素が強く、ユーザーはその『演出された本物』に違和感を覚えている。",
+      "mechanism": "観光客向けの店舗は、地元の文化や料理を商品化し、観光客の期待に応えるために『本物らしさ』を演出するが、ユーザーはそれを見抜き、より生活に根ざした本物を求めている。",
+      "predictions": [
+        "観光地の飲食店で『本物の郷土料理』と謳われていても疑いを持つ",
+        "地元の人が普段使いする店にこだわる"
+      ],
+      "discriminating_questions": [
+        "観光地で『本物らしさ』を強調している店にも違和感を感じますか？"
+      ],
+      "persona_link": [
+        "pkg:p01_n4",
+        "pkg:p01_n2"
+      ],
+      "evidence_link": [
+        "ev:Oext3"
+      ],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H4",
+      "type": "goal_mismatch",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "Oext1",
+        "Oext2"
+      ],
+      "assumes": [
+        "A1",
+        "A2"
+      ],
+      "statement": "観光客向けの飲食店や観光マップに載る店は、観光客の消費行動や『稼ぐ力』を優先しており、ユーザーの求める地域の本質や生活感とは目的がズレている。",
+      "mechanism": "観光産業の論理とユーザーの体験価値観が根本的に異なり、ユーザーは消費者としてではなく、地域の生活者の視点で体験したいと考えている。",
+      "predictions": [
+        "観光マップに載っている店は避ける傾向が強い",
+        "観光客向けの新しい開発や店舗には懐疑的"
+      ],
+      "discriminating_questions": [
+        "観光マップに載っている店でも、地元の人が通うなら行きたいと思いますか？"
+      ],
+      "persona_link": [
+        "pkg:p01_n1",
+        "pkg:p01_n4"
+      ],
+      "evidence_link": [
+        "ev:Oext1",
+        "ev:Oext2"
+      ],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H5",
+      "type": "psychological",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "Oext3"
+      ],
+      "assumes": [
+        "A1",
+        "A2"
+      ],
+      "statement": "（裏切る仮説）ユーザーは『本物』や『地元らしさ』を求めていると言いつつ、実は『観光客である自分』を意識しすぎており、『観光客らしくない自分』を演出したいという欲求がある。",
+      "mechanism": "『本物志向』の観光客であること自体が、現代観光の一つのスタイルとなっており、ユーザーは『観光客っぽくない観光客』であることにアイデンティティを感じている。",
+      "predictions": [
+        "『地元の人しか知らない』という情報に強く惹かれる",
+        "本物志向の観光客向けガイドやSNS投稿を参考にすることがある"
+      ],
+      "discriminating_questions": [
+        "『観光客らしくない旅』をしている自分に、少し誇らしさや満足感を感じることはありますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [
+        "ev:Oext3"
+      ],
+      "is_reframing": true
+    }
+  ],
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A2"
+        ],
+        "best_discriminating_question": "観光地化されたイベントや場所にも、地域の本質を感じられることがあれば興味を持つことはありますか？",
+        "testability_notes": "観光地化された場所への興味の有無や、地元の人との交流への価値観を聞くことで検証可能。",
+        "safety_risk_notes": "価値観を肯定的に扱うためリスクは低い。"
+      },
+      "rationale": "ユーザーの価値観やPKGと整合的で、発言内容を額面通りに説明できる。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A2"
+        ],
+        "best_discriminating_question": "地元の人と同じように扱われることに特別な価値を感じますか？",
+        "testability_notes": "地元住民としての体験へのこだわりを尋ねることで検証可能。",
+        "safety_risk_notes": "アイデンティティに踏み込むため、やや配慮が必要。"
+      },
+      "rationale": "『観光客』という立場への距離感を説明し、PKGの『地域住民との信頼』とも関連する。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A2",
+          "A3"
+        ],
+        "best_discriminating_question": "観光地で『本物らしさ』を強調している店にも違和感を感じますか？",
+        "testability_notes": "『演出された本物』への違和感を具体的に尋ねることで検証可能。",
+        "safety_risk_notes": "観光業や飲食店に対する批判と受け取られないよう配慮が必要。"
+      },
+      "rationale": "外部観察（Oext3）を活用し、ユーザーの違和感の根拠を深掘りしている。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "Oext1",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A2"
+        ],
+        "best_discriminating_question": "観光マップに載っている店でも、地元の人が通うなら行きたいと思いますか？",
+        "testability_notes": "観光マップ掲載と地元利用のどちらを重視するかを尋ねることで検証可能。",
+        "safety_risk_notes": "観光産業の論理とのズレを指摘するため、やや批判的に響く可能性がある。"
+      },
+      "rationale": "観光産業とユーザーの体験価値観のズレを明確にし、外部観察（Oext1, Oext2）を活用している。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A2"
+        ],
+        "best_discriminating_question": "『観光客らしくない旅』をしている自分に、少し誇らしさや満足感を感じることはありますか？",
+        "testability_notes": "自己認識やSNS投稿への態度を尋ねることで検証可能。",
+        "safety_risk_notes": "ユーザーの自己像に疑問を投げかけるため、やや不快感を与えるリスクがある。"
+      },
+      "rationale": "ユーザーの発言の表面的な意味を反転させ、『観光客らしくない観光客』という現代的なパラドックスを指摘している。"
+    }
+  ],
+  "decision": {
+    "selected_hypothesis_id": "H5",
+    "contrasting_hypothesis_id": "H1",
+    "selection_rationale": "H5はユーザーの『本物志向』という発言を、実は『観光客らしくない自分』を演出したいという心理に裏返して読み直す仮説です。これにより、ユーザーの発言『観光客向けの飲食店には絶対に入りたくない』の意味が、『本物を求める自分』ではなく、『観光客らしくない観光客でありたい自分』という新しい自己像の表現に変わります。対してH1は、発言を額面通りに『本物らしさや地域の本質を重視している』と読む立場です。この2つは、どちらの立場に立つかで、今後の行動や自己理解が大きく変わります。",
+    "user_facing_frame": {
+      "framing": "options",
+      "questions": [
+        "あなたの『本物志向』は、地域の本質を大切にしたい気持ちから来ていると思いますか？",
+        "それとも、『観光客らしくない自分』でありたいという気持ちも少しあると思いますか？"
+      ],
+      "options": [
+        "地域の本質や本物らしさを大切にしたい（H1）",
+        "観光客らしくない自分でありたいという気持ちもある（H5）"
+      ]
+    }
+  },
+  "final_response": "ご自身の旅のスタイルについて、深く考えていらっしゃるのですね。『観光客向けの飲食店には絶対に入りたくない』というお気持ち、地域の本質や本物らしさを大切にしたいという価値観の表れとも受け取れますし、もしかすると『観光客らしくない自分』でありたいという気持ちも少しあるのかもしれません。\n\nたとえば、地元の人しか知らないお店を探すこと自体が、今や一部の旅好きの間で『本物志向の観光客』としてSNSなどで共有されることも増えています。ご自身はどちらの立場に近いでしょうか？\n\n1. 地域の本質や本物らしさを大切にしたい\n2. 観光客らしくない自分でありたいという気持ちもある\n\nどちらの立場を意識するかで、これからの旅の楽しみ方や選ぶお店も変わってくるかもしれません。たとえば、次に出かけるときは『地元の人が普段使いしているお店』を一つだけリストアップしてみるのはいかがでしょう。もし『観光客らしくない旅』をしている自分に少し誇らしさを感じたことがあれば、その気持ちについてもぜひ教えてください。\n\nどちらの立場が今のご自身の気持ちや行動に近いと思いますか？",
+  "markers": {
+    "empathy": {
+      "acknowledgement": true,
+      "reflection": true,
+      "perspective_prompt": true
+    },
+    "nudge": {
+      "easy": true,
+      "attractive": true,
+      "social": true,
+      "timely": true,
+      "has_question": true,
+      "has_options": true,
+      "has_small_action": true,
+      "directive_level": "low"
+    }
+  }
+}

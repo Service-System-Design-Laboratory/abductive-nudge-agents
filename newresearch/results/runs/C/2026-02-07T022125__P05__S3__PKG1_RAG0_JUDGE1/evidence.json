@@ -1,0 +1,20 @@
+{
+  "triggers": [
+    {
+      "type": "information_gap",
+      "text": "ユーザーが金沢を訪れる理由として伝統建築や江戸時代の風情を挙げているが、PKGにはユーザーの旅行動機や美意識に関する情報が存在しないため、これらの価値観や動機の詳細が不明である。"
+    },
+    {
+      "type": "ambiguity",
+      "text": "ユーザーはひがし茶屋街の街並みを日本の美の極みと評価しているが、PKGにはユーザーがどのような美的基準や観点を持っているかについての情報がないため、その評価基準が曖昧である。"
+    },
+    {
+      "type": "contradiction",
+      "text": "仮定A2ではユーザーが節約志向・低予算旅行を重視している可能性が示唆されているが、観察O1〜O3からはコストに関する言及がなく、旅行動機と仮定の価値観に矛盾が存在する可能性がある。"
+    }
+  ],
+  "rag_queries": [],
+  "evidence_items": [],
+  "external_observations": [],
+  "notes": "RAG disabled (use_rag=false) — trigger identification only"
+}

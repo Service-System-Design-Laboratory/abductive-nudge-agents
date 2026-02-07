@@ -1,0 +1,143 @@
+{
+  "hypotheses": [
+    {
+      "hypothesis_id": "H1",
+      "type": "psychological",
+      "explains": [
+        "O1",
+        "O2",
+        "O3"
+      ],
+      "assumes": [
+        "A1",
+        "A2"
+      ],
+      "statement": "ユーザーは『本物』や『地元らしさ』への強いこだわりから、観光客向けやチェーン店を避けている。",
+      "mechanism": "本物志向や地域文化への敬意が、選択行動に現れている。",
+      "predictions": [
+        "地元の人しか知らない店や、伝統的な料理に強い関心を示す",
+        "観光地での食事選択に慎重である"
+      ],
+      "discriminating_questions": [
+        "観光客向けの店でも地元の人が通う場合はどう感じますか？"
+      ],
+      "persona_link": [
+        "pkg:p07_n2",
+        "pkg:p07_n4",
+        "pkg:p07_n5"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H2",
+      "type": "social",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "Oext1"
+      ],
+      "assumes": [
+        "A1",
+        "A2"
+      ],
+      "statement": "観光地化による地域文化の『商品化』への反発が、観光客向け飲食店の拒否感につながっている。",
+      "mechanism": "観光客向けの店は文化を消費財として扱い、本来の意味や価値が薄まると感じているため、避けている。",
+      "predictions": [
+        "観光地化やチェーン展開に批判的な意見を持つ",
+        "地元の伝統や文化を守る活動に関心が高い"
+      ],
+      "discriminating_questions": [
+        "観光地化による地域文化の変化についてどう思いますか？"
+      ],
+      "persona_link": [
+        "pkg:p07_n2",
+        "pkg:p07_n7"
+      ],
+      "evidence_link": [
+        "ev:Oext1"
+      ],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H3",
+      "type": "value",
+      "explains": [
+        "O2",
+        "O3"
+      ],
+      "assumes": [
+        "A2",
+        "A3"
+      ],
+      "statement": "ユーザーは『地元の人の生活』や『日常性』に価値を感じており、観光客向けの非日常的な体験を避けている。",
+      "mechanism": "日常的な営みや生活文化への共感が、選択基準に影響している。",
+      "predictions": [
+        "地元の人の暮らしや日常に関心を持つ",
+        "観光地の特別な演出よりも素朴な体験を好む"
+      ],
+      "discriminating_questions": [
+        "地元の人の日常を感じられる体験にどんな魅力を感じますか？"
+      ],
+      "persona_link": [
+        "pkg:p07_n2",
+        "pkg:p07_n4"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H4",
+      "type": "evidence_gap",
+      "explains": [
+        "O1",
+        "O2",
+        "O3"
+      ],
+      "assumes": [],
+      "statement": "ユーザーは『観光客向け＝本物でない』という図式を前提にしているが、実際には観光客向けでも本物の郷土料理を出す店が存在する可能性がある。",
+      "mechanism": "情報や経験の不足から、観光客向けの店を一律に否定している可能性がある。",
+      "predictions": [
+        "観光客向けの店でも地元の人が通う例を知ると態度が変わるかもしれない"
+      ],
+      "discriminating_questions": [
+        "観光客向けでも地元の人が認める店があれば、行ってみたいと思いますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H5",
+      "type": "psychological",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "Oext1"
+      ],
+      "assumes": [
+        "A1",
+        "A2",
+        "A3"
+      ],
+      "statement": "実は『本物の郷土料理』や『地元の人が通う店』を求めるのは、地域文化への敬意や本物志向というより、『観光客である自分』を演出したくない、あるいは観察される側になることへの抵抗感が動機かもしれない。",
+      "mechanism": "観光客として振る舞うことや、観光客向けに扱われること自体への違和感や羞恥心が、選択基準を厳しくしている。",
+      "predictions": [
+        "観光地で『観光客扱い』されることに抵抗感や恥ずかしさを感じる",
+        "地元の人と同じ体験をすることにこだわる"
+      ],
+      "discriminating_questions": [
+        "観光客として扱われることに違和感や抵抗を感じますか？"
+      ],
+      "persona_link": [
+        "pkg:p07_n2"
+      ],
+      "evidence_link": [
+        "ev:Oext1"
+      ],
+      "is_reframing": true
+    }
+  ]
+}

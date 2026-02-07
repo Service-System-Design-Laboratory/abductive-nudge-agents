@@ -1,0 +1,77 @@
+{
+  "triggers": [
+    {
+      "type": "information_gap",
+      "text": "食事をコンビニで済ませる予定だが、コンビニ以外のさらに安価な食事方法（例：スーパーの総菜、地元の格安食堂、無料配布イベントなど）についてPKGに情報がない。"
+    },
+    {
+      "type": "information_gap",
+      "text": "宿泊は最安値のカプセルホテルとなっているが、カプセルホテルより安い宿泊方法（例：ネットカフェ、ゲストハウス、無料宿泊施設、地域の無料イベント利用など）についてPKGに情報がない。"
+    },
+    {
+      "type": "information_gap",
+      "text": "移動は青春18きっぷを利用しているが、青春18きっぷ以外のさらに安価な移動手段（例：ヒッチハイク、徒歩、レンタサイクル、地域の無料バスなど）についてPKGに情報がない。"
+    }
+  ],
+  "rag_queries": [
+    "コンビニ以外で旅行中に食費をさらに節約できる方法は？",
+    "カプセルホテルより安い宿泊方法や無料で泊まれる場所はあるか？",
+    "青春18きっぷ以外で日本国内旅行の移動費をさらに節約する手段は？",
+    "地域イベントや無料配布など、現地で無料・格安体験できる方法は？"
+  ],
+  "evidence_items": [
+    {
+      "rank": 1,
+      "title": "宿泊で安く泊まる方法は快活クラブのようなネットカフェ以外 ...",
+      "snippet": "安く泊まる方法は、一番は、ネットカフェ(経験あり)、次は、サウナ(行ったことない)次は、カプセルホテル(行ったことない)次は、ビジネスホテル(経験あり) ...",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q14284426744",
+      "source_type": "com"
+    },
+    {
+      "rank": 2,
+      "title": "4種類の宿泊施設の特徴と料金を比較してみよう",
+      "snippet": "日本独特の宿泊施設であるカプセルホテル。 その売りは何と言っても1泊2,500円程度からという料金の安さです。 大部屋の中に2段に積まれた「カプセル」と呼ばれる簡易ベッ ...",
+      "url": "https://guesthousejp.com/column/wasabi-hotel-hikaku/",
+      "source_type": "com"
+    },
+    {
+      "rank": 3,
+      "title": "旅行中に節約できる、あなたの予算に関するヒントは何ですか？",
+      "snippet": "朝食に必要な食料品を買ったり、持って行ったりするのは、僕のお気に入りの節約旅行術なんだ。レストランでの朝食、特に家族連れだと、1日あたり ...",
+      "url": "https://www.reddit.com/r/onebag/comments/1b1g2di/whats_your_budget_tip_that_helps_save_you_money/?tl=ja",
+      "source_type": "other"
+    },
+    {
+      "rank": 4,
+      "title": "元添乗員が教えます！家族旅行を賢く節約して最大限楽しむ方法",
+      "snippet": "早期予約割引を活用する · 旅行会社のパッケージ（宿泊＋移動プラン）を探す · 子どもの「無料宿泊、添い寝割引」がある宿を探す · キャンプ場を利用する.",
+      "url": "https://journal.anabuki-style.com/family-travel-saving-strategies",
+      "source_type": "com"
+    },
+    {
+      "rank": 5,
+      "title": "外食費節約の極意｜無理なく続ける賢い外食の選び方と活用法",
+      "snippet": "外食費を効果的に節約するための第一歩は、外食の頻度を計画的に減らすことです。仕事や学校、その他の予定で忙しいとつい外食やテイクアウトに頼って ...",
+      "url": "https://note.com/tomona_0624/n/n0105a29dd4ac",
+      "source_type": "other"
+    }
+  ],
+  "external_observations": [
+    {
+      "id": "Oext1",
+      "text": "ネットカフェやサウナなど、宿泊施設以外の空間が『安価な宿泊商品』として商品化されており、従来のホテル業界と競合する構造が生まれている。",
+      "source_url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q14284426744"
+    },
+    {
+      "id": "Oext2",
+      "text": "カプセルホテルは『日本独自の安価な宿泊体験』としてブランド化されており、安さだけでなく体験価値や演出された本物らしさがマーケティングの一部になっている。",
+      "source_url": "https://guesthousejp.com/column/wasabi-hotel-hikaku/"
+    },
+    {
+      "id": "Oext3",
+      "text": "節約旅行術がネット上で共有されることで、節約志向そのものが観察者効果を生み、旅行業界の商品やサービスの設計に影響を与えている。",
+      "source_url": "https://www.reddit.com/r/onebag/comments/1b1g2di/whats_your_budget_tip_that_helps_save_you_money/?tl=ja"
+    }
+  ],
+  "notes": ""
+}

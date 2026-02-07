@@ -1,0 +1,38 @@
+{
+  "triggers": [
+    {
+      "type": "focus",
+      "text": "観光客向けの店を強く拒否し、地元民向けの店を強調している。"
+    },
+    {
+      "type": "information_gap",
+      "text": "なぜここまで強く観光客向けの店を避けるのか、動機が明示されていない。"
+    },
+    {
+      "type": "ambiguity",
+      "text": "『本当の郷土料理』や『地元の人が通う店』の定義が曖昧。"
+    }
+  ],
+  "external_observations": [
+    {
+      "id": "Oext1",
+      "text": "県庁所在地など観光地ではチェーン店や観光客向け飲食店が増えすぎて地元の本物の味が埋もれてしまう。",
+      "source_url": "https://note.com/tourism_japan/n/nd2daf6aa4b1d"
+    },
+    {
+      "id": "Oext2",
+      "text": "観光客向けでない地元民おすすめの店は、ネットや友人の情報でしか見つけにくい。",
+      "source_url": "https://www.reddit.com/r/JapanTravelTips/comments/1bhofmq/seeking_hidden_gems_local_favourites_in_japan/?tl=ja"
+    },
+    {
+      "id": "Oext3",
+      "text": "観光地でも観光客向けの飲食店が少ない場所では、地元民のような気分で食事を楽しめるチャンスがある。",
+      "source_url": "https://s.tabelog.com/smartphone/matome/17721/"
+    },
+    {
+      "id": "Oext4",
+      "text": "地元の人が食べているものを探す旅は、地域らしさや異日常を楽しむ体験になる。",
+      "source_url": "https://www.kokugakuin.ac.jp/education/fd/tourism/about/scoop-of-machidukuri-top/scoop-of-machidukuri-16"
+    }
+  ]
+}

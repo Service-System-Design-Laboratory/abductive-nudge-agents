@@ -1,0 +1,97 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーの不安や恐怖心が主因となって安全志向や行動制限が生じている",
+          "過去の経験や伝聞がユーザーの心理に強く影響している"
+        ],
+        "best_discriminating_question": "海外旅行に対して強い不安や恐怖を感じた具体的な経験がありますか？",
+        "testability_notes": "ユーザーへの直接質問で心理的要因の有無を確認できるため検証しやすい。",
+        "safety_risk_notes": "『不安や恐怖心』という表現がユーザーにレッテル貼りや心理的負担を与える可能性がある。"
+      },
+      "rationale": "心理的要因の説明力は高いが、O3やO4（情報収集行動）への直接的な説明はやや弱い。ユーザーの感情に踏み込むため配慮が必要。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3",
+          "O4",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "旅行業界や現地観光地のサービス・情報提供がユーザーの安全志向行動に強く影響している"
+        ],
+        "best_discriminating_question": "旅行会社やホテルの安全サービスをどの程度利用していますか？",
+        "testability_notes": "ユーザーのサービス利用歴や外部エビデンスで検証しやすい。",
+        "safety_risk_notes": "業界の影響を強調しすぎるとユーザーの主体性を軽視する印象を与える可能性がある。"
+      },
+      "rationale": "外部エビデンスと観察の整合性が高く、説明力も十分。ユーザーの行動が環境要因に誘導されているかを明確に検証できる。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O5"
+        ],
+        "key_assumptions": [
+          "ユーザーは基本的な安全対策を既に知っており、さらに詳細・最新の情報を求めている"
+        ],
+        "best_discriminating_question": "最近、具体的な防犯グッズや最新アプリを調べたり購入したことがありますか？",
+        "testability_notes": "ユーザーの情報ニーズや行動履歴を聞くことで比較的容易に検証可能。",
+        "safety_risk_notes": "『情報不足』と断定することでユーザーの知識や努力を過小評価するリスクがある。"
+      },
+      "rationale": "O5の説明には最も適しているが、他の観察には直接的な説明力が弱い。情報ニーズの有無は質問で明確に判別可能。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "家族や友人など周囲の人の意見や体験談がユーザーの安全志向行動に大きく影響している"
+        ],
+        "best_discriminating_question": "家族や友人から海外旅行の危険について何か言われたことがありますか？",
+        "testability_notes": "ユーザーの周囲からの影響を質問で直接確認できるため検証しやすい。",
+        "safety_risk_notes": "周囲の影響を強調しすぎるとユーザーの主体性や判断力を軽視する印象を与える可能性がある。"
+      },
+      "rationale": "社会的要因の説明として妥当だが、O4（治安情報チェック）への直接的説明はやや弱い。周囲の影響の有無は質問で明確に判別可能。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4",
+          "O5",
+          "Oext2",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "ユーザーの安全志向が実際の危険回避ではなく、安心感や自己確認のために目的化している",
+          "安全志向が旅行市場や情報環境によって強化・持続されている"
+        ],
+        "best_discriminating_question": "安全対策を増やしても不安が残ることはありますか？",
+        "testability_notes": "ユーザーの満足感や不安の持続について質問することで検証可能だが、自己認識の深度が必要。",
+        "safety_risk_notes": "『安全志向の目的化』という指摘はユーザーの価値観や行動を否定的に受け取られるリスクがある。"
+      },
+      "rationale": "観察・外部事実の広範囲を説明できるが、ユーザーの内面や動機に踏み込むため、提示時の配慮が特に重要。"
+    }
+  ]
+}

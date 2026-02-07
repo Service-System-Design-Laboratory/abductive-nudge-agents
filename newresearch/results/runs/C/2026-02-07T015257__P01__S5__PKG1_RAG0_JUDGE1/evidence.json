@@ -1,0 +1,16 @@
+{
+  "triggers": [
+    {
+      "type": "information_gap",
+      "text": "ユーザーは宿泊・移動・食事の節約方法を具体的に提示しているが、PKGに記載されている『現地の無料イベントや里山散策など低コストなアクティビティ』については観察に含まれていない。現地での活動や娯楽の節約可能性に関する情報が不足している。"
+    },
+    {
+      "type": "focus",
+      "text": "ユーザーは『この予算内でもっと節約できるポイントはあるか』と尋ねており、現状の節約方法以外の追加的な節約アイデアへの関心が強い。"
+    }
+  ],
+  "rag_queries": [],
+  "evidence_items": [],
+  "external_observations": [],
+  "notes": "RAG disabled (use_rag=false) — trigger identification only"
+}

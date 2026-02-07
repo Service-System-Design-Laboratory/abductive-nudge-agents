@@ -1,0 +1,16 @@
+{
+  "triggers": [
+    {
+      "type": "information_gap",
+      "text": "PKGは『節約志向』『低予算旅行』『コスト最適化』に関する情報を持つが、ユーザーが求めている『効率的に映える写真を撮るコツ』や写真撮影のテクニック・SNS映えの方法についてはPKGでカバーされていない。"
+    },
+    {
+      "type": "ambiguity",
+      "text": "ユーザーが効率化を求めている理由が、コストや時間の節約なのか、より多くの映える写真を撮るためなのか、PKGと観察からは明確でない。"
+    }
+  ],
+  "rag_queries": [],
+  "evidence_items": [],
+  "external_observations": [],
+  "notes": "RAG disabled (use_rag=false) — trigger identification only"
+}

@@ -1,0 +1,339 @@
+{
+  "context": {
+    "observations": [
+      {
+        "id": "O1",
+        "text": "ガイドブックに載っているような場所には一切興味がない"
+      },
+      {
+        "id": "O2",
+        "text": "地元の人しか知らない、看板も出ていないような『本物の生活』が残っている場所だけを歩きたい"
+      },
+      {
+        "id": "O3",
+        "text": "観光客向けの演出はもうお腹いっぱいだ"
+      }
+    ],
+    "assumptions": [
+      {
+        "id": "A1",
+        "text": "ユーザーは観光地の商業化や演出された体験に価値を感じていない",
+        "status": "tentative"
+      },
+      {
+        "id": "A2",
+        "text": "ユーザーは『本物の生活』に触れることで得られる何かを求めている",
+        "status": "tentative"
+      },
+      {
+        "id": "A3",
+        "text": "ユーザーは他の観光客と同じ体験をしたくない",
+        "status": "tentative"
+      }
+    ],
+    "questions": [
+      "なぜ『本物の生活』にこだわるのか？",
+      "観光客向けの演出にどんな不満や違和感を感じているのか？",
+      "地元の人しか知らない場所でどんな体験をしたいのか？"
+    ],
+    "constraints": {
+      "tone": "supportive",
+      "safety": "avoid determinism"
+    }
+  },
+  "evidence": {
+    "triggers": [
+      {
+        "type": "focus",
+        "text": "『本物の生活』や地元の人しか知らない場所への強いこだわり"
+      },
+      {
+        "type": "ambiguity",
+        "text": "『本物の生活』とは何か、具体的にどんな体験を求めているのかが明確でない"
+      },
+      {
+        "type": "information_gap",
+        "text": "観光客向けの演出を避けたい理由の深層が語られていない"
+      }
+    ],
+    "external_observations": [
+      {
+        "id": "Oext1",
+        "text": "Googleマップには載っているが、現地に看板や案内が一切ないため、初見では登り口がかなり分かりにくい場所を探訪する人がいる",
+        "source_url": "https://www.ryosou.com/simanenokunifudoki2024izumo/"
+      },
+      {
+        "id": "Oext2",
+        "text": "地元の人しか知らない本当に美味しいお店が存在し、観光客向けの有名店とは異なる体験ができる",
+        "source_url": "https://www.echizenkani.com/20220513115750"
+      },
+      {
+        "id": "Oext3",
+        "text": "ヨーロッパの街や下北沢を個人が写真と文章で記録し、ガイドブック的な情報とは異なる視点を提供しようとする動きがある",
+        "source_url": "https://kazoo66.exblog.jp/"
+      }
+    ]
+  },
+  "hypotheses": [
+    {
+      "hypothesis_id": "H1",
+      "type": "psychological",
+      "explains": [
+        "O1",
+        "O2",
+        "O3"
+      ],
+      "assumes": [
+        "A1",
+        "A2"
+      ],
+      "statement": "ユーザーは観光地の商業化や演出された体験に飽きており、独自性や発見の喜びを求めている。",
+      "mechanism": "既存の観光体験がパターン化し自分にとって新鮮味を失ったため、他者と異なる体験を通じて自己の探求や満足感を得ようとしている。",
+      "predictions": [
+        "ユーザーは他人と同じ体験を避ける傾向がある",
+        "新しい場所や情報を自分で発掘することに喜びを感じる"
+      ],
+      "discriminating_questions": [
+        "あなたが『本物の生活』にこだわるのは、他の人と違う体験をしたいからですか？"
+      ],
+      "persona_link": [
+        "pkg:p07_n1"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H2",
+      "type": "value",
+      "explains": [
+        "O2",
+        "O3"
+      ],
+      "assumes": [
+        "A2"
+      ],
+      "statement": "ユーザーは地域文化への敬意が強く、観光地化による文化の消費や商品化を避けたいと考えている。",
+      "mechanism": "観光客向けの演出は文化の本質を損なうと感じており、地元の人の生活や伝統を尊重したいという価値観が行動を動機付けている。",
+      "predictions": [
+        "地域の伝統行事や日常的な営みに興味を持つ",
+        "観光地での消費的な体験よりも、地元の人との交流を重視する"
+      ],
+      "discriminating_questions": [
+        "観光地化による文化の変化や商品化に対して、どんな気持ちを持っていますか？"
+      ],
+      "persona_link": [
+        "pkg:p07_n2"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H3",
+      "type": "social",
+      "explains": [
+        "O1",
+        "O3",
+        "Oext2"
+      ],
+      "assumes": [
+        "A3"
+      ],
+      "statement": "ユーザーは観光客として扱われること自体に違和感を覚え、地元の人と同じ立場で接したいという社会的欲求がある。",
+      "mechanism": "観光客向けの演出は自分を『外部者』と位置付けるため、地元の人しか知らない場所に行くことで、より対等な関係性や一体感を得ようとしている。",
+      "predictions": [
+        "地元の人と同じように振る舞おうとする",
+        "観光客として扱われることを避ける言動が見られる"
+      ],
+      "discriminating_questions": [
+        "地元の人と同じ目線で交流したいという気持ちはありますか？"
+      ],
+      "persona_link": [
+        "pkg:p07_n7"
+      ],
+      "evidence_link": [
+        "ev:Oext2"
+      ],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H4",
+      "type": "environmental",
+      "explains": [
+        "O2",
+        "Oext1"
+      ],
+      "assumes": [
+        "A2"
+      ],
+      "statement": "ユーザーは観光地の情報過多やアクセスの容易さによって体験が均質化している現状に不満を持ち、情報が少なくアクセスが難しい場所にこそ価値を感じている。",
+      "mechanism": "情報が少ない場所を探すことで、発見や冒険の感覚を得ている。ガイドブックや看板がない場所は、他者との差別化や自己効力感を高める手段となっている。",
+      "predictions": [
+        "ネットや地図に載っていない場所を積極的に探す",
+        "アクセスが難しい場所ほど魅力を感じる"
+      ],
+      "discriminating_questions": [
+        "情報が少ない場所を探すこと自体に面白さや価値を感じますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [
+        "ev:Oext1"
+      ],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H5",
+      "type": "paradox/goal_mismatch",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "Oext3"
+      ],
+      "assumes": [
+        "A1",
+        "A2"
+      ],
+      "statement": "『本物の生活』を求めるという行為自体が、実は観光客としての新たな演出や自己表現になっている可能性がある。",
+      "mechanism": "ガイドブックを避けて『本物』を探すことが、逆に『本物志向の観光客』という新しい役割や消費行動になってしまい、本人が避けたいと感じている『演出』の一部になっている。",
+      "predictions": [
+        "『本物』を探す自分をどこかで意識している",
+        "同じような志向の人たちと情報を共有したり、記録を残す傾向がある"
+      ],
+      "discriminating_questions": [
+        "『本物』を探すこと自体が、実は新しい観光のスタイルや自己表現になっていると感じることはありませんか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [
+        "ev:Oext3"
+      ],
+      "is_reframing": true
+    }
+  ],
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A2"
+        ],
+        "best_discriminating_question": "あなたが『本物の生活』にこだわるのは、他の人と違う体験をしたいからですか？",
+        "testability_notes": "ユーザーが独自性や発見の喜びを重視しているかを質問で確認できる",
+        "safety_risk_notes": "独自性の追求を強調しすぎると孤立感を助長する可能性"
+      },
+      "rationale": "ユーザーの発言全体を素直に説明できるが、背景の価値観や社会的側面には踏み込めていない"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A2"
+        ],
+        "best_discriminating_question": "観光地化による文化の変化や商品化に対して、どんな気持ちを持っていますか？",
+        "testability_notes": "文化や伝統への敬意が行動の動機かを尋ねる",
+        "safety_risk_notes": "価値観の押し付けにならないよう注意"
+      },
+      "rationale": "PKGの価値観と強く紐づくが、ユーザーの行動の多様な側面を十分に説明しきれていない"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O3",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "A3"
+        ],
+        "best_discriminating_question": "地元の人と同じ目線で交流したいという気持ちはありますか？",
+        "testability_notes": "社会的な一体感や外部者意識の有無を質問で確認",
+        "safety_risk_notes": "地元の人との距離感や境界を無視しないよう配慮"
+      },
+      "rationale": "社会的な動機を補強するが、ユーザーの内面の動機や価値観の深さには届いていない"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "A2"
+        ],
+        "best_discriminating_question": "情報が少ない場所を探すこと自体に面白さや価値を感じますか？",
+        "testability_notes": "情報探索や発見行動が目的かどうかを確認",
+        "safety_risk_notes": "アクセス困難な場所への誘導にならないよう注意"
+      },
+      "rationale": "外部観察と連動し、体験の希少性や発見の側面を説明できる"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A2"
+        ],
+        "best_discriminating_question": "『本物』を探すこと自体が、実は新しい観光のスタイルや自己表現になっていると感じることはありませんか？",
+        "testability_notes": "自己表現や新しい観光のスタイルとしての側面を意識しているかを尋ねる",
+        "safety_risk_notes": "ユーザーの自己像に揺さぶりをかけるため、不快感を与える可能性があるが、丁寧に扱えば深い内省を促す"
+      },
+      "rationale": "発言の意味を反転させ、自己像や行動のメタ的な側面に踏み込むことで新しい視点を提示できる"
+    }
+  ],
+  "decision": {
+    "selected_hypothesis_id": "H5",
+    "contrasting_hypothesis_id": "H2",
+    "selection_rationale": "H5を採用すると、ユーザーの発言『本物の生活を求めて観光地の演出を避けたい』の意味が、『本物を求める自分自身の行動もまた新しい観光のスタイルや自己表現になっている可能性』に変わる。H2は額面通り、地域文化への敬意や商品化への抵抗という価値観を説明する。H5を選ぶことで、ユーザーの自己理解や次の行動選択に新たな視点をもたらす。どちらの立場に立つかで、今後の旅の仕方や他者との関わり方が変わる可能性がある。",
+    "user_facing_frame": {
+      "framing": "options",
+      "questions": [
+        "あなたが『本物』を探すこと自体が、実は新しい観光のスタイルや自己表現になっていると感じることはありませんか？",
+        "それとも、やはり地域文化への敬意や商品化への抵抗が一番の動機だと思いますか？"
+      ],
+      "options": [
+        "『本物』を探す自分自身の行動も、実は新しい観光の形や自己表現になっている可能性を考えてみる",
+        "地域文化への敬意や商品化への抵抗という価値観が、自分の行動の主な動機だと考える"
+      ]
+    }
+  },
+  "final_response": "あなたが『ガイドブックに載らない、本物の生活が残る場所』にこだわる気持ち、しっかり受け止めました。観光地の演出や商品化された体験に違和感を覚え、地元の人しか知らない場所を歩きたいという思いには、地域文化への敬意や、ありのままの暮らしに触れたいという価値観があるのかもしれません。\n\n一方で、『本物』を探すこと自体が、実は新しい観光のスタイルや自己表現になっている…そんな見方もできるかもしれません。例えば、ガイドブックに載らない場所を探す人たちが、SNSやブログでその体験を発信することで、また新しい『本物志向』の文化が生まれているという指摘もあります。\n\nご自身では、どちらの立場が近いと思いますか？\n\nA. 『本物』を探す自分自身の行動も、実は新しい観光の形や自己表現になっている可能性を考えてみる\nB. 地域文化への敬意や商品化への抵抗という価値観が、自分の行動の主な動機だと考える\n\nどちらの視点を意識すると、これからの旅の仕方や地元の人との関わり方が少し変わるかもしれません。たとえば、Aの立場なら、旅の記録を誰かと共有してみるのも一つの方法ですし、Bの立場なら、地域の伝統行事や暮らしに直接参加してみるのも素敵ですね。\n\nまずは、次の週末に地図やネットに載っていない場所を一つだけ歩いてみて、感じたことをメモしてみるのはいかがでしょう？その体験をどう受け止めるか、また教えてください。",
+  "markers": {
+    "empathy": {
+      "acknowledgement": true,
+      "reflection": true,
+      "perspective_prompt": true
+    },
+    "nudge": {
+      "easy": true,
+      "attractive": true,
+      "social": true,
+      "timely": true,
+      "has_question": true,
+      "has_options": true,
+      "has_small_action": true,
+      "directive_level": "low"
+    }
+  }
+}

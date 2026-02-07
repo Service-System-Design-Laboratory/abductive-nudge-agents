@@ -1,0 +1,100 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O5"
+        ],
+        "key_assumptions": [
+          "ユーザーが節約行動自体に内的な満足感や達成感を強く感じていること",
+          "節約行動が目的化している場合、他の動機（例：体験の質向上など）は二次的であること"
+        ],
+        "best_discriminating_question": "旅行後、費用の安さを他人に自慢したい気持ちはありますか？",
+        "testability_notes": "ユーザーへの直接質問や発言分析で比較的容易に検証可能。",
+        "safety_risk_notes": "ユーザーの価値観や動機を単純化・断定的に見せるリスクがある。"
+      },
+      "rationale": "節約行動の内的動機に焦点を当てており、観察O1・O5を十分説明できるが、他の観察（特に外部環境要因）はカバーしない。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "節約旅行向けの既存サービスがユーザーの選択肢に大きく影響していること",
+          "ユーザーが自発的な工夫よりも市場の提供する商品に依存していること"
+        ],
+        "best_discriminating_question": "既存の節約商品以外の方法を自分で考案したことはありますか？",
+        "testability_notes": "ユーザーの情報収集行動や選択理由をヒアリングすることで検証可能。外部エビデンスも利用しやすい。",
+        "safety_risk_notes": "ユーザーの主体性を過小評価する印象を与える可能性がある。"
+      },
+      "rationale": "外部エビデンスと観察O2・O3・Oext1を整合的に説明でき、環境要因の影響を強調する点が特徴。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3",
+          "O5",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "ユーザーが青春18きっぷ以外の安価な移動手段の存在を十分に認識していないこと",
+          "情報ギャップが選択行動に直接影響していること"
+        ],
+        "best_discriminating_question": "LCCや夜行バスの価格や利便性を比較したことはありますか？",
+        "testability_notes": "ユーザーの知識や選択肢検討履歴を質問することで比較的容易に検証可能。外部エビデンスも参照できる。",
+        "safety_risk_notes": "ユーザーの情報感度やリテラシーを低く見積もる印象を与える可能性がある。"
+      },
+      "rationale": "情報ギャップに着目し、O3・O5・Oext2を説明できるが、ユーザーの主体的な価値観や動機は考慮しない。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O4",
+          "O5"
+        ],
+        "key_assumptions": [
+          "ユーザーがコンビニ以外の食事調達手段を十分に検討していないこと",
+          "より安い選択肢の存在を知らない、または重視していないこと"
+        ],
+        "best_discriminating_question": "地元スーパーや業務スーパーの利用を検討しましたか？",
+        "testability_notes": "ユーザーの食事調達行動や選択理由を直接質問することで検証可能。外部エビデンスも参照できる。",
+        "safety_risk_notes": "ユーザーの調査不足や工夫不足を指摘する形となり、否定的に受け取られるリスクがある。"
+      },
+      "rationale": "食費節約の選択肢に関する情報ギャップに着目し、O4・O5を説明できるが、動機や価値観の深掘りはない。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4",
+          "O5",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "ユーザーが『節約旅行者』という自己像やポジションを重視していること",
+          "体験や実利よりも、極限志向や承認欲求が行動の主因となっていること"
+        ],
+        "best_discriminating_question": "節約旅行を通じて自分の限界や工夫力を証明したいという欲求はどの程度ありますか？",
+        "testability_notes": "ユーザーの発信行動や自己認知を深掘りする必要があり、やや検証難度は高いが、SNS等の行動観察も活用可能。",
+        "safety_risk_notes": "ユーザーの動機を“承認欲求”や“自慢”と断定することで反発や誤解を招くリスクが高い。"
+      },
+      "rationale": "全観察をカバーし説明力が高いが、ユーザーの内面動機を断定的に扱うため、検証難度と提示リスクが高い。"
+    }
+  ]
+}

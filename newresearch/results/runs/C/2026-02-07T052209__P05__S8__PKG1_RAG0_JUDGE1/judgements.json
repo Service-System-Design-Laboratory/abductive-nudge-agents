@@ -1,0 +1,92 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "ユーザーが過去の京都旅行を理想化して記憶していること",
+          "理想と現実のギャップを埋めたいという動機が行動に影響していること"
+        ],
+        "best_discriminating_question": "過去の体験と違いを感じた場合、どのような感情が湧くと思いますか？",
+        "testability_notes": "ユーザーに記憶と現実のギャップや感情について直接質問することで検証可能。1問で十分に判別しやすい。",
+        "safety_risk_notes": "記憶の美化や現実とのギャップを指摘するため、ユーザーが落胆や否定的感情を抱くリスクがある。"
+      },
+      "rationale": "観察O3・O4を自然に説明できており、仮説の心理的メカニズムも妥当。PKGとの齟齬もなく、検証も容易。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O4"
+        ],
+        "key_assumptions": [
+          "ユーザーが節約志向やコスト最適化の価値観を持っていること",
+          "静かな場所や人が少ないルートがコスト削減と結びついていること"
+        ],
+        "best_discriminating_question": "旅行の際にコストや混雑回避をどの程度重視しますか？",
+        "testability_notes": "PKGで節約志向・コスト最適化が確認できており、ユーザーに価値観を問えば高い精度で判別可能。",
+        "safety_risk_notes": "ユーザーの価値観を単純化しすぎると感じられる可能性があるが、リスクは比較的低い。"
+      },
+      "rationale": "PKGで裏付けがあり、観察O2・O4を説明できる。コスト志向の有無を直接問えば検証も容易。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O4"
+        ],
+        "key_assumptions": [
+          "ユーザーがデータ分析やコスト最適化のスキルを持ち、それを旅行計画に活用していること"
+        ],
+        "best_discriminating_question": "旅行計画にデータや過去の情報をどの程度活用しますか？",
+        "testability_notes": "PKGでスキルの裏付けあり。旅行計画の作成方法を尋ねることで判別可能。",
+        "safety_risk_notes": "スキル活用を前提とするため、ユーザーが自分の行動を“合理化”と受け取ることに違和感を抱く場合がある。"
+      },
+      "rationale": "PKGでスキルが確認でき、O4の説明力もあるが、他仮説より説明範囲は狭い。検証は容易。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "京都の観光地の環境が過去と比べて大きく変化していること",
+          "その変化がユーザーの体験や感情に影響を与えていること"
+        ],
+        "best_discriminating_question": "現在の嵐山や竹林の道の混雑状況を事前に調べていますか？",
+        "testability_notes": "外部エビデンスは使えないが、ユーザーの現地体験や事前調査の有無を聞くことで一定程度検証可能。",
+        "safety_risk_notes": "環境変化を強調しすぎると、ユーザーの体験価値を否定的に捉えさせるリスクがある。"
+      },
+      "rationale": "観察O2・O3を説明できるが、環境変化の事実確認が難しい。ユーザーの主観的体験を問えば検証は可能。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "ユーザーが“過去の自分”や“理想化された自己像”を追い求めていること",
+          "再訪の動機が場所そのものより自己の再確認にあること"
+        ],
+        "best_discriminating_question": "京都の空気や景色以外に、当時の自分自身に戻りたいという気持ちはありますか？",
+        "testability_notes": "ユーザーの深層心理に関わるため、直接質問しても答えにくい場合がある。検証はやや難しい。",
+        "safety_risk_notes": "ユーザーの自己認識や動機に踏み込むため、誤解や心理的抵抗を招くリスクがある。"
+      },
+      "rationale": "O3・O4を深層心理から説明できるが、検証や提示時の配慮が必要。リフレーミング効果も期待できる。"
+    }
+  ]
+}

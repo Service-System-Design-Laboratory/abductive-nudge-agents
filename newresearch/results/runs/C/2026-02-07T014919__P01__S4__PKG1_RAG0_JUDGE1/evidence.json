@@ -1,0 +1,16 @@
+{
+  "triggers": [
+    {
+      "type": "information_gap",
+      "text": "観光マップに載っていない地元の人が毎日通う郷土料理店の具体的な特徴や探し方についてPKGに情報がない。"
+    },
+    {
+      "type": "ambiguity",
+      "text": "『地元の人が毎日通う』の基準や、観光客向けと地元向けの飲食店の明確な区別がPKGで定義されていない。"
+    }
+  ],
+  "rag_queries": [],
+  "evidence_items": [],
+  "external_observations": [],
+  "notes": "RAG disabled (use_rag=false) — trigger identification only"
+}

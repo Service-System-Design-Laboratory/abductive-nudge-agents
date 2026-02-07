@@ -1,0 +1,94 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーが節約志向であること（PKGで裏付けあり）",
+          "旅行計画の詳細化が節約志向から直接生じていること"
+        ],
+        "best_discriminating_question": "旅行計画の中で費用や時間の節約を最優先事項として設定していますか？",
+        "testability_notes": "ユーザーへの直接質問やPKG参照で容易に検証可能。",
+        "safety_risk_notes": "節約志向を強調しすぎると、ユーザーの多様な動機を矮小化するリスクがある。"
+      },
+      "rationale": "PKGとの整合性が高く、観察O1・O2をよく説明するが、O3（ルート効率化）が節約志向だけで十分説明できるかはやや弱い。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "ユーザーがデータ分析・最適化スキルを持ち、それを旅行計画に活用している（PKGで裏付けあり）"
+        ],
+        "best_discriminating_question": "旅行計画以外でもデータ分析や最適化思考を用いる場面は多いですか？",
+        "testability_notes": "PKGやユーザーへの質問で比較的容易に検証可能。",
+        "safety_risk_notes": "スキル偏重の解釈になり、他の動機や価値観を過小評価する可能性がある。"
+      },
+      "rationale": "PKGによりスキルの存在が支持され、O2・O3の説明力が高い。O1（分刻み計画）への直接説明力はやや限定的。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O4",
+          "O5",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "ユーザーが計画の完璧な実行を目指している",
+          "現実の不確実性への対応力が計画から抜け落ちている"
+        ],
+        "best_discriminating_question": "過去に計画通りに進まなかった旅行で、どのように感じましたか？",
+        "testability_notes": "ユーザーの過去体験や計画修正時の反応を聞くことで検証可能。",
+        "safety_risk_notes": "ユーザーの柔軟性不足を指摘するため、断定的に伝えると防衛的反応や不快感を招く恐れがある。"
+      },
+      "rationale": "外部エビデンス（ev:1）とOext2により、現実の不確実性との衝突を的確に説明。観察O4・O5にも妥当。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O5",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "計画段階の情報収集が現地のリアルタイム情報活用より優先されている"
+        ],
+        "best_discriminating_question": "現地の混雑状況や渋滞情報をリアルタイムで取得・活用する手段は検討していますか？",
+        "testability_notes": "ユーザーの計画内容や現地情報活用の有無を確認することで検証可能。",
+        "safety_risk_notes": "ユーザーの計画力や情報収集の不十分さを指摘するため、伝え方に配慮が必要。"
+      },
+      "rationale": "外部エビデンス（ev:2, ev:3）とOext1を根拠に、現地適応の不足を指摘。O5（効率化の見落とし）も説明できている。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O4",
+          "O5"
+        ],
+        "key_assumptions": [
+          "ユーザーの計画遂行へのこだわりが自己効力感や達成感に基づく（PKGで部分的に裏付けあり）",
+          "分刻み計画や完璧主義が自己像の強化を目的としている"
+        ],
+        "best_discriminating_question": "計画通りに行動できたとき、どのような感情が最も強く湧きますか？",
+        "testability_notes": "ユーザーの内面動機のため、直接質問や深掘りが必要でやや検証しにくい。",
+        "safety_risk_notes": "無意識の動機を指摘するため、ユーザーが否定的に受け取るリスクや心理的抵抗がある。"
+      },
+      "rationale": "PKGと観察O1・O4・O5に整合し、深層心理の仮説として妥当性があるが、検証には注意と配慮が必要。"
+    }
+  ]
+}

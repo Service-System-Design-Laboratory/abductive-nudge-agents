@@ -1,0 +1,136 @@
+{
+  "hypotheses": [
+    {
+      "hypothesis_id": "H1",
+      "type": "psychological",
+      "explains": [
+        "O1",
+        "O2",
+        "O3"
+      ],
+      "assumes": [
+        "A1"
+      ],
+      "statement": "ユーザーは計画通りに物事を進めることで安心感や達成感を得ている",
+      "mechanism": "計画を立てて実行することで、予測可能性と自己効力感が高まるため",
+      "predictions": [
+        "計画が乱れると不安やストレスを感じやすい",
+        "旅行後に計画通りに実行できたかを振り返る傾向がある"
+      ],
+      "discriminating_questions": [
+        "計画が崩れたとき、どのような気持ちになりますか？"
+      ],
+      "persona_link": [
+        "pkg:p07_n1"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H2",
+      "type": "value",
+      "explains": [
+        "O1",
+        "O2"
+      ],
+      "assumes": [
+        "A1",
+        "A2"
+      ],
+      "statement": "ユーザーは『計画的運営』という価値観を旅行にも適用している",
+      "mechanism": "普段から計画的に物事を進めることを重視しており、旅行も例外ではない",
+      "predictions": [
+        "他の活動でも事前に詳細な計画を立てる傾向がある",
+        "旅行の満足度は計画の実行度に左右される"
+      ],
+      "discriminating_questions": [
+        "普段の生活や仕事でも同じように計画を重視しますか？"
+      ],
+      "persona_link": [
+        "pkg:p07_n1"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H3",
+      "type": "environmental",
+      "explains": [
+        "O2",
+        "O3"
+      ],
+      "assumes": [
+        "A3"
+      ],
+      "statement": "デジタルツール（Googleマップなど）の発達が、効率化志向を強化している",
+      "mechanism": "移動や計画立案が容易になったことで、効率化への期待値が上がっている",
+      "predictions": [
+        "デジタルツールを使わない場合は効率化へのこだわりが弱まる",
+        "他の人にもツール活用を勧める傾向がある"
+      ],
+      "discriminating_questions": [
+        "デジタルツールがなかった場合、どのように計画を立てますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [
+        "ev:1"
+      ],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H4",
+      "type": "goal_mismatch",
+      "explains": [
+        "O1",
+        "O2",
+        "O3"
+      ],
+      "assumes": [
+        "A2"
+      ],
+      "statement": "効率化に注力するあまり、偶発的な発見や現地の文化体験を見落とすリスクがある",
+      "mechanism": "計画の最適化が目的化し、体験の幅が狭まるパラドックスが生じている",
+      "predictions": [
+        "予定外の出来事に柔軟に対応しづらい",
+        "現地の人との交流や偶然の発見が少なくなる"
+      ],
+      "discriminating_questions": [
+        "予定外の出来事や現地の人との交流にどの程度価値を感じますか？"
+      ],
+      "persona_link": [
+        "pkg:p07_n2",
+        "pkg:p07_n4"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H5",
+      "type": "paradox",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "Oext1"
+      ],
+      "assumes": [
+        "A1",
+        "A2"
+      ],
+      "statement": "効率化を極めるほど、旅行の本来の価値や偶発的な体験が失われるというパラドックスが生じている",
+      "mechanism": "データ主導の計画が体験の幅や深みを狭め、結果的に満足感や思い出の質が低下する可能性がある",
+      "predictions": [
+        "計画通りに進んでも、何か物足りなさを感じることがある",
+        "偶発的な出来事が強く記憶に残る場合がある"
+      ],
+      "discriminating_questions": [
+        "過去の旅行で予定外の出来事が印象に残ったことはありますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [
+        "ev:1"
+      ],
+      "is_reframing": true
+    }
+  ]
+}

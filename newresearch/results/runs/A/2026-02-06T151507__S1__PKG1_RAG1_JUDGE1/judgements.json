@@ -1,0 +1,99 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O4",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "ユーザー価値の明確化が不十分であることが方向性の迷いの主因である",
+          "技術的評価だけでは研究の意義や社会的価値が十分に伝わらない"
+        ],
+        "best_discriminating_question": "ユーザー価値を具体的に定義・測定した場合、研究の意義や方向性への迷いは解消するか？",
+        "testability_notes": "ユーザー価値の定義・評価指標の導入前後で方向性の迷いの変化を観察することで比較的容易に検証可能。",
+        "safety_risk_notes": "『ユーザー価値が不十分』という断定が、研究者の努力不足と受け取られる可能性があるため、表現に配慮が必要。"
+      },
+      "rationale": "観察・外部エビデンスとも整合し、仮説としての一貫性が高い。PKGリンクは全て無効だが、use_pkg=true環境下では欠点として扱う必要がある。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O4",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "ユーザー行動や利用シーンの具体的なデータが不足している",
+          "行動データがあれば価値説明が容易になる"
+        ],
+        "best_discriminating_question": "ユーザー行動データを収集・提示した場合、価値に関する外部評価は具体的になるか？",
+        "testability_notes": "ユーザー行動データの有無による外部評価の変化を観察することで検証可能。データ収集の手間はあるが現実的。",
+        "safety_risk_notes": "『データ不足』の指摘が、現状の取り組みを否定的に受け取られるリスクがある。"
+      },
+      "rationale": "外部エビデンス（Oext2）と強く整合し、説明力が高い。PKGリンクは無効（use_pkg=true下で欠点）だが、致命的な欠陥はない。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "自己効力感が高いことが外部評価とのギャップを生む",
+          "そのギャップが方向性の迷いにつながる"
+        ],
+        "best_discriminating_question": "外部評価が自己効力感や研究への確信にどれほど影響しているか？",
+        "testability_notes": "自己評価と外部評価のギャップ認知時の心理的変化をアンケート等で測定可能だが、主観的要素が強い。",
+        "safety_risk_notes": "心理的要因への言及は、個人の内面に踏み込むため、配慮した表現が必要。"
+      },
+      "rationale": "O3・O4の説明に妥当性があり、心理的観点の仮説として有効。PKGリンクは無効（use_pkg=true下で欠点）だが、他に致命的な問題はない。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O4",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "技術的目標とユーザー価値目標の間にズレが存在する",
+          "そのズレが方向性の迷いを生む"
+        ],
+        "best_discriminating_question": "現在の研究目標はユーザー価値やブランド価値と整合しているか？",
+        "testability_notes": "研究目標とユーザー価値・ブランド価値の整合性を関係者にヒアリングすることで検証可能。",
+        "safety_risk_notes": "『目標のズレ』の指摘が、研究の方向性自体を否定的に受け取られるリスクがある。"
+      },
+      "rationale": "O1, O2, O4, Oext3を網羅的に説明でき、外部エビデンスとも整合。PKGリンクは無効（use_pkg=true下で欠点）だが、仮説としての妥当性は高い。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O4"
+        ],
+        "key_assumptions": [
+          "ユーザー価値伝達に必要なスキルが十分でない",
+          "技術面への注力が説明スキルの発揮を妨げている"
+        ],
+        "best_discriminating_question": "ユーザー価値を説明する際、どのような手法やスキルを用いているか？",
+        "testability_notes": "説明スキル向上前後で外部評価の変化を観察することで検証可能。ワークショップ等の実施が必要。",
+        "safety_risk_notes": "『スキル不足』の指摘が、個人の能力批判と受け取られるリスクがある。"
+      },
+      "rationale": "O2, O4の説明に妥当性があり、実践的な仮説。PKGリンクは無効（use_pkg=true下で欠点）だが、他に致命的な問題はない。"
+    }
+  ]
+}

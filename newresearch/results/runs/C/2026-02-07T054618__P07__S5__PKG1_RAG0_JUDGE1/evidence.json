@@ -1,0 +1,20 @@
+{
+  "triggers": [
+    {
+      "type": "information_gap",
+      "text": "ユーザーは宿泊・移動・食事の節約策を既に実施しているが、これ以外の節約ポイント（観光費用、娯楽、現地での無料サービスなど）についてPKGでは情報が不足している。"
+    },
+    {
+      "type": "ambiguity",
+      "text": "コンビニ食が最も安価な食事選択肢かどうか、他により安く済ませる方法が存在するかについてPKGでは明確な説明がない。"
+    },
+    {
+      "type": "focus",
+      "text": "ユーザーが『この予算内でもっと節約できるポイント』を強調して尋ねている点が、追加の節約策探索の重要なトリガーとなっている。"
+    }
+  ],
+  "rag_queries": [],
+  "evidence_items": [],
+  "external_observations": [],
+  "notes": "RAG disabled (use_rag=false) — trigger identification only"
+}

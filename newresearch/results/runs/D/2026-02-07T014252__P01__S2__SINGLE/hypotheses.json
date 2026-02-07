@@ -1,0 +1,145 @@
+{
+  "hypotheses": [
+    {
+      "hypothesis_id": "H1",
+      "type": "psychological",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "O4"
+      ],
+      "assumes": [
+        "A1",
+        "A2"
+      ],
+      "statement": "ユーザーは計画通りに物事を進めることで安心感や達成感を得ている。",
+      "mechanism": "計画の遂行が自己効力感やコントロール感を高めるため、効率化に強い関心を持つ。",
+      "predictions": [
+        "計画が崩れるとストレスを感じやすい",
+        "旅行以外でもスケジュール管理を重視する傾向がある"
+      ],
+      "discriminating_questions": [
+        "計画通りに進まなかった場合、どんな気持ちになりますか？"
+      ],
+      "persona_link": [
+        "p01_n6"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H2",
+      "type": "goal_mismatch",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "O4",
+        "O5"
+      ],
+      "assumes": [
+        "A1",
+        "A4"
+      ],
+      "statement": "効率化を追求するあまり、旅行の本来の目的や体験の質が二の次になっている可能性がある。",
+      "mechanism": "主要スポットの制覇や計画の完遂が目的化し、体験そのものや偶発的な出会いの価値が見落とされる。",
+      "predictions": [
+        "旅行後に『何か物足りなさ』や『思い出の印象が薄い』と感じることがある",
+        "効率化以外の視点を問われると答えに詰まる"
+      ],
+      "discriminating_questions": [
+        "効率を最優先した結果、印象的な体験が減ることに不安はありませんか？"
+      ],
+      "persona_link": [
+        "p01_n1",
+        "p01_n4"
+      ],
+      "evidence_link": [],
+      "is_reframing": true
+    },
+    {
+      "hypothesis_id": "H3",
+      "type": "value",
+      "explains": [
+        "O1",
+        "O2",
+        "O3"
+      ],
+      "assumes": [
+        "A1"
+      ],
+      "statement": "ユーザーは効率的な行動や計画性自体に価値を見出している。",
+      "mechanism": "効率的な行動が自己の価値観やアイデンティティと結びついている。",
+      "predictions": [
+        "他者にも効率的な行動を勧めることがある",
+        "効率化の工夫を楽しんでいる"
+      ],
+      "discriminating_questions": [
+        "効率化の工夫自体が旅行の楽しみになっていますか？"
+      ],
+      "persona_link": [
+        "p01_n6"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H4",
+      "type": "constraint_conflict",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "O4",
+        "O5"
+      ],
+      "assumes": [
+        "A1",
+        "A3"
+      ],
+      "statement": "効率化を重視する一方で、PKGにある『自然との調和』や『里山散策』など、偶発性やゆとりを大切にする価値観と内面で葛藤している可能性がある。",
+      "mechanism": "効率化と自然体験の価値観が両立しにくく、どちらかに偏ることで内的な違和感が生じる。",
+      "predictions": [
+        "旅行中に『もっとゆっくりしたい』と感じる瞬間がある",
+        "効率化と自然体験のどちらを優先するか迷うことがある"
+      ],
+      "discriminating_questions": [
+        "分刻みの計画と、自然の中での偶発的な体験、どちらにより魅力を感じますか？"
+      ],
+      "persona_link": [
+        "p01_n1",
+        "p01_n4"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H5",
+      "type": "social",
+      "explains": [
+        "O5",
+        "O1"
+      ],
+      "assumes": [
+        "A1"
+      ],
+      "statement": "効率化の追求は、社会的な期待や『ちゃんとしている人』というイメージを守るためでもある。",
+      "mechanism": "周囲からの評価や信頼を得るために、計画的な行動を重視している。",
+      "predictions": [
+        "他者と旅行する際は特に計画を重視する",
+        "効率的な行動が『信頼される人』という自己像と結びついている"
+      ],
+      "discriminating_questions": [
+        "計画を立てることは、自分の信頼や評価と関係していますか？"
+      ],
+      "persona_link": [
+        "p01_n5"
+      ],
+      "evidence_link": [
+        "ev:1"
+      ],
+      "is_reframing": false
+    }
+  ]
+}

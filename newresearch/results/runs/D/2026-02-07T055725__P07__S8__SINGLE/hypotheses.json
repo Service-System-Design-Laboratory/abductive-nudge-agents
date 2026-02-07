@@ -1,0 +1,146 @@
+{
+  "hypotheses": [
+    {
+      "hypothesis_id": "H1",
+      "type": "psychological",
+      "explains": [
+        "O1",
+        "O2",
+        "O4"
+      ],
+      "assumes": [
+        "A2"
+      ],
+      "statement": "過去の体験が現在の自分にとって心の拠り所となっており、再び同じ体験を通じて安心感や一体感を得たいと考えている。",
+      "mechanism": "ノスタルジア効果により、過去の幸福な記憶が現在の自己肯定感や安心感に結びつく。",
+      "predictions": [
+        "過去の体験を思い出すことで気持ちが落ち着く",
+        "同じ場所を訪れることで過去の自分とつながる感覚を持つ"
+      ],
+      "discriminating_questions": [
+        "あの頃の感動を思い出すこと自体が、今の自分にとってどんな意味を持っていますか？"
+      ],
+      "persona_link": [
+        "pkg:p07_n2"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H2",
+      "type": "environmental",
+      "explains": [
+        "O2",
+        "O3",
+        "O4",
+        "Oext1",
+        "Oext3"
+      ],
+      "assumes": [
+        "A1",
+        "A3"
+      ],
+      "statement": "現在の嵐山や竹林の道は観光客の増加や環境変化により、当時と同じ感動を得ることが難しい可能性が高い。",
+      "mechanism": "観光地の環境変化（混雑・景観の変化）が体験の質に直接影響するため、過去の再現が困難になる。",
+      "predictions": [
+        "現地を訪れても当時のような静けさや雰囲気を感じにくい",
+        "人の多さや景観の変化に違和感を覚える"
+      ],
+      "discriminating_questions": [
+        "もし現地が当時と違っていた場合、どんな気持ちになると思いますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [
+        "ev:Oext1",
+        "ev:Oext3"
+      ],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H3",
+      "type": "value",
+      "explains": [
+        "O1",
+        "O2",
+        "O4"
+      ],
+      "assumes": [
+        "A2"
+      ],
+      "statement": "地域文化や伝統への敬意が強く、静かな自然や土地の空気を大切にしているため、過去の体験を再現したいと考えている。",
+      "mechanism": "地域文化や自然環境への価値観が、過去の静かな体験を理想化し、再現を望む動機となる。",
+      "predictions": [
+        "地域の伝統や文化に触れる活動にも関心がある",
+        "静かな自然環境を求める傾向がある"
+      ],
+      "discriminating_questions": [
+        "京都のどんな文化や空気感に特に惹かれますか？"
+      ],
+      "persona_link": [
+        "pkg:p07_n2",
+        "pkg:p07_n4"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H4",
+      "type": "goal_mismatch",
+      "explains": [
+        "O2",
+        "O3",
+        "O4"
+      ],
+      "assumes": [
+        "A3"
+      ],
+      "statement": "『同じ感動』を求めているが、実際には過去と現在の自分の心境や状況が異なるため、同じ体験をしても異なる感情になる可能性がある。",
+      "mechanism": "人は時間の経過とともに価値観や感受性が変化するため、同じ体験をしても同じ感動を得るとは限らない。",
+      "predictions": [
+        "現地を訪れても、期待したほどの感動が得られない",
+        "体験後に違和感や物足りなさを感じる"
+      ],
+      "discriminating_questions": [
+        "今の自分が、あの頃と同じ体験をしても同じように感動できると思いますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H5",
+      "type": "psychological",
+      "explains": [
+        "O2",
+        "O3",
+        "O4",
+        "Oext1",
+        "Oext2",
+        "Oext3"
+      ],
+      "assumes": [
+        "A2",
+        "A3"
+      ],
+      "statement": "実は『同じ感動』を求めているのではなく、過去の自分や失われた時間、理想化された記憶を追い求めているだけであり、現実の体験はそのギャップを埋める手段に過ぎない。",
+      "mechanism": "ノスタルジアや理想化された過去への執着が、現実の体験よりも記憶や自己像の再構築を目的化させている。",
+      "predictions": [
+        "現地の変化に強い違和感や失望を感じる",
+        "過去の自分や体験を思い出すこと自体が目的化している",
+        "現実の体験よりも記憶の中のイメージを大事にしている"
+      ],
+      "discriminating_questions": [
+        "本当に求めているのは『あの場所の空気』ですか？それとも『あの頃の自分』や『過去の記憶』ですか？"
+      ],
+      "persona_link": [
+        "pkg:p07_n2"
+      ],
+      "evidence_link": [
+        "ev:Oext1",
+        "ev:Oext2",
+        "ev:Oext3"
+      ],
+      "is_reframing": true
+    }
+  ]
+}

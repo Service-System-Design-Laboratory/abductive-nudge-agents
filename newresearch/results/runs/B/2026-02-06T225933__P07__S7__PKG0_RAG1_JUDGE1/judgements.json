@@ -1,0 +1,93 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "A1: ユーザーは未知や予測不能な状況に対して強い不安を感じやすい",
+          "A2: 不安を最小化するために行動範囲を限定する傾向がある"
+        ],
+        "best_discriminating_question": "予想外の出来事が起きたとき、どのように感じますか？",
+        "testability_notes": "ユーザーへの直接質問や行動観察で検証可能。特に自由行動や冒険的選択を避ける傾向の有無を問えばよい。",
+        "safety_risk_notes": "『不安が強い』と断定的に表現するとユーザーの自己認識や自尊心を傷つける可能性がある。"
+      },
+      "rationale": "観察O1-O4を一貫して説明できており、仮説としての整合性は高い。心理的要因への帰属が強調されるため、ユーザーへの配慮が必要。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O5"
+        ],
+        "key_assumptions": [
+          "A3: ユーザーは安全対策や防犯グッズに関する情報が不足していると感じている"
+        ],
+        "best_discriminating_question": "最近導入した安全対策やグッズはありますか？",
+        "testability_notes": "ユーザーの情報収集行動や関心の有無を質問・観察することで比較的容易に検証できる。外部エビデンスも利用可能。",
+        "safety_risk_notes": "『情報不足』と断定することでユーザーの知識や努力を軽視していると受け取られるリスクがある。"
+      },
+      "rationale": "O5の説明に特化し、外部エビデンスとも整合する。情報ギャップの指摘は有用だが、他の観察には直接的な説明力が弱い。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3",
+          "O4",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "A1: ユーザーはホテルや業界の安全演出を信頼している"
+        ],
+        "best_discriminating_question": "ホテル選びの際、安全設備のどの部分を重視しますか？",
+        "testability_notes": "ホテル選択基準や安全設備への信頼度を質問することで検証可能。外部エビデンス（ev:4）も参照できる。",
+        "safety_risk_notes": "『演出された安全』という表現がユーザーの判断力を否定的に捉えられる可能性がある。"
+      },
+      "rationale": "O3, O4, Oext2を説明し、業界の影響を考慮した環境要因仮説。ユーザーの主体性に疑問を投げかける点に注意が必要。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "A1: 社会的な安全志向の高まりが個人の行動選択に影響している"
+        ],
+        "best_discriminating_question": "周囲の人も安全志向の旅行スタイルを選んでいますか？",
+        "testability_notes": "ユーザーの周囲や社会的影響について質問することで検証可能。外部エビデンス（ev:1）も参照できる。",
+        "safety_risk_notes": "社会的同調圧力を強調しすぎると、個人の選択を軽視していると受け取られるリスクがある。"
+      },
+      "rationale": "O2, O3, Oext3を説明し、社会的要因を重視。個人と社会の相互作用を考察する上で有用だが、個人差への配慮が必要。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O5"
+        ],
+        "key_assumptions": [
+          "A2: ユーザーは安全管理を自己イメージや役割として重視している"
+        ],
+        "best_discriminating_question": "安全確保のためにどれだけ準備したかを振り返ることで満足感を感じますか？",
+        "testability_notes": "ユーザーの自己評価や満足感の源泉を問うことで検証可能。主観的要素が強いため慎重なヒアリングが必要。",
+        "safety_risk_notes": "ユーザーの動機や自己像に踏み込むため、誤解や不快感を与えるリスクが高い。"
+      },
+      "rationale": "O1, O5を説明し、自己イメージの維持という新たな視点を提供。リフレーミング仮説として有用だが、センシティブな内容を含む。"
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "hypotheses": [
+    {
+      "hypothesis_id": "H1",
+      "type": "psychological",
+      "explains": [
+        "O1",
+        "O2",
+        "O3"
+      ],
+      "assumes": [
+        "A1",
+        "A2"
+      ],
+      "statement": "ユーザーは伝統建築や歴史的な街並みに触れることで、自己の価値観（自然との調和や伝統重視）を再確認し、精神的な充足感を得ようとしている。",
+      "mechanism": "伝統や自然との調和を重視する価値観が、金沢の街並みへの美意識や訪問動機を生み出している。",
+      "predictions": [
+        "他の伝統的な地域や文化財にも関心が高い",
+        "現代的な観光地よりも歴史的な場所を好む"
+      ],
+      "discriminating_questions": [
+        "伝統建築を見ているとき、どんな気持ちや安心感を感じますか？"
+      ],
+      "persona_link": [
+        "p01_n4",
+        "p01_n1"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H2",
+      "type": "social",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "Oext1",
+        "Oext2"
+      ],
+      "assumes": [
+        "A3"
+      ],
+      "statement": "ユーザーは金沢の伝統的な街並みを『日本の美の極み』と評価することで、観光地としての商品化や演出された本物らしさ（performative authenticity）に無意識に影響されている可能性がある。",
+      "mechanism": "観光地としての金沢がメディアや観光資源として強調されることで、ユーザーの美意識や価値観にも外部の視線や期待が入り込んでいる。",
+      "predictions": [
+        "観光ガイドやSNSで紹介される場所に惹かれやすい",
+        "現地での体験が他者との共有や写真撮影に結びつきやすい"
+      ],
+      "discriminating_questions": [
+        "ひがし茶屋街の美しさを感じるとき、他の人の評価や写真映えも意識していますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [
+        "ev:1",
+        "ev:2"
+      ],
+      "is_reframing": true
+    },
+    {
+      "hypothesis_id": "H3",
+      "type": "value",
+      "explains": [
+        "O2",
+        "O3"
+      ],
+      "assumes": [
+        "A1",
+        "A2"
+      ],
+      "statement": "ユーザーは『日本の美』を伝統や歴史的なものに見出す価値観を強く持っている。",
+      "mechanism": "伝統的なものを美しいと感じる価値観が、金沢やひがし茶屋街への評価につながっている。",
+      "predictions": [
+        "現代建築や新しい文化よりも、古いものに美を感じる傾向がある"
+      ],
+      "discriminating_questions": [
+        "現代的な建築や街並みにはどのような印象を持っていますか？"
+      ],
+      "persona_link": [
+        "p01_n4"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H4",
+      "type": "environmental",
+      "explains": [
+        "O1",
+        "O2",
+        "O3"
+      ],
+      "assumes": [
+        "A2"
+      ],
+      "statement": "ユーザーは都市部の現代的な環境やデジタル化に疲れ、自然や伝統的な空間に癒しや安らぎを求めている。",
+      "mechanism": "日常生活でのデジタル化や都市化へのストレスが、伝統的な街並みへの志向を強めている。",
+      "predictions": [
+        "デジタル機器や都市生活に苦手意識や疲れを感じている",
+        "自然や伝統的な空間でリラックスできる"
+      ],
+      "discriminating_questions": [
+        "最近、都市やデジタル環境に疲れを感じることはありますか？"
+      ],
+      "persona_link": [
+        "p01_n9",
+        "p01_n6"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H5",
+      "type": "evidence_gap",
+      "explains": [
+        "O2",
+        "O3",
+        "Oext3"
+      ],
+      "assumes": [
+        "A3"
+      ],
+      "statement": "ユーザーが感じている『日本の美の極み』は、実際には観光客や観察者の存在によって変容している可能性がある（observer effect）。",
+      "mechanism": "観光地としてのひがし茶屋街は、観察者や観光客の振る舞いによって本来の姿から変化しており、ユーザーの感じる美しさもその影響を受けているかもしれない。",
+      "predictions": [
+        "現地で観光客の多さや写真撮影の様子に気づく",
+        "静かな時間帯や人の少ない場所により強く美しさを感じる"
+      ],
+      "discriminating_questions": [
+        "観光客が多いときと少ないときで、街並みの印象は変わりますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [
+        "ev:3"
+      ],
+      "is_reframing": true
+    }
+  ]
+}

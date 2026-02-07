@@ -1,0 +1,16 @@
+{
+  "triggers": [
+    {
+      "type": "information_gap",
+      "text": "ユーザーが『ひがし茶屋街の街並みこそが日本の美の極み』と考える理由や根拠がPKGや観察・仮定からは明示されていない。"
+    },
+    {
+      "type": "information_gap",
+      "text": "金沢が江戸時代の風情をよく残している具体的な特徴や、他都市との比較がPKGや観察・仮定からは不明である。"
+    }
+  ],
+  "rag_queries": [],
+  "evidence_items": [],
+  "external_observations": [],
+  "notes": "RAG disabled (use_rag=false) — trigger identification only"
+}

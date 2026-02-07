@@ -1,0 +1,346 @@
+{
+  "context": {
+    "observations": [
+      {
+        "id": "O1",
+        "text": "旅行中は常にカメラを持って歩いている。"
+      },
+      {
+        "id": "O2",
+        "text": "絶景ポイントでは必ず三脚を立てて、ベストアングルで何十枚も撮影する。"
+      },
+      {
+        "id": "O3",
+        "text": "SNSにアップするための完璧な写真を撮ることが旅の目的である。"
+      },
+      {
+        "id": "O4",
+        "text": "もっと効率的に映える写真を撮るコツを知りたいと考えている。"
+      }
+    ],
+    "assumptions": [
+      {
+        "id": "A1",
+        "text": "ユーザーは写真撮影の効率やクオリティ向上に強い関心がある。",
+        "status": "tentative"
+      },
+      {
+        "id": "A2",
+        "text": "SNSでの評価や反応がユーザーの満足度に影響している。",
+        "status": "tentative"
+      },
+      {
+        "id": "A3",
+        "text": "効率化や最適化に関心があるのは、節約志向やコスト意識と関連している。",
+        "status": "tentative"
+      },
+      {
+        "id": "A4",
+        "text": "写真撮影自体が旅の主目的となっており、体験や交流よりも優先されている。",
+        "status": "tentative"
+      }
+    ],
+    "questions": [
+      "SNSにアップする写真で特に意識しているポイントは何ですか？",
+      "効率的に撮影したい理由は、時間短縮・体力温存・他の活動との両立など、どれが一番大きいですか？",
+      "撮影以外の旅の楽しみ方も重視していますか？",
+      "SNSでの反応や評価は、旅の満足度にどの程度影響しますか？"
+    ],
+    "constraints": {
+      "tone": "supportive",
+      "safety": "avoid determinism"
+    }
+  },
+  "evidence": {
+    "triggers": [
+      {
+        "type": "focus",
+        "text": "写真撮影が旅の主目的となっている点に強いこだわりがある。"
+      },
+      {
+        "type": "information_gap",
+        "text": "効率化の目的（時間・体力・他の活動との両立など）が明確でない。"
+      },
+      {
+        "type": "ambiguity",
+        "text": "SNSでの評価がどの程度重要なのかが不明。"
+      },
+      {
+        "type": "contradiction",
+        "text": "節約志向やコスト最適化と、三脚やカメラ機材への投資・撮影への時間投下が両立しているのか。"
+      }
+    ],
+    "external_observations": [
+      {
+        "id": "Oext1",
+        "text": "絶景をより美しく撮影するには、早朝や夕方の『ゴールデンアワー』を狙うと自然光が柔らかく色彩が豊かになる。",
+        "source_url": "https://www.lemon8-app.com/@lornasakamoto0/7513636863522062854?region=jp"
+      },
+      {
+        "id": "Oext2",
+        "text": "今後10年で予想もつかない現象が次々に起こるほど、時代の変化が加速している（コンテンツや写真の価値観も変化しうる）。",
+        "source_url": "https://www.vipo.or.jp/u/II_SenshinContents_ContentProduction.pdf"
+      },
+      {
+        "id": "Oext3",
+        "text": "ライブ配信サービスでは、誰でも気軽に配信できる一方、演出された本物らしさ（performative authenticity）が求められる傾向が強い。",
+        "source_url": "https://www.showroom-live.com/"
+      }
+    ]
+  },
+  "hypotheses": [
+    {
+      "hypothesis_id": "H1",
+      "type": "psychological",
+      "explains": [
+        "O1",
+        "O2",
+        "O3"
+      ],
+      "assumes": [
+        "A1"
+      ],
+      "statement": "ユーザーは『完璧な写真』を撮ること自体に達成感や自己効力感を感じている。",
+      "mechanism": "写真撮影のプロセスや成果が自己満足や成長実感に直結しているため、旅の主目的となっている。",
+      "predictions": [
+        "SNSの反応がなくても、良い写真が撮れた時に満足感を得る",
+        "撮影技術や機材へのこだわりが強い"
+      ],
+      "discriminating_questions": [
+        "SNSでの反応が薄くても、良い写真が撮れたら満足できますか？"
+      ],
+      "persona_link": [
+        "p05_n1"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H2",
+      "type": "social",
+      "explains": [
+        "O3",
+        "O4"
+      ],
+      "assumes": [
+        "A2"
+      ],
+      "statement": "SNSでの評価や『映え』が、ユーザーの旅の満足度や自己評価に大きく影響している。",
+      "mechanism": "SNSでの反応や『いいね』が、写真撮影や旅の目的意識を強化し、効率化への意欲も高めている。",
+      "predictions": [
+        "SNSで高評価を得られた写真には特に満足感を覚える",
+        "SNSのトレンドや他者の写真を参考にしている"
+      ],
+      "discriminating_questions": [
+        "SNSでの反応が良いと、旅の満足度も高まりますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H3",
+      "type": "skill",
+      "explains": [
+        "O4"
+      ],
+      "assumes": [
+        "A3"
+      ],
+      "statement": "効率的な撮影方法への関心は、節約志向やコスト最適化の価値観が反映されている。",
+      "mechanism": "限られた時間やリソースで最大限の成果を出すことに価値を感じており、撮影にもその志向が現れている。",
+      "predictions": [
+        "撮影機材や移動、時間配分なども最適化しようとする",
+        "撮影以外の活動も効率よくこなしたいと考えている"
+      ],
+      "discriminating_questions": [
+        "撮影の効率化は、他の活動やコストとのバランスを意識してのことですか？"
+      ],
+      "persona_link": [
+        "p05_n2",
+        "p05_n3"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H4",
+      "type": "environmental",
+      "explains": [
+        "O2",
+        "O4",
+        "Oext1"
+      ],
+      "assumes": [
+        "A1"
+      ],
+      "statement": "撮影効率やクオリティ向上には、自然光や時間帯など環境要因の最適化が大きく関わっている。",
+      "mechanism": "ゴールデンアワーなど環境条件を活かすことで、少ない試行回数で高品質な写真が得られる。",
+      "predictions": [
+        "撮影時間や場所の選択に強いこだわりがある",
+        "自然光や天候を事前に調べて行動計画を立てる"
+      ],
+      "discriminating_questions": [
+        "撮影時の自然光や時間帯はどの程度意識していますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [
+        "Oext1"
+      ],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H5",
+      "type": "goal_mismatch",
+      "explains": [
+        "O3",
+        "O4",
+        "Oext2",
+        "Oext3"
+      ],
+      "assumes": [
+        "A4"
+      ],
+      "statement": "『完璧な写真を撮ること』が旅の目的だと考えているが、実はSNSや写真の価値観自体が時代とともに変化しており、今の努力が将来的にズレを生む可能性がある（裏切る仮説）。",
+      "mechanism": "写真の『映え』やSNSでの評価基準は変化しやすく、今の最適化が未来の自己満足や社会的評価とズレるリスクがある。さらに、ライブ配信や演出された本物らしさが求められる時代に、静止画の完璧さだけを追求することが逆に自己目的化してしまっている可能性がある。",
+      "predictions": [
+        "将来的に写真撮影へのモチベーションや満足度が変化する",
+        "ライブ配信や動画、演出性への関心が高まるかもしれない",
+        "今の撮影スタイルが時代遅れと感じる瞬間が来る"
+      ],
+      "discriminating_questions": [
+        "写真の『映え』やSNSの評価基準が変わった時、今の撮影スタイルを見直すことはありますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [
+        "Oext2",
+        "Oext3"
+      ],
+      "is_reframing": true
+    }
+  ],
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A1"
+        ],
+        "best_discriminating_question": "SNSでの反応が薄くても、良い写真が撮れたら満足できますか？",
+        "testability_notes": "ユーザーの満足感の源泉がどこにあるかを質問で確認できる。",
+        "safety_risk_notes": "ユーザーの自己効力感や達成感を肯定する内容なのでリスクは低い。"
+      },
+      "rationale": "写真撮影自体が目的化している点を素直に説明できる。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "A2"
+        ],
+        "best_discriminating_question": "SNSでの反応が良いと、旅の満足度も高まりますか？",
+        "testability_notes": "SNSの評価と満足度の相関を質問で確認できる。",
+        "safety_risk_notes": "SNS依存を指摘しすぎると自己否定感を与えるリスクがある。"
+      },
+      "rationale": "SNSの評価が動機の中心にある可能性を説明。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O4"
+        ],
+        "key_assumptions": [
+          "A3"
+        ],
+        "best_discriminating_question": "撮影の効率化は、他の活動やコストとのバランスを意識してのことですか？",
+        "testability_notes": "効率化の動機を質問で確認できる。",
+        "safety_risk_notes": "節約志向を肯定する内容なのでリスクは低い。"
+      },
+      "rationale": "PKGの節約志向・コスト最適化と撮影効率化の関連を説明。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O4",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "A1"
+        ],
+        "best_discriminating_question": "撮影時の自然光や時間帯はどの程度意識していますか？",
+        "testability_notes": "撮影条件への意識を質問で確認できる。",
+        "safety_risk_notes": "技術的なアドバイスに近く、リスクは低い。"
+      },
+      "rationale": "外部観察（ゴールデンアワー）を活用し、環境要因の最適化を説明。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3",
+          "O4",
+          "Oext2",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "A4"
+        ],
+        "best_discriminating_question": "写真の『映え』やSNSの評価基準が変わった時、今の撮影スタイルを見直すことはありますか？",
+        "testability_notes": "価値観や動機の変化への対応を質問で確認できる。",
+        "safety_risk_notes": "ユーザーの現状の努力や価値観に疑問を投げかけるため、やや不快感を与える可能性がある。"
+      },
+      "rationale": "外部観察（時代変化・演出された本物らしさ）を活用し、ユーザーの目的意識や行動の意味を深く問い直す裏切る仮説。"
+    }
+  ],
+  "decision": {
+    "selected_hypothesis_id": "H5",
+    "contrasting_hypothesis_id": "H4",
+    "selection_rationale": "H5は外部観察（Oext2, Oext3）を活用し、『完璧な写真を撮ること』というユーザーの目的が、時代の変化やSNSの価値観の移ろいによって将来的にズレる可能性を指摘する裏切る仮説です。これにより、ユーザーの発言『映える写真を効率的に撮りたい』の意味が『今の最適化が将来も有効とは限らない』という自己像や行動の再考に変わります。一方、H4は環境要因の最適化という額面通りの読みです。どちらの立場に立つかで、今後の撮影スタイルや旅の計画、自己理解が大きく変わります。",
+    "user_facing_frame": {
+      "framing": "options",
+      "questions": [
+        "撮影時の自然光や時間帯はどの程度意識していますか？",
+        "写真の『映え』やSNSの評価基準が変わった時、今の撮影スタイルを見直すことはありますか？"
+      ],
+      "options": [
+        "今の撮影スタイルや効率化を、環境条件（ゴールデンアワーなど）を活かしてさらに磨いていく立場",
+        "時代やSNSの価値観が変わることを見越して、撮影や旅の目的自体を柔軟に見直していく立場"
+      ]
+    }
+  },
+  "final_response": "ご相談ありがとうございます。『旅の目的が完璧な写真を撮ること』というこだわり、とても素敵だと思います。実際、絶景ポイントで三脚を立てて何十枚も撮影される熱意や、SNSで映える写真を効率的に撮りたいという工夫への意欲が伝わってきました。\n\n一つの視点として、撮影効率やクオリティをさらに高めるには、例えば『ゴールデンアワー』のような自然光のタイミングを意識することで、少ない試行回数でも映える写真が撮れるというテクニックもあります。\n\n一方で、外部情報によれば、SNSや写真の価値観は時代とともに大きく変化していくことも指摘されています。今は『完璧な静止画』が求められていても、将来的にはライブ配信や動画、あるいは演出された本物らしさが重視される流れになるかもしれません。もし写真の『映え』やSNSの評価基準が変わった時、今の撮影スタイルを見直すことはありますか？\n\n今のスタイルを極めていくのか、それとも時代の変化も視野に入れて旅や撮影の目的自体を柔軟に考えていくのか、どちらの立場に立つかで、これからの旅の楽しみ方や自己理解も変わってくるかもしれません。\n\nまずは、次の旅で『ゴールデンアワー』を意識して1枚だけ撮ってみる、あるいは今の撮影スタイルを振り返ってみるなど、5分でできる小さな行動から始めてみませんか？どちらの立場が今のご自身にしっくりきそうか、よければ教えてください。",
+  "markers": {
+    "empathy": {
+      "acknowledgement": true,
+      "reflection": true,
+      "perspective_prompt": true
+    },
+    "nudge": {
+      "easy": true,
+      "attractive": true,
+      "social": true,
+      "timely": true,
+      "has_question": true,
+      "has_options": true,
+      "has_small_action": true,
+      "directive_level": "low"
+    }
+  }
+}

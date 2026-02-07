@@ -1,0 +1,97 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーは写真撮影そのものや技術習得に強い内発的動機を持っている",
+          "撮影行動の主な目的が自己成長や達成感であり、外的承認は主目的ではない"
+        ],
+        "best_discriminating_question": "写真を撮ること自体や新しい撮影技法の習得にどれくらい喜びを感じているか？",
+        "testability_notes": "ユーザーへの直接質問で検証可能。SNS反応と無関係な動機の有無を確認する必要あり。",
+        "safety_risk_notes": "内発的動機を強調しすぎると、実際は承認欲求が主な場合に誤解を生む恐れがある。"
+      },
+      "rationale": "観察O1・O2は十分説明できるが、O3（SNS目的）への説明はやや弱い。内発的動機を重視する仮説であり、他仮説との動機の違いが重要。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3",
+          "O4",
+          "Oext1",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "ユーザーはSNSでの承認や反響を強く求めている",
+          "SNS映えのための行動がユーザーの主要な動機である"
+        ],
+        "best_discriminating_question": "SNSでの『いいね』やコメントの数をどの程度気にしているか？",
+        "testability_notes": "SNS利用実態や投稿行動を観察・質問することで検証可能。外部エビデンスとも整合。",
+        "safety_risk_notes": "承認欲求を強調するため、ユーザーが否定的に受け取るリスクやプライバシー配慮が必要。"
+      },
+      "rationale": "SNS承認欲求を主動機とする点でO3, O4, 外部事実を広く説明できる。外部エビデンスとも一致し、社会的要因を重視する場合に有力。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O4"
+        ],
+        "key_assumptions": [
+          "ユーザーは撮影技術や機材操作に一定の自信がある",
+          "効率化や最新テクニックへの課題意識が存在する"
+        ],
+        "best_discriminating_question": "最近新しく取り入れた撮影テクニックや機材はあるか？",
+        "testability_notes": "ユーザーの撮影・編集行動や学習意欲を質問・観察することで検証可能。",
+        "safety_risk_notes": "スキル不足や課題意識を指摘するため、ユーザーの自尊心を損なうリスクがある。"
+      },
+      "rationale": "撮影技術や効率化への関心を説明できるが、動機や社会的要因の説明は弱い。O2, O4の行動面に焦点。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O4"
+        ],
+        "key_assumptions": [
+          "現状の観察や仮定だけではユーザーの課題が特定できていない"
+        ],
+        "best_discriminating_question": "撮影のどの部分をもっと効率化したいと感じているか？",
+        "testability_notes": "追加のユーザーインタビューや詳細な質問が必要。現状の情報のみでは検証困難。",
+        "safety_risk_notes": "仮説の不十分さを明示するため、ユーザーに不安や不信感を与える可能性がある。"
+      },
+      "rationale": "現状の情報不足を指摘するメタ仮説であり、O4のみに限定的に説明。追加調査の必要性を示唆。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "ユーザーは独自性よりも同調・承認される型への適合を重視している",
+          "『完璧な写真』の定義が流行やSNSの評価基準に依存している"
+        ],
+        "best_discriminating_question": "SNS映えの定番手法と自分のオリジナリティ、どちらを重視しているか？",
+        "testability_notes": "ユーザーの価値観や写真の傾向を質問・投稿内容から分析することで検証可能。",
+        "safety_risk_notes": "同調傾向や独自性の欠如を指摘するため、ユーザーの自尊心や個性への配慮が必要。"
+      },
+      "rationale": "観察・外部事実を広く説明し、流行への同調という新たな視点を提供。リフレーミング仮説として有用。"
+    }
+  ]
+}

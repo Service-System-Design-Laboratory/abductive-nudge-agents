@@ -1,0 +1,20 @@
+{
+  "triggers": [
+    {
+      "type": "information_gap",
+      "text": "現行の節約手段（最安宿・青春18きっぷ・コンビニ食）以外の節約方法や選択肢についてPKGに情報がない。ユーザーが十分に認識・検討していない可能性がある。"
+    },
+    {
+      "type": "information_gap",
+      "text": "現地コミュニティとの交流やシェアスペースの活用など、節約と満足度の両立につながる手段についてPKGに情報がない。"
+    },
+    {
+      "type": "focus",
+      "text": "ユーザーは予算内でもっと節約できるポイントを探しているが、具体的な追加節約策がPKGで提示されていない。"
+    }
+  ],
+  "rag_queries": [],
+  "evidence_items": [],
+  "external_observations": [],
+  "notes": "RAG disabled (use_rag=false) — trigger identification only"
+}

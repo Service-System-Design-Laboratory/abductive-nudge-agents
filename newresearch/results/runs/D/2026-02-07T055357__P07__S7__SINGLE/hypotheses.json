@@ -1,0 +1,141 @@
+{
+  "hypotheses": [
+    {
+      "hypothesis_id": "H1",
+      "type": "psychological",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "O4"
+      ],
+      "assumes": [
+        "A1",
+        "A2"
+      ],
+      "statement": "ユーザーは新しい環境や予測できない状況に強い不安を感じるため、コントロール可能な範囲でのみ行動する傾向がある。",
+      "mechanism": "未知への不安が強く、予測可能性を高めることで安心感を得ている。",
+      "predictions": [
+        "旅行以外でも新しいことに挑戦する際は慎重な傾向がある",
+        "事前準備や情報収集に時間をかける"
+      ],
+      "discriminating_questions": [
+        "普段の生活でも新しいことに取り組むときは慎重に準備しますか？"
+      ],
+      "persona_link": [
+        "p07_n6"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H2",
+      "type": "value",
+      "explains": [
+        "O2",
+        "O3",
+        "O4"
+      ],
+      "assumes": [
+        "A1",
+        "A4"
+      ],
+      "statement": "ユーザーはリスク回避を重要な価値観として持っており、旅行の楽しみよりも安全確保を最優先している。",
+      "mechanism": "リスク回避が行動原理となり、選択肢を制限することで安心を得ている。",
+      "predictions": [
+        "安全が確保できない場合は旅行自体を控える",
+        "安全性が高いと感じる場所や活動を好む"
+      ],
+      "discriminating_questions": [
+        "安全が保証されない場所にはどんなに魅力があっても行きませんか？"
+      ],
+      "persona_link": [
+        "p07_n6"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H3",
+      "type": "social",
+      "explains": [
+        "O2",
+        "O3"
+      ],
+      "assumes": [
+        "A2"
+      ],
+      "statement": "ユーザーは集団行動やガイド付きツアーを通じて、社会的な安心感や一体感を得ている。",
+      "mechanism": "個人行動よりも集団の中にいることでリスクが分散されると感じている。",
+      "predictions": [
+        "一人旅よりもグループ旅行を好む",
+        "ガイドや現地スタッフとの交流を重視する"
+      ],
+      "discriminating_questions": [
+        "一人旅とグループ旅行、どちらが安心できますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H4",
+      "type": "goal_mismatch",
+      "explains": [
+        "O3",
+        "O4",
+        "O5"
+      ],
+      "assumes": [
+        "A3"
+      ],
+      "statement": "ユーザーは安全を最優先するあまり、旅行本来の楽しみや発見の機会を自ら制限している可能性がある。",
+      "mechanism": "安全志向が強くなりすぎて、体験の幅や満足度が下がる逆説的な状況（paradox）が生じている。",
+      "predictions": [
+        "旅行後に『もっといろいろ体験できたかも』と感じることがある",
+        "安全を優先することで得られない体験があると自覚している"
+      ],
+      "discriminating_questions": [
+        "旅行後に『もう少し冒険してもよかった』と感じることはありますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [
+        "ev:2"
+      ],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H5",
+      "type": "paradox",
+      "explains": [
+        "O2",
+        "O3",
+        "O5",
+        "Oext1",
+        "Oext2"
+      ],
+      "assumes": [
+        "A3",
+        "A4"
+      ],
+      "statement": "ユーザーが安全を最優先することで、実は旅行の本質的な満足や『本物らしさ』を体験する機会を自ら減らしてしまっている可能性がある（裏切る仮説）。",
+      "mechanism": "observer effectやperformative authenticityの観点から、観光客が安全圏にとどまることで、地域文化や本物の体験に触れる機会が減り、満足度が下がるパラドックスが生じている。",
+      "predictions": [
+        "安全重視の行動が結果的に印象の薄い旅行体験につながる",
+        "地域の人や文化との深い交流が少ない"
+      ],
+      "discriminating_questions": [
+        "安全を優先して行動した結果、印象に残る体験や現地の人との交流が少なかったと感じたことはありますか？"
+      ],
+      "persona_link": [
+        "p07_n2",
+        "p07_n4"
+      ],
+      "evidence_link": [
+        "ev:1",
+        "ev:2"
+      ],
+      "is_reframing": true
+    }
+  ]
+}

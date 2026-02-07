@@ -1,0 +1,77 @@
+{
+  "triggers": [
+    {
+      "type": "information_gap",
+      "text": "旅館とビジネスホテルの価格差（約6倍）の理由や根拠が観察・仮定からは説明されていない。"
+    },
+    {
+      "type": "information_gap",
+      "text": "コスパの良い宿泊先の具体的な情報や選択肢が観察・仮定からは得られていない。"
+    },
+    {
+      "type": "ambiguity",
+      "text": "寝る場所はどこでも同じというユーザーの認識が、旅館の付加価値（サービスや体験）を無視している可能性があるが、その価値の有無や内容が曖昧である。"
+    }
+  ],
+  "rag_queries": [
+    "旅館とビジネスホテルの価格差の理由は何か？",
+    "旅館の料金に含まれるサービスや付加価値にはどんなものがあるか？",
+    "コスパの良い宿泊先のおすすめは何か？",
+    "寝る場所以外で宿泊施設を選ぶ際に考慮すべきポイントは何か？"
+  ],
+  "evidence_items": [
+    {
+      "rank": 1,
+      "title": "旅館はビジネスホテルと比べてなぜ高いのか？｜平野 薫",
+      "snippet": "旅館は稼働率が低い分、固定費を賄うためにそれなりの金額を支払ってもらわないと経営が成り立ちません。一方のビジネスホテルは稼働率が高く宿泊客数が ...",
+      "url": "https://note.com/hiranokaoru/n/n640f578889f0",
+      "source_type": "com"
+    },
+    {
+      "rank": 2,
+      "title": "旅館って何故ホテルよりも平均して料金が高いのでしょうか。",
+      "snippet": "普通に考えれば，旅館が1泊2食なのに対してホテルは素泊まりだからです。",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q13252265738",
+      "source_type": "com"
+    },
+    {
+      "rank": 3,
+      "title": "なぜ駅前のビジネスホテルは温泉旅館より安いのか？",
+      "snippet": "ビジネスホテルと旅館で決定的に差があるものがあります。それは何かというと稼働率です。",
+      "url": "https://diamond.jp/articles/-/338697",
+      "source_type": "com"
+    },
+    {
+      "rank": 4,
+      "title": "ホテルの付加価値を上げるには？アイデアを紹介",
+      "snippet": "付加価値とは、基本的な宿泊機能を超えた「特別な体験や満足感」です。単に豪華な施設や設備を指すのではなく、ゲストの心に残るサービスや体験が含まれ ...",
+      "url": "https://i-reala.com/media/nZE7WE6A",
+      "source_type": "com"
+    },
+    {
+      "rank": 5,
+      "title": "宿泊業の高付加価値化とは？観光庁ガイドラインとホテル ...",
+      "snippet": "宿泊業の高付加価値化を観光庁ガイドラインにもとづき解説。顧客体験向上、業務効率化、PMS・チェックインシステムなどホテルシステム活用による収益 ...",
+      "url": "https://www.hotelsmart.jp/hotel-management-improvement/6609/",
+      "source_type": "com"
+    }
+  ],
+  "external_observations": [
+    {
+      "id": "Oext1",
+      "text": "旅館やホテルの『付加価値』や『特別な体験』は、実際にはマーケティング戦略として商品化されており、宿泊業界全体が顧客体験を演出する産業構造になっている。",
+      "source_url": "https://i-reala.com/media/nZE7WE6A"
+    },
+    {
+      "id": "Oext2",
+      "text": "稼働率の低い旅館は、固定費を賄うために高額な料金設定をせざるを得ず、価格は必ずしもサービスの質や体験の純粋さを反映していない。",
+      "source_url": "https://note.com/hiranokaoru/n/n640f578889f0"
+    },
+    {
+      "id": "Oext3",
+      "text": "観光庁など公的機関も『高付加価値化』を推進しており、宿泊業界の価値や体験は制度的に規定・誘導されている側面がある。",
+      "source_url": "https://www.hotelsmart.jp/hotel-management-improvement/6609/"
+    }
+  ],
+  "notes": ""
+}

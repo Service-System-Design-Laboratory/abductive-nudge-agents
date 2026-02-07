@@ -1,0 +1,348 @@
+{
+  "context": {
+    "observations": [
+      {
+        "id": "O1",
+        "text": "旅行中は常にカメラを持って歩いている。"
+      },
+      {
+        "id": "O2",
+        "text": "絶景ポイントでは必ず三脚を立てて、ベストアングルで何十枚も撮影する。"
+      },
+      {
+        "id": "O3",
+        "text": "SNSにアップするための完璧な写真を撮ることが旅の目的である。"
+      },
+      {
+        "id": "O4",
+        "text": "もっと効率的に映える写真を撮るコツを求めている。"
+      }
+    ],
+    "assumptions": [
+      {
+        "id": "A1",
+        "text": "ユーザーは写真撮影そのものに強い満足感や達成感を感じている。",
+        "status": "tentative"
+      },
+      {
+        "id": "A2",
+        "text": "SNSでの評価や反応がユーザーの行動に影響している。",
+        "status": "tentative"
+      },
+      {
+        "id": "A3",
+        "text": "効率的に撮影することで旅の満足度が上がると考えている。",
+        "status": "tentative"
+      },
+      {
+        "id": "A4",
+        "text": "自然や地域との調和や体験よりも、写真の出来栄えが優先されている可能性がある。",
+        "status": "tentative"
+      }
+    ],
+    "questions": [
+      "SNSにアップした写真への反応は、あなたの旅の満足度にどれくらい影響していますか？",
+      "写真を撮ること自体と、現地での体験や自然とのふれあい、どちらにより重きを置いていますか？",
+      "効率的に撮影できた場合、旅の他の楽しみ方に時間を使いたい気持ちはありますか？"
+    ],
+    "constraints": {
+      "tone": "supportive",
+      "safety": "avoid determinism"
+    }
+  },
+  "evidence": {
+    "triggers": [
+      {
+        "type": "focus",
+        "text": "『SNSにアップするための完璧な写真』が旅の目的と明言している点に強いフォーカスがある。"
+      },
+      {
+        "type": "information_gap",
+        "text": "写真撮影の効率化によって、他の体験や満足度がどう変化するかは不明。"
+      },
+      {
+        "type": "ambiguity",
+        "text": "『完璧な写真』の基準や、SNSでの反応がどれほど重要かが曖昧。"
+      },
+      {
+        "type": "contradiction",
+        "text": "PKGでは『自然との調和』『里山散策』など自然体験や地域との関係も重視しているが、現発言は写真撮影への集中が強い。"
+      }
+    ],
+    "external_observations": [
+      {
+        "id": "Oext1",
+        "text": "SNSや動画投稿サイトでは、ユーザー自身が映像を撮影・制作して投稿することが一般化しており、360度カメラなど多様な撮影手法が広がっている。",
+        "source_url": "https://www.vipo.or.jp/u/II_SenshinContents_ContentProduction.pdf"
+      },
+      {
+        "id": "Oext2",
+        "text": "VRや特殊なカメラアングルによる映像表現は、実際の体験とは異なる違和感や演出された印象を与えることがある。",
+        "source_url": "https://www.osaka-geidai.ac.jp/files/seikahoukoku_2022.pdf"
+      },
+      {
+        "id": "Oext3",
+        "text": "美しい自然を写真で表現する活動は、環境保護や社会貢献と結びつくこともある。",
+        "source_url": "https://www.kitamura.jp/photo/seasons/pdf/shiki-Vol106.pdf"
+      }
+    ]
+  },
+  "hypotheses": [
+    {
+      "hypothesis_id": "H1",
+      "type": "psychological",
+      "explains": [
+        "O1",
+        "O2",
+        "O3"
+      ],
+      "assumes": [
+        "A1"
+      ],
+      "statement": "ユーザーは写真撮影行為そのものに強い達成感や没入感を感じており、旅の主目的になっている。",
+      "mechanism": "撮影プロセス自体がフロー体験となり、自己効力感や満足感を生む。",
+      "predictions": [
+        "SNSへの投稿がなくても、良い写真が撮れた時点で満足感を得ている。",
+        "旅先での撮影機材や撮影計画に多くの時間を割いている。"
+      ],
+      "discriminating_questions": [
+        "SNSに投稿しない場合でも、写真撮影自体に満足感を感じますか？"
+      ],
+      "persona_link": [
+        "p01_n1"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H2",
+      "type": "social",
+      "explains": [
+        "O3",
+        "O4",
+        "Oext1"
+      ],
+      "assumes": [
+        "A2"
+      ],
+      "statement": "ユーザーはSNSでの評価や反応が旅の満足度や行動選択に大きく影響している。",
+      "mechanism": "SNSでの『いいね』やコメントが承認欲求や自己表現の充足に寄与し、写真撮影の動機となっている。",
+      "predictions": [
+        "SNSで反応が多いと旅の満足度が上がる。",
+        "SNSでの反応が少ないと、写真や旅の価値を再考することがある。"
+      ],
+      "discriminating_questions": [
+        "SNSでの反応が思ったより少なかった場合、旅の満足度に影響しますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [
+        "ev:1"
+      ],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H3",
+      "type": "skill",
+      "explains": [
+        "O4",
+        "O2"
+      ],
+      "assumes": [
+        "A3"
+      ],
+      "statement": "ユーザーは撮影技術や効率化ノウハウの向上を求めており、撮影の質と量の最適化に関心がある。",
+      "mechanism": "撮影の手順や機材の使い方を工夫することで、短時間で多くの良い写真を得たいと考えている。",
+      "predictions": [
+        "撮影テクニックや最新機材の情報収集を積極的に行っている。",
+        "撮影の準備や撤収も効率化したいと考えている。"
+      ],
+      "discriminating_questions": [
+        "新しい撮影機材やアプリの情報をよく調べていますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H4",
+      "type": "value",
+      "explains": [
+        "O1",
+        "O2",
+        "O3"
+      ],
+      "assumes": [
+        "A4"
+      ],
+      "statement": "写真の出来栄えやSNSでの評価を重視するあまり、自然との調和や現地体験の価値が相対的に低下している。",
+      "mechanism": "撮影行為が目的化し、現地の空気や人とのふれあいよりも、写真の完成度が優先されている。",
+      "predictions": [
+        "撮影のために現地での体験や交流を犠牲にすることがある。",
+        "写真を撮ることに集中しすぎて、旅の思い出が写真中心になりやすい。"
+      ],
+      "discriminating_questions": [
+        "撮影に集中するあまり、現地の人や自然とのふれあいが減っていると感じることはありますか？"
+      ],
+      "persona_link": [
+        "p01_n4"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H5",
+      "type": "paradox",
+      "explains": [
+        "O3",
+        "O4",
+        "Oext2"
+      ],
+      "assumes": [
+        "A2",
+        "A4"
+      ],
+      "statement": "『完璧な写真』を追求するほど、実際の体験や自然との一体感が薄れ、写真が『演出された本物らしさ』や違和感を生む逆説が生じている。",
+      "mechanism": "SNS映えやベストアングルを意識しすぎることで、写真が現実の体験から乖離し、ユーザー自身も本来求めていた『自然との調和』や『現地の空気』から遠ざかっている。",
+      "predictions": [
+        "写真を見返したときに、現地で感じた空気や静けさが十分に思い出せないことがある。",
+        "撮影に集中しすぎて、旅の体験が『写真を撮るための行動』に変質していると感じる瞬間がある。"
+      ],
+      "discriminating_questions": [
+        "写真を撮ることに集中しすぎて、現地の空気感や自然との一体感が薄れていると感じることはありませんか？"
+      ],
+      "persona_link": [
+        "p01_n4",
+        "p01_n1"
+      ],
+      "evidence_link": [
+        "ev:2"
+      ],
+      "is_reframing": true
+    }
+  ],
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A1"
+        ],
+        "best_discriminating_question": "SNSに投稿しない場合でも、写真撮影自体に満足感を感じますか？",
+        "testability_notes": "SNS投稿の有無と満足感の関係を自己報告で確認できる。",
+        "safety_risk_notes": "写真撮影の動機を肯定的に扱うため、リスクは低い。"
+      },
+      "rationale": "ユーザーの行動（常にカメラを持ち歩き、三脚を使い何十枚も撮影）は撮影行為自体の充実感を示唆している。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "A2"
+        ],
+        "best_discriminating_question": "SNSでの反応が思ったより少なかった場合、旅の満足度に影響しますか？",
+        "testability_notes": "SNSでの反応と満足度の変化を自己評価で確認できる。",
+        "safety_risk_notes": "SNS依存や承認欲求の話題は、ユーザーによっては繊細な場合がある。"
+      },
+      "rationale": "『SNSにアップするための完璧な写真』という目的意識が、社会的承認や反応への関心を示唆している。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O4",
+          "O2"
+        ],
+        "key_assumptions": [
+          "A3"
+        ],
+        "best_discriminating_question": "新しい撮影機材やアプリの情報をよく調べていますか？",
+        "testability_notes": "ユーザーの情報収集行動や撮影手順への関心を質問で確認できる。",
+        "safety_risk_notes": "技術向上への関心は肯定的に扱える。"
+      },
+      "rationale": "『効率的に映える写真を撮るコツ』という問いは、技術やノウハウへの関心を示している。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A4"
+        ],
+        "best_discriminating_question": "撮影に集中するあまり、現地の人や自然とのふれあいが減っていると感じることはありますか？",
+        "testability_notes": "現地体験や交流の頻度・質について自己評価を促すことで検証できる。",
+        "safety_risk_notes": "価値観の優先順位を問うため、ややセンシティブな話題。"
+      },
+      "rationale": "PKGの『自然との調和』や『里山散策』と現発言のギャップを説明する仮説。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3",
+          "O4",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "A2",
+          "A4"
+        ],
+        "best_discriminating_question": "写真を撮ることに集中しすぎて、現地の空気感や自然との一体感が薄れていると感じることはありませんか？",
+        "testability_notes": "撮影体験と現地体験のギャップや違和感について自己報告を促すことで検証できる。",
+        "safety_risk_notes": "ユーザーの自己像や目的意識を揺さぶるため、やや不快感を与える可能性がある。だが、深い内省を促す効果も期待できる。"
+      },
+      "rationale": "外部観察（Oext2）を活用し、写真の『演出された本物らしさ』や体験の逆説を指摘することで、発言の意味を大きく変える。"
+    }
+  ],
+  "decision": {
+    "selected_hypothesis_id": "H5",
+    "contrasting_hypothesis_id": "H1",
+    "selection_rationale": "H5を採用すると、ユーザーの発言『SNSにアップするための完璧な写真を撮ることが旅の目的』の意味が、『写真を撮ること自体が現地体験や自然との一体感からユーザーを遠ざけている可能性』に変わる。H1は、写真撮影そのものが旅の充実感を生むという額面通りの読み。H5は外部観察（Oext2）を活用し、ユーザーの自己像や目的意識を揺さぶるため、発言の意味を最も変える仮説である。",
+    "user_facing_frame": {
+      "framing": "options",
+      "questions": [
+        "写真を撮ることに集中しすぎて、現地の空気感や自然との一体感が薄れていると感じることはありませんか？",
+        "それとも、写真撮影自体が旅の満足感や充実感につながっていますか？"
+      ],
+      "options": [
+        "写真を撮ることが、現地体験や自然との一体感を薄めている可能性に目を向けてみる",
+        "写真撮影そのものが、あなたの旅の充実感や目的になっているという立場で考えてみる"
+      ]
+    }
+  },
+  "final_response": "ご相談ありがとうございます。旅行中は常にカメラを持ち歩き、絶景ポイントで三脚を立てて何十枚も撮影されるとのこと、写真へのこだわりや情熱が伝わってきます。\n\n一つの見方として、写真撮影そのものが旅の大きな満足感や充実感を生んでいるのかもしれません。撮影のプロセス自体が楽しく、良い一枚が撮れたときの達成感は格別ですよね。\n\n一方で、外部の研究では『完璧な写真』を追求するほど、実際の体験や自然との一体感が薄れたり、写真が現実から少し離れた『演出された本物らしさ』になる逆説も指摘されています。ご自身の旅を振り返って、写真を撮ることに集中しすぎて現地の空気感や自然とのふれあいが薄れていると感じたことはありませんか？\n\nもし、どちらの立場が今のご自身に近いか考えてみたい場合、\n- 『写真を撮ることが現地体験や自然との一体感を薄めている可能性』に目を向けてみる\n- 『写真撮影そのものが旅の充実感や目的になっている』という立場で考えてみる\nという2つの視点があります。\n\nどちらの立場で考えるかによって、今後の旅の楽しみ方や写真との向き合い方も変わるかもしれません。たとえば、次の旅では『5分だけカメラを置いて、自然の音や空気を感じてみる』という小さな行動を試してみるのも一つの方法です。\n\n同じように写真を楽しむ方の中にも、撮影と現地体験のバランスを工夫している人が多いようです。今のタイミングで、ご自身の写真と旅の関係について少し振り返ってみるのも良いかもしれません。\n\nよろしければ、どちらの立場が今の気持ちや旅のスタイルに近いか、教えていただけますか？また、効率的な撮影テクニックや、現地体験を深める工夫についてもご相談いただけます。",
+  "markers": {
+    "empathy": {
+      "acknowledgement": true,
+      "reflection": true,
+      "perspective_prompt": true
+    },
+    "nudge": {
+      "easy": true,
+      "attractive": true,
+      "social": true,
+      "timely": true,
+      "has_question": true,
+      "has_options": true,
+      "has_small_action": true,
+      "directive_level": "low"
+    }
+  }
+}

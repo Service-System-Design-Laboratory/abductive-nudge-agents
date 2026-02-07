@@ -1,0 +1,37 @@
+{
+  "triggers": [
+    {
+      "type": "focus",
+      "text": "伝統建築や江戸時代の風情への強いこだわりが見られる。"
+    },
+    {
+      "type": "information_gap",
+      "text": "なぜ現代的な観光地ではなく、伝統的な街並みに価値を感じるのかは明言されていない。"
+    },
+    {
+      "type": "ambiguity",
+      "text": "『日本の美の極み』という価値判断の背景が不明。"
+    },
+    {
+      "type": "contradiction",
+      "text": "伝統的な街並みが観光地化されている現実と、純粋な美としての評価との間にズレがある可能性。"
+    }
+  ],
+  "external_observations": [
+    {
+      "id": "Oext1",
+      "text": "ひがし茶屋街は金沢を代表する観光地であり、伝統的な茶屋建築や石畳の美しい街並みが国の重要伝統的建造物群保存地区に選定されている。",
+      "source_url": "https://www.kanazawa-kankoukyoukai.or.jp/spot/detail_10212.html"
+    },
+    {
+      "id": "Oext2",
+      "text": "ひがし茶屋街は観光地化が進み、写真映えや和菓子・伝統工芸品など観光客向けの要素が強調されている。",
+      "source_url": "https://www.hot-ishikawa.jp/spot/detail_6320.html"
+    },
+    {
+      "id": "Oext3",
+      "text": "ひがし茶屋街は文政3年（1820年）に公許されて以来の歴史ある街並みだが、現代では観光客のために保存・演出されている側面もある。",
+      "source_url": "https://kanazawa.hakuichi.co.jp/blog/detail.php?blog_id=86"
+    }
+  ]
+}

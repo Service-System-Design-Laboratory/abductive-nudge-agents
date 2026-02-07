@@ -1,0 +1,97 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4",
+          "O5"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A2"
+        ],
+        "best_discriminating_question": "節約そのものに達成感や楽しさを感じますか？",
+        "testability_notes": "ユーザーが節約自体を目的化しているか直接質問することで検証可能。",
+        "safety_risk_notes": "節約行動を自己目的化していると受け取られると、ユーザーの意図を単純化しすぎるリスクあり。"
+      },
+      "rationale": "観察された行動全体を説明できるが、動機が節約自体にあると断定しすぎないよう注意が必要。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3",
+          "O4",
+          "O5"
+        ],
+        "key_assumptions": [
+          "A2",
+          "A3"
+        ],
+        "best_discriminating_question": "宿泊自体をなくす（例：日帰り旅行）ことも検討できますか？",
+        "testability_notes": "日帰り旅行や無料スポット利用など、旅程自体の見直し提案に対する反応で検証可能。",
+        "safety_risk_notes": "旅行の楽しみや体験を軽視していると受け取られないよう配慮が必要。"
+      },
+      "rationale": "外部観察（Oext1）を活用し、従来の枠組みを超えた節約案を提示できる。裏切る仮説として意味変容が大きい。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "A2",
+          "A3"
+        ],
+        "best_discriminating_question": "旅行前に詳細な予算計画を立てましたか？",
+        "testability_notes": "計画性やリスク回避への価値観を尋ねることで検証可能。",
+        "safety_risk_notes": "価値観の押し付けや、行動の動機を単純化しすぎないよう注意。"
+      },
+      "rationale": "PKGと整合し、ユーザーの価値観に基づく説明だが、行動の表層的な説明に留まる可能性あり。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O5"
+        ],
+        "key_assumptions": [
+          "A4"
+        ],
+        "best_discriminating_question": "本当は地域文化や地元体験も楽しみたい気持ちはありますか？",
+        "testability_notes": "地域文化体験への興味や、今回の旅行でそれを抑制しているかを尋ねることで検証可能。",
+        "safety_risk_notes": "ユーザーの本来の関心を推測するため、意図を誤解されないよう注意。"
+      },
+      "rationale": "PKGの深い関心を反映した仮説で、節約以外の動機の抑制に着目している。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O5"
+        ],
+        "key_assumptions": [
+          "A3"
+        ],
+        "best_discriminating_question": "他の人の節約体験や工夫を知ることに関心はありますか？",
+        "testability_notes": "情報収集欲求が強いかどうかを尋ねることで検証可能。",
+        "safety_risk_notes": "単なる情報不足と決めつけないよう注意。"
+      },
+      "rationale": "ユーザーの質問意図を表層的にとらえ、情報ニーズに焦点を当てている。"
+    }
+  ]
+}

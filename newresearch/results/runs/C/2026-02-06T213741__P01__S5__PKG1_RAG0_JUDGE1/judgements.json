@@ -1,0 +1,90 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4",
+          "O5"
+        ],
+        "key_assumptions": [
+          "ユーザーが現行の節約手段以外の選択肢や情報を十分に知らない、または検討していないこと"
+        ],
+        "best_discriminating_question": "カウチサーフィンやゲストハウスでのワークエクスチェンジなど、現行以外の節約方法を知っているか？",
+        "testability_notes": "ユーザーに追加的な節約手段の認知や経験を直接質問することで比較的容易に検証可能。",
+        "safety_risk_notes": "『知らない』ことを暗に非難する印象を与える可能性があり、配慮が必要。"
+      },
+      "rationale": "現行の節約策に固執している観察を広く説明できているが、知識不足を前提とするため、ユーザーの主体性を軽視しない配慮が必要。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O5"
+        ],
+        "key_assumptions": [
+          "ユーザーが節約行動を自己表現や達成感の源泉として重視していること"
+        ],
+        "best_discriminating_question": "節約の工夫や達成感を誰かに共有したい気持ちはあるか？",
+        "testability_notes": "ユーザーの価値観や動機を問う必要があり、やや主観的だが質問で検証可能。",
+        "safety_risk_notes": "ユーザーの価値観やアイデンティティに踏み込むため、断定的表現やレッテル貼りに注意が必要。"
+      },
+      "rationale": "節約行動の動機に焦点を当てており、観察の一部を深く説明できるが、主観的要素が強く、慎重な提示が求められる。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O5"
+        ],
+        "key_assumptions": [
+          "ユーザーが現地コミュニティやシェア型サービスなど社会的手段を十分に活用していないこと"
+        ],
+        "best_discriminating_question": "現地の人と一緒に食事や宿泊をした経験はあるか？",
+        "testability_notes": "ユーザーの体験や利用歴を質問することで検証可能。",
+        "safety_risk_notes": "社会的交流の有無を問うため、内向的な性格や事情を否定的に捉えられないよう配慮が必要。"
+      },
+      "rationale": "節約と体験価値の両立という観点を提供するが、説明できる観察は限定的で、ユーザーの性格や事情への配慮が重要。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O4",
+          "O5"
+        ],
+        "key_assumptions": [
+          "ユーザーがコンビニ以外の安価な食事選択肢を制約や思い込みで排除していること"
+        ],
+        "best_discriminating_question": "現地の格安飲食店やスーパーを調べたり利用したことはあるか？",
+        "testability_notes": "食事選択の理由や経験を質問することで容易に検証可能。",
+        "safety_risk_notes": "ユーザーの選択を否定的に捉えられないよう、理由や背景への共感を示す配慮が必要。"
+      },
+      "rationale": "食事選択の狭さと節約余地の観察を的確に説明できるが、ユーザーの選択理由を尊重する姿勢が重要。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O5"
+        ],
+        "key_assumptions": [
+          "さらなる節約には情報収集・交渉・ネットワーク活用などのスキルが必要であり、ユーザーがそれらを十分に持っていないこと"
+        ],
+        "best_discriminating_question": "旅行前にどの程度リサーチや現地情報収集をしているか？",
+        "testability_notes": "ユーザーの行動やスキルに関する質問で比較的容易に検証可能。",
+        "safety_risk_notes": "スキル不足を指摘する印象を与えやすいため、成長の余地として前向きに伝える配慮が必要。"
+      },
+      "rationale": "節約のためのスキル面に着目し、追加的な節約余地の説明に有効だが、ユーザーの努力や成長意欲を尊重する必要がある。"
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_link（pkg:n222, pkg:n221）がPKGに存在しない。"
+        ],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーが日本の伝統や歴史に根ざした美的価値観を持っていること。",
+          "ユーザーの行動や発言がその価値観に基づいていること。"
+        ],
+        "best_discriminating_question": "現代建築と伝統建築のどちらにより美を感じますか？",
+        "testability_notes": "ユーザーへの直接質問で検証可能。追加で他の伝統的街並みへの関心も問える。",
+        "safety_risk_notes": "伝統的価値観を前提とするため、ユーザーの多様な美的嗜好を狭めてしまうリスクがある。"
+      },
+      "rationale": "観察O1・O2をよく説明するが、PKGリンクが無効で根拠の一部が弱い。価値観の多様性を考慮する必要がある。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "Oext1",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "金沢の景観が自然な継承ではなく、行政の保存政策や再構築の産物であること。",
+          "ユーザーの体験がその政策の影響を受けていること。"
+        ],
+        "best_discriminating_question": "保存政策や再構築の事実を知った上で、同じように美を感じますか？",
+        "testability_notes": "外部エビデンス（ev:3）や観察Oext1, Oext2で裏付け可能。ユーザーへの質問で追加検証も容易。",
+        "safety_risk_notes": "ユーザーの美的体験を『人工的』と断定する印象を与え、感情的反発や価値観の否定と受け取られるリスクがある。"
+      },
+      "rationale": "保存政策の影響を強調し、O2, Oext1, Oext2を的確に説明。ユーザーの主観的体験とのギャップに注意が必要。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_link（pkg:n220, pkg:n222）がPKGに存在しない。"
+        ],
+        "explains_confirmed": [
+          "O3",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "ユーザーが観光資源化された景観を通じて社会的承認や共感を求めていること。",
+          "観光ガイドやプロモーションがユーザーの評価に影響していること。"
+        ],
+        "best_discriminating_question": "ひがし茶屋街を知ったきっかけは何ですか？",
+        "testability_notes": "ユーザーの情報入手経路や体験共有の傾向を質問で検証可能。外部エビデンス（ev:2）も参照できる。",
+        "safety_risk_notes": "ユーザーの動機を『社会的承認欲求』と解釈するため、内面の価値観を軽視していると受け取られるリスクがある。"
+      },
+      "rationale": "O3, Oext3を説明するが、PKGリンクの欠落が弱点。社会的要因への着目は有用だが、ユーザーの主観的価値観とのバランスに注意。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_link（pkg:n227, pkg:n226）がPKGに存在しない。"
+        ],
+        "explains_confirmed": [
+          "O3"
+        ],
+        "key_assumptions": [
+          "ユーザーの『美の極み』という評価が具体的根拠に基づいていないこと。",
+          "観察やPKGから美的基準が特定できないこと。"
+        ],
+        "best_discriminating_question": "『美の極み』と感じる具体的な要素を挙げられますか？",
+        "testability_notes": "ユーザーに具体的な美的基準を尋ねることで容易に検証可能。",
+        "safety_risk_notes": "ユーザーの主観的評価を『曖昧』『根拠不明』と断じることで、発言の価値を低く見積もる印象を与えるリスクがある。"
+      },
+      "rationale": "O3の説明に限定されるが、仮説自体が他仮説の前提を問い直す役割を持つ。PKGリンクの欠落が弱点。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_link（pkg:n222, pkg:n220, pkg:n221）がPKGに存在しない。"
+        ],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "Oext1",
+          "Oext2",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "ユーザーが保存政策や商品化の事実を認識しつつ、それを自己イメージの一部として積極的に享受していること。",
+          "伝統や『本物の日本』への愛着が自己表現や知的立場の強調と結びついていること。"
+        ],
+        "best_discriminating_question": "『伝統』や『日本の美』を語る自分自身の在り方にどのような意味を感じますか？",
+        "testability_notes": "ユーザーの自己認識や価値観を深掘りする質問が必要で、やや検証に手間がかかる。外部エビデンス（ev:3, ev:2）も参照可能。",
+        "safety_risk_notes": "ユーザーの動機やアイデンティティに踏み込むため、プライバシーや自己認識に関する配慮が必要。誤解や不快感を与えるリスクがある。"
+      },
+      "rationale": "全観察を説明できる包括的仮説だが、PKGリンクの欠落が致命的。ユーザーの自己意識に深く踏み込むため、配慮が必要。"
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O4"
+        ],
+        "key_assumptions": [
+          "ユーザーが効率性重視の計画を立てる主な動機が不安やストレスの軽減であること",
+          "自己効力感の向上がユーザーの行動の中心的な目的であること"
+        ],
+        "best_discriminating_question": "旅行中に計画が崩れた場合、どのような気持ちになりますか？",
+        "testability_notes": "ユーザーへの直接質問で検証可能。旅行以外の行動傾向も追加質問で確認できる。",
+        "safety_risk_notes": "心理的動機の断定はユーザーに違和感や抵抗感を与える可能性がある。"
+      },
+      "rationale": "観察O1とO4を妥当に説明できているが、動機の内面推測には追加検証が必要。断定的な提示は避けるべき。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O5"
+        ],
+        "key_assumptions": [
+          "PKGで重視される価値観（自然との調和、地域住民との信頼）がユーザーの旅行体験に十分反映されていないこと",
+          "効率性重視が他の価値観とトレードオフの関係にあること"
+        ],
+        "best_discriminating_question": "今回の旅行計画に、自然体験や地域住民との交流の時間は含まれていますか？",
+        "testability_notes": "PKG情報とユーザーの計画内容を照合することで検証可能。ユーザーへの質問も有効。",
+        "safety_risk_notes": "価値観の不足を指摘するため、ユーザーが否定的に受け取るリスクがある。"
+      },
+      "rationale": "PKGの価値観とのギャップを指摘し、O1・O5を説明できている。価値観の優先度はユーザーごとに異なるため、慎重な提示が必要。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3",
+          "Oext1",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "観光産業やITサービスがユーザーの計画行動に実質的な影響を与えていること",
+          "ユーザーが効率化ツールや商品を積極的に利用していること"
+        ],
+        "best_discriminating_question": "旅行計画にあたり、どのようなサービスやツールを参考にしましたか？",
+        "testability_notes": "利用ツールや情報源をユーザーに尋ねることで検証可能。外部エビデンスも活用できる。",
+        "safety_risk_notes": "産業的影響を強調しすぎると、ユーザーの主体性を軽視する印象を与える可能性がある。"
+      },
+      "rationale": "O2, O3, Oext1, Oext2を広く説明でき、外部エビデンスとも整合。ユーザーの主体性とのバランスに注意。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O5"
+        ],
+        "key_assumptions": [
+          "ユーザーの計画に柔軟性やバッファが十分に組み込まれていないこと",
+          "予期せぬ事態が発生した場合に計画の脆弱性が顕在化すること"
+        ],
+        "best_discriminating_question": "スケジュールに余裕時間や予備プランは設定されていますか？",
+        "testability_notes": "ユーザーの計画内容を詳細に確認することで検証可能。エビデンスも補強材料となる。",
+        "safety_risk_notes": "計画の不備を指摘するため、ユーザーが批判と受け取るリスクがある。"
+      },
+      "rationale": "O1, O2, O5の説明に妥当性があり、エビデンスとも合致。指摘の仕方に配慮が必要。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4",
+          "O5",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "ユーザーの主目的が体験そのものではなく、計画達成や自己効力感の証明であること",
+          "効率的な計画やパッケージ化された体験が自己像の強化につながっていること"
+        ],
+        "best_discriminating_question": "旅行後に最も印象に残るのは、計画通りに行動できたことですか？それとも現地での新しい出会いや発見ですか？",
+        "testability_notes": "旅行後の感想や自己評価をユーザーに尋ねることで検証可能。外部エビデンスも参考になる。",
+        "safety_risk_notes": "ユーザーの動機や価値観を再定義するため、誤解や反発を招くリスクが高い。"
+      },
+      "rationale": "観察・外部事実を最も広範に説明できるが、ユーザーの主観的動機の再解釈を伴うため、提示には特に慎重さが求められる。"
+    }
+  ]
+}

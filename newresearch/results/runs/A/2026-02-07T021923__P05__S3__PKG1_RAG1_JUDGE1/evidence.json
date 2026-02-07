@@ -1,0 +1,73 @@
+{
+  "triggers": [
+    {
+      "type": "information_gap",
+      "text": "PKGには金沢やひがし茶屋街の伝統建築・江戸時代の風情に関する具体的な知識や、ユーザーが日本の美の極みと評価する根拠が記載されていない。"
+    },
+    {
+      "type": "information_gap",
+      "text": "PKGには金沢の伝統建築や歴史的街並みが現存している具体的な事例や、ひがし茶屋街の特徴・美的価値に関する情報が不足している。"
+    }
+  ],
+  "rag_queries": [
+    "金沢の伝統建築や江戸時代の風情が残る理由と具体的な事例",
+    "ひがし茶屋街の街並みの特徴と日本の美として評価される根拠",
+    "金沢の歴史的街並みの保存状況や観光価値",
+    "ひがし茶屋街が日本の美の極みとされる理由や専門家の評価"
+  ],
+  "evidence_items": [
+    {
+      "rank": 1,
+      "title": "ひがし茶屋街の固有の文化と観光の在り方に関する研究",
+      "snippet": "石川県金沢市にあるひがし茶屋街は、1820（文政3）年に花街として成立した地域である。「キムスコ」と呼ばれる格子戸の家屋が連なり、非常に美しい景観を呈して ...",
+      "url": "https://narapu.repo.nii.ac.jp/record/1634/files/190008.pdf",
+      "source_type": "edu"
+    },
+    {
+      "rank": 2,
+      "title": "【ひがし茶屋街の観光ガイド】伝統文化と情緒感じる歴史ある ...",
+      "snippet": "江戸時代の美しい街並みが残る、人気観光地「ひがし茶屋街」。 その美しい街並みはもちろん、日本の伝統文化と金沢の伝統文化を五感で楽しめることが人気 ...",
+      "url": "https://www.gltjp.com/ja/article/item/20551/",
+      "source_type": "com"
+    },
+    {
+      "rank": 3,
+      "title": "歴史と伝統が色濃く残る街・金沢の厳選観光スポット12選",
+      "snippet": "江戸時代からの姿を残す石川門、三十間長屋に加え、河北門やいもり堀、玉泉院丸庭園などが次々と復元され、当時の姿が蘇りつつある。",
+      "url": "https://www.gltjp.com/ja/article/item/20204/",
+      "source_type": "com"
+    },
+    {
+      "rank": 4,
+      "title": "石川県金沢市 平成29年3月 金 沢 市 歴 史 的 風 致 維 持 向 上 ...",
+      "snippet": "藩政時代以来、金沢のシンボルとして都市核を形成する金沢城跡（国指定史跡）と兼六園（国指定特別名勝）及びその周辺は、金沢を象徴する歴史的風致の中心を成す歴史的建造 ...",
+      "url": "https://www4.city.kanazawa.lg.jp/material/files/group/24/zenkeikakusyo.pdf",
+      "source_type": "gov"
+    },
+    {
+      "rank": 5,
+      "title": "かなざわ旅企画",
+      "snippet": "旅行地として金沢が選ばれる理由 ①利便性がよい. 旅行地として金沢が選ばれる理由 ②コンパクトな街で動き易い. 旅行地として金沢が選ばれる理由 ③ほん ...",
+      "url": "https://www.kanazawa-kankoukyoukai.or.jp/lsc/upfile/articleDetail/0000/1650/1650_1_file.pdf",
+      "source_type": "org"
+    }
+  ],
+  "external_observations": [
+    {
+      "id": "Oext1",
+      "text": "ひがし茶屋街の美しい景観や伝統的建築は、観光客向けに『本物らしさ』を演出する産業として機能しており、伝統文化の体験が商品化されている。",
+      "source_url": "https://www.gltjp.com/ja/article/item/20551/"
+    },
+    {
+      "id": "Oext2",
+      "text": "金沢の歴史的建造物や庭園は、観光需要に応じて復元や整備が進められており、現代の観光客の期待に合わせて『江戸時代の風情』が再構築されている。",
+      "source_url": "https://www.gltjp.com/ja/article/item/20204/"
+    },
+    {
+      "id": "Oext3",
+      "text": "金沢は利便性やコンパクトさが観光地としての魅力とされており、伝統的な街並みも都市計画や観光戦略の一環として管理・活用されている。",
+      "source_url": "https://www.kanazawa-kankoukyoukai.or.jp/lsc/upfile/articleDetail/0000/1650/1650_1_file.pdf"
+    }
+  ],
+  "notes": ""
+}

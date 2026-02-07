@@ -1,0 +1,103 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A2"
+        ],
+        "best_discriminating_question": "観光地化されたイベントや場所にも、地域の本質を感じられることがあれば興味を持つことはありますか？",
+        "testability_notes": "観光地化された場所への興味の有無や、地元の人との交流への価値観を聞くことで検証可能。",
+        "safety_risk_notes": "価値観を肯定的に扱うためリスクは低い。"
+      },
+      "rationale": "ユーザーの価値観やPKGと整合的で、発言内容を額面通りに説明できる。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A2"
+        ],
+        "best_discriminating_question": "地元の人と同じように扱われることに特別な価値を感じますか？",
+        "testability_notes": "地元住民としての体験へのこだわりを尋ねることで検証可能。",
+        "safety_risk_notes": "アイデンティティに踏み込むため、やや配慮が必要。"
+      },
+      "rationale": "『観光客』という立場への距離感を説明し、PKGの『地域住民との信頼』とも関連する。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A2",
+          "A3"
+        ],
+        "best_discriminating_question": "観光地で『本物らしさ』を強調している店にも違和感を感じますか？",
+        "testability_notes": "『演出された本物』への違和感を具体的に尋ねることで検証可能。",
+        "safety_risk_notes": "観光業や飲食店に対する批判と受け取られないよう配慮が必要。"
+      },
+      "rationale": "外部観察（Oext3）を活用し、ユーザーの違和感の根拠を深掘りしている。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "Oext1",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A2"
+        ],
+        "best_discriminating_question": "観光マップに載っている店でも、地元の人が通うなら行きたいと思いますか？",
+        "testability_notes": "観光マップ掲載と地元利用のどちらを重視するかを尋ねることで検証可能。",
+        "safety_risk_notes": "観光産業の論理とのズレを指摘するため、やや批判的に響く可能性がある。"
+      },
+      "rationale": "観光産業とユーザーの体験価値観のズレを明確にし、外部観察（Oext1, Oext2）を活用している。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A2"
+        ],
+        "best_discriminating_question": "『観光客らしくない旅』をしている自分に、少し誇らしさや満足感を感じることはありますか？",
+        "testability_notes": "自己認識やSNS投稿への態度を尋ねることで検証可能。",
+        "safety_risk_notes": "ユーザーの自己像に疑問を投げかけるため、やや不快感を与えるリスクがある。"
+      },
+      "rationale": "ユーザーの発言の表面的な意味を反転させ、『観光客らしくない観光客』という現代的なパラドックスを指摘している。"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "triggers": [
+    {
+      "type": "information_gap",
+      "text": "観光マップに載っていない地元密着型の郷土料理店をどのように特定・選別するかについてPKGに情報がない。"
+    },
+    {
+      "type": "ambiguity",
+      "text": "『地元の人が毎日通う店』や『本当の郷土料理』の具体的な定義や基準がPKGでは明確でない。"
+    }
+  ],
+  "rag_queries": [],
+  "evidence_items": [],
+  "external_observations": [],
+  "notes": "RAG disabled (use_rag=false) — trigger identification only"
+}

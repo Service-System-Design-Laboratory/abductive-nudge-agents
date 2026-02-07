@@ -1,0 +1,78 @@
+{
+  "triggers": [
+    {
+      "type": "information_gap",
+      "text": "旅館の一泊3万円という価格が高いと感じる理由や、旅館とビジネスホテルの価格差の根拠・付加価値についてPKGに情報がない。"
+    },
+    {
+      "type": "information_gap",
+      "text": "寝る場所はどこでも同じというユーザーの認識に対し、実際に宿泊施設ごとの違いやコスパの良い宿泊先の具体例がPKGに存在しない。"
+    },
+    {
+      "type": "focus",
+      "text": "ユーザーがコスパの良い宿泊先を求めているが、具体的な選択肢や比較情報がPKGにない。"
+    }
+  ],
+  "rag_queries": [
+    "旅館とビジネスホテルの価格差の理由や付加価値は何か？",
+    "コスパの良い宿泊先の具体例やおすすめは？",
+    "寝る場所はどこでも同じという認識は正しいか？宿泊施設ごとの違いは？",
+    "一泊3万円の旅館のサービス内容や特徴は？",
+    "5000円で泊まれるビジネスホテルのサービス内容や特徴は？"
+  ],
+  "evidence_items": [
+    {
+      "rank": 1,
+      "title": "【2025年版】ホテル・旅館のマーケティング調査レポート",
+      "snippet": "このように、価格帯による旅行目的の違いを見ると価格が上がるにつれ宿泊施設の利用のされ方が、「利便性・効率性」から「体験の質・記念性」へと移行しています。 高価格 ...",
+      "url": "https://www.yadoken.net/archives/column/hotel-and-ryokan-marketing-research-report",
+      "source_type": "com"
+    },
+    {
+      "rank": 2,
+      "title": "なぜ駅前のビジネスホテルは温泉旅館より安いのか？",
+      "snippet": "しかし、ビジネスホテルと旅館で決定的に差があるものがあります。それは何かというと稼働率です。 なぜ駅前のビジネスホテルは温泉旅館より安いのか？",
+      "url": "https://diamond.jp/articles/-/338697",
+      "source_type": "com"
+    },
+    {
+      "rank": 3,
+      "title": "知ってる？ 旅館とホテルの違い！メリット・デメリットをご ...",
+      "snippet": "ホテルは一般的に旅館と比べると客室数が多いので、急な宿泊などでも対応できる可能性が高くなるかもしれません。また、旅館よりもプライバシーは重視され ...",
+      "url": "https://tw.sotetsu-hotels.com/column/390/",
+      "source_type": "com"
+    },
+    {
+      "rank": 4,
+      "title": "お値段以上の満足度♪コスパ旅で泊まりたいホテル&旅館11選",
+      "snippet": "お値段以上の満足度♪コスパ旅で泊まりたいホテル&旅館11選 · 【神奈川県：箱根湯本温泉】天成園 · 【京都府：嵐山温泉】京都嵐山温泉 花伝抄 · 【京都府：烏丸】ホテルモントレ ...",
+      "url": "https://www.nta.co.jp/media/tripa/articles/Eb1lc",
+      "source_type": "com"
+    },
+    {
+      "rank": 5,
+      "title": "1万円台で泊まれる！コスパ抜群のおすすめ宿9選＜2022・ ...",
+      "snippet": "1万円台で泊まれる！コスパ抜群のおすすめ宿9選＜2022・西日本＞ · 【石川県・金沢市】ホテルインターゲート金沢 · 【福井県・若狭町】民宿 潮屋 · 【岐阜県・ ...",
+      "url": "https://www.jalan.net/news/article/678275/",
+      "source_type": "com"
+    }
+  ],
+  "external_observations": [
+    {
+      "id": "Oext1",
+      "text": "高価格帯の旅館やホテルは、単なる宿泊場所ではなく『体験の質・記念性』を商品化して提供することで価格を上げている。",
+      "source_url": "https://www.yadoken.net/archives/column/hotel-and-ryokan-marketing-research-report"
+    },
+    {
+      "id": "Oext2",
+      "text": "旅館やホテルの『コスパ』は、消費者の価値観やマーケティングによって演出される満足度の指標として産業化されている。",
+      "source_url": "https://www.nta.co.jp/media/tripa/articles/Eb1lc"
+    },
+    {
+      "id": "Oext3",
+      "text": "稼働率や客室数など経営上の効率性が、宿泊施設の価格設定やサービス内容に大きく影響しており、『寝る場所』の価値は経済的・構造的要因によって変動する。",
+      "source_url": "https://diamond.jp/articles/-/338697"
+    }
+  ],
+  "notes": ""
+}

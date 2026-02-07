@@ -1,0 +1,37 @@
+{
+  "triggers": [
+    {
+      "type": "focus",
+      "text": "『人の手が入っていない原生林』という価値観の強調"
+    },
+    {
+      "type": "ambiguity",
+      "text": "『誰よりも分かっているつもり』という主観的な自負の根拠"
+    },
+    {
+      "type": "information_gap",
+      "text": "世界遺産登録後の変化や観光化についての直接的な言及がない"
+    },
+    {
+      "type": "contradiction",
+      "text": "原生林の価値と観光地化の進行の間に潜在的な緊張がある可能性"
+    }
+  ],
+  "external_observations": [
+    {
+      "id": "Oext1",
+      "text": "屋久島は世界自然遺産登録後、観光スポットとして有名になり、原生林の保全と観光開発のバランスが課題となっている。",
+      "source_url": "https://yakushima-tour.com/column/world-heritage"
+    },
+    {
+      "id": "Oext2",
+      "text": "縄文杉トレッキングは多くの人にとって特別な体験だが、観光客増加により自然環境への影響や保全活動が話題になっている。",
+      "source_url": "https://www.lemon8-app.com/@25namu/7557684504619188792?region=jp"
+    },
+    {
+      "id": "Oext3",
+      "text": "地元住民の中でも自然景観の保全と観光開発の評価は分かれており、意見の対立がある。",
+      "source_url": "http://www.town.yakushima.kagoshima.jp/t_yakushima/wp-content/uploads/2025/09/20250908_02_sakutei_sanko_shiryo.pdf"
+    }
+  ]
+}

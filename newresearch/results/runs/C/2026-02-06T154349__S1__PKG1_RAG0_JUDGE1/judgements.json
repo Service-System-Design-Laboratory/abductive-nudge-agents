@@ -1,0 +1,98 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_linkで参照しているPKGノード（pkg:n51, pkg:n33, pkg:n50）が全てPKGに存在しないため、PKGを根拠とした主張の裏付けが取れない。"
+        ],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーは観光地化された場所よりもローカルな文化や日常生活が色濃く残る場所に価値を見出している。",
+          "『本物の生活』や地元の人しか知らない場所への興味が、深い満足感や発見を重視する価値観に基づいている。"
+        ],
+        "best_discriminating_question": "ユーザーは過去の旅行でもガイドブック未掲載の場所や地元住民との交流を重視してきたか？",
+        "testability_notes": "ユーザーへの直接的な質問や過去の旅行行動のヒアリングで比較的容易に検証可能。",
+        "safety_risk_notes": "価値観の断定的な表現がユーザーの多様な動機を見落とすリスクがある。"
+      },
+      "rationale": "観察O1, O2をよく説明しているが、PKG根拠が欠落しているため、裏付けの弱さが致命的。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_link（pkg:n52）がPKGに存在しないため、PKGを根拠とした主張の裏付けが取れない。",
+          "観察O3（ユーザーは観光客向けの演出に満足しており、これ以上求めていない）と仮説の内容（飽和感やマンネリ感を感じている）が明確に矛盾している。"
+        ],
+        "explains_confirmed": [],
+        "key_assumptions": [
+          "ユーザーが観光客向けの演出に飽きており、新鮮さや刺激を求めている。"
+        ],
+        "best_discriminating_question": "観光客向けの演出に飽きたと感じた具体的なエピソードはあるか？",
+        "testability_notes": "ユーザーの主観的な感情や過去の発言を直接確認する必要があり、検証には追加のヒアリングが必要。",
+        "safety_risk_notes": "ユーザーの現状認識と逆の印象を与える可能性があり、誤解や不快感を生むリスクがある。"
+      },
+      "rationale": "観察O3と明確に矛盾しており、PKG根拠もないため、成立性が著しく低い。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_link（pkg:n55, pkg:n54, pkg:n37, pkg:n41）がPKGに存在しないため、PKGを根拠とした主張の裏付けが取れない。"
+        ],
+        "explains_confirmed": [
+          "O2"
+        ],
+        "key_assumptions": [
+          "PKGや一般的な情報源にはユーザーのニーズに合致する情報が不足している。",
+          "情報ギャップがユーザーの探索行動や満足度に影響している。"
+        ],
+        "best_discriminating_question": "ユーザーはガイドブックや一般的な情報源にどれほど不満を感じているか？",
+        "testability_notes": "ユーザーの情報探索行動や既存情報源への満足度をヒアリングすることで検証可能。",
+        "safety_risk_notes": "情報提供側の責任や限界を強調しすぎると、ユーザーの主体性を軽視する印象を与える可能性がある。"
+      },
+      "rationale": "O2の説明力はあるが、PKG根拠がないため、主張の信頼性が限定的。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_link（pkg:n51, pkg:n33）がPKGに存在しないため、PKGを根拠とした主張の裏付けが取れない。"
+        ],
+        "explains_confirmed": [
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーは観光客としてではなく、一時的な住民としての体験や地元住民との交流を重視している。",
+          "観光客向けの演出では満足できない。"
+        ],
+        "best_discriminating_question": "ユーザーは旅先で地元住民との直接的な交流をどれほど重視しているか？",
+        "testability_notes": "ユーザーの体験重視度や交流への関心をヒアリングすることで検証可能。",
+        "safety_risk_notes": "『観光客』というラベルに対するユーザーの感情を誤って断定するリスクがある。"
+      },
+      "rationale": "O2の説明力はあるが、PKG根拠がなく、仮説の社会的側面の強調がユーザーの実態とズレる可能性もある。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_link（pkg:n50, pkg:n52）がPKGに存在しないため、PKGを根拠とした主張の裏付けが取れない。"
+        ],
+        "explains_confirmed": [
+          "O1"
+        ],
+        "key_assumptions": [
+          "ユーザーの旅行目的や期待が一般的な観光体験と大きく異なっている。",
+          "観光事業者やガイドブックの想定顧客像とユーザーのニーズにズレがある。"
+        ],
+        "best_discriminating_question": "ユーザーは既存の観光商品やガイドブックの内容にどれほど魅力を感じていないか？",
+        "testability_notes": "ユーザーの旅行目的や既存商品への評価を直接ヒアリングすることで検証可能。",
+        "safety_risk_notes": "『一般的な観光体験』とのズレを強調しすぎると、ユーザーの個別性を過度に一般化するリスクがある。"
+      },
+      "rationale": "O1の説明力はあるが、PKG根拠がなく、仮説の一般化に注意が必要。"
+    }
+  ]
+}

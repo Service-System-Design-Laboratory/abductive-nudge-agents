@@ -1,0 +1,58 @@
+{
+  "triggers": [
+    {
+      "type": "information_gap",
+      "text": "金沢のひがし茶屋街が『日本の美の極み』とされる具体的な理由や特徴が観察・仮定からは明確でない。"
+    },
+    {
+      "type": "information_gap",
+      "text": "金沢が江戸時代の風情をよく残しているとされる根拠や、他の都市と比較した際の独自性について情報が不足している。"
+    }
+  ],
+  "rag_queries": [
+    "ひがし茶屋街が日本の美の極みと評価される理由や特徴は何か",
+    "金沢が江戸時代の風情をよく残しているとされる具体的な根拠は何か",
+    "金沢と他の伝統的な都市（京都、奈良など）との比較における独自性は何か"
+  ],
+  "evidence_items": [
+    {
+      "rank": 1,
+      "title": "金沢のまちなみについて",
+      "snippet": "歴史的景観を守る 1989年（平成元年）に「金沢市における伝統環境（でんとうかんきょう）の保存（ほぞん）および美しい景観の形成に関する条例（景観条例）」が制定（せいてい）され ...",
+      "url": "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/kohokochoka/gyomuannai/5/5/2/2025.html",
+      "source_type": "gov"
+    },
+    {
+      "rank": 2,
+      "title": "【ひがし茶屋街の観光ガイド】伝統文化と情緒感じる歴史ある ...",
+      "snippet": "江戸時代の美しい街並みが残る、人気観光地「ひがし茶屋街」。 その美しい街並みはもちろん、日本の伝統文化と金沢の伝統文化を五感で楽しめることが人気 ...",
+      "url": "https://www.gltjp.com/ja/article/item/20551/",
+      "source_type": "com"
+    },
+    {
+      "rank": 3,
+      "title": "ひがし茶屋街 | アイコニア・ホスピタリティ【公式】",
+      "snippet": "金沢市で最も古風な趣をたたえる街並みの1つは、ひがし茶屋街でしょう。 時代の流れとは無縁に息づく日本の伝統の一部です。 数百年の歴史を持つ茶屋街は、古い日本文化を ...",
+      "url": "https://iconia.co.jp/attractions-higashi-chaya-district-ishikawa-japan",
+      "source_type": "com"
+    }
+  ],
+  "external_observations": [
+    {
+      "id": "Oext1",
+      "text": "金沢の伝統的景観は条例によって制度的に保存・形成されており、自然な歴史の継承ではなく行政による計画的な保護と演出が行われている。",
+      "source_url": "https://www4.city.kanazawa.lg.jp/soshikikarasagasu/kohokochoka/gyomuannai/5/5/2/2025.html"
+    },
+    {
+      "id": "Oext2",
+      "text": "ひがし茶屋街は『日本の伝統文化を五感で楽しめる』という観光商品として積極的にマーケティングされており、伝統の体験自体が消費の対象となっている。",
+      "source_url": "https://www.gltjp.com/ja/article/item/20551/"
+    },
+    {
+      "id": "Oext3",
+      "text": "『古風な趣』や『江戸時代の面影』は観光客向けに強調されており、実際の街並みは時代の流れと無縁ではなく、観光需要に合わせて演出されている側面がある。",
+      "source_url": "https://iconia.co.jp/attractions-higashi-chaya-district-ishikawa-japan"
+    }
+  ],
+  "notes": "外部観察は、制度的保存・商品化・演出という揺さぶり要素を優先して抽出しています。ユーザーの『本物』観への逆説的な事実を提示しています。"
+}

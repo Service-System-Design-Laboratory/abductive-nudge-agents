@@ -1,0 +1,33 @@
+{
+  "triggers": [
+    {
+      "type": "focus",
+      "text": "写真撮影が旅の目的と明言されているが、SNSや効率性へのこだわりの背景が明確ではない"
+    },
+    {
+      "type": "ambiguity",
+      "text": "自然や絶景そのものの体験と、SNS映え写真のどちらが主目的かが曖昧"
+    },
+    {
+      "type": "information_gap",
+      "text": "効率的な撮影方法を知ることで、旅の体験がどう変わるのかが不明"
+    }
+  ],
+  "external_observations": [
+    {
+      "id": "Oext1",
+      "text": "絶景をより美しく撮影したい場合は、早朝や夕方の『ゴールデンアワー』を狙うのがおすすめ。自然光が柔らかく、山や海の色彩が豊かに映える。",
+      "source_url": "https://www.lemon8-app.com/@lornasakamoto0/7513636863522062854?region=jp"
+    },
+    {
+      "id": "Oext2",
+      "text": "ライブ配信サービスやSNSでは、誰でも気軽に配信・投稿ができるが、演出された本物らしさ（performative authenticity）が求められる傾向が強まっている。",
+      "source_url": "https://www.showroom-live.com/"
+    },
+    {
+      "id": "Oext3",
+      "text": "今後10年は予想もつかないような現象が次々に起こる時代であり、デジタル技術や表現方法も急速に変化している。",
+      "source_url": "https://www.vipo.or.jp/u/II_SenshinContents_ContentProduction.pdf"
+    }
+  ]
+}

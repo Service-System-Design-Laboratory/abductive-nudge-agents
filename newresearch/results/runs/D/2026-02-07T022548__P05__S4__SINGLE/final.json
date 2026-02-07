@@ -1,0 +1,344 @@
+{
+  "context": {
+    "observations": [
+      {
+        "id": "O1",
+        "text": "観光客向けの飲食店には絶対に入りたくない。"
+      },
+      {
+        "id": "O2",
+        "text": "地元の人が毎日通うような、観光マップに載っていない本当の郷土料理を出す店だけで食事がしたい。"
+      },
+      {
+        "id": "O3",
+        "text": "チェーン店やフードコートは論外だ。"
+      }
+    ],
+    "assumptions": [
+      {
+        "id": "A1",
+        "text": "観光客向けの飲食店は本物の郷土料理を提供していない。",
+        "status": "tentative"
+      },
+      {
+        "id": "A2",
+        "text": "地元の人が毎日通う店こそが本物の味を知っている。",
+        "status": "tentative"
+      },
+      {
+        "id": "A3",
+        "text": "チェーン店やフードコートは個性や地域性がない。",
+        "status": "tentative"
+      }
+    ],
+    "questions": [
+      "なぜ観光客向けの飲食店を避けたいのか？",
+      "地元の人が通う店にどんな価値や魅力を感じているのか？",
+      "過去に観光客向けの店で嫌な経験があったのか？",
+      "本物の郷土料理とは何を指しているのか？"
+    ],
+    "constraints": {
+      "tone": "supportive",
+      "safety": "avoid determinism"
+    }
+  },
+  "evidence": {
+    "triggers": [
+      {
+        "type": "focus",
+        "text": "観光客向けの店を強く拒否し、地元民向けの店を強調している。"
+      },
+      {
+        "type": "information_gap",
+        "text": "なぜここまで強く観光客向けの店を避けるのか、動機が明示されていない。"
+      },
+      {
+        "type": "ambiguity",
+        "text": "『本当の郷土料理』や『地元の人が通う店』の定義が曖昧。"
+      }
+    ],
+    "external_observations": [
+      {
+        "id": "Oext1",
+        "text": "県庁所在地など観光地ではチェーン店や観光客向け飲食店が増えすぎて地元の本物の味が埋もれてしまう。",
+        "source_url": "https://note.com/tourism_japan/n/nd2daf6aa4b1d"
+      },
+      {
+        "id": "Oext2",
+        "text": "観光客向けでない地元民おすすめの店は、ネットや友人の情報でしか見つけにくい。",
+        "source_url": "https://www.reddit.com/r/JapanTravelTips/comments/1bhofmq/seeking_hidden_gems_local_favourites_in_japan/?tl=ja"
+      },
+      {
+        "id": "Oext3",
+        "text": "観光地でも観光客向けの飲食店が少ない場所では、地元民のような気分で食事を楽しめるチャンスがある。",
+        "source_url": "https://s.tabelog.com/smartphone/matome/17721/"
+      },
+      {
+        "id": "Oext4",
+        "text": "地元の人が食べているものを探す旅は、地域らしさや異日常を楽しむ体験になる。",
+        "source_url": "https://www.kokugakuin.ac.jp/education/fd/tourism/about/scoop-of-machidukuri-top/scoop-of-machidukuri-16"
+      }
+    ]
+  },
+  "hypotheses": [
+    {
+      "hypothesis_id": "H1",
+      "type": "value",
+      "explains": [
+        "O1",
+        "O2",
+        "O3"
+      ],
+      "assumes": [
+        "A2",
+        "A3"
+      ],
+      "statement": "ユーザーは『本物志向』や『地域性』を強く重視しており、観光客向けの店やチェーン店ではその価値が損なわれると感じている。",
+      "mechanism": "本物の体験や地域独自の文化に触れることが、ユーザーの価値観（節約志向や少人数交流、地域性重視）と一致しているため。",
+      "predictions": [
+        "地元の人しか知らない店や、家庭的な雰囲気の店を好む",
+        "観光地の有名店やチェーン展開している店には興味を示さない"
+      ],
+      "discriminating_questions": [
+        "あなたにとって『本物の郷土料理』や『地元の人が通う店』のどんな点が特に大事ですか？"
+      ],
+      "persona_link": [
+        "pkg:p05_n2",
+        "pkg:p05_n7"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H2",
+      "type": "psychological",
+      "explains": [
+        "O1",
+        "O2"
+      ],
+      "assumes": [
+        "A1"
+      ],
+      "statement": "過去に観光客向けの飲食店やチェーン店で失望した経験があり、それが強い拒否感につながっている。",
+      "mechanism": "ネガティブな体験が記憶に残り、同様の状況を避けるために強い拒否反応を示している。",
+      "predictions": [
+        "観光地での食事選びに慎重で、事前にかなり調べる傾向がある",
+        "過去の失敗談や不満を語ることがある"
+      ],
+      "discriminating_questions": [
+        "観光客向けの店やチェーン店で嫌な思いをしたことがありますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H3",
+      "type": "environmental",
+      "explains": [
+        "O1",
+        "O2",
+        "Oext1"
+      ],
+      "assumes": [
+        "A1"
+      ],
+      "statement": "観光地では本来の地元の味が観光客向けの店やチェーン店に押しやられてしまい、希少性が高まっているため、地元民向けの店を強く求めている。",
+      "mechanism": "観光地の飲食店の多くが観光客向けに商品化・均質化されており、地元民向けの店が『本物』として希少価値を持つようになっている。",
+      "predictions": [
+        "観光地以外のエリアや、地元民しか行かないような場所を旅先に選ぶ傾向がある",
+        "観光地の中心部よりも周辺部や住宅地に興味を持つ"
+      ],
+      "discriminating_questions": [
+        "観光地の中心部と周辺部、どちらの飲食店に魅力を感じますか？"
+      ],
+      "persona_link": [
+        "pkg:p05_n2",
+        "pkg:p05_n6"
+      ],
+      "evidence_link": [
+        "ev:Oext1"
+      ],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H4",
+      "type": "goal_mismatch",
+      "explains": [
+        "O1",
+        "O2",
+        "O3"
+      ],
+      "assumes": [
+        "A2"
+      ],
+      "statement": "ユーザーの本当の目的は『食事』そのものではなく、地元の人と同じ体験や空間を共有することにある。つまり『食』は手段であり、地元民の生活感や日常に溶け込むことが主目的。",
+      "mechanism": "少人数交流や地域性重視の価値観から、観光客としての立場を離れ、地元民のような体験を得ることに重きを置いている。",
+      "predictions": [
+        "食事以外でも地元の人と交流できる機会を積極的に探す",
+        "観光スポットよりも地元の生活空間や商店街に興味を持つ"
+      ],
+      "discriminating_questions": [
+        "食事そのものよりも、地元の人と同じ空間や体験をすることに魅力を感じますか？"
+      ],
+      "persona_link": [
+        "pkg:p05_n7",
+        "pkg:p05_n6"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H5",
+      "type": "social",
+      "explains": [
+        "O1",
+        "O2",
+        "Oext2"
+      ],
+      "assumes": [
+        "A2"
+      ],
+      "statement": "（裏切る仮説）実は『観光客向けの店を避ける』という姿勢そのものが、現代の旅行者の間で一種の『オリジナリティ競争』や『通ぶり』の社会的パフォーマンスになっている可能性がある。",
+      "mechanism": "SNSや情報化社会で『地元民しか知らない店』を知っていることが、旅行者同士の間で差別化や自己表現の手段となっている。つまり本当は『本物志向』ではなく、『本物を知っている自分』を演出したいという動機が潜んでいる。",
+      "predictions": [
+        "旅の後に『地元民しか知らない店』で食事したことを話題にしたり、SNSで発信する傾向がある",
+        "情報収集や下調べにかなり時間をかける"
+      ],
+      "discriminating_questions": [
+        "地元民しか知らない店に行ったことを誰かに話したり、SNSで発信したくなりますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [
+        "ev:Oext2"
+      ],
+      "is_reframing": true
+    }
+  ],
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A2",
+          "A3"
+        ],
+        "best_discriminating_question": "あなたにとって『本物の郷土料理』や『地元の人が通う店』のどんな点が特に大事ですか？",
+        "testability_notes": "価値観や好みを直接聞くことで検証可能。",
+        "safety_risk_notes": "価値観の肯定なのでリスクは低い。"
+      },
+      "rationale": "ユーザーのPKGにある『節約志向』『少人数交流』などの価値観と整合的で、発言内容を素直に説明できる。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "A1"
+        ],
+        "best_discriminating_question": "観光客向けの店やチェーン店で嫌な思いをしたことがありますか？",
+        "testability_notes": "過去の経験やエピソードを尋ねることで検証可能。",
+        "safety_risk_notes": "過去のネガティブ体験を掘り返すため、慎重な配慮が必要。"
+      },
+      "rationale": "強い拒否感の背景に個人的な体験がある可能性を示すが、直接的な根拠は発言からは読み取れない。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "A1"
+        ],
+        "best_discriminating_question": "観光地の中心部と周辺部、どちらの飲食店に魅力を感じますか？",
+        "testability_notes": "旅先の選び方や行動パターンを聞くことで検証可能。",
+        "safety_risk_notes": "観光地の中心部を否定するニュアンスが強くなりすぎないよう注意。"
+      },
+      "rationale": "外部観察Oext1と整合し、観光地の飲食店事情に関する環境要因を説明できる。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A2"
+        ],
+        "best_discriminating_question": "食事そのものよりも、地元の人と同じ空間や体験をすることに魅力を感じますか？",
+        "testability_notes": "食事以外の行動や興味の有無を聞くことで検証可能。",
+        "safety_risk_notes": "目的のすり替えと受け取られないよう配慮が必要。"
+      },
+      "rationale": "食事が目的ではなく、地元体験そのものが目的という読み替え。PKGの『少人数交流』とも合致。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "A2"
+        ],
+        "best_discriminating_question": "地元民しか知らない店に行ったことを誰かに話したり、SNSで発信したくなりますか？",
+        "testability_notes": "行動やSNSでの発信傾向を尋ねることで検証可能。",
+        "safety_risk_notes": "ユーザーの動機を疑う形になるため、慎重な言い回しが必要。"
+      },
+      "rationale": "『本物志向』の裏に、実は社会的な自己演出や差別化欲求があるという裏切る仮説。外部観察Oext2とも整合。"
+    }
+  ],
+  "decision": {
+    "selected_hypothesis_id": "H5",
+    "contrasting_hypothesis_id": "H1",
+    "selection_rationale": "H5（裏切る仮説）は、ユーザーの発言『観光客向けの飲食店には絶対に入りたくない』の意味を、『本物志向』ではなく『本物を知っている自分を演出したい』という社会的動機に読み替える。これは発言の意味を大きく変えると同時に、外部観察Oext2（情報化社会でのオリジナリティ競争）ともリンクしている。一方、H1は額面通りに『本物志向・地域性重視』の価値観によるものと解釈する。どちらの立場に立つかで、今後の旅の情報収集や行動の仕方、自己理解が大きく変わる。",
+    "user_facing_frame": {
+      "framing": "options",
+      "questions": [
+        "地元民しか知らない店に行ったことを誰かに話したり、SNSで発信したくなりますか？",
+        "あなたにとって『本物の郷土料理』や『地元の人が通う店』のどんな点が特に大事ですか？"
+      ],
+      "options": [
+        "『本物の郷土料理』や地元の人が通う店を選ぶのは、純粋に地域性や本物志向を大事にしたいからだという立場",
+        "実は『地元民しか知らない店』を知っている自分を演出したい、という社会的な動機も少しあるかもしれないという立場"
+      ]
+    }
+  },
+  "final_response": "ご自身の旅のスタイルや食事へのこだわり、しっかり伝わってきました。『観光客向けの飲食店には絶対に入りたくない』という強い思いには、地域性や本物志向を大切にしたい気持ちがあるのかもしれませんし、あるいは『地元民しか知らない店』を知っている自分をどこかで表現したい、という側面もあるのかもしれません。\n\nたとえば、旅のあとで『こんな隠れた名店に行った』と誰かに話したり、SNSでシェアしたくなることはありますか？それとも、純粋にその場の雰囲気や味わいを一番大事にしたいですか？\n\nどちらの立場に立つかで、これからの旅の情報収集や楽しみ方も少し変わってくるかもしれません。今度の旅では、まずは地元の人に直接おすすめを聞いてみる、あるいは旅の記録を自分だけのメモに残してみるなど、気軽にできる行動から試してみてはいかがでしょう。\n\n同じように『本物志向』や『地元体験』を大事にする旅人も多いので、ぜひご自身のスタイルを大切にしつつ、時には新しい視点も取り入れてみてくださいね。",
+  "markers": {
+    "empathy": {
+      "acknowledgement": true,
+      "reflection": true,
+      "perspective_prompt": true
+    },
+    "nudge": {
+      "easy": true,
+      "attractive": true,
+      "social": true,
+      "timely": true,
+      "has_question": true,
+      "has_options": true,
+      "has_small_action": true,
+      "directive_level": "low"
+    }
+  }
+}

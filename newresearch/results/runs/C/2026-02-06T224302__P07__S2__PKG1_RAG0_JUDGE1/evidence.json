@@ -1,0 +1,16 @@
+{
+  "triggers": [
+    {
+      "type": "information_gap",
+      "text": "ユーザーは移動時間や主要スポットの効率的なルート確立に注力しているが、予期せぬ事態（交通トラブル、混雑、天候変化など）への対応や余裕時間の設定についてPKGでは説明されていない。"
+    },
+    {
+      "type": "information_gap",
+      "text": "ユーザーは効率化の見落としを気にしているが、現地での文化体験や休憩・食事など非効率的に見えるが価値ある活動の取り入れについてPKGではカバーされていない。"
+    }
+  ],
+  "rag_queries": [],
+  "evidence_items": [],
+  "external_observations": [],
+  "notes": "RAG disabled (use_rag=false) — trigger identification only"
+}

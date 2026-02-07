@@ -1,0 +1,16 @@
+{
+  "triggers": [
+    {
+      "type": "information_gap",
+      "text": "ユーザーは効率的な移動や主要スポット巡りに集中しているが、PKGで重視される自然との調和や地域住民との信頼、里山散策などの要素がスケジュールに組み込まれているか不明であり、その観点での効率化や見落としが存在する可能性がある。"
+    },
+    {
+      "type": "ambiguity",
+      "text": "分刻みのスケジュールが予期せぬ遅延や現地での交流・自然体験の余地をどの程度許容しているか不明であり、効率化の定義や目的に曖昧さがある。"
+    }
+  ],
+  "rag_queries": [],
+  "evidence_items": [],
+  "external_observations": [],
+  "notes": "RAG disabled (use_rag=false) — trigger identification only"
+}

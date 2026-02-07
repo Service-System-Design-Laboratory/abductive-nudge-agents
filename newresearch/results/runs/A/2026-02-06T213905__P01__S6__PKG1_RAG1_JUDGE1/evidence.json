@@ -1,0 +1,73 @@
+{
+  "triggers": [
+    {
+      "type": "information_gap",
+      "text": "縄文杉の神秘的な雰囲気が『人の手が入っていない原生林』だからこそ味わえると述べているが、実際に縄文杉周辺や屋久島の森がどの程度人の手が入っていない原生林なのか、PKGには具体的な情報がない。"
+    },
+    {
+      "type": "ambiguity",
+      "text": "『屋久島の森のことは誰よりも分かっているつもりだ』という主張が、どの程度客観的に裏付けられる知識や経験に基づいているか、PKGでは判断できない。"
+    }
+  ],
+  "rag_queries": [
+    "縄文杉周辺の原生林の現状と人の手の影響について",
+    "屋久島の森の管理・保護状況と原生林の定義",
+    "屋久島の森に詳しいとされる人々の知識や経験の特徴",
+    "縄文杉が世界遺産登録前後でどのように変化したか"
+  ],
+  "evidence_items": [
+    {
+      "rank": 1,
+      "title": "令和4年度 第2回 屋久島世界遺産地域科学委員会",
+      "snippet": "縄文杉に10万人近い人間が登るというようなことを予測でき ... 縄文杉周辺の低木の取扱いに関する考え方（案）について.",
+      "url": "https://www.env.go.jp/park/yakushima/ywhcc/common/data/kaigi/kagaku/27/230217-roku.pdf",
+      "source_type": "gov"
+    },
+    {
+      "rank": 2,
+      "title": "第 2 章 調査結果",
+      "snippet": "縄文杉周辺の荒廃状況調査. 植生衰退等荒廃状況の定義と対策の考え方. 屋久島における登山道及びその周辺の植生衰退等 ...",
+      "url": "https://www.rinya.maff.go.jp/j/kokuyu_rinya/kakusyu_siryo/pdf/00630_7_h20_002.pdf",
+      "source_type": "gov"
+    },
+    {
+      "rank": 3,
+      "title": "屋久島フィールドワーク講座－第7回・2005年－人と自然班",
+      "snippet": "この周辺は、ほぼ自然林・天然林である。一方、土面川の流域の森林は、1963年以来の広域皆伐方式で伐採が行なわれている。",
+      "url": "https://www.wrc.kyoto-u.ac.jp/stations/yfc/2005/hito/hito_report.html",
+      "source_type": "edu"
+    },
+    {
+      "rank": 4,
+      "title": "屋久島森林生態系保護地域 - 林野庁 - 農林水産省",
+      "snippet": "森林生態系保護地域は、国有林のうち原生的な天然林を保存することにより、自然環境の維持、動植物の保護、遺伝資源の保存、学術研究などに役立てるとともに、これらの ...",
+      "url": "https://www.rinya.maff.go.jp/kyusyu/keikaku/hogorin/shinrin_seitaikei/yakusima.html",
+      "source_type": "gov"
+    },
+    {
+      "rank": 5,
+      "title": "屋久島世界遺産地域管理計画",
+      "snippet": "屋久島原生自然環境保全地. 域に指定し、その後、平成4年（1992年）には、学術参考保護林とその周辺地域を森林生態系保護地域に再編・拡充した。",
+      "url": "https://www.env.go.jp/park/yakushima/ywhcc/common/data/kaigi/kagaku/27/230217-6-4-2.pdf",
+      "source_type": "gov"
+    }
+  ],
+  "external_observations": [
+    {
+      "id": "Oext1",
+      "text": "縄文杉周辺には年間10万人近い登山者が訪れ、その人為的影響を前提とした管理・対策が議論されている。",
+      "source_url": "https://www.env.go.jp/park/yakushima/ywhcc/common/data/kaigi/kagaku/27/230217-roku.pdf"
+    },
+    {
+      "id": "Oext2",
+      "text": "屋久島の登山道やその周辺では植生の衰退や荒廃が進行しており、自然環境の維持と観光利用の両立が課題となっている。",
+      "source_url": "https://www.rinya.maff.go.jp/j/kokuyu_rinya/kakusyu_siryo/pdf/00630_7_h20_002.pdf"
+    },
+    {
+      "id": "Oext3",
+      "text": "屋久島の一部森林は過去に広域皆伐方式による伐採が行われており、現在の『原生林』イメージは歴史的な人為的変化を経て形成されている。",
+      "source_url": "https://www.wrc.kyoto-u.ac.jp/stations/yfc/2005/hito/hito_report.html"
+    }
+  ],
+  "notes": "外部観察は、屋久島の『原生林』イメージが観光や管理の対象となり、実際には人為的影響や歴史的変化を受けている事実に着目しています。"
+}

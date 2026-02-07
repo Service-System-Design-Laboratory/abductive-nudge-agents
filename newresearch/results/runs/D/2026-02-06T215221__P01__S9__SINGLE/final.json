@@ -1,0 +1,357 @@
+{
+  "context": {
+    "observations": [
+      {
+        "id": "O1",
+        "text": "ユーザーは旅館の一泊3万円は高すぎると感じている。"
+      },
+      {
+        "id": "O2",
+        "text": "ビジネスホテルなら5000円で泊まれると述べている。"
+      },
+      {
+        "id": "O3",
+        "text": "なぜ6倍も払う必要があるのか疑問を持っている。"
+      },
+      {
+        "id": "O4",
+        "text": "寝る場所なんてどこでも同じだと考えている。"
+      },
+      {
+        "id": "O5",
+        "text": "コスパの良い宿泊先を求めている。"
+      }
+    ],
+    "assumptions": [
+      {
+        "id": "A1",
+        "text": "ユーザーは宿泊先に対して価格と価値のバランスを重視している。",
+        "status": "tentative"
+      },
+      {
+        "id": "A2",
+        "text": "ユーザーは旅館とビジネスホテルのサービス内容や価値の違いを十分に理解していない可能性がある。",
+        "status": "tentative"
+      },
+      {
+        "id": "A3",
+        "text": "ユーザーは旅行の目的が宿泊体験そのものではなく、他の活動（例：里山散策や地域体験）にある。",
+        "status": "tentative"
+      }
+    ],
+    "questions": [
+      "旅館とビジネスホテルで実際に体験した違いは何かありますか？",
+      "宿泊先に求める最低限の条件は何ですか？",
+      "コスパ以外で重視していることはありますか？",
+      "過去に『高いけど満足した』宿泊体験はありましたか？"
+    ],
+    "constraints": {
+      "tone": "supportive",
+      "safety": "avoid determinism"
+    }
+  },
+  "evidence": {
+    "triggers": [
+      {
+        "type": "focus",
+        "text": "ユーザーは価格差の理由や価値の違いに強い関心を示している。"
+      },
+      {
+        "type": "information_gap",
+        "text": "旅館とビジネスホテルの価格差の背景やサービス内容の違いについての理解が曖昧。"
+      },
+      {
+        "type": "ambiguity",
+        "text": "『寝る場所なんてどこでも同じ』という価値観が一般的かどうかは不明。"
+      },
+      {
+        "type": "contradiction",
+        "text": "コスパ重視だが、他の価値（例：地域体験や自然との調和）を重視するPKGとのズレ。"
+      }
+    ],
+    "external_observations": [
+      {
+        "id": "Oext1",
+        "text": "多くの人が観光メインの場合、ホテルは寝るだけの場所と考え、安いビジネスホテルを選んでいる。",
+        "source_url": "https://komachi.yomiuri.co.jp/topics/id/787363/"
+      },
+      {
+        "id": "Oext2",
+        "text": "ビジネスホテルの価格が高騰しており、通常の何倍も払うことを嫌がる人もいる。",
+        "source_url": "https://www.threads.com/@randorhythm/post/DUCnwTADyrI/%E7%A7%81%E3%81%AF%E3%83%93%E3%82%B8%E3%83%8D%E3%82%B9%E3%83%9B%E3%83%86%E3%83%AB%E3%81%AB%E9%80%9A%E5%B8%B8%E3%81%AE%E4%BD%95%E5%80%8D%E3%82%82%E6%89%95%E3%81%A3%E3%81%A6%E6%B3%8A%E3%81%BE%E3%82%8B%E3%81%AE%E3%81%8C%E5%AB%8C%E3%81%AA%E3%81%AE%E3%81%A7%E3%81%9D%E3%81%93%E3%81%AF%E6%84%8F%E5%9C%B0%E3%81%A7%E3%82%82%E9%81%B8%E3%81%B3%E3%81%BE%E3%81%9B%E3%82%93%E7%AC%91%E3%81%9D%E3%82%8C%E3%82%88%E3%82%8A%E9%AB%98%E3%81%8F%E3%81%AA%E3%81%A3%E3%81%A6%E3%82%82%E5%B0%91%E3%81%97%E3%81%AE%E3%82%A2%E3%83%83%E3%83%97%E3%81%A7%E6%B3%8A%E3%81%BE%E3%82%8C%E3%82%8B%E3%82%B7%E3%83%86%E3%82%A3%E3%83%9B%E3%83%86%E3%83%AB%E9%81%B8%E3%82%93%E3%81%A7%E3%81%BE%E3%81%99%E5%87%BA%E8%B2%BB%E5%A2%97%E3%81%88%E3%81%A6%E3%82%82%E3%81%AA"
+      },
+      {
+        "id": "Oext3",
+        "text": "限られた予算でも、地元の体験や料理が高級なものより楽しい場合がある。",
+        "source_url": "https://www.reddit.com/r/travel/comments/1qdkave/what_country_gave_you_the_most_value_for_the/?tl=ja"
+      }
+    ]
+  },
+  "hypotheses": [
+    {
+      "hypothesis_id": "H1",
+      "type": "psychological",
+      "explains": [
+        "O1",
+        "O3",
+        "O4",
+        "O5"
+      ],
+      "assumes": [
+        "A1"
+      ],
+      "statement": "ユーザーは価格と価値のバランス（コスパ）を重視する性格であり、宿泊先選びでもその傾向が強く出ている。",
+      "mechanism": "コスパ重視の価値観が、宿泊先選びの基準に強く影響している。",
+      "predictions": [
+        "他の消費行動でもコスパを重視する傾向がある",
+        "必要以上のサービスや贅沢を避ける"
+      ],
+      "discriminating_questions": [
+        "宿泊以外でも『コスパ』を重視する場面は多いですか？"
+      ],
+      "persona_link": [
+        "p01_n4"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H2",
+      "type": "evidence_gap",
+      "explains": [
+        "O1",
+        "O2",
+        "O3"
+      ],
+      "assumes": [
+        "A2"
+      ],
+      "statement": "ユーザーは旅館とビジネスホテルの価格差の背景やサービス内容の違いについて十分な情報を持っていないため、価格差が不合理に感じられている。",
+      "mechanism": "情報不足が価格差への納得感を妨げている。",
+      "predictions": [
+        "旅館のサービス内容やコスト構造を知ると見方が変わる可能性がある"
+      ],
+      "discriminating_questions": [
+        "旅館とビジネスホテルのサービスやコストの違いを調べたことはありますか？"
+      ],
+      "persona_link": [
+        "n336"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H3",
+      "type": "social",
+      "explains": [
+        "O4",
+        "O5",
+        "Oext1"
+      ],
+      "assumes": [
+        "A1"
+      ],
+      "statement": "ユーザーは『寝る場所はどこでも同じ』という考えが、観光メインの旅行者に多い社会的規範に影響されている。",
+      "mechanism": "社会的な同調圧力や一般的な旅行者の行動パターンが意思決定に影響している。",
+      "predictions": [
+        "周囲の人もビジネスホテルや安宿を選ぶ傾向がある",
+        "SNSや口コミで『寝るだけなら安宿』という意見をよく見る"
+      ],
+      "discriminating_questions": [
+        "友人や家族もビジネスホテル派が多いですか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [
+        "ev:1"
+      ],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H4",
+      "type": "value",
+      "explains": [
+        "O5",
+        "Oext3"
+      ],
+      "assumes": [
+        "A3"
+      ],
+      "statement": "ユーザーは宿泊体験よりも、地域体験や自然との調和など他の活動に価値を置いているため、宿泊先のグレードにはこだわらない。",
+      "mechanism": "旅行の主目的が宿泊以外にあり、宿泊は必要条件として最低限でよいと考えている。",
+      "predictions": [
+        "宿泊費を節約して、その分他の体験やアクティビティにお金を使う",
+        "地域体験や自然体験の満足度が高い"
+      ],
+      "discriminating_questions": [
+        "宿泊費を抑えて、その分他の体験にお金を使いたい気持ちはありますか？"
+      ],
+      "persona_link": [
+        "p01_n1",
+        "p01_n4"
+      ],
+      "evidence_link": [
+        "ev:3"
+      ],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H5",
+      "type": "goal_mismatch",
+      "explains": [
+        "O1",
+        "O3",
+        "O4",
+        "O5",
+        "Oext2"
+      ],
+      "assumes": [
+        "A1",
+        "A3"
+      ],
+      "statement": "ユーザーが『コスパの良い宿泊先』を求め続けるのは、実は『コスパの良い選択をする自分』という自己像を維持したいからであり、宿泊体験そのものよりも“合理的な消費者”であることの確認が主目的になっている。",
+      "mechanism": "消費行動を通じて自己効力感や合理性を確認することが目的化している。",
+      "predictions": [
+        "コスパの話題や比較を繰り返し行う",
+        "実際には宿泊体験の詳細にはあまり関心がない"
+      ],
+      "discriminating_questions": [
+        "コスパの良い選択をしたとき、どんな気持ちになりますか？"
+      ],
+      "persona_link": [
+        "n256"
+      ],
+      "evidence_link": [
+        "ev:2"
+      ],
+      "is_reframing": true
+    }
+  ],
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O3",
+          "O4",
+          "O5"
+        ],
+        "key_assumptions": [
+          "A1"
+        ],
+        "best_discriminating_question": "宿泊以外でも『コスパ』を重視する場面は多いですか？",
+        "testability_notes": "他の消費行動の傾向や、ユーザーの価値観を追加質問で確認することで検証可能。",
+        "safety_risk_notes": "ユーザーの価値観を肯定的に扱うため、リスクは低い。"
+      },
+      "rationale": "コスパ重視という一般的な心理傾向で説明できるが、深掘りには限界がある。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A2"
+        ],
+        "best_discriminating_question": "旅館とビジネスホテルのサービスやコストの違いを調べたことはありますか？",
+        "testability_notes": "ユーザーが情報を持っているかどうかを質問で確認できる。",
+        "safety_risk_notes": "知識不足を指摘する形になるため、配慮が必要。"
+      },
+      "rationale": "情報ギャップを埋めることで納得感が変わる可能性がある。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O4",
+          "O5",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "A1"
+        ],
+        "best_discriminating_question": "友人や家族もビジネスホテル派が多いですか？",
+        "testability_notes": "周囲の選択や社会的な影響を尋ねることで検証可能。",
+        "safety_risk_notes": "社会的同調を指摘するため、やや不快感を与える可能性あり。"
+      },
+      "rationale": "社会的影響を考慮した説明で、ユーザーの行動パターンと一致する。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O5",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "A3"
+        ],
+        "best_discriminating_question": "宿泊費を抑えて、その分他の体験にお金を使いたい気持ちはありますか？",
+        "testability_notes": "旅行の目的やお金の使い方を尋ねることで検証可能。",
+        "safety_risk_notes": "ユーザーの価値観（体験重視）を肯定するためリスクは低い。"
+      },
+      "rationale": "PKGとも整合的で、ユーザーの関心（里山散策や地域体験）と合致する。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O3",
+          "O4",
+          "O5",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A3"
+        ],
+        "best_discriminating_question": "コスパの良い選択をしたとき、どんな気持ちになりますか？",
+        "testability_notes": "コスパ重視の行動が自己像維持と結びついているかを尋ねることで検証可能。",
+        "safety_risk_notes": "ユーザーの自己像や動機の深層に踏み込むため、やや不快感や抵抗感を与える可能性がある。"
+      },
+      "rationale": "ユーザーの発言の意味を自己像レベルで再解釈し、外部観察（Oext2）も活用している。"
+    }
+  ],
+  "decision": {
+    "selected_hypothesis_id": "H5",
+    "contrasting_hypothesis_id": "H4",
+    "selection_rationale": "H5は『コスパの良い宿泊先を求める』という発言の意味を、『合理的な消費者としての自己像を維持すること自体が目的になっている』という自己確認行動に再解釈する。H4は額面通り『宿泊以外の体験に価値を置き、宿泊にはこだわらない』という読み。H5を採用すると、今後の行動は『どの宿に泊まるか』だけでなく、『自分がどんな消費者でありたいか』という自己理解や選択の理由に目を向けることにつながる。一方H4を採用すると、宿泊費を抑えて体験に投資する行動が自然となる。どちらの立場に立つかで、今後の宿泊選びや旅行計画の視点が変わる。",
+    "user_facing_frame": {
+      "framing": "options",
+      "questions": [
+        "あなたがコスパの良い宿泊先を選ぶとき、それは『体験や活動にお金を回したい』という目的からですか？それとも『合理的な選択をする自分』でありたい気持ちが強いですか？"
+      ],
+      "options": [
+        "宿泊費を抑えて、その分地域体験や自然体験にお金や時間を使う（H4）",
+        "コスパの良い選択をすることで『自分は賢い消費者だ』と感じること自体が大事（H5）"
+      ]
+    }
+  },
+  "final_response": "ご自身が『旅館の3万円は高すぎる、ビジネスホテルなら5000円で十分』と感じるお気持ち、よく伝わってきました。『寝る場所なんてどこでも同じ』という考え方は、多くの旅行者にも共通するものですし、コスパ重視の視点はとても合理的ですね。\n\n一方で、もし『コスパの良い宿泊先を選ぶこと』自体が、『自分は賢い消費者でありたい』という自己確認にもつながっているとしたら、これまでの選択や満足感の理由が少し違って見えてくるかもしれません。\n\n例えば、宿泊費を抑えて、その分里山散策や地域体験などにお金や時間を使うのが目的なのか、それとも『コスパの良い選択をした自分』に満足感を感じているのか、どちらの立場に近いでしょうか？\n\nどちらの視点に立つかで、今後の宿泊選びや旅行計画の楽しみ方も変わってきます。もしよければ、次の旅行では『体験重視』か『選択そのものの満足』か、どちらにより重きを置いてみたいか、5分ほど振り返ってみるのもおすすめです。\n\nちなみに、同じようにコスパ重視で宿泊先を選ぶ方の中には、『地元の体験や自然とのふれあい』にお金を回して、結果的に旅の満足度が高まったという声も多いですよ。\n\nあなたの場合、どちらの視点がしっくりきますか？また、もしよければ、コスパの良い選択をしたときにどんな気持ちになるかも教えていただけると嬉しいです。",
+  "markers": {
+    "empathy": {
+      "acknowledgement": true,
+      "reflection": true,
+      "perspective_prompt": true
+    },
+    "nudge": {
+      "easy": true,
+      "attractive": true,
+      "social": true,
+      "timely": true,
+      "has_question": true,
+      "has_options": true,
+      "has_small_action": true,
+      "directive_level": "low"
+    }
+  }
+}

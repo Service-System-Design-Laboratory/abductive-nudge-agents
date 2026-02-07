@@ -1,0 +1,16 @@
+{
+  "triggers": [
+    {
+      "type": "information_gap",
+      "text": "ユーザーは移動時間やルートの効率化には注力しているが、旅行体験の質や予期せぬトラブルへの対応、休憩や余裕時間の確保など非効率化要因や人的要素についてPKGに情報がない。"
+    },
+    {
+      "type": "ambiguity",
+      "text": "効率化の見落としがないかという問いに対し、効率の定義（移動時間・体験の質・満足度など）が曖昧であり、どの観点で効率化を検討すべきかPKGでは明確でない。"
+    }
+  ],
+  "rag_queries": [],
+  "evidence_items": [],
+  "external_observations": [],
+  "notes": "RAG disabled (use_rag=false) — trigger identification only"
+}

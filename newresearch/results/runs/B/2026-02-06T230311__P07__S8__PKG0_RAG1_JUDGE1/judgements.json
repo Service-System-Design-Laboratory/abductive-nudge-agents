@@ -1,0 +1,101 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "ユーザーには自己の成長や変化を確かめたいという無意識の動機が存在する",
+          "過去の感動体験の再現が自己認識の深化につながる"
+        ],
+        "best_discriminating_question": "過去の体験を再現することで、現在の自分との違いを意識したいという気持ちはありますか？",
+        "testability_notes": "ユーザーへの直接的な質問で検証可能。主観的な動機のため、回答の自己認識度に依存する。",
+        "safety_risk_notes": "ユーザーの無意識の動機を断定的に扱うと、違和感や反発を招く可能性がある。"
+      },
+      "rationale": "主観的動機に着目し、O3・O4の説明力は高いが、無意識の動機の有無はユーザーの自己認識に依存しやすい。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3",
+          "Oext1",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "SNSや観光マーケティングが現地環境に大きな影響を与えている",
+          "静かな体験が困難になるほど観光地の状況が変化している"
+        ],
+        "best_discriminating_question": "SNSやメディアで紹介されたことで、嵐山や竹林の道の雰囲気が変わったと感じますか？",
+        "testability_notes": "外部エビデンスや現地観察、ユーザーの体験談で検証しやすい。",
+        "safety_risk_notes": "現地の変化を断定的に述べると、個人差や時期差を無視するリスクがある。"
+      },
+      "rationale": "外部エビデンスと観察事実の両方を広く説明できるが、個人の体験や時期による例外には注意が必要。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3",
+          "O4",
+          "Oext2",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "観光地のテクノロジー導入が体験の本質に影響を与えている",
+          "ユーザーが『本物らしさ』や『静けさ』を重視している"
+        ],
+        "best_discriminating_question": "ライブカメラや混雑予測などの技術が、現地の体験に影響していると感じますか？",
+        "testability_notes": "現地のテクノロジー利用状況やユーザーの主観的感想を調査することで検証可能。",
+        "safety_risk_notes": "『本物らしさ』の価値観を一律に扱うと、ユーザーの多様な受け止め方を軽視する恐れがある。"
+      },
+      "rationale": "テクノロジーと体験価値の衝突という現代的な観点を提供し、Oext2・Oext3の説明力が高い。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "『同じ感動』の構成要素がユーザー自身にも明確でない",
+          "体験の満足・不満足の根拠が曖昧である"
+        ],
+        "best_discriminating_question": "『同じ感動』を構成する要素を具体的に挙げることができますか？",
+        "testability_notes": "ユーザーに具体的な要素を尋ねることで検証可能。回答が曖昧な場合、仮説が支持される。",
+        "safety_risk_notes": "ユーザーの感情や動機を『曖昧』と断じることで、否定的に受け取られるリスクがある。"
+      },
+      "rationale": "説明力は限定的だが、他仮説の前提を疑うメタ的視点として有用。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3",
+          "O4",
+          "Oext1",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "ユーザーの動機はノスタルジーの維持であり、現実の再現は本質的な目的ではない",
+          "過去の体験や理想像への執着が行動を規定している"
+        ],
+        "best_discriminating_question": "現地で再現できなかった場合、むしろ『やはり昔は良かった』という思いが強まりますか？",
+        "testability_notes": "ユーザーの自己語りや感情の変化を観察・質問することで検証可能だが、内省的な回答が必要。",
+        "safety_risk_notes": "ユーザーの動機を『ノスタルジーの維持』と断定することで、自己理解を否定されたと感じるリスクがある。"
+      },
+      "rationale": "裏返しの動機仮説として幅広い観察を説明できるが、ユーザーの自己像に踏み込むため慎重な提示が必要。"
+    }
+  ]
+}

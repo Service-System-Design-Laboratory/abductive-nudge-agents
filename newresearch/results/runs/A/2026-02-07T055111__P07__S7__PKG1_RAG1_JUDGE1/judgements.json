@@ -1,0 +1,101 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "ユーザーが計画的運営スキルを持ち、それを旅行時のリスク管理に積極的に活用している",
+          "リスク回避行動の主因がスキルや計画性にある（価値観や外的要因ではない）"
+        ],
+        "best_discriminating_question": "旅行前にどの程度まで計画や安全対策を具体的に立てていますか？",
+        "testability_notes": "ユーザーへの1～2問の質問で検証可能。PKGにもスキル動機の裏付けあり。",
+        "safety_risk_notes": "断定的に提示すると『慎重すぎる』などの評価に感じる可能性がある。"
+      },
+      "rationale": "PKGと観察の整合性が高く、説明力も十分。価値観や環境要因との区別が重要。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O5"
+        ],
+        "key_assumptions": [
+          "ユーザーが現地文化やルールへの敬意を強く持っている",
+          "安全行動の主因が価値観（文化尊重）であり、単なるリスク回避やスキルではない"
+        ],
+        "best_discriminating_question": "現地の文化やルールを学ぶことにどれくらい重きを置いていますか？",
+        "testability_notes": "PKGに価値観の裏付けあり。ユーザーに1問で確認可能。",
+        "safety_risk_notes": "文化尊重を強調しすぎると『現地に従わない人は危険』と誤解されるリスク。"
+      },
+      "rationale": "PKGと観察O1・O5の説明力が高い。スキル主因説や環境要因説と区別が必要。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "観光地の環境的リスクがユーザーの行動選択に大きく影響している",
+          "ユーザーが環境リスクを認識し、それを主な判断基準にしている"
+        ],
+        "best_discriminating_question": "ツアーやガイド付き行動を選ぶ理由は環境的なリスクが主ですか？",
+        "testability_notes": "外部エビデンス（Oext1）と観察で裏付けあり。ユーザーに直接質問して検証可能。",
+        "safety_risk_notes": "環境要因を強調しすぎると『個人の努力は無意味』と受け取られる可能性。"
+      },
+      "rationale": "外部事実と観察の説明力が高い。個人要因（スキル・価値観）との切り分けが課題。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O5"
+        ],
+        "key_assumptions": [
+          "ユーザーは既に基本的な安全対策を実施している",
+          "追加の安全情報やノウハウの不足が不安や関心の主因である"
+        ],
+        "best_discriminating_question": "最近新たに取り入れた安全対策やグッズはありますか？",
+        "testability_notes": "ユーザーの行動履歴や意識調査で検証可能。エビデンスも一部あり。",
+        "safety_risk_notes": "『あなたは知識不足』と受け取られるリスクがあるため、言い回しに注意。"
+      },
+      "rationale": "O5の説明には強いが、他の観察との関連は限定的。補助的な仮説として有効。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4",
+          "O5",
+          "Oext2",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "ユーザーの安全志向には自己効力感や役割意識の強化という心理的側面がある",
+          "観光産業の安全イメージ演出がユーザーの行動や満足感に影響している"
+        ],
+        "best_discriminating_question": "安全対策や情報収集そのものに達成感や満足感を感じますか？",
+        "testability_notes": "心理的側面のため、ユーザーの内省的回答や深掘り質問が必要。やや検証難度高。",
+        "safety_risk_notes": "『安全志向が目的化している』という指摘はユーザーの自己認識や価値観を揺さぶる可能性があり、慎重な提示が必要。"
+      },
+      "rationale": "観察・外部事実の広範な説明力があり、裏仮説として有力。だが心理的要素の検証と提示リスクに注意。"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "triggers": [
+    {
+      "type": "ambiguity",
+      "text": "『本物の生活』や『本物らしさ』の定義が曖昧で、何をもって本物とするのか不明。"
+    },
+    {
+      "type": "information_gap",
+      "text": "なぜ観光客向けの演出を避けたいのか、その理由や背景が明示されていない。"
+    },
+    {
+      "type": "paradox",
+      "text": "地元の人しか知らない場所を歩きたいと言いつつ、外部者としてその場所にアクセスすること自体が観光行為になりうる。"
+    },
+    {
+      "type": "observer effect",
+      "text": "ユーザーが『本物の生活』を求めて訪れることで、その場の本物らしさが変化する可能性がある。"
+    }
+  ],
+  "external_observations": [
+    {
+      "id": "Oext1",
+      "text": "Googleマップには載っているが、現地に看板や道順案内が一切ないため初見では登り口が分かりづらい場所が存在する。",
+      "source_url": "https://www.ryosou.com/simanenokunifudoki2024izumo/"
+    },
+    {
+      "id": "Oext2",
+      "text": "ガイドブックに載っていない地元の人々との交流が貴重な体験とされているが、こうした体験も商品化されつつある。",
+      "source_url": "https://www.echizenkani.com/20220513115750"
+    },
+    {
+      "id": "Oext3",
+      "text": "観光客が『本物』を求めて訪れることで、その場の本物らしさが変化する（観察者効果）。",
+      "source_url": "https://www.echizenkani.com/20220513115750"
+    }
+  ]
+}

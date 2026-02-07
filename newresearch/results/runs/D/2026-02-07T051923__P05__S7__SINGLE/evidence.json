@@ -1,0 +1,28 @@
+{
+  "triggers": [
+    {
+      "type": "focus",
+      "text": "安全への強いこだわりが行動制限につながっている"
+    },
+    {
+      "type": "information_gap",
+      "text": "なぜそこまで危険を感じるのか、具体的な理由が不明"
+    },
+    {
+      "type": "ambiguity",
+      "text": "安全以外の価値観（節約志向やコスト最適化）がどの程度影響しているか不明"
+    }
+  ],
+  "external_observations": [
+    {
+      "id": "Oext1",
+      "text": "多くの旅行者が自由時間もホテル周辺で過ごすことを選択しているが、これは安全志向だけでなく土地勘のなさや情報不足、観察者効果（他の旅行者の行動を見て自分も同じように行動する）も影響している可能性がある",
+      "source_url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q10144674620"
+    },
+    {
+      "id": "Oext2",
+      "text": "自由行動の範囲や過ごし方によって旅行の満足度が大きく変わることがある（performative authenticity：本物らしさを演出するために敢えて制限された行動を選ぶ場合もある）",
+      "source_url": "http://dmo-kawagoe.or.jp/wp-content/uploads/2023/10/%E3%80%90JTB%E4%BD%9C%E6%88%90%E3%80%91%E5%B0%8F%E6%B1%9F%E6%88%B8%E5%B7%9D%E8%B6%8A%E3%81%AE%E6%96%87%E5%8C%96%E4%BD%93%E9%A8%93%E3%83%84%E3%82%A2%E3%83%BC%E5%AE%9F%E6%96%BD%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf"
+    }
+  ]
+}

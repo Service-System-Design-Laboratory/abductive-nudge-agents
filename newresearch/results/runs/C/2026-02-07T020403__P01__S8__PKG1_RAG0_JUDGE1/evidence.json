@@ -1,0 +1,16 @@
+{
+  "triggers": [
+    {
+      "type": "information_gap",
+      "text": "PKGが存在しないため、ユーザーが『同じルートを辿る』ことで過去と同じ静けさや感動を得られるかどうか、現状の嵐山や竹林の道の環境（混雑状況や雰囲気）が分からない。"
+    },
+    {
+      "type": "ambiguity",
+      "text": "『同じ感動を取り戻したい』という願望が、具体的にどのような体験や条件によって満たされるのかが曖昧である。"
+    }
+  ],
+  "rag_queries": [],
+  "evidence_items": [],
+  "external_observations": [],
+  "notes": "RAG disabled (use_rag=false) — trigger identification only"
+}

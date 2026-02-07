@@ -1,0 +1,59 @@
+{
+  "triggers": [
+    {
+      "type": "information_gap",
+      "text": "PKGの主要ノードには『Satoyama hiking』『Harmony with nature』『Trust with local residents』『Local events & festivals』『Local tours』など地域密着型の価値観が含まれているが、『地元の人しか知らない、看板も出ていない場所』『本物の生活が残っている場所』という具体的な条件や、観光客向けの演出を徹底的に避けたいという強い拒否感はPKGで十分にカバーされていない。PKGには『観光客向けの演出を避ける』という明確なノードやエッジが存在しない。"
+    },
+    {
+      "type": "ambiguity",
+      "text": "『本物の生活が残っている場所』の定義や具体的な特徴が曖昧であり、PKGのノードとどの程度一致するかが不明確。PKGの『Local tours』や『Local events & festivals』が観光客向けの演出を含む場合、ユーザーの志向と矛盾する可能性がある。"
+    }
+  ],
+  "rag_queries": [
+    "地元の人しか知らない観光地化されていない場所の探し方",
+    "観光客向けの演出がない日本の地域やスポットの事例",
+    "『本物の生活』が残る場所の特徴や定義",
+    "看板が出ていない地元民しか知らないスポットの具体例"
+  ],
+  "evidence_items": [
+    {
+      "rank": 1,
+      "title": "旅行は「観光地」も「穴場」も満喫したい、そんな欲張りなあなたへ。",
+      "snippet": "せっかくの旅行だから有名な観光地へ！もいいけれど、地元の人しか知らない穴場の名店やスポットにも訪れてみたい！なんて思っている人は、きっと少なくないはず。",
+      "url": "https://localletter.jp/articles/trip-guide-roottrip/",
+      "source_type": "com"
+    },
+    {
+      "rank": 2,
+      "title": "旅行ガイドブック、さようなら。海外の穴場観光地＆グルメ ...",
+      "snippet": "他の旅行者からの口コミや、インターネットで情報探しをするのはもちろんのこと。 観光スポットの背景にある歴史や文化などを知っておくことも大切です。",
+      "url": "https://ca-voir.com/how-to-travel-like-a-local-jp/",
+      "source_type": "com"
+    },
+    {
+      "rank": 3,
+      "title": "外国人観光客が日本のマイナースポットを選ぶ理由とは？ - note",
+      "snippet": "3つの事例から見えてきたのは、「自分の関心を深掘りする手段としてマイナースポットを選ぶ」という観光行動だった。 円安や政策の後押しでリピーターが ...",
+      "url": "https://note.com/shibuyayokubou/n/n8ee09e8200b9",
+      "source_type": "other"
+    }
+  ],
+  "external_observations": [
+    {
+      "id": "Oext1",
+      "text": "『地元の人しか知らない穴場』という概念自体が観光マーケティングの一部として商品化されており、ローカル志向が観光産業の新たな売り文句になっている。",
+      "source_url": "https://localletter.jp/articles/trip-guide-roottrip/"
+    },
+    {
+      "id": "Oext2",
+      "text": "旅行者が『本物の生活』やマイナースポットを求めて訪れることで、その場所自体が観光対象として変質し、観察者効果によって『本物らしさ』が演出される傾向がある。",
+      "source_url": "https://ca-voir.com/how-to-travel-like-a-local-jp/"
+    },
+    {
+      "id": "Oext3",
+      "text": "マイナースポットを選ぶ観光行動は、個人の関心を深掘りする手段として広がっており、結果的に『穴場』が観光客によって発見・消費される逆説的な現象が生じている。",
+      "source_url": "https://note.com/shibuyayokubou/n/n8ee09e8200b9"
+    }
+  ],
+  "notes": ""
+}

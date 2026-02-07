@@ -1,0 +1,141 @@
+{
+  "hypotheses": [
+    {
+      "hypothesis_id": "H1",
+      "type": "psychological",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "O4",
+        "O5"
+      ],
+      "assumes": [
+        "A1",
+        "A2"
+      ],
+      "statement": "ユーザーは旅行自体よりも、限界までコストを削減すること自体に達成感や楽しさを感じている。",
+      "mechanism": "節約行動が自己効力感や達成感をもたらし、旅行の目的の一部となっている。",
+      "predictions": [
+        "さらに節約できる新しい方法を見つけること自体に満足感を感じる。",
+        "多少の不便や快適さの低下は許容できる。"
+      ],
+      "discriminating_questions": [
+        "節約そのものに達成感や楽しさを感じますか？",
+        "旅の目的はコスト削減自体にありますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H2",
+      "type": "environmental",
+      "explains": [
+        "O2",
+        "O3",
+        "O4",
+        "O5",
+        "Oext1"
+      ],
+      "assumes": [
+        "A2",
+        "A3"
+      ],
+      "statement": "ユーザーは外部環境（例えば日帰り旅行や無料スポットの活用など）をさらに利用することで、追加のコスト削減が可能だと考えている。",
+      "mechanism": "既存の節約手段に加え、外部の新しい方法（例：日帰り化、無料体験）を取り入れることで、さらなる費用削減が可能になる。",
+      "predictions": [
+        "宿泊をやめて日帰りにするなど、旅程自体を見直すことに関心がある。",
+        "無料の観光スポットや体験を積極的に探す。"
+      ],
+      "discriminating_questions": [
+        "宿泊自体をなくす（例：日帰り旅行）ことも検討できますか？",
+        "無料体験や公共スペースの活用に興味はありますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [
+        "ev:1"
+      ],
+      "is_reframing": true
+    },
+    {
+      "hypothesis_id": "H3",
+      "type": "value",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "O4"
+      ],
+      "assumes": [
+        "A2",
+        "A3"
+      ],
+      "statement": "ユーザーは計画的運営やリスク回避の価値観が強く、予算内で最大限の成果を出すことに意義を感じている。",
+      "mechanism": "PKGの『計画的運営』や『リスク回避』の価値観が、徹底したコスト管理行動につながっている。",
+      "predictions": [
+        "旅行前に詳細な予算計画やシミュレーションをしている。",
+        "予算超過への強い抵抗感がある。"
+      ],
+      "discriminating_questions": [
+        "旅行前に詳細な予算計画を立てましたか？",
+        "予算を超えることに強い抵抗感がありますか？"
+      ],
+      "persona_link": [
+        "pkg:p07_n1",
+        "pkg:p07_n6"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H4",
+      "type": "goal_mismatch",
+      "explains": [
+        "O5"
+      ],
+      "assumes": [
+        "A4"
+      ],
+      "statement": "ユーザーは本来、地域文化体験や地元交流にも関心があるが、今回はコストに意識が集中しすぎて他の目的を見失っている可能性がある。",
+      "mechanism": "PKGには『地域文化への敬意』や『季節祭り参加』などの関心があるが、今回はそれが抑制されている。",
+      "predictions": [
+        "本来は地元体験や交流も楽しみたい気持ちがある。",
+        "節約に集中するあまり、他の楽しみを後回しにしている。"
+      ],
+      "discriminating_questions": [
+        "本当は地域文化や地元体験も楽しみたい気持ちはありますか？",
+        "今回はコスト重視で他の目的を抑えている感覚はありますか？"
+      ],
+      "persona_link": [
+        "pkg:p07_n2",
+        "pkg:p07_n4"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H5",
+      "type": "evidence_gap",
+      "explains": [
+        "O5"
+      ],
+      "assumes": [
+        "A3"
+      ],
+      "statement": "ユーザーはまだ知らない節約方法や、他の人が実践している工夫を知りたいだけかもしれない。",
+      "mechanism": "情報不足が動機であり、実際には既存の方法で十分満足している可能性もある。",
+      "predictions": [
+        "他人の節約アイデアや体験談を聞くと興味を持つ。",
+        "新しい方法を知ること自体が目的である。"
+      ],
+      "discriminating_questions": [
+        "他の人の節約体験や工夫を知ることに関心はありますか？",
+        "今の節約方法で十分満足していますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [],
+      "is_reframing": false
+    }
+  ]
+}

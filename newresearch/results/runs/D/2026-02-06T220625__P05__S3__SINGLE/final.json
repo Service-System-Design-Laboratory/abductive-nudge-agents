@@ -1,0 +1,333 @@
+{
+  "context": {
+    "observations": [
+      {
+        "id": "O1",
+        "text": "ユーザーは伝統建築を見に金沢へ行くつもりである。"
+      },
+      {
+        "id": "O2",
+        "text": "ユーザーは金沢のひがし茶屋街の街並みが江戸時代の風情をよく残していると考えている。"
+      },
+      {
+        "id": "O3",
+        "text": "ユーザーはひがし茶屋街の街並みを日本の美の極みだと思っている。"
+      }
+    ],
+    "assumptions": [
+      {
+        "id": "A1",
+        "text": "ユーザーは伝統建築や歴史的景観に強い価値を感じている可能性がある。",
+        "status": "tentative"
+      },
+      {
+        "id": "A2",
+        "text": "ユーザーは効率やコストを意識しつつも、体験の質を重視している可能性がある。",
+        "status": "tentative"
+      },
+      {
+        "id": "A3",
+        "text": "ユーザーは写真映えや文化的体験も重視しているかもしれない。",
+        "status": "tentative"
+      }
+    ],
+    "questions": [
+      "なぜ伝統建築やひがし茶屋街に特別な魅力を感じるのですか？",
+      "今回の旅で重視したいことは何ですか？",
+      "写真を撮ることや歴史的な解説なども楽しみにしていますか？"
+    ],
+    "constraints": {
+      "tone": "supportive",
+      "safety": "avoid determinism"
+    }
+  },
+  "evidence": {
+    "triggers": [
+      {
+        "type": "focus",
+        "text": "ユーザーはひがし茶屋街の街並みと日本の美の極みという価値観に強くフォーカスしている。"
+      },
+      {
+        "type": "information_gap",
+        "text": "ユーザーが伝統建築や歴史的景観をどのように体験したいのか、具体的な目的や期待が明確でない。"
+      },
+      {
+        "type": "ambiguity",
+        "text": "『日本の美の極み』という表現が、個人的な美意識なのか、一般的な評価なのかが曖昧。"
+      }
+    ],
+    "external_observations": [
+      {
+        "id": "Oext1",
+        "text": "ひがし茶屋街は伝統的な茶屋建築が軒を連ね、写真映えする観光スポットとして人気である。",
+        "source_url": "https://www.kanazawa-kankoukyoukai.or.jp/spot/detail_10212.html"
+      },
+      {
+        "id": "Oext2",
+        "text": "ひがし茶屋街は国の重要伝統的建造物群保存地区に選定されており、和菓子や伝統工芸品、雑貨など観光消費の場としても機能している。",
+        "source_url": "https://www.hot-ishikawa.jp/spot/detail_6320.html"
+      },
+      {
+        "id": "Oext3",
+        "text": "ひがし茶屋街の街並みは1820年に公許・形成され、観光地化によって演出された歴史的景観としての側面もある。",
+        "source_url": "https://kanazawa.hakuichi.co.jp/blog/detail.php?blog_id=86"
+      }
+    ]
+  },
+  "hypotheses": [
+    {
+      "hypothesis_id": "H1",
+      "type": "psychological",
+      "explains": [
+        "O1",
+        "O2",
+        "O3"
+      ],
+      "assumes": [
+        "A1"
+      ],
+      "statement": "ユーザーは歴史的なものや伝統的な美意識に強い価値を感じており、ひがし茶屋街の街並みにその理想を重ねている。",
+      "mechanism": "歴史的景観や伝統建築を体験することで、自己の美意識や価値観を確認・充足している。",
+      "predictions": [
+        "他の伝統的な町並みや歴史的建造物にも関心が高い",
+        "旅先で歴史的な解説や文化体験を重視する"
+      ],
+      "discriminating_questions": [
+        "伝統建築や歴史的な背景にどのような魅力を感じますか？"
+      ],
+      "persona_link": [
+        "p05_n2"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H2",
+      "type": "value",
+      "explains": [
+        "O1",
+        "O2"
+      ],
+      "assumes": [
+        "A2"
+      ],
+      "statement": "ユーザーは節約志向やコスト最適化という価値観を持ちつつ、限られた予算で最大限の体験価値を得るために、ひがし茶屋街のような歴史的観光地を選んでいる。",
+      "mechanism": "コストパフォーマンスの高い体験を重視し、歴史的景観や伝統建築は一度に多くの価値（美・歴史・文化）を享受できる場とみなしている。",
+      "predictions": [
+        "旅程や行動計画を効率的に組み立てる傾向がある",
+        "観光地での消費や体験内容にもコスト意識が現れる"
+      ],
+      "discriminating_questions": [
+        "今回の旅ではコストや効率も重視していますか？"
+      ],
+      "persona_link": [
+        "p05_n2",
+        "p05_n3",
+        "p05_n6"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H3",
+      "type": "social",
+      "explains": [
+        "O1",
+        "O2",
+        "Oext1"
+      ],
+      "assumes": [
+        "A3"
+      ],
+      "statement": "ユーザーは写真映えやSNSでの共有を意識しており、ひがし茶屋街の街並みを体験すること自体が社会的な承認や共感を得る手段になっている。",
+      "mechanism": "観光地の美しい景観や伝統的な雰囲気を写真やSNSで発信することで、他者とのつながりや自己表現を図っている。",
+      "predictions": [
+        "旅先で多く写真を撮る",
+        "SNSや友人に旅の体験を積極的に共有する"
+      ],
+      "discriminating_questions": [
+        "写真を撮ったりSNSで発信することも楽しみの一つですか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [
+        "ev:1"
+      ],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H4",
+      "type": "environmental",
+      "explains": [
+        "O2",
+        "O3",
+        "Oext2"
+      ],
+      "assumes": [
+        "A1"
+      ],
+      "statement": "ひがし茶屋街は観光消費の場として商品化されており、ユーザーの『日本の美の極み』という評価は観光地としての演出や消費体験に影響されている可能性がある。",
+      "mechanism": "観光地としての保存・演出・商品化によって、伝統的な美しさが強調され、ユーザーの美意識や評価に影響を与えている。",
+      "predictions": [
+        "観光地としてのサービスや商品に触れることも楽しみの一部になっている",
+        "他の観光地でも『美しさ』を感じやすい傾向がある"
+      ],
+      "discriminating_questions": [
+        "観光地としてのサービスやお土産、体験も楽しみにしていますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [
+        "ev:2"
+      ],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H5",
+      "type": "evidence_gap",
+      "explains": [
+        "O3",
+        "Oext3"
+      ],
+      "assumes": [
+        "A1"
+      ],
+      "statement": "ユーザーが感じている『日本の美の極み』は、実は観光地化や保存政策によって演出された『本物らしさ』であり、オリジナルの江戸時代の街並みとは異なる可能性がある。",
+      "mechanism": "観光地化により、歴史的景観が再構成・演出されており、ユーザーの美意識はその『演出された本物らしさ』に反応している。",
+      "predictions": [
+        "現地で観光地的な演出や現代的な要素に気づくと違和感を感じるかもしれない",
+        "他の観光地でも『本物らしさ』への疑問を持つことがある"
+      ],
+      "discriminating_questions": [
+        "ひがし茶屋街の街並みが観光地として保存・演出されていることについて、どのように感じますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [
+        "ev:3"
+      ],
+      "is_reframing": true
+    }
+  ],
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A1"
+        ],
+        "best_discriminating_question": "伝統建築や歴史的な背景にどのような魅力を感じますか？",
+        "testability_notes": "ユーザーが他の歴史的建築や景観にも関心を示すか、体験の質を重視するかを尋ねることで検証可能。",
+        "safety_risk_notes": "価値観への共感を示しつつ、押し付けにならないよう注意。"
+      },
+      "rationale": "ユーザーの発言内容とPKGの価値観に合致しており、自然な解釈。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "A2"
+        ],
+        "best_discriminating_question": "今回の旅ではコストや効率も重視していますか？",
+        "testability_notes": "旅程や計画の立て方、消費行動にコスト意識が現れているかを確認する。",
+        "safety_risk_notes": "コスト重視を強調しすぎると体験の質を軽視しているように受け取られるリスク。"
+      },
+      "rationale": "PKGの節約志向・コスト最適化と整合的。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [
+          "ユーザー発言にSNSや写真の言及がないため根拠が弱い"
+        ],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "A3"
+        ],
+        "best_discriminating_question": "写真を撮ったりSNSで発信することも楽しみの一つですか？",
+        "testability_notes": "旅の目的に写真やSNS発信が含まれているかを直接尋ねる。",
+        "safety_risk_notes": "SNS利用を前提にしすぎると誤解を招く可能性。"
+      },
+      "rationale": "外部観察（Oext1）と仮定（A3）に基づくが、ユーザー発言との直接的な接点は薄い。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A1"
+        ],
+        "best_discriminating_question": "観光地としてのサービスやお土産、体験も楽しみにしていますか？",
+        "testability_notes": "観光消費やサービスへの期待について尋ねる。",
+        "safety_risk_notes": "観光消費への関心を強調しすぎると本来の美意識を軽視しているように受け取られるリスク。"
+      },
+      "rationale": "観光地としての商品化という外部観察（Oext2）を取り入れている。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "A1"
+        ],
+        "best_discriminating_question": "ひがし茶屋街の街並みが観光地として保存・演出されていることについて、どのように感じますか？",
+        "testability_notes": "現地での体験や印象について、観光地化や演出への気づきや違和感を尋ねる。",
+        "safety_risk_notes": "ユーザーの美意識や期待を揺さぶるため、不快感を与える可能性がある。慎重な言い回しが必要。"
+      },
+      "rationale": "観光地化と演出された本物らしさという外部観察（Oext3）を取り入れ、発言の意味を大きく転換する。"
+    }
+  ],
+  "decision": {
+    "selected_hypothesis_id": "H5",
+    "contrasting_hypothesis_id": "H1",
+    "selection_rationale": "H5はユーザーの『日本の美の極み』という評価が、実は観光地化や演出による『本物らしさ』への反応である可能性を指摘し、発言の意味を『本物の美への共感』から『演出された美への共感』へと大きく転換する。H1は額面通り、伝統的な美意識への共感として解釈する。どちらの立場に立つかで、現地での体験や感じ方、今後の行動が大きく変わる。",
+    "user_facing_frame": {
+      "framing": "options",
+      "questions": [
+        "ひがし茶屋街の街並みが観光地として保存・演出されていることについて、どのように感じますか？",
+        "伝統建築や歴史的な背景にどのような魅力を感じますか？"
+      ],
+      "options": [
+        "1. ひがし茶屋街の美しさは、観光地化や保存政策によって演出された『本物らしさ』も含めて魅力的だと考える立場",
+        "2. 伝統建築や歴史的な美意識そのものに価値を感じている立場"
+      ]
+    }
+  },
+  "final_response": "金沢のひがし茶屋街に行かれるご予定なんですね。伝統建築や江戸時代の風情を感じられる街並みを『日本の美の極み』と表現される、そのお気持ち、とてもよく伝わってきます。\n\n一方で、ひがし茶屋街の景観は観光地として保存・演出されている側面もあり、その『本物らしさ』自体が現代的な価値観や期待に応える形で作られている、という見方もできます。実際に現地で歩いてみると、どこまでが歴史そのものなのか、どこからが現代の工夫なのか、気づくことがあるかもしれません。\n\nそこで、2つの立場を考えてみてはいかがでしょうか？\n1つは、観光地化や保存政策によって演出された『本物らしさ』も含めて、ひがし茶屋街の美しさを楽しむという立場。もう1つは、伝統建築や歴史的な美意識そのものに価値を感じているという立場です。\n\nどちらの立場で街を歩くかによって、見えてくるものや感じ方が変わるかもしれません。もしよければ、現地で『これは本当に江戸時代のままなのか？』と少し意識して観察してみたり、保存や観光地化についてどう感じるか、ご自身の気持ちを振り返ってみるのも面白いかもしれません。\n\nちなみに、同じように歴史的な町並みを訪れた人の中には、演出や現代的な工夫に気づいて『それもまた新しい日本の美だ』と感じる方もいます。5分ほど街を歩きながら、どちらの視点が自分にしっくりくるか考えてみるのもおすすめです。\n\nあなたは、どちらの立場でひがし茶屋街を楽しみたいですか？また、観光地としての保存や演出について、何か感じることがあれば教えてください。",
+  "markers": {
+    "empathy": {
+      "acknowledgement": true,
+      "reflection": true,
+      "perspective_prompt": true
+    },
+    "nudge": {
+      "easy": true,
+      "attractive": true,
+      "social": true,
+      "timely": true,
+      "has_question": true,
+      "has_options": true,
+      "has_small_action": true,
+      "directive_level": "low"
+    }
+  }
+}

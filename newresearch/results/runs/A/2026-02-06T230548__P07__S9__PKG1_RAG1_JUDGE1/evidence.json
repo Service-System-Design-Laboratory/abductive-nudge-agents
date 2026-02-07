@@ -1,0 +1,77 @@
+{
+  "triggers": [
+    {
+      "type": "information_gap",
+      "text": "ユーザーは旅館とビジネスホテルの価格差（6倍）を正当化する理由や価値をPKGで十分に理解していない。PKGの『地域文化への敬意』や『季節祭り参加』などの価値がユーザーに伝わっていない可能性がある。"
+    },
+    {
+      "type": "focus",
+      "text": "ユーザーはコスパの良い宿泊先を求めており、旅館以外の選択肢やその比較情報に強い関心を示している。"
+    },
+    {
+      "type": "ambiguity",
+      "text": "『寝る場所はどこでも同じ』というユーザーの認識と、旅館が提供する付加価値（文化体験やサービスなど）との間に価値観のズレが存在する。"
+    }
+  ],
+  "rag_queries": [
+    "旅館とビジネスホテルの価格差の理由や付加価値について詳しく説明してください",
+    "コスパの良い宿泊先の具体例や比較情報を教えてください",
+    "旅館の料金に含まれるサービスや体験内容は何ですか",
+    "ビジネスホテルと旅館の宿泊体験の違いを分かりやすく比較してください"
+  ],
+  "evidence_items": [
+    {
+      "rank": 1,
+      "title": "【2025年版】ホテル・旅館のマーケティング調査レポート",
+      "snippet": "価格帯による旅行目的の違いを見ると価格が上がるにつれ宿泊施設の利用のされ方が、「利便性・効率性」から「体験の質・記念性」へと移行しています。 高価格 ...",
+      "url": "https://www.yadoken.net/archives/column/hotel-and-ryokan-marketing-research-report",
+      "source_type": "com"
+    },
+    {
+      "rank": 2,
+      "title": "なぜ駅前のビジネスホテルは温泉旅館より安いのか？",
+      "snippet": "①旅館がボッていて儲かっている？→倒産する旅館も多く、必ずしも儲かっているようには思えません。 ②建物の建設コストが高い？",
+      "url": "https://diamond.jp/articles/-/338697",
+      "source_type": "com"
+    },
+    {
+      "rank": 3,
+      "title": "ホテルと旅館どちらが安い？予算別にすぐ選べるチェックガイド",
+      "snippet": "旅館は料理や接客など付加価値が高いため通常は高めに設定されていますが、以下のような場合は逆転します。平日や閑散期で食事プランを簡素化した日や、少 ...",
+      "url": "https://aruru.co.jp/trip/hotel-ryokan-price/",
+      "source_type": "com"
+    },
+    {
+      "rank": 4,
+      "title": "お値段以上の満足度♪コスパ旅で泊まりたいホテル&旅館11選",
+      "snippet": "食事付き・観光に便利・イベント会場に近い・お部屋がキレイ♪などなど、好条件なのにリーズナブルなコスパ旅が叶う、ホテル&旅館をまとめてみました。",
+      "url": "https://www.nta.co.jp/media/tripa/articles/Eb1lc",
+      "source_type": "com"
+    },
+    {
+      "rank": 5,
+      "title": "【東日本】コスパがいい人気温泉地の宿20選！1泊2食付き ...",
+      "snippet": "プールのように広い内湯や露天風呂に3種の源泉を使用。 草津温泉ホテル櫻井 内湯は西の河原＆万代鉱の源泉、露天は綿の湯＆万代鉱の源泉。",
+      "url": "https://www.jalan.net/news/article/590986/",
+      "source_type": "com"
+    }
+  ],
+  "external_observations": [
+    {
+      "id": "Oext1",
+      "text": "高価格帯の旅館やホテルは、単なる宿泊場所ではなく『体験の質』や『記念性』を商品として販売する構造になっている。",
+      "source_url": "https://www.yadoken.net/archives/column/hotel-and-ryokan-marketing-research-report"
+    },
+    {
+      "id": "Oext2",
+      "text": "旅館の倒産も多く、価格が高いからといって必ずしも利益を上げているわけではなく、価格設定には経営的なリスクや構造的要因が絡んでいる。",
+      "source_url": "https://diamond.jp/articles/-/338697"
+    },
+    {
+      "id": "Oext3",
+      "text": "『コスパ』や『満足度』を売り文句にしたホテル・旅館が増え、消費者の合理的志向そのものがマーケティング化されている。",
+      "source_url": "https://www.nta.co.jp/media/tripa/articles/Eb1lc"
+    }
+  ],
+  "notes": ""
+}

@@ -1,0 +1,90 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーが地域文化への敬意という価値観を強く持っていること（PKGで裏付けあり）",
+          "静かな環境体験がユーザーの価値観と深く結びついていること"
+        ],
+        "best_discriminating_question": "京都以外の伝統的な地域や静かな場所にも同様の関心を持つか？",
+        "testability_notes": "PKG情報とユーザーへの1-2問の質問で検証可能。価値観の一貫性を確認しやすい。",
+        "safety_risk_notes": "価値観の断定が強く出ると、ユーザーの多様な動機を見落とすリスクがある。"
+      },
+      "rationale": "PKGで価値観の裏付けがあり、O1・O2の説明力は高いが、O3（再体験の動機）への直接的説明はやや弱い。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O4"
+        ],
+        "key_assumptions": [
+          "ユーザーが計画的運営やリスク回避のスキルを持っていること（PKGで裏付けあり）",
+          "過去の感動再現に計画的行動が結びついていること"
+        ],
+        "best_discriminating_question": "他の旅行やイベントでも過去の良い体験を再現しようと計画的に行動することがあるか？",
+        "testability_notes": "PKG情報とユーザーへの具体的な行動傾向の質問で検証可能。",
+        "safety_risk_notes": "スキル主導の動機付けと断定しすぎると、感情的・価値観的な側面を軽視するリスクがある。"
+      },
+      "rationale": "計画的行動のPKG裏付けがありO4は説明できるが、O3（感動の再現動機）への説明は間接的。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "ユーザーが過去の体験を理想化し、現状への不満や変化への不安を抱えていること"
+        ],
+        "best_discriminating_question": "最近、現在の生活や環境に対して不満や不安を感じることがあるか？",
+        "testability_notes": "ユーザーの主観的な心理状態を問う必要があり、直接質問しないと検証困難。",
+        "safety_risk_notes": "現状不満や不安を前提とするため、ユーザーの心情を不用意に刺激するリスクがある。"
+      },
+      "rationale": "O3・O4の説明は妥当だが、PKG等で心理状態の裏付けがなく、仮説の検証には配慮が必要。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "当時の体験が環境要因（静けさ・人の少なさ）に大きく依存していたこと（PKGで一部裏付けあり）"
+        ],
+        "best_discriminating_question": "過去と比べて環境が変わっていた場合、どのように感じるか？",
+        "testability_notes": "ユーザーの体験と感情の因果関係を問う必要があり、やや検証しにくい。",
+        "safety_risk_notes": "「偶然の要素が大きい」と断定することで、ユーザーの主体的な価値観や努力を軽視する印象を与えうる。"
+      },
+      "rationale": "O2・O3の説明は妥当だが、環境要因への依存を強調しすぎるとユーザーの意図を軽視するリスクがある。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "ユーザーが過去の自分を理想化し、変化や成長を受け入れたくない心理が働いていること"
+        ],
+        "best_discriminating_question": "過去の自分と今の自分を比較したとき、どちらにより親しみや安心感を感じるか？",
+        "testability_notes": "ユーザーの深層心理に踏み込む必要があり、直接的な質問が必要。検証には慎重さが求められる。",
+        "safety_risk_notes": "ユーザーの自己像や成長への態度に踏み込むため、誤解や不快感を与えるリスクが高い。"
+      },
+      "rationale": "O3・O4の説明は妥当だが、心理的動機の断定はセンシティブで、検証・提示には特に配慮が必要。"
+    }
+  ]
+}

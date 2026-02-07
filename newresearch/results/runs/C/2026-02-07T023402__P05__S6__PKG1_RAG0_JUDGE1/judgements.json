@@ -1,0 +1,91 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーが自然のままの環境や人の手が加わっていないことに価値を感じている",
+          "屋久島や縄文杉への敬意が行動や発言に反映されている"
+        ],
+        "best_discriminating_question": "屋久島以外で人の手が加わっていない自然環境を訪れることに関心がありますか？",
+        "testability_notes": "ユーザーへの直接質問で検証可能。PKGの節約志向との整合性も確認しやすい。",
+        "safety_risk_notes": "価値観の断定が強く出ると、ユーザーの多様な動機を見落とすリスクがある。"
+      },
+      "rationale": "自然への価値観を根拠とする仮説で、観察O1・O2は十分説明できる。PKGとも矛盾せず、検証も容易。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "ユーザーが屋久島や原生林について他者よりも深い知識や経験を持つ",
+          "その知識や経験が自己認識や発言に影響している"
+        ],
+        "best_discriminating_question": "屋久島の自然について他人に説明したり教えたりした経験はありますか？",
+        "testability_notes": "ユーザーの発言やエピソードを聞くことで比較的容易に検証可能。",
+        "safety_risk_notes": "知識や経験の優越性を強調しすぎると、ユーザーが過度に評価されていると感じる可能性がある。"
+      },
+      "rationale": "知識・経験の蓄積と自己認識に着目し、O3・O4をよく説明する。PKGのデータ分析やコスト最適化とも親和性がある。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O3"
+        ],
+        "key_assumptions": [
+          "ユーザーが節約志向やコスト最適化を重視している",
+          "低予算で自然体験を繰り返すことが行動の主動機である"
+        ],
+        "best_discriminating_question": "屋久島旅行の際、どのようなコスト削減の工夫をしていますか？",
+        "testability_notes": "PKGに強く裏付けられており、ユーザーへの具体的な質問で容易に検証可能。",
+        "safety_risk_notes": "動機を経済的側面に限定しすぎると、ユーザーの情緒的価値観を軽視するリスクがある。"
+      },
+      "rationale": "PKGの節約志向・コスト最適化と強く整合し、O1・O3の行動を合理的に説明できる。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O4"
+        ],
+        "key_assumptions": [
+          "ユーザーが自己効力感や承認欲求を持ち、それが発言に反映されている"
+        ],
+        "best_discriminating_question": "他人と自分の知識や経験を比較して優越感を感じることはありますか？",
+        "testability_notes": "心理的動機のため、直接的な質問や深掘りが必要でやや検証しにくい。",
+        "safety_risk_notes": "承認欲求や優越感といった心理的側面の指摘は、ユーザーに不快感を与えるリスクがある。"
+      },
+      "rationale": "O4の発言を心理的動機で説明するが、検証はやや難しく、配慮が必要。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O4"
+        ],
+        "key_assumptions": [
+          "ユーザーが自然の価値を語ること自体を自己の特権性や優越性のアピール手段としている"
+        ],
+        "best_discriminating_question": "屋久島の魅力を語るとき、他者に対して優越感や独自性を意識することはありますか？",
+        "testability_notes": "ユーザーの発言傾向や表現を詳細に観察する必要があり、やや検証しにくい。",
+        "safety_risk_notes": "動機の裏を読む仮説であり、ユーザーの自己イメージを否定的に捉えられるリスクが高い。"
+      },
+      "rationale": "O2・O4の説明力は高いが、動機の解釈が挑発的で、提示時の配慮が特に重要。"
+    }
+  ]
+}

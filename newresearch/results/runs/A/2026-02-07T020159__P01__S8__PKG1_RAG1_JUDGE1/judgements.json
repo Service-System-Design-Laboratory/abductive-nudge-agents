@@ -1,0 +1,101 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "ユーザーが『自然との調和』や『静けさ』を価値観として強く持っていること",
+          "観光地の賑わいよりも人の少ない環境を本質的な体験として重視していること"
+        ],
+        "best_discriminating_question": "静けさが失われた場合、同じ場所でも再訪の価値を感じますか？",
+        "testability_notes": "ユーザーの価値観や行動傾向を1-2問の質問で直接確認でき、PKGとも照合可能。検証は容易。",
+        "safety_risk_notes": "価値観の断定的提示により、ユーザーが多様な動機を持つ場合に誤解や違和感を与える可能性がある。"
+      },
+      "rationale": "PKGに裏付けられた価値観仮説で、観察O2・O3を自然に説明できている。致命的な欠陥はなく、検証もしやすい。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O4",
+          "Oext1",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "観光地の混雑やデータ化・商品化が体験の質に大きな影響を与えていること",
+          "ユーザーが環境変化を認識し、適応行動をとる傾向があること"
+        ],
+        "best_discriminating_question": "現地の混雑情報やライブカメラを旅行前に必ずチェックしますか？",
+        "testability_notes": "外部エビデンスやユーザーの行動観察で比較的容易に検証可能。",
+        "safety_risk_notes": "観光地の変化を否定的に強調しすぎると、ユーザーの期待や思い出を損なうリスクがある。"
+      },
+      "rationale": "外部エビデンスと観察事実に強く支えられ、環境要因による体験変化を説得的に説明。検証も現実的。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3",
+          "O4",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "観光地の体験が意図的な演出や消費対象として再構成されていること",
+          "ユーザーが『過去と同じ感動』を求めるが、現実には再現困難であること"
+        ],
+        "best_discriminating_question": "夜間の幻想的なイベントや演出された静けさは本物と感じますか？",
+        "testability_notes": "ユーザーの体験評価や感想を尋ねることで検証可能だが、主観的な要素が強い。",
+        "safety_risk_notes": "『感動の再現は幻想』と断定的に述べると、ユーザーの体験価値を否定する印象を与えやすい。"
+      },
+      "rationale": "観光地の変質とユーザーの期待のズレを論理的に説明。主観的要素が強く、検証には注意が必要。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "ユーザーが地域住民との交流や地域行事への関心を持っていること",
+          "静かな観光体験を通じて社会的つながりを重視していること"
+        ],
+        "best_discriminating_question": "観光地で地域住民と交流したいと思いますか？",
+        "testability_notes": "PKGや簡単な質問で検証可能。観察O1-O3との整合性も高い。",
+        "safety_risk_notes": "ユーザーの社会的志向を過度に前提とすると、個人の内向的動機を見落とすリスクがある。"
+      },
+      "rationale": "PKGに基づく社会的価値仮説で、観察O1-O3を説明。致命的な欠陥はなく、検証も容易。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3",
+          "O4",
+          "Oext1",
+          "Oext2",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "ユーザーが自己同一性やノスタルジアの防衛として過去の体験再現を求めていること",
+          "観光地の環境変化や商品化が明らかであること"
+        ],
+        "best_discriminating_question": "もし現地の様子が大きく変わっていた場合、その事実を受け入れられますか？",
+        "testability_notes": "ユーザーの心理的反応や語りを深掘りする必要があり、やや検証に手間がかかる。",
+        "safety_risk_notes": "ユーザーの心理的防衛や現実逃避を指摘するため、傷つけたり反発を招くリスクが高い。"
+      },
+      "rationale": "観察・外部事実を広く説明し、心理的メカニズムに踏み込むが、ユーザーへの配慮が特に重要。"
+    }
+  ]
+}

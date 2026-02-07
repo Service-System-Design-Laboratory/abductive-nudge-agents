@@ -1,0 +1,131 @@
+{
+  "hypotheses": [
+    {
+      "hypothesis_id": "H1",
+      "type": "psychological",
+      "explains": [
+        "O1",
+        "O2",
+        "O3"
+      ],
+      "assumes": [
+        "A1"
+      ],
+      "statement": "ユーザーはSNSでの承認や評価を得ることが強い動機となっており、旅先での撮影行動は自己効力感や達成感を得るための手段になっている。",
+      "mechanism": "SNSでの反応や評価がユーザーの自己認識や満足感に直結しており、そのために撮影や準備に多大な労力をかけている。",
+      "predictions": [
+        "SNSでの「いいね」やコメント数が多いほどユーザーの満足度が高まる",
+        "撮影後にSNSでの反応を頻繁にチェックする傾向がある"
+      ],
+      "discriminating_questions": [
+        "SNSでの反応が予想より少なかった場合、旅の満足度や写真への満足度も下がりますか？"
+      ],
+      "persona_link": [
+        "pkg:n384"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H2",
+      "type": "skill",
+      "explains": [
+        "O2",
+        "O4"
+      ],
+      "assumes": [
+        "A2"
+      ],
+      "statement": "ユーザーは撮影技術や機材活用の最適化に強い関心があり、効率的に高品質な写真を撮るためのノウハウ習得を重視している。",
+      "mechanism": "『効率的』や『コツ』への関心は、技術的な成長欲求や自己研鑽の現れである。",
+      "predictions": [
+        "新しい撮影テクニックや機材情報を積極的に収集している",
+        "写真講座や撮影ワークショップへの参加経験がある"
+      ],
+      "discriminating_questions": [
+        "撮影技術の向上や新しい機材の導入にどの程度時間やお金をかけていますか？"
+      ],
+      "persona_link": [
+        "pkg:n383"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H3",
+      "type": "value",
+      "explains": [
+        "O3",
+        "O4"
+      ],
+      "assumes": [
+        "A1",
+        "A2"
+      ],
+      "statement": "ユーザーは『完璧な写真』を撮ること自体に価値を見出しており、旅の体験よりも成果物としての写真の質や映えを最優先している。",
+      "mechanism": "旅の目的が『SNSにアップするための完璧な写真』という成果重視型にシフトしているため、撮影行動が旅の中心になっている。",
+      "predictions": [
+        "旅先での行動計画が撮影スポットや時間帯優先で組まれている",
+        "撮影以外の観光や体験への関心が相対的に低い"
+      ],
+      "discriminating_questions": [
+        "写真撮影以外の旅の楽しみや目的はどの程度重要ですか？"
+      ],
+      "persona_link": [
+        "pkg:n365"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H4",
+      "type": "environmental",
+      "explains": [
+        "O2"
+      ],
+      "assumes": [
+        "A2"
+      ],
+      "statement": "観光地や絶景ポイント自体が『映える写真』を意識した環境に変化しており、ユーザーの撮影行動もそのトレンドに適応している。",
+      "mechanism": "観光地の整備やSNS映えスポットの増加が、ユーザーの撮影行動や機材選択に影響を与えている。",
+      "predictions": [
+        "訪れる場所はSNSやネットで『映えスポット』として紹介されていることが多い",
+        "現地で他の観光客も同様の撮影行動をとっている"
+      ],
+      "discriminating_questions": [
+        "撮影スポットの選定はどのような情報源や基準で行っていますか？"
+      ],
+      "persona_link": [
+        "pkg:n357"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H5",
+      "type": "social",
+      "explains": [
+        "O1",
+        "O3",
+        "O4"
+      ],
+      "assumes": [
+        "A1"
+      ],
+      "statement": "ユーザーが『SNSにアップするための完璧な写真』を旅の目的と強調するのは、実は写真や旅そのものよりも“映える写真を撮る自分”という社会的役割や承認欲求を満たすこと自体が本来の目的になっている可能性がある。",
+      "mechanism": "自己演出や他者からの評価を受けることが、旅の経験や写真撮影そのものよりもユーザーのアイデンティティや満足度に深く関係している。",
+      "predictions": [
+        "SNSでの自己表現やプロフィール作りに強い関心がある",
+        "写真を撮る自分自身の姿やストーリーをSNSで発信することが多い"
+      ],
+      "discriminating_questions": [
+        "写真そのものと、それを撮る自分自身の姿や役割、どちらにより強い満足感を感じますか？"
+      ],
+      "persona_link": [
+        "pkg:n370"
+      ],
+      "evidence_link": [],
+      "is_reframing": true
+    }
+  ]
+}

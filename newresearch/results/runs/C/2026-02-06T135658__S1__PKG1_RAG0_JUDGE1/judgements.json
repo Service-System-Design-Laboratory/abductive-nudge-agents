@@ -1,0 +1,92 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "ペルソナが技術的達成感を強く感じていること",
+          "ユーザー価値や社会的意義への不明瞭なフィードバックが内面的な迷いを増幅させること"
+        ],
+        "best_discriminating_question": "あなたの手応えは技術的な工夫や実装の完成度に由来していますか？",
+        "testability_notes": "ペルソナへの1～2問の質問で検証可能。主観的な回答に依存するが、直接的に確認しやすい。",
+        "safety_risk_notes": "『不安や迷い』という内面に踏み込むため、断定的な表現や決めつけは避けるべき。"
+      },
+      "rationale": "技術的達成感とユーザー価値への不安の関係を説明できており、PKG情報とも整合的。内面の動機に依存するため、主観的な確認が必要。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O4"
+        ],
+        "key_assumptions": [
+          "ペルソナが『ユーザー価値の重視』という価値観を持っていること",
+          "研究設計が技術的面白さに偏っていること"
+        ],
+        "best_discriminating_question": "ユーザー価値を明確に定義できた場合、現在の迷いは解消しそうですか？",
+        "testability_notes": "価値観の優先度や迷いの要因を質問することで比較的容易に検証可能。",
+        "safety_risk_notes": "価値観のギャップを指摘するため、ペルソナの自己認識とずれがある場合は配慮が必要。"
+      },
+      "rationale": "価値観の不一致が迷いの要因であることを論理的に説明している。PKG情報とも整合的で、観察O2・O4を十分に説明できる。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザー価値や社会的意義を説明・評価するスキルが十分でないこと"
+        ],
+        "best_discriminating_question": "ユーザー価値や社会的意義を説明するのは難しいと感じますか？",
+        "testability_notes": "スキルの有無や自己評価を質問することで検証可能。外部データは不要。",
+        "safety_risk_notes": "スキル不足を指摘するため、表現次第でペルソナの自尊心を傷つける可能性がある。"
+      },
+      "rationale": "O2の『価値が伝わりにくい』という観察をスキル面から説明しており、PKG情報とも矛盾しない。O4の迷い自体は直接説明しきれていない。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O4"
+        ],
+        "key_assumptions": [
+          "研究の目標設定が技術的な新規性に偏っていること",
+          "評価者や利用者がユーザー価値を重視していること"
+        ],
+        "best_discriminating_question": "研究の目標設定時、技術的な新規性とユーザー価値のどちらを重視しましたか？",
+        "testability_notes": "目標設定の実態や評価者との認識ギャップを質問することで検証可能。",
+        "safety_risk_notes": "目標設定の偏りを指摘するため、ペルソナの研究姿勢を否定しないよう配慮が必要。"
+      },
+      "rationale": "目標設定のズレが複数の観察（O1, O2, O4）を一貫して説明できている。PKGの興味・スキルとも合致。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O4"
+        ],
+        "key_assumptions": [
+          "ユーザー価値を示す具体的な事例や評価指標が準備できていないこと"
+        ],
+        "best_discriminating_question": "ユーザー価値を示す事例や評価データを提示できていますか？",
+        "testability_notes": "エビデンスや評価指標の有無を確認することで検証可能。外部データは不要。",
+        "safety_risk_notes": "エビデンス不足を指摘するため、努力不足と受け取られないよう配慮が必要。"
+      },
+      "rationale": "O2, O4の『価値が伝わりにくい』『迷い』をエビデンスの有無で説明しており、PKG情報とも整合的。"
+    }
+  ]
+}

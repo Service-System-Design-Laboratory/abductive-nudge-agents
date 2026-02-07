@@ -1,0 +1,101 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O4"
+        ],
+        "key_assumptions": [
+          "A2"
+        ],
+        "best_discriminating_question": "あの頃の感動を思い出すこと自体が、今の自分にとってどんな意味を持っていますか？",
+        "testability_notes": "ユーザーが過去の体験を思い出すことで安心感や一体感を得ているかどうかを尋ねることで検証可能。",
+        "safety_risk_notes": "過去への執着を肯定しすぎると現実逃避を助長する可能性があるため、現実とのバランスに配慮が必要。"
+      },
+      "rationale": "ノスタルジアや安心感の獲得という心理的動機は多くの人に普遍的であり、ユーザーの発言とも整合的。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3",
+          "O4",
+          "Oext1",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A3"
+        ],
+        "best_discriminating_question": "もし現地が当時と違っていた場合、どんな気持ちになると思いますか？",
+        "testability_notes": "現地訪問後の感想を聞くことで検証可能。",
+        "safety_risk_notes": "現実を直視させる内容のため、失望感を与えすぎないよう配慮が必要。"
+      },
+      "rationale": "外部エビデンスを活用し、環境変化が体験の質に影響するという現実的な視点を提供している。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O4"
+        ],
+        "key_assumptions": [
+          "A2"
+        ],
+        "best_discriminating_question": "京都のどんな文化や空気感に特に惹かれますか？",
+        "testability_notes": "地域文化や伝統への関心がどれほど強いかを追加質問で確認可能。",
+        "safety_risk_notes": "価値観への共感を示す内容のため、リスクは低い。"
+      },
+      "rationale": "PKGとの整合性が高く、ユーザーの価値観に寄り添った説明。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "A3"
+        ],
+        "best_discriminating_question": "今の自分が、あの頃と同じ体験をしても同じように感動できると思いますか？",
+        "testability_notes": "体験後の感情の変化を尋ねることで検証可能。",
+        "safety_risk_notes": "自己変化を指摘するため、ややセンシティブな内容。"
+      },
+      "rationale": "時間経過による自己変化という普遍的なテーマを扱っている。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3",
+          "O4",
+          "Oext1",
+          "Oext2",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "A2",
+          "A3"
+        ],
+        "best_discriminating_question": "本当に求めているのは『あの場所の空気』ですか？それとも『あの頃の自分』や『過去の記憶』ですか？",
+        "testability_notes": "体験後に現実の変化よりも記憶や自己像への執着が強いかどうかを尋ねることで検証可能。",
+        "safety_risk_notes": "自己像や記憶への執着を指摘するため、やや不快感を与える可能性があるが、深い自己洞察を促す。"
+      },
+      "rationale": "裏切る仮説として、ユーザーの発言の意味を大きく反転させ、現実体験よりも記憶や自己像への執着を指摘している。"
+    }
+  ]
+}

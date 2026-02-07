@@ -1,0 +1,101 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_link（pkg:n277, pkg:n278）がPKGに存在しない。"
+        ],
+        "explains_confirmed": [
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "ユーザーが静けさや自然との調和を強く重視するという心理的傾向があること。"
+        ],
+        "best_discriminating_question": "静けさ以外に、旅先で特に重視する要素はありますか？",
+        "testability_notes": "ユーザーに1-2問質問するだけで検証可能。旅先での重視ポイントや過去の行動パターンを聞けばよい。",
+        "safety_risk_notes": "ユーザーの価値観を断定的に扱うと誤解を生む可能性がある。"
+      },
+      "rationale": "心理的傾向を根拠に観察O2・O3をよく説明できているが、PKGリンク不在が欠点。ユーザーの価値観を決めつけない配慮が必要。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3",
+          "O4",
+          "Oext1",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "観光地の静けさや感動が産業的管理・商品化によって再現困難になっていること。"
+        ],
+        "best_discriminating_question": "近年の嵐山を訪れて、静けさを感じられたことはありますか？",
+        "testability_notes": "外部エビデンスや現地観察、ユーザーの体験談で検証可能。混雑状況の客観データも利用できる。",
+        "safety_risk_notes": "現状の観光地体験を否定的に捉えすぎると、ユーザーの期待を損なうリスクがある。"
+      },
+      "rationale": "外部エビデンスを活用し、観察O3・O4・Oext1・Oext3を広く説明。産業的最適化という環境要因に焦点を当てている。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_link（pkg:n277）がPKGに存在しない。"
+        ],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "ユーザーが土地の空気や雰囲気を味わうこと自体に価値を見出していること。"
+        ],
+        "best_discriminating_question": "地域住民やローカルガイドとの交流に興味がありますか？",
+        "testability_notes": "ユーザーの価値観や行動履歴を質問で確認できるため、検証は比較的容易。",
+        "safety_risk_notes": "ユーザーの価値観を過度に一般化すると誤解を招く可能性がある。"
+      },
+      "rationale": "体験の質や深さを重視する価値観でO1-O3を説明。PKGリンク不在が弱点だが、仮説自体は妥当。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_link（pkg:n284, pkg:n283）がPKGに存在しない。"
+        ],
+        "explains_confirmed": [
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "感動の再現には多様な要因が絡み、現状のPKGや外部事実だけでは説明が不十分であること。"
+        ],
+        "best_discriminating_question": "過去に同じ場所を再訪して、印象が変わった経験はありますか？",
+        "testability_notes": "ユーザーの過去体験や感想を聞くことで検証可能。追加のエビデンスも有用。",
+        "safety_risk_notes": "「エビデンス不足」と断じることで、ユーザーの期待や体験を否定的に感じさせるリスクがある。"
+      },
+      "rationale": "現時点での説明の限界を指摘し、O3・O4をカバー。PKGリンク不在が形式的な弱点。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_link（pkg:n278, pkg:n284）がPKGに存在しない。"
+        ],
+        "explains_confirmed": [
+          "O3",
+          "O4",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "ユーザーの動機が自己像やアイデンティティの再確認に根ざしていること。"
+        ],
+        "best_discriminating_question": "今回の旅で、過去の自分や価値観を確かめたいという気持ちはありますか？",
+        "testability_notes": "ユーザーの内省的な動機を直接質問する必要があり、やや検証しにくいが不可能ではない。",
+        "safety_risk_notes": "ユーザーの深層心理を断定的に扱うと、違和感や反発を招くリスクが高い。"
+      },
+      "rationale": "自己像やアイデンティティに着目し、O3・O4・Oext2を説明。PKGリンク不在と、ユーザー心理への踏み込みがリスク。"
+    }
+  ]
+}

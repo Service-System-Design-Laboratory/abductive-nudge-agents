@@ -1,0 +1,92 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーが日本の伝統美や歴史的価値を重視する価値観を持っていること",
+          "旅行先選択や評価基準にその価値観が反映されていること"
+        ],
+        "best_discriminating_question": "近年訪れた旅行先で、伝統や歴史を感じられる場所を優先したことはありますか？",
+        "testability_notes": "旅行先選択の傾向や価値観を直接質問することで比較的容易に検証可能。",
+        "safety_risk_notes": "価値観の断定が強いとユーザーの多様な動機を見落とす可能性がある。"
+      },
+      "rationale": "観察O1・O2を無理なく説明できるが、O3（美的評価の強さ）には直接的な説明力はやや弱い。価値観の前提が成立しているかの確認が重要。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1"
+        ],
+        "key_assumptions": [
+          "ユーザーが節約志向やコスト最適化のスキルを持ち、旅行計画に反映していること",
+          "PKGの情報がユーザーの実際の行動に現れていること"
+        ],
+        "best_discriminating_question": "金沢旅行の予算や出費をどのように管理・最適化していますか？",
+        "testability_notes": "旅行計画や行動の詳細を尋ねることで検証可能。PKG情報の裏付けも得やすい。",
+        "safety_risk_notes": "コスト重視を強調しすぎると、他の動機（美的・文化的関心）を軽視していると受け取られるリスクがある。"
+      },
+      "rationale": "PKGとの整合性が高く、O1（旅行先選択）を説明できるが、O2・O3の美的・歴史的関心には説明力が弱い。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3"
+        ],
+        "key_assumptions": [
+          "ユーザーが美的感受性を持ち、伝統的な空間体験が精神的充足につながっていること"
+        ],
+        "best_discriminating_question": "伝統的な美しさに触れたとき、どのような感情やインスピレーションを感じますか？",
+        "testability_notes": "主観的体験のため、ユーザーへの直接質問や行動観察が必要。検証はやや難易度高め。",
+        "safety_risk_notes": "ユーザーの内面や感受性に踏み込むため、断定的な表現は避け、配慮が必要。"
+      },
+      "rationale": "O3（美的評価）を最も直接的に説明できるが、O1・O2の行動や発言全体には説明が及ばない。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーが伝統美的体験とコスト最適化の両方を重視していること",
+          "両価値観の間に葛藤が生じうること"
+        ],
+        "best_discriminating_question": "金沢で本当は行きたいが予算の都合で見送った場所はありますか？",
+        "testability_notes": "ユーザーの意思決定過程や葛藤の有無を具体的に質問することで検証可能。",
+        "safety_risk_notes": "ユーザーの葛藤や未充足感に触れるため、感情的配慮が必要。"
+      },
+      "rationale": "O1・O2を説明しつつ、PKG情報と観察の両立を図る仮説。実際に葛藤が生じているかの検証がカギ。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "ユーザーが伝統美を評価する自己像や社会的立場を強化したいという無意識の欲求を持っていること",
+          "PKGの節約志向は表層的な動機に過ぎないこと"
+        ],
+        "best_discriminating_question": "伝統建築や美の話題を他者と共有することにどの程度関心がありますか？",
+        "testability_notes": "ユーザーの自己表現やSNS発信行動など、観察や追加質問で検証可能だが、無意識動機のため難易度は高い。",
+        "safety_risk_notes": "ユーザーの無意識やアイデンティティに踏み込むため、断定的な表現は誤解や反発を招くリスクが高い。"
+      },
+      "rationale": "観察全体を説明できるが、無意識動機の推定は検証困難で、ユーザーへの配慮が特に重要。"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "triggers": [
+    {
+      "type": "information_gap",
+      "text": "映える写真を効率的に撮る具体的なコツやノウハウについてPKGに情報がない。ユーザーは効率化や映えに関心が高いが、PKGではその方法論がカバーされていない。"
+    },
+    {
+      "type": "focus",
+      "text": "ユーザーの旅の目的が『SNSにアップするための完璧な写真』であり、自己演出や社会的承認欲求が動機の一部となっている点が特に注目される。"
+    }
+  ],
+  "rag_queries": [],
+  "evidence_items": [],
+  "external_observations": [],
+  "notes": "RAG disabled (use_rag=false) — trigger identification only"
+}

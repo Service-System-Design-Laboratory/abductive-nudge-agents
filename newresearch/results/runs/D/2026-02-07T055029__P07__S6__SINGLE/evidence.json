@@ -1,0 +1,37 @@
+{
+  "triggers": [
+    {
+      "type": "focus",
+      "text": "ユーザーは屋久島の原生林の神秘性や自分の経験への誇りを強調している。"
+    },
+    {
+      "type": "information_gap",
+      "text": "世界遺産登録前後での変化や、他者との知識の違いについての具体的な内容が語られていない。"
+    },
+    {
+      "type": "ambiguity",
+      "text": "『誰よりも分かっているつもり』という表現の根拠や背景が明確でない。"
+    },
+    {
+      "type": "contradiction",
+      "text": "『人の手が入っていない』としつつも、屋久島は観光地化や保護政策の影響を受けている可能性がある。"
+    }
+  ],
+  "external_observations": [
+    {
+      "id": "Oext1",
+      "text": "屋久島は1993年に世界自然遺産に登録されて以降、一躍脚光を浴び、観光地化が進んだ。",
+      "source_url": "https://www.maruyasu-fil.co.jp/as-it-is/unforgettable-adventure-on-yakushima"
+    },
+    {
+      "id": "Oext2",
+      "text": "屋久島の原生林や縄文杉は多くの人の憧れの場所となり、観光客が増加している。",
+      "source_url": "https://www.instagram.com/reel/DNx-4PX5ohg/"
+    },
+    {
+      "id": "Oext3",
+      "text": "屋久島の登山道や公園には遊歩道が設けられ、観察しやすいように人の手が加えられている部分もある。",
+      "source_url": "https://yoshiokan.5.pro.tok2.com/yaku/nori173yaku.html"
+    }
+  ]
+}

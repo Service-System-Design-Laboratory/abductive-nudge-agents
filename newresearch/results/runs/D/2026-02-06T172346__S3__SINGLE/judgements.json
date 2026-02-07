@@ -1,0 +1,101 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A1"
+        ],
+        "best_discriminating_question": "伝統的な街並みを見ることで、どんな気持ちになりますか？",
+        "testability_notes": "ユーザーの他の趣味や行動履歴、現代的な観光地への関心度を聞くことで検証できる。",
+        "safety_risk_notes": "ユーザーの価値観を肯定的に扱うためリスクは低い。"
+      },
+      "rationale": "伝統や歴史への憧れや癒しを動機とする説明は自然で、PKGの『ユーザー価値の重視』とも合致する。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "Oext1",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A3"
+        ],
+        "best_discriminating_question": "ひがし茶屋街で観光客向けの体験や店舗に惹かれることはありますか？",
+        "testability_notes": "観光客としての行動や、他者との共有体験への関心を問うことで検証できる。",
+        "safety_risk_notes": "ユーザーの『本物志向』を相対化するため、やや不快感を与える可能性がある。"
+      },
+      "rationale": "観光地化・商品化という外部観察を取り入れ、ユーザーの自己像を揺さぶる仮説。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A2"
+        ],
+        "best_discriminating_question": "伝統建築や文化財の保存活動に関心がありますか？",
+        "testability_notes": "文化財保護や継承活動への関心を直接質問することで検証できる。",
+        "safety_risk_notes": "価値観の肯定的な側面を扱うためリスクは低い。"
+      },
+      "rationale": "伝統や文化の保存という社会的価値への関心を説明する仮説。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "A1"
+        ],
+        "best_discriminating_question": "保存地区や歴史的な環境に行くことが多いですか？",
+        "testability_notes": "他の保存地区への訪問歴や関心を問うことで検証できる。",
+        "safety_risk_notes": "環境や景観の価値を問うためリスクは低い。"
+      },
+      "rationale": "保存された環境そのものへの感動や価値付けを説明。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "Oext1",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "A3"
+        ],
+        "best_discriminating_question": "ひがし茶屋街で『本物らしさ』に違和感を覚えたことはありますか？",
+        "testability_notes": "体験中に感じた違和感や、観光地化と本物感のギャップについて尋ねることで検証できる。",
+        "safety_risk_notes": "ユーザーの『本物』感覚に疑問を投げかけるため、やや不快感や自己防衛反応を引き起こす可能性がある。"
+      },
+      "rationale": "観光地化・商品化・演出された本物らしさという外部観察を統合し、ユーザーの発言の意味を根本的に揺さぶる。"
+    }
+  ]
+}

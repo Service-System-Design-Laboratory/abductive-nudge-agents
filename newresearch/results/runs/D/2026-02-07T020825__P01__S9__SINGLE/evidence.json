@@ -1,0 +1,32 @@
+{
+  "triggers": [
+    {
+      "type": "information_gap",
+      "text": "ユーザーが旅館の価値を価格以外でどう捉えているか不明。"
+    },
+    {
+      "type": "ambiguity",
+      "text": "『寝る場所なんてどこでも同じ』という発言が本心か、体験価値を軽視しているのか曖昧。"
+    },
+    {
+      "type": "contradiction",
+      "text": "PKGでは自然や地域との調和・信頼を重視しているが、発言はコスパ重視に偏っている。"
+    },
+    {
+      "type": "focus",
+      "text": "コスパの良い宿泊先への強い関心。"
+    }
+  ],
+  "external_observations": [
+    {
+      "id": "Oext1",
+      "text": "多くの旅行者は観光メインでホテルは寝るだけの場所と考え、安いビジネスホテルを選ぶ傾向がある。",
+      "source_url": "https://komachi.yomiuri.co.jp/topics/id/787363/"
+    },
+    {
+      "id": "Oext2",
+      "text": "限られた予算で地元の料理や体験を楽しむことが、高額な旅行よりも価値があると感じる人もいる。",
+      "source_url": "https://www.reddit.com/r/travel/comments/1qdkave/what_country_gave_you_the_most_value_for_the/?tl=ja"
+    }
+  ]
+}

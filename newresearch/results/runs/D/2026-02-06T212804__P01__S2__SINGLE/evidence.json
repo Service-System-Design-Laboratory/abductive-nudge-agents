@@ -1,0 +1,23 @@
+{
+  "triggers": [
+    {
+      "type": "focus",
+      "text": "効率化・計画実行への強い集中が見られる。"
+    },
+    {
+      "type": "information_gap",
+      "text": "効率化以外の旅行の目的や価値観が明示されていない。"
+    },
+    {
+      "type": "ambiguity",
+      "text": "『完璧に実行』の意味や、計画から逸脱した場合の受け止め方が不明。"
+    }
+  ],
+  "external_observations": [
+    {
+      "id": "Oext1",
+      "text": "区民等の理解と信頼が深まるのは一方的な情報発信ではなく、区民一人ひとりが『自分のため』に関わるときである。",
+      "source_url": "https://www.tokyo23-kuchokai-kiko.jp/report/docs/50b1e925d256a8aa70a11a37810bb2c6c166dce8.pdf"
+    }
+  ]
+}

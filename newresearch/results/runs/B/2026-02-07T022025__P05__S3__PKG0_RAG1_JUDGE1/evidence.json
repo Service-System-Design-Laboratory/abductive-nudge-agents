@@ -1,0 +1,73 @@
+{
+  "triggers": [
+    {
+      "type": "information_gap",
+      "text": "金沢やひがし茶屋街が江戸時代の風情をどの程度残しているか、具体的な根拠や事例が観察・仮定からは不明である。"
+    },
+    {
+      "type": "ambiguity",
+      "text": "『日本の美の極み』という表現が何を基準にしているのか、観察・仮定からは明確でない。"
+    }
+  ],
+  "rag_queries": [
+    "金沢 ひがし茶屋街 江戸時代の風情 現存する建築や街並みの特徴",
+    "ひがし茶屋街 日本の美の極み 評価理由や専門家の意見",
+    "金沢 伝統建築 歴史的価値",
+    "ひがし茶屋街 江戸時代の雰囲気を感じられるポイント"
+  ],
+  "evidence_items": [
+    {
+      "rank": 1,
+      "title": "ひがし茶屋街｜観光・体験",
+      "snippet": "金沢の風情を色濃く残す「ひがし茶屋街」。伝統的な茶屋建築が軒を連ね、その雅な佇まいは写真映えも抜群。歩いているだけでも金沢ならではの歴史と文化を肌で感じ ...",
+      "url": "https://www.kanazawa-kankoukyoukai.or.jp/spot/detail_10212.html",
+      "source_type": "org"
+    },
+    {
+      "rank": 2,
+      "title": "【ひがし茶屋街の観光ガイド】伝統文化と情緒感じる歴史ある ...",
+      "snippet": "江戸時代（1603年〜1868年）末期、1820年に出来た街であり、当時は茶屋街として栄えた。 江戸時代に建てられた伝統的建造物は今も残り、黒い瓦屋根と美しい ...",
+      "url": "https://www.gltjp.com/ja/article/item/20551/",
+      "source_type": "com"
+    },
+    {
+      "rank": 3,
+      "title": "ひがし茶屋街｜スポット｜【公式】石川県の観光/旅行サイト ...",
+      "snippet": "美しい出格子と石畳が続く古い街並みは国の重要伝統的建造物群保存地区に選定されています。 和菓子、伝統工芸品、雑貨などを扱うお店やカフェが充実しており、風情ある街 ...",
+      "url": "https://www.hot-ishikawa.jp/spot/detail_6320.html",
+      "source_type": "org"
+    },
+    {
+      "rank": 4,
+      "title": "金沢市の観光に関するアンケート調査 報告書",
+      "snippet": "・兼六園. ・金沢 21 世紀美術館. ・ひがし茶屋街. ・湯涌温泉. ・金沢城. ・金沢城公園. ・鈴木大拙館. ・本多の森. ・近江町市場. ・東山. ・県立図書館. ・国立工芸館.",
+      "url": "https://www4.city.kanazawa.lg.jp/material/files/group/32/R4_questionnaire.pdf",
+      "source_type": "gov"
+    },
+    {
+      "rank": 5,
+      "title": "風情があり人気の理由がわかりました！ - ひがし茶屋街の口コミ",
+      "snippet": "都内のように大きな看板を掲げているところが少ないのもまた魅力です。 外国人観光客の方々も多くみられ、若い女性が着物で歩いている姿も拝見し時間がゆっくり流れるとい ...",
+      "url": "https://www.tripadvisor.jp/ShowUserReviews-g298115-d1384984-r359226821-Higashi_Chaya_District-Kanazawa_Ishikawa_Prefecture_Hokuriku_Chubu.html",
+      "source_type": "com"
+    }
+  ],
+  "external_observations": [
+    {
+      "id": "Oext1",
+      "text": "ひがし茶屋街の伝統的な街並みや建築は観光資源として商品化されており、和菓子や伝統工芸品、雑貨などを扱う店舗やカフェが多数存在する。",
+      "source_url": "https://www.hot-ishikawa.jp/spot/detail_6320.html"
+    },
+    {
+      "id": "Oext2",
+      "text": "外国人観光客や若い女性の着物姿など、観光客による演出された本物らしさが街の風情の一部として消費されている。",
+      "source_url": "https://www.tripadvisor.jp/ShowUserReviews-g298115-d1384984-r359226821-Higashi_Chaya_District-Kanazawa_Ishikawa_Prefecture_Hokuriku_Chubu.html"
+    },
+    {
+      "id": "Oext3",
+      "text": "ひがし茶屋街は国の重要伝統的建造物群保存地区に選定されており、制度的な保護と観光振興が同時に進められている。",
+      "source_url": "https://www.hot-ishikawa.jp/spot/detail_6320.html"
+    }
+  ],
+  "notes": "外部観察は、商品化・演出された本物らしさ・制度的保護と観光振興の並存という揺さぶり要素を意識して抽出しています。"
+}

@@ -1,0 +1,93 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "ユーザーがPKGで示される価値観（Harmony with nature, Satoyama hiking等）を強く内面化している",
+          "観光地化された場所ではユーザーの求める体験が得られないとユーザー自身が感じている"
+        ],
+        "best_discriminating_question": "地域の伝統行事や地元住民との日常的な交流にも興味を持っているか？",
+        "testability_notes": "PKGの価値観とユーザーの発言・行動の整合性を確認する質問で比較的検証しやすい。",
+        "safety_risk_notes": "価値観の断定が強いため、ユーザーの多様な動機を見落とすリスクがある。"
+      },
+      "rationale": "PKGの価値観と観察内容がよく一致しており、説明力は高いが、価値観の内面化を前提とする点に注意が必要。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーが『本物』志向を通じて他者との差別化や独自性を求める心理的傾向を持つ"
+        ],
+        "best_discriminating_question": "誰も知らない場所を発見したとき、他者にその体験をシェアしたいと思うか？",
+        "testability_notes": "ユーザーの語りや自己認識に関する質問で検証可能だが、内面の動機はやや推測的。",
+        "safety_risk_notes": "動機を心理的欲求に還元しすぎると、ユーザーの自己認識と齟齬が生じる可能性がある。"
+      },
+      "rationale": "観察内容の説明は妥当だが、動機の解釈が主観的であり、直接的な証拠が必要。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "ユーザーが地域住民との信頼関係や社会的つながりを重視している",
+          "観光地ではそのような関係が築けないと考えている"
+        ],
+        "best_discriminating_question": "旅先で知り合った地元住民とその後も連絡を取り続けることがあるか？",
+        "testability_notes": "ユーザーの交流行動や関係性の持続性を問うことで比較的検証しやすい。",
+        "safety_risk_notes": "社会的価値観の強調が、他の動機（例：自然体験重視）を過小評価するリスクがある。"
+      },
+      "rationale": "社会的側面に焦点を当てており、観察O2・O3の説明力は高いが、O1への直接的説明は弱い。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2"
+        ],
+        "key_assumptions": [
+          "PKGの情報がユーザーの求める『極めてローカル』な体験に十分対応していない"
+        ],
+        "best_discriminating_question": "PKGに記載された『Local tours』や『Local events & festivals』は期待に応える内容だったか？",
+        "testability_notes": "PKGの内容とユーザーの満足度を直接確認できるため検証しやすい。",
+        "safety_risk_notes": "PKGの限界を指摘するため、ユーザーや関係者の期待を損なう可能性がある。"
+      },
+      "rationale": "PKGの情報提供のギャップに着目しており、O2の説明には有効だが、他の観察への説明は限定的。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "ユーザーが『本物志向』をアイデンティティの一部として強く持っている",
+          "観光客との差異化・優越性の意識が行動の主要な動機となっている"
+        ],
+        "best_discriminating_question": "自分の旅のスタイルを他者と比較したとき、どんな違いや優越感を感じることがあるか？",
+        "testability_notes": "ユーザーの自己認識や他者との比較意識を問うことで検証可能だが、内面の動機はやや推測的。",
+        "safety_risk_notes": "ユーザーの動機を優越感や差異化欲求に還元することで、不快感や反発を招くリスクが高い。"
+      },
+      "rationale": "観察全体の説明力は高いが、動機の解釈がセンシティブで、ユーザーへの配慮が必要。"
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A4"
+        ],
+        "best_discriminating_question": "撮影前にどの程度計画や下調べをしていますか？",
+        "testability_notes": "ユーザーの撮影前の準備や計画性について尋ねることで検証可能。",
+        "safety_risk_notes": "計画性を強調しすぎると、自由な旅の楽しみを否定する印象を与える可能性がある。"
+      },
+      "rationale": "PKGの『計画的運営』や『リスク回避』と整合的であり、観察された行動を説明できる。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "A2"
+        ],
+        "best_discriminating_question": "SNSでの反応や評価は、写真撮影のモチベーションにどのくらい影響しますか？",
+        "testability_notes": "SNSでの反応や評価への関心を尋ねることで検証可能。",
+        "safety_risk_notes": "SNS依存を指摘する形にならないよう配慮が必要。"
+      },
+      "rationale": "SNS投稿が旅の目的であるという発言に直接対応している。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O4"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A4"
+        ],
+        "best_discriminating_question": "撮影機材やテクニックの工夫に興味はありますか？",
+        "testability_notes": "機材やテクニックへの関心を尋ねることで検証可能。",
+        "safety_risk_notes": "技術論に偏りすぎて、ユーザーの価値観を狭めないよう注意。"
+      },
+      "rationale": "外部観察（Oext3）とPKGの『計画的運営』『土壌管理』に合致。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O4"
+        ],
+        "key_assumptions": [
+          "A1"
+        ],
+        "best_discriminating_question": "撮影時刻や自然光の使い方にこだわりはありますか？",
+        "testability_notes": "撮影時刻や自然光へのこだわりを尋ねることで検証可能。",
+        "safety_risk_notes": "環境要因に限定しすぎると、ユーザーの主体性を軽視する印象を与える可能性がある。"
+      },
+      "rationale": "外部観察（Oext2）とユーザーの行動が一致。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3",
+          "O4",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "A3"
+        ],
+        "best_discriminating_question": "写真以外の旅の体験や新しい価値観に興味が出てきたことはありますか？",
+        "testability_notes": "ユーザーの価値観や旅の目的の変化について尋ねることで検証可能。",
+        "safety_risk_notes": "ユーザーの現状の目的意識を揺さぶるため、やや不快感を与える可能性があるが、自己発見を促す効果も期待できる。"
+      },
+      "rationale": "外部観察（Oext1）を活用し、ユーザーの発言の意味を再定義する裏切る仮説。"
+    }
+  ]
+}

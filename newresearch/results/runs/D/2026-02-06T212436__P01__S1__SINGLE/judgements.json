@@ -1,0 +1,92 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A2"
+        ],
+        "best_discriminating_question": "観光地での体験で、特にがっかりした出来事はありましたか？",
+        "testability_notes": "過去の観光体験について具体的なエピソードを尋ねることで検証可能。",
+        "safety_risk_notes": "過去の失望体験を掘り返すことになるため、感情的な配慮が必要。"
+      },
+      "rationale": "観光地での失望経験が『本物』志向を強めたという説明は自然だが、動機の深層には十分踏み込めていない。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A3"
+        ],
+        "best_discriminating_question": "地元の人と直接交流した経験が印象に残っていることはありますか？",
+        "testability_notes": "地元住民との交流経験やその満足度を尋ねることで検証可能。",
+        "safety_risk_notes": "交流の有無を問うだけなのでリスクは低い。"
+      },
+      "rationale": "地域住民とのつながり重視というPKGとも整合的な説明。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2"
+        ],
+        "key_assumptions": [
+          "A1"
+        ],
+        "best_discriminating_question": "案内のない場所を探すこと自体にワクワクしますか？",
+        "testability_notes": "旅の計画や場所選びの基準を尋ねることで検証可能。",
+        "safety_risk_notes": "行動面の質問なのでリスクは低い。"
+      },
+      "rationale": "環境要因（観光地化されていない場所への志向）を説明できるが、内面の動機には踏み込めていない。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A1"
+        ],
+        "best_discriminating_question": "伝統や自然の営みそのものに触れることが一番大事ですか？",
+        "testability_notes": "伝統や自然体験への価値観を尋ねることで検証可能。",
+        "safety_risk_notes": "価値観を問うだけなのでリスクは低い。"
+      },
+      "rationale": "価値観レベルでの説明だが、動機の深層や社会的要因には触れていない。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A3"
+        ],
+        "best_discriminating_question": "『自分だけが知っている』という感覚に特別な価値を感じますか？",
+        "testability_notes": "体験の希少性や自己像へのこだわりを尋ねることで検証可能。",
+        "safety_risk_notes": "ユーザーの自己像や深層動機に踏み込むため、やや不快感を与える可能性がある。"
+      },
+      "rationale": "ユーザーの発言の表面的な意味を反転させ、自己像や希少性の維持という深層的な動機に踏み込んでいる。PKGと外部観察（Oext3）とも整合的。"
+    }
+  ]
+}

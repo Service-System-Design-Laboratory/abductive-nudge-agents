@@ -1,0 +1,133 @@
+{
+  "hypotheses": [
+    {
+      "hypothesis_id": "H1",
+      "type": "psychological",
+      "explains": [
+        "O1",
+        "O2",
+        "O3"
+      ],
+      "assumes": [
+        "A1"
+      ],
+      "statement": "ユーザーは『完璧な写真』を撮ること自体に達成感や自己効力感を感じている。",
+      "mechanism": "写真撮影のプロセスや成果が自己満足や成長実感に直結しているため、旅の主目的となっている。",
+      "predictions": [
+        "SNSの反応がなくても、良い写真が撮れた時に満足感を得る",
+        "撮影技術や機材へのこだわりが強い"
+      ],
+      "discriminating_questions": [
+        "SNSでの反応が薄くても、良い写真が撮れたら満足できますか？"
+      ],
+      "persona_link": [
+        "p05_n1"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H2",
+      "type": "social",
+      "explains": [
+        "O3",
+        "O4"
+      ],
+      "assumes": [
+        "A2"
+      ],
+      "statement": "SNSでの評価や『映え』が、ユーザーの旅の満足度や自己評価に大きく影響している。",
+      "mechanism": "SNSでの反応や『いいね』が、写真撮影や旅の目的意識を強化し、効率化への意欲も高めている。",
+      "predictions": [
+        "SNSで高評価を得られた写真には特に満足感を覚える",
+        "SNSのトレンドや他者の写真を参考にしている"
+      ],
+      "discriminating_questions": [
+        "SNSでの反応が良いと、旅の満足度も高まりますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H3",
+      "type": "skill",
+      "explains": [
+        "O4"
+      ],
+      "assumes": [
+        "A3"
+      ],
+      "statement": "効率的な撮影方法への関心は、節約志向やコスト最適化の価値観が反映されている。",
+      "mechanism": "限られた時間やリソースで最大限の成果を出すことに価値を感じており、撮影にもその志向が現れている。",
+      "predictions": [
+        "撮影機材や移動、時間配分なども最適化しようとする",
+        "撮影以外の活動も効率よくこなしたいと考えている"
+      ],
+      "discriminating_questions": [
+        "撮影の効率化は、他の活動やコストとのバランスを意識してのことですか？"
+      ],
+      "persona_link": [
+        "p05_n2",
+        "p05_n3"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H4",
+      "type": "environmental",
+      "explains": [
+        "O2",
+        "O4",
+        "Oext1"
+      ],
+      "assumes": [
+        "A1"
+      ],
+      "statement": "撮影効率やクオリティ向上には、自然光や時間帯など環境要因の最適化が大きく関わっている。",
+      "mechanism": "ゴールデンアワーなど環境条件を活かすことで、少ない試行回数で高品質な写真が得られる。",
+      "predictions": [
+        "撮影時間や場所の選択に強いこだわりがある",
+        "自然光や天候を事前に調べて行動計画を立てる"
+      ],
+      "discriminating_questions": [
+        "撮影時の自然光や時間帯はどの程度意識していますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [
+        "Oext1"
+      ],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H5",
+      "type": "goal_mismatch",
+      "explains": [
+        "O3",
+        "O4",
+        "Oext2",
+        "Oext3"
+      ],
+      "assumes": [
+        "A4"
+      ],
+      "statement": "『完璧な写真を撮ること』が旅の目的だと考えているが、実はSNSや写真の価値観自体が時代とともに変化しており、今の努力が将来的にズレを生む可能性がある（裏切る仮説）。",
+      "mechanism": "写真の『映え』やSNSでの評価基準は変化しやすく、今の最適化が未来の自己満足や社会的評価とズレるリスクがある。さらに、ライブ配信や演出された本物らしさが求められる時代に、静止画の完璧さだけを追求することが逆に自己目的化してしまっている可能性がある。",
+      "predictions": [
+        "将来的に写真撮影へのモチベーションや満足度が変化する",
+        "ライブ配信や動画、演出性への関心が高まるかもしれない",
+        "今の撮影スタイルが時代遅れと感じる瞬間が来る"
+      ],
+      "discriminating_questions": [
+        "写真の『映え』やSNSの評価基準が変わった時、今の撮影スタイルを見直すことはありますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [
+        "Oext2",
+        "Oext3"
+      ],
+      "is_reframing": true
+    }
+  ]
+}

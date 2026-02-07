@@ -1,0 +1,92 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A1"
+        ],
+        "best_discriminating_question": "SNSでの反応が薄くても、良い写真が撮れたら満足できますか？",
+        "testability_notes": "ユーザーの満足感の源泉がどこにあるかを質問で確認できる。",
+        "safety_risk_notes": "ユーザーの自己効力感や達成感を肯定する内容なのでリスクは低い。"
+      },
+      "rationale": "写真撮影自体が目的化している点を素直に説明できる。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "A2"
+        ],
+        "best_discriminating_question": "SNSでの反応が良いと、旅の満足度も高まりますか？",
+        "testability_notes": "SNSの評価と満足度の相関を質問で確認できる。",
+        "safety_risk_notes": "SNS依存を指摘しすぎると自己否定感を与えるリスクがある。"
+      },
+      "rationale": "SNSの評価が動機の中心にある可能性を説明。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O4"
+        ],
+        "key_assumptions": [
+          "A3"
+        ],
+        "best_discriminating_question": "撮影の効率化は、他の活動やコストとのバランスを意識してのことですか？",
+        "testability_notes": "効率化の動機を質問で確認できる。",
+        "safety_risk_notes": "節約志向を肯定する内容なのでリスクは低い。"
+      },
+      "rationale": "PKGの節約志向・コスト最適化と撮影効率化の関連を説明。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O4",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "A1"
+        ],
+        "best_discriminating_question": "撮影時の自然光や時間帯はどの程度意識していますか？",
+        "testability_notes": "撮影条件への意識を質問で確認できる。",
+        "safety_risk_notes": "技術的なアドバイスに近く、リスクは低い。"
+      },
+      "rationale": "外部観察（ゴールデンアワー）を活用し、環境要因の最適化を説明。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3",
+          "O4",
+          "Oext2",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "A4"
+        ],
+        "best_discriminating_question": "写真の『映え』やSNSの評価基準が変わった時、今の撮影スタイルを見直すことはありますか？",
+        "testability_notes": "価値観や動機の変化への対応を質問で確認できる。",
+        "safety_risk_notes": "ユーザーの現状の努力や価値観に疑問を投げかけるため、やや不快感を与える可能性がある。"
+      },
+      "rationale": "外部観察（時代変化・演出された本物らしさ）を活用し、ユーザーの目的意識や行動の意味を深く問い直す裏切る仮説。"
+    }
+  ]
+}

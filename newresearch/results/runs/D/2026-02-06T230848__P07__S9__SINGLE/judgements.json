@@ -1,0 +1,101 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A2"
+        ],
+        "best_discriminating_question": "旅館でしか得られない体験やサービスに興味を持ったことはありますか？",
+        "testability_notes": "体験価値やサービスへの関心度を質問で確認できる。",
+        "safety_risk_notes": "価値観を否定しないよう配慮が必要。"
+      },
+      "rationale": "ユーザーの発言全体を素直に説明できるが、体験価値を完全に無視している可能性あり。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O3",
+          "O5"
+        ],
+        "key_assumptions": [
+          "A2",
+          "A3"
+        ],
+        "best_discriminating_question": "旅行以外でもコスパを重視して選択することが多いですか？",
+        "testability_notes": "他分野での選択傾向を聞くことで検証可能。",
+        "safety_risk_notes": "コスパ志向を肯定的に扱う必要がある。"
+      },
+      "rationale": "コスパ重視の価値観を説明するが、体験価値や外部要因を考慮していない。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [
+          "ユーザーが他人の意見を重視している証拠が弱い。"
+        ],
+        "explains_confirmed": [
+          "O5",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "A4"
+        ],
+        "best_discriminating_question": "他の人の宿泊先選びや口コミを参考にしていますか？",
+        "testability_notes": "他者参照行動の有無を質問で確認。",
+        "safety_risk_notes": "他者依存と受け取られないよう注意。"
+      },
+      "rationale": "外部観察と合致するが、ユーザー発言の根拠がやや薄い。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "A2"
+        ],
+        "best_discriminating_question": "時期による価格変動について調べたことはありますか？",
+        "testability_notes": "価格変動の認識有無を質問で確認。",
+        "safety_risk_notes": "価格変動の説明がユーザーの価値観を否定しないよう配慮。"
+      },
+      "rationale": "外部要因による価格変動の説明が加わり、納得感を補強できる。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O3",
+          "O4",
+          "Oext4"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A3"
+        ],
+        "best_discriminating_question": "旅館での食事やおもてなし、文化体験に価値を感じたことはありますか？",
+        "testability_notes": "体験価値や文化的側面への関心を質問で確認。",
+        "safety_risk_notes": "『見落としている』という表現が上から目線にならないよう注意。"
+      },
+      "rationale": "ユーザーの発言の前提を反転させ、体験価値や文化的側面への気づきを促す。"
+    }
+  ]
+}

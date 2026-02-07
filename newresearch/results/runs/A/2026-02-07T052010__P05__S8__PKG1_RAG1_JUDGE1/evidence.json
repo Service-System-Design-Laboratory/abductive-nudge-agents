@@ -1,0 +1,73 @@
+{
+  "triggers": [
+    {
+      "type": "information_gap",
+      "text": "ユーザーが学生時代に体験した『静かな嵐山』や『人がいない竹林の道』の現在の状況がPKGに記載されていない。現在も同じような静けさや空気を味わえるかどうかが不明である。"
+    },
+    {
+      "type": "ambiguity",
+      "text": "『同じ感動を取り戻したい』というユーザーの希望が、具体的にどのような条件や体験によって満たされるかがPKGでは明確になっていない。"
+    }
+  ],
+  "rag_queries": [
+    "現在の嵐山の混雑状況や静けさについて",
+    "竹林の道（京都）の現在の観光客数や静けさの情報",
+    "学生時代と現在の京都観光地の雰囲気の違い",
+    "嵐山や竹林の道で静かな体験を得るためのおすすめ時間帯や方法"
+  ],
+  "evidence_items": [
+    {
+      "rank": 1,
+      "title": "混雑回避に役立つ観光快適度マップ",
+      "snippet": "ビッグデータをもとに予測したエリア別の混雑情報を発信しています。ライブカメラの映像や、おすすめスポット記事も参考に、混雑する時間や場所を上手に避けながら、 ...",
+      "url": "https://ja.kyoto.travel/comfort/saga-arashiyama/",
+      "source_type": "org"
+    },
+    {
+      "rank": 2,
+      "title": "嵐山の混雑状況をLIVEカメラでお出かけ前にチェック！ | 最新 ...",
+      "snippet": "嵐山周辺の混雑状況を知りたいときはぜひライブカメラをご活用ください♪ 【LIVE】 京都 嵯峨嵐山 渡月橋北詰ライブ中継カメラ（京都市 ...",
+      "url": "https://hotel-binario.jp/arashiyama/news/675",
+      "source_type": "com"
+    },
+    {
+      "rank": 3,
+      "title": "竹林に落書きする観光客、声かけたら「え、どうして？」 京都の ...",
+      "snippet": "嵐山の観光名所「竹林の小径（こみち）」では昨秋、市有地にある約7千本のうち、約350本でナイフか鍵のようなもので刻まれた落書きが確認された。これを受け ...",
+      "url": "https://www.asahi.com/articles/ASV2410K8V24PLZB00FM.html",
+      "source_type": "com"
+    },
+    {
+      "rank": 4,
+      "title": "インバウンド増で竹林に落書き 「悪い人ばかりじゃない」京都の ...",
+      "snippet": "竹林の所有者の一人、中村晃さん（79）は、新型コロナ禍が収まり、インバウンドが再び増加したころから落書きやゴミの被害が目立つようになったと言う。",
+      "url": "https://mainichi.jp/articles/20260205/k00/00m/040/172000c",
+      "source_type": "com"
+    },
+    {
+      "rank": 5,
+      "title": "嵐山公園の混雑予報",
+      "snippet": "嵐山公園駅の混雑予報です。混雑予報とは、ナビタイムのサービスで実際に検索されている情報から混雑するかどうかを予測して表示しています。嵐山公園周辺の人気 ...",
+      "url": "https://www.navitime.co.jp/congestion/prediction/result?node=00101661",
+      "source_type": "com"
+    }
+  ],
+  "external_observations": [
+    {
+      "id": "Oext1",
+      "text": "嵐山や竹林の道はビッグデータやライブカメラによって混雑状況がリアルタイムで監視・商品化され、観光客の快適な体験が産業的に演出されている。",
+      "source_url": "https://ja.kyoto.travel/comfort/saga-arashiyama/"
+    },
+    {
+      "id": "Oext2",
+      "text": "観光客の増加によって竹林の落書きやゴミ被害が深刻化しており、静けさや純粋な自然環境は観光行動そのものによって変質している。",
+      "source_url": "https://mainichi.jp/articles/20260205/k00/00m/040/172000c"
+    },
+    {
+      "id": "Oext3",
+      "text": "嵐山公園や竹林の道は『混雑予報』や『おすすめスポット』としてデータ化され、静かな体験や隠れた場所も観光資源として積極的にマーケティングされている。",
+      "source_url": "https://www.navitime.co.jp/congestion/prediction/result?node=00101661"
+    }
+  ],
+  "notes": ""
+}

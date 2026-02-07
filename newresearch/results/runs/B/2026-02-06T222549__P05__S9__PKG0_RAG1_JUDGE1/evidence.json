@@ -1,0 +1,59 @@
+{
+  "triggers": [
+    {
+      "type": "information_gap",
+      "text": "ユーザーが『寝る場所はどこでも同じ』と考えているが、旅館とビジネスホテルの価格差や付加価値（サービス・体験など）について具体的な情報が不足している。"
+    },
+    {
+      "type": "information_gap",
+      "text": "ユーザーがコスパの良い宿泊先を求めているが、旅館やビジネスホテル以外の選択肢や、コスパの定義・評価基準について情報が不足している。"
+    }
+  ],
+  "rag_queries": [
+    "旅館とビジネスホテルの価格差の理由や付加価値の違いを解説",
+    "コスパの良い宿泊先の具体例や選び方",
+    "旅館以外で一泊3万円以下のおすすめ宿泊施設",
+    "ビジネスホテルと旅館のサービスや体験の比較"
+  ],
+  "evidence_items": [
+    {
+      "rank": 1,
+      "title": "【2025年版】ホテル・旅館のマーケティング調査レポート",
+      "snippet": "価格帯による旅行目的の違いを見ると価格が上がるにつれ宿泊施設の利用のされ方が、「利便性・効率性」から「体験の質・記念性」へと移行しています。",
+      "url": "https://www.yadoken.net/archives/column/hotel-and-ryokan-marketing-research-report",
+      "source_type": "com"
+    },
+    {
+      "rank": 2,
+      "title": "なぜ駅前のビジネスホテルは温泉旅館より安いのか？",
+      "snippet": "①旅館がボッていて儲かっている？→倒産する旅館も多く、必ずしも儲かっているようには思えません。 ②建物の建設コストが高い？",
+      "url": "https://diamond.jp/articles/-/338697",
+      "source_type": "com"
+    },
+    {
+      "rank": 3,
+      "title": "知ってる？ 旅館とホテルの違い！メリット・デメリットをご ...",
+      "snippet": "旅館での宿泊には、夕食が付いてくるのが基本です。大広間で食べるか、客室で食べるかを選べる場合もあります。一方ホテルは、夕食付を基本としていない ...",
+      "url": "https://sotetsu-hotels.com/column/390/",
+      "source_type": "com"
+    }
+  ],
+  "external_observations": [
+    {
+      "id": "Oext1",
+      "text": "宿泊施設の価格が高くなるほど、単なる寝泊まりの利便性から、記念的な体験や演出された本物らしさを求める消費行動へと変化している。",
+      "source_url": "https://www.yadoken.net/archives/column/hotel-and-ryokan-marketing-research-report"
+    },
+    {
+      "id": "Oext2",
+      "text": "旅館業界では高価格化にもかかわらず倒産が多く、価格の高さが必ずしも利益や価値の保証になっていない構造的逆説が存在する。",
+      "source_url": "https://diamond.jp/articles/-/338697"
+    },
+    {
+      "id": "Oext3",
+      "text": "夕食や体験サービスの付加価値が、旅館とホテルの価格差を生み出しており、食事や体験そのものが商品化されている。",
+      "source_url": "https://sotetsu-hotels.com/column/390/"
+    }
+  ],
+  "notes": ""
+}

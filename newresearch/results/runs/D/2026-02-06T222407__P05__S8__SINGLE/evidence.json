@@ -1,0 +1,32 @@
+{
+  "triggers": [
+    {
+      "type": "information_gap",
+      "text": "現在の嵐山や竹林の道の状況が、ユーザーの記憶と一致しているか不明である。"
+    },
+    {
+      "type": "ambiguity",
+      "text": "『同じ感動』の具体的な内容が明確でない。"
+    },
+    {
+      "type": "contradiction",
+      "text": "外部情報では嵐山の竹林が観光客で賑わい、落書きや混雑など過去と異なる様子が報告されている。"
+    },
+    {
+      "type": "focus",
+      "text": "静けさや人の少なさが感動の本質かどうかに焦点がある。"
+    }
+  ],
+  "external_observations": [
+    {
+      "id": "Oext1",
+      "text": "嵐山の竹林は現在、朝でも観光客が多く、修学旅行生や外国人観光客で賑わっている。",
+      "source_url": "https://www.instagram.com/reel/DTiSDmMklFa/"
+    },
+    {
+      "id": "Oext2",
+      "text": "竹林の小径では落書きや私有地への無断侵入など、観光公害が深刻化している。",
+      "source_url": "https://www.asahi.com/articles/ASV1Y0J2HV1YPLZB00YM.html"
+    }
+  ]
+}

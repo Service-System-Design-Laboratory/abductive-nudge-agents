@@ -1,0 +1,130 @@
+{
+  "hypotheses": [
+    {
+      "hypothesis_id": "H1",
+      "type": "value",
+      "explains": [
+        "O1",
+        "O2"
+      ],
+      "assumes": [
+        "A1"
+      ],
+      "statement": "ユーザーは観光地の表層的な演出よりも、地域固有の文化や生活様式を重視する価値観を持っているため、ガイドブック掲載の場所に興味を示さない。",
+      "mechanism": "文化的な本物志向や独自性への価値付与が、観光客向けの場所への無関心と、地元密着型の体験への強い欲求を生み出している。",
+      "predictions": [
+        "ユーザーは有名な観光地や記念写真の定番スポットに消極的である",
+        "地域の伝統行事や地元住民の生活に関心を持つ傾向がある"
+      ],
+      "discriminating_questions": [
+        "伝統的な祭りや地元の生活に触れることに特別な魅力を感じますか？"
+      ],
+      "persona_link": [
+        "p05_n6",
+        "p05_n2"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H2",
+      "type": "skill",
+      "explains": [
+        "O2"
+      ],
+      "assumes": [
+        "A2"
+      ],
+      "statement": "ユーザーはコスト最適化やデータ分析のスキルを活かし、観光客が訪れない本物の生活圏を自力で発見すること自体に達成感を感じている可能性がある。",
+      "mechanism": "低予算旅行や節約志向が、情報収集や探索のスキル活用と結びつき、ガイドブックに頼らず独自に調査・発見する行動につながっている。",
+      "predictions": [
+        "ユーザーは旅行前に地図やSNS等から独自の情報を集めている",
+        "地元住民と直接交流し、現地情報を得る工夫をしている"
+      ],
+      "discriminating_questions": [
+        "旅行先を決める際、どのような手段で情報を集めていますか？"
+      ],
+      "persona_link": [
+        "p05_n1",
+        "p05_n3"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H3",
+      "type": "goal_mismatch",
+      "explains": [
+        "O3"
+      ],
+      "assumes": [
+        "A1"
+      ],
+      "statement": "ユーザーの旅行の目的が『本物の生活』体験であり、観光地側の『非日常の演出』という目標と根本的にずれているため、観光客向けの場所に満足できない。",
+      "mechanism": "ユーザーの体験価値と観光地の提供価値が一致しないことで不満が生じている。",
+      "predictions": [
+        "観光地のエンターテイメントやパフォーマンスに興味を示さない",
+        "現地の生活感が希薄な場所を避ける傾向がある"
+      ],
+      "discriminating_questions": [
+        "観光地のイベントやショーを積極的に避ける理由は何ですか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H4",
+      "type": "environmental",
+      "explains": [
+        "O1",
+        "O3"
+      ],
+      "assumes": [
+        "A2"
+      ],
+      "statement": "節約志向や低予算旅行を重視するユーザーにとって、ガイドブック掲載の観光地はコストパフォーマンスが低く感じられるため、興味を持てない。",
+      "mechanism": "有名観光地は入場料や物価が高く、コスト意識の強いユーザーにとって魅力が薄れる。",
+      "predictions": [
+        "無料または安価で参加できる地元イベントや市場を好む",
+        "観光地の高額なサービスや飲食を避ける傾向がある"
+      ],
+      "discriminating_questions": [
+        "旅行先で費用対効果を重視して行き先を選びますか？"
+      ],
+      "persona_link": [
+        "p05_n2",
+        "p05_n6"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H5",
+      "type": "psychological",
+      "explains": [
+        "O2",
+        "O3"
+      ],
+      "assumes": [
+        "A1",
+        "A2"
+      ],
+      "statement": "ユーザーが『本物の生活』を強調するのは、実は『他の観光客と違う自分』『通な自分』という自己像を維持したい動機が無意識に働いている可能性がある。",
+      "mechanism": "本物志向の主張は、自己の独自性や優越感を保つための心理的戦略として機能している場合がある。",
+      "predictions": [
+        "他人と異なる体験や話題を強調する傾向がある",
+        "一般的な観光行動を取ることに抵抗感や劣等感を抱くことがある"
+      ],
+      "discriminating_questions": [
+        "『観光客が行かない場所』へのこだわりは、他者との差別化を意識している部分がありますか？"
+      ],
+      "persona_link": [
+        "p05_n6",
+        "p05_n2"
+      ],
+      "evidence_link": [],
+      "is_reframing": true
+    }
+  ]
+}

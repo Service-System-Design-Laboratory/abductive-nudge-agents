@@ -1,0 +1,7 @@
+Metric	A: Full (Multi-Agent)	B: -PKG	C: -RAG	D: Single (CoT)
+Reframing Rate (selected)	20/30 (67%)	11/30 (37%)	25/30 (83%)	30/30 (100%)
+persona_link present	18/30 (60%)	0/30 (0%)	26/30 (87%)	16/30 (53%)
+evidence_link present	30/30 (100%)	28/30 (93%)	0/30 (0%)	28/30 (93%)
+Avg hypotheses/run	5.0	5.0	5.0	5.0
+Avg reframing hyps	1.0	1.0	1.0	1.1
+Runs with fatal flaws	0/30	0/30	0/30	0/30

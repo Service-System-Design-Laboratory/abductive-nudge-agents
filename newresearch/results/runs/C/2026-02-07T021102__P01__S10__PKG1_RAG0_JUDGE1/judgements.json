@@ -1,0 +1,92 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーが自然や地域の美しさを価値観として重視していること",
+          "PKGの『自然との調和』『里山散策』が写真撮影行動の根底にあること"
+        ],
+        "best_discriminating_question": "SNSに投稿している写真のテーマは自然や地域の風景が中心か？",
+        "testability_notes": "SNS投稿内容やユーザーの被写体選好を1-2問で確認でき、PKG情報とも整合性が高い。",
+        "safety_risk_notes": "価値観の断定が強い場合、ユーザーの多様な動機を見落とすリスクがある。"
+      },
+      "rationale": "PKGとの整合性が高く、O1・O2の行動を十分に説明できているが、O3の『SNS目的』を直接説明しきれていない。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O4"
+        ],
+        "key_assumptions": [
+          "ユーザーが撮影技術や機材活用の向上に強い関心を持っていること"
+        ],
+        "best_discriminating_question": "撮影技術を高めるためにどんな情報源や教材を利用しているか？",
+        "testability_notes": "ユーザーの学習行動や機材への関心を直接質問することで容易に検証可能。",
+        "safety_risk_notes": "技術志向を過度に強調すると、価値観や社会的動機を軽視する印象を与える可能性がある。"
+      },
+      "rationale": "O2・O4の『効率的な撮影』や『技術への関心』をよく説明できているが、PKGや価値観との直接的な紐付けは弱い。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "ユーザーがSNSでの承認や反響を強く重視していること"
+        ],
+        "best_discriminating_question": "SNSで反響が大きかった写真にはどんな特徴があるか？",
+        "testability_notes": "SNSでの反響や他者評価への関心を1-2問で確認できるため検証しやすい。",
+        "safety_risk_notes": "承認欲求を指摘する内容は、ユーザーによっては不快感や抵抗感を生む可能性がある。"
+      },
+      "rationale": "O3・O4の『SNS目的』や『反響重視』を説明できるが、PKGや自然価値観との関連は薄い。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O4"
+        ],
+        "key_assumptions": [
+          "ユーザーが理想と現実のリソース制約（時間・移動）に直面していること"
+        ],
+        "best_discriminating_question": "撮影中に時間や移動の制約で諦めたシーンはあるか？",
+        "testability_notes": "具体的な制約体験や効率化への関心を質問で容易に検証できる。",
+        "safety_risk_notes": "ユーザーの理想と現実のギャップを強調しすぎると、ネガティブな印象を与える可能性がある。"
+      },
+      "rationale": "O4の『効率化志向』をよく説明するが、他の観察やPKGとの直接的な関連は限定的。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "ユーザーが『写真を撮る自分』というアイデンティティを重視していること",
+          "自己効力感や自己表現が行動の主動機となっていること"
+        ],
+        "best_discriminating_question": "カメラを持たずに旅行した場合、満足感や体験の質にどのような違いを感じるか？",
+        "testability_notes": "ユーザーの自己像や撮影行動の心理的動機を深掘りする質問が必要で、やや検証に手間がかかる。",
+        "safety_risk_notes": "ユーザーの自己認識や深層心理に踏み込むため、誤解や抵抗感を生むリスクがある。"
+      },
+      "rationale": "全観察を説明でき、PKGとも整合性があるが、リフレーミング仮説であるためユーザーの自己認識とのズレや心理的抵抗に注意が必要。"
+    }
+  ]
+}

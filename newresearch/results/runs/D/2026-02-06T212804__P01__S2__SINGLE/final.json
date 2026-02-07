@@ -1,0 +1,353 @@
+{
+  "context": {
+    "observations": [
+      {
+        "id": "O1",
+        "text": "今回の3日間の旅行は分刻みでスケジュールを組んだ。"
+      },
+      {
+        "id": "O2",
+        "text": "Googleマップで移動時間を計算した。"
+      },
+      {
+        "id": "O3",
+        "text": "最も効率的に主要スポットを回れるルートを確立した。"
+      },
+      {
+        "id": "O4",
+        "text": "あとはこれを完璧に実行するだけだ。"
+      },
+      {
+        "id": "O5",
+        "text": "効率化の見落としポイントがあるか質問している。"
+      }
+    ],
+    "assumptions": [
+      {
+        "id": "A1",
+        "text": "ユーザーは旅行の効率化を重視している。",
+        "status": "tentative"
+      },
+      {
+        "id": "A2",
+        "text": "ユーザーは計画通りの行動に満足感を得る。",
+        "status": "tentative"
+      },
+      {
+        "id": "A3",
+        "text": "主要スポットを回ることが旅行の主目的である。",
+        "status": "tentative"
+      },
+      {
+        "id": "A4",
+        "text": "効率化以外の価値（現地住民との交流や自然との調和など）には触れていない。",
+        "status": "tentative"
+      }
+    ],
+    "questions": [
+      "効率化以外に旅行で大切にしたいことはありますか？",
+      "計画通りに進まなかった場合、どんな気持ちになりますか？",
+      "主要スポット以外で印象に残った体験はありますか？",
+      "現地の人との交流や自然体験に興味はありますか？"
+    ],
+    "constraints": {
+      "tone": "supportive",
+      "safety": "avoid determinism"
+    }
+  },
+  "evidence": {
+    "triggers": [
+      {
+        "type": "focus",
+        "text": "効率化・計画実行への強い集中が見られる。"
+      },
+      {
+        "type": "information_gap",
+        "text": "効率化以外の旅行の目的や価値観が明示されていない。"
+      },
+      {
+        "type": "ambiguity",
+        "text": "『完璧に実行』の意味や、計画から逸脱した場合の受け止め方が不明。"
+      }
+    ],
+    "external_observations": [
+      {
+        "id": "Oext1",
+        "text": "区民等の理解と信頼が深まるのは一方的な情報発信ではなく、区民一人ひとりが『自分のため』に関わるときである。",
+        "source_url": "https://www.tokyo23-kuchokai-kiko.jp/report/docs/50b1e925d256a8aa70a11a37810bb2c6c166dce8.pdf"
+      }
+    ]
+  },
+  "hypotheses": [
+    {
+      "hypothesis_id": "H1",
+      "type": "psychological",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "O4"
+      ],
+      "assumes": [
+        "A1",
+        "A2"
+      ],
+      "statement": "ユーザーは計画通りに物事を進めることで達成感や安心感を得る傾向がある。",
+      "mechanism": "計画の遂行自体が自己効力感や満足感をもたらすため、効率化や完璧な実行に強くこだわる。",
+      "predictions": [
+        "計画が崩れるとストレスや不満を感じやすい。",
+        "旅行後も計画通り進んだかどうかを重視して振り返る。"
+      ],
+      "discriminating_questions": [
+        "計画通りに進まなかった場合、どんな気持ちになりますか？"
+      ],
+      "persona_link": [
+        "pkg:p01_n6"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H2",
+      "type": "value",
+      "explains": [
+        "O3",
+        "O4"
+      ],
+      "assumes": [
+        "A3"
+      ],
+      "statement": "ユーザーは主要スポットを効率的に回ること自体に価値を置いている。",
+      "mechanism": "限られた時間で多くの観光地を体験することが、旅行の充実感や達成感につながる価値観を持っている。",
+      "predictions": [
+        "主要スポットを制覇することに満足感を感じる。",
+        "スポット以外の体験にはあまり重きを置かない傾向がある。"
+      ],
+      "discriminating_questions": [
+        "主要スポット以外で印象に残った体験はありますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H3",
+      "type": "environmental",
+      "explains": [
+        "O2",
+        "O3"
+      ],
+      "assumes": [
+        "A1"
+      ],
+      "statement": "移動手段や現地の交通状況など、外的要因による非効率が発生しやすい地域である可能性がある。",
+      "mechanism": "Googleマップでの計算やルート確立は、現地の交通事情や予期せぬ遅延への備えとして行われている。",
+      "predictions": [
+        "現地で予想外の遅延や交通トラブルが発生した場合、計画の修正が必要になる。",
+        "移動手段の選択肢や現地情報を事前に調べている。"
+      ],
+      "discriminating_questions": [
+        "現地の交通事情や混雑状況も調べましたか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H4",
+      "type": "social",
+      "explains": [
+        "O5"
+      ],
+      "assumes": [
+        "A4"
+      ],
+      "statement": "ユーザーは効率化の相談を通じて、他者との情報共有やアドバイスを求めている。",
+      "mechanism": "効率化のポイントを他者に尋ねることで、より良い方法や新たな視点を得ようとしている。",
+      "predictions": [
+        "他者の旅行体験やアドバイスに関心がある。",
+        "SNSや口コミも参考にしている可能性がある。"
+      ],
+      "discriminating_questions": [
+        "他の人の旅行体験やアドバイスを参考にしていますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H5",
+      "type": "goal_mismatch",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "O4",
+        "Oext1"
+      ],
+      "assumes": [
+        "A1",
+        "A3",
+        "A4"
+      ],
+      "statement": "ユーザーが『完璧な効率化』や『主要スポット制覇』に強くこだわるのは、実は自身の旅行体験を“理想的な旅行者”という社会的役割や消費者像に合わせて演出し、他者や自身に誇示するためであり、純粋な自己満足や現地体験の充実が主目的ではない可能性がある。",
+      "mechanism": "効率的な計画やスポット制覇は、社会的に承認される『良い旅行者』像を体現するためのパフォーマンスとなっている。外部観察（Oext1）からも、他者との関係性や『自分のため』の体験が信頼や満足につながることが示唆される。",
+      "predictions": [
+        "旅行後に計画や達成度を他者に語ったり、SNS等でシェアする傾向がある。",
+        "計画の完遂や効率化自体が目的化し、現地での偶発的な体験や交流は二次的になる。",
+        "『自分のため』の体験や現地住民との交流が薄くなる。"
+      ],
+      "discriminating_questions": [
+        "この計画や達成度を他の人に話したり、記録として残したい気持ちはありますか？",
+        "現地での偶発的な出会いや交流に興味はありますか？"
+      ],
+      "persona_link": [
+        "pkg:p01_n7",
+        "pkg:p01_n4",
+        "pkg:p01_n5",
+        "pkg:n78"
+      ],
+      "evidence_link": [
+        "ev:Oext1"
+      ],
+      "is_reframing": true
+    }
+  ],
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A2"
+        ],
+        "best_discriminating_question": "計画通りに進まなかった場合、どんな気持ちになりますか？",
+        "testability_notes": "旅行中や後に、計画通り進んだか・その満足度を尋ねることで検証可能。",
+        "safety_risk_notes": "ユーザーの計画志向を肯定的に扱うため、リスクは低い。"
+      },
+      "rationale": "ユーザーの行動パターン（計画・効率化）と心理的傾向（安心感・達成感）を結びつけて説明できる。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [
+          "主要スポット以外の価値観や体験の有無を説明しきれない。"
+        ],
+        "explains_confirmed": [
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "A3"
+        ],
+        "best_discriminating_question": "主要スポット以外で印象に残った体験はありますか？",
+        "testability_notes": "旅行後の感想や満足度の焦点を確認することで検証可能。",
+        "safety_risk_notes": "価値観の押し付けにならないよう注意。"
+      },
+      "rationale": "効率的なスポット巡りが旅行の価値だと仮定するが、他の動機を排除しきれない。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [
+          "ユーザーが現地の交通事情をどこまで考慮しているか不明。"
+        ],
+        "explains_confirmed": [
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A1"
+        ],
+        "best_discriminating_question": "現地の交通事情や混雑状況も調べましたか？",
+        "testability_notes": "現地でのトラブルや遅延の有無を確認する。",
+        "safety_risk_notes": "実用的なアドバイスとして提示可能。"
+      },
+      "rationale": "効率化の背景に外的要因への備えがあると説明できる。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [
+          "効率化の相談が単なる情報収集か、他者との交流目的か不明。"
+        ],
+        "explains_confirmed": [
+          "O5"
+        ],
+        "key_assumptions": [
+          "A4"
+        ],
+        "best_discriminating_question": "他の人の旅行体験やアドバイスを参考にしていますか？",
+        "testability_notes": "他者との情報交換の有無を尋ねる。",
+        "safety_risk_notes": "ユーザーの主体性を損なわないよう配慮。"
+      },
+      "rationale": "効率化の相談が社会的な意味を持つ可能性を示す。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [
+          "ユーザーの真の目的を推測するため、根拠が間接的。",
+          "ユーザーの内面に踏み込むため、違和感や反発を感じるリスクがある。"
+        ],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A3",
+          "A4"
+        ],
+        "best_discriminating_question": "この計画や達成度を他の人に話したり、記録として残したい気持ちはありますか？",
+        "testability_notes": "旅行後のSNS投稿や他者への共有意欲、現地での偶発的な体験への関心を尋ねる。",
+        "safety_risk_notes": "ユーザーの自己像や動機に疑問を投げかけるため、慎重な言い回しが必要。"
+      },
+      "rationale": "表面的な効率化志向の背後に、社会的役割や承認欲求が動機として潜む可能性を指摘し、ユーザーの発言の意味を大きく変える。"
+    }
+  ],
+  "decision": {
+    "selected_hypothesis_id": "H5",
+    "contrasting_hypothesis_id": "H4",
+    "selection_rationale": "H5を採用すると、ユーザーの発言『効率的に主要スポットを回るために完璧な計画を立てた』の意味が、『自分の旅行体験を理想的な旅行者像として他者や自身に誇示するためのパフォーマンス』に変わる。H4は、効率化の相談が他者との情報共有やアドバイスを求める社会的行為であるという、額面通りの読み。どちらの立場に立つかで、旅行の目的や現地での行動、満足感の得方が大きく変わる。",
+    "user_facing_frame": {
+      "framing": "options",
+      "questions": [
+        "今回の計画や達成度を他の人に話したり、記録として残したい気持ちはありますか？",
+        "それとも、効率化のポイントを他者と共有したり、アドバイスを得ること自体が楽しみですか？"
+      ],
+      "options": [
+        "1. 計画や効率化自体が『理想的な旅行者』像を演出するためのものだと考えてみる",
+        "2. 効率化の相談や情報交換そのものが旅行の楽しみの一部だと考えてみる"
+      ]
+    }
+  },
+  "final_response": "分刻みのスケジュールや効率的なルート作成、とても計画的で素晴らしいですね。計画を完璧に実行すること自体が達成感につながる方も多いですし、他の人のアドバイスや体験談を取り入れるのも旅行の楽しみの一つですよね。\n\n一つ新しい視点として、今回の計画や達成度を『理想的な旅行者』像として他の人に話したり、記録として残したい気持ちがあるかどうか、考えてみるのも面白いかもしれません。あるいは、効率化のポイントを他者と共有したり、アドバイスを得ること自体が旅行の楽しみになっている可能性もあります。\n\nどちらの立場で考えるかによって、現地での過ごし方や、計画外の偶発的な体験への向き合い方も変わってきます。たとえば、もし『理想的な旅行者』像を意識しているなら、旅の記録をSNSや日記にまとめてみるのも一つの方法ですし、効率化の情報交換が楽しいなら、現地で出会った人と話してみたり、地元の人おすすめのスポットを聞いてみるのも良いかもしれません。\n\n今回の計画について、どちらの立場がご自身に近いと思いますか？また、5分だけ現地の人と話してみる、あるいは旅の記録を一言メモしてみるなど、小さな行動から試してみるのもおすすめです。",
+  "markers": {
+    "empathy": {
+      "acknowledgement": true,
+      "reflection": true,
+      "perspective_prompt": true
+    },
+    "nudge": {
+      "easy": true,
+      "attractive": true,
+      "social": true,
+      "timely": true,
+      "has_question": true,
+      "has_options": true,
+      "has_small_action": true,
+      "directive_level": "low"
+    }
+  }
+}

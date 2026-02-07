@@ -1,0 +1,93 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A1"
+        ],
+        "best_discriminating_question": "SNSに投稿しない場合でも、写真撮影自体に満足感を感じますか？",
+        "testability_notes": "SNS投稿の有無と満足感の関係を自己報告で確認できる。",
+        "safety_risk_notes": "写真撮影の動機を肯定的に扱うため、リスクは低い。"
+      },
+      "rationale": "ユーザーの行動（常にカメラを持ち歩き、三脚を使い何十枚も撮影）は撮影行為自体の充実感を示唆している。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "A2"
+        ],
+        "best_discriminating_question": "SNSでの反応が思ったより少なかった場合、旅の満足度に影響しますか？",
+        "testability_notes": "SNSでの反応と満足度の変化を自己評価で確認できる。",
+        "safety_risk_notes": "SNS依存や承認欲求の話題は、ユーザーによっては繊細な場合がある。"
+      },
+      "rationale": "『SNSにアップするための完璧な写真』という目的意識が、社会的承認や反応への関心を示唆している。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O4",
+          "O2"
+        ],
+        "key_assumptions": [
+          "A3"
+        ],
+        "best_discriminating_question": "新しい撮影機材やアプリの情報をよく調べていますか？",
+        "testability_notes": "ユーザーの情報収集行動や撮影手順への関心を質問で確認できる。",
+        "safety_risk_notes": "技術向上への関心は肯定的に扱える。"
+      },
+      "rationale": "『効率的に映える写真を撮るコツ』という問いは、技術やノウハウへの関心を示している。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A4"
+        ],
+        "best_discriminating_question": "撮影に集中するあまり、現地の人や自然とのふれあいが減っていると感じることはありますか？",
+        "testability_notes": "現地体験や交流の頻度・質について自己評価を促すことで検証できる。",
+        "safety_risk_notes": "価値観の優先順位を問うため、ややセンシティブな話題。"
+      },
+      "rationale": "PKGの『自然との調和』や『里山散策』と現発言のギャップを説明する仮説。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3",
+          "O4",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "A2",
+          "A4"
+        ],
+        "best_discriminating_question": "写真を撮ることに集中しすぎて、現地の空気感や自然との一体感が薄れていると感じることはありませんか？",
+        "testability_notes": "撮影体験と現地体験のギャップや違和感について自己報告を促すことで検証できる。",
+        "safety_risk_notes": "ユーザーの自己像や目的意識を揺さぶるため、やや不快感を与える可能性がある。だが、深い内省を促す効果も期待できる。"
+      },
+      "rationale": "外部観察（Oext2）を活用し、写真の『演出された本物らしさ』や体験の逆説を指摘することで、発言の意味を大きく変える。"
+    }
+  ]
+}

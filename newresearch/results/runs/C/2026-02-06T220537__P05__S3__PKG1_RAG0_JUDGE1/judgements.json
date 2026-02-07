@@ -1,0 +1,100 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_linkに指定されたpkg:n99, pkg:n81がPKGに存在しない（use_pkg=trueのため、PKG根拠の主張は成立しない）。"
+        ],
+        "explains_confirmed": [
+          "O1",
+          "O3"
+        ],
+        "key_assumptions": [
+          "ユーザーが伝統建築や歴史的美意識への強い憧れを持っていること",
+          "非日常的な空間体験がユーザーの感性を満たす主要な動機であること"
+        ],
+        "best_discriminating_question": "金沢以外の伝統的な街並みや建築にも同じような美的価値を感じますか？",
+        "testability_notes": "ユーザーに1～2問の質問で直接検証可能。PKG根拠が使えないため、追加の主観的確認が必要。",
+        "safety_risk_notes": "ユーザーの美的志向を断定的に扱うと、本人の意図とズレて誤解や反発を招く可能性がある。"
+      },
+      "rationale": "PKG根拠が不在な点が致命的だが、観察O1・O3の説明力は高い。心理的欲求の仮定が妥当かどうかは追加質問で検証可能。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーの歴史的景観への認識が行政や観光団体の情報発信に強く影響されていること"
+        ],
+        "best_discriminating_question": "金沢の歴史的景観についてどこで情報を得ましたか？",
+        "testability_notes": "ユーザーへの情報源確認で比較的容易に検証可能。外部エビデンスは不要。",
+        "safety_risk_notes": "ユーザーの主体的な評価を軽視しているように受け取られるリスクがある。"
+      },
+      "rationale": "観察O2の説明には適合するが、他の観察には直接的な説明力がない。仮説の検証は比較的容易。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_linkに指定されたpkg:n99, pkg:n81がPKGに存在しない（use_pkg=trueのため、PKG根拠の主張は成立しない）。"
+        ],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "ユーザーが『本物』や『伝統』という価値観を強く持っていること",
+          "その価値観が旅行先選択や評価に大きく影響していること"
+        ],
+        "best_discriminating_question": "旅行先を選ぶ際に『本物』や『伝統』という観点を重視しますか？",
+        "testability_notes": "ユーザーの価値観を問うことで検証可能。PKG根拠が使えないため、主観的な確認が必要。",
+        "safety_risk_notes": "価値観の断定がユーザーの自己認識とズレる場合、違和感や反発を生む可能性がある。"
+      },
+      "rationale": "PKG根拠の欠如が致命的だが、3つの観察すべてを説明できる点は強み。価値観の有無を直接確認しやすい。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_linkに指定されたpkg:n99がPKGに存在しない（use_pkg=trueのため、PKG根拠の主張は成立しない）。"
+        ],
+        "explains_confirmed": [
+          "O1"
+        ],
+        "key_assumptions": [
+          "ユーザーが節約志向や低予算旅行の特性を持っていること",
+          "その制約が伝統的観光地への関心や行動に影響していること"
+        ],
+        "best_discriminating_question": "旅行の際、予算やコスト面でどのような工夫をしていますか？",
+        "testability_notes": "ユーザーの旅行スタイルや予算意識を問うことで検証可能。PKG根拠が使えないため、主観的確認が必要。",
+        "safety_risk_notes": "節約志向を強調しすぎると、ユーザーの動機を矮小化して受け取られるリスクがある。"
+      },
+      "rationale": "PKG根拠が致命的に欠如しているが、O1の説明は可能。旅行動機の多様性を考慮する必要がある。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_linkに指定されたpkg:n99, pkg:n81がPKGに存在しない（use_pkg=trueのため、PKG根拠の主張は成立しない）。"
+        ],
+        "explains_confirmed": [
+          "O1",
+          "O3"
+        ],
+        "key_assumptions": [
+          "ユーザーが伝統や美意識を社会的にアピールしたいという動機を持っていること",
+          "『本物らしさ』の演出空間で自己表現を重視していること"
+        ],
+        "best_discriminating_question": "伝統建築や街並みの美しさについて、他者と共有したり語ることに意義を感じますか？",
+        "testability_notes": "SNS利用や発信行動の有無を問うことで検証可能。PKG根拠が使えないため、主観的確認が必要。",
+        "safety_risk_notes": "ユーザーの動機を『社会的アピール』と断定することで、意図を誤解されたり不快感を与えるリスクがある。"
+      },
+      "rationale": "PKG根拠の欠如が致命的。O1・O3の説明力はあるが、動機の解釈がユーザーの自己認識とズレる可能性が高い。"
+    }
+  ]
+}

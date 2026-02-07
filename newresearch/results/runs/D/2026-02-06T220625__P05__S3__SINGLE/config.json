@@ -1,0 +1,16 @@
+{
+  "run_id": "2026-02-06T220625__P05__S3__SINGLE",
+  "scenario_id": "S3",
+  "persona_id": "P05",
+  "condition": "D",
+  "use_pkg": true,
+  "use_rag": true,
+  "use_judge": true,
+  "is_single": true,
+  "hypothesis_count": 5,
+  "rag_top_k": 5,
+  "model": {
+    "name": "gpt-4.1",
+    "temperature": 0.2
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A2"
+        ],
+        "best_discriminating_question": "SNSでの反応が写真撮影の満足度にどの程度影響しますか？",
+        "testability_notes": "SNS反応と満足度の自己報告を比較。",
+        "safety_risk_notes": "承認欲求の指摘は繊細なため、断定を避ける必要あり。"
+      },
+      "rationale": "SNS投稿が目的と明言されているため、説明力は高いが、動機の一側面に留まる可能性も。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O4"
+        ],
+        "key_assumptions": [
+          "A2",
+          "A3"
+        ],
+        "best_discriminating_question": "撮影の効率化自体に達成感や楽しさを感じますか？",
+        "testability_notes": "効率化の工夫や計画性への満足度をヒアリング。",
+        "safety_risk_notes": "ユーザーのスキル志向を肯定的に扱うためリスク低。"
+      },
+      "rationale": "PKGの『計画的運営』と親和性が高く、ユーザーの成長志向を説明できる。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "A4"
+        ],
+        "best_discriminating_question": "現地の文化や雰囲気を伝えることと、映える写真を撮ることのどちらを重視していますか？",
+        "testability_notes": "写真の内容やキャプションを分析。",
+        "safety_risk_notes": "価値観の肯定的側面を強調するためリスク低。"
+      },
+      "rationale": "PKGの『地域文化への敬意』に基づき、映えと文化発信の両立を説明。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O4",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "A2"
+        ],
+        "best_discriminating_question": "写真に現地のカフェや散策路などの要素を意識的に入れていますか？",
+        "testability_notes": "写真の被写体やスポット選びを観察。",
+        "safety_risk_notes": "行動提案として扱えばリスク低。"
+      },
+      "rationale": "外部観察Oext1を活用し、写真以外の体験も価値とみなす新しい視点を提供。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3",
+          "O4",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "A2"
+        ],
+        "best_discriminating_question": "写真を撮ることが現地での偶然の出会いや体験を妨げていると感じることはありますか？",
+        "testability_notes": "撮影行動と現地体験のバランスや満足度を自己評価してもらう。",
+        "safety_risk_notes": "『本物らしさの演出』や『商品化』の指摘はやや不快感を与える可能性があるため、慎重な表現が必要。"
+      },
+      "rationale": "外部観察Oext2を活用し、ユーザーの行動を『演出』や『商品化』という観点で再解釈する裏切る仮説となっている。"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_link（pkg:n124）がPKGに存在しないため、ペルソナ知識グラフに基づく裏付けができない。"
+        ],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーが本物志向や文化的敬意という価値観を強く持っていること",
+          "その価値観が飲食店選択の主要な動機となっていること"
+        ],
+        "best_discriminating_question": "ユーザーは飲食以外の場面でも『本物』や『伝統』を重視するか？",
+        "testability_notes": "ユーザーの価値観を直接質問することで比較的容易に検証可能。",
+        "safety_risk_notes": "価値観を断定的に決めつけるとユーザーが違和感や反発を覚える可能性がある。"
+      },
+      "rationale": "観察O1・O2をよく説明するが、PKG裏付けがない点が弱み。価値観の一般化には注意が必要。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_link（pkg:n116）がPKGに存在しないため、ペルソナ知識グラフに基づく裏付けができない。"
+        ],
+        "explains_confirmed": [
+          "O1",
+          "O3"
+        ],
+        "key_assumptions": [
+          "ユーザーが『観光客らしさ』や『チェーン店利用者』と見なされることに心理的抵抗を持つこと",
+          "自己イメージや社会的アイデンティティの防衛が行動の主因であること"
+        ],
+        "best_discriminating_question": "ユーザーは『観光客っぽい』と指摘されることに不快感を覚えるか？",
+        "testability_notes": "ユーザーの心理的反応を質問で確認できるため、検証は比較的容易。",
+        "safety_risk_notes": "心理的動機を指摘することでユーザーが否定的に受け取るリスクがある。"
+      },
+      "rationale": "O1・O3を説明できるが、PKG裏付けがなく、心理的要因の推測には慎重さが求められる。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_link（pkg:n126）がPKGに存在しないため、ペルソナ知識グラフに基づく裏付けができない。"
+        ],
+        "explains_confirmed": [
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーが『本当の郷土料理』や『地元民しか知らない店』の明確な定義を持っていないこと",
+          "情報ギャップが満足度低下の主因であること"
+        ],
+        "best_discriminating_question": "ユーザーは『本当の郷土料理』や『地元民しか知らない店』の明確な基準を持っているか？",
+        "testability_notes": "ユーザーに具体的な基準や過去の経験を尋ねることで検証可能。",
+        "safety_risk_notes": "ユーザーの知識や判断力を疑う印象を与えるリスクがある。"
+      },
+      "rationale": "O2の説明には有効だが、PKG裏付けがなく、ユーザーの自己認識への配慮が必要。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_link（pkg:n140, pkg:n141）がPKGに存在しないため、ペルソナ知識グラフに基づく裏付けができない。"
+        ],
+        "explains_confirmed": [
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "理想の店の情報が少なく、アクセスが困難であること",
+          "その困難さがユーザーの選択や感情に大きく影響していること"
+        ],
+        "best_discriminating_question": "ユーザーは理想の店を探すためにどの程度の労力をかけるか？",
+        "testability_notes": "ユーザーの行動履歴や努力の度合いを質問することで検証可能。",
+        "safety_risk_notes": "ユーザーの努力や選択を過小評価する印象を与える可能性がある。"
+      },
+      "rationale": "O2・O3の現実的なジレンマを説明できるが、PKG裏付けがなく、ユーザーの努力への配慮が必要。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_link（pkg:n116）がPKGに存在しないため、ペルソナ知識グラフに基づく裏付けができない。"
+        ],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "ユーザーが他者との差異化や自己イメージの演出を重視していること",
+          "本物志向よりも社会的欲求が主な動機であること"
+        ],
+        "best_discriminating_question": "ユーザーは誰かに『地元民しか知らない店に行った』と話したい気持ちがあるか？",
+        "testability_notes": "ユーザーの発言や行動の目的を掘り下げる質問で検証可能だが、やや間接的。",
+        "safety_risk_notes": "ユーザーの動機を疑う形になるため、反発や不快感を招くリスクが高い。"
+      },
+      "rationale": "全観察を説明できるが、PKG裏付けがなく、動機の指摘がセンシティブなため提示には注意が必要。"
+    }
+  ]
+}

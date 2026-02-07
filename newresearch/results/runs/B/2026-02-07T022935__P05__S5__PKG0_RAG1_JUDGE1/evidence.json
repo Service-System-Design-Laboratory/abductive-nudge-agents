@@ -1,0 +1,54 @@
+{
+  "triggers": [
+    {
+      "type": "information_gap",
+      "text": "現在の選択肢（カプセルホテル、青春18きっぷ、コンビニ食）以外で、さらに節約できる方法が何か存在するか不明である。"
+    },
+    {
+      "type": "focus",
+      "text": "ユーザーは予算内でもっと節約できるポイントを具体的に探している。"
+    }
+  ],
+  "rag_queries": [
+    "カプセルホテルより安い宿泊方法はあるか",
+    "青春18きっぷ以外でさらに安く移動できる方法はあるか",
+    "コンビニ食より安く食事を済ませる方法はあるか",
+    "旅行中のその他の節約ポイントや裏技は何か"
+  ],
+  "evidence_items": [
+    {
+      "rank": 1,
+      "title": "【完全ガイド】新・青春18きっぷより安い移動手段4選と改定後 ...",
+      "snippet": "青春18きっぷがリニューアルされ、利用方法が大きく変わりました。この記事では、青春18きっぷより安い移動手段として、LCC、夜行バス、一筆書き ...",
+      "url": "https://www.atglobal.co.jp/chotto-global/cheaper-than-seishun-18-ticket/",
+      "source_type": "com"
+    },
+    {
+      "rank": 2,
+      "title": "青春18きっぷだけじゃない！大人が楽しむ”お得きっぷ鉄道旅” ...",
+      "snippet": "①東日本のんびり旅パス ... 9000円で連続する3日間、JR東日本のフリーエリア内の普通・快速列車の普通車自由席、BRT（バス高速輸送システム）が、乗り降り自由 ...",
+      "url": "https://note.com/craftchoco/n/n21e00f69202f",
+      "source_type": "com"
+    },
+    {
+      "rank": 3,
+      "title": "4種類の宿泊施設の特徴と料金を比較してみよう",
+      "snippet": "日本独特の宿泊施設であるカプセルホテル。 その売りは何と言っても1泊2,500円程度からという料金の安さです。 大部屋の中に2段に積まれた「カプセル」と呼ばれる簡易ベッ ...",
+      "url": "https://guesthousejp.com/column/wasabi-hotel-hikaku/",
+      "source_type": "com"
+    }
+  ],
+  "external_observations": [
+    {
+      "id": "Oext1",
+      "text": "カプセルホテルや青春18きっぷなどの『節約旅行』向けサービスは、実際にはマーケティングによって商品化され、安さや体験そのものが売り文句として産業化されている。",
+      "source_url": "https://guesthousejp.com/column/wasabi-hotel-hikaku/"
+    },
+    {
+      "id": "Oext2",
+      "text": "青春18きっぷより安い移動手段が複数存在し、節約志向の旅行者向けに『より安い選択肢』が次々と開発・提案されていることで、節約旅行の競争が激化している。",
+      "source_url": "https://www.atglobal.co.jp/chotto-global/cheaper-than-seishun-18-ticket/"
+    }
+  ],
+  "notes": "外部観察は、節約旅行の手段が単なる個人の工夫ではなく、業界によって商品化・競争化されている構造的事実に着目しています。"
+}

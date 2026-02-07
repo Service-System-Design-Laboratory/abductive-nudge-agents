@@ -1,0 +1,15 @@
+{
+  "run_id": "2026-02-06T142915__S1__SINGLE",
+  "scenario_id": "S1",
+  "condition": "D",
+  "use_pkg": false,
+  "use_rag": false,
+  "use_judge": false,
+  "is_single": true,
+  "hypothesis_count": 5,
+  "rag_top_k": 5,
+  "model": {
+    "name": "gpt-4.1",
+    "temperature": 0.2
+  }
+}

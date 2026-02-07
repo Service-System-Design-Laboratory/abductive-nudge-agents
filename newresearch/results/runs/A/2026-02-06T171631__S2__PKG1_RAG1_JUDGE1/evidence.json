@@ -1,0 +1,73 @@
+{
+  "triggers": [
+    {
+      "type": "information_gap",
+      "text": "Googleマップによる移動時間計算やルート確立以外の効率化要素（例：混雑予測、休憩・食事タイミング、現地のイベントや天候による変動など）が考慮されているか不明。PKGや観察からはこれらの要素が抜け落ちている可能性がある。"
+    },
+    {
+      "type": "ambiguity",
+      "text": "『効率化』の定義が曖昧。ユーザーが効率化を移動時間やルート最適化のみと捉えているのか、他の側面（体験価値、柔軟性、ストレス軽減など）も含めているのか不明。"
+    },
+    {
+      "type": "focus",
+      "text": "ユーザーはスケジュールの完璧な遂行を重視しているが、予期せぬトラブルや現地事情への対応力については観察・PKGともに言及がない。"
+    }
+  ],
+  "rag_queries": [
+    "旅行スケジュールの効率化で見落としがちなポイントは何か",
+    "Googleマップ以外で旅行計画の効率化に役立つツールや方法は何か",
+    "混雑や天候など現地事情を考慮した旅行スケジュールの最適化方法",
+    "旅行中の予期せぬトラブルや遅延に対応するための計画の工夫",
+    "効率的な旅行計画における休憩や食事タイミングの最適化"
+  ],
+  "evidence_items": [
+    {
+      "rank": 1,
+      "title": "後悔ゼロ！旅のプランニング完全ガイド｜見落としがちな ...",
+      "snippet": "ポイントは、移動時間を考慮した無理のないスケジュールを立てることです。 例えば、都市間の移動には時間がかかるため、事前に交通手段や所要時間を調べ ...",
+      "url": "https://note.com/315life/n/n5e92360da180",
+      "source_type": "com"
+    },
+    {
+      "rank": 2,
+      "title": "旅行計画が劇的に変わる！最新AIツール8選 - RetreatBee",
+      "snippet": "1. Google Gemini. あなた専属の旅行プランナー · 2. Navan · 3. Kayak Explore · 4. ChatGPT · 5. Skyscanner AI. フライト検索の定番ツール · 6. TripIt · 7.",
+      "url": "https://retreatbee.hatenablog.com/entry/pre_aitravelplanner001",
+      "source_type": "com"
+    },
+    {
+      "rank": 3,
+      "title": "旅行の計画の立て方とコツとは？目的・行き先・予算の決め方を ...",
+      "snippet": "旅行の計画における注意点 ... 旅行の計画は「目的」「行き先」「スケジュール」「予算」「持ち物」の5ステップで立てていくと失敗を防ぎやすくなります。",
+      "url": "https://www.jre-travel.com/article/00102/",
+      "source_type": "com"
+    },
+    {
+      "rank": 4,
+      "title": "【FPが解説】旅行計画の立て方は？予算、貯金、行き先などの ...",
+      "snippet": "旅行を万全に楽しむためには、計画段階で「見落としがちなポイント」にも注意を払う必要があります。 まずは、宿泊施設や航空券のキャンセル規定は必ず ...",
+      "url": "https://moneycanvas.bk.mufg.jp/know/column/zkimJxIzmVdYbBk/",
+      "source_type": "com"
+    },
+    {
+      "rank": 5,
+      "title": "旅行に役立つ便利なアプリ19選！計画から思い出整理まで ...",
+      "snippet": "旅行に役立つ便利なアプリ19選！計画から思い出整理までシーン別におすすめを紹介 · tabiori · ルートメーカー · TripHugger · 旅の計画書 · HareTabi · AVA ...",
+      "url": "https://www.jalan.net/news/article/478639/",
+      "source_type": "com"
+    }
+  ],
+  "external_observations": [
+    {
+      "id": "Oext1",
+      "text": "旅行計画の効率化や完璧なスケジューリングは、AIツールやアプリによって商品化され、旅行体験そのものが『効率』や『最適化』を売りにする産業へと変質している。",
+      "source_url": "https://retreatbee.hatenablog.com/entry/pre_aitravelplanner001"
+    },
+    {
+      "id": "Oext2",
+      "text": "『無理のないスケジュール』や『見落としがちなポイント』の提案は、旅行業界やメディアによって繰り返し演出され、旅行者の『本物の体験』を標準化・演出する構造が存在する。",
+      "source_url": "https://note.com/315life/n/n5e92360da180"
+    }
+  ],
+  "notes": ""
+}

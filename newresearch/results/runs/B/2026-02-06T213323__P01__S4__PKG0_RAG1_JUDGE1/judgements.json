@@ -1,0 +1,93 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーが『地域独自の食文化やオリジナリティ』を重視していること",
+          "観光客向けの体験を画一的・本物でないとみなしていること"
+        ],
+        "best_discriminating_question": "ユーザーは『本物の郷土料理』の基準をどのように定義しているか？",
+        "testability_notes": "ユーザーの価値観や発言を直接質問することで比較的容易に検証可能。",
+        "safety_risk_notes": "『観光客向け』や『チェーン店』を否定的に扱うことで、該当する体験を好む人を排除的に感じさせるリスクがある。"
+      },
+      "rationale": "観察O1・O2を素直に説明できており、価値観仮説として妥当。ただし、ユーザーの本音や多様な動機を過度に単純化するリスクがある。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "ユーザーが現地社会への一体感や地元民との交流を重視していること"
+        ],
+        "best_discriminating_question": "ユーザーは現地の人との交流自体が目的か、それとも食事体験が主目的か？",
+        "testability_notes": "ユーザーの行動や発言から交流志向かどうかを質問・観察することで検証可能。",
+        "safety_risk_notes": "『観光客らしさ』を避けることを過度に強調すると、ユーザーの動機を限定的に捉えすぎる可能性がある。"
+      },
+      "rationale": "O2・O3の説明力があり、社会的動機の仮説として成立。ただし、交流志向が本当に主目的かは追加検証が必要。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "ユーザーが『地元民が通う店＝美味しい・特別』と信じていること"
+        ],
+        "best_discriminating_question": "ユーザーは『普通』の味や雰囲気の店でも満足できるか？",
+        "testability_notes": "ユーザーの期待と実際の体験のギャップを尋ねることで検証可能。外部エビデンスも活用できる。",
+        "safety_risk_notes": "ユーザーの期待を否定的に捉えやすく、体験の価値を下げる印象を与えるリスクがある。"
+      },
+      "rationale": "外部事実（Oext3）と観察O2を論理的に結びつけており、情報ギャップ仮説として有効。ユーザーの前提認識の確認が重要。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "『地元民しか知らない店』というコンセプトが観光地でマーケティング化されていること"
+        ],
+        "best_discriminating_question": "ユーザーは『地元民御用達』の根拠や証拠をどのように確かめるか？",
+        "testability_notes": "現地の店の実態やマーケティング手法の調査、ユーザーの認識との照合が必要でやや検証に手間がかかる。",
+        "safety_risk_notes": "ユーザーの体験が『操作されている』と断定的に伝えると不快感や不信感を招く恐れがある。"
+      },
+      "rationale": "O2・Oext1を説明し、観光地化リスクを指摘する仮説。やや外部要因重視で、ユーザーの主体性を軽視しないよう注意が必要。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "Oext1",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "ユーザーが『本物志向』を自己アイデンティティや優越感の源泉としていること"
+        ],
+        "best_discriminating_question": "ユーザーは自分が『本物志向』であることを他人に語ることに満足感を覚えるか？",
+        "testability_notes": "ユーザーの発言やSNS投稿、自己表現傾向を観察・質問することで検証可能だが、無意識の動機はやや検証困難。",
+        "safety_risk_notes": "ユーザーの動機を『優越感』や『差別化』と断定すると、侮辱的・攻撃的に受け取られるリスクが高い。慎重な表現が必要。"
+      },
+      "rationale": "多くの観察・外部事実を説明できるが、心理的動機の解釈は主観的で、ユーザーへの配慮が特に重要な仮説。"
+    }
+  ]
+}

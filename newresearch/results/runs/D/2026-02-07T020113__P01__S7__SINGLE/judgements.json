@@ -1,0 +1,100 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "A1"
+        ],
+        "best_discriminating_question": "普段の生活でも、計画外の出来事には不安を感じやすいですか？",
+        "testability_notes": "ユーザーの他の行動や日常での不安傾向を尋ねることで検証可能",
+        "safety_risk_notes": "不安傾向の指摘は慎重に行う必要がある"
+      },
+      "rationale": "安全志向の行動全般を説明できるが、価値観や環境要因との関連は限定的"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A3"
+        ],
+        "best_discriminating_question": "安全が十分確保されていると感じた場合、現地の自然や文化体験にも参加したいと思いますか？",
+        "testability_notes": "安全条件下での興味の有無を尋ねることで検証可能",
+        "safety_risk_notes": "価値観の葛藤を指摘するため、慎重な言い回しが必要"
+      },
+      "rationale": "安全と好奇心の葛藤を説明し、PKGの価値観とも整合的"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3",
+          "O4",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "A1"
+        ],
+        "best_discriminating_question": "他の参加者が自由に行動しているとき、自分も安心して行動できると感じますか？",
+        "testability_notes": "他者の行動が自分に与える影響を尋ねることで検証可能",
+        "safety_risk_notes": "社会的同調圧力の指摘はやや間接的でリスクは低い"
+      },
+      "rationale": "外部観察を活用し、個人だけでなく環境要因も説明できる"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A2"
+        ],
+        "best_discriminating_question": "旅行で最も満足を感じる瞬間はどんなときですか？",
+        "testability_notes": "旅行の満足ポイントを尋ねることで検証可能",
+        "safety_risk_notes": "旅行目的の再定義はややデリケートだがリスクは低い"
+      },
+      "rationale": "旅行の目的自体に着目し、行動の動機を説明する"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "A3"
+        ],
+        "best_discriminating_question": "安全が確保されていても、実際に新しい体験に踏み出すことにためらいを感じることはありますか？",
+        "testability_notes": "安全条件下でも行動に移せるかどうかを尋ねることで検証可能",
+        "safety_risk_notes": "ユーザーの自己認識や葛藤に触れるため、慎重な言い回しが必要"
+      },
+      "rationale": "表面的な安全志向の裏に、自己防衛や行動へのためらいがある可能性を指摘し、PKGの好奇心とも関連"
+    }
+  ]
+}

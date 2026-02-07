@@ -1,0 +1,110 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_link（pkg:n38）がPKGに存在しない。use_pkg=trueのため、PKG知識の裏付けがない点は欠点となる。"
+        ],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O4"
+        ],
+        "key_assumptions": [
+          "ユーザーは自己効力感や計画遂行能力への自信を高めたいという動機を持っている",
+          "分刻みの計画や効率的なルート設計が自己効力感の強化に寄与する"
+        ],
+        "best_discriminating_question": "普段の生活や仕事でも事前に詳細な計画を立てることが多いですか？",
+        "testability_notes": "ユーザーへの1-2問の質問で検証可能。主観的回答に依存するが、比較的容易。",
+        "safety_risk_notes": "『自己効力感』の強調がユーザーの性格診断のように受け取られるリスクあり。断定的表現は避けるべき。"
+      },
+      "rationale": "観察O1, O2, O4は十分説明できているが、PKG裏付けがない点が弱み。心理的動機の仮定は妥当性の検証が必要。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_link（pkg:n67, pkg:n45）がPKGに存在しない。use_pkg=trueのため、PKG知識の裏付けがない点は欠点となる。"
+        ],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "ユーザーの計画は効率性を最優先し、余裕や柔軟性を十分考慮していない",
+          "効率化と柔軟性がトレードオフになる状況が存在する"
+        ],
+        "best_discriminating_question": "計画には余裕時間や予備の選択肢を用意していますか？",
+        "testability_notes": "ユーザーの計画内容や意図を直接質問することで検証可能。計画表の確認も有効。",
+        "safety_risk_notes": "『考慮できていない』という表現がユーザーの計画力を否定的に捉えられる可能性あり。配慮が必要。"
+      },
+      "rationale": "効率化偏重によるリスク指摘はO1-O3を説明できるが、PKG裏付けがない。観察O5の説明はやや弱い。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_link（pkg:n45）がPKGに存在しない。use_pkg=trueのため、PKG知識の裏付けがない点は欠点となる。",
+          "O5のみの説明であり、観察全体のカバー範囲が狭い。"
+        ],
+        "explains_confirmed": [
+          "O5"
+        ],
+        "key_assumptions": [
+          "ユーザーは効率化を最重視し、非効率的な体験の価値を十分認識していない",
+          "計画外の体験を軽視する傾向がある"
+        ],
+        "best_discriminating_question": "現地での文化体験や交流の機会はスケジュールに組み込まれていますか？",
+        "testability_notes": "スケジュール内容やユーザーの価値観を直接質問することで検証可能。",
+        "safety_risk_notes": "『価値を見落としている』という断定はユーザーの価値観を否定する印象を与えやすい。"
+      },
+      "rationale": "O5のみに焦点を当てており、他の観察説明力が弱い。PKG裏付けもなく、仮説の射程が限定的。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_link（pkg:n59, pkg:n60, pkg:n61）がPKGに存在しない。use_pkg=trueのため、PKG知識の裏付けがない点は欠点となる。"
+        ],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "ユーザーは高い計画立案力・情報収集力を持っている",
+          "効率的な旅行プラン作成がスキルによるものである"
+        ],
+        "best_discriminating_question": "他者から旅行計画を任されることが多いですか？",
+        "testability_notes": "過去の行動や他者評価を確認する必要があり、やや検証に手間がかかる。",
+        "safety_risk_notes": "スキルの高さを前提とするため、ユーザーにとっては肯定的だが、過大評価と受け取られる可能性も。"
+      },
+      "rationale": "O1-O3の説明は妥当だが、PKG裏付けがなく、スキル仮定の検証には追加情報が必要。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [
+          "persona_link（pkg:n38）がPKGに存在しない。use_pkg=trueのため、PKG知識の裏付けがない点は欠点となる。"
+        ],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4",
+          "O5"
+        ],
+        "key_assumptions": [
+          "ユーザーは旅行体験そのものよりも計画遂行による自己像強化を主な動機としている",
+          "計画の達成度が満足度や自己評価に強く影響する"
+        ],
+        "best_discriminating_question": "旅行の満足度は計画通りに進んだかどうかで大きく変わりますか？",
+        "testability_notes": "ユーザーの主観的動機や満足度の根拠を質問することで検証可能。やや深い自己分析が必要。",
+        "safety_risk_notes": "『裏切る仮説』であり、ユーザーの自己認識とズレる場合に不快感や反発を招くリスクが高い。"
+      },
+      "rationale": "全観察を説明できるが、PKG裏付けがなく、動機の仮定がユーザーの自己像と衝突するリスクが高い。"
+    }
+  ]
+}

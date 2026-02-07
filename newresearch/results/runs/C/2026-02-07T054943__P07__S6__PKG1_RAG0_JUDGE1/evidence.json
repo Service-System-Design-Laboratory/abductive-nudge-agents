@@ -1,0 +1,16 @@
+{
+  "triggers": [
+    {
+      "type": "information_gap",
+      "text": "縄文杉の原生林が『人の手が入っていない』と述べているが、実際にどの程度人為的な影響が排除されているのか、PKGでは説明できない。"
+    },
+    {
+      "type": "ambiguity",
+      "text": "『屋久島の森について誰よりも分かっているつもり』という主張の根拠や比較対象が曖昧で、PKGではその妥当性を説明できない。"
+    }
+  ],
+  "rag_queries": [],
+  "evidence_items": [],
+  "external_observations": [],
+  "notes": "RAG disabled (use_rag=false) — trigger identification only"
+}

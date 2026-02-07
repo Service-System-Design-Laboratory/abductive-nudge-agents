@@ -1,0 +1,389 @@
+{
+  "context": {
+    "observations": [
+      {
+        "id": "O1",
+        "text": "旅館に一泊3万円は高すぎると感じている。"
+      },
+      {
+        "id": "O2",
+        "text": "ビジネスホテルなら5000円で泊まれると認識している。"
+      },
+      {
+        "id": "O3",
+        "text": "6倍も払う必要があることに納得していない。"
+      },
+      {
+        "id": "O4",
+        "text": "寝る場所はどこでも同じだと考えている。"
+      },
+      {
+        "id": "O5",
+        "text": "コスパの良い宿泊先をもっと知りたいと希望している。"
+      }
+    ],
+    "assumptions": [
+      {
+        "id": "A1",
+        "text": "宿泊先の価値は主に寝る場所としての機能で決まると考えている。",
+        "status": "tentative"
+      },
+      {
+        "id": "A2",
+        "text": "追加料金（高額な宿泊費）には合理的な理由が必要だと考えている。",
+        "status": "tentative"
+      },
+      {
+        "id": "A3",
+        "text": "コストパフォーマンスを重視する価値観が強い。",
+        "status": "tentative"
+      },
+      {
+        "id": "A4",
+        "text": "旅館の体験価値や文化的価値にはあまり関心がない、または重視していない。",
+        "status": "tentative"
+      }
+    ],
+    "questions": [
+      "旅館とビジネスホテルで実際に体験した違いは何か？",
+      "旅館の価格に含まれるサービスや体験についてどう思うか？",
+      "コスパ以外で宿泊先に求めるものはあるか？",
+      "これまでに印象に残った宿泊体験はあるか？"
+    ],
+    "constraints": {
+      "tone": "supportive",
+      "safety": "avoid determinism"
+    }
+  },
+  "evidence": {
+    "triggers": [
+      {
+        "type": "focus",
+        "text": "コストパフォーマンスへの強い関心と、価格差への納得のなさが明確に表明されている。"
+      },
+      {
+        "type": "information_gap",
+        "text": "旅館の価格に含まれる価値や体験についての認識が不明確。"
+      },
+      {
+        "type": "ambiguity",
+        "text": "『寝る場所なんてどこでも同じ』という価値観が、体験価値や文化的価値をどこまで排除しているか不明。"
+      },
+      {
+        "type": "contradiction",
+        "text": "PKGでは『地域文化への敬意』や『季節祭り参加』など文化的価値を重視しているが、今回の発言では文化的価値を軽視しているように見える。"
+      }
+    ],
+    "external_observations": [
+      {
+        "id": "Oext1",
+        "text": "多くの旅行者は観光メインでホテルは寝るだけの場所と考え、安いビジネスホテルを選ぶ傾向がある。",
+        "source_url": "https://komachi.yomiuri.co.jp/topics/id/787363/"
+      },
+      {
+        "id": "Oext2",
+        "text": "ビジネスホテルの価格は1泊5000円程度だが、旅館は1泊3万円を超えることもあり、価格差が大きい。",
+        "source_url": "https://forzastyle.com/articles/-/72821"
+      },
+      {
+        "id": "Oext3",
+        "text": "限られた予算でも地元の料理や体験が高級なものより楽しい場合があるという声もある。",
+        "source_url": "https://www.reddit.com/r/travel/comments/1qdkave/what_country_gave_you_the_most_value_for_the/?tl=ja"
+      }
+    ]
+  },
+  "hypotheses": [
+    {
+      "hypothesis_id": "H1",
+      "type": "psychological",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "O4",
+        "O5"
+      ],
+      "assumes": [
+        "A1",
+        "A3"
+      ],
+      "statement": "ユーザーは機能的価値（寝る場所としての役割）を重視し、体験価値や文化的価値を宿泊先選びの主軸にしていない。",
+      "mechanism": "コストと機能のバランスを重視する思考パターンが、価格差への納得のなさやコスパ志向を生み出している。",
+      "predictions": [
+        "旅館の体験やサービスにはあまり関心を示さない。",
+        "宿泊先選びで価格と最低限の快適さを最優先する。"
+      ],
+      "discriminating_questions": [
+        "旅館でしか得られない体験やサービスに興味を感じたことはありますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [
+        "ev:Oext1",
+        "ev:Oext2"
+      ],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H2",
+      "type": "value",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "O4",
+        "O5"
+      ],
+      "assumes": [
+        "A3"
+      ],
+      "statement": "コストパフォーマンスを重視する価値観が強く、無駄な出費を避けることが自己効力感や安心感につながっている。",
+      "mechanism": "コスパ重視が自己管理やリスク回避の価値観と結びつき、高額な支出に対して強い抵抗感を生む。",
+      "predictions": [
+        "他の消費行動でもコスパを重視する傾向がある。",
+        "高額なサービスや商品に対しては常に慎重になる。"
+      ],
+      "discriminating_questions": [
+        "他の場面でもコスパを重視して選択することが多いですか？"
+      ],
+      "persona_link": [
+        "pkg:p07_n6",
+        "pkg:p07_n1"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H3",
+      "type": "social",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "O4",
+        "O5",
+        "Oext1"
+      ],
+      "assumes": [
+        "A2"
+      ],
+      "statement": "周囲の多くの人がビジネスホテルを選ぶ傾向に影響されており、社会的規範として『寝る場所はどこでも同じ』という考えが強化されている。",
+      "mechanism": "社会的証明や周囲の選択が自身の判断基準に影響し、旅館の価値を再評価しにくくなっている。",
+      "predictions": [
+        "友人や家族もビジネスホテルを選ぶことが多い。",
+        "他人の選択を参考にして宿泊先を決める傾向がある。"
+      ],
+      "discriminating_questions": [
+        "周囲の人もビジネスホテルを選ぶことが多いですか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [
+        "ev:Oext1"
+      ],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H4",
+      "type": "goal_mismatch",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "O4",
+        "O5"
+      ],
+      "assumes": [
+        "A1",
+        "A4"
+      ],
+      "statement": "宿泊先に文化体験や地域とのつながりを求めていないため、旅館の価格や価値を実感しにくい。",
+      "mechanism": "宿泊の目的が『寝る』ことに限定されており、旅館の提供する文化的・体験的価値が自分のニーズと合致していない。",
+      "predictions": [
+        "地域文化や伝統体験に関心が薄い場合、旅館の価値を感じにくい。",
+        "旅館のサービス内容を詳しく知らない可能性がある。"
+      ],
+      "discriminating_questions": [
+        "地域文化や伝統体験に興味がありますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H5",
+      "type": "value",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "O4",
+        "O5",
+        "Oext3"
+      ],
+      "assumes": [
+        "A3"
+      ],
+      "statement": "（裏切る仮説）実は『コスパ』を重視しているのではなく、旅館の価格や体験価値に対する納得感を得られていないことが本質的な違和感の原因である。つまり、価格に見合う『納得できる体験』があれば高額でも受け入れられる可能性がある。",
+      "mechanism": "本当は体験価値や文化的価値にも興味があるが、現状の旅館が提供する内容が自分の価値観や期待に合致していないため、価格への違和感として表出している。",
+      "predictions": [
+        "地元の料理や特別な体験に強い納得感や満足感を得た場合、高額な宿泊費でも受け入れることができる。",
+        "『価格に見合う』と感じる体験があれば、コスパ以外の価値も重視する傾向が表れる。"
+      ],
+      "discriminating_questions": [
+        "これまでに『高いけど納得できた』体験やサービスはありますか？"
+      ],
+      "persona_link": [
+        "pkg:p07_n2",
+        "pkg:p07_n4",
+        "pkg:p07_n5"
+      ],
+      "evidence_link": [
+        "ev:Oext3"
+      ],
+      "is_reframing": true
+    }
+  ],
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [
+          "PKGではユーザーが地域文化や体験価値にも関心があることが示唆されており、観察の一部と矛盾する可能性がある。"
+        ],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4",
+          "O5"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A3"
+        ],
+        "best_discriminating_question": "旅館でしか得られない体験やサービスに興味を感じたことはありますか？",
+        "testability_notes": "ユーザーの体験価値への関心を具体的な質問で確認する。",
+        "safety_risk_notes": "体験価値を軽視していると受け取られないよう配慮が必要。"
+      },
+      "rationale": "観察を広く説明できるが、PKGとのズレがある。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4",
+          "O5"
+        ],
+        "key_assumptions": [
+          "A3"
+        ],
+        "best_discriminating_question": "他の場面でもコスパを重視して選択することが多いですか？",
+        "testability_notes": "他の消費行動でのコスパ重視傾向を尋ねる。",
+        "safety_risk_notes": "コスパ重視を肯定的に扱うことで安心感を与えやすい。"
+      },
+      "rationale": "ユーザーの価値観と整合的で、説明力が高い。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4",
+          "O5",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "A2"
+        ],
+        "best_discriminating_question": "周囲の人もビジネスホテルを選ぶことが多いですか？",
+        "testability_notes": "社会的影響の有無を確認する。",
+        "safety_risk_notes": "他人の選択に流されていると受け取られないよう注意。"
+      },
+      "rationale": "外部観察と整合し、社会的要因を説明できる。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [
+          "PKGでは地域文化や伝統体験への関心が高いことが示唆されており、仮説と矛盾する可能性がある。"
+        ],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4",
+          "O5"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A4"
+        ],
+        "best_discriminating_question": "地域文化や伝統体験に興味がありますか？",
+        "testability_notes": "文化体験への関心を直接確認する。",
+        "safety_risk_notes": "文化的価値を軽視していると受け取られないよう注意。"
+      },
+      "rationale": "観察は説明できるが、PKGとの整合性に課題。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4",
+          "O5",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "A3"
+        ],
+        "best_discriminating_question": "これまでに『高いけど納得できた』体験やサービスはありますか？",
+        "testability_notes": "納得感や体験価値への関心を問うことで検証可能。",
+        "safety_risk_notes": "『本当は体験価値も重視しているのでは？』という問いかけが、ユーザーにとって少し不快に感じる可能性がある。"
+      },
+      "rationale": "PKGの文化・体験価値への関心と外部観察を統合し、発言の意味を深く再解釈できる。"
+    }
+  ],
+  "decision": {
+    "selected_hypothesis_id": "H5",
+    "contrasting_hypothesis_id": "H2",
+    "selection_rationale": "H5は、ユーザーの発言『コスパの良い宿泊先をもっと教えてほしい』の意味を、『本当はコスパだけでなく、納得できる体験や価値を求めているのでは？』と再解釈します。H2は額面通り『コスパ重視が自己効力感や安心感につながっている』という読みです。どちらの立場に立つかで、今後の宿泊先選びや旅の楽しみ方が大きく変わります。",
+    "user_facing_frame": {
+      "framing": "options",
+      "questions": [
+        "これまでに『高いけど納得できた』体験やサービスはありますか？",
+        "それとも、どんな場面でもコスパを最優先していますか？"
+      ],
+      "options": [
+        "コスパだけでなく、納得できる体験や価値があれば高額でも受け入れられる可能性がある（H5）",
+        "どんな場面でもコスパ重視が自分の安心感や満足につながる（H2）"
+      ]
+    }
+  },
+  "final_response": "ご相談ありがとうございます。『旅館に一泊3万円は高すぎる』『寝る場所なんてどこでも同じ』というお気持ち、よくわかります。多くの方がビジネスホテルを選ぶのも、やはりコスパを重視するからですよね。\n\n一方で、もし過去に『高いけど納得できた』体験やサービスがあったとしたら、そのときは何が違ったのかを振り返ってみるのも一つの視点かもしれません。実は『コスパ』だけでなく、『納得できる体験や価値』があれば、高額な宿泊費でも満足できることもあるかもしれません。\n\n逆に、やはりどんな場面でもコスパ重視が自分にとって安心感や満足につながる、という考え方もとても大切です。\n\n例えば、5分だけ過去の旅行で『高かったけど満足できた』経験や、『やっぱりコスパが一番だった』と思えた場面を思い出してみませんか？\n\n同じようにコスパを重視していた方が、地元の料理や特別な体験に出会ったことで価値観が変わった、という声もあります（たとえば地元の料理が高級レストランより美味しかった、という意見も）。\n\n今のタイミングで、次の旅行の宿選びを『コスパ重視』か『体験重視』か、どちらの立場で考えてみるかを選んでみるのも良いかもしれません。\n\nどちらの立場が今のご自身にしっくりきますか？\n\n- コスパだけでなく、納得できる体験や価値があれば高額でも受け入れられる可能性がある\n- どんな場面でもコスパ重視が自分の安心感や満足につながる\n\nよろしければ、どちらがご自身に近いか、または過去の体験について教えていただけますか？",
+  "markers": {
+    "empathy": {
+      "acknowledgement": true,
+      "reflection": true,
+      "perspective_prompt": true
+    },
+    "nudge": {
+      "easy": true,
+      "attractive": true,
+      "social": true,
+      "timely": true,
+      "has_question": true,
+      "has_options": true,
+      "has_small_action": true,
+      "directive_level": "low"
+    }
+  }
+}

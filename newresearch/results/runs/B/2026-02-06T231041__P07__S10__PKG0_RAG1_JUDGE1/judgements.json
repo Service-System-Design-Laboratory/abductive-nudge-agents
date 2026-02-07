@@ -1,0 +1,93 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーが写真撮影の基本技術を十分に持っていないこと",
+          "技術不足が効率化への関心や多枚数撮影行動につながること"
+        ],
+        "best_discriminating_question": "写真撮影の基本的な構図や光の使い方について学んだ経験はあるか？",
+        "testability_notes": "ユーザーへの直接質問や行動観察で比較的容易に検証可能。",
+        "safety_risk_notes": "『知識不足』という表現がユーザーの自尊心を傷つける可能性があるため、断定的な言い回しは避けるべき。"
+      },
+      "rationale": "観察O1・O2をよく説明できているが、O4（効率化への関心）は技術不足以外の動機でも説明可能。技術不足の有無は質問で直接検証しやすい。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "ユーザーがSNSでの評価を旅の主目的とするほど重視していること",
+          "写真の質や映えが行動の最優先基準であること"
+        ],
+        "best_discriminating_question": "旅先の選定基準は写真映えか体験重視か？",
+        "testability_notes": "ユーザーの価値観や行動基準を尋ねることで検証可能だが、自己申告のバイアスに注意。",
+        "safety_risk_notes": "『SNS評価が主目的』と断定するとユーザーの動機を単純化しすぎるリスクがある。"
+      },
+      "rationale": "O3・O4の説明力は高いが、O1・O2のような撮影行動自体の説明は弱い。価値観の深掘り質問で他仮説と区別しやすい。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "絶景スポットでの撮影文化や機材利用がユーザーの行動に影響していること"
+        ],
+        "best_discriminating_question": "他の観光客の撮影スタイルを意識したことがあるか？",
+        "testability_notes": "現地観察やユーザーへの質問で検証可能。外部エビデンスも利用しやすい。",
+        "safety_risk_notes": "環境要因を強調しすぎると、ユーザーの主体性を軽視する印象を与える可能性がある。"
+      },
+      "rationale": "O2とOext3の説明は強いが、ユーザーの内的動機や価値観には踏み込めていない。環境要因の影響度を測る質問が有効。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O4"
+        ],
+        "key_assumptions": [
+          "ユーザーが撮影テクニックや加工方法の情報・選択肢を十分に知らないこと"
+        ],
+        "best_discriminating_question": "SNS映えのための撮影テクニックや加工方法をどれくらい知っているか？",
+        "testability_notes": "知識や利用経験を直接質問することで容易に検証可能。",
+        "safety_risk_notes": "『十分に知らない』という表現がユーザーの能力や情報感度を否定的に捉えられるリスクがある。"
+      },
+      "rationale": "O4の説明には妥当だが、他の観察（行動や価値観）には直接的な説明力が弱い。知識レベルの確認で他仮説と区別しやすい。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "ユーザーが撮影行為自体や『撮影に没頭する自分』を強く意識し、そこから充実感を得ていること"
+        ],
+        "best_discriminating_question": "現地での体験よりも撮影そのものに没頭していると感じるか？",
+        "testability_notes": "ユーザーの内面や満足感の源泉を尋ねる必要があり、やや主観的だが質問で検証可能。",
+        "safety_risk_notes": "ユーザーの自己像や動機に踏み込むため、誤解や不快感を与えないよう配慮が必要。"
+      },
+      "rationale": "全観察を幅広く説明できるが、主観的・心理的要素が強く、検証には丁寧な質問設計が求められる。"
+    }
+  ]
+}

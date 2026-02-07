@@ -1,0 +1,98 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A2"
+        ],
+        "best_discriminating_question": "『本物の生活』を歩くことでどんな気持ちや満足感を得たいですか？",
+        "testability_notes": "ユーザーの満足感や充足感の源泉を聞き出すことで検証可能",
+        "safety_risk_notes": "自己探究や独自性への言及は肯定的だが、深掘りしすぎると負担になる可能性"
+      },
+      "rationale": "ユーザーの独自性や探究心を説明できるが、外部環境や社会的要素には触れていない"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "A2",
+          "A3"
+        ],
+        "best_discriminating_question": "地元の人との交流や会話ができることが、その場所の魅力の中心ですか？",
+        "testability_notes": "地元の人との交流を重視しているかどうかを直接質問することで検証可能",
+        "safety_risk_notes": "社会的なつながりを重視する視点なのでリスクは低い"
+      },
+      "rationale": "地元文化や人との交流を重視するPKGとも整合的"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "A2"
+        ],
+        "best_discriminating_question": "観光地化による地域文化の変化をどのように感じていますか？",
+        "testability_notes": "観光地化や商品化への関心・懸念の有無を問うことで検証可能",
+        "safety_risk_notes": "文化保存の価値観は肯定的だが、他者の観光行動を否定するような表現は避ける"
+      },
+      "rationale": "地域文化の保存や商品化への懸念を説明できる"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A2",
+          "A3"
+        ],
+        "best_discriminating_question": "観光地での体験で強く印象に残っている出来事はありますか？",
+        "testability_notes": "過去の体験談を聞くことで検証可能",
+        "safety_risk_notes": "過去のネガティブ体験を掘り返すリスクがあるため慎重に扱う"
+      },
+      "rationale": "過去の体験が現在の志向に影響している可能性を示唆"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3",
+          "Oext3"
+        ],
+        "key_assumptions": [
+          "A2"
+        ],
+        "best_discriminating_question": "ご自身が『本物の生活』を求めて歩くことで、その場所や人に影響を与えていると感じたことはありますか？",
+        "testability_notes": "ユーザー自身の観察者効果やパフォーマティブな本物らしさへの気づきについて尋ねることで検証可能",
+        "safety_risk_notes": "ユーザーの自己像や信念を揺さぶるため、やや不快感を与える可能性があるが、深い自己理解を促す"
+      },
+      "rationale": "ユーザーの『本物志向』自体が観察者としての自分の存在によって変質する逆説を突いており、発言の意味を大きく変える"
+    }
+  ]
+}

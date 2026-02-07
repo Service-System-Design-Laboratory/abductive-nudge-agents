@@ -1,0 +1,354 @@
+{
+  "context": {
+    "observations": [
+      {
+        "id": "O1",
+        "text": "今回の3日間の旅行は分刻みでスケジュールを組んだ。"
+      },
+      {
+        "id": "O2",
+        "text": "Googleマップで移動時間を計算した。"
+      },
+      {
+        "id": "O3",
+        "text": "最も効率的に主要スポットを回れるルートを確立した。"
+      },
+      {
+        "id": "O4",
+        "text": "あとはこれを完璧に実行するだけだ。"
+      },
+      {
+        "id": "O5",
+        "text": "何か見落としている効率化のポイントはあるか尋ねている。"
+      }
+    ],
+    "assumptions": [
+      {
+        "id": "A1",
+        "text": "旅行の目的は効率的に多くのスポットを回ることにある。",
+        "status": "tentative"
+      },
+      {
+        "id": "A2",
+        "text": "スケジュールの完璧な実行が満足度に直結する。",
+        "status": "tentative"
+      },
+      {
+        "id": "A3",
+        "text": "効率化のための工夫や改善点がまだ存在する可能性がある。",
+        "status": "tentative"
+      },
+      {
+        "id": "A4",
+        "text": "予算やコストも考慮している。",
+        "status": "tentative"
+      }
+    ],
+    "questions": [
+      "効率化以外に旅行で重視していることはありますか？",
+      "分刻みのスケジュールで疲れやストレスを感じることはありませんか？",
+      "予想外の出来事が起きた場合の対応は考えていますか？"
+    ],
+    "constraints": {
+      "tone": "supportive",
+      "safety": "avoid determinism"
+    }
+  },
+  "evidence": {
+    "triggers": [
+      {
+        "type": "information_gap",
+        "text": "効率化以外の旅行の目的や価値観が不明。"
+      },
+      {
+        "type": "ambiguity",
+        "text": "完璧な実行が本当に満足につながるのか明確でない。"
+      },
+      {
+        "type": "focus",
+        "text": "効率化に強くフォーカスしているが、他の要素が排除されている可能性。"
+      }
+    ],
+    "external_observations": [
+      {
+        "id": "Oext1",
+        "text": "区民等の理解と信頼が深まるには一方的な情報発信ではなく、主体的な関与が重要とされる。",
+        "source_url": "https://www.tokyo23-kuchokai-kiko.jp/report/docs/50b1e925d256a8aa70a11a37810bb2c6c166dce8.pdf"
+      }
+    ]
+  },
+  "hypotheses": [
+    {
+      "hypothesis_id": "H1",
+      "type": "psychological",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "O4"
+      ],
+      "assumes": [
+        "A1",
+        "A2"
+      ],
+      "statement": "ユーザーは計画通りに物事を進めることで達成感や安心感を得る傾向がある。",
+      "mechanism": "計画の完遂が自己効力感や満足感を高めるため、分刻みのスケジュールを重視する。",
+      "predictions": [
+        "計画が崩れるとストレスを感じやすい",
+        "予想外の出来事を避ける傾向がある"
+      ],
+      "discriminating_questions": [
+        "計画通りに進まなかった場合、どのような気持ちになりますか？"
+      ],
+      "persona_link": [
+        "pkg:p05_n1"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H2",
+      "type": "value",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "O4"
+      ],
+      "assumes": [
+        "A1",
+        "A4"
+      ],
+      "statement": "ユーザーは節約志向やコスト最適化の価値観から、時間も資源として最大限活用しようとしている。",
+      "mechanism": "時間の無駄を省くことが金銭的・精神的コストの最適化につながると考えている。",
+      "predictions": [
+        "移動や待ち時間を極力減らす工夫をしている",
+        "低予算旅行やコスト削減にも関心が高い"
+      ],
+      "discriminating_questions": [
+        "効率化の工夫は費用面の節約とも関係していますか？"
+      ],
+      "persona_link": [
+        "pkg:p05_n2",
+        "pkg:p05_n3"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H3",
+      "type": "skill",
+      "explains": [
+        "O2",
+        "O3"
+      ],
+      "assumes": [
+        "A3"
+      ],
+      "statement": "ユーザーはデータ分析や計画立案のスキルを活かして旅行計画を最適化している。",
+      "mechanism": "Googleマップやデータを活用することで、最短ルートや効率的な行動を導き出している。",
+      "predictions": [
+        "他の場面でもデータ分析を活用している",
+        "旅行以外でも計画立案が得意"
+      ],
+      "discriminating_questions": [
+        "旅行以外でもデータ分析や計画立案を活用することはありますか？"
+      ],
+      "persona_link": [
+        "pkg:p05_n1",
+        "pkg:p05_n3"
+      ],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H4",
+      "type": "goal_mismatch",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "O4"
+      ],
+      "assumes": [
+        "A1",
+        "A2"
+      ],
+      "statement": "ユーザーは効率化を重視するあまり、旅行本来の楽しみや偶発的な発見の価値を見落としている可能性がある。",
+      "mechanism": "計画通りの行動に集中することで、予定外の体験やその場の雰囲気を味わう余地がなくなる。",
+      "predictions": [
+        "予想外の出来事を楽しむ余裕が少ない",
+        "計画外の行動に不安を感じる"
+      ],
+      "discriminating_questions": [
+        "予定外の出来事や偶然の出会いを楽しむことはありますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [],
+      "is_reframing": false
+    },
+    {
+      "hypothesis_id": "H5",
+      "type": "social",
+      "explains": [
+        "O1",
+        "O2",
+        "O3",
+        "O4",
+        "Oext1"
+      ],
+      "assumes": [
+        "A1",
+        "A2"
+      ],
+      "statement": "ユーザーは効率化や計画重視の姿勢が、旅行の同行者や現地の人との主体的な関与や信頼形成を妨げている可能性がある。",
+      "mechanism": "一方的な計画遂行に集中することで、同行者や現地との双方向的な関与や偶発的な交流の機会が減少する。",
+      "predictions": [
+        "同行者がいれば、計画通りに進めることにプレッシャーを感じることがある",
+        "現地の人との交流やその場の雰囲気を味わう機会が少ない"
+      ],
+      "discriminating_questions": [
+        "旅行中に同行者や現地の人との交流や、予定外の出来事を楽しむことはありますか？"
+      ],
+      "persona_link": [],
+      "evidence_link": [
+        "ev:Oext1"
+      ],
+      "is_reframing": true
+    }
+  ],
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A2"
+        ],
+        "best_discriminating_question": "計画通りに進まなかった場合、どのような気持ちになりますか？",
+        "testability_notes": "旅行中に計画が崩れた際の感情や行動を観察することで検証可能。",
+        "safety_risk_notes": "ユーザーの計画重視の価値観を肯定的に扱うためリスクは低い。"
+      },
+      "rationale": "計画重視の傾向は観察事実とPKGに整合的。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A4"
+        ],
+        "best_discriminating_question": "効率化の工夫は費用面の節約とも関係していますか？",
+        "testability_notes": "旅行の効率化がコスト削減と結びついているかを確認することで検証可能。",
+        "safety_risk_notes": "節約志向を肯定的に扱うためリスクは低い。"
+      },
+      "rationale": "PKGの節約志向やコスト最適化と一致。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3"
+        ],
+        "key_assumptions": [
+          "A3"
+        ],
+        "best_discriminating_question": "旅行以外でもデータ分析や計画立案を活用することはありますか？",
+        "testability_notes": "他の活動でも同様のスキル活用が見られるかで検証可能。",
+        "safety_risk_notes": "スキルの肯定的側面のみを扱うためリスクは低い。"
+      },
+      "rationale": "データ分析スキルの応用例として妥当。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A2"
+        ],
+        "best_discriminating_question": "予定外の出来事や偶然の出会いを楽しむことはありますか？",
+        "testability_notes": "旅行中に予定外の出来事が起きたときの反応を観察することで検証可能。",
+        "safety_risk_notes": "ユーザーの価値観に疑問を投げかけるためやや不快感のリスクがある。"
+      },
+      "rationale": "効率化の裏にある見落としを指摘する仮説。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4",
+          "Oext1"
+        ],
+        "key_assumptions": [
+          "A1",
+          "A2"
+        ],
+        "best_discriminating_question": "旅行中に同行者や現地の人との交流や、予定外の出来事を楽しむことはありますか？",
+        "testability_notes": "旅行中の交流や偶発的な体験の有無を確認することで検証可能。",
+        "safety_risk_notes": "計画重視が人間関係や現地体験を妨げている可能性を指摘するため、やや不快感を与えるリスクがある。"
+      },
+      "rationale": "外部観察（Oext1）を活用し、効率化の副作用に焦点を当てている。"
+    }
+  ],
+  "decision": {
+    "selected_hypothesis_id": "H5",
+    "contrasting_hypothesis_id": "H4",
+    "selection_rationale": "H5は外部観察（Oext1）を活用し、ユーザーの効率化重視が旅行の同行者や現地の人との関与・信頼形成を妨げる可能性を指摘している。これにより、ユーザーの発言『効率的な旅行計画』の意味が『計画の完遂だけでなく、現地や同行者との関係性や偶発的な体験を犠牲にしているかもしれない』に変わる。H4は効率化の裏にある旅行本来の楽しみの見落としを指摘する額面通りの読みであり、H5はその意味をさらに社会的・関係性の側面に拡張している。どちらの立場に立つかで、次の行動や旅行の捉え方が大きく変わる。",
+    "user_facing_frame": {
+      "framing": "options",
+      "questions": [
+        "旅行中に同行者や現地の人との交流や、予定外の出来事を楽しむことはありますか？",
+        "それとも、計画通りに進めること自体が旅行の満足度につながりますか？"
+      ],
+      "options": [
+        "効率化や計画重視の姿勢が、同行者や現地との交流や偶発的な体験を減らしている可能性を意識してみる",
+        "計画通りに進めること自体が自分にとっての満足や達成感の源である、という立場を大切にする"
+      ]
+    }
+  },
+  "final_response": "分刻みのスケジュールで旅行を計画し、効率的に主要スポットを回ろうとする姿勢、とても素晴らしいですね。計画通りに進めることで達成感や安心感を得られる方も多いですし、あなたのデータ分析やコスト最適化のスキルが存分に活かされていると感じます。\n\n一方で、外部の調査では『一方的な情報発信ではなく、主体的な関与が信頼や理解につながる』という指摘もあります。旅行でも、同行者や現地の人との偶然の出会いや交流が、思いがけない発見や満足感につながることもあるようです。\n\nそこで2つの立場を考えてみませんか？\n1つは、効率化や計画重視の姿勢が、同行者や現地との交流や偶発的な体験を減らしている可能性を意識してみること。もう1つは、計画通りに進めること自体が自分にとっての満足や達成感の源である、という立場を大切にすることです。\n\n例えば、1日5分だけでも、予定外のカフェに立ち寄ったり、現地の人に話しかけてみる時間を作ってみるのはどうでしょう？同じように計画重視の方でも、少しだけ余白を設けることで新しい発見があったという声も多いです。\n\nあなたはどちらの立場がしっくりきますか？また、旅行中に同行者や現地の人との交流や、予定外の出来事を楽しむことはありますか？それとも、計画通りに進めること自体が旅行の満足度につながりますか？\n\nどちらを選んでも正解はありませんが、少しだけ視点を変えてみることで、さらに充実した旅行になるかもしれません。",
+  "markers": {
+    "empathy": {
+      "acknowledgement": true,
+      "reflection": true,
+      "perspective_prompt": true
+    },
+    "nudge": {
+      "easy": true,
+      "attractive": true,
+      "social": true,
+      "timely": true,
+      "has_question": true,
+      "has_options": true,
+      "has_small_action": true,
+      "directive_level": "low"
+    }
+  }
+}
