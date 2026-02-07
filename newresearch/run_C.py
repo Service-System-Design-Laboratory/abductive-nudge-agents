@@ -1,6 +1,6 @@
 """
 Condition C — −RAG (PKG ✓, RAG ✗, 批評家 ✓)
-外部検索 (RAG/Serper) を無効化し、PKGのみで対話を生成。
+外部検索 (RAG) を無効化し、PKGのみで対話を生成。
 
 Usage:
     python -m newresearch.run_C                 # 全シナリオ (S1, S2, S3)

@@ -3,9 +3,10 @@
 # 使い方: bash newresearch/check_progress.sh
 #   または: watch -n 30 bash newresearch/check_progress.sh  (30秒ごと自動更新)
 
-BASE="/home/c0a22080fa/AI-one-hour/newresearch/results/runs"
-LOG="/home/c0a22080fa/AI-one-hour/newresearch/results/rerun_remaining_log.txt"
-TODAY="2026-02-07"
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+BASE="${SCRIPT_DIR}/results/runs"
+LOG="${SCRIPT_DIR}/results/rerun_remaining_log.txt"
+TODAY="$(date '+%Y-%m-%d')"
 
 echo "=========================================="
 echo " 実験進捗モニター  $(date '+%H:%M:%S')"
@@ -40,9 +41,9 @@ echo ""
 # プロセス状態
 PID=$(pgrep -f "newresearch.runner" 2>/dev/null)
 if [ -n "$PID" ]; then
-    echo "  ✅ プロセス稼働中 (PID: $PID)"
+    echo "  プロセス稼働中 (PID: $PID)"
 else
-    echo "  ❌ プロセス停止中"
+    echo "プロセス停止中"
 fi
 
 # 最新の実験

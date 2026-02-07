@@ -92,3 +92,5 @@ site/
 # Temporary test files
 test_*.py.bak
 temp_*.py
+
+.history

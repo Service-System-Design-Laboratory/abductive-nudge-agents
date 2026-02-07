@@ -212,10 +212,10 @@ class ExplorerAgent(BaseAgent):
     def _search_and_interpret(
         self, state: dict, rag_queries: list[str]
     ) -> tuple[list[EvidenceItem], list[ExternalObservation], str]:
-        """Step 2+3: Serper search + LLM interpretation (use_rag=true only)."""
+        """Step 2+3: Web search + LLM interpretation (use_rag=true only)."""
         config = state["config"]
 
-        # ── Step 2: Serper search ──────────────────────────────────
+        # ── Step 2: Web search ────────────────────────────────────
         all_results = []
         for q in rag_queries[:config.rag_top_k]:
             try:
@@ -238,7 +238,7 @@ class ExplorerAgent(BaseAgent):
         unique = unique[:config.rag_top_k]
 
         if not unique:
-            logger.warning("[ExplorerAgent] No search results after Serper queries")
+            logger.warning("[ExplorerAgent] No search results returned")
             return [], [], "検索結果 0 件"
 
         # ── Step 3: LLM interpretation ─────────────────────────────
@@ -260,7 +260,7 @@ class ExplorerAgent(BaseAgent):
                 f"{type(e).__name__}: {e}",
                 exc_info=True,
             )
-            # Fallback: use raw Serper results without LLM interpretation
+            # Fallback: use raw search results without LLM interpretation
             data = {
                 "evidence_items": [
                     {"title": r["title"], "snippet": r["snippet"],

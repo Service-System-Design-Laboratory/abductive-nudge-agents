@@ -7,43 +7,18 @@ no pipeline decomposition.
 from __future__ import annotations
 import json
 import logging
-import os
 from datetime import datetime
 from pathlib import Path
-
-import requests
 
 from newresearch.config import RunConfig
 from newresearch.schemas import Persona
 from newresearch.pkg_store import PKGStore
 from newresearch.agents.single import SingleAgent
+from newresearch.agents.explorer import web_search
 
 logger = logging.getLogger("newresearch")
 
 RUNS_DIR = Path(__file__).parent / "results" / "runs"
-
-
-def _serper_search(query: str, num_results: int = 3) -> list[dict]:
-    """Call Serper API — same implementation as ExplorerAgent."""
-    api_key = os.environ.get("SERPER_API_KEY", "")
-    if not api_key:
-        logger.warning("SERPER_API_KEY not set")
-        return []
-    resp = requests.post(
-        "https://google.serper.dev/search",
-        headers={"X-API-KEY": api_key, "Content-Type": "application/json"},
-        json={"q": query, "gl": "jp", "hl": "ja", "num": num_results},
-        timeout=10,
-    )
-    resp.raise_for_status()
-    results = []
-    for item in resp.json().get("organic", [])[:num_results]:
-        results.append({
-            "title": item.get("title", ""),
-            "snippet": item.get("snippet", ""),
-            "url": item.get("link", ""),
-        })
-    return results
 
 
 class SinglePipeline:
@@ -55,15 +30,15 @@ class SinglePipeline:
         self._agent = SingleAgent()
 
     def _gather_rag_results(self, user_input: str) -> list[dict]:
-        """Run Serper search on user_input keywords — same as ExplorerAgent would."""
+        """Run web search on user_input keywords — same source as ExplorerAgent."""
         if not self.config.use_rag:
             return []
         try:
-            results = _serper_search(user_input, num_results=5)
+            results = web_search(user_input, num_results=5)
             logger.info(f"[SinglePipeline] RAG search: {len(results)} results")
             return results
         except Exception as e:
-            logger.error(f"[SinglePipeline] Serper failed: {e}")
+            logger.error(f"[SinglePipeline] Web search failed: {e}")
             return []
 
     def run(self, user_input: str) -> dict:
