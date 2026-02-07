@@ -83,7 +83,7 @@ class HypothesisOutput(BaseModel):
     hypotheses: List[Hypothesis] = Field(..., min_length=1)
 
 
-# ── 4. JudgeAgent ─────────────────────────────────────────────────
+# ── 4. CriticAgent ────────────────────────────────────────────────
 
 class JudgeDiagnosis(BaseModel):
     """Diagnostic assessment of a hypothesis (no scores)."""

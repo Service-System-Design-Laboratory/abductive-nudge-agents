@@ -509,7 +509,7 @@ class PKGStore:
                         type: 'judgement',
                         weight: 0.5,
                         target_hypothesis: $target_hid,
-                        source: 'judge_agent',
+                        source: 'critic_agent',
                         run_id: $run_id
                     })
                     CREATE (u)-[:HAS_PKG_NODE]->(n)

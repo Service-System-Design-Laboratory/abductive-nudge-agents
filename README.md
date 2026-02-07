@@ -36,9 +36,9 @@ User Input + Persona + PKG
 │HypothesisAgent │  Generate 3-5 hypotheses (explains O+Oext, assumes A, predictions, discriminating_questions)
 └──────┬─────────┘
        ▼
-┌────────────┐
-│ JudgeAgent │  Diagnostic review (fatal_flaws / explains_confirmed / safety_risk_notes)
-└──────┬─────┘  [Skipped when use_judge=false]
+┌──────────────┐
+│ CriticAgent  │  Diagnostic review (fatal_flaws / explains_confirmed / safety_risk_notes)
+└──────┬───────┘  [Skipped when use_judge=false]
        ▼
 ┌───────────────┐
 │ DecisionAgent │  Contrastive selection of 2 hypotheses (selected + contrasting)
@@ -90,7 +90,7 @@ User Input + Persona + PKG
     │   ├── context.py         # ContextAgent — O/A extraction + triggers
     │   ├── explorer.py        # ExplorerAgent — Web search + LLM interpretation
     │   ├── hypothesis.py      # HypothesisAgent — Diverse hypothesis generation
-    │   ├── judge.py           # JudgeAgent — Diagnostic evaluation
+    │   ├── judge.py           # CriticAgent — Diagnostic evaluation
     │   ├── decision.py        # DecisionAgent — 2-hypothesis contrastive selection
     │   ├── dialogue.py        # DialogueAgent — Empathy + nudge response
     │   └── single.py          # SingleAgent (for condition D)

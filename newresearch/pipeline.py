@@ -14,7 +14,7 @@ from newresearch.pkg_store import PKGStore
 from newresearch.agents.context import ContextAgent
 from newresearch.agents.explorer import ExplorerAgent
 from newresearch.agents.hypothesis import HypothesisAgent
-from newresearch.agents.judge import JudgeAgent
+from newresearch.agents.judge import CriticAgent
 from newresearch.agents.decision import DecisionAgent
 from newresearch.agents.dialogue import DialogueAgent
 
@@ -33,7 +33,7 @@ class Pipeline:
             "context": ContextAgent(),
             "explorer": ExplorerAgent(),
             "hypothesis": HypothesisAgent(),
-            "judge": JudgeAgent(),
+            "judge": CriticAgent(),
             "decision": DecisionAgent(),
             "dialogue": DialogueAgent(),
         }

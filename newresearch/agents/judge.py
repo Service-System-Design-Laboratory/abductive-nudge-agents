@@ -1,5 +1,5 @@
 """
-JudgeAgent — Diagnostic review of hypotheses (no scores).
+CriticAgent — Diagnostic review of hypotheses (no scores).
 Provides fatal_flaws, explains_confirmed, key_assumptions,
 best_discriminating_question, testability & safety risk.
 Skipped when use_judge=false.
@@ -11,8 +11,8 @@ from newresearch.agents.base import BaseAgent
 from newresearch.schemas import JudgeOutput
 
 
-class JudgeAgent(BaseAgent):
-    name = "批評家(JudgeAgent)"
+class CriticAgent(BaseAgent):
+    name = "批評家(CriticAgent)"
     prompt_file = "judge.txt"
     temperature = 0.2
 
