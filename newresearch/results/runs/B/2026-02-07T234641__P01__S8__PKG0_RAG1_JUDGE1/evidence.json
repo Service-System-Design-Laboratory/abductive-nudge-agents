@@ -1,0 +1,58 @@
+{
+  "triggers": [
+    {
+      "type": "information_gap",
+      "text": "ユーザーが学生時代に体験した嵐山や竹林の道の静けさ・空気が、現在も同じように体験できるかどうかに関する情報が不足している。"
+    },
+    {
+      "type": "ambiguity",
+      "text": "『同じ感動を取り戻したい』という願望が、現在の京都や嵐山の状況によって実現可能かどうかが曖昧である。"
+    }
+  ],
+  "rag_queries": [
+    "現在の嵐山や竹林の道の混雑状況や静けさはどうなっているか",
+    "学生時代と現在の京都・嵐山の雰囲気や観光客数の違い",
+    "嵐山や竹林の道で静けさを味わえる時間帯や季節はいつか"
+  ],
+  "evidence_items": [
+    {
+      "rank": 1,
+      "title": "みんなでつくる京都観光",
+      "snippet": "観光客数や観光消費額、観光客の動向などを調査する「京都観光総合調査」を行っています。2019年の1年間の観光客数は5,352万人、観光消費額は1兆円。",
+      "url": "https://www.kyokanko.or.jp/wp/wp-content/uploads/minna_de_tsukuru.pdf",
+      "source_type": "org"
+    },
+    {
+      "rank": 2,
+      "title": "混雑回避に役立つ観光快適度マップ",
+      "snippet": "ビッグデータをもとに予測したエリア別の混雑情報を発信しています。ライブカメラの映像や、おすすめスポット記事も参考に、混雑する時間や場所を上手に避けながら、 ...",
+      "url": "https://ja.kyoto.travel/comfort/saga-arashiyama/",
+      "source_type": "org"
+    },
+    {
+      "rank": 3,
+      "title": "嵐山竹林の小径(竹林の道)周辺の渋滞情報",
+      "snippet": "嵐山竹林の小径(竹林の道)周辺の渋滞情報です。現在の渋滞情報および過去のデータを元に各道路で発生が予想される渋滞情報を確認できます。",
+      "url": "https://www.navitime.co.jp/probetraffic/poi?spot=02301-PN0000668",
+      "source_type": "com"
+    }
+  ],
+  "external_observations": [
+    {
+      "id": "Oext1",
+      "text": "京都・嵐山の観光地では混雑や渋滞がビッグデータやライブカメラによって監視・予測され、快適な観光体験が商品化されている。",
+      "source_url": "https://ja.kyoto.travel/comfort/saga-arashiyama/"
+    },
+    {
+      "id": "Oext2",
+      "text": "京都の観光客数は年間5000万人を超え、静けさやローカル体験は大量消費の対象となっている。",
+      "source_url": "https://www.kyokanko.or.jp/wp/wp-content/uploads/minna_de_tsukuru.pdf"
+    },
+    {
+      "id": "Oext3",
+      "text": "嵐山竹林の道などの観光スポットは、混雑や渋滞情報がリアルタイムで提供されることで、観光客自身が静けさを求めて行動することが、結果的にその場所の混雑を生み出している。",
+      "source_url": "https://www.navitime.co.jp/probetraffic/poi?spot=02301-PN0000668"
+    }
+  ],
+  "notes": "外部観察は、観光地の静けさや本物らしさが大量消費や商品化の対象となっている事実、そして観光客の行動がその場所の性質を変化させている逆説的構造を強調しています。"
+}

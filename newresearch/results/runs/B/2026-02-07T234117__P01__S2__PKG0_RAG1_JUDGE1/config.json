@@ -1,0 +1,16 @@
+{
+  "run_id": "2026-02-07T234117__P01__S2__PKG0_RAG1_JUDGE1",
+  "scenario_id": "S2",
+  "persona_id": "P01",
+  "condition": "B",
+  "use_pkg": false,
+  "use_rag": true,
+  "use_judge": true,
+  "is_single": false,
+  "hypothesis_count": 5,
+  "rag_top_k": 5,
+  "model": {
+    "name": "gpt-4.1",
+    "temperature": 0.2
+  }
+}

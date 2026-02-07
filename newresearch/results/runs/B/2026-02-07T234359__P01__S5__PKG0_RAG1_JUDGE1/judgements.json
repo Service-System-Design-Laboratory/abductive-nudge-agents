@@ -1,0 +1,93 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1"
+        ],
+        "key_assumptions": [
+          "ユーザーが節約行動自体に達成感や満足感を感じていること",
+          "旅行の主目的が体験よりもコスト削減に置かれていること"
+        ],
+        "best_discriminating_question": "旅行後に節約の成果を他人に報告したいという気持ちはあるか？",
+        "testability_notes": "ユーザーへの1-2問の直接質問で検証可能。行動履歴やSNS投稿も参考になる。",
+        "safety_risk_notes": "ユーザーの価値観を単純化・断定的に見せる可能性があるため、慎重な表現が望ましい。"
+      },
+      "rationale": "節約行動の動機を内的満足に求める仮説で、O1は十分説明できるが、O2（宿泊選択）は直接的な説明にはやや弱い。ユーザーの主観的動機を問うため、質問での検証が容易。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3",
+          "Oext1",
+          "Oext2"
+        ],
+        "key_assumptions": [
+          "業界のマーケティング戦略がユーザーの節約行動に強く影響していること"
+        ],
+        "best_discriminating_question": "割引やキャンペーン情報を日常的にチェックする習慣があるか？",
+        "testability_notes": "外部エビデンスや他の旅行者との比較、ユーザーへの質問で検証可能。",
+        "safety_risk_notes": "ユーザーの主体性を軽視していると受け取られるリスクがある。"
+      },
+      "rationale": "外部環境の影響を強調し、O2・O3・Oext1・Oext2をよく説明できている。エビデンスもあり、検証性が高い。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O5"
+        ],
+        "key_assumptions": [
+          "ユーザーが現状の節約手段以外の情報を十分に持っていないこと"
+        ],
+        "best_discriminating_question": "ネットカフェや漫画喫茶での宿泊、スーパーでの食材調達などは検討済みか？",
+        "testability_notes": "ユーザーへの具体的な選択肢提示と質問で容易に検証可能。",
+        "safety_risk_notes": "ユーザーの情報収集能力を低く見積もる印象を与える可能性がある。"
+      },
+      "rationale": "O5（さらなる節約ポイント探索）を情報ギャップで説明する仮説。外部エビデンスもあり、質問での検証が容易。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O4",
+          "O5"
+        ],
+        "key_assumptions": [
+          "ユーザーがコスト削減を優先するあまり健康や満足度を犠牲にしていること"
+        ],
+        "best_discriminating_question": "コンビニ食だけの食生活で健康や満足感に不安はないか？",
+        "testability_notes": "ユーザーの主観的感想を聞くことで検証可能だが、長期的な健康影響は追跡が必要。",
+        "safety_risk_notes": "健康リスクを強調しすぎると不快感を与える可能性がある。"
+      },
+      "rationale": "節約と生活の質のトレードオフに着目し、O4・O5を説明。健康面の主観的評価が必要なため、やや検証に注意が必要。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4",
+          "O5"
+        ],
+        "key_assumptions": [
+          "節約自体がユーザーの主目的となっており、旅行体験の価値が二次的になっていること"
+        ],
+        "best_discriminating_question": "もし同じ金額でより快適な体験ができても、節約という枠を外すことに抵抗があるか？",
+        "testability_notes": "ユーザーの価値観や満足度に関する質問で検証可能。",
+        "safety_risk_notes": "ユーザーの旅行目的を否定的に捉えられるリスクがあるため、表現に配慮が必要。"
+      },
+      "rationale": "全観察を説明できる包括的仮説。節約行動の自己目的化という再定義的視点が特徴で、ユーザーの価値観を問う質問で検証可能。"
+    }
+  ]
+}

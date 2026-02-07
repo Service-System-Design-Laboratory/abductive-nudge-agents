@@ -1,0 +1,94 @@
+{
+  "judgements": [
+    {
+      "hypothesis_id": "H1",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2"
+        ],
+        "key_assumptions": [
+          "ユーザーの不安の主因が『不確実性や予測不能な状況』であること",
+          "コントロール可能性の確保が安心感に直結していること"
+        ],
+        "best_discriminating_question": "日常生活でも予測不能な状況を避ける傾向がありますか？",
+        "testability_notes": "ユーザーへの1-2問の質問で心理傾向を確認でき、比較的検証しやすい。",
+        "safety_risk_notes": "心理的特性を断定的に述べると、ユーザーが『不安が強い人』とレッテル貼りされたと感じるリスクがある。"
+      },
+      "rationale": "O1, O2の説明力は高いが、O3, O4は他仮説でも説明可能。心理的要因への依存が強く、個人差を考慮する必要がある。"
+    },
+    {
+      "hypothesis_id": "H2",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O2",
+          "O3",
+          "O4"
+        ],
+        "key_assumptions": [
+          "旅行業界による安全情報・サービスの商品化がユーザーの行動選択に実際に影響していること"
+        ],
+        "best_discriminating_question": "旅行会社やホテルの安全対策を選定基準の一つにしていますか？",
+        "testability_notes": "外部エビデンス（Oext1, Oext2）とユーザーへの質問で検証可能。実証性は高い。",
+        "safety_risk_notes": "業界依存を強調しすぎると、ユーザーの主体性を軽視していると受け取られる可能性がある。"
+      },
+      "rationale": "外部エビデンスとの整合性が高く、O2, O3, O4の説明力が強い。ユーザーの主体的動機を過小評価するリスクはある。"
+    },
+    {
+      "hypothesis_id": "H3",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O5"
+        ],
+        "key_assumptions": [
+          "ユーザーが現状の安全対策に満足しておらず、情報不足を感じていること"
+        ],
+        "best_discriminating_question": "最近新しく知った安全対策やツールはありますか？",
+        "testability_notes": "ユーザーの情報探索行動を直接質問することで検証可能。比較的検証しやすい。",
+        "safety_risk_notes": "ユーザーの知識不足を指摘する形になるため、配慮が必要。"
+      },
+      "rationale": "O5のみに特化した仮説で、他の観察には説明力がない。知識ギャップの有無は質問で明確に判別可能。"
+    },
+    {
+      "hypothesis_id": "H4",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O4",
+          "O5"
+        ],
+        "key_assumptions": [
+          "ユーザーが情報収集やリスク評価のスキルに自信がないこと"
+        ],
+        "best_discriminating_question": "情報収集やリスク評価に自信がありますか？",
+        "testability_notes": "ユーザーの自己評価を問うことで検証可能。主観的だが実施は容易。",
+        "safety_risk_notes": "スキル不足を強調すると、ユーザーの自尊心を損なう可能性がある。"
+      },
+      "rationale": "O4, O5の説明に有効だが、他観察への波及は限定的。自己評価のバイアスに注意が必要。"
+    },
+    {
+      "hypothesis_id": "H5",
+      "diagnosis": {
+        "fatal_flaws": [],
+        "explains_confirmed": [
+          "O1",
+          "O2",
+          "O3",
+          "O4",
+          "O5"
+        ],
+        "key_assumptions": [
+          "安全追求がユーザーのセルフイメージや自己肯定感と結びついていること",
+          "ユーザーが他者評価や自己像を意識して行動していること"
+        ],
+        "best_discriminating_question": "安全を重視する自分にどんな印象を持っていますか？",
+        "testability_notes": "ユーザーの自己認識や他者評価への反応を問うことで検証可能だが、深層心理のため回答の正直さに依存する。",
+        "safety_risk_notes": "『裏の動機』を指摘するため、ユーザーの防衛感や不快感を招くリスクが高い。"
+      },
+      "rationale": "全観察を説明できる広範な仮説だが、動機の深層に踏み込むため検証・提示時の配慮が特に重要。"
+    }
+  ]
+}
