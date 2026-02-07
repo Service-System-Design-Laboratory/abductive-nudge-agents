@@ -149,10 +149,19 @@ docker compose up -d graph-db
 python -m newresearch.seed_pkg
 
 # 4. Single run
+#     WARNING: run_A/B/C/D.py do NOT reset PKG before execution.
+#    Running them consecutively may cause cross-run contamination.
+#    Use `runner.py --all` for reproducible experiments.
 python -m newresearch.run_A --scenario S1 --persona P01
 
-# 5. Run all ablation experiments (4 conditions × 10 scenarios × 3 personas)
+# 5. Full ablation (4 conditions × 10 scenarios × 3 personas)
+#    PKG is automatically reset (reset_to_seed) before each run — no manual init needed.
+#    If interrupted, already-completed runs for the day are auto-skipped on restart.
 python -m newresearch.runner --all
+
+# Subset examples
+python -m newresearch.runner --all --conditions A B
+python -m newresearch.runner --all --personas P01 --scenarios S1 S2 S3
 
 # 6. Extract metrics
 python -m newresearch.metrics
@@ -201,8 +210,30 @@ Each run generates the following files in `newresearch/results/runs/{condition}/
 (:PKGNode)
 ```
 
-**Dynamic graph updates**: In conditions A/C (`use_pkg=true`), observations, triggers, hypotheses,
-judgments, and decisions are written to Neo4j during pipeline execution, dynamically expanding the PKG.
+**Dynamic graph update:** Under conditions A/C (`use_pkg=true`), observations, triggers,
+hypotheses, judgements, and decisions are written to Neo4j during pipeline execution,
+dynamically extending the PKG.
+
+**Automatic PKG reset:** `runner.py` calls `reset_to_seed()` immediately before each run,
+deleting all runtime-generated nodes (those with a `source` property) and restoring the
+graph to its seed state. This prevents cross-run contamination and guarantees that every
+run starts from the same initial PKG (10 nodes, 8 edges).
+
+** Note:** `run_A.py` / `run_B.py` / `run_C.py` / `run_D.py` do **NOT** call
+`reset_to_seed()`. Running them consecutively without manual reset may cause
+cross-run contamination in Neo4j.
+
+---
+
+## Technology Stack
+
+| Component | Technology |
+|-----------|-----------|
+| LLM | Azure OpenAI (GPT-4.1) |
+| Knowledge Graph | Neo4j Community Edition (Docker) |
+| Web Search | Serper API / Google Custom Search / Bing Search (`SEARCH_PROVIDER` 環境変数で切替) |
+| Data Validation | Pydantic v2 |
+| Language | Python 3.10+ |
 
 ---
 
